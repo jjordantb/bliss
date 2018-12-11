@@ -1,5 +1,6 @@
 package io.paratek;
 
+import io.paratek.mapping.Class;
 import jdk.internal.org.objectweb.asm.ClassReader;
 import jdk.internal.org.objectweb.asm.ClassWriter;
 import jdk.internal.org.objectweb.asm.Opcodes;
@@ -65,6 +66,21 @@ public class Deob {
                     }
                 }
             }
+        }
+        int clsCnt = 0;
+        int fieldCnt = 0;
+        int methodCnt = 0;
+
+        for (ClassNode classNode : nodeMap.values()) {
+            final Class clazz = new Class(classNode.name, "class" + clsCnt);
+            if ((classNode.access & Opcodes.ACC_INTERFACE) != 0) {
+
+            } else if ((classNode.access & Opcodes.ACC_ABSTRACT) != 0) {
+
+            } else {
+
+            }
+            clsCnt++;
         }
 
         dumpJar(nodeMap, "C:\\Users\\Parametric\\Desktop\\test.jar");

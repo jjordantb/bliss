@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="BlissScapeClient">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/BlissScapeClient.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
