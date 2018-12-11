@@ -1,11 +1,13 @@
 package io.paratek;
 
 import io.paratek.mapping.Class;
+import io.paratek.mapping.DualNode;
 import io.paratek.mapping.Field;
 import io.paratek.mapping.Method;
 import jdk.internal.org.objectweb.asm.ClassReader;
 import jdk.internal.org.objectweb.asm.ClassWriter;
 import jdk.internal.org.objectweb.asm.Opcodes;
+import jdk.internal.org.objectweb.asm.Type;
 import jdk.internal.org.objectweb.asm.tree.*;
 
 import java.io.*;
@@ -16,6 +18,8 @@ import java.util.Map;
 import java.util.jar.JarEntry;
 import java.util.jar.JarInputStream;
 import java.util.jar.JarOutputStream;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.zip.ZipEntry;
 
 public class Deob {
@@ -76,29 +80,29 @@ public class Deob {
         final HashMap<String, Class> mappedClasses = new HashMap<>();
 
         for (ClassNode classNode : nodeMap.values()) {
-            if (classNode.name.contains("/")) {
+            if (classNode.name.contains("/") || classNode.name.equals("Loader")) {
                 continue;
             }
             final Class clazz = new Class(classNode.name, classNode.name.equals("XEI") ? "client" : "class" + clsCnt++);
+            if (classNode.name.contains("Exception")) {
+                System.out.println(classNode.name + " -> " + clazz.getUnique());
+            }
             if ((classNode.access & Opcodes.ACC_INTERFACE) != 0) {
                 for (MethodNode methodNode : classNode.methods) {
-                    final Method method = new Method(classNode.name, methodNode.name, methodNode.desc, "method" + methodCnt++);
+                    if (methodNode.name.contains("init")) {
+                        continue;
+                    }
+                    final Method method = new Method(classNode.name, methodNode.name, methodNode.desc, methodNode.name);
                     method.setVirtual(true);
-                    clazz.getMethods().put(methodNode.name, method);
+                    clazz.getMethods().put(new DualNode(methodNode.name, methodNode.desc), method);
                 }
             } else if ((classNode.access & Opcodes.ACC_ABSTRACT) != 0) {
                 for (MethodNode methodNode : classNode.methods) {
-                    final Method method = new Method(classNode.name, methodNode.name, methodNode.desc, "method" + methodCnt++);
+                    final Method method = new Method(classNode.name, methodNode.name, methodNode.desc, methodNode.name);
                     if ((methodNode.access & Opcodes.ACC_ABSTRACT) != 0) {
                         method.setVirtual(true);
                     }
-                    clazz.getMethods().put(methodNode.name, method);
-                }
-            } else {
-                // Check for superClass and interface methods then link them up
-                for (MethodNode methodNode : classNode.methods) {
-                    final Method method = new Method(classNode.name, methodNode.name, methodNode.desc, "method" + methodCnt++);
-                    clazz.getMethods().put(methodNode.name, method);
+                    clazz.getMethods().put(new DualNode(methodNode.name, methodNode.desc), method);
                 }
             }
             for (FieldNode fieldNode : classNode.fields) {
@@ -109,7 +113,30 @@ public class Deob {
         }
 
         for (ClassNode classNode : nodeMap.values()) {
-            if (classNode.name.contains("/")) {
+            if (classNode.name.contains("/") || classNode.name.equals("Loader")) {
+                continue;
+            }
+            final Class currentClass = mappedClasses.get(classNode.name);
+            if (mappedClasses.containsKey(classNode.superName)) {
+                final Class superClass = mappedClasses.get(classNode.superName);
+                checkMethods(classNode, currentClass, superClass);
+            }
+            for (String itf : classNode.interfaces) {
+                final Class itfClass = mappedClasses.get(itf);
+                if (itfClass != null) {
+                    checkMethods(classNode, currentClass, itfClass);
+                }
+            }
+            for (MethodNode methodNode : classNode.methods) {
+                if (!currentClass.getMethods().containsKey(new DualNode(methodNode.name, methodNode.desc))) {
+                    final Method method = new Method(classNode.name, methodNode.name, methodNode.desc, methodNode.name);
+                    currentClass.getMethods().put(new DualNode(methodNode.name, methodNode.desc), method);
+                }
+            }
+        }
+
+        for (ClassNode classNode : nodeMap.values()) {
+            if (classNode.name.contains("/") || classNode.name.equals("Loader")) {
                 continue;
             }
             final Class child = mappedClasses.get(classNode.name);
@@ -123,13 +150,14 @@ public class Deob {
         }
 
         for (ClassNode classNode : nodeMap.values()) {
-            if (classNode.name.contains("/")) {
+            if (classNode.name.contains("/") || classNode.name.equals("Loader")) {
                 continue;
             }
             final Class mappedClass = mappedClasses.get(classNode.name);
             classNode.name = mappedClass.getUnique();
             if (mappedClasses.containsKey(classNode.superName)) {
-                classNode.superName = mappedClass.getUnique();
+                final Class mappedSuper = mappedClasses.get(classNode.superName);
+                classNode.superName = mappedSuper.getUnique();
             }
             List<String> interfaces = classNode.interfaces;
             for (int i = 0; i < interfaces.size(); i++) {
@@ -141,20 +169,170 @@ public class Deob {
             for (FieldNode fieldNode : classNode.fields) {
                 final Field field = mappedClass.getFields().get(fieldNode.name);
                 fieldNode.name = field.getUnique();
-                if (mappedClasses.containsKey(field.getDescName())) {
-                    fieldNode.desc = fieldNode.desc.replace(field.getDescName(), mappedClasses.get(field.getDescName()).getUnique());
+                if (mappedClasses.containsKey(field.getDescName()) && fieldNode.desc.contains(";")) {
+                    final Pattern pattern = Pattern.compile("L(.+?);");
+                    final Matcher matcher = pattern.matcher(fieldNode.desc);
+                    while (matcher.find()) {
+                        String val = matcher.group(1);
+                        if (mappedClasses.containsKey(val)) {
+                            fieldNode.desc = fieldNode.desc.replace("L" + val + ";", "L" + mappedClasses.get(val).getUnique() + ";");
+                        }
+                    }
                 }
             }
             for (MethodNode methodNode : classNode.methods) {
-                final Method method = mappedClass.getMethods().get(methodNode.name);
-                methodNode.name = method.getUnique();
-                // Need to fix desc
+                final Method method = mappedClass.getMethods().get(new DualNode(methodNode.name, methodNode.desc));
+                if (!methodNode.name.contains("init")) {
+//                    methodNode.name = method.getUnique();
+                }
+                final Pattern pattern = Pattern.compile("L(.+?);");
+                final Matcher matcher = pattern.matcher(methodNode.desc);
+                while (matcher.find()) {
+                    String val = matcher.group(1);
+                    if (mappedClasses.containsKey(val)) {
+                        methodNode.desc = methodNode.desc.replace("L" + val + ";", "L" + mappedClasses.get(val).getUnique() + ";");
+                    }
+                }
+                for (TryCatchBlockNode node : methodNode.tryCatchBlocks) {
+                    if (mappedClasses.containsKey(node.type)) {
+                        node.type = mappedClasses.get(node.type).getUnique();
+                    }
+                }
+                List<String> exceptions = methodNode.exceptions;
+                for (int i = 0; i < exceptions.size(); i++) {
+                    String except = exceptions.get(i);
+                    if (mappedClasses.containsKey(except)) {
+                        exceptions.set(i, mappedClasses.get(except).getUnique());
+                    }
+                }
             }
         }
 
+        for (ClassNode classNode : nodeMap.values()) {
+            for (MethodNode methodNode : classNode.methods) {
+                final ListIterator<AbstractInsnNode> nodeListIterator = methodNode.instructions.iterator();
+                while (nodeListIterator.hasNext()) {
+                    final AbstractInsnNode cur = nodeListIterator.next();
+                    if (cur instanceof FieldInsnNode) {
+                        // Description
+                        final Pattern pattern = Pattern.compile("L(.+?);");
+                        final Matcher matcher = pattern.matcher(((FieldInsnNode) cur).desc);
+                        while (matcher.find()) {
+                            String val = matcher.group(1);
+                            if (mappedClasses.containsKey(val)) {
+                                ((FieldInsnNode) cur).desc = ((FieldInsnNode) cur).desc.replace("L" + val + ";", "L" + mappedClasses.get(val).getUnique() + ";");
+                            }
+                        }
+                        // Name and Owner
+                        if (mappedClasses.containsKey(((FieldInsnNode) cur).owner)) {
+                            final Class mappedClass = mappedClasses.get(((FieldInsnNode) cur).owner);
+                            ((FieldInsnNode) cur).owner = mappedClass.getUnique();
+                            if (mappedClass.getFields().containsKey(((FieldInsnNode) cur).name)) {
+                                ((FieldInsnNode) cur).name = mappedClass.getFields().get(((FieldInsnNode) cur).name).getUnique();
+                            } else {
+                                // check super class
+                                Class superClass = mappedClass.getSuperClass();
+                                if (superClass.getFields().containsKey(((FieldInsnNode) cur).name)) {
+                                    ((FieldInsnNode) cur).name = superClass.getFields().get(((FieldInsnNode) cur).name).getUnique();
+                                } else {
+                                    superClass = superClass.getSuperClass();
+                                    if (superClass.getFields().containsKey(((FieldInsnNode) cur).name)) {
+                                        ((FieldInsnNode) cur).name = superClass.getFields().get(((FieldInsnNode) cur).name).getUnique();
+                                    } else {
+                                        superClass = superClass.getSuperClass();
+                                        if (superClass.getFields().containsKey(((FieldInsnNode) cur).name)) {
+                                            ((FieldInsnNode) cur).name = superClass.getFields().get(((FieldInsnNode) cur).name).getUnique();
+                                        } else {
+                                            superClass = superClass.getSuperClass();
+                                            if (superClass.getFields().containsKey(((FieldInsnNode) cur).name)) {
+                                                ((FieldInsnNode) cur).name = superClass.getFields().get(((FieldInsnNode) cur).name).getUnique();
+                                            } else {
+                                                superClass = superClass.getSuperClass();
+                                                if (superClass.getFields().containsKey(((FieldInsnNode) cur).name)) {
+                                                    ((FieldInsnNode) cur).name = superClass.getFields().get(((FieldInsnNode) cur).name).getUnique();
+                                                } else {
+                                                    superClass = superClass.getSuperClass();
+                                                    if (superClass.getFields().containsKey(((FieldInsnNode) cur).name)) {
+                                                        ((FieldInsnNode) cur).name = superClass.getFields().get(((FieldInsnNode) cur).name).getUnique();
+                                                    }
+                                                    System.out.println(((FieldInsnNode) cur).name);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    } else if (cur instanceof MethodInsnNode) {
+                        // Name and Owner
+                        if (mappedClasses.containsKey(((MethodInsnNode) cur).owner)) {
+                            final Class mappedClass = mappedClasses.get(((MethodInsnNode) cur).owner);
+                            ((MethodInsnNode) cur).owner = mappedClass.getUnique();
+                            if (mappedClass.getMethods().containsKey(new DualNode(((MethodInsnNode) cur).name, ((MethodInsnNode) cur).desc))) {
+                                if (!((MethodInsnNode) cur).name.contains("init")) {
+                                    ((MethodInsnNode) cur).name = mappedClass.getMethods().get(new DualNode(((MethodInsnNode) cur).name, ((MethodInsnNode) cur).desc)).getUnique();
+                                }
+                            }
+                        }
+                        // Description
+                        final Pattern pattern = Pattern.compile("L(.+?);");
+                        final Matcher matcher = pattern.matcher(((MethodInsnNode) cur).desc);
+                        while (matcher.find()) {
+                            String val = matcher.group(1);
+                            if (mappedClasses.containsKey(val)) {
+                                ((MethodInsnNode) cur).desc = ((MethodInsnNode) cur).desc.replace("L" + val + ";",
+                                        "L" + mappedClasses.get(val).getUnique() + ";");
+                            }
+                        }
+                    } else if (cur instanceof TypeInsnNode) {
+                        // Description
+                        if (((TypeInsnNode) cur).desc.contains("[") && !((TypeInsnNode) cur).desc.contains(";")) {
+                            continue;
+                        }
+                        String val = ((TypeInsnNode) cur).desc.replaceAll("\\[", "");
+                        if (!val.contains("/") && !val.contains("Loader")) {
+                            if (val.contains(";")) {
+                                val = val.replace("L", "").replace(";", "");
+                            }
+                            ((TypeInsnNode) cur).desc = ((TypeInsnNode) cur).desc.replace(val, mappedClasses.get(val).getUnique());
+                        }
+                    } else if (cur instanceof MultiANewArrayInsnNode) {
+                        // Description
+                        if (((MultiANewArrayInsnNode) cur).desc.contains("[") && !((MultiANewArrayInsnNode) cur).desc.contains(";")) {
+                            continue;
+                        }
+                        String val = ((MultiANewArrayInsnNode) cur).desc.replaceAll("\\[", "");
+                        if (!val.contains("/") && !val.contains("Loader")) {
+                            if (val.contains(";")) {
+                                val = val.replace("L", "").replace(";", "");
+                            }
+                            ((MultiANewArrayInsnNode) cur).desc = ((MultiANewArrayInsnNode) cur).desc.replace(val, mappedClasses.get(val).getUnique());
+                        }
+                    } else if (cur instanceof LdcInsnNode && ((LdcInsnNode) cur).cst instanceof Type) {
+                        String val = ((Type) ((LdcInsnNode) cur).cst).getClassName().replaceAll("\\[", "");
+                        if (!val.contains(".") && !val.contains("Loader")) {
+                            if (val.contains(";")) {
+                                val = val.replace("L", "").replace(";", "");
+                            }
+                            if (mappedClasses.containsKey(val)) {
+                                ((LdcInsnNode) cur).cst = Type.getType("L" + mappedClasses.get(val).getUnique() + ";");
+                            }
+                        }
+                    }
+                }
+            }
+        }
         // Go through methods, replace FieldInsnNodes, MethodInsnNodes, TypeInsnNodes
 
         dumpJar(nodeMap, "/home/jordan/Desktop/deobed.jar");
+    }
+
+    private static void checkMethods(ClassNode classNode, Class currentClass, Class itfClass) {
+        for (MethodNode methodNode : classNode.methods) {
+            if (itfClass.getMethods().containsKey(new DualNode(methodNode.name, methodNode.desc))) {
+                currentClass.getMethods().put(new DualNode(methodNode.name, methodNode.desc), itfClass.getMethods().get(new DualNode(methodNode.name, methodNode.desc)));
+            }
+        }
     }
 
     private static void load(final InputStream inputStream, final HashMap<String, ClassNode> nodeMap) throws IOException {

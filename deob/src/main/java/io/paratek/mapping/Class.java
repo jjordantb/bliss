@@ -11,7 +11,7 @@ public class Class {
     private final String name, unique;
 
     private final HashMap<String, Field> fields = new HashMap<>();
-    private final HashMap<String, Method> methods = new HashMap<>();
+    private final HashMap<DualNode, Method> methods = new HashMap<>();
     private final HashMap<String, Class> interfaces = new HashMap<>();
 
     public Class(String name, String unique) {
@@ -35,7 +35,7 @@ public class Class {
         return fields;
     }
 
-    public HashMap<String, Method> getMethods() {
+    public HashMap<DualNode, Method> getMethods() {
         return methods;
     }
 
