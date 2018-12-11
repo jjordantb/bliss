@@ -11,7 +11,6 @@ public class I {
     static {
         try {
             InputStream var0 = (new I()).getClass().getResourceAsStream("/I.gif");
-            System.out.println(var0);
             if (var0 != null) {
                 int var1 = var0.read() << 16 | var0.read() << 8 | var0.read();
                 getResourceAsStream = new byte[var1];

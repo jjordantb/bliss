@@ -11,6 +11,12 @@ public class Field implements Nameable {
         this.unique = unique;
     }
 
+    public String getDescName() {
+        return this.desc.replaceAll("\\[", "")
+                .replaceAll("L", "")
+                .replaceAll(";", "");
+    }
+
     @Override
     public String getOwner() {
         return owner;
@@ -31,4 +37,13 @@ public class Field implements Nameable {
         return unique;
     }
 
+    @Override
+    public String toString() {
+        return "Field{" +
+                "owner='" + owner + '\'' +
+                ", name='" + name + '\'' +
+                ", desc='" + desc + '\'' +
+                ", unique='" + unique + '\'' +
+                '}';
+    }
 }

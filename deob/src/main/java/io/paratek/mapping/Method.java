@@ -40,4 +40,14 @@ public class Method implements Nameable {
         this.virtual = virtual;
     }
 
+    @Override
+    public String toString() {
+        return "Method{" +
+                "virtual=" + virtual +
+                ", owner='" + owner + '\'' +
+                ", name='" + name + '\'' +
+                ", desc='" + desc + '\'' +
+                ", unique='" + unique + '\'' +
+                '}';
+    }
 }

@@ -1,6 +1,8 @@
 package io.paratek;
 
 import io.paratek.mapping.Class;
+import io.paratek.mapping.Field;
+import io.paratek.mapping.Method;
 import jdk.internal.org.objectweb.asm.ClassReader;
 import jdk.internal.org.objectweb.asm.ClassWriter;
 import jdk.internal.org.objectweb.asm.Opcodes;
@@ -8,6 +10,7 @@ import jdk.internal.org.objectweb.asm.tree.*;
 
 import java.io.*;
 import java.util.HashMap;
+import java.util.List;
 import java.util.ListIterator;
 import java.util.Map;
 import java.util.jar.JarEntry;
@@ -19,8 +22,8 @@ public class Deob {
 
     public static void main(String[] args) throws IOException {
 
-        final FileInputStream fileInputStream = new FileInputStream(new File("C:\\Users\\Parametric\\Desktop\\BlissScapeClient.jar"));
-        final HashMap<String, ClassNode> nodeMap = new HashMap<String, ClassNode>();
+        final FileInputStream fileInputStream = new FileInputStream(new File("/home/jordan/Desktop/BlissScapeClient.jar"));
+        final HashMap<String, ClassNode> nodeMap = new HashMap<>();
         load(fileInputStream, nodeMap);
 
         for (ClassNode classNode : nodeMap.values()) {
@@ -56,7 +59,6 @@ public class Deob {
                             cur = listIterator.previous().getPrevious(); // get the sipush
                             op = 5;
                         }
-                        System.out.println(op);
                         String val = I.I(op);
                         listIterator.previous();
                         listIterator.remove();
@@ -71,19 +73,88 @@ public class Deob {
         int fieldCnt = 0;
         int methodCnt = 0;
 
+        final HashMap<String, Class> mappedClasses = new HashMap<>();
+
         for (ClassNode classNode : nodeMap.values()) {
-            final Class clazz = new Class(classNode.name, "class" + clsCnt);
-            if ((classNode.access & Opcodes.ACC_INTERFACE) != 0) {
-
-            } else if ((classNode.access & Opcodes.ACC_ABSTRACT) != 0) {
-
-            } else {
-
+            if (classNode.name.contains("/")) {
+                continue;
             }
-            clsCnt++;
+            final Class clazz = new Class(classNode.name, classNode.name.equals("XEI") ? "client" : "class" + clsCnt++);
+            if ((classNode.access & Opcodes.ACC_INTERFACE) != 0) {
+                for (MethodNode methodNode : classNode.methods) {
+                    final Method method = new Method(classNode.name, methodNode.name, methodNode.desc, "method" + methodCnt++);
+                    method.setVirtual(true);
+                    clazz.getMethods().put(methodNode.name, method);
+                }
+            } else if ((classNode.access & Opcodes.ACC_ABSTRACT) != 0) {
+                for (MethodNode methodNode : classNode.methods) {
+                    final Method method = new Method(classNode.name, methodNode.name, methodNode.desc, "method" + methodCnt++);
+                    if ((methodNode.access & Opcodes.ACC_ABSTRACT) != 0) {
+                        method.setVirtual(true);
+                    }
+                    clazz.getMethods().put(methodNode.name, method);
+                }
+            } else {
+                // Check for superClass and interface methods then link them up
+                for (MethodNode methodNode : classNode.methods) {
+                    final Method method = new Method(classNode.name, methodNode.name, methodNode.desc, "method" + methodCnt++);
+                    clazz.getMethods().put(methodNode.name, method);
+                }
+            }
+            for (FieldNode fieldNode : classNode.fields) {
+                final Field field = new Field(classNode.name, fieldNode.name, fieldNode.desc, "field" + fieldCnt++);
+                clazz.getFields().put(fieldNode.name, field);
+            }
+            mappedClasses.put(classNode.name, clazz);
         }
 
-        dumpJar(nodeMap, "C:\\Users\\Parametric\\Desktop\\test.jar");
+        for (ClassNode classNode : nodeMap.values()) {
+            if (classNode.name.contains("/")) {
+                continue;
+            }
+            final Class child = mappedClasses.get(classNode.name);
+            for (String itf : classNode.interfaces) {
+                final Class mappedItf = mappedClasses.get(itf);
+                child.getInterfaces().put(itf, mappedItf);
+            }
+            if (mappedClasses.containsKey(classNode.superName)) {
+                child.setSuperClass(mappedClasses.get(classNode.superName));
+            }
+        }
+
+        for (ClassNode classNode : nodeMap.values()) {
+            if (classNode.name.contains("/")) {
+                continue;
+            }
+            final Class mappedClass = mappedClasses.get(classNode.name);
+            classNode.name = mappedClass.getUnique();
+            if (mappedClasses.containsKey(classNode.superName)) {
+                classNode.superName = mappedClass.getUnique();
+            }
+            List<String> interfaces = classNode.interfaces;
+            for (int i = 0; i < interfaces.size(); i++) {
+                String itf = interfaces.get(i);
+                if (mappedClasses.containsKey(itf)) {
+                    classNode.interfaces.set(i, mappedClasses.get(itf).getUnique());
+                }
+            }
+            for (FieldNode fieldNode : classNode.fields) {
+                final Field field = mappedClass.getFields().get(fieldNode.name);
+                fieldNode.name = field.getUnique();
+                if (mappedClasses.containsKey(field.getDescName())) {
+                    fieldNode.desc = fieldNode.desc.replace(field.getDescName(), mappedClasses.get(field.getDescName()).getUnique());
+                }
+            }
+            for (MethodNode methodNode : classNode.methods) {
+                final Method method = mappedClass.getMethods().get(methodNode.name);
+                methodNode.name = method.getUnique();
+                // Need to fix desc
+            }
+        }
+
+        // Go through methods, replace FieldInsnNodes, MethodInsnNodes, TypeInsnNodes
+
+        dumpJar(nodeMap, "/home/jordan/Desktop/deobed.jar");
     }
 
     private static void load(final InputStream inputStream, final HashMap<String, ClassNode> nodeMap) throws IOException {
