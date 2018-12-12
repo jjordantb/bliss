@@ -129,7 +129,7 @@ public class class115 {
       try {
          if (var0.field4056 != null || var0.field4049 != null) {
             boolean var2 = true;
-            class389 var3 = Client.field2697.method5270(681479919);
+            class389 var3 = class730.field2697.method5270(681479919);
 
             for(int var4 = 0; var4 < var0.field4056.length; ++var4) {
                int var5 = -1;
@@ -159,7 +159,7 @@ public class class115 {
                      class32 var18;
                      if ((var5 & '耀') != 0) {
                         var9 = var5 & 32767;
-                        class946 var16 = Client.field2786[var9];
+                        class946 var16 = class730.field2786[var9];
                         if (var16 == null) {
                            var0.method2545(var4, -1, (byte)16);
                            continue;
@@ -169,7 +169,7 @@ public class class115 {
                         var12 = (int)var8.field5296 - (int)var18.field5296;
                         var13 = (int)var8.field5299 - (int)var18.field5299;
                      } else {
-                        class437 var15 = (class437) Client.field2677.method2942((long)var5);
+                        class437 var15 = (class437)class730.field2677.method2942((long)var5);
                         if (var15 == null) {
                            var0.method2545(var4, -1, (byte)65);
                            continue;
@@ -259,8 +259,8 @@ public class class115 {
          class615.field8903.method5391(class615.field8903.field9132, 0, -255450456);
          class615.field8903.method5391(class615.field8903.field9142, 4, -1503000193);
          class362.method1508(1109876610);
-         Client.field2697.method5282((byte)54).method5673(286817156);
-         Client.field2657 = true;
+         class730.field2697.method5282((byte)54).method5673(286817156);
+         class730.field2657 = true;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "es.d(" + ')');
       }

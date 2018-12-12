@@ -45,20 +45,20 @@ public class class247 {
       try {
          int var1 = class615.field8903.field9131.method5267(-2013953489);
          if (var1 == 0) {
-            Client.field2697.method5285((byte[][][])null, 1496940593);
+            class730.field2697.method5285((byte[][][])null, 1496940593);
             class558.method481(0, (byte)0);
          } else if (var1 == 1) {
             class296.method6510((byte)0, 1452497701);
             class558.method481(512, (byte)0);
-            if (Client.field2697.method5317(-1611682495) != null) {
+            if (class730.field2697.method5317(-1611682495) != null) {
                class543.method2376(-1148794921);
             }
          } else {
-            class296.method6510((byte)(Client.field2758 * -1953789277 - 4 & 255), 1394791892);
+            class296.method6510((byte)(class730.field2758 * -1953789277 - 4 & 255), 1394791892);
             class558.method481(2, (byte)0);
          }
 
-         Client.field2773 = class899.field9552 * 832032973;
+         class730.field2773 = class899.field9552 * 832032973;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "to.it(" + ')');
       }

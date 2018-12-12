@@ -69,7 +69,7 @@ public class class47 {
             int var11 = var1 + var7 * class596.field2146 * 331474003 / class740.field7814;
             int var12 = var8 + var2 - 1786832569 * class510.field4165 * var8 / class740.field7815 - var10;
             int var13 = -1996554240;
-            if (class469.field7320 == Client.field2926) {
+            if (class469.field7320 == class730.field2926) {
                var13 = -1996488705;
             }
 

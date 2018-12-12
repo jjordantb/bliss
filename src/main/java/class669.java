@@ -62,8 +62,8 @@ public class class669 {
    void method4117(class545 var1, int var2) {
       try {
          this.field7395 = new LinkedList();
-         class153 var3 = Client.field2697.method5296(1102233653);
-         class389 var4 = Client.field2697.method5270(681479919);
+         class153 var3 = class730.field2697.method5296(1102233653);
+         class389 var4 = class730.field2697.method5270(681479919);
          class389 var5 = new class389(1855729883 * class899.field9552, this.field7391[0], this.field7393[0]);
 
          for(int var6 = 1; var6 < this.field7390 * -755722761; ++var6) {

@@ -89,7 +89,7 @@ public class class794 implements Runnable {
          }
 
          this.field540.method5315((byte)119);
-         Client.field2697.method5315((byte)25);
+         class730.field2697.method5315((byte)25);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "kj.d(" + ')');
       }
@@ -119,11 +119,11 @@ public class class794 implements Runnable {
       try {
          String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
          String var3 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         class701 var4 = class637.method5936(class643.field10005, Client.field2674.field7765, (byte)47);
+         class701 var4 = class637.method5936(class643.field10005, class730.field2674.field7765, (byte)47);
          var4.field3364.method6362(class305.method372(var2, -250227687) + class305.method372(var3, -433489347), 16711935);
          var4.field3364.method6366(var2, 2110683902);
          var4.field3364.method6366(var3, 2142092723);
-         Client.field2674.method4380(var4, (byte)-123);
+         class730.field2674.method4380(var4, (byte)-123);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "kj.vq(" + ')');
       }
@@ -181,16 +181,16 @@ public class class794 implements Runnable {
                int var14;
                for(var11 = 0; var11 < var10.length / 2; ++var11) {
                   if (-863531439 * class563.field1083 == 2) {
-                     var12 = (int) Client.field2931 & 16383;
+                     var12 = (int)class730.field2931 & 16383;
                   } else {
-                     var12 = Client.field2782 * 1227356013 + (int) Client.field2931 & 16383;
+                     var12 = class730.field2782 * 1227356013 + (int)class730.field2931 & 16383;
                   }
 
                   var13 = class703.field3413[var12];
                   var14 = class703.field3404[var12];
                   if (class563.field1083 * -863531439 != 2) {
-                     var13 = 256 * var13 / (Client.field2730 * 356727603 + 256);
-                     var14 = var14 * 256 / (256 + 356727603 * Client.field2730);
+                     var13 = 256 * var13 / (class730.field2730 * 356727603 + 256);
+                     var14 = var14 * 256 / (256 + 356727603 * class730.field2730);
                   }
 
                   var10[var11 * 2] = ((var6 + 4 * var9.field3518[var11 * 2 + 1]) * var13 + (var5 + 4 * var9.field3518[var11 * 2]) * var14 >> 14) + var2.field881 * -2093041337 / 2 + var3;

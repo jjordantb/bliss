@@ -67,9 +67,9 @@ public class class474 {
    static final void method4670(class744 var0, int var1) {
       try {
          class671.method4234(-174138334);
-         Client.field2697.method5309(1331773815);
+         class730.field2697.method5309(1331773815);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "kq.anq(" + ')');
       }

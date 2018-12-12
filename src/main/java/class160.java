@@ -246,8 +246,8 @@ public class class160 {
 
    static final void method3564(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2905;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2913;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2905;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2913;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "qe.akz(" + ')');
       }
@@ -344,7 +344,7 @@ public class class160 {
 
    static class746 method3567(int var0, int var1, int var2, byte var3) {
       try {
-         class190 var4 = Client.field2697.method5317(-1611682495).field3861[var0][var1][var2];
+         class190 var4 = class730.field2697.method5317(-1611682495).field3861[var0][var1][var2];
          if (var4 == null) {
             return null;
          } else {

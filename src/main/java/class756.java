@@ -96,9 +96,9 @@ public class class756 {
             var8 = var2 + var4 / 2;
             var9 = var5 / 2 + var3 - 18 - var7;
             var0.method4984(var2, var3, var4, var5, -16777216, 0);
-            var0.method4838(var8 - 152, var9, 304, 34, Client.field2682[745003679 * Client.field2953].getRGB(), 0);
-            var0.method4984(var8 - 150, var9 + 2, class740.field3198 * 426783931, 30, Client.field2670[745003679 * Client.field2953].getRGB(), 0);
-            class501.field3182.method1681(class814.field4812.method2927(class321.field1066, -875414210), var8, var9 + var7, Client.field2672[Client.field2953 * 745003679].getRGB(), -1, -863370132);
+            var0.method4838(var8 - 152, var9, 304, 34, class730.field2682[745003679 * class730.field2953].getRGB(), 0);
+            var0.method4984(var8 - 150, var9 + 2, class740.field3198 * 426783931, 30, class730.field2670[745003679 * class730.field2953].getRGB(), 0);
+            class501.field3182.method1681(class814.field4812.method2927(class321.field1066, -875414210), var8, var9 + var7, class730.field2672[class730.field2953 * 745003679].getRGB(), -1, -863370132);
          } else {
             int var18 = 1196508279 * class896.field9358 - (int)((float)var4 / class740.field7808);
             var8 = 1882038855 * class747.field4148 + (int)((float)var5 / class740.field7808);
@@ -120,7 +120,7 @@ public class class756 {
                }
             }
 
-            if (Client.field2648) {
+            if (class730.field2648) {
                int var12 = var2 + var4 - 5;
                int var13 = var5 + var3 - 8;
                class958.field3479.method1662("Fps:" + 914379507 * class69.field1807, var12, var13, 16776960, -1, (byte)-35);

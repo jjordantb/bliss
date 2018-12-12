@@ -5,48 +5,48 @@ public final class class603 {
 
    static final void method5083(int var0) {
       try {
-         class513 var1 = Client.field2692.field7768;
+         class513 var1 = class730.field2692.field7768;
          var1.method2650(1157167964);
          int var2 = var1.method2647(8);
          int var3;
-         if (var2 < Client.field2684 * -1230451913) {
-            for(var3 = var2; var3 < -1230451913 * Client.field2684; ++var3) {
-               Client.field2690[(Client.field2689 += 107511579) * -1508392173 - 1] = Client.field2680[var3];
+         if (var2 < class730.field2684 * -1230451913) {
+            for(var3 = var2; var3 < -1230451913 * class730.field2684; ++var3) {
+               class730.field2690[(class730.field2689 += 107511579) * -1508392173 - 1] = class730.field2680[var3];
             }
          }
 
-         if (var2 > Client.field2684 * -1230451913) {
+         if (var2 > class730.field2684 * -1230451913) {
             throw new RuntimeException();
          } else {
-            Client.field2684 = 0;
+            class730.field2684 = 0;
 
             for(var3 = 0; var3 < var2; ++var3) {
-               int var4 = Client.field2680[var3];
-               class60 var5 = (class60)((class437) Client.field2677.method2942((long)var4)).field7515;
+               int var4 = class730.field2680[var3];
+               class60 var5 = (class60)((class437)class730.field2677.method2942((long)var4)).field7515;
                int var6 = var1.method2647(1);
                if (var6 == 0) {
-                  Client.field2680[(Client.field2684 += -409937273) * -1230451913 - 1] = var4;
-                  var5.field4039 = -3704423 * Client.field2688;
+                  class730.field2680[(class730.field2684 += -409937273) * -1230451913 - 1] = var4;
+                  var5.field4039 = -3704423 * class730.field2688;
                } else {
                   int var7 = var1.method2647(2);
                   if (var7 == 0) {
-                     Client.field2680[(Client.field2684 += -409937273) * -1230451913 - 1] = var4;
-                     var5.field4039 = -3704423 * Client.field2688;
-                     Client.field2687[(Client.field2789 += -386992021) * -976358333 - 1] = var4;
+                     class730.field2680[(class730.field2684 += -409937273) * -1230451913 - 1] = var4;
+                     var5.field4039 = -3704423 * class730.field2688;
+                     class730.field2687[(class730.field2789 += -386992021) * -976358333 - 1] = var4;
                   } else {
                      class77 var8;
                      if (1 == var7) {
-                        Client.field2680[(Client.field2684 += -409937273) * -1230451913 - 1] = var4;
-                        var5.field4039 = Client.field2688 * -3704423;
+                        class730.field2680[(class730.field2684 += -409937273) * -1230451913 - 1] = var4;
+                        var5.field4039 = class730.field2688 * -3704423;
                         var8 = (class77)class367.method1565(class669.method4119(-2130206915), var1.method2647(3), (byte)2);
                         var5.method1239(var8, class647.field9228.field9230, (short)32767);
                         int var9 = var1.method2647(1);
                         if (1 == var9) {
-                           Client.field2687[(Client.field2789 += -386992021) * -976358333 - 1] = var4;
+                           class730.field2687[(class730.field2789 += -386992021) * -976358333 - 1] = var4;
                         }
                      } else if (var7 == 2) {
-                        Client.field2680[(Client.field2684 += -409937273) * -1230451913 - 1] = var4;
-                        var5.field4039 = -3704423 * Client.field2688;
+                        class730.field2680[(class730.field2684 += -409937273) * -1230451913 - 1] = var4;
+                        var5.field4039 = -3704423 * class730.field2688;
                         if (var1.method2647(1) == 1) {
                            var8 = (class77)class367.method1565(class669.method4119(-2113999549), var1.method2647(3), (byte)2);
                            var5.method1239(var8, class647.field9229.field9230, (short)32767);
@@ -59,10 +59,10 @@ public final class class603 {
 
                         int var11 = var1.method2647(1);
                         if (1 == var11) {
-                           Client.field2687[(Client.field2789 += -386992021) * -976358333 - 1] = var4;
+                           class730.field2687[(class730.field2789 += -386992021) * -976358333 - 1] = var4;
                         }
                      } else if (var7 == 3) {
-                        Client.field2690[(Client.field2689 += 107511579) * -1508392173 - 1] = var4;
+                        class730.field2690[(class730.field2689 += 107511579) * -1508392173 - 1] = var4;
                      }
                   }
                }

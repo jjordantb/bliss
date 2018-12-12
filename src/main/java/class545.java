@@ -1730,9 +1730,9 @@ public class class545 {
          int var6 = var0.field3161[681479919 * var0.field3156 + 4];
          int var7 = var0.field3161[var0.field3156 * 681479919 + 5];
          int var8 = var0.field3161[681479919 * var0.field3156 + 6];
-         if (var2 >= 0 && var2 < 2 && Client.field2748[var2] != null && var3 >= 0 && var3 < Client.field2748[var2].length) {
-            Client.field2748[var2][var3] = new int[]{(var4 >> 14 & 16383) << 9, var5 << 2, (var4 & 16383) << 9, var8};
-            Client.field2748[var2][1 + var3] = new int[]{(var6 >> 14 & 16383) << 9, var7 << 2, (var6 & 16383) << 9};
+         if (var2 >= 0 && var2 < 2 && class730.field2748[var2] != null && var3 >= 0 && var3 < class730.field2748[var2].length) {
+            class730.field2748[var2][var3] = new int[]{(var4 >> 14 & 16383) << 9, var5 << 2, (var4 & 16383) << 9, var8};
+            class730.field2748[var2][1 + var3] = new int[]{(var6 >> 14 & 16383) << 9, var7 << 2, (var6 & 16383) << 9};
          }
 
       } catch (RuntimeException var9) {
@@ -1752,7 +1752,7 @@ public class class545 {
 
    static class564 method2457(class564 var0, byte var1) {
       try {
-         class564 var2 = Client.method1768(var0);
+         class564 var2 = class730.method1768(var0);
          if (var2 == null) {
             var2 = var0.field958;
          }

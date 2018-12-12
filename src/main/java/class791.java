@@ -233,35 +233,35 @@ public class class791 implements class940 {
 
    public static void method398(byte var0) {
       try {
-         Client var1 = class5.field4944;
+         class730 var1 = class5.field4944;
          synchronized(class5.field4944) {
             if (class296.field10468 == null) {
                Container var2 = class348.method193((byte)84);
                if (var2 != null) {
                   class919.field10433 = var2.getSize().width * 1325868603;
-                  Client.field1812 = var2.getSize().height * -2115832951;
+                  class730.field1812 = var2.getSize().height * -2115832951;
                   Insets var3;
                   if (class701.field3371 == var2) {
                      var3 = class701.field3371.getInsets();
                      class919.field10433 -= 1325868603 * (var3.left + var3.right);
-                     Client.field1812 -= (var3.bottom + var3.top) * -2115832951;
+                     class730.field1812 -= (var3.bottom + var3.top) * -2115832951;
                   }
 
                   if (-639974669 * class919.field10433 <= 0) {
                      class919.field10433 = 1325868603;
                   }
 
-                  if (1282634425 * Client.field1812 <= 0) {
-                     Client.field1812 = -2115832951;
+                  if (1282634425 * class730.field1812 <= 0) {
+                     class730.field1812 = -2115832951;
                   }
 
                   if (class660.method5750((byte)-55) != 1) {
                      class702.method1970((byte)3);
                   } else {
-                     class759.field4331 = Client.field2775 * -1494558011;
-                     Client.field1813 = (-639974669 * class919.field10433 - 775068819 * Client.field2775) / 2 * -753018213;
-                     class97.field614 = -909258791 * Client.field2784;
-                     Client.field1814 = 0;
+                     class759.field4331 = class730.field2775 * -1494558011;
+                     class730.field1813 = (-639974669 * class919.field10433 - 775068819 * class730.field2775) / 2 * -753018213;
+                     class97.field614 = -909258791 * class730.field2784;
+                     class730.field1814 = 0;
                   }
 
                   if (class721.field3634 != class916.field10415 && -2110394505 * class759.field4331 < 1024) {
@@ -275,13 +275,13 @@ public class class791 implements class940 {
 
                   if (var2 == class701.field3371) {
                      var3 = class701.field3371.getInsets();
-                     class837.field9161.setLocation(var3.left + Client.field1813 * 1898544019, Client.field1814 * 540368727 + var3.top);
+                     class837.field9161.setLocation(var3.left + class730.field1813 * 1898544019, class730.field1814 * 540368727 + var3.top);
                   } else {
-                     class837.field9161.setLocation(Client.field1813 * 1898544019, Client.field1814 * 540368727);
+                     class837.field9161.setLocation(class730.field1813 * 1898544019, class730.field1814 * 540368727);
                   }
 
                   class112.method1443(-167626743);
-                  if (Client.field2822 * -257444687 != -1) {
+                  if (class730.field2822 * -257444687 != -1) {
                      class161.method3551(true, (byte)8);
                   }
 

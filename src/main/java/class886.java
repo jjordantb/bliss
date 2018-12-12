@@ -15,7 +15,7 @@ public class class886 {
    static final void method6165(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         class256 var3 = (class256) Client.field2823.method2942((long)var2);
+         class256 var3 = (class256)class730.field2823.method2942((long)var2);
          if (var3 != null) {
             var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1;
          } else {

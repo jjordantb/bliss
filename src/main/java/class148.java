@@ -170,7 +170,7 @@ public class class148 extends class347 {
                var0.field4058 = var0.field4041.method2775((byte)-119);
             }
          } else if (1433412323 * var0.field4054 != -1 && (var7 >= 10240 || var7 <= 2048)) {
-            int var8 = Client.field2900[var2] - var0.field4048.field9268 * 259411823 & 16383;
+            int var8 = class730.field2900[var2] - var0.field4048.field9268 * 259411823 & 16383;
             if (var1 == class647.field9229.field9230 && -1 != var5.field3979 * 230243963) {
                if (var8 > 2048 && var8 <= 6144 && -783166629 * var5.field3982 != -1) {
                   var6.method2797(-783166629 * var5.field3982, false, true, (byte)-2);

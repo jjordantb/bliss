@@ -72,30 +72,30 @@ public class class278 {
 
    static final void method6628(byte var0) {
       try {
-         for(class356 var1 = (class356) Client.field2762.method5210((byte)3); var1 != null; var1 = (class356) Client.field2762.method5210((byte)3)) {
+         for(class356 var1 = (class356)class730.field2762.method5210((byte)3); var1 != null; var1 = (class356)class730.field2762.method5210((byte)3)) {
             class76.method1112(var1, -1638035740);
          }
 
          byte var5 = 0;
          byte var2 = 3;
          int var3;
-         if (Client.field2705 * 1596783995 == 0) {
+         if (class730.field2705 * 1596783995 == 0) {
             for(var3 = var5; var3 <= var2; ++var3) {
-               Client.method1757(var3);
+               class730.method1757(var3);
             }
 
-            Client.method1759();
+            class730.method1759();
          } else {
-            Client.method1755();
+            class730.method1755();
 
             for(var3 = var5; var3 <= var2; ++var3) {
-               Client.method1767();
-               Client.method1756(var3);
-               Client.method1757(var3);
+               class730.method1767();
+               class730.method1756(var3);
+               class730.method1757(var3);
             }
 
-            Client.method1758();
-            Client.method1759();
+            class730.method1758();
+            class730.method1759();
          }
 
       } catch (RuntimeException var4) {

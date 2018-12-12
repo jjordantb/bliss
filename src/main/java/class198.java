@@ -36,16 +36,16 @@ public class class198 {
          var0 <<= 3;
          var1 <<= 3;
          var2 <<= 3;
-         Client.field2738 = (float)var0;
-         Client.field2931 = (float)var1;
+         class730.field2738 = (float)var0;
+         class730.field2931 = (float)var1;
          if (class563.field1083 * -863531439 == 3) {
-            Client.field2737 = -648269561 * var0;
+            class730.field2737 = -648269561 * var0;
             class232.field8266 = -1587695039 * var1;
             class791.field446 = -851711283 * var2;
          }
 
          class819.method2938((byte)63);
-         Client.field2744 = true;
+         class730.field2744 = true;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "oi.hh(" + ')');
       }

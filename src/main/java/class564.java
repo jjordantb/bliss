@@ -1097,7 +1097,7 @@ public class class564 {
 
    static void method840(class744 var0, int var1) {
       try {
-         var0.field3161[var0.field3156 * 681479919 - 1] = class735.field3009.method4224(var0.field3161[var0.field3156 * 681479919 - 1], 245040087).method5326(class827.field9037, Client.field2809, (byte)76) ? 1 : 0;
+         var0.field3161[var0.field3156 * 681479919 - 1] = class735.field3009.method4224(var0.field3161[var0.field3156 * 681479919 - 1], 245040087).method5326(class827.field9037, class730.field2809, (byte)76) ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "eg.m(" + ')');
       }
@@ -1117,9 +1117,9 @@ public class class564 {
    static final void method842(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         class701 var3 = class637.method5936(class643.field9994, Client.field2692.field7765, (byte)37);
+         class701 var3 = class637.method5936(class643.field9994, class730.field2692.field7765, (byte)37);
          var3.field3364.method6362(var2, 16711935);
-         Client.field2692.method4380(var3, (byte)-67);
+         class730.field2692.method4380(var3, (byte)-67);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "eg.su(" + ')');
       }

@@ -10,9 +10,9 @@ public class class693 {
    static void method3877(int var0) {
       try {
          if (class800.field4577 != null && !class800.field4577.method2920((byte)47) && class800.field4577.method2921((byte)1)) {
-            class701 var1 = class637.method5936(class643.field9941, Client.field2692.field7765, (byte)88);
+            class701 var1 = class637.method5936(class643.field9941, class730.field2692.field7765, (byte)88);
             var1.field3364.method6364(class800.field4577.field4651 * 1941368041, 938750212);
-            Client.field2692.method4380(var1, (byte)-4);
+            class730.field2692.method4380(var1, (byte)-4);
          }
 
       } catch (RuntimeException var2) {

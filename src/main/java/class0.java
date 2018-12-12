@@ -304,7 +304,7 @@ public class class0 extends class476 implements class265 {
          if (this.field4963 || var4.field2273) {
             this.field4953 = this.field4953.method6017((byte)0, var18, false);
             if (var4.field2273) {
-               class923 var20 = Client.field2697.method5274(-1997873817);
+               class923 var20 = class730.field2697.method5274(-1997873817);
                this.field4953.method5987(1599271859 * var20.field10290, var20.field10291 * 1630923113, var20.field10292 * -1560648831, var20.field10293 * -57569897);
             }
          }
@@ -579,7 +579,7 @@ public class class0 extends class476 implements class265 {
 
    static void method2992(class848 var0, int var1) {
       try {
-         if (class923.field10295.field3639 != -1694437021 * class95.field596 && Client.field2697.method5317(-1611682495) != null) {
+         if (class923.field10295.field3639 != -1694437021 * class95.field596 && class730.field2697.method5317(-1611682495) != null) {
             class27.method3468((byte)1);
             if (class374.method1007(var0, class923.field10295.field3639, 1177065502)) {
                class95.field596 = class923.field10295.field3639 * -955770805;

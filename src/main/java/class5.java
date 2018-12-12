@@ -11,7 +11,7 @@ public class class5 {
    float field4941;
    float field4942;
    class544 field4943;
-   public static Client field4944;
+   public static class730 field4944;
    static class922 field4945;
 
    public class5(class907 var1, class418 var2) {
@@ -229,9 +229,9 @@ public class class5 {
 
    static final void method2958(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2941;
-         if (Client.field2941 != -1) {
-            Client.field2941 = -6;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2941;
+         if (class730.field2941 != -1) {
+            class730.field2941 = -6;
          }
 
       } catch (RuntimeException var3) {

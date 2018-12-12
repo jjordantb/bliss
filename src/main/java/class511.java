@@ -20,7 +20,7 @@ public class class511 extends class765 {
 
    static boolean method2616(class265 var0, byte var1) {
       try {
-         class50 var2 = Client.field2697.method5283(1998541007).method4713(var0.method4551((byte)21));
+         class50 var2 = class730.field2697.method5283(1998541007).method4713(var0.method4551((byte)21));
          if (-1 == -1204256389 * var2.field2232) {
             return true;
          } else {

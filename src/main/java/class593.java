@@ -104,8 +104,8 @@ public class class593 {
    static final void method1232(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         if (2 == Client.field2924 * 1131012101 && var2 < -1054937867 * Client.field2923) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2686[var2];
+         if (2 == class730.field2924 * 1131012101 && var2 < -1054937867 * class730.field2923) {
+            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2686[var2];
          } else {
             var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
          }
@@ -159,7 +159,7 @@ public class class593 {
          class851.field8731.method2528((byte)89);
          class980.field3196.method4150(1757095308);
          class662.field9736.method5718(682089220);
-         Client.field2697.method5283(134727545).method4712(1599239758);
+         class730.field2697.method5283(134727545).method4712(1599239758);
          class258.field7913.method17(343664164);
          class85.field1121.method1578(75457779);
          class936.field10313.method2255(-927634718);
@@ -184,9 +184,9 @@ public class class593 {
          class785.field3827.method1858(-1647804880);
          class112.method1445(-962878443);
          class354.method1454((byte)-41);
-         Client.field2761.method2979();
-         Client.field2880.method2979();
-         Client.field2678.method2979();
+         class730.field2761.method2979();
+         class730.field2880.method2979();
+         class730.field2678.method2979();
          class602.field8667.method2979();
          class384.field1426.method2979();
       } catch (RuntimeException var2) {
@@ -197,7 +197,7 @@ public class class593 {
    static final void method1236(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         int var3 = Client.field2902[var2].method6657(-574288948);
+         int var3 = class730.field2902[var2].method6657(-574288948);
          var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1 == var3 ? 1 : 0;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "pn.yz(" + ')');

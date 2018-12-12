@@ -1277,7 +1277,7 @@ public class class849 implements class478 {
             class167.method3696(var1, (byte)1);
             break;
          case 326:
-            Client.method1771(var1, -295386469);
+            class730.method1771(var1, -295386469);
             break;
          case 327:
             class459.method3966(var1, 1191012288);

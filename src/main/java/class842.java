@@ -34,21 +34,21 @@ public class class842 extends class304 {
 
    public static void method5468(String var0, int var1) {
       try {
-         if (Client.field2817 && (-112110875 * class568.field645 & 24) != 0) {
+         if (class730.field2817 && (-112110875 * class568.field645 & 24) != 0) {
             boolean var2 = false;
             int var3 = 1168366243 * class498.field8102;
             int[] var4 = class498.field8108;
 
             for(int var5 = 0; var5 < var3; ++var5) {
-               class946 var6 = Client.field2786[var4[var5]];
+               class946 var6 = class730.field2786[var4[var5]];
                if (var6.field3374 != null && var6.field3374.equalsIgnoreCase(var0) && (var6 == class923.field10295 && (class568.field645 * -112110875 & 16) != 0 || (-112110875 * class568.field645 & 8) != 0)) {
-                  class701 var7 = class637.method5936(class643.field10035, Client.field2692.field7765, (byte)25);
-                  var7.field3364.method6362(Client.field2888 * 1408085039, 16711935);
+                  class701 var7 = class637.method5936(class643.field10035, class730.field2692.field7765, (byte)25);
+                  var7.field3364.method6362(class730.field2888 * 1408085039, 16711935);
                   var7.field3364.method6362(var4[var5], 16711935);
                   var7.field3364.method6408(1262526353 * class543.field3820);
-                  var7.field3364.method6400(Client.field2818 * 392084321);
+                  var7.field3364.method6400(class730.field2818 * 392084321);
                   var7.field3364.method6415(0, (byte)1);
-                  Client.field2692.method4380(var7, (byte)-11);
+                  class730.field2692.method4380(var7, (byte)-11);
                   int var8 = var6.method2550();
                   class133.method998(var6.field4085[0], var6.field4055[0], true, class191.method3721(var6.field4085[0], var6.field4055[0], var8, var8, 0, (byte)-117), -263181253);
                   var2 = true;
@@ -60,7 +60,7 @@ public class class842 extends class304 {
                class727.method1683(4, class814.field4727.method2927(class321.field1066, -875414210) + var0, (byte)-81);
             }
 
-            if (Client.field2817) {
+            if (class730.field2817) {
                class422.method5724((byte)4);
             }
          }

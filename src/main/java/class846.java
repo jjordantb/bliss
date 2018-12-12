@@ -40,8 +40,8 @@ public class class846 extends class717 {
          class615.field8903.method5391(class615.field8903.field9132, 1, -2045258023);
          class615.field8903.method5391(class615.field8903.field9142, 3, -496921634);
          class362.method1508(-32585668);
-         Client.field2697.method5282((byte)54).method5673(-1309443074);
-         Client.field2657 = true;
+         class730.field2697.method5282((byte)54).method5673(-1309443074);
+         class730.field2657 = true;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "aap.u(" + ')');
       }

@@ -75,7 +75,7 @@ public abstract class class746 extends class476 {
    public void method2541(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
       try {
          if (this.method2567(-1427124632)) {
-            Client.method1760(this.field4095, this.field4095.method887((byte)20), -1, var1, var2, var3, var4, var5, var6, var7, var8);
+            class730.method1760(this.field4095, this.field4095.method887((byte)20), -1, var1, var2, var3, var4, var5, var6, var7, var8);
          }
 
       } catch (RuntimeException var11) {
@@ -367,7 +367,7 @@ public abstract class class746 extends class476 {
          class446 var4 = this.method1511();
          int var5 = (int)var4.field7637.field5296 >> 9;
          int var6 = (int)var4.field7637.field5299 >> 9;
-         if (this.field3638 != null && var5 >= 1 && var6 >= 1 && var5 <= Client.field2697.method5271(-2008930035) - 1 && var6 <= Client.field2697.method5272(-33342416) - 1) {
+         if (this.field3638 != null && var5 >= 1 && var6 >= 1 && var5 <= class730.field2697.method5271(-2008930035) - 1 && var6 <= class730.field2697.method5272(-33342416) - 1) {
             class190 var7 = this.field3638.field3861[this.field3639][var5][var6];
             if (var7 != null && var7.field7011 != null) {
                return var3 + var7.field7011.field9059;
@@ -715,7 +715,7 @@ public abstract class class746 extends class476 {
       class446 var3 = this.method1511();
       int var4 = (int)var3.field7637.field5296 >> 9;
       int var5 = (int)var3.field7637.field5299 >> 9;
-      if (this.field3638 != null && var4 >= 1 && var5 >= 1 && var4 <= Client.field2697.method5271(-2022187323) - 1 && var5 <= Client.field2697.method5272(1908645218) - 1) {
+      if (this.field3638 != null && var4 >= 1 && var5 >= 1 && var4 <= class730.field2697.method5271(-2022187323) - 1 && var5 <= class730.field2697.method5272(1908645218) - 1) {
          class190 var6 = this.field3638.field3861[this.field3639][var4][var5];
          if (var6 != null && var6.field7011 != null) {
             return var2 + var6.field7011.field9059;
@@ -739,7 +739,7 @@ public abstract class class746 extends class476 {
       class446 var3 = this.method1511();
       int var4 = (int)var3.field7637.field5296 >> 9;
       int var5 = (int)var3.field7637.field5299 >> 9;
-      if (this.field3638 != null && var4 >= 1 && var5 >= 1 && var4 <= Client.field2697.method5271(-2141154955) - 1 && var5 <= Client.field2697.method5272(145346949) - 1) {
+      if (this.field3638 != null && var4 >= 1 && var5 >= 1 && var4 <= class730.field2697.method5271(-2141154955) - 1 && var5 <= class730.field2697.method5272(145346949) - 1) {
          class190 var6 = this.field3638.field3861[this.field3639][var4][var5];
          if (var6 != null && var6.field7011 != null) {
             return var2 + var6.field7011.field9059;
@@ -779,10 +779,10 @@ public abstract class class746 extends class476 {
       try {
          if (!this.method2567(-377564191)) {
             if (-1 != var1) {
-               Client.field2882[var1] = true;
+               class730.field2882[var1] = true;
             } else {
                for(int var9 = 0; var9 < 113; ++var9) {
-                  Client.field2882[var9] = true;
+                  class730.field2882[var9] = true;
                }
             }
          } else {
@@ -910,7 +910,7 @@ public abstract class class746 extends class476 {
             }
 
             if ((this.field4031 == null || this.field4031.field2548) && (var7 > 0 || var9 > 0)) {
-               this.field4031 = class726.method1732(Client.field2866 * 443738891, true);
+               this.field4031 = class726.method1732(class730.field2866 * 443738891, true);
             }
 
             if (this.field4031 != null) {
@@ -946,11 +946,11 @@ public abstract class class746 extends class476 {
                   }
                }
 
-               this.field4031.method1731(var1, (long)(443738891 * Client.field2866), var15, var23, false);
+               this.field4031.method1731(var1, (long)(443738891 * class730.field2866), var15, var23, false);
                this.field4092 = true;
             }
          } else if (this.field4031 != null) {
-            this.field4031.method1733((long)(Client.field2866 * 443738891));
+            this.field4031.method1733((long)(class730.field2866 * 443738891));
          }
 
          if (this.field4031 != null) {

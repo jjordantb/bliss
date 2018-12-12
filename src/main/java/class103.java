@@ -61,8 +61,8 @@ public class class103 {
          if (var4 != null) {
             class593.field1623.method4986(var1, var2, -2093041337 * var0.field881 + var1, var2 + var0.field887 * 457937409);
             if (class95.field595 * -64305285 < 3) {
-               int var5 = (int)(-Client.field2931);
-               var5 = var5 + -1840255270 * Client.field2782 & 16383;
+               int var5 = (int)(-class730.field2931);
+               var5 = var5 + -1840255270 * class730.field2782 & 16383;
                var5 <<= 2;
                class422.field9603.method3122((float)var1 + (float)(var0.field881 * -2093041337) / 2.0F, (float)var2 + (float)(var0.field887 * 457937409) / 2.0F, 4135, var5, var4.field2156, var1, var2);
             } else {

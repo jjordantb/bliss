@@ -68,7 +68,7 @@ public class class385 {
 
    static final void method1179(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2783 ? 1 : 0;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2783 ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "qv.uq(" + ')');
       }
@@ -89,20 +89,20 @@ public class class385 {
 
    static final void method1181(int var0) {
       try {
-         class76.method1109(class593.field1623, (long)(443738891 * Client.field2866));
-         if (-257444687 * Client.field2822 != -1) {
-            class758.method2735(-257444687 * Client.field2822, 186134073);
+         class76.method1109(class593.field1623, (long)(443738891 * class730.field2866));
+         if (-257444687 * class730.field2822 != -1) {
+            class758.method2735(-257444687 * class730.field2822, 186134073);
          }
 
          int var1;
-         for(var1 = 0; var1 < -112139815 * Client.field2667; ++var1) {
-            Client.field2883[var1] = Client.field2882[var1];
-            Client.field2882[var1] = false;
+         for(var1 = 0; var1 < -112139815 * class730.field2667; ++var1) {
+            class730.field2883[var1] = class730.field2882[var1];
+            class730.field2882[var1] = false;
          }
 
-         Client.field2814 = -1390800553 * Client.field2866;
-         if (-1 != Client.field2822 * -257444687) {
-            Client.field2667 = 0;
+         class730.field2814 = -1390800553 * class730.field2866;
+         if (-1 != class730.field2822 * -257444687) {
+            class730.field2667 = 0;
             class154.method3488(-710389872);
          }
 
@@ -110,15 +110,15 @@ public class class385 {
          class972.method1777(class593.field1623, (byte)74);
          var1 = class915.method6441(-185727929);
          if (-1 == var1) {
-            var1 = Client.field2919 * -1808468501;
+            var1 = class730.field2919 * -1808468501;
          }
 
          if (-1 == var1) {
-            var1 = Client.field2813 * 1203044105;
+            var1 = class730.field2813 * 1203044105;
          }
 
          class779.method2323(var1, 614001892);
-         Client.field2943 = 0;
+         class730.field2943 = 0;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "qv.ig(" + ')');
       }

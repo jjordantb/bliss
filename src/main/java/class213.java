@@ -151,10 +151,10 @@ public class class213 implements Runnable {
             class534.method2290(-219758847);
          }
 
-         Client.field2739.setTime(new Date(class27.method3468((byte)1)));
-         int var2 = Client.field2739.get(11);
-         int var3 = Client.field2739.get(12);
-         int var4 = Client.field2739.get(13);
+         class730.field2739.setTime(new Date(class27.method3468((byte)1)));
+         int var2 = class730.field2739.get(11);
+         int var3 = class730.field2739.get(12);
+         int var4 = class730.field2739.get(13);
          String var5 = Integer.toString(var2 / 10) + var2 % 10 + ":" + var3 / 10 + var3 % 10 + ":" + var4 / 10 + var4 % 10;
          String[] var6 = class715.method2097(var0, '\n', 1593698305);
 

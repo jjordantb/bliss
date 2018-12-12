@@ -19,7 +19,7 @@ public final class class384 {
    static final void method1081(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2809[var2];
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2809[var2];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "qb.tc(" + ')');
       }

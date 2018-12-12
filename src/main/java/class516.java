@@ -40,9 +40,9 @@ public final class class516 {
    static void method2727(byte var0) {
       try {
          class881.field10140 = 471358088;
-         class881.field10177 = Client.field2692;
-         if (Client.field2825 != null) {
-            class907 var1 = new class907(Client.field2825);
+         class881.field10177 = class730.field2692;
+         if (class730.field2825 != null) {
+            class907 var1 = new class907(class730.field2825);
             class881.field10146 = var1.method6375((short)16837) * -2742373017286080113L;
             class881.field10183 = var1.method6375((short)3310) * 3207425516430892907L;
          }

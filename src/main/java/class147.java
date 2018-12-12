@@ -348,7 +348,7 @@ public class class147 {
    static final void method1142(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         if (Client.field2785 != null && var2 < class556.field503 * -1801543887) {
+         if (class730.field2785 != null && var2 < class556.field503 * -1801543887) {
             var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class776.field3731[var2].field8119;
          } else {
             var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
@@ -381,21 +381,21 @@ public class class147 {
 
    public static final class256 method1145(int var0, class256 var1, int[] var2, boolean var3, int var4) {
       try {
-         class256 var5 = (class256) Client.field2823.method2942((long)var0);
+         class256 var5 = (class256)class730.field2823.method2942((long)var0);
          if (var5 != null) {
             class526.method2226(var5, var5.field8101 * -1617025021 != -1617025021 * var1.field8101, var3, -113822480);
          }
 
-         Client.field2823.method2947(var1, (long)var0);
+         class730.field2823.method2947(var1, (long)var0);
          class342.method223(-1617025021 * var1.field8101, var2, 888891171);
          class564 var6 = class449.method3756(var0, (byte)49);
          if (var6 != null) {
             class814.method2932(var6, -702811353);
          }
 
-         if (Client.field2633 != null) {
-            class814.method2932(Client.field2633, 961005010);
-            Client.field2633 = null;
+         if (class730.field2633 != null) {
+            class814.method2932(class730.field2633, 961005010);
+            class730.field2633 = null;
          }
 
          class341.method263(-662741241);
@@ -407,8 +407,8 @@ public class class147 {
             class228.method4586(-1617025021 * var1.field8101, var2, -746339380);
          }
 
-         if (!var3 && -257444687 * Client.field2822 != -1) {
-            class929.method6262(Client.field2822 * -257444687, 1, -2018560763);
+         if (!var3 && -257444687 * class730.field2822 != -1) {
+            class929.method6262(class730.field2822 * -257444687, 1, -2018560763);
          }
 
          return var1;

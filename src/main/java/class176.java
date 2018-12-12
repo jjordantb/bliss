@@ -106,9 +106,9 @@ public class class176 {
    static void method3166(int var0, boolean var1, int var2) {
       try {
          if (var1) {
-            class701 var3 = class637.method5936(class643.field9973, Client.field2692.field7765, (byte)105);
+            class701 var3 = class637.method5936(class643.field9973, class730.field2692.field7765, (byte)105);
             var3.field3364.method6362(var0, 16711935);
-            Client.field2692.method4380(var3, (byte)-34);
+            class730.field2692.method4380(var3, (byte)-34);
          } else {
             class574.method131(class112.field2117, var0, -1, -1830852893);
          }
@@ -183,25 +183,25 @@ public class class176 {
 
    static final void method3171(int var0, int var1, int var2, int var3, int var4, boolean var5, int var6) {
       try {
-         if (!var5 && (var1 < 512 || var2 < 512 || var1 > (Client.field2697.method5271(-2030738775) - 2) * 512 || var2 > (Client.field2697.method5272(346597058) - 2) * 512)) {
-            float[] var9 = Client.field2873;
-            Client.field2873[1] = -1.0F;
+         if (!var5 && (var1 < 512 || var2 < 512 || var1 > (class730.field2697.method5271(-2030738775) - 2) * 512 || var2 > (class730.field2697.method5272(346597058) - 2) * 512)) {
+            float[] var9 = class730.field2873;
+            class730.field2873[1] = -1.0F;
             var9[0] = -1.0F;
          } else {
             int var7 = class679.method4271(var1, var2, var0, -1332954611) - var4;
-            Client.field2853.method1024(class593.field1623.method4868());
-            Client.field2853.method1018((float)var3, 0.0F, 0.0F);
-            class593.field1623.method4867(Client.field2853);
+            class730.field2853.method1024(class593.field1623.method4868());
+            class730.field2853.method1018((float)var3, 0.0F, 0.0F);
+            class593.field1623.method4867(class730.field2853);
             if (var5) {
-               class593.field1623.method4890((float)var1, (float)var7, (float)var2, Client.field2873);
+               class593.field1623.method4890((float)var1, (float)var7, (float)var2, class730.field2873);
             } else {
-               class593.field1623.method4889((float)var1, (float)var7, (float)var2, Client.field2873);
+               class593.field1623.method4889((float)var1, (float)var7, (float)var2, class730.field2873);
             }
 
-            Client.field2853.method1018((float)(-var3), 0.0F, 0.0F);
-            class593.field1623.method4867(Client.field2853);
-            Client.field2873[0] -= (float)(Client.field2918 * -1868355265);
-            Client.field2873[1] -= (float)(-689948187 * Client.field2728);
+            class730.field2853.method1018((float)(-var3), 0.0F, 0.0F);
+            class593.field1623.method4867(class730.field2853);
+            class730.field2873[0] -= (float)(class730.field2918 * -1868355265);
+            class730.field2873[1] -= (float)(-689948187 * class730.field2728);
          }
 
       } catch (RuntimeException var8) {
@@ -213,10 +213,10 @@ public class class176 {
       try {
          int var1;
          if (class615.field8903.field9145.method2311((byte)-102) == 0) {
-            for(var1 = 0; var1 < Client.field2876 * 1351936279; ++var1) {
-               if (Client.field2691[var1].method1864((byte)-58) == 's' || Client.field2691[var1].method1864((byte)-73) == 'S') {
+            for(var1 = 0; var1 < class730.field2876 * 1351936279; ++var1) {
+               if (class730.field2691[var1].method1864((byte)-58) == 's' || class730.field2691[var1].method1864((byte)-73) == 'S') {
                   class615.field8903.method5391(class615.field8903.field9145, 1, -669556569);
-                  Client.field2628 = true;
+                  class730.field2628 = true;
                   break;
                }
             }
@@ -254,7 +254,7 @@ public class class176 {
             class122.field2372 = class657.field9546.method3255((byte)-108) * 1003249155;
             class917.method6453(class27.field6487, (byte)13);
             int var3 = class615.field8903.field9144.method1564(-463949651);
-            class965.field2534 = new class613(Client.field2926, class321.field1066, class657.field9546);
+            class965.field2534 = new class613(class730.field2926, class321.field1066, class657.field9546);
             class419[] var4 = class965.field2534.method5202(var3, -957350299);
             if (var4.length == 0) {
                var4 = class965.field2534.method5202(0, -2070003816);
@@ -293,7 +293,7 @@ public class class176 {
                }
             }
 
-            class785.field3827.method1856(Client.field2681, (byte)3);
+            class785.field3827.method1856(class730.field2681, (byte)3);
             class867.method5833(class593.field1623, -1001154805);
             class967.method1750(11, -22830656);
          }
@@ -382,8 +382,8 @@ public class class176 {
             class365.field2440 = class6.field4931.field9530;
             class629.field9737 = class6.field4931.field9535;
             if (-1 != 1352949337 * class6.field4931.field9536 && -1 != 133542095 * class6.field4931.field9537) {
-               Client.field2775 = -2081728285 * class6.field4931.field9536;
-               Client.field2784 = class6.field4931.field9537 * 437692501;
+               class730.field2775 = -2081728285 * class6.field4931.field9536;
+               class730.field2784 = class6.field4931.field9537 * 437692501;
             }
 
             class413.field9412 = new class385(class966.field2521);
@@ -397,37 +397,37 @@ public class class176 {
             }
 
             class962.field3627 = new class849(class428.field7416, class576.field72, class562.field827);
-            class452.field7216 = new class851(Client.field2926, class321.field1066, class429.field7413);
-            class283.field10614 = new class193(Client.field2926, class321.field1066, class429.field7413, class413.field9412);
-            class770.field3733 = new class812(Client.field2926, class321.field1066, class429.field7413, class562.field827);
-            class808.field4598 = new class247(Client.field2926, class321.field1066, class310.field532);
-            class851.field8731 = new class509(Client.field2926, class321.field1066, class429.field7413);
-            class980.field3196 = new class428(Client.field2926, class321.field1066, class429.field7413);
-            class339.field157 = new class591(Client.field2926, class321.field1066, class429.field7413, class562.field827);
-            class662.field9736 = new class422(Client.field2926, class321.field1066, class429.field7413, class389.field1524);
-            class540.field3930 = new class779(Client.field2926, class321.field1066, class429.field7413);
-            class229.field8212 = new class754(Client.field2926, class321.field1066, class429.field7413);
-            class972.field2965 = new class240(Client.field2926, class321.field1066, true, class170.field5104, class389.field1524);
-            Client.field2697.method5287(class972.field2965, -18361497);
-            class625.field9752.method458(new class240(Client.field2926, class321.field1066, true, class170.field5104, class389.field1524), 681479919);
-            class333.field139 = new class844(Client.field2926, class321.field1066, class429.field7413, class562.field827);
-            class981.field3274 = new class945(Client.field2926, class321.field1066, class429.field7413, class562.field827);
-            class258.field7913 = new class329(Client.field2926, class321.field1066, true, class49.field5185, class389.field1524);
-            class85.field1121 = new class58(Client.field2926, class321.field1066, true, class452.field7216, class452.field7215, class389.field1524);
-            class735.field3009 = new class677(Client.field2926, class321.field1066, class429.field7413, true);
-            class936.field10313 = new class769(Client.field2926, class321.field1066, class553.field518, class812.field4643, class785.field3825);
-            class490.field7866 = new class394(Client.field2926, class321.field1066, class429.field7413);
-            class527.field3690 = new class277(Client.field2926, class321.field1066, class429.field7413);
-            class635.field9823 = new class382(Client.field2926, class321.field1066, class831.field9108, class389.field1524);
-            class58.field2342 = new class339(Client.field2926, class321.field1066, class429.field7413, true);
-            class235.field8253 = new class823(Client.field2926, class321.field1066, class429.field7413);
-            class671.field7472 = new class942(Client.field2926, class321.field1066, class429.field7413);
-            class905.field10369 = new class843(Client.field2926, class321.field1066, class754.field4207);
-            class539.field3762 = new class661(Client.field2926, class321.field1066, class429.field7413);
-            class619.field8868 = new class368(Client.field2926, class321.field1066, class429.field7413);
-            class473.field8291 = new class617(Client.field2926, class321.field1066, class429.field7413);
-            class899.field9551 = new class16(Client.field2926, class321.field1066, class429.field7413);
-            class669.field7396 = new class337(Client.field2926, class321.field1066, class429.field7413);
+            class452.field7216 = new class851(class730.field2926, class321.field1066, class429.field7413);
+            class283.field10614 = new class193(class730.field2926, class321.field1066, class429.field7413, class413.field9412);
+            class770.field3733 = new class812(class730.field2926, class321.field1066, class429.field7413, class562.field827);
+            class808.field4598 = new class247(class730.field2926, class321.field1066, class310.field532);
+            class851.field8731 = new class509(class730.field2926, class321.field1066, class429.field7413);
+            class980.field3196 = new class428(class730.field2926, class321.field1066, class429.field7413);
+            class339.field157 = new class591(class730.field2926, class321.field1066, class429.field7413, class562.field827);
+            class662.field9736 = new class422(class730.field2926, class321.field1066, class429.field7413, class389.field1524);
+            class540.field3930 = new class779(class730.field2926, class321.field1066, class429.field7413);
+            class229.field8212 = new class754(class730.field2926, class321.field1066, class429.field7413);
+            class972.field2965 = new class240(class730.field2926, class321.field1066, true, class170.field5104, class389.field1524);
+            class730.field2697.method5287(class972.field2965, -18361497);
+            class625.field9752.method458(new class240(class730.field2926, class321.field1066, true, class170.field5104, class389.field1524), 681479919);
+            class333.field139 = new class844(class730.field2926, class321.field1066, class429.field7413, class562.field827);
+            class981.field3274 = new class945(class730.field2926, class321.field1066, class429.field7413, class562.field827);
+            class258.field7913 = new class329(class730.field2926, class321.field1066, true, class49.field5185, class389.field1524);
+            class85.field1121 = new class58(class730.field2926, class321.field1066, true, class452.field7216, class452.field7215, class389.field1524);
+            class735.field3009 = new class677(class730.field2926, class321.field1066, class429.field7413, true);
+            class936.field10313 = new class769(class730.field2926, class321.field1066, class553.field518, class812.field4643, class785.field3825);
+            class490.field7866 = new class394(class730.field2926, class321.field1066, class429.field7413);
+            class527.field3690 = new class277(class730.field2926, class321.field1066, class429.field7413);
+            class635.field9823 = new class382(class730.field2926, class321.field1066, class831.field9108, class389.field1524);
+            class58.field2342 = new class339(class730.field2926, class321.field1066, class429.field7413, true);
+            class235.field8253 = new class823(class730.field2926, class321.field1066, class429.field7413);
+            class671.field7472 = new class942(class730.field2926, class321.field1066, class429.field7413);
+            class905.field10369 = new class843(class730.field2926, class321.field1066, class754.field4207);
+            class539.field3762 = new class661(class730.field2926, class321.field1066, class429.field7413);
+            class619.field8868 = new class368(class730.field2926, class321.field1066, class429.field7413);
+            class473.field8291 = new class617(class730.field2926, class321.field1066, class429.field7413);
+            class899.field9551 = new class16(class730.field2926, class321.field1066, class429.field7413);
+            class669.field7396 = new class337(class730.field2926, class321.field1066, class429.field7413);
             class571.method29(class120.field2292, class389.field1524, class562.field827, class526.field3666, 995134055);
             class23.method3429(class544.field3795, (byte)9);
             class848.field8597 = new class152(class321.field1066, class785.field3826, class335.field53);
@@ -453,7 +453,7 @@ public class class176 {
          }
 
          if (class431.field7494 == class776.field3728) {
-            class491.method4397(class792.field510, class851.field8731, class980.field3196, Client.field2697.method5283(-1404290651), class333.field139, class981.field3274, class827.field9037);
+            class491.method4397(class792.field510, class851.field8731, class980.field3196, class730.field2697.method5283(-1404290651), class333.field139, class981.field3274, class827.field9037);
          }
 
          if (class776.field3728 == class431.field7506) {
@@ -464,7 +464,7 @@ public class class176 {
             for(var1 = 0; var1 < class671.field7472.field10346 * -2088092255; ++var1) {
                if (class671.field7472.method6332(var1, (byte)-12).field9809 * 1043657149 == 0) {
                   class474.field8271[var1] = true;
-                  Client.field2872 += 1273319593;
+                  class730.field2872 += 1273319593;
                }
 
                class14.field6693[var1] = -1;
@@ -476,7 +476,7 @@ public class class176 {
             class562.field827.method3268(true, true, -1968339968);
             class526.field3666.method3268(true, true, -1788343139);
             class27.field6488.method3268(true, true, -629544722);
-            Client.field2653 = true;
+            class730.field2653 = true;
          }
 
          if (class431.field7496 == class776.field3728) {
@@ -518,23 +518,23 @@ public class class176 {
             class965.field2534 = null;
             class657.field9544 = null;
             class329.method19(1677071566);
-            Client.field2627 = class615.field8903.field9145.method2311((byte)-47) == 1;
+            class730.field2627 = class615.field8903.field9145.method2311((byte)-47) == 1;
             class615.field8903.method5391(class615.field8903.field9145, 1, 807460534);
-            if (Client.field2627) {
+            if (class730.field2627) {
                class615.field8903.method5391(class615.field8903.field9136, 0, -91524334);
             } else if (class615.field8903.field9136.field6934 && 399637415 * class86.field1134.field3064 < 512 && 399637415 * class86.field1134.field3064 != 0) {
                class615.field8903.method5391(class615.field8903.field9136, 0, -1214226075);
             }
 
             class95.method523(656179282);
-            if (Client.field2627) {
+            if (class730.field2627) {
                class337.method77(0, false, 622850291);
             } else {
                class337.method77(class615.field8903.field9136.method3689(-1847672596), false, 622850291);
             }
 
             class739.method1795(class615.field8903.field9109.method6159((byte)12), -1, -1, false, -107949513);
-            class785.field3827.method1856(Client.field2681, (byte)3);
+            class785.field3827.method1856(class730.field2681, (byte)3);
             class867.method5833(class593.field1623, -1188868944);
             class158.method3443(class593.field1623, class562.field827, 498152714);
             class924.method6252(class324.field621, -1481526948);

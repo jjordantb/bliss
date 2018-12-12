@@ -39,10 +39,10 @@ public class class657 {
    static final void method5661(class744 var0, int var1) {
       try {
          String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         class701 var3 = class637.method5936(class643.field9971, Client.field2674.field7765, (byte)126);
+         class701 var3 = class637.method5936(class643.field9971, class730.field2674.field7765, (byte)126);
          var3.field3364.method6361(class305.method372(var2, -19370609));
          var3.field3364.method6366(var2, 2104083010);
-         Client.field2674.method4380(var3, (byte)-70);
+         class730.field2674.method4380(var3, (byte)-70);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "js.vn(" + ')');
       }

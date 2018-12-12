@@ -449,7 +449,7 @@ public class class397 extends class676 implements class265 {
                      } catch (Throwable var11) {
                         int var16 = class615.field8903.field9137.method3689(-1530002941);
                         if (var16 == 2) {
-                           Client.field2643 = true;
+                           class730.field2643 = true;
                         }
 
                         class615.field8903.method5391(class615.field8903.field9137, 0, -1712068885);
@@ -502,16 +502,16 @@ public class class397 extends class676 implements class265 {
          class21.method3416(-707841245);
          class593.field1623.method5038(10000);
          class593.field1623.method4835(32);
-         Client.field2697.method5290(-818859939);
+         class730.field2697.method5290(-818859939);
          class593.field1623.method4875(false);
          if (class593.field1623.method4878()) {
             class729.method1700(class615.field8903.field9117.method5848(-1411340111) == 1, -1054485931);
          }
 
-         Client.field2697.method5289(526823496);
-         Client.field2697.method5282((byte)64).method5673(-1897479103);
-         Client.field2647 = false;
-         Client.field2657 = true;
+         class730.field2697.method5289(526823496);
+         class730.field2697.method5282((byte)64).method5673(-1897479103);
+         class730.field2647 = false;
+         class730.field2657 = true;
          class495.field8098 = null;
          class593.field1623.method4826(0.0F, 1.0F);
       } catch (RuntimeException var13) {
@@ -654,7 +654,7 @@ public class class397 extends class676 implements class265 {
 
                      for(var3 = 1; var3 < 2048; ++var3) {
                         class498.field8104[var3] = (byte)(class498.field8104[var3] >> 1);
-                        class946 var7 = Client.field2786[var3];
+                        class946 var7 = class730.field2786[var3];
                         if (var7 != null) {
                            class498.field8108[(class498.field8102 += -656365301) * 1168366243 - 1] = var3;
                         } else {

@@ -149,7 +149,7 @@ public class class490 {
 
    static void method4437(int var0) {
       try {
-         class602.field8633 = new class357(class814.field4808.method2927(class321.field1066, -875414210), "", -1808468501 * Client.field2919, 1006, -1, 0L, 0, 0, true, false, 0L, true);
+         class602.field8633 = new class357(class814.field4808.method2927(class321.field1066, -875414210), "", -1808468501 * class730.field2919, 1006, -1, 0L, 0, 0, true, false, 0L, true);
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "nq.k(" + ')');
       }
@@ -157,7 +157,7 @@ public class class490 {
 
    static final void method4438(class744 var0, int var1) {
       try {
-         int var2 = Client.field2748[var0.field3161[(var0.field3156 -= -391880689) * 681479919]].length >> 1;
+         int var2 = class730.field2748[var0.field3161[(var0.field3156 -= -391880689) * 681479919]].length >> 1;
          var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var2;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "nq.afz(" + ')');

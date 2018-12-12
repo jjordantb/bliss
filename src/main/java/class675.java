@@ -399,7 +399,7 @@ public final class class675 {
    static final void method4166(class744 var0, byte var1) {
       try {
          int var2 = var0.field3174[var0.field3176 * 1883543357];
-         String var3 = var0.field3169.method5780(-937307905 * Client.field2926.field7327 << 16 | var2, -1713280768);
+         String var3 = var0.field3169.method5780(-937307905 * class730.field2926.field7327 << 16 | var2, -1713280768);
          String var4;
          if (var3 == null) {
             var4 = "";
@@ -427,10 +427,10 @@ public final class class675 {
    static final void method4168(class744 var0, int var1) {
       try {
          String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         class701 var3 = class637.method5936(class643.field10010, Client.field2692.field7765, (byte)13);
+         class701 var3 = class637.method5936(class643.field10010, class730.field2692.field7765, (byte)13);
          var3.field3364.method6361(var2.length() + 1);
          var3.field3364.method6366(var2, 2108270585);
-         Client.field2692.method4380(var3, (byte)-64);
+         class730.field2692.method4380(var3, (byte)-64);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ns.sn(" + ')');
       }

@@ -372,29 +372,29 @@ public class class364 extends class727 {
    static final void method1612(int var0) {
       try {
          class131.method896(1674101672);
-         Client.field2697.method5308(-2068923271);
+         class730.field2697.method5308(-2068923271);
 
          int var1;
-         for(var1 = 0; var1 < Client.field2851.length; ++var1) {
-            Client.field2851[var1] = null;
+         for(var1 = 0; var1 < class730.field2851.length; ++var1) {
+            class730.field2851[var1] = null;
          }
 
-         for(var1 = 0; var1 < Client.field2652.length; ++var1) {
-            Client.field2652[var1] = null;
+         for(var1 = 0; var1 < class730.field2652.length; ++var1) {
+            class730.field2652[var1] = null;
          }
 
          class381.method1067(590983339);
 
          for(var1 = 0; var1 < 2048; ++var1) {
-            Client.field2786[var1] = null;
+            class730.field2786[var1] = null;
          }
 
-         Client.field2684 = 0;
-         Client.field2677.method2941((byte)-66);
-         Client.field2753 = 0;
-         Client.field2666.method2941((byte)-127);
+         class730.field2684 = 0;
+         class730.field2677.method2941((byte)-66);
+         class730.field2753 = 0;
+         class730.field2666.method2941((byte)-127);
          class974.method1783(-1148860846);
-         Client.field2694 = 0;
+         class730.field2694 = 0;
          class827.field9037.method5493(-1863575253);
          class823.field9045 = null;
          class640.field10201 = null;

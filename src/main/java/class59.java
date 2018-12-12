@@ -58,10 +58,10 @@ public class class59 {
          class122.field2373 = null;
          class949.field3332 = 1692564793;
          if (class949.field3330) {
-            Client.field2916 = class949.field3320;
-            Client.field2917 = class673.field7509;
-            Client.field2821 = class808.field4596;
-            Client.field2724 = class559.field542;
+            class730.field2916 = class949.field3320;
+            class730.field2917 = class673.field7509;
+            class730.field2821 = class808.field4596;
+            class730.field2724 = class559.field542;
             class949.field3330 = false;
          }
 

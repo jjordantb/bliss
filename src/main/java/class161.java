@@ -156,7 +156,7 @@ public class class161 {
 
    static final void method3551(boolean var0, byte var1) {
       try {
-         class811.method2924(Client.field2822 * -257444687, -2110394505 * class759.field4331, class97.field614 * -1111710645, var0, 1828905535);
+         class811.method2924(class730.field2822 * -257444687, -2110394505 * class759.field4331, class97.field614 * -1111710645, var0, 1828905535);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "kt.kg(" + ')');
       }

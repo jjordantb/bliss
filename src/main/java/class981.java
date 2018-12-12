@@ -129,9 +129,9 @@ public class class981 {
    static void method1931(int var0) {
       try {
          class881.field10140 = -1058684408;
-         class881.field10177 = Client.field2674;
-         if (Client.field2825 != null) {
-            class907 var1 = new class907(Client.field2825);
+         class881.field10177 = class730.field2674;
+         if (class730.field2825 != null) {
+            class907 var1 = new class907(class730.field2825);
             class881.field10146 = var1.method6375((short)19840) * -2742373017286080113L;
             class881.field10183 = var1.method6375((short)15472) * 3207425516430892907L;
          }
@@ -157,15 +157,15 @@ public class class981 {
          float var13 = 0.0F;
          float var14 = 0.0F;
 
-         for(class545 var15 = Client.field2697.method5317(-1611682495); var8 < 1.1F; var8 += 0.1F) {
+         for(class545 var15 = class730.field2697.method5317(-1611682495); var8 < 1.1F; var8 += 0.1F) {
             float var16 = var9 * var8 + var0;
             float var17 = var1 + var8 * var10;
             float var18 = var8 * var11 + var2;
             int var19 = (int)var16 >> 9;
             int var20 = (int)var18 >> 9;
-            if (var19 > 0 && var20 > 0 && var19 < Client.field2697.method5271(-1954958237) && var20 < Client.field2697.method5272(-1173220944)) {
+            if (var19 > 0 && var20 > 0 && var19 < class730.field2697.method5271(-1954958237) && var20 < class730.field2697.method5272(-1173220944)) {
                int var21 = class923.field10295.field3639;
-               if (var21 < 3 && (Client.field2697.method5296(936952439).field5406[1][var19][var20] & 2) != 0) {
+               if (var21 < 3 && (class730.field2697.method5296(936952439).field5406[1][var19][var20] & 2) != 0) {
                   ++var21;
                }
 
@@ -194,7 +194,7 @@ public class class981 {
       try {
          class615.field8903.method5391(class615.field8903.field9121, var0.field3161[(var0.field3156 -= -391880689) * 681479919] == 1 ? 1 : 0, -1686668837);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ew.aio(" + ')');
       }

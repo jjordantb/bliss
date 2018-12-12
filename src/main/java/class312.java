@@ -77,8 +77,8 @@ public abstract class class312 {
 
    static final void method419(class744 var0, byte var1) {
       try {
-         int var2 = Client.field2823.method2944(2031939050);
-         if (-1 != -257444687 * Client.field2822) {
+         int var2 = class730.field2823.method2944(2031939050);
+         if (-1 != -257444687 * class730.field2822) {
             ++var2;
          }
 

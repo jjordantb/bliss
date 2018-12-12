@@ -42,7 +42,7 @@ public class class110 {
    static final void method1386(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2902[var2].field10625 * 5713347;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2902[var2].field10625 * 5713347;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "mp.yu(" + ')');
       }
@@ -76,11 +76,11 @@ public class class110 {
       try {
          int var5 = var0.field4085[0];
          int var6 = var0.field4055[0];
-         if (var5 >= 0 && var5 < Client.field2697.method5271(-2022633621) && var6 >= 0 && var6 < Client.field2697.method5272(211521322) && var1 >= 0 && var1 < Client.field2697.method5271(-2074801405) && var2 >= 0 && var2 < Client.field2697.method5272(1180671988)) {
-            int var7 = class345.method157(var5, var6, var0.method2550(), class507.method2510(var1, var2, (short)808), Client.field2697.method5281(var0.field3639), true, Client.field2731, Client.field2719);
+         if (var5 >= 0 && var5 < class730.field2697.method5271(-2022633621) && var6 >= 0 && var6 < class730.field2697.method5272(211521322) && var1 >= 0 && var1 < class730.field2697.method5271(-2074801405) && var2 >= 0 && var2 < class730.field2697.method5272(1180671988)) {
+            int var7 = class345.method157(var5, var6, var0.method2550(), class507.method2510(var1, var2, (short)808), class730.field2697.method5281(var0.field3639), true, class730.field2731, class730.field2719);
             if (var7 >= 1 && var7 <= 3) {
                for(int var8 = 0; var8 < var7 - 1; ++var8) {
-                  var0.method1996(Client.field2731[var8], Client.field2719[var8], var3, (byte)55);
+                  var0.method1996(class730.field2731[var8], class730.field2719[var8], var3, (byte)55);
                }
             }
          }

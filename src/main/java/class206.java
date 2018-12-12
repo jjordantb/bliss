@@ -42,7 +42,7 @@ public class class206 extends class568 {
          int var2 = 391847895 * this.field7086;
          boolean var3 = this.field7087;
          if (this.field7078 != null) {
-            class50 var4 = this.field7078.method1487((class415)(Client.field2705 * 1596783995 == 0 ? class949.field3324 : class827.field9037), 2115683030);
+            class50 var4 = this.field7078.method1487((class415)(class730.field2705 * 1596783995 == 0 ? class949.field3324 : class827.field9037), 2115683030);
             if (var4 != null) {
                this.field7086 = var4.field2254 * 128561991;
                this.field7087 = var4.field2258;

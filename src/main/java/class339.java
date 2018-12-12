@@ -46,19 +46,19 @@ public class class339 {
 
    static void method137(class513 var0, int var1, int var2) {
       try {
-         class389 var3 = Client.field2697.method5270(681479919);
+         class389 var3 = class730.field2697.method5270(681479919);
          boolean var4 = var0.method2647(1) == 1;
          if (var4) {
             class498.field8113[(class498.field8112 += 867608709) * -1281683379 - 1] = var1;
          }
 
          int var5 = var0.method2647(2);
-         class946 var6 = Client.field2786[var1];
+         class946 var6 = class730.field2786[var1];
          if (var5 == 0) {
             if (var4) {
                var6.field3396 = false;
             } else {
-               if (-442628795 * Client.field2623 == var1) {
+               if (-442628795 * class730.field2623 == var1) {
                   throw new RuntimeException();
                }
 
@@ -77,7 +77,7 @@ public class class339 {
                   class792.method440(var6, (byte)-66);
                }
 
-               Client.field2786[var1] = null;
+               class730.field2786[var1] = null;
                if (var0.method2647(1) != 0) {
                   class936.method6278(var0, var1, 2107350837);
                }
@@ -206,11 +206,11 @@ public class class339 {
                   }
 
                   var6.field3639 = var6.field3640 = (byte)(var6.field3639 + var9 & 3);
-                  if (Client.field2697.method5296(-232228879).method3386(var12, var13, 1039567132)) {
+                  if (class730.field2697.method5296(-232228879).method3386(var12, var13, 1039567132)) {
                      var6.field3640 = (byte)(var6.field3640 + 1);
                   }
 
-                  if (-442628795 * Client.field2623 == var1 && class899.field9552 * 1855729883 != var6.field3639) {
+                  if (-442628795 * class730.field2623 == var1 && class899.field9552 * 1855729883 != var6.field3639) {
                      class899.field9552 = -85701805 * var6.field3639;
                   }
                } else {
@@ -229,11 +229,11 @@ public class class339 {
                   }
 
                   var6.field3639 = var6.field3640 = (byte)(var9 + var6.field3639 & 3);
-                  if (Client.field2697.method5296(934483887).method3386(var12, var13, 624472586)) {
+                  if (class730.field2697.method5296(934483887).method3386(var12, var13, 624472586)) {
                      var6.field3640 = (byte)(var6.field3640 + 1);
                   }
 
-                  if (var1 == Client.field2623 * -442628795) {
+                  if (var1 == class730.field2623 * -442628795) {
                      class899.field9552 = -85701805 * var6.field3639;
                   }
                }

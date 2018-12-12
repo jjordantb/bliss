@@ -56,8 +56,8 @@ public class class744 {
 
    static final void method1903(long var0) {
       try {
-         int var2 = -2080858977 * Client.field2734;
-         int var3 = Client.field2736 * 1818837461;
+         int var2 = -2080858977 * class730.field2734;
+         int var3 = class730.field2736 * 1818837461;
          int var4;
          int var5;
          if (class456.field7163 * 1103750049 != var2) {
@@ -96,8 +96,8 @@ public class class744 {
             class530.field3741 += var5 * 1831024423;
          }
 
-         Client.field2931 += Client.field2740 * (float)var0 / 40.0F * 8.0F;
-         Client.field2738 += 8.0F * ((float)var0 * Client.field2741 / 40.0F);
+         class730.field2931 += class730.field2740 * (float)var0 / 40.0F * 8.0F;
+         class730.field2738 += 8.0F * ((float)var0 * class730.field2741 / 40.0F);
          class819.method2938((byte)-110);
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "qt.hd(" + ')');

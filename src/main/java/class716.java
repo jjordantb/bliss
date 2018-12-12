@@ -55,7 +55,7 @@ public class class716 {
 
    static void method2046(class744 var0, int var1) {
       try {
-         var0.field3161[681479919 * var0.field3156 - 2] = class735.field3009.method4224(var0.field3161[var0.field3156 * 681479919 - 2], 245040087).method5328(Client.field2809, var0.field3161[var0.field3156 * 681479919 - 1], (byte)47) ? 1 : 0;
+         var0.field3161[681479919 * var0.field3156 - 2] = class735.field3009.method4224(var0.field3161[var0.field3156 * 681479919 - 2], 245040087).method5328(class730.field2809, var0.field3161[var0.field3156 * 681479919 - 1], (byte)47) ? 1 : 0;
          var0.field3156 -= -391880689;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "my.y(" + ')');

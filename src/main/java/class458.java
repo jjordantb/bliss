@@ -44,7 +44,7 @@ public class class458 {
 
    static final void method3831(class744 var0, int var1) {
       try {
-         if (Client.field2616) {
+         if (class730.field2616) {
             class662.field9724.method5799(-1732158505);
          }
 

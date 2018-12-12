@@ -94,7 +94,7 @@ public class class229 implements class311 {
 
    static final void method4581(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2792 && !Client.field2793 ? 1 : 0;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2792 && !class730.field2793 ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jz.amz(" + ')');
       }

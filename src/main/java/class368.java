@@ -106,7 +106,7 @@ public class class368 {
          class501.field3182.method1678("--> " + class118.method1459(class342.field281, (byte)-1), 10, 350 - class271.field10557.field8225 * -1883958527 - 1, -1, -16777216, -10016873);
          if (class619.field8869) {
             var3 = -1;
-            if (443738891 * Client.field2866 % 30 > 15) {
+            if (443738891 * class730.field2866 % 30 > 15) {
                var3 = 16777215;
             }
 

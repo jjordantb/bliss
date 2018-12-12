@@ -50,7 +50,7 @@ public class class572 extends class175 {
                this.field4990.method2448(var2, var4, var5, (byte)59);
                this.field4990.method2421(var2, var4, var5, -391880689);
             } else if (2 == var3) {
-               this.field4990.method2422(var2, var4, var5, Client.field2942, (short)-414);
+               this.field4990.method2422(var2, var4, var5, class730.field2942, (short)-414);
                if (var9.field2212 * -2144543407 != 0 && -1125834887 * var9.field2218 + var4 < this.field4998 * -954368823 && -1125834887 * var9.field2218 + var5 < this.field4999 * 181474463 && -565161399 * var9.field2215 + var4 < this.field4998 * -954368823 && -565161399 * var9.field2215 + var5 < 181474463 * this.field4999) {
                   var6.method4522(var4, var5, var9.field2218 * -1125834887, -565161399 * var9.field2215, var11, var9.field2256, !var9.field2248, (byte)38);
                }
@@ -923,7 +923,7 @@ public class class572 extends class175 {
          }
 
          if (var2 == 2) {
-            var6 = (class265)this.field4990.method2429(var1, var3, var4, Client.field2942, -1336288750);
+            var6 = (class265)this.field4990.method2429(var1, var3, var4, class730.field2942, -1336288750);
          }
 
          if (var2 == 3) {

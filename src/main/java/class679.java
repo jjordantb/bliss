@@ -102,18 +102,18 @@ public class class679 {
 
    public static final int method4271(int var0, int var1, int var2, int var3) {
       try {
-         if (Client.field2697.method5317(-1611682495) == null) {
+         if (class730.field2697.method5317(-1611682495) == null) {
             return 0;
          } else {
             int var4 = var0 >> 9;
             int var5 = var1 >> 9;
-            if (var4 >= 0 && var5 >= 0 && var4 <= Client.field2697.method5271(-1956967905) - 1 && var5 <= Client.field2697.method5272(1920772834) - 1) {
+            if (var4 >= 0 && var5 >= 0 && var4 <= class730.field2697.method5271(-1956967905) - 1 && var5 <= class730.field2697.method5272(1920772834) - 1) {
                int var6 = var2;
-               if (var2 < 3 && (Client.field2697.method5296(2001279106).field5406[1][var4][var5] & 2) != 0) {
+               if (var2 < 3 && (class730.field2697.method5296(2001279106).field5406[1][var4][var5] & 2) != 0) {
                   var6 = var2 + 1;
                }
 
-               return Client.field2697.method5317(-1611682495).field3862[var6].method3887(var0, var1, -1909964281);
+               return class730.field2697.method5317(-1611682495).field3862[var6].method3887(var0, var1, -1909964281);
             } else {
                return 0;
             }
@@ -135,7 +135,7 @@ public class class679 {
 
    static final void method4273(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2624 ? 1 : 0;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2624 ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ow.uk(" + ')');
       }

@@ -56,7 +56,7 @@ public class class853 extends class106 {
          }
 
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "agp.aiz(" + ')');
       }

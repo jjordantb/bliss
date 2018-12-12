@@ -77,7 +77,7 @@ public final class class492 extends class568 implements class742 {
    static final void method4393(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2906[var2];
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2906[var2];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acb.ti(" + ')');
       }

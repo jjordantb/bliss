@@ -23,14 +23,14 @@ public class class528 {
 
    static boolean method2242(int var0, int var1, int var2, int var3) {
       try {
-         class545 var4 = Client.field2697.method5317(-1611682495);
+         class545 var4 = class730.field2697.method5317(-1611682495);
          boolean var5 = true;
          class265 var6 = (class265)var4.method2425(var0, var1, var2, 693483522);
          if (var6 != null) {
             var5 &= class511.method2616(var6, (byte)-60);
          }
 
-         var6 = (class265)var4.method2429(var0, var1, var2, Client.field2942, 664102063);
+         var6 = (class265)var4.method2429(var0, var1, var2, class730.field2942, 664102063);
          if (var6 != null) {
             var5 &= class511.method2616(var6, (byte)-4);
          }

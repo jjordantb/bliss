@@ -51,7 +51,7 @@ public class class529 {
    static final void method2215(class744 var0, int var1) {
       try {
          boolean var2 = false;
-         if (Client.field2616) {
+         if (class730.field2616) {
             try {
                Object var3 = class662.field9729.method5800(new Object[]{class206.field7099 * 1914527151, 1 == class923.field10295.field3399, var0.field3161[(var0.field3156 -= -391880689) * 681479919]}, -1838433046);
                if (var3 != null) {

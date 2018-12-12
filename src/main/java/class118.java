@@ -68,7 +68,7 @@ public class class118 {
 
    static final void method1460(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class552.method457(-1233866115 * Client.field2733, (byte)-20) ? 1 : 0;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class552.method457(-1233866115 * class730.field2733, (byte)-20) ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "et.afp(" + ')');
       }
@@ -88,7 +88,7 @@ public class class118 {
    public static final void method1462(int var0) {
       try {
          String var1 = class51.field2310 != null ? class51.field2310 : class833.method5432((byte)-3);
-         class158.method3442(var1, false, class615.field8903.field9137.method3689(-2014540467) == 5, Client.field2849, Client.field2632, (byte)37);
+         class158.method3442(var1, false, class615.field8903.field9137.method3689(-2014540467) == 5, class730.field2849, class730.field2632, (byte)37);
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "et.fb(" + ')');
       }
@@ -96,10 +96,10 @@ public class class118 {
 
    public static void method1463(int var0, int var1, int var2) {
       try {
-         class701 var3 = class637.method5936(class643.field10002, Client.field2692.field7765, (byte)84);
+         class701 var3 = class637.method5936(class643.field10002, class730.field2692.field7765, (byte)84);
          var3.field3364.method6364(var0, -1769259974);
          var3.field3364.method6419(var1);
-         Client.field2692.method4380(var3, (byte)-5);
+         class730.field2692.method4380(var3, (byte)-5);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "et.ks(" + ')');
       }
@@ -123,26 +123,26 @@ public class class118 {
             class381.method1066(var1.field1018, -440872681 * var1.field867, var4, var5, var2, (short)-9832);
          }
 
-         class256 var6 = (class256) Client.field2823.method2942((long)(var1.field867 * -440872681));
+         class256 var6 = (class256)class730.field2823.method2942((long)(var1.field867 * -440872681));
          if (var6 != null) {
             class811.method2924(-1617025021 * var6.field8101, var4, var5, var2, 1828905535);
          }
 
-         if (var1 == Client.field2800) {
+         if (var1 == class730.field2800) {
             int var7 = class498.field8102 * 1168366243;
             int[] var8 = class498.field8108;
 
             int var9;
             for(var9 = 0; var9 < var7; ++var9) {
-               class946 var10 = Client.field2786[var8[var9]];
+               class946 var10 = class730.field2786[var8[var9]];
                if (var10 != null) {
                   var10.method2570(var4, var5, var2, 1554634008);
                }
             }
 
-            for(var9 = 0; var9 < Client.field2684 * -1230451913; ++var9) {
-               int var13 = Client.field2680[var9];
-               class437 var11 = (class437) Client.field2677.method2942((long)var13);
+            for(var9 = 0; var9 < class730.field2684 * -1230451913; ++var9) {
+               int var13 = class730.field2680[var9];
+               class437 var11 = (class437)class730.field2677.method2942((long)var13);
                if (var11 != null) {
                   ((class746)var11.field7515).method2570(var4, var5, var2, 1554634008);
                }
@@ -188,7 +188,7 @@ public class class118 {
 
    static final void method1468(class563 var0, int var1) {
       try {
-         class545 var2 = Client.field2697.method5317(-1611682495);
+         class545 var2 = class730.field2697.method5317(-1611682495);
          if (var2 != null) {
             class265 var3 = null;
             if (var0.field1076 * -431456739 == 0) {
@@ -200,7 +200,7 @@ public class class118 {
             }
 
             if (2 == -431456739 * var0.field1076) {
-               var3 = (class265)var2.method2429(2108312995 * var0.field1070, var0.field1069 * 634196087, -2146829167 * var0.field1074, Client.field2942, -2076271452);
+               var3 = (class265)var2.method2429(2108312995 * var0.field1070, var0.field1069 * 634196087, -2146829167 * var0.field1074, class730.field2942, -2076271452);
             }
 
             if (-431456739 * var0.field1076 == 3) {

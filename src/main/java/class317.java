@@ -45,13 +45,13 @@ final class class317 implements class832 {
 
    public static final void method470(class564 var0, int var1, int var2, int var3) {
       try {
-         if (Client.field2832 == null && !class602.field8645 && var0 != null && class519.method2667(var0, 1470456512)) {
-            Client.field2832 = var0;
-            Client.field2693 = class545.method2457(var0, (byte)-122);
-            Client.field2715 = -344812543 * var1;
-            Client.field2835 = var2 * -1376922141;
+         if (class730.field2832 == null && !class602.field8645 && var0 != null && class519.method2667(var0, 1470456512)) {
+            class730.field2832 = var0;
+            class730.field2693 = class545.method2457(var0, (byte)-122);
+            class730.field2715 = -344812543 * var1;
+            class730.field2835 = var2 * -1376922141;
             class484.field8532 = 0;
-            Client.field2845 = false;
+            class730.field2845 = false;
          }
 
       } catch (RuntimeException var5) {
@@ -66,7 +66,7 @@ final class class317 implements class832 {
          } else {
             if (!var0.field1101) {
                int var3 = var1.field867 * -440872681 >>> 16;
-               class521 var4 = new class521(Client.field2823);
+               class521 var4 = new class521(class730.field2823);
 
                for(class256 var5 = (class256)var4.method2749(-2012602178); var5 != null; var5 = (class256)var4.next()) {
                   if (-1617025021 * var5.field8101 == var3) {

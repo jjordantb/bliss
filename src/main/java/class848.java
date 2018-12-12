@@ -832,7 +832,7 @@ public abstract class class848 {
             var14 = var14 + class82.method918(var13, (byte)1);
          }
 
-         var8.method1668(var14, 3 + var2, var6, var10, 0, Client.field2683, class880.field10188 * 1401020893, class602.field8668, class755.field4199, 65280);
+         var8.method1668(var14, 3 + var2, var6, var10, 0, class730.field2683, class880.field10188 * 1401020893, class602.field8668, class755.field4199, 65280);
          if (var7.field1705) {
             class932.field10344.method3128(var2 + 5 + var9.method4605(var14, 1318090489), var6 - 1110385787 * var9.field8230);
          }
@@ -898,28 +898,28 @@ public abstract class class848 {
             }
 
             if (2 != -64305285 * class95.field595 && 5 != class95.field595 * -64305285 && class379.field1139 != null) {
-               class389 var7 = Client.field2697.method5270(681479919);
+               class389 var7 = class730.field2697.method5270(681479919);
                int var8;
                int var9;
                int var10;
                int var11;
                if (2 == class563.field1083 * -863531439) {
-                  var8 = Client.field2734 * -2080858977;
-                  var9 = 1818837461 * Client.field2736;
-                  var10 = (int)(-Client.field2931) & 16383;
+                  var8 = class730.field2734 * -2080858977;
+                  var9 = 1818837461 * class730.field2736;
+                  var10 = (int)(-class730.field2931) & 16383;
                   var11 = 4096;
                } else {
                   class32 var12 = class923.field10295.method1511().field7637;
                   var8 = (int)var12.field5296;
                   var9 = (int)var12.field5299;
-                  var10 = Client.field2782 * 1227356013 + (int)(-Client.field2931) & 16383;
-                  var11 = 4096 - 1412674352 * Client.field2730;
+                  var10 = class730.field2782 * 1227356013 + (int)(-class730.field2931) & 16383;
+                  var11 = 4096 - 1412674352 * class730.field2730;
                }
 
                int var22 = var8 / 128 + 48;
-               int var13 = 48 + Client.field2697.method5272(789210081) * 4 - var9 / 128;
+               int var13 = 48 + class730.field2697.method5272(789210081) * 4 - var9 / 128;
                class379.field1139.method3142((float)var2 + (float)(var1.field881 * -2093041337) / 2.0F, (float)var3 + (float)(457937409 * var1.field887) / 2.0F, (float)var22, (float)var13, var11, var10 << 2, var6, var2, var3);
-               class64 var14 = Client.field2697.method5273(-337725639);
+               class64 var14 = class730.field2697.method5273(-337725639);
 
                int var16;
                int var17;
@@ -939,7 +939,7 @@ public abstract class class848 {
                for(var23 = 0; var23 < 1659101557 * class95.field606; ++var23) {
                   var16 = 2 + class95.field597[var23] * 4 - var8 / 128;
                   var17 = 2 + 4 * class95.field598[var23] - var9 / 128;
-                  class50 var25 = Client.field2697.method5283(2011176396).method4713(class95.field599[var23]);
+                  class50 var25 = class730.field2697.method5283(2011176396).method4713(class95.field599[var23]);
                   if (var25.field2198 != null) {
                      var25 = var25.method1487(class827.field9037, 1042930561);
                      if (var25 == null) {
@@ -957,7 +957,7 @@ public abstract class class848 {
                   class794.method468(var0, var6, var1, var2, var3, var16, var17, var25.field2231 * -1422593103, (byte)0);
                }
 
-               for(class508 var24 = (class508) Client.field2666.method2946(1742338274); var24 != null; var24 = (class508) Client.field2666.method2945((byte)24)) {
+               for(class508 var24 = (class508)class730.field2666.method2946(1742338274); var24 != null; var24 = (class508)class730.field2666.method2945((byte)24)) {
                   var16 = (int)(var24.field641 * 7051297995265073167L >> 28 & 3L);
                   if (var16 == class95.field596 * -1694437021) {
                      var17 = (int)(var24.field641 * 7051297995265073167L & 16383L) - -1760580017 * var7.field1521;

@@ -138,14 +138,14 @@ public class class295 {
 
    static void method6522(int var0, int var1, class564 var2, class118 var3, int var4, int var5, int var6) {
       try {
-         class921[] var7 = Client.field2851;
+         class921[] var7 = class730.field2851;
 
          for(int var8 = 0; var8 < var7.length; ++var8) {
             class921 var9 = var7[var8];
-            if (var9 != null && var9.field10287 * 958933333 != 0 && Client.field2866 * 443738891 % 20 < 10) {
+            if (var9 != null && var9.field10287 * 958933333 != 0 && class730.field2866 * 443738891 % 20 < 10) {
                int var13;
                if (1 == 958933333 * var9.field10287) {
-                  class437 var10 = (class437) Client.field2677.method2942((long)(-841622081 * var9.field10277));
+                  class437 var10 = (class437)class730.field2677.method2942((long)(-841622081 * var9.field10277));
                   if (var10 != null) {
                      class60 var11 = (class60)var10.field7515;
                      class32 var12 = var11.method1511().field7637;
@@ -163,8 +163,8 @@ public class class295 {
                   class515.method2695(var2, var3, var4, var5, var18, var20, var9.field10279 * -92466201, var15);
                }
 
-               if (10 == 958933333 * var9.field10287 && -841622081 * var9.field10277 >= 0 && var9.field10277 * -841622081 < Client.field2786.length) {
-                  class946 var19 = Client.field2786[-841622081 * var9.field10277];
+               if (10 == 958933333 * var9.field10287 && -841622081 * var9.field10277 >= 0 && var9.field10277 * -841622081 < class730.field2786.length) {
+                  class946 var19 = class730.field2786[-841622081 * var9.field10277];
                   if (var19 != null) {
                      class32 var21 = var19.method1511().field7637;
                      int var22 = (int)var21.field5296 / 128 - var0 / 128;

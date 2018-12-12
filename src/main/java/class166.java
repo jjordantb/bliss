@@ -13,7 +13,7 @@ public class class166 {
    public static void method3682(int var0, int var1, boolean var2, int var3) {
       try {
          if (class371.field1088.method2942((long)var0) == null) {
-            if (!Client.field2787) {
+            if (!class730.field2787) {
                class176.method3166(var0, var2, 1982223094);
             } else {
                class689 var4 = new class689(var0, new class957(4096, class16.field6892, var0), var1, var2);
@@ -35,7 +35,7 @@ public class class166 {
          } else if (-1 != var0.field1700 * -149710173) {
             var2 = class85.field1121.method1566(var0.field1700 * -149710173).field4285;
          } else if (class717.method2030(946432351 * var0.field1702, -838004269)) {
-            class437 var3 = (class437) Client.field2677.method2942((long)((int)(2236412381003659263L * var0.field1701)));
+            class437 var3 = (class437)class730.field2677.method2942((long)((int)(2236412381003659263L * var0.field1701)));
             if (var3 != null) {
                class60 var4 = (class60)var3.field7515;
                class401 var5 = var4.field1637;
@@ -48,7 +48,7 @@ public class class166 {
                }
             }
          } else if (class769.method2260(var0.field1702 * 946432351, (byte)-114)) {
-            class50 var7 = Client.field2697.method5283(150013546).method4713((int)(2236412381003659263L * var0.field1701 >>> 32 & 2147483647L));
+            class50 var7 = class730.field2697.method5283(150013546).method4713((int)(2236412381003659263L * var0.field1701 >>> 32 & 2147483647L));
             if (var7.field2198 != null) {
                var7 = var7.method1487(class827.field9037, 1956265286);
             }

@@ -58,14 +58,14 @@ public class class133 extends class304 {
       try {
          int var5 = class923.field10295.field4085[0];
          int var6 = class923.field10295.field4055[0];
-         if (var5 >= 0 && var5 < Client.field2697.method5271(-2029828730) && var6 >= 0 && var6 < Client.field2697.method5272(911412275)) {
-            if (var0 >= 0 && var0 < Client.field2697.method5271(-2140756422) && var1 >= 0 && var1 < Client.field2697.method5272(1432313507)) {
-               int var7 = class345.method157(var5, var6, class923.field10295.method2550(), var3, Client.field2697.method5281(class923.field10295.field3639), var2, Client.field2731, Client.field2719);
+         if (var5 >= 0 && var5 < class730.field2697.method5271(-2029828730) && var6 >= 0 && var6 < class730.field2697.method5272(911412275)) {
+            if (var0 >= 0 && var0 < class730.field2697.method5271(-2140756422) && var1 >= 0 && var1 < class730.field2697.method5272(1432313507)) {
+               int var7 = class345.method157(var5, var6, class923.field10295.method2550(), var3, class730.field2697.method5281(class923.field10295.field3639), var2, class730.field2731, class730.field2719);
                if (var7 < 1) {
                   return false;
                } else {
-                  class95.field601 = Client.field2731[var7 - 1] * -1129029761;
-                  class95.field593 = -1835291189 * Client.field2719[var7 - 1];
+                  class95.field601 = class730.field2731[var7 - 1] * -1129029761;
+                  class95.field593 = -1835291189 * class730.field2719[var7 - 1];
                   class95.field602 = false;
                   class888.method5534(-2054792212);
                   return true;

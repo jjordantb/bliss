@@ -159,7 +159,7 @@ public final class class956 extends class352 implements KeyListener, FocusListen
 
    public synchronized void keyReleased(KeyEvent var1) {
       try {
-         Client.field2619.add((byte)var1.getKeyCode());
+         class730.field2619.add((byte)var1.getKeyCode());
          this.method2111(var1, 1, 1838328599);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acn.keyReleased(" + ')');

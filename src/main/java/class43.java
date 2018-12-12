@@ -176,8 +176,8 @@ public class class43 extends class347 {
 
    static final void method3067(class744 var0, int var1) {
       try {
-         if (Client.field2901 != null) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = Client.field2901;
+         if (class730.field2901 != null) {
+            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class730.field2901;
          } else {
             var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
          }

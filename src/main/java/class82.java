@@ -151,7 +151,7 @@ public class class82 implements class311 {
 
    public static final void method920(boolean var0, byte var1) {
       try {
-         class684[] var2 = Client.field2660;
+         class684[] var2 = class730.field2660;
 
          for(int var3 = 0; var3 < var2.length; ++var3) {
             class684 var4 = var2[var3];
@@ -167,8 +167,8 @@ public class class82 implements class311 {
 
          class725.method1748(-20644488);
          class830.method5375(false, -1663847334);
-         Client.field2697.method5288((byte)8);
-         Client.field2697.method5308(-2101576654);
+         class730.field2697.method5288((byte)8);
+         class730.field2697.method5308(-2101576654);
          class371.method867(false, 1336561252);
          class154.method3492(2, 207248326);
          class540.field3920 = 184109511;

@@ -640,7 +640,7 @@ public class class365 {
 
    static void method1645(int var0) {
       try {
-         Client.field2674.method4374((byte)4);
+         class730.field2674.method4374((byte)4);
          if (-1868526275 * class904.field10354 < 2) {
             class569.field24.method2743(-1528906992);
             class904.field10352 = 0;

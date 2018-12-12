@@ -20,7 +20,7 @@ public class class984 {
    static void method1875(String var0, String var1, int var2, int var3, int var4, long var5, int var7, int var8, boolean var9, boolean var10, long var11, boolean var13, int var14) {
       try {
          if (!class602.field8645 && -278777595 * class602.field8673 < 521) {
-            var2 = var2 != -1 ? var2 : Client.field2919 * -1808468501;
+            var2 = var2 != -1 ? var2 : class730.field2919 * -1808468501;
             class357 var15 = new class357(var0, var1, var2, var3, var4, var5, var7, var8, var9, var10, var11, var13);
             class647.method5482(var15, 1640099092);
          }
@@ -60,7 +60,7 @@ public class class984 {
    static final void method1878(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2902[var2].field10622 * 535421071;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2902[var2].field10622 * 535421071;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jw.ya(" + ')');
       }
@@ -286,9 +286,9 @@ public class class984 {
    public static void method1884(int var0) {
       try {
          if (!class75.field1493) {
-            class312.method418(Client.field2697.method5317(-1611682495).field3863, 234916861);
-            if (Client.field2697.method5317(-1611682495).field3865 != null) {
-               class312.method418(Client.field2697.method5317(-1611682495).field3865, -1747837187);
+            class312.method418(class730.field2697.method5317(-1611682495).field3863, 234916861);
+            if (class730.field2697.method5317(-1611682495).field3865 != null) {
+               class312.method418(class730.field2697.method5317(-1611682495).field3865, -1747837187);
             }
 
             class75.field1493 = true;

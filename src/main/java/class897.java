@@ -578,7 +578,7 @@ public class class897 extends class727 {
          if (var2 != class615.field8903.field9133.method5728(-1741518508)) {
             class615.field8903.method5391(class615.field8903.field9133, var2, -814728981);
             class95.method523(656179282);
-            Client.field2647 = false;
+            class730.field2647 = false;
          }
 
       } catch (RuntimeException var3) {

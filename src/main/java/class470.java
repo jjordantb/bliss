@@ -543,13 +543,13 @@ public class class470 extends IcmpService {
    static void method4593(boolean var0, int var1) {
       try {
          if (var0) {
-            if (-1 != -257444687 * Client.field2822) {
-               class407.method5536(-257444687 * Client.field2822, -2042512871);
+            if (-1 != -257444687 * class730.field2822) {
+               class407.method5536(-257444687 * class730.field2822, -2042512871);
             }
 
-            for(class256 var2 = (class256) Client.field2823.method2946(2118062141); var2 != null; var2 = (class256) Client.field2823.method2945((byte)56)) {
+            for(class256 var2 = (class256)class730.field2823.method2946(2118062141); var2 != null; var2 = (class256)class730.field2823.method2945((byte)56)) {
                if (!var2.method546(-629325116)) {
-                  var2 = (class256) Client.field2823.method2946(1715939754);
+                  var2 = (class256)class730.field2823.method2946(1715939754);
                   if (var2 == null) {
                      break;
                   }
@@ -558,13 +558,13 @@ public class class470 extends IcmpService {
                class526.method2226(var2, true, false, -113822480);
             }
 
-            Client.field2822 = -1785861201;
-            Client.field2823 = new class6(8);
+            class730.field2822 = -1785861201;
+            class730.field2823 = new class6(8);
             class515.method2693((short)255);
-            Client.field2822 = -391544995 * class6.field4931.field9522;
+            class730.field2822 = -391544995 * class6.field4931.field9522;
             class161.method3551(false, (byte)8);
             class881.method6172(-1204145082);
-            class228.method4586(-257444687 * Client.field2822, (int[])null, 188692666);
+            class228.method4586(-257444687 * class730.field2822, (int[])null, 188692666);
          }
 
          class881.field10184 = true;

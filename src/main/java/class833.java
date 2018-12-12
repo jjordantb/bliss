@@ -225,12 +225,12 @@ public class class833 {
          }
 
          String var2 = "";
-         if (Client.field2909 != null) {
-            var2 = "/p=" + Client.field2909;
+         if (class730.field2909 != null) {
+            var2 = "/p=" + class730.field2909;
          }
 
-         String var3 = Client.field2926.field7321 + ".com";
-         return "http://" + var1 + "." + var3 + "/l=" + class321.field1066 + "/a=" + Client.field2646 * -1154804873 + var2 + "/";
+         String var3 = class730.field2926.field7321 + ".com";
+         return "http://" + var1 + "." + var3 + "/l=" + class321.field1066 + "/a=" + class730.field2646 * -1154804873 + var2 + "/";
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "tx.nn(" + ')');
       }

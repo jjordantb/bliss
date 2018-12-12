@@ -43,8 +43,8 @@ public class class874 {
          class615.field8903.method5391(class615.field8903.field9132, 2, 55764026);
          class615.field8903.method5391(class615.field8903.field9142, 1, 777762630);
          class362.method1508(-982122818);
-         Client.field2697.method5282((byte)2).method5673(-338889856);
-         Client.field2657 = true;
+         class730.field2697.method5282((byte)2).method5673(-338889856);
+         class730.field2657 = true;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "cu.r(" + ')');
       }
@@ -99,7 +99,7 @@ public class class874 {
          boolean var5 = false;
 
          for(int var6 = 0; var6 < var3; ++var6) {
-            class946 var7 = Client.field2786[var4[var6]];
+            class946 var7 = class730.field2786[var4[var6]];
             if (var7 != null && class923.field10295 != var7 && var7.field3374 != null && var7.field3374.equalsIgnoreCase(var1)) {
                class643 var8 = null;
                if (var0 == 1) {
@@ -117,10 +117,10 @@ public class class874 {
                }
 
                if (var8 != null) {
-                  class701 var9 = class637.method5936(var8, Client.field2692.field7765, (byte)102);
+                  class701 var9 = class637.method5936(var8, class730.field2692.field7765, (byte)102);
                   var9.field3364.method6361(0);
                   var9.field3364.method6400(var4[var6]);
-                  Client.field2692.method4380(var9, (byte)-127);
+                  class730.field2692.method4380(var9, (byte)-127);
                }
 
                var5 = true;
@@ -139,7 +139,7 @@ public class class874 {
 
    static int method5857(class564 var0, int var1, int var2) {
       try {
-         if (!Client.method1761(var0).method1743(var1, (byte)-58) && var0.field989 == null) {
+         if (!class730.method1761(var0).method1743(var1, (byte)-58) && var0.field989 == null) {
             return -1;
          } else {
             return var0.field956 != null && var0.field956.length > var1 ? var0.field956[var1] : -1;

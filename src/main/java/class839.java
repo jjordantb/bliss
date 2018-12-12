@@ -615,7 +615,7 @@ public class class839 implements class453 {
 
    static final void method5403(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2650 == -1 ? 0 : Client.field2650 * 50 + 1;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2650 == -1 ? 0 : class730.field2650 * 50 + 1;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "mr.tm(" + ')');
       }
@@ -624,9 +624,9 @@ public class class839 implements class453 {
    static final void method5404(class744 var0, byte var1) {
       try {
          class818.method2903(var0.field3159, var0.field3161[(var0.field3156 -= -391880689) * 681479919], (byte)14);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int) Client.field2873[0];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int) Client.field2873[1];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int) Client.field2873[2];
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)class730.field2873[0];
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)class730.field2873[1];
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)class730.field2873[2];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "mr.aov(" + ')');
       }
@@ -640,11 +640,11 @@ public class class839 implements class453 {
          class881.field10177.field7780 = null;
          class881.field10177.field7783 = null;
          class881.field10177.field7773 = 0;
-         Client.field2650 = -1;
+         class730.field2650 = -1;
          class23.method3430(1477186028);
-         Client.field2924 = 0;
-         Client.field2923 = 0;
-         Client.field2785 = null;
+         class730.field2924 = 0;
+         class730.field2923 = 0;
+         class730.field2785 = null;
          class556.field503 = 0;
          class776.field3731 = null;
          class823.field9045 = null;
@@ -652,10 +652,10 @@ public class class839 implements class453 {
          class354.method1455(-163784749);
 
          for(int var1 = 0; var1 < 25; ++var1) {
-            Client.field2906[var1] = 0;
-            Client.field2809[var1] = 0;
-            Client.field2810[var1] = 0;
-            Client.field2811[var1] = 0;
+            class730.field2906[var1] = 0;
+            class730.field2809[var1] = 0;
+            class730.field2810[var1] = 0;
+            class730.field2811[var1] = 0;
          }
 
       } catch (RuntimeException var2) {

@@ -284,7 +284,7 @@ public class class199 extends class732 implements class265 {
          if (var4.field2273) {
             this.field7029 = this.field7029.method6017((byte)0, var15, false);
             if (var4.field2273) {
-               class923 var17 = Client.field2697.method5274(-2114342399);
+               class923 var17 = class730.field2697.method5274(-2114342399);
                this.field7029.method5987(1599271859 * var17.field10290, var17.field10291 * 1630923113, -1560648831 * var17.field10292, -57569897 * var17.field10293);
             }
          }

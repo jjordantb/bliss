@@ -309,21 +309,21 @@ public class class363 {
          if (var0 != null) {
             String var2 = class526.method2229(var0, -1974815014);
             if (var2 != null) {
-               for(int var3 = 0; var3 < Client.field2934 * -548972447; ++var3) {
-                  String var4 = Client.field2841[var3];
+               for(int var3 = 0; var3 < class730.field2934 * -548972447; ++var3) {
+                  String var4 = class730.field2841[var3];
                   String var5 = class526.method2229(var4, -2036890011);
                   if (class559.method477(var0, var2, var4, var5, -1043868937)) {
-                     Client.field2934 -= -765637727;
+                     class730.field2934 -= -765637727;
 
-                     for(int var6 = var3; var6 < -548972447 * Client.field2934; ++var6) {
-                        Client.field2841[var6] = Client.field2841[var6 + 1];
-                        Client.field2936[var6] = Client.field2936[var6 + 1];
-                        Client.field2937[var6] = Client.field2937[var6 + 1];
-                        Client.field2754[var6] = Client.field2754[1 + var6];
-                        Client.field2939[var6] = Client.field2939[var6 + 1];
+                     for(int var6 = var3; var6 < -548972447 * class730.field2934; ++var6) {
+                        class730.field2841[var6] = class730.field2841[var6 + 1];
+                        class730.field2936[var6] = class730.field2936[var6 + 1];
+                        class730.field2937[var6] = class730.field2937[var6 + 1];
+                        class730.field2754[var6] = class730.field2754[1 + var6];
+                        class730.field2939[var6] = class730.field2939[var6 + 1];
                      }
 
-                     Client.field2865 = 754377557 * Client.field2915;
+                     class730.field2865 = 754377557 * class730.field2915;
                      class684 var9 = class423.method5712((short)512);
                      class701 var7 = class637.method5936(class643.field9998, var9.field7765, (byte)6);
                      var7.field3364.method6361(class305.method372(var0, 1644978699));
@@ -345,7 +345,7 @@ public class class363 {
          var0.field3158 -= 1938723502;
          String var2 = (String)var0.field3157[var0.field3158 * -203050393];
          String var3 = (String)var0.field3157[1 + -203050393 * var0.field3158];
-         if (1806357379 * Client.field2790 != 0 || (!Client.field2792 || Client.field2793) && !Client.field2783) {
+         if (1806357379 * class730.field2790 != 0 || (!class730.field2792 || class730.field2793) && !class730.field2783) {
             class684 var4 = class423.method5712((short)512);
             class701 var5 = class637.method5936(class643.field9981, var4.field7765, (byte)122);
             var5.field3364.method6362(0, 16711935);

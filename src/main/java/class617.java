@@ -83,7 +83,7 @@ public class class617 {
 
    static final void method5169(class744 var0, short var1) {
       try {
-         if (14 == -1233866115 * Client.field2733) {
+         if (14 == -1233866115 * class730.field2733) {
             class601.field9194 = var0.field3161[(var0.field3156 -= -391880689) * 681479919] == 1;
          }
 

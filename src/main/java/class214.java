@@ -84,20 +84,20 @@ public class class214 extends class476 {
       try {
          if (!this.field7146 && this.field7137 * 132125965 != 0) {
             Object var2 = null;
-            if (Client.field2705 * 1596783995 == 0) {
+            if (class730.field2705 * 1596783995 == 0) {
                var2 = class949.field3322[this.field7137 * 132125965 - 1].method6636(1781553547);
             } else {
                int var3;
                if (this.field7137 * 132125965 < 0) {
                   var3 = -(this.field7137 * 132125965) - 1;
-                  if (-442628795 * Client.field2623 == var3) {
+                  if (-442628795 * class730.field2623 == var3) {
                      var2 = class923.field10295;
                   } else {
-                     var2 = Client.field2786[var3];
+                     var2 = class730.field2786[var3];
                   }
                } else {
                   var3 = 132125965 * this.field7137 - 1;
-                  class437 var4 = (class437) Client.field2677.method2942((long)var3);
+                  class437 var4 = (class437)class730.field2677.method2942((long)var3);
                   if (var4 != null) {
                      var2 = (class746)var4.field7515;
                   }
@@ -259,11 +259,11 @@ public class class214 extends class476 {
          class933[] var5 = var2.method6089();
          class396[] var6 = var2.method5941();
          if ((this.field7155 == null || this.field7155.field2548) && (var5 != null || var6 != null)) {
-            this.field7155 = class726.method1732(Client.field2866 * 443738891, true);
+            this.field7155 = class726.method1732(class730.field2866 * 443738891, true);
          }
 
          if (this.field7155 != null) {
-            this.field7155.method1731(var1, (long)(443738891 * Client.field2866), var5, var6, false);
+            this.field7155.method1731(var1, (long)(443738891 * class730.field2866), var5, var6, false);
             this.field7155.method1727(this.field3639, this.field8299, this.field8297, this.field8296, this.field8298);
          }
 

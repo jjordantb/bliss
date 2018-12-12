@@ -113,7 +113,7 @@ public class class830 implements class311 {
             class851.field8731.method2530((byte)90);
             class980.field3196.method4148(-176522889);
             class662.field9736.method5717((byte)-92);
-            Client.field2697.method5283(1825433072).method4710(1390466939);
+            class730.field2697.method5283(1825433072).method4710(1390466939);
             class258.field7913.method15(-862794511);
             class85.field1121.method1573((short)23106);
             class936.field10313.method2254(-726986844);
@@ -142,18 +142,18 @@ public class class830 implements class311 {
                   class138.field1171[var2] = null;
                }
 
-               Client.field2658 = 0;
+               class730.field2658 = 0;
             }
 
-            Client.field2697.method5282((byte)31).method5666((byte)24);
+            class730.field2697.method5282((byte)31).method5666((byte)24);
             class916.method6458((byte)-90);
             class299.method6555(-1075754274);
             class209.method3774(-1407310804);
             class762.method2813((byte)-26);
             class384.field1426.method2977();
-            Client.field2761.method2977();
-            Client.field2880.method2977();
-            Client.field2678.method2977();
+            class730.field2761.method2977();
+            class730.field2880.method2977();
+            class730.field2678.method2977();
             class602.field8667.method2977();
          }
 
@@ -177,12 +177,12 @@ public class class830 implements class311 {
 
    static final void method5377(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
       try {
-         for(class281 var7 = (class281) Client.field2631.method5207(-16777216); var7 != null; var7 = (class281) Client.field2631.method5211(1278684124)) {
-            if (Client.field2866 * 443738891 >= 591467947 * var7.field10640) {
+         for(class281 var7 = (class281)class730.field2631.method5207(-16777216); var7 != null; var7 = (class281)class730.field2631.method5211(1278684124)) {
+            if (class730.field2866 * 443738891 >= 591467947 * var7.field10640) {
                var7.method2028(1699061251);
             } else {
                class971.method1790(var7.field10638 * 1759796085, 256 + (var7.field10637 * 1495033107 << 9), 256 + (-1852462101 * var7.field10641 << 9), 587842750 * var7.field10639, -549885479);
-               class501.field3182.method1681(var7.field10642, (int)((float)var0 + Client.field2873[0]), (int)(Client.field2873[1] + (float)var1), -16777216 | 1160845051 * var7.field10636, 0, 8619684);
+               class501.field3182.method1681(var7.field10642, (int)((float)var0 + class730.field2873[0]), (int)(class730.field2873[1] + (float)var1), -16777216 | 1160845051 * var7.field10636, 0, 8619684);
             }
          }
 

@@ -96,21 +96,21 @@ public class class779 {
             var0 = -1;
          }
 
-         if (Client.field2816 * 1396956439 != var0) {
+         if (class730.field2816 * 1396956439 != var0) {
             if (-1 != var0) {
                class447 var2 = class770.field3733.method2911(var0, 16711935);
                class922 var3 = var2.method4316(1479362312);
                if (var3 != null) {
                   class462.field7361.method144(class837.field9161, var3.method6245(), var3.method6238(), var3.method6249(), new Point(var2.field7626 * -1954213555, -326899251 * var2.field7623));
-                  Client.field2816 = -766301529 * var0;
+                  class730.field2816 = -766301529 * var0;
                } else {
                   var0 = -1;
                }
             }
 
-            if (var0 == -1 && Client.field2816 * 1396956439 != -1) {
+            if (var0 == -1 && class730.field2816 * 1396956439 != -1) {
                class462.field7361.method144(class837.field9161, (int[])null, -1, -1, new Point());
-               Client.field2816 = 766301529;
+               class730.field2816 = 766301529;
             }
          }
 

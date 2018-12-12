@@ -87,25 +87,25 @@ public class class285 {
          if (var2 >= 2) {
             throw new RuntimeException();
          } else {
-            Client.field2749 = 1723181617 * var2;
+            class730.field2749 = 1723181617 * var2;
             int var3 = var0.field3161[681479919 * var0.field3156 + 1];
-            if (var3 + 1 >= Client.field2748[-591434031 * Client.field2749].length >> 1) {
+            if (var3 + 1 >= class730.field2748[-591434031 * class730.field2749].length >> 1) {
                throw new RuntimeException();
             } else {
-               Client.field2751 = var3 * -2146952741;
-               Client.field2839 = 0;
-               Client.field2834 = var0.field3161[681479919 * var0.field3156 + 2] * -2045228877;
-               Client.field2755 = -546154255 * var0.field3161[3 + 681479919 * var0.field3156];
+               class730.field2751 = var3 * -2146952741;
+               class730.field2839 = 0;
+               class730.field2834 = var0.field3161[681479919 * var0.field3156 + 2] * -2045228877;
+               class730.field2755 = -546154255 * var0.field3161[3 + 681479919 * var0.field3156];
                int var4 = var0.field3161[4 + 681479919 * var0.field3156];
                if (var4 >= 2) {
                   throw new RuntimeException();
                } else {
-                  Client.field2750 = -2694169 * var4;
+                  class730.field2750 = -2694169 * var4;
                   int var5 = var0.field3161[5 + 681479919 * var0.field3156];
-                  if (1 + var5 >= Client.field2748[-839811113 * Client.field2750].length >> 1) {
+                  if (1 + var5 >= class730.field2748[-839811113 * class730.field2750].length >> 1) {
                      throw new RuntimeException();
                   } else {
-                     Client.field2752 = var5 * -274142709;
+                     class730.field2752 = var5 * -274142709;
                      class563.field1083 = -734758223;
                      class516.field4332 = -1001372047;
                      class495.field8099 = 178575833;
@@ -120,16 +120,16 @@ public class class285 {
 
    static final void method6663(int var0, int var1, int var2, int var3, int var4) {
       try {
-         int var5 = -933698717 * Client.field2765;
-         int var6 = 1036219865 * Client.field2766;
+         int var5 = -933698717 * class730.field2765;
+         int var6 = 1036219865 * class730.field2766;
          class48 var7;
-         if (1 == Client.field2729 * -392325587) {
-            var7 = class974.field2983[Client.field2767 * 1347929875 / 100];
+         if (1 == class730.field2729 * -392325587) {
+            var7 = class974.field2983[class730.field2767 * 1347929875 / 100];
             var7.method3128(var5 - 8, var6 - 8);
          }
 
-         if (2 == Client.field2729 * -392325587) {
-            var7 = class974.field2983[4 + Client.field2767 * 1347929875 / 100];
+         if (2 == class730.field2729 * -392325587) {
+            var7 = class974.field2983[4 + class730.field2767 * 1347929875 / 100];
             var7.method3128(var5 - 8, var6 - 8);
          }
 

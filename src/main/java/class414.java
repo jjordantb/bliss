@@ -111,7 +111,7 @@ public class class414 {
 
    static final void method5599(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2816 * 1396956439;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2816 * 1396956439;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "cc.uz(" + ')');
       }
@@ -119,85 +119,85 @@ public class class414 {
 
    static final void method5600(int var0) {
       try {
-         class814.method2932(Client.field2832, -1659993558);
+         class814.method2932(class730.field2832, -1659993558);
          class484.field8532 += -1137234765;
-         if (Client.field2920 && Client.field2837) {
+         if (class730.field2920 && class730.field2837) {
             int var1 = class912.field10424.method5524((byte)-21);
             int var2 = class912.field10424.method5513((byte)-35);
-            var1 -= -98735103 * Client.field2715;
-            var2 -= -938469429 * Client.field2835;
-            if (var1 < Client.field2838 * -343518257) {
-               var1 = -343518257 * Client.field2838;
+            var1 -= -98735103 * class730.field2715;
+            var2 -= -938469429 * class730.field2835;
+            if (var1 < class730.field2838 * -343518257) {
+               var1 = -343518257 * class730.field2838;
             }
 
-            if (var1 + -2093041337 * Client.field2832.field881 > Client.field2840 * -1221279965 + -343518257 * Client.field2838) {
-               var1 = -343518257 * Client.field2838 + Client.field2840 * -1221279965 - -2093041337 * Client.field2832.field881;
+            if (var1 + -2093041337 * class730.field2832.field881 > class730.field2840 * -1221279965 + -343518257 * class730.field2838) {
+               var1 = -343518257 * class730.field2838 + class730.field2840 * -1221279965 - -2093041337 * class730.field2832.field881;
             }
 
-            if (var2 < 1325631359 * Client.field2781) {
-               var2 = 1325631359 * Client.field2781;
+            if (var2 < 1325631359 * class730.field2781) {
+               var2 = 1325631359 * class730.field2781;
             }
 
-            if (457937409 * Client.field2832.field887 + var2 > 1325631359 * Client.field2781 + -609231901 * Client.field2948) {
-               var2 = -609231901 * Client.field2948 + Client.field2781 * 1325631359 - 457937409 * Client.field2832.field887;
+            if (457937409 * class730.field2832.field887 + var2 > 1325631359 * class730.field2781 + -609231901 * class730.field2948) {
+               var2 = -609231901 * class730.field2948 + class730.field2781 * 1325631359 - 457937409 * class730.field2832.field887;
             }
 
             int var3;
             int var4;
-            if (class263.field8132 == Client.field2693) {
+            if (class263.field8132 == class730.field2693) {
                var3 = var1;
                var4 = var2;
             } else {
-               var3 = var1 - Client.field2838 * -343518257 + 684246511 * Client.field2693.field891;
-               var4 = var2 - Client.field2781 * 1325631359 + Client.field2693.field892 * -1424956747;
+               var3 = var1 - class730.field2838 * -343518257 + 684246511 * class730.field2693.field891;
+               var4 = var2 - class730.field2781 * 1325631359 + class730.field2693.field892 * -1424956747;
             }
 
             class202 var5;
             if (!class912.field10424.method5511((byte)88)) {
-               if (Client.field2845) {
+               if (class730.field2845) {
                   class422.method5724((byte)4);
-                  if (Client.field2832.field862 != null) {
+                  if (class730.field2832.field862 != null) {
                      var5 = new class202();
-                     var5.field7578 = Client.field2832;
+                     var5.field7578 = class730.field2832;
                      var5.field7579 = 622624491 * var3;
                      var5.field7580 = var4 * 335112545;
-                     var5.field7582 = Client.field2836;
-                     var5.field7583 = Client.field2832.field862;
+                     var5.field7582 = class730.field2836;
+                     var5.field7583 = class730.field2832.field862;
                      class408.method5470(var5, (byte)83);
                   }
 
-                  if (Client.field2836 != null && Client.method1768(Client.field2832) != null) {
-                     class590.method1220(Client.field2832, Client.field2836, 1471379856);
+                  if (class730.field2836 != null && class730.method1768(class730.field2832) != null) {
+                     class590.method1220(class730.field2832, class730.field2836, 1471379856);
                   }
-               } else if ((2089115297 * Client.field2812 == 1 || class305.method373(-1591809416)) && class602.field8673 * -278777595 > 2) {
-                  class935.method6308(-1040412347 * Client.field2843 + -98735103 * Client.field2715, Client.field2844 * 601707167 + Client.field2835 * -938469429, -2029149482);
+               } else if ((2089115297 * class730.field2812 == 1 || class305.method373(-1591809416)) && class602.field8673 * -278777595 > 2) {
+                  class935.method6308(-1040412347 * class730.field2843 + -98735103 * class730.field2715, class730.field2844 * 601707167 + class730.field2835 * -938469429, -2029149482);
                } else if (class935.method6310(2078410937)) {
-                  class935.method6308(Client.field2715 * -98735103 + -1040412347 * Client.field2843, Client.field2844 * 601707167 + -938469429 * Client.field2835, -2029149482);
+                  class935.method6308(class730.field2715 * -98735103 + -1040412347 * class730.field2843, class730.field2844 * 601707167 + -938469429 * class730.field2835, -2029149482);
                }
 
-               Client.field2832 = null;
-               Client.field2693 = null;
+               class730.field2832 = null;
+               class730.field2693 = null;
             } else {
-               if (379282043 * class484.field8532 > 2117401247 * Client.field2832.field960) {
-                  int var8 = var1 - Client.field2843 * -1040412347;
-                  int var6 = var2 - 601707167 * Client.field2844;
-                  if (var8 > Client.field2832.field964 * -1855449225 || var8 < -(-1855449225 * Client.field2832.field964) || var6 > -1855449225 * Client.field2832.field964 || var6 < -(-1855449225 * Client.field2832.field964)) {
-                     Client.field2845 = true;
+               if (379282043 * class484.field8532 > 2117401247 * class730.field2832.field960) {
+                  int var8 = var1 - class730.field2843 * -1040412347;
+                  int var6 = var2 - 601707167 * class730.field2844;
+                  if (var8 > class730.field2832.field964 * -1855449225 || var8 < -(-1855449225 * class730.field2832.field964) || var6 > -1855449225 * class730.field2832.field964 || var6 < -(-1855449225 * class730.field2832.field964)) {
+                     class730.field2845 = true;
                   }
                }
 
-               if (Client.field2832.field1016 != null && Client.field2845) {
+               if (class730.field2832.field1016 != null && class730.field2845) {
                   var5 = new class202();
-                  var5.field7578 = Client.field2832;
+                  var5.field7578 = class730.field2832;
                   var5.field7579 = 622624491 * var3;
                   var5.field7580 = var4 * 335112545;
-                  var5.field7583 = Client.field2832.field1016;
+                  var5.field7583 = class730.field2832.field1016;
                   class408.method5470(var5, (byte)72);
                }
             }
          } else if (379282043 * class484.field8532 > 1) {
-            Client.field2832 = null;
-            Client.field2693 = null;
+            class730.field2832 = null;
+            class730.field2693 = null;
          }
 
       } catch (RuntimeException var7) {

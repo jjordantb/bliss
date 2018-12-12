@@ -35,10 +35,10 @@ public class class241 {
 
    public static final void method4705(int var0) {
       try {
-         if (!Client.field2743) {
-            Client.field2740 += (-24.0F - Client.field2740) / 2.0F;
-            Client.field2744 = true;
-            Client.field2743 = true;
+         if (!class730.field2743) {
+            class730.field2740 += (-24.0F - class730.field2740) / 2.0F;
+            class730.field2744 = true;
+            class730.field2743 = true;
          }
 
       } catch (RuntimeException var2) {

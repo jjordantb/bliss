@@ -46,8 +46,8 @@ final class class386 implements class415 {
 
    static final void method1166(class744 var0, int var1) {
       try {
-         if (Client.field2785 != null) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class431.method4256(Client.field2785, 864183945);
+         if (class730.field2785 != null) {
+            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class431.method4256(class730.field2785, 864183945);
          } else {
             var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
          }
@@ -77,7 +77,7 @@ final class class386 implements class415 {
 
    public static void method1169(class284 var0, int var1) {
       try {
-         if (!class552.method457(Client.field2733 * -1233866115, (byte)-26)) {
+         if (!class552.method457(class730.field2733 * -1233866115, (byte)-26)) {
             var0.method6670(1342402184);
          } else {
             class978.field3128.method3584(var0, 2143317873);
@@ -102,7 +102,7 @@ final class class386 implements class415 {
                var11 = class979.method1834(var0, var1, 0, 0, var7, var5, (byte)-22);
             }
          } else {
-            class50 var8 = Client.field2697.method5283(-1208362615).method4713(var6);
+            class50 var8 = class730.field2697.method5283(-1208362615).method4713(var6);
             int var9;
             int var10;
             if (var5 != 0 && var5 != 2) {

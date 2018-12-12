@@ -87,10 +87,10 @@ public final class class873 {
       try {
          if (!class215.method3835(var0, (int[])null, -1216775650)) {
             if (-1 != var7) {
-               Client.field2882[var7] = true;
+               class730.field2882[var7] = true;
             } else {
                for(int var9 = 0; var9 < 113; ++var9) {
-                  Client.field2882[var9] = true;
+                  class730.field2882[var9] = true;
                }
             }
          } else {

@@ -87,8 +87,8 @@ public abstract class class958 {
 
    static boolean method2057(int var0) {
       try {
-         Client.field2694 += -75983735;
-         Client.field2695 = true;
+         class730.field2694 += -75983735;
+         class730.field2695 = true;
          return true;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "oh.ne(" + ')');

@@ -74,7 +74,7 @@ public class class827 implements class925 {
    static final void method5358(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         int var3 = Client.field2902[var2].method6657(-574288948);
+         int var3 = class730.field2902[var2].method6657(-574288948);
          var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3 == 2 ? 1 : 0;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "fe.yy(" + ')');

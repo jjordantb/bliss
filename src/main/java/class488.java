@@ -83,19 +83,19 @@ public class class488 implements class951 {
          class881.field10177.field7783 = null;
          class881.field10177.field7771 = 0;
          class881.field10177.field7773 = 0;
-         Client.field2650 = -1;
+         class730.field2650 = -1;
          class906.method6342(2108312995);
          class528.method2246(385051775);
 
          int var1;
          for(var1 = 0; var1 < 2048; ++var1) {
-            Client.field2786[var1] = null;
+            class730.field2786[var1] = null;
          }
 
          class923.field10295 = null;
 
-         for(var1 = 0; var1 < 1962237353 * Client.field2753; ++var1) {
-            class746 var2 = (class746) Client.field2797[var1].field7515;
+         for(var1 = 0; var1 < 1962237353 * class730.field2753; ++var1) {
+            class746 var2 = (class746)class730.field2797[var1].field7515;
             if (var2 != null) {
                var2.field4054 = -283914955;
             }
@@ -108,7 +108,7 @@ public class class488 implements class951 {
          class967.method1750(0, 580389189);
 
          for(var1 = 0; var1 < 113; ++var1) {
-            Client.field2882[var1] = true;
+            class730.field2882[var1] = true;
          }
 
          class190.method3732(-2137735375);

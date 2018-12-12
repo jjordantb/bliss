@@ -65,7 +65,7 @@ public class class677 {
    static final void method4226(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         int var3 = Client.field2902[var2].method6657(-574288948);
+         int var3 = class730.field2902[var2].method6657(-574288948);
          var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3 == 0 ? 1 : 0;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "pb.ys(" + ')');
@@ -95,8 +95,8 @@ public class class677 {
    static final void method4229(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         if (2 == 1131012101 * Client.field2924 && var2 < Client.field2923 * -1054937867) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2928[var2];
+         if (2 == 1131012101 * class730.field2924 && var2 < class730.field2923 * -1054937867) {
+            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2928[var2];
          } else {
             var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
          }

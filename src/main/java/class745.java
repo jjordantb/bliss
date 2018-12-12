@@ -272,18 +272,18 @@ public class class745 {
 
    static final void method2596(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
       try {
-         if (var2 >= 1 && var3 >= 1 && var2 <= Client.field2697.method5271(-1936425983) - 2 && var3 <= Client.field2697.method5272(-1245034974) - 2) {
+         if (var2 >= 1 && var3 >= 1 && var2 <= class730.field2697.method5271(-1936425983) - 2 && var3 <= class730.field2697.method5272(-1245034974) - 2) {
             int var9 = var0;
-            if (var0 < 3 && Client.field2697.method5296(511320643).method3386(var2, var3, 549965572)) {
+            if (var0 < 3 && class730.field2697.method5296(511320643).method3386(var2, var3, 549965572)) {
                var9 = var0 + 1;
             }
 
-            if (Client.field2697.method5317(-1611682495) != null) {
-               Client.field2697.method5286(-1368274969).method97(class593.field1623, var0, var1, var2, var3, Client.field2697.method5281(var0), 366084983);
+            if (class730.field2697.method5317(-1611682495) != null) {
+               class730.field2697.method5286(-1368274969).method97(class593.field1623, var0, var1, var2, var3, class730.field2697.method5281(var0), 366084983);
                if (var4 >= 0) {
                   int var10 = class615.field8903.field9113.method971(-810781268);
                   class615.field8903.method5391(class615.field8903.field9113, 1, 650835797);
-                  Client.field2697.method5286(-630573167).method106(class593.field1623, var9, var0, var2, var3, var4, var5, var6, Client.field2697.method5281(var0), var7, 2073430416);
+                  class730.field2697.method5286(-630573167).method106(class593.field1623, var9, var0, var2, var3, var4, var5, var6, class730.field2697.method5281(var0), var7, 2073430416);
                   class615.field8903.method5391(class615.field8903.field9113, var10, 631929348);
                }
             }
@@ -306,7 +306,7 @@ public class class745 {
       try {
          class615.field8903.method5391(class615.field8903.field9139, var0.field3161[(var0.field3156 -= -391880689) * 681479919] != 0 ? 1 : 0, -856880407);
          class95.method523(656179282);
-         Client.field2697.method5309(1778418334);
+         class730.field2697.method5309(1778418334);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "qm.aip(" + ')');
       }

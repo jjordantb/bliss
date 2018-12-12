@@ -250,9 +250,9 @@ public class class399 {
       try {
          int var12;
          if (2 == -863531439 * class563.field1083) {
-            var12 = (int) Client.field2931 & 16383;
+            var12 = (int)class730.field2931 & 16383;
          } else {
-            var12 = Client.field2782 * 1227356013 + (int) Client.field2931 & 16383;
+            var12 = class730.field2782 * 1227356013 + (int)class730.field2931 & 16383;
          }
 
          int var13 = Math.max(var0.field881 * -2093041337 / 2, 457937409 * var0.field887 / 2) + 10;
@@ -261,8 +261,8 @@ public class class399 {
             int var15 = class703.field3413[var12];
             int var16 = class703.field3404[var12];
             if (class563.field1083 * -863531439 != 2) {
-               var15 = 256 * var15 / (356727603 * Client.field2730 + 256);
-               var16 = 256 * var16 / (256 + 356727603 * Client.field2730);
+               var15 = 256 * var15 / (356727603 * class730.field2730 + 256);
+               var16 = 256 * var16 / (256 + 356727603 * class730.field2730);
             }
 
             int var17 = var16 * var4 + var15 * var5 >> 14;

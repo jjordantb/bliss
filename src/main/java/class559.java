@@ -10,7 +10,7 @@ public final class class559 {
 
    static void method475(String var0, int var1) {
       try {
-         Client.field2909 = var0;
+         class730.field2909 = var0;
          if (class382.method1061((byte)-104) != class99.field625) {
             try {
                String var2 = class833.field9178.getParameter(class440.field7666.field7683);

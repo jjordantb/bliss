@@ -262,21 +262,21 @@ public class class114 {
 
    static final void method1295(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
       try {
-         if (Client.field2705 * 1596783995 == 3) {
+         if (class730.field2705 * 1596783995 == 3) {
             int var8 = class498.field8102 * 1168366243;
             int[] var9 = class498.field8108;
 
             int var10;
             for(var10 = 0; var10 < var8; ++var10) {
-               class946 var11 = Client.field2786[var9[var10]];
+               class946 var11 = class730.field2786[var9[var10]];
                if (var11 != null) {
                   var11.method2569(var0, var1, var2, var3, var4, var5, var6, (byte)12);
                }
             }
 
-            for(var10 = 0; var10 < -1230451913 * Client.field2684; ++var10) {
-               int var14 = Client.field2680[var10];
-               class437 var12 = (class437) Client.field2677.method2942((long)var14);
+            for(var10 = 0; var10 < -1230451913 * class730.field2684; ++var10) {
+               int var14 = class730.field2680[var10];
+               class437 var12 = (class437)class730.field2677.method2942((long)var14);
                if (var12 != null) {
                   ((class746)var12.field7515).method2569(var0, var1, var2, var3, var4, var5, var6, (byte)12);
                }

@@ -39,7 +39,7 @@ public class class554 implements Runnable {
       try {
          try {
             int var1 = class916.field10415 == class721.field3634 ? 80 : 1606920449 * class601.field9200.field4347 + 7000;
-            BufferedReader var2 = new BufferedReader(new InputStreamReader(new DataInputStream((new URL("http://" + class601.field9200.field4343 + ":" + var1 + "/news.ws?game=" + -937307905 * Client.field2926.field7327)).openStream())));
+            BufferedReader var2 = new BufferedReader(new InputStreamReader(new DataInputStream((new URL("http://" + class601.field9200.field4343 + ":" + var1 + "/news.ws?game=" + -937307905 * class730.field2926.field7327)).openStream())));
             String var3 = var2.readLine();
 
             ArrayList var4;
@@ -111,7 +111,7 @@ public class class554 implements Runnable {
 
             if (var3.field9899) {
                if (1817570317 * var0.field1636 != 0) {
-                  String var5 = Client.field2926 == class469.field7320 ? class814.field4802.method2927(class321.field1066, -875414210) : class814.field4785.method2927(class321.field1066, -875414210);
+                  String var5 = class730.field2926 == class469.field7320 ? class814.field4802.method2927(class321.field1066, -875414210) : class814.field4785.method2927(class321.field1066, -875414210);
                   if (1817570317 * var0.field1636 <= 0) {
                      var4 = var4 + class637.method5935(1817570317 * var0.field1636, class923.field10295.field3385 * 696798311, (byte)4);
                   } else {
@@ -119,16 +119,16 @@ public class class554 implements Runnable {
                   }
                }
 
-               if (Client.field2817 && !var1) {
+               if (class730.field2817 && !var1) {
                   class785 var11 = 831522399 * class354.field2139 != -1 ? class452.field7216.method5148(831522399 * class354.field2139, 1875400558) : null;
                   if ((class568.field645 * -112110875 & 2) != 0 && (var11 == null || var3.method6109(class354.field2139 * 831522399, -388931549 * var11.field3822, (byte)47) != var11.field3822 * -388931549)) {
-                     class984.method1875(Client.field2820, Client.field2735 + " " + class822.field9048 + " " + class56.method1545(16776960, -2021390481) + var4, 697885143 * class175.field5075, 8, -1, (long)(1888274983 * var0.field4028), 0, 0, true, false, (long)(1888274983 * var0.field4028), false, -1507413924);
+                     class984.method1875(class730.field2820, class730.field2735 + " " + class822.field9048 + " " + class56.method1545(16776960, -2021390481) + var4, 697885143 * class175.field5075, 8, -1, (long)(1888274983 * var0.field4028), 0, 0, true, false, (long)(1888274983 * var0.field4028), false, -1507413924);
                   }
                }
 
                if (!var1) {
                   String[] var12 = var3.field9878;
-                  if (Client.field2904) {
+                  if (class730.field2904) {
                      var12 = class2.method2971(var12, -1228297238);
                   }
 
@@ -138,7 +138,7 @@ public class class554 implements Runnable {
                      for(var6 = var12.length - 1; var6 >= 0; --var6) {
                         if (var12[var6] != null && (var3.field9894 == 0 || !var12[var6].equalsIgnoreCase(class814.field4780.method2927(class321.field1066, -875414210)) && !var12[var6].equalsIgnoreCase(class814.field4779.method2927(class321.field1066, -875414210)))) {
                            var7 = 0;
-                           int var8 = 1395924385 * Client.field2671;
+                           int var8 = 1395924385 * class730.field2671;
                            if (var6 == 0) {
                               var7 = 9;
                            }
@@ -184,7 +184,7 @@ public class class554 implements Runnable {
                               }
 
                               short var13 = 0;
-                              int var9 = 1395924385 * Client.field2671;
+                              int var9 = 1395924385 * class730.field2671;
                               if (var6 == 0) {
                                  var13 = 9;
                               }

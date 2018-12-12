@@ -136,7 +136,7 @@ public class class881 {
    public static void method6172(int var0) {
       try {
          for(int var1 = 0; var1 < 113; ++var1) {
-            Client.field2882[var1] = true;
+            class730.field2882[var1] = true;
          }
 
       } catch (RuntimeException var2) {

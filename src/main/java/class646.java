@@ -204,7 +204,7 @@ public class class646 implements class415 {
 
    static final void method5500(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2646 * -1154804873;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2646 * -1154804873;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "g.uy(" + ')');
       }
@@ -212,7 +212,7 @@ public class class646 implements class415 {
 
    static final void method5501(class744 var0, short var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2661 ? 1 : 0;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2661 ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "g.ahy(" + ')');
       }
@@ -247,10 +247,10 @@ public class class646 implements class415 {
    public static void method5504(byte var0) {
       try {
          if (class296.field10468 == null) {
-            int var1 = 1898544019 * Client.field1813;
-            int var2 = 540368727 * Client.field1814;
+            int var1 = 1898544019 * class730.field1813;
+            int var2 = 540368727 * class730.field1814;
             int var3 = class919.field10433 * -639974669 - class759.field4331 * -2110394505 - var1;
-            int var4 = 1282634425 * Client.field1812 - -1111710645 * class97.field614 - var2;
+            int var4 = 1282634425 * class730.field1812 - -1111710645 * class97.field614 - var2;
             if (var1 > 0 || var3 > 0 || var2 > 0 || var4 > 0) {
                try {
                   Container var5 = class348.method193((byte)92);
@@ -265,7 +265,7 @@ public class class646 implements class415 {
                   Graphics var11 = var5.getGraphics();
                   var11.setColor(Color.black);
                   if (var1 > 0) {
-                     var11.fillRect(var6, var7, var1, Client.field1812 * 1282634425);
+                     var11.fillRect(var6, var7, var1, class730.field1812 * 1282634425);
                   }
 
                   if (var2 > 0) {
@@ -273,11 +273,11 @@ public class class646 implements class415 {
                   }
 
                   if (var3 > 0) {
-                     var11.fillRect(var6 + class919.field10433 * -639974669 - var3, var7, var3, Client.field1812 * 1282634425);
+                     var11.fillRect(var6 + class919.field10433 * -639974669 - var3, var7, var3, class730.field1812 * 1282634425);
                   }
 
                   if (var4 > 0) {
-                     var11.fillRect(var6, Client.field1812 * 1282634425 + var7 - var4, -639974669 * class919.field10433, var4);
+                     var11.fillRect(var6, class730.field1812 * 1282634425 + var7 - var4, -639974669 * class919.field10433, var4);
                   }
                } catch (Exception var9) {
                   ;

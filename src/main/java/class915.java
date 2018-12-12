@@ -99,7 +99,7 @@ public class class915 extends class697 {
 
    static int method6441(int var0) {
       try {
-         if (Client.field2832 == null) {
+         if (class730.field2832 == null) {
             if (!class602.field8645) {
                if (class422.field9604.field2975) {
                   if (class348.field220 != null) {

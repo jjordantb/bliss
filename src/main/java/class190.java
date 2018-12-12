@@ -143,12 +143,12 @@ public class class190 {
 
    static void method3732(int var0) {
       try {
-         class701 var1 = class637.method5936(class643.field10028, Client.field2692.field7765, (byte)103);
+         class701 var1 = class637.method5936(class643.field10028, class730.field2692.field7765, (byte)103);
          var1.field3364.method6361(class660.method5750((byte)-123));
          var1.field3364.method6362(class759.field4331 * -2110394505, 16711935);
          var1.field3364.method6362(class97.field614 * -1111710645, 16711935);
          var1.field3364.method6361(class615.field8903.field9116.method1098(-196354448));
-         Client.field2692.method4380(var1, (byte)-93);
+         class730.field2692.method4380(var1, (byte)-93);
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "np.gp(" + ')');
       }

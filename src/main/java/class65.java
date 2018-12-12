@@ -836,7 +836,7 @@ public class class65 extends class347 {
                class526.method2226(var0, true, false, -113822480);
             } else {
                class131 var11 = class382.field1410[var1];
-               Client.method1760(var11, var11.method887((byte)-55), -1, var2, var3, var4, var5, var6, var7, var8, var9);
+               class730.method1760(var11, var11.method887((byte)-55), -1, var2, var3, var4, var5, var6, var7, var8, var9);
             }
          }
 

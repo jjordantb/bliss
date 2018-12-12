@@ -116,10 +116,10 @@ public class class660 {
    static final void method5748(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         if (Client.field2924 * 1131012101 != 0 && var2 < -548972447 * Client.field2934) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = Client.field2841[var2];
-            if (Client.field2937[var2] != null) {
-               var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = Client.field2937[var2];
+         if (class730.field2924 * 1131012101 != 0 && var2 < -548972447 * class730.field2934) {
+            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class730.field2841[var2];
+            if (class730.field2937[var2] != null) {
+               var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class730.field2937[var2];
             } else {
                var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
             }
@@ -147,7 +147,7 @@ public class class660 {
          if (class53.field2311 && class296.field10468 != null) {
             return 3;
          } else {
-            return Client.field2780 ? 2 : 1;
+            return class730.field2780 ? 2 : 1;
          }
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "hy.gc(" + ')');

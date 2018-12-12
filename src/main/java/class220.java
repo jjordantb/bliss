@@ -42,7 +42,7 @@ public class class220 {
 
    static final void method4041(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2621 ? 1 : 0;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2621 ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ek.abd(" + ')');
       }
@@ -73,12 +73,12 @@ public class class220 {
 
    public static final void method4044(boolean var0, byte var1) {
       try {
-         class701 var2 = class637.method5936(class643.field9984, Client.field2692.field7765, (byte)111);
-         Client.field2692.method4380(var2, (byte)-21);
+         class701 var2 = class637.method5936(class643.field9984, class730.field2692.field7765, (byte)111);
+         class730.field2692.method4380(var2, (byte)-21);
 
-         for(class256 var3 = (class256) Client.field2823.method2946(1892786919); var3 != null; var3 = (class256) Client.field2823.method2945((byte)-93)) {
+         for(class256 var3 = (class256)class730.field2823.method2946(1892786919); var3 != null; var3 = (class256)class730.field2823.method2945((byte)-93)) {
             if (!var3.method546(-629325116)) {
-               var3 = (class256) Client.field2823.method2946(1676096674);
+               var3 = (class256)class730.field2823.method2946(1676096674);
                if (var3 == null) {
                   break;
                }
@@ -89,9 +89,9 @@ public class class220 {
             }
          }
 
-         if (Client.field2633 != null) {
-            class814.method2932(Client.field2633, -1209330591);
-            Client.field2633 = null;
+         if (class730.field2633 != null) {
+            class814.method2932(class730.field2633, -1209330591);
+            class730.field2633 = null;
          }
 
       } catch (RuntimeException var4) {

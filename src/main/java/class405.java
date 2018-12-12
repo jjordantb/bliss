@@ -102,7 +102,7 @@ public class class405 implements Runnable {
          int var2 = var0.field3174[var0.field3176 * 1883543357];
          class14.field6693[var2] = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
          class379.method968(var2, (byte)0);
-         Client.field2717 |= class474.field8271[var2];
+         class730.field2717 |= class474.field8271[var2];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "qu.ag(" + ')');
       }

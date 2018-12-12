@@ -100,8 +100,8 @@ public class class969 {
    static final void method1696(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         if (2 == 1131012101 * Client.field2924 && var2 >= 0 && var2 < Client.field2923 * -1054937867) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2703[var2] ? 1 : 0;
+         if (2 == 1131012101 * class730.field2924 && var2 >= 0 && var2 < class730.field2923 * -1054937867) {
+            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2703[var2] ? 1 : 0;
          } else {
             var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
          }

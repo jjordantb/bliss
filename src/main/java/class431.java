@@ -98,10 +98,10 @@ public class class431 {
 
    static final void method4254(int var0, int var1, int var2, int var3, byte var4) {
       try {
-         for(int var5 = 0; var5 < Client.field2667 * -112139815; ++var5) {
-            Rectangle var6 = Client.field2884[var5];
+         for(int var5 = 0; var5 < class730.field2667 * -112139815; ++var5) {
+            Rectangle var6 = class730.field2884[var5];
             if (var6.x + var6.width > var0 && var6.x < var0 + var2 && var6.height + var6.y > var1 && var6.y < var3 + var1) {
-               Client.field2882[var5] = true;
+               class730.field2882[var5] = true;
             }
          }
 
@@ -113,8 +113,8 @@ public class class431 {
    static final void method4255(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         if (Client.field2924 * 1131012101 == 2 && var2 < -1054937867 * Client.field2923) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = Client.field2929[var2];
+         if (class730.field2924 * 1131012101 == 2 && var2 < -1054937867 * class730.field2923) {
+            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class730.field2929[var2];
          } else {
             var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
          }

@@ -37,7 +37,7 @@ public class class909 {
 
    public static void method6436(int var0) {
       try {
-         if (-1233866115 * Client.field2733 == 14 && !class673.method4261((byte)46) && !class556.method431(-391880689)) {
+         if (-1233866115 * class730.field2733 == 14 && !class673.method4261((byte)46) && !class556.method431(-391880689)) {
             class967.method1750(18, 2092937740);
          }
 

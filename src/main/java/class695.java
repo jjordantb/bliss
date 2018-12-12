@@ -238,7 +238,7 @@ public class class695 {
 
    static final void method3940(class744 var0, short var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2800 == null ? -1 : -440872681 * Client.field2800.field867;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2800 == null ? -1 : -440872681 * class730.field2800.field867;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jo.api(" + ')');
       }

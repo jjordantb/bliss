@@ -65,23 +65,23 @@ public class class49 {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
          int var3 = var2 >> 14 & 16383;
          int var4 = var2 & 16383;
-         class389 var5 = Client.field2697.method5270(681479919);
+         class389 var5 = class730.field2697.method5270(681479919);
          var3 -= -1760580017 * var5.field1521;
          if (var3 < 0) {
             var3 = 0;
-         } else if (var3 >= Client.field2697.method5271(-1870653657)) {
-            var3 = Client.field2697.method5271(-2106000427);
+         } else if (var3 >= class730.field2697.method5271(-1870653657)) {
+            var3 = class730.field2697.method5271(-2106000427);
          }
 
          var4 -= var5.field1522 * 283514611;
          if (var4 < 0) {
             var4 = 0;
-         } else if (var4 >= Client.field2697.method5272(787275205)) {
-            var4 = Client.field2697.method5272(11403406);
+         } else if (var4 >= class730.field2697.method5272(787275205)) {
+            var4 = class730.field2697.method5272(11403406);
          }
 
-         Client.field2734 = 672497503 * ((var3 << 9) + 256);
-         Client.field2736 = 957476733 * ((var4 << 9) + 256);
+         class730.field2734 = 672497503 * ((var3 << 9) + 256);
+         class730.field2736 = 957476733 * ((var4 << 9) + 256);
          class563.field1083 = -1469516446;
          class516.field4332 = -1001372047;
          class495.field8099 = 178575833;

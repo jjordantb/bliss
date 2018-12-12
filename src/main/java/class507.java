@@ -404,7 +404,7 @@ public class class507 {
       try {
          class615.field8903.method5391(class615.field8903.field9142, 0, -1906997591);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "op.anv(" + ')');
       }
@@ -450,8 +450,8 @@ public class class507 {
             class342.field284 = 1428832631;
          }
 
-         if (1170859143 * Client.field2663 != 0) {
-            class342.field283 -= Client.field2663 * 1787831191;
+         if (1170859143 * class730.field2663 != 0) {
+            class342.field283 -= class730.field2663 * 1787831191;
             if (class342.field283 * -1731316011 >= class342.field282 * -2035787443) {
                class342.field283 = class342.field282 * -1477098343 - 205738621;
             }
@@ -460,11 +460,11 @@ public class class507 {
                class342.field283 = 0;
             }
 
-            Client.field2663 = 0;
+            class730.field2663 = 0;
          }
 
-         for(var1 = 0; var1 < 1351936279 * Client.field2876; ++var1) {
-            class742 var12 = Client.field2691[var1];
+         for(var1 = 0; var1 < 1351936279 * class730.field2876; ++var1) {
+            class742 var12 = class730.field2691[var1];
             int var3 = var12.method1865((byte)-29);
             char var4 = var12.method1864((byte)-110);
             int var5 = var12.method1867((byte)0);
@@ -523,13 +523,13 @@ public class class507 {
                class264.method4569(1763987987);
                class342.field279 = class342.field281.length() * 1914783065;
             } else if (class50.method1498(var4, (short)160) || "\\/.:, _-+[]~@".indexOf(var4) != -1) {
-               class342.field281 = class342.field281.substring(0, -1182747927 * class342.field279) + Client.field2691[var1].method1864((byte)9) + class342.field281.substring(class342.field279 * -1182747927);
+               class342.field281 = class342.field281.substring(0, -1182747927 * class342.field279) + class730.field2691[var1].method1864((byte)9) + class342.field281.substring(class342.field279 * -1182747927);
                class342.field279 += 1914783065;
             }
          }
 
-         Client.field2876 = 0;
-         Client.field2668 = 0;
+         class730.field2876 = 0;
+         class730.field2668 = 0;
          class881.method6172(2005471811);
       } catch (RuntimeException var11) {
          throw class158.method3445(var11, "op.u(" + ')');

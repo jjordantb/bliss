@@ -76,12 +76,12 @@ public class class867 {
 
    public static void method5833(class848 var0, int var1) {
       try {
-         class202.field7587 = (class727)class785.field3827.method1857(Client.field2681, 399302739 * class295.field10470, true, true, -2063324548);
-         class295.field10474 = class785.field3827.method1853(Client.field2681, 399302739 * class295.field10470, 414059625);
-         class958.field3479 = (class727)class785.field3827.method1857(Client.field2681, 1178461027 * class295.field10469, true, true, -2063324548);
-         class378.field1158 = class785.field3827.method1853(Client.field2681, 1178461027 * class295.field10469, 350969034);
-         class501.field3182 = (class727)class785.field3827.method1857(Client.field2681, -1372765471 * class295.field10477, true, true, -2063324548);
-         class271.field10557 = class785.field3827.method1853(Client.field2681, class295.field10477 * -1372765471, -1335234186);
+         class202.field7587 = (class727)class785.field3827.method1857(class730.field2681, 399302739 * class295.field10470, true, true, -2063324548);
+         class295.field10474 = class785.field3827.method1853(class730.field2681, 399302739 * class295.field10470, 414059625);
+         class958.field3479 = (class727)class785.field3827.method1857(class730.field2681, 1178461027 * class295.field10469, true, true, -2063324548);
+         class378.field1158 = class785.field3827.method1853(class730.field2681, 1178461027 * class295.field10469, 350969034);
+         class501.field3182 = (class727)class785.field3827.method1857(class730.field2681, -1372765471 * class295.field10477, true, true, -2063324548);
+         class271.field10557 = class785.field3827.method1853(class730.field2681, class295.field10477 * -1372765471, -1335234186);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "rq.p(" + ')');
       }

@@ -33,7 +33,7 @@ public class class691 implements class821 {
 
    static final void method3779(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2628 ? 1 : 0;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2628 ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "hn.akv(" + ')');
       }

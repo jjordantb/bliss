@@ -4,16 +4,16 @@ public class class555 extends class304 {
 
    public void method2383(int var1) {
       try {
-         Client.field2709 = 938117879 * Client.field2866;
-         Client.field2718 = 1303928015 * Client.field2866 + 1252628863 * this.field472;
-         class152.field5415 = Client.field2662 * -1680550441;
-         class220.field7357 = 410053157 * Client.field2712;
-         class601.field9204 = Client.field2713 * -1645861677;
-         class157.field6558 = Client.field2701 * -933884753;
-         Client.field2662 = 563175129 * (392492523 * this.field473 >>> 24);
-         Client.field2712 = -1719011785 * (this.field473 * 392492523 >>> 16 & 255);
-         Client.field2713 = -1294785203 * (392492523 * this.field473 >>> 8 & 255);
-         Client.field2701 = -1656733051 * (392492523 * this.field473 & 255);
+         class730.field2709 = 938117879 * class730.field2866;
+         class730.field2718 = 1303928015 * class730.field2866 + 1252628863 * this.field472;
+         class152.field5415 = class730.field2662 * -1680550441;
+         class220.field7357 = 410053157 * class730.field2712;
+         class601.field9204 = class730.field2713 * -1645861677;
+         class157.field6558 = class730.field2701 * -933884753;
+         class730.field2662 = 563175129 * (392492523 * this.field473 >>> 24);
+         class730.field2712 = -1719011785 * (this.field473 * 392492523 >>> 16 & 255);
+         class730.field2713 = -1294785203 * (392492523 * this.field473 >>> 8 & 255);
+         class730.field2701 = -1656733051 * (392492523 * this.field473 & 255);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ya.f(" + ')');
       }
@@ -26,29 +26,29 @@ public class class555 extends class304 {
    }
 
    public void method2385() {
-      Client.field2709 = 938117879 * Client.field2866;
-      Client.field2718 = 1303928015 * Client.field2866 + 1252628863 * this.field472;
-      class152.field5415 = Client.field2662 * -1680550441;
-      class220.field7357 = 410053157 * Client.field2712;
-      class601.field9204 = Client.field2713 * -1645861677;
-      class157.field6558 = Client.field2701 * -933884753;
-      Client.field2662 = 563175129 * (392492523 * this.field473 >>> 24);
-      Client.field2712 = -1719011785 * (this.field473 * 392492523 >>> 16 & 255);
-      Client.field2713 = -1294785203 * (392492523 * this.field473 >>> 8 & 255);
-      Client.field2701 = -1656733051 * (392492523 * this.field473 & 255);
+      class730.field2709 = 938117879 * class730.field2866;
+      class730.field2718 = 1303928015 * class730.field2866 + 1252628863 * this.field472;
+      class152.field5415 = class730.field2662 * -1680550441;
+      class220.field7357 = 410053157 * class730.field2712;
+      class601.field9204 = class730.field2713 * -1645861677;
+      class157.field6558 = class730.field2701 * -933884753;
+      class730.field2662 = 563175129 * (392492523 * this.field473 >>> 24);
+      class730.field2712 = -1719011785 * (this.field473 * 392492523 >>> 16 & 255);
+      class730.field2713 = -1294785203 * (392492523 * this.field473 >>> 8 & 255);
+      class730.field2701 = -1656733051 * (392492523 * this.field473 & 255);
    }
 
    public void method2386() {
-      Client.field2709 = 938117879 * Client.field2866;
-      Client.field2718 = 1303928015 * Client.field2866 + 1252628863 * this.field472;
-      class152.field5415 = Client.field2662 * -1680550441;
-      class220.field7357 = 410053157 * Client.field2712;
-      class601.field9204 = Client.field2713 * -1645861677;
-      class157.field6558 = Client.field2701 * -933884753;
-      Client.field2662 = 563175129 * (392492523 * this.field473 >>> 24);
-      Client.field2712 = -1719011785 * (this.field473 * 392492523 >>> 16 & 255);
-      Client.field2713 = -1294785203 * (392492523 * this.field473 >>> 8 & 255);
-      Client.field2701 = -1656733051 * (392492523 * this.field473 & 255);
+      class730.field2709 = 938117879 * class730.field2866;
+      class730.field2718 = 1303928015 * class730.field2866 + 1252628863 * this.field472;
+      class152.field5415 = class730.field2662 * -1680550441;
+      class220.field7357 = 410053157 * class730.field2712;
+      class601.field9204 = class730.field2713 * -1645861677;
+      class157.field6558 = class730.field2701 * -933884753;
+      class730.field2662 = 563175129 * (392492523 * this.field473 >>> 24);
+      class730.field2712 = -1719011785 * (this.field473 * 392492523 >>> 16 & 255);
+      class730.field2713 = -1294785203 * (392492523 * this.field473 >>> 8 & 255);
+      class730.field2701 = -1656733051 * (392492523 * this.field473 & 255);
    }
 
    public static final int method412(class240 var0, byte[] var1, int var2, int var3, int var4, int var5, byte var6) {

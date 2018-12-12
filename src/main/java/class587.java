@@ -149,7 +149,7 @@ public class class587 {
 
    static final void method166(class564 var0, class744 var1, byte var2) {
       try {
-         class230 var3 = var0.method823(class785.field3827, Client.field2681, (byte)-46);
+         class230 var3 = var0.method823(class785.field3827, class730.field2681, (byte)-46);
          int var4 = var1.field3161[(var1.field3156 -= -391880689) * 681479919];
          Point var5 = var3.method4604(var0.field937, var0.field881 * -2093041337, var0.field916 * 418216501, var4, class324.field621, 946663112);
          var1.field3161[(var1.field3156 += -391880689) * 681479919 - 1] = var5.x;

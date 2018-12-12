@@ -57,7 +57,7 @@ public class class167 {
 
    static final void method3696(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2623 * -442628795;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2623 * -442628795;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "nr.vd(" + ')');
       }

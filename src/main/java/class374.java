@@ -23,7 +23,7 @@ public class class374 implements class925 {
 
    static final void method999(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2826 * 827374123;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2826 * 827374123;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "fw.ug(" + ')');
       }
@@ -31,10 +31,10 @@ public class class374 implements class925 {
 
    static final void method1000(class744 var0, int var1) {
       try {
-         if (Client.field2924 * 1131012101 == 0) {
+         if (class730.field2924 * 1131012101 == 0) {
             var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -1;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -548972447 * Client.field2934;
+            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -548972447 * class730.field2934;
          }
 
       } catch (RuntimeException var3) {
@@ -119,10 +119,10 @@ public class class374 implements class925 {
          if (!var0.method4865(2085922748)) {
             return false;
          } else {
-            int var3 = Client.field2697.method5271(-2086391246);
-            int var4 = Client.field2697.method5272(-867392122);
-            class153 var5 = Client.field2697.method5296(-202336440);
-            class545 var6 = Client.field2697.method5317(-1611682495);
+            int var3 = class730.field2697.method5271(-2086391246);
+            int var4 = class730.field2697.method5272(-867392122);
+            class153 var5 = class730.field2697.method5296(-202336440);
+            class545 var6 = class730.field2697.method5317(-1611682495);
             int var7 = var3 / 2;
             byte var8 = 0;
             byte var9 = 0;
@@ -175,7 +175,7 @@ public class class374 implements class925 {
                   class379.field1139 = var0.method4854(var38, 0, var11, var11, var11, -1797507809);
                }
 
-               Client.field2697.method5282((byte)105).method5675((byte)-128);
+               class730.field2697.method5282((byte)105).method5675((byte)-128);
                int var41 = -16777216 | (238 + (int)(Math.random() * 20.0D) - 10 << 16) + (238 + (int)(Math.random() * 20.0D) - 10 << 8) + (238 + (int)(Math.random() * 20.0D) - 10);
                int var17 = -16777216 | 238 + (int)(Math.random() * 20.0D) - 10 << 16;
                int var18 = (int)(Math.random() * 8.0D) << 16 | (int)(Math.random() * 8.0D) << 8 | (int)(Math.random() * 8.0D);
@@ -262,7 +262,7 @@ public class class374 implements class925 {
                      }
 
                      if (class95.field604) {
-                        class262 var51 = Client.field2697.method5281(var1);
+                        class262 var51 = class730.field2697.method5281(var1);
 
                         for(var30 = 0; var30 < var7; ++var30) {
                            for(var31 = 0; var31 < var7; ++var31) {
@@ -318,7 +318,7 @@ public class class374 implements class925 {
                var0.method4827();
                var0.method4831(1, 1);
                class881.method6172(-1595877635);
-               class240 var42 = Client.field2697.method5283(-106767927);
+               class240 var42 = class730.field2697.method5283(-106767927);
                class95.field606 = 0;
                class95.field600.method905((byte)1);
                if (!class95.field604) {
@@ -328,7 +328,7 @@ public class class374 implements class925 {
                            if (var5.method3387(var1, var23, var21, var22, (byte)-65)) {
                               class265 var44 = (class265)var6.method2452(var23, var21, var22, (byte)117);
                               if (var44 == null) {
-                                 var44 = (class265)var6.method2429(var23, var21, var22, Client.field2942, -858481229);
+                                 var44 = (class265)var6.method2429(var23, var21, var22, class730.field2942, -858481229);
                               }
 
                               if (var44 == null) {
@@ -341,7 +341,7 @@ public class class374 implements class925 {
 
                               if (var44 != null) {
                                  class50 var46 = var42.method4713(var44.method4551((byte)-27));
-                                 if (!var46.field2266 || Client.field2759) {
+                                 if (!var46.field2266 || class730.field2759) {
                                     var26 = -1422593103 * var46.field2231;
                                     if (var46.field2198 != null) {
                                        for(var27 = 0; var27 < var46.field2198.length; ++var27) {
@@ -366,9 +366,9 @@ public class class374 implements class925 {
                                        var28 = var21;
                                        var29 = var22;
                                        if (var47) {
-                                          int[][] var52 = Client.field2697.method5281(var23).field8183;
-                                          var31 = Client.field2697.method5281(var23).field8179 * 1487776559;
-                                          var32 = Client.field2697.method5281(var23).field8180 * 1415525851;
+                                          int[][] var52 = class730.field2697.method5281(var23).field8183;
+                                          var31 = class730.field2697.method5281(var23).field8179 * 1487776559;
+                                          var32 = class730.field2697.method5281(var23).field8180 * 1415525851;
 
                                           for(var33 = 0; var33 < 10; ++var33) {
                                              var34 = (int)(Math.random() * 4.0D);
@@ -402,10 +402,10 @@ public class class374 implements class925 {
                      }
                   }
 
-                  class64 var43 = Client.field2697.method5273(1336735501);
+                  class64 var43 = class730.field2697.method5273(1336735501);
                   if (var43 != null) {
                      class333.field139.method5094(1024, 64, 1140719584);
-                     class389 var45 = Client.field2697.method5270(681479919);
+                     class389 var45 = class730.field2697.method5270(681479919);
 
                      for(var23 = 0; var23 < var43.field1685 * -1407078377; ++var23) {
                         var24 = var43.field1684[var23];

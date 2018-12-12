@@ -32,9 +32,9 @@ public class class898 extends class304 {
 
    static void method5606(byte var0) {
       try {
-         class701 var1 = class637.method5936(class643.field9963, Client.field2692.field7765, (byte)17);
-         var1.field3364.method6364(Client.field2694 * -2059460167, -1112529192);
-         Client.field2692.method4380(var1, (byte)-106);
+         class701 var1 = class637.method5936(class643.field9963, class730.field2692.field7765, (byte)17);
+         var1.field3364.method6364(class730.field2694 * -2059460167, -1112529192);
+         class730.field2692.method4380(var1, (byte)-106);
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "yn.ns(" + ')');
       }

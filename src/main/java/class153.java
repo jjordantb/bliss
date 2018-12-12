@@ -79,7 +79,7 @@ public class class153 {
       try {
          var0.field3156 -= -391880689;
          int var2 = var0.field3161[var0.field3156 * 681479919];
-         class256 var3 = (class256) Client.field2823.method2942((long)var2);
+         class256 var3 = (class256)class730.field2823.method2942((long)var2);
          if (var3 != null && 3 == 27137839 * var3.field8100) {
             class526.method2226(var3, true, true, -113822480);
          }

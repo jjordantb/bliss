@@ -81,9 +81,9 @@ public class class378 extends class535 {
          int var2 = class230.method4606(-1206667424);
          var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (class182.field5317 = class615.field8903.field9137.method3689(-460463412) * 1970440745) * -1111444967;
          var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var2;
-         Client.field2697.method5309(1422757720);
+         class730.field2697.method5309(1422757720);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "adc.amy(" + ')');
       }

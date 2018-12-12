@@ -33,9 +33,9 @@ public class class154 {
    static final void method3487(class746 var0, int var1) {
       try {
          class765 var2 = var0.field4042;
-         if (Client.field2866 * 443738891 == var0.field4067 * 1450943713 || !var2.method2775((byte)-78) || var2.method2792(1, 2027501470)) {
+         if (class730.field2866 * 443738891 == var0.field4067 * 1450943713 || !var2.method2775((byte)-78) || var2.method2792(1, 2027501470)) {
             int var3 = var0.field4067 * 1450943713 - var0.field4059 * -412225079;
-            int var4 = 443738891 * Client.field2866 - -412225079 * var0.field4059;
+            int var4 = 443738891 * class730.field2866 - -412225079 * var0.field4059;
             int var5 = var0.field4062 * -719582720 + var0.method2550() * 256;
             int var6 = 1363846656 * var0.field4064 + var0.method2550() * 256;
             int var7 = 1613909504 * var0.field4063 + var0.method2550() * 256;
@@ -54,9 +54,9 @@ public class class154 {
    static final void method3488(int var0) {
       try {
          class323.field630 = null;
-         class873.method5870(Client.field2822 * -257444687, 0, 0, class759.field4331 * -2110394505, class97.field614 * -1111710645, 0, 0, -1, 421170136);
+         class873.method5870(class730.field2822 * -257444687, 0, 0, class759.field4331 * -2110394505, class97.field614 * -1111710645, 0, 0, -1, 421170136);
          if (class323.field630 != null) {
-            class536.method2328(class323.field630, -1412584499, 0, 0, class759.field4331 * -2110394505, -1111710645 * class97.field614, class82.field1111 * -391533651, class6.field4929 * -514549911, class263.field8132 == Client.field2693 ? -1 : Client.field2693.field1028 * 91937559, true, (byte)0);
+            class536.method2328(class323.field630, -1412584499, 0, 0, class759.field4331 * -2110394505, -1111710645 * class97.field614, class82.field1111 * -391533651, class6.field4929 * -514549911, class263.field8132 == class730.field2693 ? -1 : class730.field2693.field1028 * 91937559, true, (byte)0);
             class323.field630 = null;
          }
 

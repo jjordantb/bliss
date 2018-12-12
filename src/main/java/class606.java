@@ -70,9 +70,9 @@ public class class606 {
    static final void method4789(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         class701 var3 = class637.method5936(class643.field10027, Client.field2692.field7765, (byte)54);
+         class701 var3 = class637.method5936(class643.field10027, class730.field2692.field7765, (byte)54);
          var3.field3364.method6362(var2, 16711935);
-         Client.field2692.method4380(var3, (byte)-99);
+         class730.field2692.method4380(var3, (byte)-99);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "dk.sd(" + ')');
       }

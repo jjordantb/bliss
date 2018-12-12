@@ -239,7 +239,7 @@ public class class321 {
    static final void method851(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         if (Client.field2785 != null && var2 < -1801543887 * class556.field503) {
+         if (class730.field2785 != null && var2 < -1801543887 * class556.field503) {
             var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -1071570519 * class776.field3731[var2].field8117;
          } else {
             var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
@@ -377,14 +377,14 @@ public class class321 {
                } else if (var0 == 5) {
                   class213.method3810("" + 914379507 * class69.field1807, 1771664525);
                } else if (var0 == 24) {
-                  class728 var2 = Client.field2697.method5317(-1611682495).field3857;
+                  class728 var2 = class730.field2697.method5317(-1611682495).field3857;
                   var2.field2459 = !var2.field2459;
                } else if (var0 == 8) {
-                  Client.field2648 = true;
+                  class730.field2648 = true;
                } else if (27 == var0) {
-                  Client.field2648 = false;
+                  class730.field2648 = false;
                } else if (var0 == 22) {
-                  Client.field2631.method5208(355993737);
+                  class730.field2631.method5208(355993737);
                } else {
                   int var3;
                   int var7;
@@ -433,8 +433,8 @@ public class class321 {
                   } else if (var0 == 23) {
                      class963.method2210((byte)-117);
                   } else if (21 == var0) {
-                     Client.field2697.field8982 = class27.method3468((byte)1) * 3385627052850178407L;
-                     Client.field2697.field8945 = true;
+                     class730.field2697.field8982 = class27.method3468((byte)1) * 3385627052850178407L;
+                     class730.field2697.field8945 = true;
                      class963.method2210((byte)-48);
                   } else {
                      class32 var9;
@@ -443,7 +443,7 @@ public class class321 {
                         class213.method3810(((int)var9.field5296 >> 9) + " " + ((int)var9.field5299 >> 9), 2030018099);
                      } else if (var0 == 7) {
                         var9 = class923.field10295.method1511().field7637;
-                        class213.method3810("" + Client.field2697.method5317(-1611682495).field3862[class923.field10295.field3639].method3888((int)var9.field5296 >> 9, (int)var9.field5299 >> 9, (byte)-102), 417961088);
+                        class213.method3810("" + class730.field2697.method5317(-1611682495).field3862[class923.field10295.field3639].method3888((int)var9.field5296 >> 9, (int)var9.field5299 >> 9, (byte)-102), 417961088);
                      } else if (var0 == 3) {
                         class213.method3810(class564.field860.method2982(-262201221) + " " + class564.field860.method2978(-480173906), 1301637250);
                         class213.method3810(class564.field863.method2982(509188014) + " " + class564.field863.method2978(2067697941), 1826870364);
@@ -451,18 +451,18 @@ public class class321 {
                      } else if (var0 == 6) {
                         class830.method5375(false, -1663847334);
                      } else if (var0 == 17) {
-                        Client.field2649 = !Client.field2649;
-                        class593.field1623.method4891(Client.field2649);
+                        class730.field2649 = !class730.field2649;
+                        class593.field1623.method4891(class730.field2649);
                         class876.method5875(-1727592457);
                      } else if (11 == var0) {
-                        Client.field2795 = 0;
-                        Client.field2697.method5309(72202504);
+                        class730.field2795 = 0;
+                        class730.field2697.method5309(72202504);
                      } else if (9 == var0) {
-                        Client.field2795 = 1482609571;
-                        Client.field2697.method5309(418889356);
+                        class730.field2795 = 1482609571;
+                        class730.field2697.method5309(418889356);
                      } else if (28 == var0) {
-                        Client.field2795 = -1329748154;
-                        Client.field2697.method5309(989855246);
+                        class730.field2795 = -1329748154;
+                        class730.field2697.method5309(989855246);
                      }
                   }
                }

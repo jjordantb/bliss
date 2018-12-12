@@ -83,7 +83,7 @@ public final class class71 {
                      method1088(var4.field1018, var1, (byte)26);
                   }
 
-                  class256 var5 = (class256) Client.field2823.method2942((long)(var4.field867 * -440872681));
+                  class256 var5 = (class256)class730.field2823.method2942((long)(var4.field867 * -440872681));
                   if (var5 != null) {
                      class929.method6262(var5.field8101 * -1617025021, var1, -837806860);
                   }
@@ -132,7 +132,7 @@ public final class class71 {
 
    static boolean method1090(class70 var0, class284 var1, byte var2) {
       try {
-         return var0 != null && var0.method1040(var1, Client.field2669, Client.field2668 * -1625219821, class381.field1417, -622376364);
+         return var0 != null && var0.method1040(var1, class730.field2669, class730.field2668 * -1625219821, class381.field1417, -622376364);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ha.i(" + ')');
       }

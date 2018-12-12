@@ -999,7 +999,7 @@ public class class50 {
 
    static final void method1497(class744 var0, int var1) {
       try {
-         if (Client.field2825 != null) {
+         if (class730.field2825 != null) {
             var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1;
          } else {
             var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;

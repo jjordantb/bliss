@@ -13,7 +13,7 @@ public class class506 {
    void method2599(int var1, int var2, String var3, String var4, String var5, String var6, int var7, String var8, short var9) {
       try {
          this.field4121 = class574.method129(-2067769090) * -740789311;
-         this.field4120 = -1698852737 * Client.field2866;
+         this.field4120 = -1698852737 * class730.field2866;
          this.field4122 = var1 * 392659741;
          this.field4127 = var2 * 849125275;
          this.field4123 = var3;
@@ -28,7 +28,7 @@ public class class506 {
    }
 
    class506(int var1, int var2, String var3, String var4, String var5, String var6, int var7, String var8) {
-      this.field4120 = Client.field2866 * -1698852737;
+      this.field4120 = class730.field2866 * -1698852737;
       this.field4122 = var1 * 392659741;
       this.field4127 = 849125275 * var2;
       this.field4123 = var3;

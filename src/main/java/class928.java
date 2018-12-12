@@ -55,8 +55,8 @@ public class class928 {
 
    static final void method6201(int var0, int var1, int var2, int var3, class552 var4, byte var5) {
       try {
-         if (var2 >= 1 && var3 >= 1 && var2 <= Client.field2697.method5271(-1894377459) - 2 && var3 <= Client.field2697.method5272(793681614) - 2 && Client.field2697.method5317(-1611682495) != null) {
-            class265 var6 = Client.field2697.method5286(112641684).method104(var0, var1, var2, var3, 2002986961);
+         if (var2 >= 1 && var3 >= 1 && var2 <= class730.field2697.method5271(-1894377459) - 2 && var3 <= class730.field2697.method5272(793681614) - 2 && class730.field2697.method5317(-1611682495) != null) {
+            class265 var6 = class730.field2697.method5286(112641684).method104(var0, var1, var2, var3, 2002986961);
             if (var6 != null) {
                if (var6 instanceof class589) {
                   ((class589)var6).method212(var4, -1857916290);
@@ -89,9 +89,9 @@ public class class928 {
    static final void method6203(class744 var0, int var1) {
       try {
          class874.method5851(true, -1114331607);
-         Client.field2697.method5309(1924605464);
+         class730.field2697.method5309(1924605464);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "vs.ana(" + ')');
       }

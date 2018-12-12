@@ -233,9 +233,9 @@ public final class class1 {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
          class615.field8903.method5391(class615.field8903.field9118, var2, 1144244334);
-         Client.field2697.method5309(458039847);
+         class730.field2697.method5309(458039847);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "on.ahd(" + ')');
       }

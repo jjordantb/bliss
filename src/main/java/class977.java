@@ -231,9 +231,9 @@ public class class977 extends class298 {
 
    static final void method1811(int var0) {
       try {
-         for(int var1 = 0; var1 < -1230451913 * Client.field2684; ++var1) {
-            int var2 = Client.field2680[var1];
-            class437 var3 = (class437) Client.field2677.method2942((long)var2);
+         for(int var1 = 0; var1 < -1230451913 * class730.field2684; ++var1) {
+            int var2 = class730.field2680[var1];
+            class437 var3 = (class437)class730.field2677.method2942((long)var2);
             if (var3 != null) {
                class60 var4 = (class60)var3.field7515;
                class232.method4664(var4, false, -2088974966);

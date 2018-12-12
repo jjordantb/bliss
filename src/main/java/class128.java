@@ -19,8 +19,8 @@ public class class128 implements class54 {
    public void method1543(boolean var1, byte var2) {
       try {
          if (var1) {
-            int var3 = this.field2346.field823.method1786(this.field2345.method5594(), Client.field2775 * 775068819, -2059315000) + -245579987 * this.field2346.field825;
-            int var4 = this.field2346.field826.method3090(this.field2345.method3109(), Client.field2784 * -791746413, -1363619703) + this.field2346.field822 * -1426302101;
+            int var3 = this.field2346.field823.method1786(this.field2345.method5594(), class730.field2775 * 775068819, -2059315000) + -245579987 * this.field2346.field825;
+            int var4 = this.field2346.field826.method3090(this.field2345.method3109(), class730.field2784 * -791746413, -1363619703) + this.field2346.field822 * -1426302101;
             this.field2345.method3128(var3, var4);
          }
 
@@ -39,8 +39,8 @@ public class class128 implements class54 {
 
    public void method1541(boolean var1) {
       if (var1) {
-         int var2 = this.field2346.field823.method1786(this.field2345.method5594(), Client.field2775 * 775068819, -2133654536) + -245579987 * this.field2346.field825;
-         int var3 = this.field2346.field826.method3090(this.field2345.method3109(), Client.field2784 * -791746413, -1742244574) + this.field2346.field822 * -1426302101;
+         int var2 = this.field2346.field823.method1786(this.field2345.method5594(), class730.field2775 * 775068819, -2133654536) + -245579987 * this.field2346.field825;
+         int var3 = this.field2346.field826.method3090(this.field2345.method3109(), class730.field2784 * -791746413, -1742244574) + this.field2346.field822 * -1426302101;
          this.field2345.method3128(var2, var3);
       }
 
@@ -97,8 +97,8 @@ public class class128 implements class54 {
 
    static final void method1584(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2910;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2911;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2910;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2911;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "fm.akc(" + ')');
       }

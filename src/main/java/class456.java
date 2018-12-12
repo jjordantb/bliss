@@ -25,7 +25,7 @@ public class class456 {
             var3[2 * var4 + 1][3] = this.field7162[var4];
          }
 
-         Client.field2748[var1] = var3;
+         class730.field2748[var1] = var3;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "da.a(" + ')');
       }

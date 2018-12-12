@@ -88,15 +88,15 @@ public class class755 extends class535 {
 
          int var2;
          for(var2 = 0; var2 < class498.field8102 * 1168366243; ++var2) {
-            class946 var3 = Client.field2786[var1[var2]];
+            class946 var3 = class730.field2786[var1[var2]];
             if (var3 != null) {
                var3.method2556(-586581534);
             }
          }
 
-         for(var2 = 0; var2 < -1230451913 * Client.field2684; ++var2) {
-            long var4 = (long) Client.field2680[var2];
-            class437 var6 = (class437) Client.field2677.method2942(var4);
+         for(var2 = 0; var2 < -1230451913 * class730.field2684; ++var2) {
+            long var4 = (long)class730.field2680[var2];
+            class437 var6 = (class437)class730.field2677.method2942(var4);
             if (var6 == null) {
                if (var0 == -1062447355) {
                   throw new IllegalStateException();
@@ -106,7 +106,7 @@ public class class755 extends class535 {
             }
          }
 
-         if (1596783995 * Client.field2705 == 0) {
+         if (1596783995 * class730.field2705 == 0) {
             for(var2 = 0; var2 < class949.field3322.length; ++var2) {
                class283 var8 = class949.field3322[var2];
                if (var8.field10613) {

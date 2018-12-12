@@ -129,9 +129,9 @@ public class class362 implements class70 {
    static final void method1507(class744 var0, byte var1) {
       try {
          class818.method2903(var0.field3170, var0.field3161[(var0.field3156 -= -391880689) * 681479919], (byte)14);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int) Client.field2873[0];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int) Client.field2873[1];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int) Client.field2873[2];
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)class730.field2873[0];
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)class730.field2873[1];
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)class730.field2873[2];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "oz.apa(" + ')');
       }
@@ -153,7 +153,7 @@ public class class362 implements class70 {
          }
 
          class865.method5335(var1, -1404267888);
-         Client.field2697.method5283(2004012946).method4708(var1, -1760580017);
+         class730.field2697.method5283(2004012946).method4708(var1, -1760580017);
          class625.field9752.method463((short)206).method5283(-1884844132).method4708(var1, -1760580017);
          class85.field1121.method1572(var1, 828561369);
          class258.field7913.method14(var1, 1252678892);
@@ -163,7 +163,7 @@ public class class362 implements class70 {
          class199.method3750(var1, (byte)-5);
          class779.method2321(var1, (byte)65);
          class82.method921(var1, -1700152432);
-         Client.field2697.method5309(1301460504);
+         class730.field2697.method5309(1301460504);
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "oz.gw(" + ')');
       }
@@ -183,20 +183,20 @@ public class class362 implements class70 {
    static final void method1510(class744 var0, int var1) {
       try {
          String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         if (14 == -1233866115 * Client.field2733 && !class673.method4261((byte)23)) {
+         if (14 == -1233866115 * class730.field2733 && !class673.method4261((byte)23)) {
             if (var2.length() > 20) {
-               Client.field2941 = -4;
+               class730.field2941 = -4;
             } else {
-               Client.field2941 = -1;
-               class701 var3 = class637.method5936(class643.field9965, Client.field2674.field7765, (byte)66);
+               class730.field2941 = -1;
+               class701 var3 = class637.method5936(class643.field9965, class730.field2674.field7765, (byte)66);
                var3.field3364.method6361(0);
                int var4 = 385051775 * var3.field3364.field10376;
                var3.field3364.method6366(var2, 2125577708);
                var3.field3364.method6426(var3.field3364.field10376 * 385051775 - var4, (byte)-53);
-               Client.field2674.method4380(var3, (byte)-40);
+               class730.field2674.method4380(var3, (byte)-40);
             }
          } else {
-            Client.field2941 = -5;
+            class730.field2941 = -5;
          }
 
       } catch (RuntimeException var5) {

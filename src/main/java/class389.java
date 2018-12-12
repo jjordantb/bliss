@@ -56,8 +56,8 @@ public class class389 {
    static final void method1149(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         if (Client.field2924 * 1131012101 == 2 && var2 < Client.field2923 * -1054937867) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2932[var2] ? 1 : 0;
+         if (class730.field2924 * 1131012101 == 2 && var2 < class730.field2923 * -1054937867) {
+            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2932[var2] ? 1 : 0;
          } else {
             var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
          }
@@ -303,13 +303,13 @@ public class class389 {
       try {
          int var4 = var2.field881 * -2093041337 + var0;
          int var5 = 15 + var1;
-         if (Client.field2648) {
+         if (class730.field2648) {
             int var6 = -256;
-            if (914379507 * Client.field1807 < 20) {
+            if (914379507 * class730.field1807 < 20) {
                var6 = -65536;
             }
 
-            class958.field3479.method1662("Fps:" + 914379507 * Client.field1807, var4, var5, var6, -1, (byte)-7);
+            class958.field3479.method1662("Fps:" + 914379507 * class730.field1807, var4, var5, var6, -1, (byte)-7);
             var5 += 15;
             Runtime var7 = Runtime.getRuntime();
             long var8 = var7.totalMemory() / 1024L;
@@ -321,7 +321,7 @@ public class class389 {
 
             class958.field3479.method1662("Mem:" + var10 + "/" + var8 + "k", var4, var5, var12, -1, (byte)-69);
             var5 += 15;
-            long var13 = Client.field2692.field7775.method937(1026179047);
+            long var13 = class730.field2692.field7775.method937(1026179047);
             String var15 = "N/A";
             if (-1L != var13) {
                var15 = var13 + "ms";
@@ -330,9 +330,9 @@ public class class389 {
                }
             }
 
-            class958.field3479.method1662("Game: In:" + -1705791507 * Client.field2692.field7778 + "B/s " + "Out:" + Client.field2692.field7762 * 1114720205 + "B/s " + "Ping:" + var15, var4, var5, -256, -1, (byte)-47);
+            class958.field3479.method1662("Game: In:" + -1705791507 * class730.field2692.field7778 + "B/s " + "Out:" + class730.field2692.field7762 * 1114720205 + "B/s " + "Ping:" + var15, var4, var5, -256, -1, (byte)-47);
             var5 += 15;
-            long var16 = Client.field2674.field7775.method937(529918549);
+            long var16 = class730.field2674.field7775.method937(529918549);
             String var18 = "N/A";
             if (var16 != -1L) {
                var18 = var16 + "ms";
@@ -341,7 +341,7 @@ public class class389 {
                }
             }
 
-            class958.field3479.method1662("Lobby: In:" + Client.field2674.field7778 * -1705791507 + "B/s " + "Out:" + 1114720205 * Client.field2674.field7762 + "B/s " + "Ping:" + var18, var4, var5, -256, -1, (byte)-30);
+            class958.field3479.method1662("Lobby: In:" + class730.field2674.field7778 * -1705791507 + "B/s " + "Out:" + 1114720205 * class730.field2674.field7762 + "B/s " + "Ping:" + var18, var4, var5, -256, -1, (byte)-30);
             var5 += 15;
             int var19 = class593.field1623.method4802() / 1024;
             class958.field3479.method1662("Offheap:" + var19 + "k", var4, var5, var19 > 65536 ? -65536 : -256, -1, (byte)-50);

@@ -23,21 +23,21 @@ public abstract class class770 extends class345 {
    public static final void method2304(int var0) {
       try {
          for(int var1 = 0; var1 < 5; ++var1) {
-            Client.field2665[var1] = false;
+            class730.field2665[var1] = false;
          }
 
-         Client.field2749 = -1723181617;
-         Client.field2750 = 2694169;
+         class730.field2749 = -1723181617;
+         class730.field2750 = 2694169;
          class665.field9598 = 0;
          class617.field8843 = 0;
          class563.field1083 = 621176181;
          class516.field4332 = -1001372047;
          class495.field8099 = 178575833;
-         Client.field2903 = 727655629 * Client.field2866;
+         class730.field2903 = 727655629 * class730.field2866;
          class740.field3213 = -1614496487 * class103.field205;
          class614.field8888 = class184.field5230 * -418338293;
          class859.field8849 = class7.field4918 * -459981543;
-         class75.field1496 = 905514481 * Client.field2737;
+         class75.field1496 = 905514481 * class730.field2737;
          class163.field6621 = class232.field8266 * 1437648991;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "na.hb(" + ')');
@@ -68,7 +68,7 @@ public abstract class class770 extends class345 {
 
    static final void method2306(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2827 * -363202459;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2827 * -363202459;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "na.uf(" + ')');
       }

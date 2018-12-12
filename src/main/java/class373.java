@@ -340,7 +340,7 @@ public class class373 implements Iterable, Collection {
 
    static final void method912(class744 var0, byte var1) {
       try {
-         if (Client.field2914 * -1333485389 >= 5 && -1333485389 * Client.field2914 <= 9) {
+         if (class730.field2914 * -1333485389 >= 5 && -1333485389 * class730.field2914 <= 9) {
             var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1;
          } else {
             var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;

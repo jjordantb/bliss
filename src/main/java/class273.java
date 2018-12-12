@@ -70,23 +70,23 @@ public class class273 {
          if (var0 != null) {
             String var2 = class526.method2229(var0, 2076308091);
             if (var2 != null) {
-               for(int var3 = 0; var3 < Client.field2923 * -1054937867; ++var3) {
-                  String var4 = Client.field2685[var3];
+               for(int var3 = 0; var3 < class730.field2923 * -1054937867; ++var3) {
+                  String var4 = class730.field2685[var3];
                   String var5 = class526.method2229(var4, -1598414380);
                   if (class559.method477(var0, var2, var4, var5, -1043868937)) {
-                     Client.field2923 -= 560029533;
+                     class730.field2923 -= 560029533;
 
-                     for(int var6 = var3; var6 < -1054937867 * Client.field2923; ++var6) {
-                        Client.field2685[var6] = Client.field2685[var6 + 1];
-                        Client.field2927[var6] = Client.field2927[1 + var6];
-                        Client.field2928[var6] = Client.field2928[var6 + 1];
-                        Client.field2929[var6] = Client.field2929[var6 + 1];
-                        Client.field2686[var6] = Client.field2686[1 + var6];
-                        Client.field2703[var6] = Client.field2703[1 + var6];
-                        Client.field2932[var6] = Client.field2932[1 + var6];
+                     for(int var6 = var3; var6 < -1054937867 * class730.field2923; ++var6) {
+                        class730.field2685[var6] = class730.field2685[var6 + 1];
+                        class730.field2927[var6] = class730.field2927[1 + var6];
+                        class730.field2928[var6] = class730.field2928[var6 + 1];
+                        class730.field2929[var6] = class730.field2929[var6 + 1];
+                        class730.field2686[var6] = class730.field2686[1 + var6];
+                        class730.field2703[var6] = class730.field2703[1 + var6];
+                        class730.field2932[var6] = class730.field2932[1 + var6];
                      }
 
-                     Client.field2865 = Client.field2915 * 754377557;
+                     class730.field2865 = class730.field2915 * 754377557;
                      class684 var9 = class423.method5712((short)512);
                      class701 var7 = class637.method5936(class643.field10017, var9.field7765, (byte)9);
                      var7.field3364.method6361(class305.method372(var0, 2053997873));

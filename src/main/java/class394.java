@@ -122,8 +122,8 @@ public class class394 {
 
    static final void method3411(class744 var0, int var1) {
       try {
-         if (Client.field2637 != null) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = Client.field2637;
+         if (class730.field2637 != null) {
+            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class730.field2637;
          } else {
             var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
          }
@@ -147,7 +147,7 @@ public class class394 {
 
    public static void method3413(int var0) {
       try {
-         if (19 == -1233866115 * Client.field2733 && !class673.method4261((byte)16) && !class556.method431(-391880689)) {
+         if (19 == -1233866115 * class730.field2733 && !class673.method4261((byte)16) && !class556.method431(-391880689)) {
             class967.method1750(2, 1642271064);
          }
 

@@ -148,14 +148,14 @@ public class class978 {
 
    static void method1845(int var0) {
       try {
-         if (class980.method1915(Client.field2733 * -1233866115, -1337586273)) {
-            if (Client.field2674.method4377(537308016) == null) {
+         if (class980.method1915(class730.field2733 * -1233866115, -1337586273)) {
+            if (class730.field2674.method4377(537308016) == null) {
                class967.method1750(4, 1378010016);
             } else {
                class967.method1750(14, 310060879);
             }
-         } else if (-1233866115 * Client.field2733 != 4 && Client.field2733 * -1233866115 != 3) {
-            if (Client.field2733 * -1233866115 == 6) {
+         } else if (-1233866115 * class730.field2733 != 4 && class730.field2733 * -1233866115 != 3) {
+            if (class730.field2733 * -1233866115 == 6) {
                class967.method1750(19, 1046566062);
             }
          } else {
@@ -170,7 +170,7 @@ public class class978 {
    static final void method1846(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         if (Client.field2785 != null && var2 < -1801543887 * class556.field503) {
+         if (class730.field2785 != null && var2 < -1801543887 * class556.field503) {
             var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class776.field3731[var2].field8114;
          } else {
             var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";

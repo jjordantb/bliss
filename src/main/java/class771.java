@@ -15,7 +15,7 @@ public class class771 extends class14 {
 
    class284 method2299(short var1) {
       try {
-         return (class284) Client.field2808.method901(1766612795);
+         return (class284)class730.field2808.method901(1766612795);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "adi.az(" + ')');
       }
@@ -23,7 +23,7 @@ public class class771 extends class14 {
 
    class701 method3597(byte var1) {
       try {
-         return class637.method5936(class643.field9932, Client.field2692.field7765, (byte)89);
+         return class637.method5936(class643.field9932, class730.field2692.field7765, (byte)89);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "adi.x(" + ')');
       }
@@ -59,10 +59,10 @@ public class class771 extends class14 {
             var5 = 1;
          }
 
-         class701 var6 = class637.method5936(class643.field9945, Client.field2692.field7765, (byte)77);
+         class701 var6 = class637.method5936(class643.field9945, class730.field2692.field7765, (byte)77);
          var6.field3364.method6364(var4 | var3 << 16, -1426845039);
          var6.field3364.method6419(var2 | var5 << 15);
-         Client.field2692.method4380(var6, (byte)-38);
+         class730.field2692.method4380(var6, (byte)-38);
       }
 
    }
@@ -90,10 +90,10 @@ public class class771 extends class14 {
             var5 = 1;
          }
 
-         class701 var6 = class637.method5936(class643.field9945, Client.field2692.field7765, (byte)71);
+         class701 var6 = class637.method5936(class643.field9945, class730.field2692.field7765, (byte)71);
          var6.field3364.method6364(var4 | var3 << 16, -1629465959);
          var6.field3364.method6419(var2 | var5 << 15);
-         Client.field2692.method4380(var6, (byte)-6);
+         class730.field2692.method4380(var6, (byte)-6);
       }
 
    }
@@ -129,10 +129,10 @@ public class class771 extends class14 {
                var6 = 1;
             }
 
-            class701 var7 = class637.method5936(class643.field9945, Client.field2692.field7765, (byte)8);
+            class701 var7 = class637.method5936(class643.field9945, class730.field2692.field7765, (byte)8);
             var7.field3364.method6364(var5 | var4 << 16, 121434419);
             var7.field3364.method6419(var3 | var6 << 15);
-            Client.field2692.method4380(var7, (byte)-44);
+            class730.field2692.method4380(var7, (byte)-44);
          }
 
       } catch (RuntimeException var8) {
@@ -145,11 +145,11 @@ public class class771 extends class14 {
    }
 
    class701 method3589() {
-      return class637.method5936(class643.field9932, Client.field2692.field7765, (byte)126);
+      return class637.method5936(class643.field9932, class730.field2692.field7765, (byte)126);
    }
 
    class701 method3595() {
-      return class637.method5936(class643.field9932, Client.field2692.field7765, (byte)67);
+      return class637.method5936(class643.field9932, class730.field2692.field7765, (byte)67);
    }
 
    int method3599() {
@@ -192,10 +192,10 @@ public class class771 extends class14 {
             var5 = 1;
          }
 
-         class701 var6 = class637.method5936(class643.field9945, Client.field2692.field7765, (byte)43);
+         class701 var6 = class637.method5936(class643.field9945, class730.field2692.field7765, (byte)43);
          var6.field3364.method6364(var4 | var3 << 16, -611244662);
          var6.field3364.method6419(var2 | var5 << 15);
-         Client.field2692.method4380(var6, (byte)-78);
+         class730.field2692.method4380(var6, (byte)-78);
       }
 
    }
@@ -224,8 +224,8 @@ public class class771 extends class14 {
    static final void method2301(class744 var0, byte var1) {
       try {
          var0.field3156 -= -783761378;
-         Client.field2813 = var0.field3161[var0.field3156 * 681479919] * 443563833;
-         Client.field2671 = var0.field3161[1 + var0.field3156 * 681479919] * -802224543;
+         class730.field2813 = var0.field3161[var0.field3156 * 681479919] * 443563833;
+         class730.field2671 = var0.field3161[1 + var0.field3156 * 681479919] * -802224543;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "adi.afv(" + ')');
       }

@@ -114,9 +114,9 @@ public class class86 implements class893 {
    static final void method947(class744 var0, int var1) {
       try {
          class846.method5123((short)31086);
-         Client.field2697.method5309(1321707085);
+         class730.field2697.method5309(1321707085);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "am.amb(" + ')');
       }
@@ -142,7 +142,7 @@ public class class86 implements class893 {
    public static final void method949(String var0, boolean var1, short var2) {
       try {
          if (var0 != null) {
-            if (Client.field2934 * -548972447 >= 100) {
+            if (class730.field2934 * -548972447 >= 100) {
                class727.method1683(4, class814.field4798.method2927(class321.field1066, -875414210), (byte)-66);
             } else {
                String var3 = class526.method2229(var0, 150647374);
@@ -150,15 +150,15 @@ public class class86 implements class893 {
                   int var4;
                   String var5;
                   String var6;
-                  for(var4 = 0; var4 < -548972447 * Client.field2934; ++var4) {
-                     var5 = class526.method2229(Client.field2841[var4], 1138876802);
+                  for(var4 = 0; var4 < -548972447 * class730.field2934; ++var4) {
+                     var5 = class526.method2229(class730.field2841[var4], 1138876802);
                      if (var5 != null && var5.equals(var3)) {
                         class727.method1683(4, var0 + class814.field4799.method2927(class321.field1066, -875414210), (byte)-117);
                         return;
                      }
 
-                     if (Client.field2937[var4] != null) {
-                        var6 = class526.method2229(Client.field2937[var4], 1588040861);
+                     if (class730.field2937[var4] != null) {
+                        var6 = class526.method2229(class730.field2937[var4], 1588040861);
                         if (var6 != null && var6.equals(var3)) {
                            class727.method1683(4, var0 + class814.field4799.method2927(class321.field1066, -875414210), (byte)-12);
                            return;
@@ -166,15 +166,15 @@ public class class86 implements class893 {
                      }
                   }
 
-                  for(var4 = 0; var4 < Client.field2923 * -1054937867; ++var4) {
-                     var5 = class526.method2229(Client.field2685[var4], -916859931);
+                  for(var4 = 0; var4 < class730.field2923 * -1054937867; ++var4) {
+                     var5 = class526.method2229(class730.field2685[var4], -916859931);
                      if (var5 != null && var5.equals(var3)) {
                         class727.method1683(4, class814.field4805.method2927(class321.field1066, -875414210) + var0 + class814.field4806.method2927(class321.field1066, -875414210), (byte)-7);
                         return;
                      }
 
-                     if (Client.field2927[var4] != null) {
-                        var6 = class526.method2229(Client.field2927[var4], 671636487);
+                     if (class730.field2927[var4] != null) {
+                        var6 = class526.method2229(class730.field2927[var4], 671636487);
                         if (var6 != null && var6.equals(var3)) {
                            class727.method1683(4, class814.field4805.method2927(class321.field1066, -875414210) + var0 + class814.field4806.method2927(class321.field1066, -875414210), (byte)-26);
                            return;
@@ -214,9 +214,9 @@ public class class86 implements class893 {
 
    static final void method951(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2817 ? 1 : 0;
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = Client.field2735 == null ? "" : Client.field2735;
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = Client.field2820 == null ? "" : Client.field2820;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2817 ? 1 : 0;
+         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class730.field2735 == null ? "" : class730.field2735;
+         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class730.field2820 == null ? "" : class730.field2820;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "am.vt(" + ')');
       }

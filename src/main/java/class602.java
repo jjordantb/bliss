@@ -84,7 +84,7 @@ public class class602 {
          if (var2 != class615.field8903.field9144.method1564(-1514807660)) {
             class615.field8903.method5391(class615.field8903.field9144, var2, -1997480653);
             class95.method523(656179282);
-            Client.field2647 = false;
+            class730.field2647 = false;
          }
 
       } catch (RuntimeException var3) {
@@ -117,7 +117,7 @@ public class class602 {
 
    static final void method5089(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2788 ? 1 : 0;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2788 ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "s.uw(" + ')');
       }

@@ -9,7 +9,7 @@ public class class859 extends class304 {
    public void method2386() {
       class700.method6329(930341525 * this.field8844, this.field8846 * -913226385, 1149350097 * this.field8845, 100, 100, false);
       class198.method3752(this.field8847 * -58553315, 300585813 * this.field8848, 0, -1841339577);
-      Client.field2706 = true;
+      class730.field2706 = true;
    }
 
    class859(class907 var1) {
@@ -24,14 +24,14 @@ public class class859 extends class304 {
    public void method2385() {
       class700.method6329(930341525 * this.field8844, this.field8846 * -913226385, 1149350097 * this.field8845, 100, 100, false);
       class198.method3752(this.field8847 * -58553315, 300585813 * this.field8848, 0, -1539652998);
-      Client.field2706 = true;
+      class730.field2706 = true;
    }
 
    public void method2383(int var1) {
       try {
          class700.method6329(930341525 * this.field8844, this.field8846 * -913226385, 1149350097 * this.field8845, 100, 100, false);
          class198.method3752(this.field8847 * -58553315, 300585813 * this.field8848, 0, -1646774896);
-         Client.field2706 = true;
+         class730.field2706 = true;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "xc.f(" + ')');
       }

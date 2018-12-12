@@ -51,7 +51,7 @@ public class class870 implements class54 {
       try {
          if (class540.field3915 != null) {
             class32 var1 = class32.method3290(class923.field10295.method1511().field7637);
-            class389 var2 = Client.field2697.method5270(681479919);
+            class389 var2 = class730.field2697.method5270(681479919);
             var1.field5296 += (float)(var2.field1521 * -1760580017 << 9);
             var1.field5299 += (float)(var2.field1522 * 283514611 << 9);
             var1.method3295((float)(class540.field3915.field1930 * -1640118043), var1.field5300, (float)(class540.field3915.field1927 * 827958915));
@@ -120,7 +120,7 @@ public class class870 implements class54 {
       try {
          class615.field8903.method5391(class615.field8903.field9127, var0.field3161[(var0.field3156 -= -391880689) * 681479919] == 1 ? 1 : 0, -1896213464);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "fs.ait(" + ')');
       }

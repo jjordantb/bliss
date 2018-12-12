@@ -176,7 +176,7 @@ public class class509 {
 
    static final void method2536(int var0, int var1, byte var2) {
       try {
-         if (Client.field2926 != class469.field7320) {
+         if (class730.field2926 != class469.field7320) {
             if (!class133.method998(var0, var1, false, class647.method5483(var0, var1, 1, 1, 1978833308), -1273389367)) {
                class133.method998(var0, var1, false, class191.method3721(var0, var1, 1, 1, 0, (byte)-5), 1260408128);
             }

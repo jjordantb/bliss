@@ -38,16 +38,16 @@ public class class701 extends class568 {
             var6 = 100;
          }
 
-         int var7 = Client.field2910 + (Client.field2911 - Client.field2910) * var6 / 100;
+         int var7 = class730.field2910 + (class730.field2911 - class730.field2910) * var6 / 100;
          int var8 = var3 * var7 * 512 / (var2 * 334);
          int var9;
          int var10;
          short var12;
-         if (var8 < Client.field2916) {
-            var12 = Client.field2916;
+         if (var8 < class730.field2916) {
+            var12 = class730.field2916;
             var7 = var2 * var12 * 334 / (512 * var3);
-            if (var7 > Client.field2724) {
-               var7 = Client.field2724;
+            if (var7 > class730.field2724) {
+               var7 = class730.field2724;
                var9 = var3 * var7 * 512 / (var12 * 334);
                var10 = (var2 - var9) / 2;
                if (var4) {
@@ -59,11 +59,11 @@ public class class701 extends class568 {
                var0 += var10;
                var2 -= var10 * 2;
             }
-         } else if (var8 > Client.field2917) {
-            var12 = Client.field2917;
+         } else if (var8 > class730.field2917) {
+            var12 = class730.field2917;
             var7 = var2 * var12 * 334 / (var3 * 512);
-            if (var7 < Client.field2821) {
-               var7 = Client.field2821;
+            if (var7 < class730.field2821) {
+               var7 = class730.field2821;
                var9 = var2 * var12 * 334 / (var7 * 512);
                var10 = (var3 - var9) / 2;
                if (var4) {
@@ -77,11 +77,11 @@ public class class701 extends class568 {
             }
          }
 
-         Client.field2922 = var7 * var3 / 334 * 1463025151;
-         Client.field2918 = var0 * 1925400255;
-         Client.field2728 = var1 * -249668627;
-         Client.field2645 = -2079606657 * (short)var2;
-         Client.field2921 = (short)var3 * -34894995;
+         class730.field2922 = var7 * var3 / 334 * 1463025151;
+         class730.field2918 = var0 * 1925400255;
+         class730.field2728 = var1 * -249668627;
+         class730.field2645 = -2079606657 * (short)var2;
+         class730.field2921 = (short)var3 * -34894995;
       } catch (RuntimeException var11) {
          throw class158.method3445(var11, "abu.iy(" + ')');
       }

@@ -123,7 +123,7 @@ public class class120 {
          int var4 = var0.field3161[681479919 * var0.field3156 + 2];
          class564 var5 = class554.method427(var2 << 16 | var3, var4, -156511736);
          class422.method5724((byte)4);
-         class725 var6 = Client.method1761(var5);
+         class725 var6 = class730.method1761(var5);
          class900.method6347(var5, var6.method1742((byte)-10), -1133219011 * var6.field2557, 1387537939);
       } catch (RuntimeException var7) {
          throw class158.method3445(var7, "gn.amf(" + ')');

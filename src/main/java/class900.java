@@ -20,14 +20,14 @@ public class class900 {
                class408.method5470(var4, (byte)-26);
             }
 
-            Client.field2817 = true;
+            class730.field2817 = true;
             class543.field3820 = var0.field867 * 1167811111;
-            Client.field2818 = var0.field879 * -298861091;
+            class730.field2818 = var0.field879 * -298861091;
             class568.field645 = 1282349805 * var1;
             class354.field2139 = var2 * 1881265567;
-            Client.field2888 = 746397723 * var0.field1005;
+            class730.field2888 = 746397723 * var0.field1005;
             class175.field5075 = 1745504609 * var0.field904;
-            Client.field2919 = -472067203 * var0.field888;
+            class730.field2919 = -472067203 * var0.field888;
             class814.method2932(var0, -284512508);
          }
 
@@ -38,7 +38,7 @@ public class class900 {
 
    static void method6348(byte var0) {
       try {
-         if (Client.field2825 != null) {
+         if (class730.field2825 != null) {
             class981.method1931(-1491321338);
          } else if (2084404473 * class881.field10145 != -1) {
             class84.method939((byte)-89);

@@ -107,9 +107,9 @@ public class class484 extends class304 {
       }
 
       int var10 = this.field8529 * 1745275777 << 2;
-      class214 var11 = new class214(Client.field2697.method5317(-1611682495), this.field8523 * 1632084697, var3, var3, var1, var2, this.field8531 * 266943569 << 2, Client.field2866 * 443738891, 929559909 * this.field8519 + Client.field2866 * 443738891, -1300008271 * this.field8530, var10, this.field8520 * -153670819 + 1, 1 + -1629854861 * this.field8524, this.field8527 * 172590773 << 2, false, 0);
-      var11.method3782(var8, var9, 172590773 * this.field8527 << 2, Client.field2866 * 443738891 + 929559909 * this.field8519, -414343918);
-      Client.field2805.method897(new class107(var11), 1292621740);
+      class214 var11 = new class214(class730.field2697.method5317(-1611682495), this.field8523 * 1632084697, var3, var3, var1, var2, this.field8531 * 266943569 << 2, class730.field2866 * 443738891, 929559909 * this.field8519 + class730.field2866 * 443738891, -1300008271 * this.field8530, var10, this.field8520 * -153670819 + 1, 1 + -1629854861 * this.field8524, this.field8527 * 172590773 << 2, false, 0);
+      var11.method3782(var8, var9, 172590773 * this.field8527 << 2, class730.field2866 * 443738891 + 929559909 * this.field8519, -414343918);
+      class730.field2805.method897(new class107(var11), 1292621740);
    }
 
    public void method2386() {
@@ -144,9 +144,9 @@ public class class484 extends class304 {
       }
 
       int var10 = this.field8529 * 1745275777 << 2;
-      class214 var11 = new class214(Client.field2697.method5317(-1611682495), this.field8523 * 1632084697, var3, var3, var1, var2, this.field8531 * 266943569 << 2, Client.field2866 * 443738891, 929559909 * this.field8519 + Client.field2866 * 443738891, -1300008271 * this.field8530, var10, this.field8520 * -153670819 + 1, 1 + -1629854861 * this.field8524, this.field8527 * 172590773 << 2, false, 0);
-      var11.method3782(var8, var9, 172590773 * this.field8527 << 2, Client.field2866 * 443738891 + 929559909 * this.field8519, 1238518641);
-      Client.field2805.method897(new class107(var11), 489461607);
+      class214 var11 = new class214(class730.field2697.method5317(-1611682495), this.field8523 * 1632084697, var3, var3, var1, var2, this.field8531 * 266943569 << 2, class730.field2866 * 443738891, 929559909 * this.field8519 + class730.field2866 * 443738891, -1300008271 * this.field8530, var10, this.field8520 * -153670819 + 1, 1 + -1629854861 * this.field8524, this.field8527 * 172590773 << 2, false, 0);
+      var11.method3782(var8, var9, 172590773 * this.field8527 << 2, class730.field2866 * 443738891 + 929559909 * this.field8519, 1238518641);
+      class730.field2805.method897(new class107(var11), 489461607);
    }
 
    public void method2383(int var1) {
@@ -182,9 +182,9 @@ public class class484 extends class304 {
          }
 
          int var12 = this.field8529 * 1745275777 << 2;
-         class214 var13 = new class214(Client.field2697.method5317(-1611682495), this.field8523 * 1632084697, var4, var4, var2, var3, this.field8531 * 266943569 << 2, Client.field2866 * 443738891, 929559909 * this.field8519 + Client.field2866 * 443738891, -1300008271 * this.field8530, var12, this.field8520 * -153670819 + 1, 1 + -1629854861 * this.field8524, this.field8527 * 172590773 << 2, false, 0);
-         var13.method3782(var10, var11, 172590773 * this.field8527 << 2, Client.field2866 * 443738891 + 929559909 * this.field8519, 1057769456);
-         Client.field2805.method897(new class107(var13), -428713736);
+         class214 var13 = new class214(class730.field2697.method5317(-1611682495), this.field8523 * 1632084697, var4, var4, var2, var3, this.field8531 * 266943569 << 2, class730.field2866 * 443738891, 929559909 * this.field8519 + class730.field2866 * 443738891, -1300008271 * this.field8530, var12, this.field8520 * -153670819 + 1, 1 + -1629854861 * this.field8524, this.field8527 * 172590773 << 2, false, 0);
+         var13.method3782(var10, var11, 172590773 * this.field8527 << 2, class730.field2866 * 443738891 + 929559909 * this.field8519, 1057769456);
+         class730.field2805.method897(new class107(var13), -428713736);
       } catch (RuntimeException var9) {
          throw class158.method3445(var9, "yu.f(" + ')');
       }

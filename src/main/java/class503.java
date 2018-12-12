@@ -15,7 +15,7 @@ public class class503 {
          var0.field3156 -= -783761378;
          int var2 = var0.field3161[681479919 * var0.field3156];
          int var3 = var0.field3161[1 + var0.field3156 * 681479919];
-         class256 var4 = (class256) Client.field2823.method2942((long)var2);
+         class256 var4 = (class256)class730.field2823.method2942((long)var2);
          if (var4 != null && var4.field8101 * -1617025021 == var3) {
             var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1;
          } else {
@@ -97,7 +97,7 @@ public class class503 {
 
    public static void method2587(boolean var0, short var1) {
       try {
-         if (1596783995 * Client.field2705 != 2 && 1596783995 * Client.field2705 != 3) {
+         if (1596783995 * class730.field2705 != 2 && 1596783995 * class730.field2705 != 3) {
             if (!var0) {
                class304[] var2 = class949.field3325;
 
@@ -107,14 +107,14 @@ public class class503 {
                }
             }
 
-            Client.field2705 = 1973597030;
+            class730.field2705 = 1973597030;
             class345.field210 = null;
             class665.field9597 = null;
-            Client.field2706 = false;
+            class730.field2706 = false;
             class59.method1617(1960223809);
-            class701 var6 = class637.method5936(class643.field9948, Client.field2692.field7765, (byte)30);
+            class701 var6 = class637.method5936(class643.field9948, class730.field2692.field7765, (byte)30);
             var6.field3364.method6361(var0 ? 1 : 0);
-            Client.field2692.method4380(var6, (byte)-61);
+            class730.field2692.method4380(var6, (byte)-61);
          }
 
       } catch (RuntimeException var5) {

@@ -97,8 +97,8 @@ public class class812 {
    static final void method2914(long var0) {
       try {
          class32 var2 = class923.field10295.method1511().field7637;
-         int var3 = 1734240325 * Client.field2798 + (int)var2.field5296;
-         int var4 = Client.field2723 * 1874511679 + (int)var2.field5299;
+         int var3 = 1734240325 * class730.field2798 + (int)var2.field5296;
+         int var4 = class730.field2723 * 1874511679 + (int)var2.field5299;
          if (class456.field7163 * 1103750049 - var3 < -2000 || class456.field7163 * 1103750049 - var3 > 2000 || class530.field3741 * 1346160791 - var4 < -2000 || class530.field3741 * 1346160791 - var4 > 2000) {
             class456.field7163 = var3 * -1832337311;
             class530.field3741 = 1831024423 * var4;
@@ -142,8 +142,8 @@ public class class812 {
             class530.field3741 += 1831024423 * var6;
          }
 
-         Client.field2931 += (float)var0 * Client.field2740 / 6.0F;
-         Client.field2738 += Client.field2741 * (float)var0 / 6.0F;
+         class730.field2931 += (float)var0 * class730.field2740 / 6.0F;
+         class730.field2738 += class730.field2741 * (float)var0 / 6.0F;
          class819.method2938((byte)116);
       } catch (RuntimeException var7) {
          throw class158.method3445(var7, "uf.hx(" + ')');

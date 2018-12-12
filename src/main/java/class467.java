@@ -102,9 +102,9 @@ public class class467 extends class535 {
    static final void method4001(class744 var0, short var1) {
       try {
          class818.method2903((class963)var0.field3150, var0.field3161[(var0.field3156 -= -391880689) * 681479919], (byte)14);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int) Client.field2873[0];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int) Client.field2873[1];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int) Client.field2873[2];
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)class730.field2873[0];
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)class730.field2873[1];
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)class730.field2873[2];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "aee.apu(" + ')');
       }

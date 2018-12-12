@@ -153,21 +153,21 @@ public class class521 implements Iterator {
                      }
 
                      if (-122629167 * class881.field10140 == 264) {
-                        var2.field3364.method6361(5 == Client.field2733 * -1233866115 ? 1 : 0);
+                        var2.field3364.method6361(5 == class730.field2733 * -1233866115 ? 1 : 0);
                      }
 
                      class907 var4 = class398.method3541(-1454924768);
                      var4.method6361(2084404473 * class881.field10145);
                      var4.method6362((int)(Math.random() * 9.9999999E7D), 16711935);
                      var4.method6361(class321.field1066.method89(694163818));
-                     var4.method6364(Client.field2646 * -1154804873, -1393012818);
+                     var4.method6364(class730.field2646 * -1154804873, -1393012818);
 
                      for(var5 = 0; var5 < 6; ++var5) {
                         var4.method6364((int)(Math.random() * 9.9999999E7D), 499420945);
                      }
 
-                     var4.method6385(Client.field2656 * -8380697455384249973L);
-                     var4.method6361(-937307905 * Client.field2926.field7327);
+                     var4.method6385(class730.field2656 * -8380697455384249973L);
+                     var4.method6361(-937307905 * class730.field2926.field7327);
                      var4.method6361((int)(Math.random() * 9.9999999E7D));
                      var4.method6412(class449.field7058, class449.field7062, 1533826109);
                      var2.field3364.method6425(var4.field10375, 0, 385051775 * var4.field10376, (short)-29754);
@@ -226,8 +226,8 @@ public class class521 implements Iterator {
                   String var19 = class881.field10177.field7768.method6413(681479919);
                   class881.field10177.field7768.field10376 = 0;
                   String var20 = class662.field9733.method5798(-1670386026);
-                  if (!Client.field2616 || !class948.method1939(var19, 1, var20, -2049749087)) {
-                     class529.method2213(var19, true, class615.field8903.field9137.method3689(-671601354) == 5, var20, Client.field2849, Client.field2632, -1487322449);
+                  if (!class730.field2616 || !class948.method1939(var19, 1, var20, -2049749087)) {
+                     class529.method2213(var19, true, class615.field8903.field9137.method3689(-671601354) == 5, var20, class730.field2849, class730.field2632, -1487322449);
                   }
 
                   class881.field10168 = 1226307758;
@@ -284,7 +284,7 @@ public class class521 implements Iterator {
                            var21.method6364(Loader.field6970, 98092954);
                         }
 
-                        var21.method6361(Client.field2733 * -1233866115 == 5 ? 1 : 0);
+                        var21.method6361(class730.field2733 * -1233866115 == 5 ? 1 : 0);
                         var6 = 385051775 * var21.field10376;
                         var7 = class924.method6254(-2133378997);
                         var21.method6425(var7.field10375, 0, var7.field10376 * 385051775, (short)-31677);
@@ -322,31 +322,31 @@ public class class521 implements Iterator {
                         var21.method6366(var29, -1);
                      }
 
-                     var21.method6366(Client.field2909, 2114152304);
-                     var21.method6364(-1154804873 * Client.field2646, -1572632938);
+                     var21.method6366(class730.field2909, 2114152304);
+                     var21.method6364(-1154804873 * class730.field2646, -1572632938);
                      class907 var30 = class615.field8903.method5393(-611972750);
                      var21.method6361(385051775 * var30.field10376);
                      var21.method6425(var30.field10375, 0, var30.field10376 * 385051775, (short)-20549);
-                     Client.field2647 = true;
+                     class730.field2647 = true;
                      if (Loader.field6958) {
                         class907 var28 = new class907(class86.field1134.method1819(-1431420237));
                         class86.field1134.method1818(var28, 652337983);
                         var21.method6425(var28.field10375, 0, var28.field10375.length, (short)-1355);
                      }
 
-                     var21.method6364(Client.field2694 * -2059460167, -1287558190);
-                     var21.method6385(Client.field2626 * -5648129435911399733L);
-                     var21.method6361(Client.field2629 == null ? 0 : 1);
-                     if (Client.field2629 != null) {
-                        var21.method6366(Client.field2629, 2119355084);
+                     var21.method6364(class730.field2694 * -2059460167, -1287558190);
+                     var21.method6385(class730.field2626 * -5648129435911399733L);
+                     var21.method6361(class730.field2629 == null ? 0 : 1);
+                     if (class730.field2629 != null) {
+                        var21.method6366(class730.field2629, 2119355084);
                      }
 
                      var21.method6361(class606.field8572.method5401("jagtheora", 1302159774) ? 1 : 0);
-                     var21.method6361(Client.field2616 ? 1 : 0);
-                     var21.method6361(Client.field2940 ? 1 : 0);
+                     var21.method6361(class730.field2616 ? 1 : 0);
+                     var21.method6361(class730.field2940 ? 1 : 0);
                      var21.method6361(class507.field4016 * -180909151);
-                     var21.method6364(1886068421 * Client.field2635, 576248494);
-                     var21.method6366(Client.field2636, 2141094155);
+                     var21.method6364(1886068421 * class730.field2635, 576248494);
+                     var21.method6366(class730.field2636, 2141094155);
                      var21.method6361(class890.field9270 != null && 1606920449 * class601.field9203.field4347 == class890.field9270.field4347 * 1606920449 ? 0 : 1);
                      class51.method1531(var21, -956052447);
                      var21.method6388(class881.field10161, var6, 385051775 * var21.field10376, 1729780581);
@@ -379,19 +379,19 @@ public class class521 implements Iterator {
                         }
                      }
 
-                     var21.method6361(-937307905 * Client.field2926.field7327);
+                     var21.method6361(-937307905 * class730.field2926.field7327);
                      var21.method6361(class321.field1066.method89(694163818));
                      class498.method4491(var21, (byte)1);
-                     var21.method6366(Client.field2909, 2107324025);
+                     var21.method6366(class730.field2909, 2107324025);
                      var7 = class615.field8903.method5393(-1517637513);
                      var21.method6361(var7.field10376 * 385051775);
                      var21.method6425(var7.field10375, 0, var7.field10376 * 385051775, (short)-4570);
                      class907 var33 = new class907(class86.field1134.method1819(-1431420237));
                      class86.field1134.method1818(var33, 1834978848);
                      var21.method6425(var33.field10375, 0, var33.field10375.length, (short)-14969);
-                     var21.method6364(-1154804873 * Client.field2646, 142980326);
-                     var21.method6364(Client.field2635 * 1886068421, -840792899);
-                     var21.method6366(Client.field2636, 2126130218);
+                     var21.method6364(-1154804873 * class730.field2646, 142980326);
+                     var21.method6364(class730.field2635 * 1886068421, -840792899);
+                     var21.method6366(class730.field2636, 2126130218);
                      class51.method1531(var21, -535015918);
                      byte[] var31 = NetworkInterface.getByInetAddress(InetAddress.getLocalHost()).getHardwareAddress();
                      var21.method6361(var31.length);
@@ -539,21 +539,21 @@ public class class521 implements Iterator {
 
                         class881.field10177.method4377(537308016).method177(var23.field10375, 0, class881.field10174 * -1359010095, (byte)13);
                         var23.field10376 = 0;
-                        Client.field2790 = var23.method6371() * 1835619115;
-                        Client.field2914 = var23.method6371() * -418443653;
-                        Client.field2792 = var23.method6371() == 1;
-                        Client.field2793 = var23.method6371() == 1;
-                        Client.field2794 = var23.method6371() == 1;
-                        Client.field2783 = var23.method6371() == 1;
-                        Client.field2623 = var23.method6374() * 1448461709;
-                        Client.field2788 = var23.method6371() == 1;
+                        class730.field2790 = var23.method6371() * 1835619115;
+                        class730.field2914 = var23.method6371() * -418443653;
+                        class730.field2792 = var23.method6371() == 1;
+                        class730.field2793 = var23.method6371() == 1;
+                        class730.field2794 = var23.method6371() == 1;
+                        class730.field2783 = var23.method6371() == 1;
+                        class730.field2623 = var23.method6374() * 1448461709;
+                        class730.field2788 = var23.method6371() == 1;
                         class206.field7099 = var23.method6404((byte)-39) * 777394511;
-                        Client.field2759 = var23.method6371() == 1;
+                        class730.field2759 = var23.method6371() == 1;
                         class143.field1540 = var23.method6379(-796084606);
-                        Client.field2697.method5283(-1352577967).method4707(Client.field2759, 915103443);
-                        class625.field9752.method463((short)206).method5283(-884206015).method4707(Client.field2759, 915103443);
-                        class85.field1121.method1577(Client.field2759, 798055588);
-                        class258.field7913.method13(Client.field2759, (byte)-2);
+                        class730.field2697.method5283(-1352577967).method4707(class730.field2759, 915103443);
+                        class625.field9752.method463((short)206).method5283(-884206015).method4707(class730.field2759, 915103443);
+                        class85.field1121.method1577(class730.field2759, 798055588);
+                        class258.field7913.method13(class730.field2759, (byte)-2);
                      } else {
                         if (!class881.field10177.method4377(537308016).method175(class881.field10174 * -1359010095, (byte)-27)) {
                            return;
@@ -561,17 +561,17 @@ public class class521 implements Iterator {
 
                         class881.field10177.method4377(537308016).method177(var23.field10375, 0, class881.field10174 * -1359010095, (byte)29);
                         var23.field10376 = 0;
-                        Client.field2790 = var23.method6371() * 1835619115;
-                        Client.field2914 = var23.method6371() * -418443653;
-                        Client.field2792 = var23.method6371() == 1;
+                        class730.field2790 = var23.method6371() * 1835619115;
+                        class730.field2914 = var23.method6371() * -418443653;
+                        class730.field2792 = var23.method6371() == 1;
                         class206.field7099 = var23.method6404((byte)-98) * 777394511;
                         class923.field10295.field3399 = (byte)var23.method6371();
-                        Client.field2793 = var23.method6371() == 1;
-                        Client.field2794 = var23.method6371() == 1;
+                        class730.field2793 = var23.method6371() == 1;
+                        class730.field2794 = var23.method6371() == 1;
                         class341.field317 = var23.method6375((short)9875) * 9182695496232067233L;
                         class722.field3632 = (-536549149186981023L * class341.field317 - class27.method3468((byte)1) - var23.method6378((byte)74)) * -7894334964002250373L;
                         var3 = var23.method6371();
-                        Client.field2788 = (var3 & 1) != 0;
+                        class730.field2788 = (var3 & 1) != 0;
                         class419.field9521 = (var3 & 2) != 0;
                         class379.field1140 = var23.method6420((byte)99) * -1704395451;
                         class904.field10357 = var23.method6371() == 1;
@@ -589,7 +589,7 @@ public class class521 implements Iterator {
                         class923.field10295.field3374 = class923.field10295.field3379 = class862.field8932 = var23.method6413(681479919);
                         class811.field4654 = var23.method6371() * 821936487;
                         class82.field1110 = var23.method6420((byte)-28) * 2029589759;
-                        Client.field2621 = var23.method6371() == 1;
+                        class730.field2621 = var23.method6371() == 1;
                         class890.field9270 = new class764();
                         class890.field9270.field4347 = var23.method6374() * 348739329;
                         if (65535 == 1606920449 * class890.field9270.field4347) {
@@ -602,12 +602,12 @@ public class class521 implements Iterator {
                            class890.field9270.field4345 = -52655920 + class890.field9270.field4347 * 925746937;
                         }
 
-                        if (class721.field3634 != class916.field10410 && (class721.field3634 != class916.field10412 || 1806357379 * Client.field2790 < 2) && class601.field9203.method2742(class601.field9200, 2123928060)) {
+                        if (class721.field3634 != class916.field10410 && (class721.field3634 != class916.field10412 || 1806357379 * class730.field2790 < 2) && class601.field9203.method2742(class601.field9200, 2123928060)) {
                            class590.method1219(-1667448332);
                         }
                      }
 
-                     if ((!Client.field2792 || Client.field2794) && !Client.field2788) {
+                     if ((!class730.field2792 || class730.field2794) && !class730.field2788) {
                         try {
                            class872.method5894(class833.field9178, "unzap", (short)10429);
                         } catch (Throwable var13) {
@@ -617,7 +617,7 @@ public class class521 implements Iterator {
                         try {
                            class872.method5894(class833.field9178, "zap", (short)11786);
                         } catch (Throwable var15) {
-                           if (Client.field2620) {
+                           if (class730.field2620) {
                               try {
                                  class833.field9178.getAppletContext().showDocument(new URL(class833.field9178.getCodeBase(), "blank.ws"), "tbi");
                               } catch (Exception var14) {
@@ -682,9 +682,9 @@ public class class521 implements Iterator {
                         System.arraycopy(class881.field10177.field7768.field10375, class881.field10177.field7768.field10376 * 385051775, var25.field10375, 0, var3);
                         class881.field10177.field7768.field10376 += var3 * 116413311;
                         if (class881.field10177.field7770 == class807.field4558) {
-                           Client.field2697.method5292(new class406(class335.field52, var25), -1991819579);
+                           class730.field2697.method5292(new class406(class335.field52, var25), -1991819579);
                         } else {
-                           Client.field2697.method5292(new class406(class335.field45, var25), -1991819579);
+                           class730.field2697.method5292(new class406(class335.field45, var25), -1991819579);
                         }
 
                         if (var18 != class881.field10177.field7768.field10376 * 385051775) {

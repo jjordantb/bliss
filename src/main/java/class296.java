@@ -70,15 +70,15 @@ public class class296 {
 
    static final void method6510(byte var0, int var1) {
       try {
-         byte[][][] var2 = Client.field2697.method5284(1521051054);
+         byte[][][] var2 = class730.field2697.method5284(1521051054);
          if (var2 == null) {
-            var2 = new byte[4][Client.field2697.method5271(-1981468107)][Client.field2697.method5272(1256544033)];
-            Client.field2697.method5285(var2, 1496940593);
+            var2 = new byte[4][class730.field2697.method5271(-1981468107)][class730.field2697.method5272(1256544033)];
+            class730.field2697.method5285(var2, 1496940593);
          }
 
          for(int var3 = 0; var3 < 4; ++var3) {
-            for(int var4 = 0; var4 < Client.field2697.method5271(-2064419081); ++var4) {
-               for(int var5 = 0; var5 < Client.field2697.method5272(764955570); ++var5) {
+            for(int var4 = 0; var4 < class730.field2697.method5271(-2064419081); ++var4) {
+               for(int var5 = 0; var5 < class730.field2697.method5272(764955570); ++var5) {
                   var2[var3][var4][var5] = var0;
                }
             }
@@ -106,10 +106,10 @@ public class class296 {
    static final void method6512(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         if (Client.field2924 * 1131012101 == 2 && var2 < -1054937867 * Client.field2923) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = Client.field2685[var2];
-            if (Client.field2927[var2] != null) {
-               var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = Client.field2927[var2];
+         if (class730.field2924 * 1131012101 == 2 && var2 < -1054937867 * class730.field2923) {
+            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class730.field2685[var2];
+            if (class730.field2927[var2] != null) {
+               var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class730.field2927[var2];
             } else {
                var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
             }

@@ -90,7 +90,7 @@ public class class193 {
       try {
          class615.field8903.method5391(class615.field8903.field9149, var0.field3161[(var0.field3156 -= -391880689) * 681479919], 951880368);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "oo.aiy(" + ')');
       }

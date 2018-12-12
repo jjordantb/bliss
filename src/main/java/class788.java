@@ -31,7 +31,7 @@ public class class788 {
    static final void method2396(class744 var0, byte var1) {
       try {
          int var2 = var0.field3174[1883543357 * var0.field3176];
-         Long var3 = var0.field3169.method5791(-937307905 * Client.field2926.field7327 << 16 | var2, -2092321657);
+         Long var3 = var0.field3169.method5791(-937307905 * class730.field2926.field7327 << 16 | var2, -2092321657);
          long var4;
          if (var3 == null) {
             var4 = -1L;

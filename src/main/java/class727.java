@@ -609,7 +609,7 @@ public abstract class class727 {
    public static void method1682(String var0, String var1, int var2) {
       try {
          if (var0.length() <= 320 && class878.method5922((byte)115)) {
-            Client.field2674.method4374((byte)4);
+            class730.field2674.method4374((byte)4);
             class933.method6288(2087182163);
             class881.field10170 = var0;
             class881.field10171 = var1;

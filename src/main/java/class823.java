@@ -23,10 +23,10 @@ public class class823 {
 
    static final void method5362(boolean var0, int var1) {
       try {
-         class513 var2 = Client.field2692.field7768;
+         class513 var2 = class730.field2692.field7768;
 
          while(true) {
-            if (var2.method2644(-866602563 * Client.field2692.field7771, (byte)-70) < 15) {
+            if (var2.method2644(-866602563 * class730.field2692.field7771, (byte)-70) < 15) {
                if (var1 == 596994841) {
                   return;
                }
@@ -39,20 +39,20 @@ public class class823 {
             }
 
             boolean var4 = false;
-            class437 var5 = (class437) Client.field2677.method2942((long)var3);
+            class437 var5 = (class437)class730.field2677.method2942((long)var3);
             class60 var6;
             if (var5 == null) {
-               var6 = new class60(Client.field2697.method5317(-1611682495));
+               var6 = new class60(class730.field2697.method5317(-1611682495));
                var6.field4028 = 1714292119 * var3;
                var5 = new class437(var6);
-               Client.field2677.method2947(var5, (long)var3);
-               Client.field2797[(Client.field2753 += -118843751) * 1962237353 - 1] = var5;
+               class730.field2677.method2947(var5, (long)var3);
+               class730.field2797[(class730.field2753 += -118843751) * 1962237353 - 1] = var5;
                var4 = true;
             }
 
             var6 = (class60)var5.field7515;
-            Client.field2680[(Client.field2684 += -409937273) * -1230451913 - 1] = var3;
-            var6.field4039 = -3704423 * Client.field2688;
+            class730.field2680[(class730.field2684 += -409937273) * -1230451913 - 1] = var3;
+            var6.field4039 = -3704423 * class730.field2688;
             if (var6.field1637 != null && var6.field1637.method6112((byte)88)) {
                class153.method3396(var6, (byte)40);
             }
@@ -88,7 +88,7 @@ public class class823 {
             int var10 = var2.method2647(2);
             int var11 = var2.method2647(1);
             if (var11 == 1) {
-               Client.field2687[(Client.field2789 += -386992021) * -976358333 - 1] = var3;
+               class730.field2687[(class730.field2789 += -386992021) * -976358333 - 1] = var3;
             }
 
             int var12 = var2.method2647(1);

@@ -34,15 +34,15 @@ public abstract class class856 {
 
    public static void method5201(String var0, int var1) {
       try {
-         if (8 == -1233866115 * Client.field2733) {
-            class701 var2 = class637.method5936(class643.field9974, Client.field2674.field7765, (byte)6);
+         if (8 == -1233866115 * class730.field2733) {
+            class701 var2 = class637.method5936(class643.field9974, class730.field2674.field7765, (byte)6);
             var2.field3364.method6362(0, 16711935);
             int var3 = 385051775 * var2.field3364.field10376;
             var2.field3364.method6366(var0, 2135681130);
             var2.field3364.field10376 += 814893177;
             var2.field3364.method6388(class861.field9024, var3, 385051775 * var2.field3364.field10376, -1237713398);
             var2.field3364.method6369(385051775 * var2.field3364.field10376 - var3, 1585504133);
-            Client.field2674.method4380(var2, (byte)-126);
+            class730.field2674.method4380(var2, (byte)-126);
             class215.field7206 = class245.field8537;
          }
 

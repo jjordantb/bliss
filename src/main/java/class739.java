@@ -27,7 +27,7 @@ public class class739 {
 
    public static void method1795(int var0, int var1, int var2, boolean var3, int var4) {
       try {
-         Client.field2779 = 0L;
+         class730.field2779 = 0L;
          int var5 = class660.method5750((byte)-125);
          if (3 == var0 || var5 == 3) {
             var3 = true;

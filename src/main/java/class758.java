@@ -131,9 +131,9 @@ public class class758 {
          if (var6 != null) {
             int var8;
             if (-863531439 * class563.field1083 == 2) {
-               var8 = (int) Client.field2931 & 16383;
+               var8 = (int)class730.field2931 & 16383;
             } else {
-               var8 = (int) Client.field2931 + Client.field2782 * 1227356013 & 16383;
+               var8 = (int)class730.field2931 + class730.field2782 * 1227356013 & 16383;
             }
 
             int var9 = Math.max(var0.field881 * -2093041337 / 2, 457937409 * var0.field887 / 2) + 10;
@@ -142,8 +142,8 @@ public class class758 {
                int var11 = class703.field3413[var8];
                int var12 = class703.field3404[var8];
                if (2 != class563.field1083 * -863531439) {
-                  var11 = 256 * var11 / (256 + Client.field2730 * 356727603);
-                  var12 = 256 * var12 / (356727603 * Client.field2730 + 256);
+                  var11 = 256 * var11 / (256 + class730.field2730 * 356727603);
+                  var12 = 256 * var12 / (356727603 * class730.field2730 + 256);
                }
 
                int var13 = var5 * var11 + var4 * var12 >> 14;

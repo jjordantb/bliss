@@ -370,7 +370,7 @@ public class class544 {
 
    static final void method2367(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int) Client.field2931 >> 3;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)class730.field2931 >> 3;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "lm.agv(" + ')');
       }
@@ -389,18 +389,18 @@ public class class544 {
    }
 
    public static void method2370(int var0, class312 var1) {
-      int var2 = class345.method157(class923.field10295.field4085[0], class923.field10295.field4055[0], class923.field10295.method2550(), var1, Client.field2697.method5281(class923.field10295.field3639), true, Client.field2731, Client.field2719);
+      int var2 = class345.method157(class923.field10295.field4085[0], class923.field10295.field4055[0], class923.field10295.method2550(), var1, class730.field2697.method5281(class923.field10295.field3639), true, class730.field2731, class730.field2719);
       class701 var3 = null;
       if (var0 == 0) {
-         var3 = class637.method5936(class643.field10012, Client.field2692.field7765, (byte)51);
+         var3 = class637.method5936(class643.field10012, class730.field2692.field7765, (byte)51);
       }
 
       if (var0 == 1) {
-         var3 = class637.method5936(class643.field9988, Client.field2692.field7765, (byte)28);
+         var3 = class637.method5936(class643.field9988, class730.field2692.field7765, (byte)28);
       }
 
       var3.field3364.method6361(5 + var2 * 2);
-      class389 var4 = Client.field2697.method5270(681479919);
+      class389 var4 = class730.field2697.method5270(681479919);
       var3.field3364.method6419(var4.field1521 * -1760580017);
       var3.field3364.method6415(class980.method1913(-545107710) ? 1 : 0, (byte)1);
       var3.field3364.method6419(var4.field1522 * 283514611);
@@ -416,21 +416,21 @@ public class class544 {
          class95.field601 = class56.field2315[var2 - 1] * -1129029761;
       }
 
-      Client.field2692.method4380(var3, (byte)-115);
+      class730.field2692.method4380(var3, (byte)-115);
    }
 
    static class701 method2371(int var0, int var1, int var2) {
       try {
          class701 var3 = null;
          if (var2 == 0) {
-            var3 = class637.method5936(class643.field10012, Client.field2692.field7765, (byte)51);
+            var3 = class637.method5936(class643.field10012, class730.field2692.field7765, (byte)51);
          }
 
          if (var2 == 1) {
-            var3 = class637.method5936(class643.field9988, Client.field2692.field7765, (byte)28);
+            var3 = class637.method5936(class643.field9988, class730.field2692.field7765, (byte)28);
          }
 
-         class389 var4 = Client.field2697.method5270(681479919);
+         class389 var4 = class730.field2697.method5270(681479919);
          var3.field3364.method6419(var4.field1521 * -1760580017 + var0);
          var3.field3364.method6415(class980.method1913(-545107710) ? 1 : 0, (byte)1);
          var3.field3364.method6419(var1 + var4.field1522 * 283514611);

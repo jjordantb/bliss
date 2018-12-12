@@ -40,7 +40,7 @@ public class class51 {
    static final void method1528(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -804725095 * Client.field2902[var2].field10626;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -804725095 * class730.field2902[var2].field10626;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "u.yh(" + ')');
       }
@@ -117,9 +117,9 @@ public class class51 {
                var0.field865 = 0;
             } else {
                var0.field915 = 818038;
-               var0.field987 = ((int)(Math.sin((double)(443738891 * Client.field2866) / 40.0D) * 256.0D) & 2047) * 1590511671;
+               var0.field987 = ((int)(Math.sin((double)(443738891 * class730.field2866) / 40.0D) * 256.0D) & 2047) * 1590511671;
                var0.field909 = 939239877;
-               var0.field876 = Client.field2623 * -127794683;
+               var0.field876 = class730.field2623 * -127794683;
                var0.field865 = class904.method6336(class923.field10295.field3374, (byte)123) * 908204397;
                class765 var2 = class923.field10295.field4041;
                if (var2 != null) {

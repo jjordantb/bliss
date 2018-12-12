@@ -33,8 +33,8 @@ public class class112 implements class799 {
             var1 = -639974669 * class919.field10433;
          }
 
-         if (1282634425 * Client.field1812 < var2) {
-            var2 = Client.field1812 * 1282634425;
+         if (1282634425 * class730.field1812 < var2) {
+            var2 = class730.field1812 * 1282634425;
          }
 
          try {

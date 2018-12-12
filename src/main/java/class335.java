@@ -65,12 +65,12 @@ public class class335 {
             if (var0.field4054 * 1433412323 != -1) {
                Object var2 = null;
                if (var0.field4054 * 1433412323 < 32768) {
-                  class437 var3 = (class437) Client.field2677.method2942((long)(1433412323 * var0.field4054));
+                  class437 var3 = (class437)class730.field2677.method2942((long)(1433412323 * var0.field4054));
                   if (var3 != null) {
                      var2 = (class746)var3.field7515;
                   }
                } else if (var0.field4054 * 1433412323 >= 32768) {
-                  var2 = Client.field2786[1433412323 * var0.field4054 - '耀'];
+                  var2 = class730.field2786[1433412323 * var0.field4054 - '耀'];
                }
 
                if (var2 != null) {
@@ -93,7 +93,7 @@ public class class335 {
                class60 var10 = (class60)var0;
                if (-1 != var10.field1626 * 579792529 && (var10.field4084 * 2050671733 == 0 || -1531994851 * var10.field4088 > 0)) {
                   var9 = var10.method1511().field7637;
-                  class389 var11 = Client.field2697.method5270(681479919);
+                  class389 var11 = class730.field2697.method5270(681479919);
                   var5 = (int)var9.field5296 - (var10.field1626 * -1896967936 - 263081728 * var11.field1521 - 263081728 * var11.field1521);
                   int var6 = (int)var9.field5299 - (893346048 * var10.field1627 - var11.field1522 * -434703616 - var11.field1522 * -434703616);
                   if (var5 != 0 || var6 != 0) {

@@ -8,10 +8,10 @@ public class class530 {
 
    public static final void method2314(int var0) {
       try {
-         if (!Client.field2742) {
-            Client.field2741 += (12.0F - Client.field2741) / 2.0F;
-            Client.field2744 = true;
-            Client.field2742 = true;
+         if (!class730.field2742) {
+            class730.field2741 += (12.0F - class730.field2741) / 2.0F;
+            class730.field2744 = true;
+            class730.field2742 = true;
          }
 
       } catch (RuntimeException var2) {

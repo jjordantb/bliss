@@ -37,9 +37,9 @@ public class class449 {
 
    public static void method3757(int var0, int var1) {
       try {
-         class701 var2 = class637.method5936(class643.field9941, Client.field2692.field7765, (byte)24);
+         class701 var2 = class637.method5936(class643.field9941, class730.field2692.field7765, (byte)24);
          var2.field3364.method6364(-1, -106491517);
-         Client.field2692.method4380(var2, (byte)-71);
+         class730.field2692.method4380(var2, (byte)-71);
          class800.field4577 = new class811(class771.field3732, var0);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "c.ax(" + ')');
@@ -56,7 +56,7 @@ public class class449 {
 
    static final void method3759(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -1168328513 * Client.field2819;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -1168328513 * class730.field2819;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "c.abh(" + ')');
       }
@@ -109,29 +109,29 @@ public class class449 {
 
    static final void method3762(int var0, byte var1) {
       try {
-         int var2 = Client.field2866 * 443738891 - Client.field2903 * -1656615113;
+         int var2 = class730.field2866 * 443738891 - class730.field2903 * -1656615113;
          if (var2 >= 100) {
             class563.field1083 = 1355934404;
             class516.field4332 = -1001372047;
             class495.field8099 = 178575833;
          } else {
-            int var3 = (int) Client.field2738;
-            if (Client.field2745 * -523207831 >> 8 > var3) {
-               var3 = -523207831 * Client.field2745 >> 8;
+            int var3 = (int)class730.field2738;
+            if (class730.field2745 * -523207831 >> 8 > var3) {
+               var3 = -523207831 * class730.field2745 >> 8;
             }
 
-            if (Client.field2665[4] && 128 + Client.field2907[4] > var3) {
-               var3 = 128 + Client.field2907[4];
+            if (class730.field2665[4] && 128 + class730.field2907[4] > var3) {
+               var3 = 128 + class730.field2907[4];
             }
 
-            int var4 = (int) Client.field2931 + -1419578297 * Client.field2725 & 16383;
+            int var4 = (int)class730.field2931 + -1419578297 * class730.field2725 & 16383;
             class32 var5 = class923.field10295.method1511().field7637;
             class299.method6557(1103750049 * class456.field7163, class679.method4271((int)var5.field5296, (int)var5.field5299, 1855729883 * class899.field9552, -1800819540) - 200, 1346160791 * class530.field3741, var3, var4, 600 + (var3 >> 3) * 3 << 2, var0, -1059521295);
             float var6 = 1.0F - (float)((100 - var2) * (100 - var2) * (100 - var2)) / 1000000.0F;
             class103.field205 = (int)((float)(class740.field3213 * -1806467999) + var6 * (float)(class103.field205 * -1740717447 - -1806467999 * class740.field3213)) * 547882953;
             class184.field5230 = 1078403147 * (int)((float)(1449634147 * class184.field5230 - 2032233737 * class614.field8888) * var6 + (float)(class614.field8888 * 2032233737));
             class7.field4918 = (int)(var6 * (float)(class7.field4918 * -299812095 - 1368015401 * class859.field8849) + (float)(1368015401 * class859.field8849)) * 309839105;
-            Client.field2737 = (int)((float)(-104436553 * Client.field2737 - class75.field1496 * 827399463) * var6 + (float)(class75.field1496 * 827399463)) * -648269561;
+            class730.field2737 = (int)((float)(-104436553 * class730.field2737 - class75.field1496 * 827399463) * var6 + (float)(class75.field1496 * 827399463)) * -648269561;
             int var7 = class232.field8266 * -1847894591 - -883946017 * class163.field6621;
             if (var7 > 8192) {
                var7 -= 16384;

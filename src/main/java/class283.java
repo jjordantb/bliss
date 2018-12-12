@@ -62,18 +62,18 @@ public final class class283 {
          if (!this.field10613) {
             this.field10613 = true;
             if (1762367763 * this.field10610 >= 0) {
-               this.field10611 = new class60(Client.field2697.method5317(-1611682495), 25);
+               this.field10611 = new class60(class730.field2697.method5317(-1611682495), 25);
                this.field10611.field4028 = this.field10607 * 302956801;
-               this.field10611.field4039 = Client.field2866 * -128551287;
+               this.field10611.field4039 = class730.field2866 * -128551287;
                this.field10611.method1248(class258.field7913.method12(this.field10610 * 1762367763, 1863267717), 2139515630);
                this.field10611.method2549(-2095128707 * this.field10611.field1637.field9923, -1254496694);
                this.field10611.field4079 = -1186616623 * (this.field10611.field1637.field9917 * -1927065533 << 3);
                this.field10611.field4035 = ((class949.field3331 += 2029434363) * -132903629 - 1) * -689024993;
             } else {
-               this.field10612 = new class946(Client.field2697.method5317(-1611682495), 25);
+               this.field10612 = new class946(class730.field2697.method5317(-1611682495), 25);
                this.field10612.method1990(class665.field9597, (byte)3);
                this.field10612.field4028 = 302956801 * this.field10607;
-               this.field10612.field4039 = -128551287 * Client.field2866;
+               this.field10612.field4039 = -128551287 * class730.field2866;
                this.field10612.field4035 = ((class949.field3331 += 2029434363) * -132903629 - 1) * -689024993;
             }
          }
@@ -161,9 +161,9 @@ public final class class283 {
       try {
          class615.field8903.method5391(class615.field8903.field9126, var0.field3161[(var0.field3156 -= -391880689) * 681479919] == 1 ? 1 : 0, -1851948852);
          class362.method1508(-1900445314);
-         Client.field2697.method5282((byte)-42).method5673(134111872);
+         class730.field2697.method5282((byte)-42).method5673(134111872);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "dv.aif(" + ')');
       }
@@ -188,9 +188,9 @@ public final class class283 {
    static final void method6647(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         if (-257444687 * Client.field2822 != -1) {
+         if (-257444687 * class730.field2822 != -1) {
             if (var2 == 0) {
-               var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2822 * -257444687;
+               var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2822 * -257444687;
                return;
             }
 
@@ -198,7 +198,7 @@ public final class class283 {
          }
 
          class256 var3;
-         for(var3 = (class256) Client.field2823.method2946(1645730647); var2-- > 0; var3 = (class256) Client.field2823.method2945((byte)-33)) {
+         for(var3 = (class256)class730.field2823.method2946(1645730647); var2-- > 0; var3 = (class256)class730.field2823.method2945((byte)-33)) {
             ;
          }
 

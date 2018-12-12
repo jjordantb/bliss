@@ -10,7 +10,7 @@ public abstract class class621 {
          }
 
          String var13 = class158.method3444(var7, (byte)-2);
-         var8.method1668(var13, 3 + var2, var6, var10, 0, Client.field2683, 1401020893 * class880.field10188, class602.field8668, class755.field4199, 65280);
+         var8.method1668(var13, 3 + var2, var6, var10, 0, class730.field2683, 1401020893 * class880.field10188, class602.field8668, class755.field4199, 65280);
       } catch (RuntimeException var14) {
          throw class158.method3445(var14, "cr.au(" + ')');
       }

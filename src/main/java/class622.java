@@ -19,7 +19,7 @@ public class class622 {
 
    static final void method5337(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class86.field1134.field3064 * 399637415 >= 512 && !Client.field2627 && !Client.field2643 ? 0 : 1;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class86.field1134.field3064 * 399637415 >= 512 && !class730.field2627 && !class730.field2643 ? 0 : 1;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "do.akp(" + ')');
       }
@@ -58,12 +58,12 @@ public class class622 {
 
    static String method5341(class564 var0, int var1) {
       try {
-         if (Client.method1761(var0).method1742((byte)-122) == 0) {
+         if (class730.method1761(var0).method1742((byte)-122) == 0) {
             return null;
          } else if (var0.field962 != null && var0.field962.trim().length() != 0) {
             return var0.field962;
          } else {
-            return Client.field2828 ? "Hidden-use" : null;
+            return class730.field2828 ? "Hidden-use" : null;
          }
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "do.mn(" + ')');

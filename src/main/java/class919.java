@@ -68,7 +68,7 @@ public class class919 {
    static final void method6487(class744 var0, short var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2810[var2];
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2810[var2];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "dd.tr(" + ')');
       }

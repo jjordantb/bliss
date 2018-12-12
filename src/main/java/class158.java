@@ -31,15 +31,15 @@ public class class158 {
          int[] var8 = class498.field8108;
 
          for(int var9 = 0; var9 < var7; ++var9) {
-            class946 var10 = Client.field2786[var8[var9]];
+            class946 var10 = class730.field2786[var8[var9]];
             if (var10 != null && var10.method2000(526198823) && !var10.field3377 && var10 != class923.field10295 && var10.field3639 == class923.field10295.field3639) {
                class32 var11 = var10.method1511().field7637;
                int var12 = (int)var11.field5296 / 128 - var0 / 128;
                int var13 = (int)var11.field5299 / 128 - var1 / 128;
                boolean var14 = false;
 
-               for(int var15 = 0; var15 < Client.field2923 * -1054937867; ++var15) {
-                  if (var10.field3374.equals(Client.field2685[var15]) && Client.field2928[var15] != 0) {
+               for(int var15 = 0; var15 < class730.field2923 * -1054937867; ++var15) {
+                  if (var10.field3374.equals(class730.field2685[var15]) && class730.field2928[var15] != 0) {
                      var14 = true;
                      break;
                   }

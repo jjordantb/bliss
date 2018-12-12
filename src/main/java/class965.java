@@ -32,7 +32,7 @@ public final class class965 {
             var8.field1076 = var3 * 1088435253;
             var8.field1069 = 656787783 * var1;
             var8.field1074 = var2 * 284247153;
-            if (var1 >= 0 && var2 >= 0 && var1 < Client.field2697.method5271(-1908372692) && var2 < Client.field2697.method5272(629047644)) {
+            if (var1 >= 0 && var2 >= 0 && var1 < class730.field2697.method5271(-1908372692) && var2 < class730.field2697.method5272(629047644)) {
                class118.method1468(var8, -162957807);
             }
 
@@ -52,7 +52,7 @@ public final class class965 {
    static final void method1717(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2902[var2].field10623 * 1383593425;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2902[var2].field10623 * 1383593425;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "rk.yf(" + ')');
       }
@@ -64,7 +64,7 @@ public final class class965 {
          for(var1 = (class563)class563.field1071.method901(1766612795); var1 != null; var1 = (class563)class563.field1071.method906(49146)) {
             if (!var1.field1079) {
                var1.field1078 = true;
-               if (634196087 * var1.field1069 >= 0 && var1.field1074 * -2146829167 >= 0 && 634196087 * var1.field1069 < Client.field2697.method5271(-1871526843) && var1.field1074 * -2146829167 < Client.field2697.method5272(-1895886966)) {
+               if (634196087 * var1.field1069 >= 0 && var1.field1074 * -2146829167 >= 0 && 634196087 * var1.field1069 < class730.field2697.method5271(-1871526843) && var1.field1074 * -2146829167 < class730.field2697.method5272(-1895886966)) {
                   class118.method1468(var1, 147943234);
                }
             } else {

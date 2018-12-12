@@ -17,7 +17,7 @@ public class class381 {
          int var3 = var0.field3161[var0.field3156 * 681479919 + 1];
          int var4 = var0.field3161[var0.field3156 * 681479919 + 2];
          int var5 = var0.field3161[var0.field3156 * 681479919 + 3];
-         class389 var6 = Client.field2697.method5270(681479919);
+         class389 var6 = class730.field2697.method5270(681479919);
          class700.method6329((var2 >> 14 & 16383) - var6.field1521 * -1760580017, (var2 & 16383) - 283514611 * var6.field1522, var3 << 2, var4, var5, false);
       } catch (RuntimeException var7) {
          throw class158.method3445(var7, "pl.aga(" + ')');
@@ -56,8 +56,8 @@ public class class381 {
 
          class675 var5 = null;
          int var6 = var0.method4349(958180062);
-         if (Client.field1816 != null) {
-            var5 = new class675(var6, Client.field1816, class785.field3828[var6], 1500000);
+         if (class730.field1816 != null) {
+            var5 = new class675(var6, class730.field1816, class785.field3828[var6], 1500000);
          }
 
          class593.field1624[var6] = class117.field1868.method6183(var6, var5, class199.field7037, 311001416);

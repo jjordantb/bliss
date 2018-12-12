@@ -240,21 +240,21 @@ public class class817 extends class888 implements MouseListener, MouseMotionList
       try {
          if (var1.isShiftDown()) {
             if (var1.getWheelRotation() == 1) {
-               if (Client.field2617 < 100) {
+               if (class730.field2617 < 100) {
                   return;
                }
 
-               Client.field2617 -= Client.field2617 / 16;
-               class839.method5406(184, Client.field2617, 644551429);
+               class730.field2617 -= class730.field2617 / 16;
+               class839.method5406(184, class730.field2617, 644551429);
             }
 
             if (var1.getWheelRotation() == -1) {
-               if (Client.field2617 >= 600) {
+               if (class730.field2617 >= 600) {
                   return;
                }
 
-               Client.field2617 += Client.field2617 / 16;
-               class839.method5406(184, Client.field2617, 644551429);
+               class730.field2617 += class730.field2617 / 16;
+               class839.method5406(184, class730.field2617, 644551429);
             }
          }
 

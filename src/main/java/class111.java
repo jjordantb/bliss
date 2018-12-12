@@ -116,10 +116,10 @@ public class class111 {
    static final void method1357(class744 var0, int var1) {
       try {
          String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         class701 var3 = class637.method5936(class643.field9964, Client.field2692.field7765, (byte)34);
+         class701 var3 = class637.method5936(class643.field9964, class730.field2692.field7765, (byte)34);
          var3.field3364.method6361(var2.length() + 1);
          var3.field3364.method6366(var2, 2114518021);
-         Client.field2692.method4380(var3, (byte)-1);
+         class730.field2692.method4380(var3, (byte)-1);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "lh.sb(" + ')');
       }
@@ -131,19 +131,19 @@ public class class111 {
          if (var2 == -1) {
             int var3 = var2 >> 14 & 16383;
             int var4 = var2 & 16383;
-            class389 var5 = Client.field2697.method5270(681479919);
+            class389 var5 = class730.field2697.method5270(681479919);
             var3 -= var5.field1521 * -1760580017;
             if (var3 < 0) {
                var3 = 0;
-            } else if (var3 >= Client.field2697.method5271(-1866822819)) {
-               var3 = Client.field2697.method5271(-1973847066);
+            } else if (var3 >= class730.field2697.method5271(-1866822819)) {
+               var3 = class730.field2697.method5271(-1973847066);
             }
 
             var4 -= 283514611 * var5.field1522;
             if (var4 < 0) {
                var4 = 0;
-            } else if (var4 >= Client.field2697.method5272(922370140)) {
-               var4 = Client.field2697.method5272(271939870);
+            } else if (var4 >= class730.field2697.method5272(922370140)) {
+               var4 = class730.field2697.method5272(271939870);
             }
 
             class495.field8099 = ((var3 << 9) + 256) * -178575833;
@@ -161,9 +161,9 @@ public class class111 {
    static final void method1359(class744 var0, int var1) {
       try {
          class615.field8903.method5391(class615.field8903.field9113, var0.field3161[(var0.field3156 -= -391880689) * 681479919] == 1 ? 1 : 0, 1031457025);
-         Client.field2697.method5309(2089019629);
+         class730.field2697.method5309(2089019629);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "lh.ahq(" + ')');
       }

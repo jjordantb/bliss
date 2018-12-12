@@ -69,7 +69,7 @@ public class class222 {
       try {
          byte var2 = class923.field10295.field3639;
          class32 var3 = class923.field10295.method1511().field7637;
-         class389 var4 = Client.field2697.method5270(681479919);
+         class389 var4 = class730.field2697.method5270(681479919);
          int var5 = ((int)var3.field5296 >> 9) + -1760580017 * var4.field1521;
          int var6 = ((int)var3.field5299 >> 9) + 283514611 * var4.field1522;
          var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (var5 << 14) + (var2 << 28) + var6;

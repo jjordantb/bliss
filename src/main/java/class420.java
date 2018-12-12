@@ -675,7 +675,7 @@ public class class420 {
 
    static final void method5795(class744 var0, int var1) {
       try {
-         Client.field2661 = true;
+         class730.field2661 = true;
          class806.method2842((byte)12);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "gp.ahu(" + ')');
@@ -688,7 +688,7 @@ public class class420 {
          int[] var2 = class498.field8108;
 
          for(int var3 = 0; var3 < var1; ++var3) {
-            class946 var4 = Client.field2786[var2[var3]];
+            class946 var4 = class730.field2786[var2[var3]];
             if (var4 != null) {
                class232.method4664(var4, false, -1941477240);
             }

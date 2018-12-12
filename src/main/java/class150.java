@@ -16,11 +16,11 @@ public class class150 extends class476 {
          class933[] var5 = var2.method6089();
          class396[] var6 = var2.method5941();
          if ((this.field5390 == null || this.field5390.field2548) && (var5 != null || var6 != null)) {
-            this.field5390 = class726.method1732(Client.field2866 * 443738891, true);
+            this.field5390 = class726.method1732(class730.field2866 * 443738891, true);
          }
 
          if (this.field5390 != null) {
-            this.field5390.method1731(var1, (long)(443738891 * Client.field2866), var5, var6, false);
+            this.field5390.method1731(var1, (long)(443738891 * class730.field2866), var5, var6, false);
             this.field5390.method1727(this.field3639, this.field8299, this.field8297, this.field8296, this.field8298);
          }
 

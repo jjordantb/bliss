@@ -136,24 +136,24 @@ public class class625 {
 
    static final void method5831(int var0) {
       try {
-         if (-1 != Client.field2822 * -257444687) {
+         if (-1 != class730.field2822 * -257444687) {
             int var1 = class912.field10424.method5524((byte)15);
             int var2 = class912.field10424.method5513((byte)-12);
-            class284 var3 = (class284) Client.field2808.method901(1766612795);
+            class284 var3 = (class284)class730.field2808.method901(1766612795);
             if (var3 != null) {
                var1 = var3.method6667((byte)-8);
                var2 = var3.method6680(-876742344);
             }
 
-            if (Client.field2832 != null && Client.field2693 == class263.field8132) {
-               Client.field2837 = true;
-               Client.field2838 = 0;
-               Client.field2781 = 0;
-               Client.field2840 = -500212323 * class759.field4331;
-               Client.field2948 = class97.field614 * -1522183559;
+            if (class730.field2832 != null && class730.field2693 == class263.field8132) {
+               class730.field2837 = true;
+               class730.field2838 = 0;
+               class730.field2781 = 0;
+               class730.field2840 = -500212323 * class759.field4331;
+               class730.field2948 = class97.field614 * -1522183559;
             }
 
-            class65.method1260((class256)null, -257444687 * Client.field2822, 0, 0, class759.field4331 * -2110394505, class97.field614 * -1111710645, 0, 0, var1, var2, (byte)67);
+            class65.method1260((class256)null, -257444687 * class730.field2822, 0, 0, class759.field4331 * -2110394505, class97.field614 * -1111710645, 0, 0, var1, var2, (byte)67);
             if (class147.field1520 != null) {
                class518.method2688(var1, var2, -2137349879);
             }

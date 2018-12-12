@@ -15,7 +15,7 @@ public class class98 {
          if (var3 == null) {
             throw new RuntimeException();
          } else {
-            Integer var4 = var0.field3169.method5779(Client.field2926.field7327 * -937307905 << 16 | var3.field4144 * -1808461691, var3.field4145 * -2047408817, var3.field4146 * -530058953, -1943222730);
+            Integer var4 = var0.field3169.method5779(class730.field2926.field7327 * -937307905 << 16 | var3.field4144 * -1808461691, var3.field4145 * -2047408817, var3.field4146 * -530058953, -1943222730);
             int var5;
             if (var4 == null) {
                var5 = 0;

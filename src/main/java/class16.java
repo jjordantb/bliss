@@ -135,8 +135,8 @@ public class class16 {
    public static void method3681(boolean var0, int var1) {
       try {
          class341.method252(2092159420);
-         if (class552.method457(Client.field2733 * -1233866115, (byte)-21)) {
-            class684[] var2 = Client.field2660;
+         if (class552.method457(class730.field2733 * -1233866115, (byte)-21)) {
+            class684[] var2 = class730.field2660;
 
             for(int var3 = 0; var3 < var2.length; ++var3) {
                class684 var4 = var2[var3];

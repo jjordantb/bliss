@@ -20,11 +20,11 @@ public abstract class class253 {
 
    static final void method4480(short var0) {
       try {
-         class513 var1 = Client.field2692.field7768;
+         class513 var1 = class730.field2692.field7768;
 
-         for(int var2 = 0; var2 < Client.field2789 * -976358333; ++var2) {
-            int var3 = Client.field2687[var2];
-            class60 var4 = (class60)((class437) Client.field2677.method2942((long)var3)).field7515;
+         for(int var2 = 0; var2 < class730.field2789 * -976358333; ++var2) {
+            int var3 = class730.field2687[var2];
+            class60 var4 = (class60)((class437)class730.field2677.method2942((long)var3)).field7515;
             int var5 = var1.method6371();
             if ((var5 & 2) != 0) {
                var5 += var1.method6371() << 8;
@@ -54,8 +54,8 @@ public abstract class class253 {
                var4.field4072 = var1.method6399(-666954662);
                var4.field4073 = var1.method6398(-154305803);
                var4.field4094 = (byte)var1.method6395(-1014855659);
-               var4.field4069 = (Client.field2866 * 443738891 + var1.method6403(1478539457)) * 1828453179;
-               var4.field4070 = (Client.field2866 * 443738891 + var1.method6403(1478539457)) * -473408095;
+               var4.field4069 = (class730.field2866 * 443738891 + var1.method6403(1478539457)) * 1828453179;
+               var4.field4070 = (class730.field2866 * 443738891 + var1.method6403(1478539457)) * -473408095;
             }
 
             if ((var5 & 128) != 0) {
@@ -132,7 +132,7 @@ public abstract class class253 {
 
                      var12 = var1.method6382(1723054621);
                      var13 = var1.method6395(-1014855659);
-                     var4.method2548(var11, var9, var19, var10, Client.field2866 * 443738891, var12, var13, (byte)6);
+                     var4.method2548(var11, var9, var19, var10, class730.field2866 * 443738891, var12, var13, (byte)6);
                   }
                }
             }
@@ -266,7 +266,7 @@ public abstract class class253 {
                var4.field4060 = var1.method6397((byte)19) * -494980103;
                var4.field4083 = (var17 & '耀') != 0;
                var4.field4051 = (var17 & 32767) * -257621575;
-               var4.field4050 = var4.field4052 * 1195117671 + Client.field2866 * 1208636921 + -1132907677 * var4.field4051;
+               var4.field4050 = var4.field4052 * 1195117671 + class730.field2866 * 1208636921 + -1132907677 * var4.field4051;
             }
 
             if ((var5 & 1048576) != 0) {
@@ -285,8 +285,8 @@ public abstract class class253 {
                var4.field4064 = var1.method6372(-12558881) * 516351707;
                var4.field4063 = var1.method6398(736826018) * 1712047767;
                var4.field4065 = var1.method6398(1643626542) * 2089924823;
-               var4.field4059 = (var1.method6401((byte)-54) + 443738891 * Client.field2866) * 996079737;
-               var4.field4067 = (var1.method6403(1478539457) + Client.field2866 * 443738891) * 1000906529;
+               var4.field4059 = (var1.method6401((byte)-54) + 443738891 * class730.field2866) * 996079737;
+               var4.field4067 = (var1.method6403(1478539457) + class730.field2866 * 443738891) * 1000906529;
                var4.field4068 = var1.method6402(-1999232161) * 1386670945;
                var4.field4062 += var4.field4085[0] * 1925713613;
                var4.field4064 += var4.field4055[0] * 516351707;

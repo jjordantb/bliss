@@ -27,7 +27,7 @@ public class class419 {
          boolean var3 = var0.field3161[681479919 * var0.field3156] == 1;
          boolean var4 = 1 == var0.field3161[1 + 681479919 * var0.field3156];
          boolean var5 = var0.field3161[var0.field3156 * 681479919 + 2] == 1;
-         class701 var6 = class637.method5936(class643.field10030, Client.field2674.field7765, (byte)102);
+         class701 var6 = class637.method5936(class643.field10030, class730.field2674.field7765, (byte)102);
          var6.field3364.method6362(class305.method372(var2, 1218902925) + 1, 16711935);
          var6.field3364.method6366(var2, 2143999999);
          int var7 = 0;
@@ -44,7 +44,7 @@ public class class419 {
          }
 
          var6.field3364.method6361(var7);
-         Client.field2674.method4380(var6, (byte)-104);
+         class730.field2674.method4380(var6, (byte)-104);
       } catch (RuntimeException var8) {
          throw class158.method3445(var8, "vc.ve(" + ')');
       }

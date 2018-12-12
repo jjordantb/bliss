@@ -33,26 +33,26 @@ public class Loader extends Applet {
 
    public static void main(String[] var0) {
       Loader var1 = field6971 = new Loader();
-      var1.startGame();
+      var1.method3702();
    }
 
    public void init() {
       field6971 = this;
-      this.createInstance();
+      this.method3701();
    }
 
-   void createInstance() {
-      this.createParams();
-      this.doApplet();
+   void method3701() {
+      this.method3703();
+      this.method3705();
    }
 
-   public void startGame() {
-      this.createParams();
-      this.openFrame();
-      this.doApplet();
+   public void method3702() {
+      this.method3703();
+      this.method3704();
+      this.method3705();
    }
 
-   void createParams() {
+   void method3703() {
       field6955.put("separate_jvm", "true");
       field6955.put("boxbgcolor", "black");
       field6955.put("image", "http://www.runescape.com/img/game/splash2.gif");
@@ -93,7 +93,7 @@ public class Loader extends Applet {
       field6955.put("haveie6", "false");
    }
 
-   void openFrame() {
+   void method3704() {
       this.field6956 = new JFrame("BlissScape Client");
 
       try {
@@ -113,10 +113,10 @@ public class Loader extends Applet {
       this.field6956.setVisible(true);
    }
 
-   void doApplet() {
+   void method3705() {
       try {
-         Client var1 = new Client();
-         var1.supplyApplet(this);
+         class730 var1 = new class730();
+         var1.method3943(this);
          var1.method3941();
          var1.method3956();
       } catch (Exception var2) {
@@ -142,7 +142,7 @@ public class Loader extends Applet {
       }
    }
 
-   void printOut() throws IOException {
+   void method3706() throws IOException {
       String var1 = "";
       int[] var2 = field6972;
       int var3 = field6972.length;

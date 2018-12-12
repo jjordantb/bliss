@@ -74,8 +74,8 @@ public class class971 {
                   var8 = 1004672961 * class228.field8220;
                }
 
-               var11 = class228.field8216.method1786(var7, Client.field2775 * 775068819, -1808907629) + -994816289 * class228.field8215;
-               int var12 = class228.field8222.method3090(var8, Client.field2784 * -791746413, -750031668) + -277668631 * class228.field8218;
+               var11 = class228.field8216.method1786(var7, class730.field2775 * 775068819, -1808907629) + -994816289 * class228.field8215;
+               int var12 = class228.field8222.method3090(var8, class730.field2784 * -791746413, -750031668) + -277668631 * class228.field8218;
                var2.method4982(class5.field4945, false).method3145(var11 + class417.field9582.field10269, class417.field9582.field10273 + var12, var7 - class417.field9582.field10269 * 2, var8 - 2 * class417.field9582.field10273, 1, 0, 0);
                var2.method4982(class417.field9582, true).method3128(var11, var12);
                class417.field9582.method6247();

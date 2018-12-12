@@ -67,7 +67,7 @@ public class class773 extends class535 {
                var3.field7578 = var0;
                var3.field7583 = var0.field889;
                var3.field7577 = 1954090355 * var1.field3171 + -171453569;
-               Client.field2875.method897(var3, -201281014);
+               class730.field2875.method897(var3, -201281014);
             }
 
          }

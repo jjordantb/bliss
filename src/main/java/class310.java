@@ -16,7 +16,7 @@ public class class310 {
          class615.field8903.method5391(class615.field8903.field9131, var2 ? 2 : 1, -618485822);
          class247.method4722((short)-10564);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "vz.ahh(" + ')');
       }

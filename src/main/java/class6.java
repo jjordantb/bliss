@@ -168,14 +168,14 @@ public final class class6 implements Iterable {
             int var17;
             if (var1 < 0) {
                var17 = -var1 - 1;
-               if (var17 == -442628795 * Client.field2623) {
+               if (var17 == -442628795 * class730.field2623) {
                   var16 = class923.field10295;
                } else {
-                  var16 = Client.field2786[var17];
+                  var16 = class730.field2786[var17];
                }
             } else {
                var17 = var1 - 1;
-               class437 var18 = (class437) Client.field2677.method2942((long)var17);
+               class437 var18 = (class437)class730.field2677.method2942((long)var17);
                if (var18 != null) {
                   var16 = (class746)var18.field7515;
                }
@@ -193,9 +193,9 @@ public final class class6 implements Iterable {
             }
          }
 
-         class214 var20 = new class214(Client.field2697.method5317(-1611682495), var0, class509.field4023 * -191892109, class509.field4023 * -191892109, var6, var7, var4, Client.field2866 * 443738891 + var10, Client.field2866 * 443738891 + var11, var12, var13, var1, var2, var5, var14, var3);
-         var20.method3782(var8, var9, class679.method4271(var8, var9, class509.field4023 * -191892109, -968708982) - var5, 443738891 * Client.field2866 + var10, 1068285759);
-         Client.field2805.method897(new class107(var20), 520361177);
+         class214 var20 = new class214(class730.field2697.method5317(-1611682495), var0, class509.field4023 * -191892109, class509.field4023 * -191892109, var6, var7, var4, class730.field2866 * 443738891 + var10, class730.field2866 * 443738891 + var11, var12, var13, var1, var2, var5, var14, var3);
+         var20.method3782(var8, var9, class679.method4271(var8, var9, class509.field4023 * -191892109, -968708982) - var5, 443738891 * class730.field2866 + var10, 1068285759);
+         class730.field2805.method897(new class107(var20), 520361177);
       } catch (RuntimeException var19) {
          throw class158.method3445(var19, "sa.nu(" + ')');
       }

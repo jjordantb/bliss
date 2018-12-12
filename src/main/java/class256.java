@@ -28,15 +28,15 @@ public class class256 extends class568 {
 
    public static void method4489(byte var0) {
       try {
-         class949.field3320 = Client.field2916;
-         class673.field7509 = Client.field2917;
-         class808.field4596 = Client.field2821;
-         class559.field542 = Client.field2724;
+         class949.field3320 = class730.field2916;
+         class673.field7509 = class730.field2917;
+         class808.field4596 = class730.field2821;
+         class559.field542 = class730.field2724;
          class949.field3330 = true;
          if (class949.field3329 * 57998513 != 0 && 1705830085 * class949.field3328 != 0) {
-            Client.field2821 = 334;
-            Client.field2724 = 334;
-            Client.field2917 = Client.field2916 = (short)(class949.field3329 * -369532416 / (1705830085 * class949.field3328));
+            class730.field2821 = 334;
+            class730.field2724 = 334;
+            class730.field2917 = class730.field2916 = (short)(class949.field3329 * -369532416 / (1705830085 * class949.field3328));
          }
 
       } catch (RuntimeException var2) {

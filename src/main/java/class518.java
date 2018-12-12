@@ -1166,10 +1166,10 @@ public class class518 {
                class25 var4 = class25.method3454(class389.field1524, -1919698893 * class6.field4931.field9526, 0);
                long var5 = class27.method3468((byte)1);
                class593.field1623.method4827();
-               Client.field2853.method1016(0.0F, 256.0F, 0.0F);
-               class593.field1623.method4867(Client.field2853);
+               class730.field2853.method1016(0.0F, 256.0F, 0.0F);
+               class593.field1623.method4867(class730.field2853);
                class344 var7 = class593.field1623.method4860();
-               var7.method279((float)(var3.width / 2), (float)(var3.height / 2), 512.0F, 512.0F, (float) Client.field2697.method5276((byte)-121), (float) Client.field2697.method5277(1789119116), (float)var3.width, (float)var3.height);
+               var7.method279((float)(var3.width / 2), (float)(var3.height / 2), 512.0F, 512.0F, (float)class730.field2697.method5276((byte)-121), (float)class730.field2697.method5277(1789119116), (float)var3.width, (float)var3.height);
                class593.field1623.method5054(var7);
                class593.field1623.method5063(1.0F);
                class593.field1623.method4872(16777215, 0.5F, 0.5F, 20.0F, -50.0F, 30.0F);
@@ -1182,8 +1182,8 @@ public class class518 {
 
                   for(int var11 = 15; var11 >= 0; --var11) {
                      for(int var12 = 0; var12 <= var11; ++var12) {
-                        Client.field2950.method1016((float)((int)(512.0F * ((float)var12 - (float)var11 / 2.0F))), 0.0F, (float)((1 + var11) * 512));
-                        var8.method5965(Client.field2950, (class211)null, 0);
+                        class730.field2950.method1016((float)((int)(512.0F * ((float)var12 - (float)var11 / 2.0F))), 0.0F, (float)((1 + var11) * 512));
+                        var8.method5965(class730.field2950, (class211)null, 0);
                         ++var9;
                         if (class27.method3468((byte)1) - var5 >= (long)var1) {
                            if (var2 >= 1017103058) {
@@ -1212,7 +1212,7 @@ public class class518 {
    }
 
    public String method2690(int var1) {
-      return Client.field2618 ? this.field4250[var1] : this.field4249[var1];
+      return class730.field2618 ? this.field4250[var1] : this.field4249[var1];
    }
 
    public void method2691() {

@@ -156,17 +156,17 @@ public class class276 extends class568 {
             var8 = 3072;
          }
 
-         if (Client.field2737 * -104436553 < var8) {
-            Client.field2737 += ((var8 - Client.field2737 * -104436553 >> 3) * 1179258959 * class617.field8843 / 1000 + class665.field9598 * 298687157 << 3) * -648269561;
-            if (Client.field2737 * -104436553 > var8) {
-               Client.field2737 = var8 * -648269561;
+         if (class730.field2737 * -104436553 < var8) {
+            class730.field2737 += ((var8 - class730.field2737 * -104436553 >> 3) * 1179258959 * class617.field8843 / 1000 + class665.field9598 * 298687157 << 3) * -648269561;
+            if (class730.field2737 * -104436553 > var8) {
+               class730.field2737 = var8 * -648269561;
             }
          }
 
-         if (-104436553 * Client.field2737 > var8) {
-            Client.field2737 -= -648269561 * (1179258959 * class617.field8843 * (Client.field2737 * -104436553 - var8 >> 3) / 1000 + 298687157 * class665.field9598 << 3);
-            if (-104436553 * Client.field2737 < var8) {
-               Client.field2737 = var8 * -648269561;
+         if (-104436553 * class730.field2737 > var8) {
+            class730.field2737 -= -648269561 * (1179258959 * class617.field8843 * (class730.field2737 * -104436553 - var8 >> 3) / 1000 + 298687157 * class665.field9598 << 3);
+            if (-104436553 * class730.field2737 < var8) {
+               class730.field2737 = var8 * -648269561;
             }
          }
 

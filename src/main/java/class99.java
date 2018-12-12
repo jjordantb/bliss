@@ -77,7 +77,7 @@ public class class99 {
             var0.field880 = 1145252063 * (var2 - var0.field887 * 457937409 - (var0.field884 * -901738979 * var2 >> 14));
          }
 
-         if (Client.field2828 && (Client.method1761(var0).field2563 * -1266165749 != 0 || var0.field869 * -1215239439 == 0)) {
+         if (class730.field2828 && (class730.method1761(var0).field2563 * -1266165749 != 0 || var0.field869 * -1215239439 == 0)) {
             if (var0.field868 * 1354508417 < 0) {
                var0.field868 = 0;
             } else if (var0.field868 * 1354508417 + -2093041337 * var0.field881 > var1) {

@@ -1233,7 +1233,7 @@ public class class702 extends class721 {
 
    static void method1967(int var0, byte var1) {
       try {
-         for(class568 var2 = Client.field2878.method2946(2109381941); var2 != null; var2 = Client.field2878.method2945((byte)-58)) {
+         for(class568 var2 = class730.field2878.method2946(2109381941); var2 != null; var2 = class730.field2878.method2945((byte)-58)) {
             if ((long)var0 == (7051297995265073167L * var2.field641 >> 48 & 65535L)) {
                var2.method545(-1460969981);
             }
@@ -1259,7 +1259,7 @@ public class class702 extends class721 {
             var4 = "http://www.blissscape.com/forums/m/33734747/viewforum/6249197";
          }
 
-         class158.method3442(var4, var3, class615.field8903.field9137.method3689(-1851684401) == 5, Client.field2849, Client.field2632, (byte)49);
+         class158.method3442(var4, var3, class615.field8903.field9137.method3689(-1851684401) == 5, class730.field2849, class730.field2632, (byte)49);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "aaz.afo(" + ')');
       }
@@ -1284,23 +1284,23 @@ public class class702 extends class721 {
          int var3;
          if (var1 == 2) {
             var2 = -639974669 * class919.field10433 > 800 ? 800 : class919.field10433 * -639974669;
-            var3 = Client.field1812 * 1282634425 > 600 ? 600 : 1282634425 * Client.field1812;
+            var3 = class730.field1812 * 1282634425 > 600 ? 600 : 1282634425 * class730.field1812;
             class759.field4331 = -2010408377 * var2;
-            Client.field1813 = -753018213 * ((class919.field10433 * -639974669 - var2) / 2);
+            class730.field1813 = -753018213 * ((class919.field10433 * -639974669 - var2) / 2);
             class97.field614 = 1445266787 * var3;
-            Client.field1814 = 0;
+            class730.field1814 = 0;
          } else if (var1 == 1) {
             var2 = -639974669 * class919.field10433 > 1024 ? 1024 : class919.field10433 * -639974669;
-            var3 = Client.field1812 * 1282634425 > 768 ? 768 : Client.field1812 * 1282634425;
+            var3 = class730.field1812 * 1282634425 > 768 ? 768 : class730.field1812 * 1282634425;
             class759.field4331 = var2 * -2010408377;
-            Client.field1813 = -753018213 * ((-639974669 * class919.field10433 - var2) / 2);
+            class730.field1813 = -753018213 * ((-639974669 * class919.field10433 - var2) / 2);
             class97.field614 = 1445266787 * var3;
-            Client.field1814 = 0;
+            class730.field1814 = 0;
          } else {
             class759.field4331 = class919.field10433 * -607961243;
-            Client.field1813 = 0;
-            class97.field614 = Client.field1812 * -1935672693;
-            Client.field1814 = 0;
+            class730.field1813 = 0;
+            class97.field614 = class730.field1812 * -1935672693;
+            class730.field1814 = 0;
          }
 
       } catch (RuntimeException var4) {

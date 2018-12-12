@@ -45,7 +45,7 @@ public class class131 {
    static final void method890(class564 var0, class131 var1, class744 var2, byte var3) {
       try {
          var0.field909 = 939239877;
-         var0.field876 = -127794683 * Client.field2623;
+         var0.field876 = -127794683 * class730.field2623;
          var0.field865 = 0;
          if (-1 == var0.field879 * -1309843523 && !var1.field1101) {
             class535.method2284(var0.field867 * -440872681, 1429753437);
@@ -81,7 +81,7 @@ public class class131 {
       try {
          long var4 = 4194304L;
          long var6 = Long.MIN_VALUE;
-         class50 var8 = Client.field2697.method5283(-1623210152).method4713(var0.method4551((byte)18));
+         class50 var8 = class730.field2697.method5283(-1623210152).method4713(var0.method4551((byte)18));
          long var9 = (long)(var1 | var2 << 7 | var0.method4548(726839210) << 14 | var0.method4549((short)11182) << 20 | 1073741824);
          if (1532834983 * var8.field2214 == 0) {
             var9 |= var6;
@@ -120,8 +120,8 @@ public class class131 {
 
    static final void method896(int var0) {
       try {
-         Client.field2852 = -221729505;
-         Client.field2705 = -1334571751;
+         class730.field2852 = -221729505;
+         class730.field2705 = -1334571751;
          class345.field210 = null;
          class665.field9597 = null;
          class59.method1617(416919128);

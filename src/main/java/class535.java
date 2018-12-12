@@ -56,9 +56,9 @@ public abstract class class535 {
    static final void method2279(class744 var0, int var1) {
       try {
          class115.method1276(327778485);
-         Client.field2697.method5309(382492199);
+         class730.field2697.method5309(382492199);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "rm.amc(" + ')');
       }

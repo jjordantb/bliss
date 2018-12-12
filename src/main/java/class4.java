@@ -40,9 +40,9 @@ public final class class4 {
 
    static final void method2964(boolean var0, int var1) {
       try {
-         Client.field2689 = 0;
-         Client.field2789 = 0;
-         Client.field2688 += 1968119283;
+         class730.field2689 = 0;
+         class730.field2789 = 0;
+         class730.field2688 += 1968119283;
          class603.method5083(1694864911);
          class823.method5362(var0, -775686729);
          class253.method4480((short)-6102);
@@ -50,11 +50,11 @@ public final class class4 {
 
          int var3;
          int var4;
-         for(var3 = 0; var3 < Client.field2689 * -1508392173; ++var3) {
-            var4 = Client.field2690[var3];
-            class437 var5 = (class437) Client.field2677.method2942((long)var4);
+         for(var3 = 0; var3 < class730.field2689 * -1508392173; ++var3) {
+            var4 = class730.field2690[var3];
+            class437 var5 = (class437)class730.field2677.method2942((long)var4);
             class60 var6 = (class60)var5.field7515;
-            if (-1402769421 * var6.field4039 != Client.field2688 * 440189755) {
+            if (-1402769421 * var6.field4039 != class730.field2688 * 440189755) {
                if (class602.field8645 && class779.method2322(var4, 351851633)) {
                   class979.method1835(2025307040);
                }
@@ -70,33 +70,33 @@ public final class class4 {
          }
 
          if (var2) {
-            var3 = 1962237353 * Client.field2753;
-            Client.field2753 = Client.field2677.method2944(1946710966) * -118843751;
+            var3 = 1962237353 * class730.field2753;
+            class730.field2753 = class730.field2677.method2944(1946710966) * -118843751;
             var4 = 0;
 
             class437 var9;
-            for(Iterator var8 = Client.field2677.iterator(); var8.hasNext(); Client.field2797[var4++] = var9) {
+            for(Iterator var8 = class730.field2677.iterator(); var8.hasNext(); class730.field2797[var4++] = var9) {
                var9 = (class437)var8.next();
             }
 
-            for(int var10 = Client.field2753 * 1962237353; var10 < var3; ++var10) {
-               Client.field2797[var10] = null;
+            for(int var10 = class730.field2753 * 1962237353; var10 < var3; ++var10) {
+               class730.field2797[var10] = null;
             }
          }
 
-         int var10000 = Client.field2692.field7768.field10376;
-         var10000 = Client.field2692.field7771;
+         int var10000 = class730.field2692.field7768.field10376;
+         var10000 = class730.field2692.field7771;
 
-         for(var3 = 0; var3 < -1230451913 * Client.field2684; ++var3) {
-            Client.field2677.method2942((long) Client.field2680[var3]);
+         for(var3 = 0; var3 < -1230451913 * class730.field2684; ++var3) {
+            class730.field2677.method2942((long)class730.field2680[var3]);
          }
 
-         var10000 = Client.field2753;
-         var10000 = Client.field2684;
+         var10000 = class730.field2753;
+         var10000 = class730.field2684;
 
-         for(var3 = 0; var3 < Client.field2753 * 1962237353; ++var3) {
-            var10000 = ((class746) Client.field2797[var3].field7515).field4039;
-            var10000 = Client.field2688;
+         for(var3 = 0; var3 < class730.field2753 * 1962237353; ++var3) {
+            var10000 = ((class746)class730.field2797[var3].field7515).field4039;
+            var10000 = class730.field2688;
          }
 
       } catch (RuntimeException var7) {

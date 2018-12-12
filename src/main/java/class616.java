@@ -112,7 +112,7 @@ public class class616 {
 
    static final void method5214(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2627 ? 1 : 0;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2627 ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "sg.ako(" + ')');
       }
@@ -163,7 +163,7 @@ public class class616 {
          class851.field8731.method2529(5, (byte)50);
          class980.field3196.method4149(5, 203948089);
          class662.field9736.method5719(5, -754640866);
-         Client.field2697.method5283(1725751477).method4711(5, (byte)49);
+         class730.field2697.method5283(1725751477).method4711(5, (byte)49);
          class258.field7913.method18(5, 1533104330);
          class85.field1121.method1575(5, (byte)35);
          class936.field10313.method2257(5, (byte)1);
@@ -188,9 +188,9 @@ public class class616 {
          class785.field3827.method1855(50, -1029006216);
          class645.method6157(5, (byte)24);
          class727.method1687(5, 368704432);
-         Client.field2761.method2976(5, -1305461493);
-         Client.field2880.method2976(5, -659243138);
-         Client.field2678.method2976(5, -2138729636);
+         class730.field2761.method2976(5, -1305461493);
+         class730.field2880.method2976(5, -659243138);
+         class730.field2678.method2976(5, -2138729636);
          class602.field8667.method2976(5, -1070209353);
          class384.field1426.method2976(5, 424638982);
       } catch (RuntimeException var2) {

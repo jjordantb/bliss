@@ -45,8 +45,8 @@ public abstract class class576 implements class54 {
 
    public void method1543(boolean var1, byte var2) {
       try {
-         int var3 = this.field70.field9028.method1786(-944287579 * this.field70.field9032, Client.field2775 * 775068819, -2137791831) + this.field70.field9033 * -39975161;
-         int var4 = this.field70.field9029.method3090(-1387457793 * this.field70.field9036, -791746413 * Client.field2784, -1715218341) + this.field70.field9031 * 1886882435;
+         int var3 = this.field70.field9028.method1786(-944287579 * this.field70.field9032, class730.field2775 * 775068819, -2137791831) + this.field70.field9033 * -39975161;
+         int var4 = this.field70.field9029.method3090(-1387457793 * this.field70.field9036, -791746413 * class730.field2784, -1715218341) + this.field70.field9031 * 1886882435;
          this.method60(var1, var3, var4, 589039750);
          this.method59(var1, var3, var4, -2096633602);
          String var5 = class302.field3768.method119((short)8868);
@@ -63,8 +63,8 @@ public abstract class class576 implements class54 {
    abstract void method60(boolean var1, int var2, int var3, int var4);
 
    public void method1541(boolean var1) {
-      int var2 = this.field70.field9028.method1786(-944287579 * this.field70.field9032, Client.field2775 * 775068819, -1925244247) + this.field70.field9033 * -39975161;
-      int var3 = this.field70.field9029.method3090(-1387457793 * this.field70.field9036, -791746413 * Client.field2784, -1769429058) + this.field70.field9031 * 1886882435;
+      int var2 = this.field70.field9028.method1786(-944287579 * this.field70.field9032, class730.field2775 * 775068819, -1925244247) + this.field70.field9033 * -39975161;
+      int var3 = this.field70.field9029.method3090(-1387457793 * this.field70.field9036, -791746413 * class730.field2784, -1769429058) + this.field70.field9031 * 1886882435;
       this.method60(var1, var2, var3, -895632654);
       this.method59(var1, var2, var3, -358621562);
       String var4 = class302.field3768.method119((short)24747);

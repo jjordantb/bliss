@@ -198,9 +198,9 @@ public class class916 implements class331 {
                var6 -= 2000;
             }
 
-            class389 var10 = Client.field2697.method5270(681479919);
+            class389 var10 = class730.field2697.method5270(681479919);
             if (23 == var6) {
-               if (1806357379 * Client.field2790 > 0 && class123.method1634(1267311211)) {
+               if (1806357379 * class730.field2790 > 0 && class123.method1634(1267311211)) {
                   class439.method4280(class923.field10295.field3639, var4 + -1760580017 * var10.field1521, var5 + var10.field1522 * 283514611, 2043472934);
                } else {
                   if (Loader.field6958) {
@@ -208,30 +208,30 @@ public class class916 implements class331 {
                      if (1 == var7) {
                         var11.field3364.method6361(-1);
                         var11.field3364.method6361(-1);
-                        var11.field3364.method6362((int) Client.field2931, 16711935);
+                        var11.field3364.method6362((int)class730.field2931, 16711935);
                         var11.field3364.method6361(57);
-                        var11.field3364.method6361(1227356013 * Client.field2782);
-                        var11.field3364.method6361(356727603 * Client.field2730);
+                        var11.field3364.method6361(1227356013 * class730.field2782);
+                        var11.field3364.method6361(356727603 * class730.field2730);
                         var11.field3364.method6361(89);
                         class32 var12 = class923.field10295.method1511().field7637;
                         var11.field3364.method6362((int)var12.field5296, 16711935);
                         var11.field3364.method6362((int)var12.field5299, 16711935);
                         var11.field3364.method6361(63);
                      } else {
-                        Client.field2765 = var1 * 143636043;
-                        Client.field2766 = var2 * 381532777;
-                        Client.field2729 = 277162405;
-                        Client.field2767 = 0;
+                        class730.field2765 = var1 * 143636043;
+                        class730.field2766 = var2 * 381532777;
+                        class730.field2729 = 277162405;
+                        class730.field2767 = 0;
                      }
 
-                     Client.field2692.method4380(var11, (byte)-115);
+                     class730.field2692.method4380(var11, (byte)-115);
                   } else {
                      class544.method2370(var7, class507.method2510(var4, var5, (short)808));
                      if (var7 == 0) {
-                        Client.field2765 = var1 * 143636043;
-                        Client.field2766 = var2 * 381532777;
-                        Client.field2729 = 277162405;
-                        Client.field2767 = 0;
+                        class730.field2765 = var1 * 143636043;
+                        class730.field2766 = var2 * 381532777;
+                        class730.field2729 = 277162405;
+                        class730.field2767 = 0;
                      }
                   }
 
@@ -260,31 +260,31 @@ public class class916 implements class331 {
                   class544.method2369(class647.method5483(var4, var5, 1, 1, 1978833308));
                }
 
-               Client.field2765 = var1 * 143636043;
-               Client.field2766 = var2 * 381532777;
-               Client.field2729 = 554324810;
-               Client.field2767 = 0;
-               var27 = class637.method5936(var26, Client.field2692.field7765, (byte)23);
+               class730.field2765 = var1 * 143636043;
+               class730.field2766 = var2 * 381532777;
+               class730.field2729 = 554324810;
+               class730.field2767 = 0;
+               var27 = class637.method5936(var26, class730.field2692.field7765, (byte)23);
                var27.field3364.method6362(283514611 * var10.field1522 + var5, 16711935);
                var27.field3364.method6421(var4 + -1760580017 * var10.field1521, 1653379787);
                var27.field3364.method6362(var7, 16711935);
                var27.field3364.method6415(class980.method1913(984220338) ? 1 : 0, (byte)1);
-               Client.field2692.method4380(var27, (byte)-56);
+               class730.field2692.method4380(var27, (byte)-56);
                class509.method2536(var4, var5, (byte)-67);
             }
 
             if (59 == var6) {
-               Client.field2765 = 143636043 * var1;
-               Client.field2766 = 381532777 * var2;
-               Client.field2729 = 277162405;
-               Client.field2767 = 0;
-               var27 = class637.method5936(class643.field10024, Client.field2692.field7765, (byte)6);
+               class730.field2765 = 143636043 * var1;
+               class730.field2766 = 381532777 * var2;
+               class730.field2729 = 277162405;
+               class730.field2767 = 0;
+               var27 = class637.method5936(class643.field10024, class730.field2692.field7765, (byte)6);
                var27.field3364.method6364(1262526353 * class543.field3820, 969641873);
-               var27.field3364.method6362(392084321 * Client.field2818, 16711935);
+               var27.field3364.method6362(392084321 * class730.field2818, 16711935);
                var27.field3364.method6362(var10.field1522 * 283514611 + var5, 16711935);
-               var27.field3364.method6419(Client.field2888 * 1408085039);
+               var27.field3364.method6419(class730.field2888 * 1408085039);
                var27.field3364.method6421(var10.field1521 * -1760580017 + var4, 1993411127);
-               Client.field2692.method4380(var27, (byte)-125);
+               class730.field2692.method4380(var27, (byte)-125);
                class133.method998(var4, var5, true, class507.method2510(var4, var5, (short)808), -1460658515);
             }
 
@@ -312,7 +312,7 @@ public class class916 implements class331 {
                      var19 = class979.method1834(var4, var5, 0, 0, var15, var13, (byte)-22);
                   }
                } else {
-                  class50 var16 = Client.field2697.method5283(-1208362615).method4713(var14);
+                  class50 var16 = class730.field2697.method5283(-1208362615).method4713(var14);
                   if (var13 != 0 && var13 != 2) {
                      var17 = -565161399 * var16.field2215;
                      var18 = var16.field2218 * -1125834887;
@@ -325,27 +325,27 @@ public class class916 implements class331 {
                }
 
                class544.method2369(var19);
-               Client.field2765 = 143636043 * var1;
-               Client.field2766 = var2 * 381532777;
-               Client.field2729 = 554324810;
-               Client.field2767 = 0;
-               var40 = class637.method5936(class643.field9967, Client.field2692.field7765, (byte)52);
+               class730.field2765 = 143636043 * var1;
+               class730.field2766 = var2 * 381532777;
+               class730.field2729 = 554324810;
+               class730.field2767 = 0;
+               var40 = class637.method5936(class643.field9967, class730.field2692.field7765, (byte)52);
                var40.field3364.method6415(class980.method1913(-427290804) ? 1 : 0, (byte)1);
-               var40.field3364.method6400(Client.field2888 * 1408085039);
+               var40.field3364.method6400(class730.field2888 * 1408085039);
                var40.field3364.method6400(283514611 * var10.field1522 + var5);
                var40.field3364.method6408((int)(var8 >>> 32) & Integer.MAX_VALUE);
                var40.field3364.method6364(1262526353 * class543.field3820, 671195475);
-               var40.field3364.method6421(Client.field2818 * 392084321, 462918069);
+               var40.field3364.method6421(class730.field2818 * 392084321, 462918069);
                var40.field3364.method6419(var4 + -1760580017 * var10.field1521);
                var40.field3364.method6361(var13);
-               Client.field2692.method4380(var40, (byte)-39);
+               class730.field2692.method4380(var40, (byte)-39);
                class386.method1170(var4, var5, var8);
             }
 
-            if (var6 == 30 && Client.field2633 == null) {
+            if (var6 == 30 && class730.field2633 == null) {
                class118.method1463(var5, var4, 1723723267);
-               Client.field2633 = class554.method427(var5, var4, -156511736);
-               class814.method2932(Client.field2633, 194587581);
+               class730.field2633 = class554.method427(var5, var4, -156511736);
+               class814.method2932(class730.field2633, 194587581);
             }
 
             class643 var29 = null;
@@ -372,49 +372,49 @@ public class class916 implements class331 {
             }
 
             if (var29 != null) {
-               class946 var30 = Client.field2786[var7];
+               class946 var30 = class730.field2786[var7];
                if (var30 != null) {
                   class544.method2369(class191.method3721(var30.field4085[0], var30.field4055[0], var30.method2550(), var30.method2550(), 0, (byte)13));
-                  Client.field2765 = var1 * 143636043;
-                  Client.field2766 = 381532777 * var2;
-                  Client.field2729 = 554324810;
-                  Client.field2767 = 0;
-                  class701 var32 = class637.method5936(var29, Client.field2692.field7765, (byte)74);
+                  class730.field2765 = var1 * 143636043;
+                  class730.field2766 = 381532777 * var2;
+                  class730.field2729 = 554324810;
+                  class730.field2767 = 0;
+                  class701 var32 = class637.method5936(var29, class730.field2692.field7765, (byte)74);
                   var32.field3364.method6361(class980.method1913(1625676244) ? 1 : 0);
                   var32.field3364.method6400(var7);
-                  Client.field2692.method4380(var32, (byte)-105);
+                  class730.field2692.method4380(var32, (byte)-105);
                   class133.method998(var30.field4085[0], var30.field4055[0], true, class191.method3721(var30.field4085[0], var30.field4055[0], var30.method2550(), var30.method2550(), 0, (byte)13), 278987907);
                }
             }
 
             class701 var31;
             if (var6 == 16) {
-               Client.field2765 = 143636043 * var1;
-               Client.field2766 = 381532777 * var2;
-               Client.field2729 = 554324810;
-               Client.field2767 = 0;
-               var31 = class637.method5936(class643.field10035, Client.field2692.field7765, (byte)82);
-               var31.field3364.method6362(1408085039 * Client.field2888, 16711935);
+               class730.field2765 = 143636043 * var1;
+               class730.field2766 = 381532777 * var2;
+               class730.field2729 = 554324810;
+               class730.field2767 = 0;
+               var31 = class637.method5936(class643.field10035, class730.field2692.field7765, (byte)82);
+               var31.field3364.method6362(1408085039 * class730.field2888, 16711935);
                var31.field3364.method6362(class923.field10295.field4028 * 1888274983, 16711935);
                var31.field3364.method6408(class543.field3820 * 1262526353);
-               var31.field3364.method6400(Client.field2818 * 392084321);
+               var31.field3364.method6400(class730.field2818 * 392084321);
                var31.field3364.method6415(class980.method1913(-1804963392) ? 1 : 0, (byte)1);
-               Client.field2692.method4380(var31, (byte)-113);
+               class730.field2692.method4380(var31, (byte)-113);
             }
 
             if (var6 == 17) {
-               Client.field2765 = 143636043 * var1;
-               Client.field2766 = var2 * 381532777;
-               Client.field2729 = 554324810;
-               Client.field2767 = 0;
-               var31 = class637.method5936(class643.field9999, Client.field2692.field7765, (byte)15);
-               var31.field3364.method6400(1408085039 * Client.field2888);
+               class730.field2765 = 143636043 * var1;
+               class730.field2766 = var2 * 381532777;
+               class730.field2729 = 554324810;
+               class730.field2767 = 0;
+               var31 = class637.method5936(class643.field9999, class730.field2692.field7765, (byte)15);
+               var31.field3364.method6400(1408085039 * class730.field2888);
                var31.field3364.method6400(var4 + var10.field1521 * -1760580017);
                var31.field3364.method6419(283514611 * var10.field1522 + var5);
                var31.field3364.method6406(1262526353 * class543.field3820, (byte)1);
-               var31.field3364.method6419(Client.field2818 * 392084321);
+               var31.field3364.method6419(class730.field2818 * 392084321);
                var31.field3364.method6400(var7);
-               Client.field2692.method4380(var31, (byte)-59);
+               class730.field2692.method4380(var31, (byte)-59);
                class509.method2536(var4, var5, (byte)-97);
             }
 
@@ -442,21 +442,21 @@ public class class916 implements class331 {
 
             class701 var45;
             if (var34 != null) {
-               class437 var35 = (class437) Client.field2677.method2942((long)var7);
+               class437 var35 = (class437)class730.field2677.method2942((long)var7);
                if (var35 != null) {
                   class60 var37 = (class60)var35.field7515;
                   if (var34 != class643.field9995) {
                      class544.method2369(class191.method3721(var37.field4085[0], var37.field4055[0], var37.method2550(), var37.method2550(), 0, (byte)-51));
                   }
 
-                  Client.field2765 = 143636043 * var1;
-                  Client.field2766 = var2 * 381532777;
-                  Client.field2729 = 554324810;
-                  Client.field2767 = 0;
-                  var45 = class637.method5936(var34, Client.field2692.field7765, (byte)15);
+                  class730.field2765 = 143636043 * var1;
+                  class730.field2766 = var2 * 381532777;
+                  class730.field2729 = 554324810;
+                  class730.field2767 = 0;
+                  var45 = class637.method5936(var34, class730.field2692.field7765, (byte)15);
                   var45.field3364.method6419(var7);
                   var45.field3364.method6415(class980.method1913(1824393579) ? 1 : 0, (byte)1);
-                  Client.field2692.method4380(var45, (byte)-120);
+                  class730.field2692.method4380(var45, (byte)-120);
                   class133.method998(var37.field4085[0], var37.field4055[0], true, class191.method3721(var37.field4085[0], var37.field4055[0], var37.method2550(), var37.method2550(), 0, (byte)-51), -1636676956);
                }
             }
@@ -477,10 +477,10 @@ public class class916 implements class331 {
             }
 
             if (var36 != null) {
-               Client.field2765 = 143636043 * var1;
-               Client.field2766 = var2 * 381532777;
-               Client.field2729 = 554324810;
-               Client.field2767 = 0;
+               class730.field2765 = 143636043 * var1;
+               class730.field2766 = var2 * 381532777;
+               class730.field2729 = 554324810;
+               class730.field2767 = 0;
                int var38 = (int)var8 >> 20 & 3;
                if (class643.field9955 != var36) {
                   int var46 = (int)var8 >> 14 & 31;
@@ -529,7 +529,7 @@ public class class916 implements class331 {
                         var24 = class979.method1834(var4, var5, 0, 0, var20, var38, (byte)-22);
                      }
                   } else {
-                     class50 var21 = Client.field2697.method5283(-1208362615).method4713(var42);
+                     class50 var21 = class730.field2697.method5283(-1208362615).method4713(var42);
                      int var22;
                      int var23;
                      if (var38 != 0 && var38 != 2) {
@@ -548,32 +548,32 @@ public class class916 implements class331 {
                   var5 = var18;
                }
 
-               var45 = class637.method5936(var36, Client.field2692.field7765, (byte)94);
+               var45 = class637.method5936(var36, class730.field2692.field7765, (byte)94);
                var45.field3364.method6393(class980.method1913(1030396767) ? 1 : 0, 1999137832);
                var45.field3364.method6406((int)(var8 >>> 32) & Integer.MAX_VALUE, (byte)1);
                var45.field3364.method6421(var4 + var10.field1521 * -1760580017, 1077977138);
                var45.field3364.method6400(var10.field1522 * 283514611 + var5);
                var45.field3364.method6361(var38);
-               Client.field2692.method4380(var45, (byte)-13);
+               class730.field2692.method4380(var45, (byte)-13);
                class386.method1170(var4, var5, var8);
             }
 
             if (8 == var6) {
-               class437 var39 = (class437) Client.field2677.method2942((long)var7);
+               class437 var39 = (class437)class730.field2677.method2942((long)var7);
                if (var39 != null) {
                   class60 var47 = (class60)var39.field7515;
                   class544.method2369(class191.method3721(var47.field4085[0], var47.field4055[0], var47.method2550(), var47.method2550(), 0, (byte)-81));
-                  Client.field2765 = 143636043 * var1;
-                  Client.field2766 = var2 * 381532777;
-                  Client.field2729 = 554324810;
-                  Client.field2767 = 0;
-                  var40 = class637.method5936(class643.field9938, Client.field2692.field7765, (byte)103);
+                  class730.field2765 = 143636043 * var1;
+                  class730.field2766 = var2 * 381532777;
+                  class730.field2729 = 554324810;
+                  class730.field2767 = 0;
+                  var40 = class637.method5936(class643.field9938, class730.field2692.field7765, (byte)103);
                   var40.field3364.method6361(class980.method1913(-510062351) ? 1 : 0);
                   var40.field3364.method6364(1262526353 * class543.field3820, -828026807);
                   var40.field3364.method6421(var7, 1218473206);
-                  var40.field3364.method6400(Client.field2818 * 392084321);
-                  var40.field3364.method6421(1408085039 * Client.field2888, 249731045);
-                  Client.field2692.method4380(var40, (byte)-11);
+                  var40.field3364.method6400(class730.field2818 * 392084321);
+                  var40.field3364.method6421(1408085039 * class730.field2888, 249731045);
+                  class730.field2692.method4380(var40, (byte)-11);
                   class133.method998(var47.field4085[0], var47.field4055[0], true, class191.method3721(var47.field4085[0], var47.field4055[0], var47.method2550(), var47.method2550(), 0, (byte)-81), 420897053);
                }
             }
@@ -582,55 +582,55 @@ public class class916 implements class331 {
                class564 var41 = class554.method427(var5, var4, -156511736);
                if (var41 != null) {
                   class422.method5724((byte)4);
-                  class725 var48 = Client.method1761(var41);
+                  class725 var48 = class730.method1761(var41);
                   class900.method6347(var41, var48.method1742((byte)-122), var48.field2557 * -1133219011, 1387537939);
-                  Client.field2820 = class622.method5341(var41, -447348156);
-                  if (Client.field2820 == null) {
-                     Client.field2820 = "Null";
+                  class730.field2820 = class622.method5341(var41, -447348156);
+                  if (class730.field2820 == null) {
+                     class730.field2820 = "Null";
                   }
 
-                  Client.field2735 = var41.field953 + class56.method1545(16777215, -1652576288);
+                  class730.field2735 = var41.field953 + class56.method1545(16777215, -1652576288);
                }
             } else {
                if (15 == var6) {
-                  class946 var43 = Client.field2786[var7];
+                  class946 var43 = class730.field2786[var7];
                   if (var43 != null) {
                      class544.method2369(class191.method3721(var43.field4085[0], var43.field4055[0], var43.method2550(), var43.method2550(), 0, (byte)-81));
-                     Client.field2765 = var1 * 143636043;
-                     Client.field2766 = var2 * 381532777;
-                     Client.field2729 = 554324810;
-                     Client.field2767 = 0;
-                     var45 = class637.method5936(class643.field10035, Client.field2692.field7765, (byte)92);
-                     var45.field3364.method6362(Client.field2888 * 1408085039, 16711935);
+                     class730.field2765 = var1 * 143636043;
+                     class730.field2766 = var2 * 381532777;
+                     class730.field2729 = 554324810;
+                     class730.field2767 = 0;
+                     var45 = class637.method5936(class643.field10035, class730.field2692.field7765, (byte)92);
+                     var45.field3364.method6362(class730.field2888 * 1408085039, 16711935);
                      var45.field3364.method6362(var7, 16711935);
                      var45.field3364.method6408(class543.field3820 * 1262526353);
-                     var45.field3364.method6400(392084321 * Client.field2818);
+                     var45.field3364.method6400(392084321 * class730.field2818);
                      var45.field3364.method6415(class980.method1913(1486448273) ? 1 : 0, (byte)1);
-                     Client.field2692.method4380(var45, (byte)-120);
+                     class730.field2692.method4380(var45, (byte)-120);
                      class133.method998(var43.field4085[0], var43.field4055[0], true, class191.method3721(var43.field4085[0], var43.field4055[0], var43.method2550(), var43.method2550(), 0, (byte)-81), -1518106468);
                   }
                }
 
                if (var6 == 60) {
-                  if (Client.field2790 * 1806357379 > 0 && class123.method1634(838408640)) {
+                  if (class730.field2790 * 1806357379 > 0 && class123.method1634(838408640)) {
                      class439.method4280(class923.field10295.field3639, var10.field1521 * -1760580017 + var4, 283514611 * var10.field1522 + var5, 1886787992);
                   } else {
-                     Client.field2765 = var1 * 143636043;
-                     Client.field2766 = 381532777 * var2;
-                     Client.field2729 = 277162405;
-                     Client.field2767 = 0;
-                     class701 var44 = class637.method5936(class643.field10019, Client.field2692.field7765, (byte)98);
+                     class730.field2765 = var1 * 143636043;
+                     class730.field2766 = 381532777 * var2;
+                     class730.field2729 = 277162405;
+                     class730.field2767 = 0;
+                     class701 var44 = class637.method5936(class643.field10019, class730.field2692.field7765, (byte)98);
                      var44.field3364.method6362(var10.field1522 * 283514611 + var5, 16711935);
                      var44.field3364.method6419(-1760580017 * var10.field1521 + var4);
-                     Client.field2692.method4380(var44, (byte)-43);
+                     class730.field2692.method4380(var44, (byte)-43);
                   }
                }
 
-               if (Client.field2817) {
+               if (class730.field2817) {
                   class422.method5724((byte)4);
                }
 
-               if (class35.field5345 != null && -2018194505 * Client.field2769 == 0) {
+               if (class35.field5345 != null && -2018194505 * class730.field2769 == 0) {
                   class814.method2932(class35.field5345, 1534658392);
                }
             }

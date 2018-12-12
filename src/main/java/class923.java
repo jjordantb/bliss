@@ -50,12 +50,12 @@ public class class923 {
          if (var0 == null) {
             return false;
          } else {
-            for(int var2 = 0; var2 < -548972447 * Client.field2934; ++var2) {
-               if (var0.equalsIgnoreCase(Client.field2936[var2])) {
+            for(int var2 = 0; var2 < -548972447 * class730.field2934; ++var2) {
+               if (var0.equalsIgnoreCase(class730.field2936[var2])) {
                   return true;
                }
 
-               if (var0.equalsIgnoreCase(Client.field2754[var2])) {
+               if (var0.equalsIgnoreCase(class730.field2754[var2])) {
                   return true;
                }
             }
@@ -70,7 +70,7 @@ public class class923 {
    static final void method6261(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2902[var2].field10624 * 1869840307;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2902[var2].field10624 * 1869840307;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "lx.yd(" + ')');
       }

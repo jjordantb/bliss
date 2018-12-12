@@ -48,10 +48,10 @@ public class class543 {
    static final void method2376(int var0) {
       try {
          int var1 = 0;
-         class545 var2 = Client.field2697.method5317(-1611682495);
+         class545 var2 = class730.field2697.method5317(-1611682495);
 
-         for(int var3 = 0; var3 < Client.field2697.method5271(-2029823795); ++var3) {
-            for(int var4 = 0; var4 < Client.field2697.method5272(-105400653); ++var4) {
+         for(int var3 = 0; var3 < class730.field2697.method5271(-2029823795); ++var3) {
+            for(int var4 = 0; var4 < class730.field2697.method5272(-105400653); ++var4) {
                if (class762.method2812(var2.field3861, var1, var3, var4, true, -777988087)) {
                   ++var1;
                }

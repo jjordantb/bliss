@@ -107,7 +107,7 @@ public class class237 {
 
    static final void method4656(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int) Client.field2738 >> 3;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)class730.field2738 >> 3;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "qd.agr(" + ')');
       }

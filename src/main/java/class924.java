@@ -53,7 +53,7 @@ public class class924 extends class23 {
          var1.method6385(0L);
          var1.method6366(class881.field10171, 2126310592);
          var1.method6385(class881.field10183 * 6528380240290452803L);
-         var1.method6385(Client.field2656 * -8380697455384249973L);
+         var1.method6385(class730.field2656 * -8380697455384249973L);
          var1.method6412(class449.field7058, class449.field7062, 1411965819);
          return var1;
       } catch (RuntimeException var2) {
@@ -72,7 +72,7 @@ public class class924 extends class23 {
    static final void method6256(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         if (Client.field2785 != null && var2 < class556.field503 * -1801543887) {
+         if (class730.field2785 != null && var2 < class556.field503 * -1801543887) {
             var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class776.field3731[var2].field8115;
          } else {
             var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";

@@ -1007,7 +1007,7 @@ public class class20 {
 
    static boolean method3418(int var0) {
       try {
-         return !class622.method5340(-1233866115 * Client.field2733, -509208806);
+         return !class622.method5340(-1233866115 * class730.field2733, -509208806);
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "qi.a(" + ')');
       }

@@ -155,7 +155,7 @@ public class class416 {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
          int var3 = class615.field8903.field9150.method2717(-2143866938);
          if (var2 != var3) {
-            if (class552.method457(Client.field2733 * -1233866115, (byte)44)) {
+            if (class552.method457(class730.field2733 * -1233866115, (byte)44)) {
                if (var3 == 0 && -1256171511 * class540.field3920 != -1) {
                   class58.method1581(class771.field3732, -1256171511 * class540.field3920, 0, var2, false, -2115031871);
                   class228.method4589(57327767);
@@ -170,7 +170,7 @@ public class class416 {
 
             class615.field8903.method5391(class615.field8903.field9150, var2, -2050981993);
             class95.method523(656179282);
-            Client.field2647 = false;
+            class730.field2647 = false;
          }
 
       } catch (RuntimeException var4) {
@@ -185,23 +185,23 @@ public class class416 {
          class406.method5547(600492820);
          class397.method3475(var0, var1, var2, (short)256);
          class785.field3827.method1850(55121200);
-         class785.field3827.method1856(Client.field2681, (byte)3);
+         class785.field3827.method1856(class730.field2681, (byte)3);
          class867.method5833(class593.field1623, -1982421296);
          class158.method3443(class593.field1623, class562.field827, 556232880);
          class452.method3868(886607379);
          class924.method6252(class324.field621, -1865975129);
          class881.method6172(-1533729788);
          class362.method1508(272313527);
-         if (Client.field2733 * -1233866115 == 19) {
+         if (class730.field2733 * -1233866115 == 19) {
             class967.method1750(1, 1559775234);
-         } else if (14 == Client.field2733 * -1233866115) {
+         } else if (14 == class730.field2733 * -1233866115) {
             class967.method1750(15, 326523598);
-         } else if (18 == -1233866115 * Client.field2733) {
+         } else if (18 == -1233866115 * class730.field2733) {
             class967.method1750(16, 508660854);
-         } else if (-1233866115 * Client.field2733 == 0) {
+         } else if (-1233866115 * class730.field2733 == 0) {
             class967.method1750(17, 582518486);
-         } else if (Client.field2733 * -1233866115 != 11 && Client.field2733 * -1233866115 != 7) {
-            if (8 == Client.field2733 * -1233866115) {
+         } else if (class730.field2733 * -1233866115 != 11 && class730.field2733 * -1233866115 != 7) {
+            if (8 == class730.field2733 * -1233866115) {
                class967.method1750(9, 1249490303);
             }
          } else {
@@ -232,14 +232,14 @@ public class class416 {
    static final void method5651(class744 var0, byte var1) {
       try {
          var0.field3156 -= -783761378;
-         Client.field2905 = (short)var0.field3161[var0.field3156 * 681479919];
-         if (Client.field2905 <= 0) {
-            Client.field2905 = 256;
+         class730.field2905 = (short)var0.field3161[var0.field3156 * 681479919];
+         if (class730.field2905 <= 0) {
+            class730.field2905 = 256;
          }
 
-         Client.field2913 = (short)var0.field3161[1 + 681479919 * var0.field3156];
-         if (Client.field2913 <= 0) {
-            Client.field2913 = 320;
+         class730.field2913 = (short)var0.field3161[1 + 681479919 * var0.field3156];
+         if (class730.field2913 <= 0) {
+            class730.field2913 = 320;
          }
 
       } catch (RuntimeException var3) {

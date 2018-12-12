@@ -116,10 +116,10 @@ public class class423 implements class331 {
 
    static final void method5710(class564 var0, class744 var1, int var2) {
       try {
-         if (Client.method1761(var0).method1737((byte)-12) && Client.field2633 == null) {
+         if (class730.method1761(var0).method1737((byte)-12) && class730.field2633 == null) {
             class118.method1463(var0.field867 * -440872681, var0.field879 * -1309843523, 1723723267);
-            Client.field2633 = class554.method427(-440872681 * var0.field867, var0.field879 * -1309843523, -156511736);
-            class814.method2932(Client.field2633, 1608408687);
+            class730.field2633 = class554.method427(-440872681 * var0.field867, var0.field879 * -1309843523, -156511736);
+            class814.method2932(class730.field2633, 1608408687);
          }
 
       } catch (RuntimeException var4) {
@@ -144,7 +144,7 @@ public class class423 implements class331 {
 
    public static class684 method5712(short var0) {
       try {
-         return class669.method4121(-1233866115 * Client.field2733, 1765230881) ? Client.field2674 : Client.field2692;
+         return class669.method4121(-1233866115 * class730.field2733, 1765230881) ? class730.field2674 : class730.field2692;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "rt.fc(" + ')');
       }
@@ -174,7 +174,7 @@ public class class423 implements class331 {
                int var4 = -1;
                int var5 = -1;
                class32 var6 = class923.field10295.method1511().field7637;
-               class389 var7 = Client.field2697.method5270(681479919);
+               class389 var7 = class730.field2697.method5270(681479919);
                if (class740.field7793.method7(class923.field10295.field3639, ((int)var6.field5296 >> 9) + -1760580017 * var7.field1521, 283514611 * var7.field1522 + ((int)var6.field5299 >> 9), var3, 46106083)) {
                   var4 = var3[1] - class740.field7820;
                   var5 = var3[2] - class740.field7813;
@@ -262,7 +262,7 @@ public class class423 implements class331 {
                      return;
                   }
 
-                  class740.field7810 = class229.method4579(class740.field7823, class740.field7793.field13 + "_staticelements", Client.field2759, 565671699);
+                  class740.field7810 = class229.method4579(class740.field7823, class740.field7793.field13 + "_staticelements", class730.field2759, 565671699);
                } else {
                   class740.field7810 = new class64(0);
                }

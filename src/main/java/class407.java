@@ -127,16 +127,16 @@ public class class407 extends class304 {
 
    static final void method5540(class744 var0, byte var1) {
       try {
-         if (-1233866115 * Client.field2733 == 14 && !class673.method4261((byte)9)) {
+         if (-1233866115 * class730.field2733 == 14 && !class673.method4261((byte)9)) {
             if (class601.field9198) {
                var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
             } else if (class191.field7004 * -247648477838985581L > class27.method3468((byte)1) - 1000L) {
                var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1;
             } else {
                class601.field9198 = true;
-               class701 var2 = class637.method5936(class643.field10008, Client.field2674.field7765, (byte)42);
+               class701 var2 = class637.method5936(class643.field10008, class730.field2674.field7765, (byte)42);
                var2.field3364.method6364(-1351839083 * class118.field2158, -933492277);
-               Client.field2674.method4380(var2, (byte)-36);
+               class730.field2674.method4380(var2, (byte)-36);
                var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
             }
          } else {

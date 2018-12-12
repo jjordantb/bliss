@@ -151,7 +151,7 @@ public class class647 implements class331 {
    static void method5489(int var0) {
       try {
          class881.field10140 = 471358088;
-         class881.field10177 = Client.field2692;
+         class881.field10177 = class730.field2692;
          class521.method2751(122690138525332847L * class881.field10146 == -1L, true, "", "", class881.field10146 * 122690138525332847L);
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "ls.v(" + ')');

@@ -35,10 +35,10 @@ public abstract class class749 extends class783 {
          class439 var1 = null;
 
          try {
-            var1 = class22.method3434("2", Client.field2926.field7321, true, -1804643872);
-            class907 var2 = new class907(Client.field2872 * 260699542 + 3);
+            var1 = class22.method3434("2", class730.field2926.field7321, true, -1804643872);
+            class907 var2 = new class907(class730.field2872 * 260699542 + 3);
             var2.method6361(1);
-            var2.method6362(Client.field2872 * -672377959, 16711935);
+            var2.method6362(class730.field2872 * -672377959, 16711935);
 
             for(int var3 = 0; var3 < class14.field6693.length; ++var3) {
                if (class474.field8271[var3]) {
@@ -60,8 +60,8 @@ public abstract class class749 extends class783 {
             ;
          }
 
-         Client.field2874 = class27.method3468((byte)1) * 5732957771927789473L;
-         Client.field2717 = false;
+         class730.field2874 = class27.method3468((byte)1) * 5732957771927789473L;
+         class730.field2717 = false;
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "wk.gr(" + ')');
       }

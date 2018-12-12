@@ -126,7 +126,7 @@ public class class60 extends class746 {
                this.field4046[var16] = null;
             }
 
-            this.field4030 = Client.field2758 * -815465993;
+            this.field4030 = class730.field2758 * -815465993;
             return var10;
          } else {
             return null;
@@ -148,7 +148,7 @@ public class class60 extends class746 {
             var2 |= 7;
          }
 
-         boolean var10 = this.field4094 != 0 && 443738891 * Client.field2866 >= this.field4069 * 1920148979 && Client.field2866 * 443738891 < this.field4070 * 1953154657;
+         boolean var10 = this.field4094 != 0 && 443738891 * class730.field2866 >= this.field4069 * 1920148979 && class730.field2866 * 443738891 < this.field4070 * 1953154657;
          if (var10) {
             var2 |= 524288;
          }
@@ -279,7 +279,7 @@ public class class60 extends class746 {
    public void method1240(int var1, int var2, int var3, boolean var4, int var5, byte var6) {
       try {
          this.field3639 = this.field3640 = (byte)var1;
-         if (Client.field2697.method5296(1132456995).method3386(var2, var3, 1587070733)) {
+         if (class730.field2697.method5296(1132456995).method3386(var2, var3, 1587070733)) {
             ++this.field3640;
          }
 
@@ -597,7 +597,7 @@ public class class60 extends class746 {
             this.field4046[var14] = null;
          }
 
-         this.field4030 = Client.field2758 * -815465993;
+         this.field4030 = class730.field2758 * -815465993;
          return var9;
       } else {
          return null;

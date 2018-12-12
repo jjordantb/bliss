@@ -8,11 +8,11 @@ public class class550 extends class14 {
       try {
          class105 var2 = (class105)this.field509.poll();
          if (var2 != null) {
-            class701 var3 = class637.method5936(class643.field9943, Client.field2692.field7765, (byte)24);
+            class701 var3 = class637.method5936(class643.field9943, class730.field2692.field7765, (byte)24);
             var3.field3364.method6364(var2.method6667((byte)-44) | var2.method6680(-1824201705) << 16, 126259689);
             var3.field3364.method6400(this.method3579(var2, 65535, (byte)33));
             var3.field3364.method6394(var2.method196((byte)113) << 1 | var2.method195((byte)-17) & 1, 2075950579);
-            Client.field2692.method4380(var3, (byte)-50);
+            class730.field2692.method4380(var3, (byte)-50);
             var2.method6670(29456166);
          }
 
@@ -35,7 +35,7 @@ public class class550 extends class14 {
 
    class701 method3597(byte var1) {
       try {
-         return class637.method5936(class643.field9996, Client.field2692.field7765, (byte)31);
+         return class637.method5936(class643.field9996, class730.field2692.field7765, (byte)31);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "adt.x(" + ')');
       }
@@ -60,18 +60,18 @@ public class class550 extends class14 {
    void method3586() {
       class105 var1 = (class105)this.field509.poll();
       if (var1 != null) {
-         class701 var2 = class637.method5936(class643.field9943, Client.field2692.field7765, (byte)10);
+         class701 var2 = class637.method5936(class643.field9943, class730.field2692.field7765, (byte)10);
          var2.field3364.method6364(var1.method6667((byte)-64) | var1.method6680(-1366988076) << 16, -1149175207);
          var2.field3364.method6400(this.method3579(var1, 65535, (byte)100));
          var2.field3364.method6394(var1.method196((byte)32) << 1 | var1.method195((byte)-124) & 1, 1797403189);
-         Client.field2692.method4380(var2, (byte)-27);
+         class730.field2692.method4380(var2, (byte)-27);
          var1.method6670(1518067003);
       }
 
    }
 
    class701 method3589() {
-      return class637.method5936(class643.field9996, Client.field2692.field7765, (byte)45);
+      return class637.method5936(class643.field9996, class730.field2692.field7765, (byte)45);
    }
 
    int method3592() {
@@ -81,11 +81,11 @@ public class class550 extends class14 {
    void method3585() {
       class105 var1 = (class105)this.field509.poll();
       if (var1 != null) {
-         class701 var2 = class637.method5936(class643.field9943, Client.field2692.field7765, (byte)51);
+         class701 var2 = class637.method5936(class643.field9943, class730.field2692.field7765, (byte)51);
          var2.field3364.method6364(var1.method6667((byte)-14) | var1.method6680(-1950900559) << 16, -582997683);
          var2.field3364.method6400(this.method3579(var1, 65535, (byte)125));
          var2.field3364.method6394(var1.method196((byte)37) << 1 | var1.method195((byte)-48) & 1, 1887595218);
-         Client.field2692.method4380(var2, (byte)-104);
+         class730.field2692.method4380(var2, (byte)-104);
          var1.method6670(1749258704);
       }
 
@@ -120,7 +120,7 @@ public class class550 extends class14 {
    }
 
    class701 method3595() {
-      return class637.method5936(class643.field9996, Client.field2692.field7765, (byte)58);
+      return class637.method5936(class643.field9996, class730.field2692.field7765, (byte)58);
    }
 
    int method3599() {
@@ -130,11 +130,11 @@ public class class550 extends class14 {
    void method3577() {
       class105 var1 = (class105)this.field509.poll();
       if (var1 != null) {
-         class701 var2 = class637.method5936(class643.field9943, Client.field2692.field7765, (byte)30);
+         class701 var2 = class637.method5936(class643.field9943, class730.field2692.field7765, (byte)30);
          var2.field3364.method6364(var1.method6667((byte)14) | var1.method6680(-1929012233) << 16, -836695878);
          var2.field3364.method6400(this.method3579(var1, 65535, (byte)100));
          var2.field3364.method6394(var1.method196((byte)83) << 1 | var1.method195((byte)-60) & 1, 1757564259);
-         Client.field2692.method4380(var2, (byte)-126);
+         class730.field2692.method4380(var2, (byte)-126);
          var1.method6670(-718347820);
       }
 

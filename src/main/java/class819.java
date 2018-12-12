@@ -137,30 +137,30 @@ public class class819 {
 
    static final void method2938(byte var0) {
       try {
-         if (Client.field2738 < 1104.0F) {
-            Client.field2738 = 1104.0F;
+         if (class730.field2738 < 1104.0F) {
+            class730.field2738 = 1104.0F;
          }
 
-         if (Client.field2738 > 2874.0F) {
-            Client.field2738 = 2874.0F;
+         if (class730.field2738 > 2874.0F) {
+            class730.field2738 = 2874.0F;
          }
 
-         while(Client.field2931 >= 16384.0F) {
-            Client.field2931 -= 16384.0F;
+         while(class730.field2931 >= 16384.0F) {
+            class730.field2931 -= 16384.0F;
          }
 
-         while(Client.field2931 < 0.0F) {
-            Client.field2931 += 16384.0F;
+         while(class730.field2931 < 0.0F) {
+            class730.field2931 += 16384.0F;
          }
 
-         class153 var1 = Client.field2697.method5296(1252790814);
-         class545 var2 = Client.field2697.method5317(-1611682495);
+         class153 var1 = class730.field2697.method5296(1252790814);
+         class545 var2 = class730.field2697.method5317(-1611682495);
          int var3 = 1103750049 * class456.field7163 >> 9;
          int var4 = 1346160791 * class530.field3741 >> 9;
          int var5 = class679.method4271(class456.field7163 * 1103750049, class530.field3741 * 1346160791, class899.field9552 * 1855729883, -737895541);
          int var6 = 0;
          int var7;
-         if (var3 > 3 && var4 > 3 && var3 < Client.field2697.method5271(-1981660153) - 4 && var4 < Client.field2697.method5272(1904630701) - 4) {
+         if (var3 > 3 && var4 > 3 && var3 < class730.field2697.method5271(-1981660153) - 4 && var4 < class730.field2697.method5272(1904630701) - 4) {
             for(var7 = var3 - 4; var7 <= 4 + var3; ++var7) {
                for(int var8 = var4 - 4; var8 <= 4 + var4; ++var8) {
                   int var9 = class899.field9552 * 1855729883;
@@ -169,7 +169,7 @@ public class class819 {
                   }
 
                   int var10 = 0;
-                  byte[][] var11 = Client.field2697.method5279(var9, 300700071);
+                  byte[][] var11 = class730.field2697.method5279(var9, 300700071);
                   if (var11 != null) {
                      var10 = (var11[var7][var8] & 255) * 8 << 2;
                   }
@@ -193,10 +193,10 @@ public class class819 {
             var7 = 262144;
          }
 
-         if (var7 > Client.field2745 * -523207831) {
-            Client.field2745 += (var7 - -523207831 * Client.field2745) / 24 * 1746126041;
-         } else if (var7 < -523207831 * Client.field2745) {
-            Client.field2745 += 1746126041 * ((var7 - Client.field2745 * -523207831) / 80);
+         if (var7 > class730.field2745 * -523207831) {
+            class730.field2745 += (var7 - -523207831 * class730.field2745) / 24 * 1746126041;
+         } else if (var7 < -523207831 * class730.field2745) {
+            class730.field2745 += 1746126041 * ((var7 - class730.field2745 * -523207831) / 80);
          }
 
       } catch (RuntimeException var13) {

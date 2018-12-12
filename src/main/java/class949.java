@@ -79,10 +79,10 @@ public class class949 {
 
    static void method1956(class564 var0, int var1, int var2, int var3) {
       try {
-         if (Client.field2817) {
+         if (class730.field2817) {
             class785 var4 = class354.field2139 * 831522399 != -1 ? class452.field7216.method5148(831522399 * class354.field2139, -1080440130) : null;
-            if (Client.method1761(var0).method1740(1299208806) && (class568.field645 * -112110875 & 32) != 0 && (var4 == null || var0.method827(class354.field2139 * 831522399, var4.field3822 * -388931549, -659898667) != -388931549 * var4.field3822)) {
-               class984.method1875(Client.field2820, Client.field2735 + " " + class822.field9048 + " " + var0.field953, class175.field5075 * 697885143, 58, var0.field1005 * -1232467723, 0L, var0.field879 * -1309843523, -440872681 * var0.field867, true, false, (long)(var0.field879 * -1309843523 << 32 | var0.field867 * -440872681), false, -1876457786);
+            if (class730.method1761(var0).method1740(1299208806) && (class568.field645 * -112110875 & 32) != 0 && (var4 == null || var0.method827(class354.field2139 * 831522399, var4.field3822 * -388931549, -659898667) != -388931549 * var4.field3822)) {
+               class984.method1875(class730.field2820, class730.field2735 + " " + class822.field9048 + " " + var0.field953, class175.field5075 * 697885143, 58, var0.field1005 * -1232467723, 0L, var0.field879 * -1309843523, -440872681 * var0.field867, true, false, (long)(var0.field879 * -1309843523 << 32 | var0.field867 * -440872681), false, -1876457786);
             }
          }
 
@@ -105,7 +105,7 @@ public class class949 {
             }
          }
 
-         if (Client.method1761(var0).method1737((byte)-120)) {
+         if (class730.method1761(var0).method1737((byte)-120)) {
             if (var0.field955 != null) {
                class984.method1875(var0.field955, "", -1, 30, -1232467723 * var0.field1005, 0L, var0.field879 * -1309843523, -440872681 * var0.field867, true, false, (long)(-1309843523 * var0.field879 << 32 | -440872681 * var0.field867), false, -1225913379);
             } else {

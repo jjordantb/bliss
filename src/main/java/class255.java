@@ -25,7 +25,7 @@ public class class255 {
    static final void method4496(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2902[var2].method6658((byte)8);
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2902[var2].method6658((byte)8);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ah.yc(" + ')');
       }
@@ -53,10 +53,10 @@ public class class255 {
 
    static void method4499(class848 var0, int var1) {
       try {
-         if ((class602.field8673 * -278777595 >= 2 || Client.field2817) && Client.field2832 == null) {
+         if ((class602.field8673 * -278777595 >= 2 || class730.field2817) && class730.field2832 == null) {
             String var2;
-            if (Client.field2817 && -278777595 * class602.field8673 < 2) {
-               var2 = Client.field2820 + class814.field4790.method2927(class321.field1066, -875414210) + Client.field2735 + " " + class822.field9048;
+            if (class730.field2817 && -278777595 * class602.field8673 < 2) {
+               var2 = class730.field2820 + class814.field4790.method2927(class321.field1066, -875414210) + class730.field2735 + " " + class822.field9048;
             } else if (class118.method1458((byte)122) && -278777595 * class602.field8673 > 2) {
                var2 = class342.method217(class713.field3542, 2135114234);
             } else {
@@ -77,13 +77,13 @@ public class class255 {
             }
 
             if (class602.field8653 != null) {
-               class727 var6 = class602.field8653.method822(class785.field3827, Client.field2681, 2046154242);
+               class727 var6 = class602.field8653.method822(class785.field3827, class730.field2681, 2046154242);
                if (var6 == null) {
                   var6 = class501.field3182;
                }
 
-               var6.method1673(var2, -828992241 * class602.field8654, 1604938967 * class602.field8669, -2093041337 * class602.field8653.field881, class602.field8653.field887 * 457937409, 1045422783 * class602.field8653.field895, -2065110161 * class602.field8653.field976, 872550387 * class602.field8653.field939, -1594110459 * class602.field8653.field849, Client.field2683, 1401020893 * class880.field10188, Client.field2881, class602.field8668, class755.field4199, -1153250817);
-               class431.method4254(Client.field2881[0], Client.field2881[1], Client.field2881[2], Client.field2881[3], (byte)2);
+               var6.method1673(var2, -828992241 * class602.field8654, 1604938967 * class602.field8669, -2093041337 * class602.field8653.field881, class602.field8653.field887 * 457937409, 1045422783 * class602.field8653.field895, -2065110161 * class602.field8653.field976, 872550387 * class602.field8653.field939, -1594110459 * class602.field8653.field849, class730.field2683, 1401020893 * class880.field10188, class730.field2881, class602.field8668, class755.field4199, -1153250817);
+               class431.method4254(class730.field2881[0], class730.field2881[1], class730.field2881[2], class730.field2881[3], (byte)2);
             }
          }
 

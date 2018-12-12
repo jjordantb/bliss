@@ -59,7 +59,7 @@ public class class447 {
 
    static final void method4317(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
       try {
-         class921[] var7 = Client.field2851;
+         class921[] var7 = class730.field2851;
 
          for(int var8 = 0; var8 < var7.length; ++var8) {
             class921 var9 = var7[var8];
@@ -70,10 +70,10 @@ public class class447 {
                   }
                } else {
                   class971.method1790(var9.field10280 * -458864019, -1338192389 * var9.field10281, 1018128075 * var9.field10282, var9.field10283 * 143254950, -549885479);
-                  if (Client.field2873[0] > -1.0F && 443738891 * Client.field2866 % 20 < 10) {
+                  if (class730.field2873[0] > -1.0F && 443738891 * class730.field2866 % 20 < 10) {
                      class48 var10 = class634.field9790[-92466201 * var9.field10279];
-                     int var11 = (int)((float)var0 + Client.field2873[0] - 12.0F);
-                     int var12 = (int)((float)var1 + Client.field2873[1] - 28.0F);
+                     int var11 = (int)((float)var0 + class730.field2873[0] - 12.0F);
+                     int var12 = (int)((float)var1 + class730.field2873[1] - 28.0F);
                      var10.method3128(var11, var12);
                   }
                }

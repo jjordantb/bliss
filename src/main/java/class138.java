@@ -35,7 +35,7 @@ public abstract class class138 {
    static void method992(class848 var0, int var1, int var2, int var3) {
       try {
          if (var1 >= 0 && var2 >= 0 && class602.field8660 != null) {
-            class389 var4 = Client.field2697.method5270(681479919);
+            class389 var4 = class730.field2697.method5270(681479919);
             class344 var5 = var0.method4860();
             var0.method5054(class602.field8660);
             var0.method4867(class602.field8662);
@@ -50,7 +50,7 @@ public abstract class class138 {
             int var21;
             int var22;
             int var54;
-            if (Client.field2697.method5317(-1611682495) != null && (!Client.field2817 || (-112110875 * class568.field645 & 64) != 0)) {
+            if (class730.field2697.method5317(-1611682495) != null && (!class730.field2817 || (-112110875 * class568.field645 & 64) != 0)) {
                int var8 = -1;
                var9 = -1;
                float var10 = (float)var6 * 2.0F / (float)(class602.field8658 * 2125992951) - 1.0F;
@@ -72,16 +72,16 @@ public abstract class class138 {
                   var8 = var21 + (class923.field10295.method2550() - 1 << 8) >> 9;
                   var9 = var22 + (class923.field10295.method2550() - 1 << 8) >> 9;
                   byte var23 = class923.field10295.field3639;
-                  if (var23 < 3 && (Client.field2697.method5296(-86337284).field5406[1][var21 >> 9][var22 >> 9] & 2) != 0) {
+                  if (var23 < 3 && (class730.field2697.method5296(-86337284).field5406[1][var21 >> 9][var22 >> 9] & 2) != 0) {
                      var54 = var23 + 1;
                   }
                }
 
                if (-1 != var8 && -1 != var9) {
-                  if (Client.field2817 && (-112110875 * class568.field645 & 64) != 0) {
-                     class564 var43 = class554.method427(class543.field3820 * 1262526353, 392084321 * Client.field2818, -156511736);
+                  if (class730.field2817 && (-112110875 * class568.field645 & 64) != 0) {
+                     class564 var43 = class554.method427(class543.field3820 * 1262526353, 392084321 * class730.field2818, -156511736);
                      if (var43 != null) {
-                        class984.method1875(Client.field2820, " " + class822.field9048 + " ", class175.field5075 * 697885143, 59, -1, 0L, var8, var9, true, false, (long)(var8 << 32 | var9), true, -1555484950);
+                        class984.method1875(class730.field2820, " " + class822.field9048 + " ", class175.field5075 * 697885143, 59, -1, 0L, var8, var9, true, false, (long)(var8 << 32 | var9), true, -1555484950);
                      } else {
                         class422.method5724((byte)4);
                      }
@@ -90,12 +90,12 @@ public abstract class class138 {
                         class984.method1875(class814.field4784.method2927(class321.field1066, -875414210), "", -1, 60, -1, 0L, var8, var9, true, false, (long)(var8 << 32 | var9), true, -1698149123);
                      }
 
-                     class984.method1875(class776.field3730, "", Client.field2803 * -1471730241, 23, -1, 0L, var8, var9, true, false, (long)(var8 << 32 | var9), true, -1114825452);
+                     class984.method1875(class776.field3730, "", class730.field2803 * -1471730241, 23, -1, 0L, var8, var9, true, false, (long)(var8 << 32 | var9), true, -1114825452);
                   }
                }
             }
 
-            class472 var31 = Client.field2697.method5317(-1611682495).field3873;
+            class472 var31 = class730.field2697.method5317(-1611682495).field3873;
             var9 = var1;
             int var32 = var2;
             List var33 = var31.field8234;
@@ -110,7 +110,7 @@ public abstract class class138 {
                      }
 
                      var35 = (class192)var34.next();
-                  } while(!Client.field2655 && class923.field10295.field3639 != var35.field7022.field3639);
+                  } while(!class730.field2655 && class923.field10295.field3639 != var35.field7022.field3639);
 
                   if (!var35.method3740(var0, var9, var32, 1628119840)) {
                      break;
@@ -141,17 +141,17 @@ public abstract class class138 {
                         var21 = (int)var48.field5296 - (var41.method2550() - 1 << 8);
                         var22 = (int)var48.field5299 - (var41.method2550() - 1 << 8);
 
-                        for(var54 = 0; var54 < -1230451913 * Client.field2684; ++var54) {
-                           class437 var24 = (class437) Client.field2677.method2942((long) Client.field2680[var54]);
+                        for(var54 = 0; var54 < -1230451913 * class730.field2684; ++var54) {
+                           class437 var24 = (class437)class730.field2677.method2942((long)class730.field2680[var54]);
                            if (var24 != null) {
                               class60 var25 = (class60)var24.field7515;
-                              if (443738891 * Client.field2866 != var25.field4034 * 335731285 && var25.field4087) {
+                              if (443738891 * class730.field2866 != var25.field4034 * 335731285 && var25.field4087) {
                                  var26 = var25.method1511().field7637;
                                  var27 = (int)var26.field5296 - (var25.field1637.field9923 * -2095128707 - 1 << 8);
                                  var28 = (int)var26.field5299 - (-2095128707 * var25.field1637.field9923 - 1 << 8);
                                  if (var27 >= var21 && var25.field1637.field9923 * -2095128707 <= var41.method2550() - (var27 - var21 >> 9) && var28 >= var22 && var25.field1637.field9923 * -2095128707 <= var41.method2550() - (var28 - var22 >> 9)) {
                                     class554.method424(var25, class923.field10295.field3639 != var35.field7022.field3639, (byte)-10);
-                                    var25.field4034 = -339947553 * Client.field2866;
+                                    var25.field4034 = -339947553 * class730.field2866;
                                  }
                               }
                            }
@@ -161,8 +161,8 @@ public abstract class class138 {
                         int[] var56 = class498.field8108;
 
                         for(int var62 = 0; var62 < var54; ++var62) {
-                           class946 var65 = Client.field2786[var56[var62]];
-                           if (var65 != null && 443738891 * Client.field2866 != 335731285 * var65.field4034 && var41 != var65) {
+                           class946 var65 = class730.field2786[var56[var62]];
+                           if (var65 != null && 443738891 * class730.field2866 != 335731285 * var65.field4034 && var41 != var65) {
                               if (!var65.field4087) {
                                  if (var3 == 202437353) {
                                     return;
@@ -173,19 +173,19 @@ public abstract class class138 {
                                  int var29 = (int)var70.field5299 - (var65.method2550() - 1 << 8);
                                  if (var28 >= var21 && var65.method2550() <= var41.method2550() - (var28 - var21 >> 9) && var29 >= var22 && var65.method2550() <= var41.method2550() - (var29 - var22 >> 9)) {
                                     class149.method1159(var65, class923.field10295.field3639 != var35.field7022.field3639, 875975417);
-                                    var65.field4034 = Client.field2866 * -339947553;
+                                    var65.field4034 = class730.field2866 * -339947553;
                                  }
                               }
                            }
                         }
                      }
 
-                     if (443738891 * Client.field2866 == 335731285 * var41.field4034) {
+                     if (443738891 * class730.field2866 == 335731285 * var41.field4034) {
                         continue;
                      }
 
                      class149.method1159(var41, class923.field10295.field3639 != var35.field7022.field3639, -554283505);
-                     var41.field4034 = -339947553 * Client.field2866;
+                     var41.field4034 = -339947553 * class730.field2866;
                   }
 
                   int var61;
@@ -198,11 +198,11 @@ public abstract class class138 {
                            int var49 = (int)var47.field5296 - (-2095128707 * var42.field1637.field9923 - 1 << 8);
                            var21 = (int)var47.field5299 - (var42.field1637.field9923 * -2095128707 - 1 << 8);
 
-                           for(var22 = 0; var22 < Client.field2684 * -1230451913; ++var22) {
-                              class437 var58 = (class437) Client.field2677.method2942((long) Client.field2680[var22]);
+                           for(var22 = 0; var22 < class730.field2684 * -1230451913; ++var22) {
+                              class437 var58 = (class437)class730.field2677.method2942((long)class730.field2680[var22]);
                               if (var58 != null) {
                                  class60 var59 = (class60)var58.field7515;
-                                 if (335731285 * var59.field4034 != Client.field2866 * 443738891 && var59 != var42) {
+                                 if (335731285 * var59.field4034 != class730.field2866 * 443738891 && var59 != var42) {
                                     if (!var59.field4087) {
                                        if (var3 == 202437353) {
                                           throw new IllegalStateException();
@@ -213,7 +213,7 @@ public abstract class class138 {
                                        var27 = (int)var64.field5299 - (-2095128707 * var59.field1637.field9923 - 1 << 8);
                                        if (var68 >= var49 && -2095128707 * var59.field1637.field9923 <= var42.field1637.field9923 * -2095128707 - (var68 - var49 >> 9) && var27 >= var21 && -2095128707 * var59.field1637.field9923 <= -2095128707 * var42.field1637.field9923 - (var27 - var21 >> 9)) {
                                           class554.method424(var59, var35.field7022.field3639 != class923.field10295.field3639, (byte)-62);
-                                          var59.field4034 = -339947553 * Client.field2866;
+                                          var59.field4034 = -339947553 * class730.field2866;
                                        }
                                     }
                                  }
@@ -224,8 +224,8 @@ public abstract class class138 {
                            int[] var60 = class498.field8108;
 
                            for(var61 = 0; var61 < var22; ++var61) {
-                              class946 var66 = Client.field2786[var60[var61]];
-                              if (var66 != null && 335731285 * var66.field4034 != Client.field2866 * 443738891) {
+                              class946 var66 = class730.field2786[var60[var61]];
+                              if (var66 != null && 335731285 * var66.field4034 != class730.field2866 * 443738891) {
                                  if (!var66.field4087) {
                                     if (var3 == 202437353) {
                                        return;
@@ -236,14 +236,14 @@ public abstract class class138 {
                                     var28 = (int)var26.field5299 - (var66.method2550() - 1 << 8);
                                     if (var27 >= var49 && var66.method2550() <= var42.field1637.field9923 * -2095128707 - (var27 - var49 >> 9) && var28 >= var21 && var66.method2550() <= -2095128707 * var42.field1637.field9923 - (var28 - var21 >> 9)) {
                                        class149.method1159(var66, var35.field7022.field3639 != class923.field10295.field3639, 1713781703);
-                                       var66.field4034 = -339947553 * Client.field2866;
+                                       var66.field4034 = -339947553 * class730.field2866;
                                     }
                                  }
                               }
                            }
                         }
 
-                        if (var42.field4034 * 335731285 == 443738891 * Client.field2866) {
+                        if (var42.field4034 * 335731285 == 443738891 * class730.field2866) {
                            if (var3 == 202437353) {
                               throw new IllegalStateException();
                            }
@@ -251,14 +251,14 @@ public abstract class class138 {
                         }
 
                         class554.method424(var42, class923.field10295.field3639 != var35.field7022.field3639, (byte)-73);
-                        var42.field4034 = Client.field2866 * -339947553;
+                        var42.field4034 = class730.field2866 * -339947553;
                      }
                   }
 
                   if (var35.field7022 instanceof class864) {
                      int var44 = -1760580017 * var4.field1521 + var38;
                      var45 = 283514611 * var4.field1522 + var39;
-                     class508 var51 = (class508) Client.field2666.method2942((long)(var35.field7022.field3639 << 28 | var45 << 14 | var44));
+                     class508 var51 = (class508)class730.field2666.method2942((long)(var35.field7022.field3639 << 28 | var45 << 14 | var44));
                      if (var51 != null) {
                         var21 = 0;
 
@@ -272,10 +272,10 @@ public abstract class class138 {
                               var61 = 363537303 * class422.field9604.field2974;
                            }
 
-                           if (Client.field2817 && var35.field7022.field3639 == class923.field10295.field3639) {
+                           if (class730.field2817 && var35.field7022.field3639 == class923.field10295.field3639) {
                               class785 var67 = class354.field2139 * 831522399 != -1 ? class452.field7216.method5148(class354.field2139 * 831522399, 1640464070) : null;
                               if ((class568.field645 * -112110875 & 1) != 0 && (var67 == null || var63.method2683(831522399 * class354.field2139, -388931549 * var67.field3822, -2028636758) != -388931549 * var67.field3822)) {
-                                 class984.method1875(Client.field2820, Client.field2735 + " " + class822.field9048 + " " + class56.method1545(var61, -1803338083) + var63.field4224, class175.field5075 * 697885143, 17, -1, (long)(var55.field5319 * 1768239597), var38, var39, true, false, (long)var21, false, -1282887596);
+                                 class984.method1875(class730.field2820, class730.field2735 + " " + class822.field9048 + " " + class56.method1545(var61, -1803338083) + var63.field4224, class175.field5075 * 697885143, 17, -1, (long)(var55.field5319 * 1768239597), var38, var39, true, false, (long)var21, false, -1282887596);
                               }
                            }
 
@@ -285,7 +285,7 @@ public abstract class class138 {
                               for(var68 = var69.length - 1; var68 >= 0; --var68) {
                                  if (var69[var68] != null) {
                                     short var71 = 0;
-                                    var28 = Client.field2671 * 1395924385;
+                                    var28 = class730.field2671 * 1395924385;
                                     if (var68 == 0) {
                                        var71 = 18;
                                     }
@@ -330,7 +330,7 @@ public abstract class class138 {
 
                   if (var35.field7022 instanceof class265) {
                      class265 var46 = (class265)var35.field7022;
-                     class50 var50 = Client.field2697.method5283(-151154213).method4713(var46.method4551((byte)32));
+                     class50 var50 = class730.field2697.method5283(-151154213).method4713(var46.method4551((byte)32));
                      if (var50.field2198 != null) {
                         var50 = var50.method1487(class827.field9037, 2026923830);
                      }
@@ -340,10 +340,10 @@ public abstract class class138 {
                            return;
                         }
                      } else {
-                        if (Client.field2817 && var35.field7022.field3639 == class923.field10295.field3639) {
+                        if (class730.field2817 && var35.field7022.field3639 == class923.field10295.field3639) {
                            class785 var52 = 831522399 * class354.field2139 != -1 ? class452.field7216.method5148(class354.field2139 * 831522399, -616098570) : null;
                            if ((class568.field645 * -112110875 & 4) != 0 && (var52 == null || var50.method1486(831522399 * class354.field2139, var52.field3822 * -388931549, (byte)2) != -388931549 * var52.field3822)) {
-                              class984.method1875(Client.field2820, Client.field2735 + " " + class822.field9048 + " " + class56.method1545(65535, -1704073338) + var50.field2200, class175.field5075 * 697885143, 2, -1, class131.method893(var46, var38, var39, 2139321433), var38, var39, true, false, (long)var46.hashCode(), false, -978621849);
+                              class984.method1875(class730.field2820, class730.field2735 + " " + class822.field9048 + " " + class56.method1545(65535, -1704073338) + var50.field2200, class175.field5075 * 697885143, 2, -1, class131.method893(var46, var38, var39, 2139321433), var38, var39, true, false, (long)var46.hashCode(), false, -978621849);
                            }
                         }
 
@@ -353,7 +353,7 @@ public abstract class class138 {
                               for(var21 = var53.length - 1; var21 >= 0; --var21) {
                                  if (var53[var21] != null) {
                                     short var57 = 0;
-                                    var54 = Client.field2671 * 1395924385;
+                                    var54 = class730.field2671 * 1395924385;
                                     if (var21 == 0) {
                                        var57 = 3;
                                     }

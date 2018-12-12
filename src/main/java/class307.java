@@ -26,7 +26,7 @@ public class class307 {
          class439 var1 = null;
 
          try {
-            var1 = class22.method3434("2", Client.field2926.field7321, false, -1804643872);
+            var1 = class22.method3434("2", class730.field2926.field7321, false, -1804643872);
             byte[] var2 = new byte[(int)var1.method4277(-1608358371)];
 
             int var4;
@@ -66,7 +66,7 @@ public class class307 {
    static final void method385(byte var0) {
       try {
          class0.method2992(class593.field1623, 556951212);
-         if (1855729883 * class899.field9552 != 191260743 * Client.field2773) {
+         if (1855729883 * class899.field9552 != 191260743 * class730.field2773) {
             class247.method4722((short)-2730);
          }
 
@@ -85,9 +85,9 @@ public class class307 {
 
    static final void method387(int var0) {
       try {
-         if (!class669.method4121(-1233866115 * Client.field2733, 1765230881) && !class162.method3544(-1233866115 * Client.field2733, 1927636725)) {
-            class467.field7301 = Client.field2692.method4377(537308016);
-            Client.field2692.method4375(865497912);
+         if (!class669.method4121(-1233866115 * class730.field2733, 1765230881) && !class162.method3544(-1233866115 * class730.field2733, 1927636725)) {
+            class467.field7301 = class730.field2692.method4377(537308016);
+            class730.field2692.method4375(865497912);
             class967.method1750(5, 2010723010);
          } else {
             class82.method920(false, (byte)23);

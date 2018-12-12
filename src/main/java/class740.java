@@ -49,9 +49,9 @@ public class class740 extends class491 {
                class408.method5470(var6, (byte)-29);
             }
 
-            if (Client.method1761(var5).method1743(var0 - 1, (byte)-25)) {
+            if (class730.method1761(var5).method1743(var0 - 1, (byte)-25)) {
                class684 var11 = class423.method5712((short)512);
-               if (-1233866115 * Client.field2733 == 14 || Client.field2733 * -1233866115 == 0) {
+               if (-1233866115 * class730.field2733 == 14 || class730.field2733 * -1233866115 == 0) {
                   int var7 = var1 >> 16;
                   int var8 = var1 - (var7 << 16);
                   if (var7 == 746 && (var8 == 78 || var8 == 102)) {
@@ -60,7 +60,7 @@ public class class740 extends class491 {
                      field3214 = false;
                   }
 
-                  if ((var7 == 762 || var7 == 679) && Client.field2618) {
+                  if ((var7 == 762 || var7 == 679) && class730.field2618) {
                      switch(var0) {
                      case 1:
                         var0 = 8;

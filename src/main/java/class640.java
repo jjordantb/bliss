@@ -140,7 +140,7 @@ public class class640 {
    static final void method6187(class563 var0, boolean var1, byte var2) {
       try {
          if (var0.field1079) {
-            if (-1188221251 * var0.field1067 < 0 || class554.method428(Client.field2697.method5283(681883413), -1188221251 * var0.field1067, -366156959 * var0.field1073, (byte)-3)) {
+            if (-1188221251 * var0.field1067 < 0 || class554.method428(class730.field2697.method5283(681883413), -1188221251 * var0.field1067, -366156959 * var0.field1073, (byte)-3)) {
                if (!var1) {
                   class745.method2596(var0.field1070 * 2108312995, var0.field1076 * -431456739, var0.field1069 * 634196087, var0.field1074 * -2146829167, var0.field1067 * -1188221251, var0.field1080 * -1234291173, -366156959 * var0.field1073, -1, -1628738260);
                } else {
@@ -149,7 +149,7 @@ public class class640 {
 
                var0.method545(-1460969981);
             }
-         } else if (var0.field1078 && 634196087 * var0.field1069 >= 1 && var0.field1074 * -2146829167 >= 1 && 634196087 * var0.field1069 <= Client.field2697.method5271(-2002349453) - 2 && var0.field1074 * -2146829167 <= Client.field2697.method5272(1538814162) - 2 && (var0.field1075 * 856355825 < 0 || class554.method428(Client.field2697.method5283(-2135125377), var0.field1075 * 856355825, 205923815 * var0.field1072, (byte)-66))) {
+         } else if (var0.field1078 && 634196087 * var0.field1069 >= 1 && var0.field1074 * -2146829167 >= 1 && 634196087 * var0.field1069 <= class730.field2697.method5271(-2002349453) - 2 && var0.field1074 * -2146829167 <= class730.field2697.method5272(1538814162) - 2 && (var0.field1075 * 856355825 < 0 || class554.method428(class730.field2697.method5283(-2135125377), var0.field1075 * 856355825, 205923815 * var0.field1072, (byte)-66))) {
             if (!var1) {
                class745.method2596(var0.field1070 * 2108312995, -431456739 * var0.field1076, var0.field1069 * 634196087, var0.field1074 * -2146829167, 856355825 * var0.field1075, var0.field1068 * -674934345, var0.field1072 * 205923815, -1, 628810012);
             } else {

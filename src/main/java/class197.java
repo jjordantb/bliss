@@ -122,7 +122,7 @@ public class class197 implements class70 {
          int var2 = var0.field3161[var0.field3156 * 681479919];
          int var3 = var0.field3161[var0.field3156 * 681479919 + 1];
          if (var2 >= 0 && var2 < 2) {
-            Client.field2748[var2] = new int[var3 << 1][4];
+            class730.field2748[var2] = new int[var3 << 1][4];
          }
 
       } catch (RuntimeException var4) {

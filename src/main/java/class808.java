@@ -45,19 +45,19 @@ public class class808 {
    static final void method2892(class513 var0, int var1) {
       try {
          var0.method2650(1910675333);
-         int var2 = Client.field2623 * -442628795;
-         class946 var3 = class923.field10295 = Client.field2786[var2] = new class946(Client.field2697.method5317(-1611682495));
+         int var2 = class730.field2623 * -442628795;
+         class946 var3 = class923.field10295 = class730.field2786[var2] = new class946(class730.field2697.method5317(-1611682495));
          var3.field4028 = var2 * 1714292119;
          int var4 = var0.method2647(30);
          byte var5 = (byte)(var4 >> 28);
          int var6 = var4 >> 14 & 16383;
          int var7 = var4 & 16383;
-         class389 var8 = Client.field2697.method5270(681479919);
+         class389 var8 = class730.field2697.method5270(681479919);
          var3.field4085[0] = var6 - -1760580017 * var8.field1521;
          var3.field4055[0] = var7 - var8.field1522 * 283514611;
          var3.method1515((float)((var3.field4085[0] << 9) + (var3.method2550() << 8)), var3.method1517().field7637.field5300, (float)((var3.field4055[0] << 9) + (var3.method2550() << 8)));
          class899.field9552 = (var3.field3639 = var3.field3640 = var5) * -85701805;
-         if (Client.field2697.method5296(1740552362).method3386(var3.field4085[0], var3.field4055[0], -14939637)) {
+         if (class730.field2697.method5296(1740552362).method3386(var3.field4085[0], var3.field4055[0], -14939637)) {
             var3.field3640 = (byte)(var3.field3640 + 1);
          }
 

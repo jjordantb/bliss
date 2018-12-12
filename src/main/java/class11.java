@@ -5,8 +5,8 @@ public class class11 {
 
    static final void method3571(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)(Client.field2626 * -5648129435911399733L >> 32);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)(Client.field2626 * -5648129435911399733L & -1L);
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)(class730.field2626 * -5648129435911399733L >> 32);
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)(class730.field2626 * -5648129435911399733L & -1L);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "lk.ahf(" + ')');
       }
@@ -80,7 +80,7 @@ public class class11 {
             class302.field3768.method123(-4360787748556788915L * class657.field9542, class503.field4102, 1131632499 * class657.field9548, class776.field3728, -130919578);
             if (class657.field9544 != null) {
                for(int var3 = 1 + -1936794913 * class657.field9545; var3 < class657.field9544.length; ++var3) {
-                  if (class657.field9544[var3].method6324((byte)31) >= 100 && -1936794913 * class657.field9545 == var3 - 1 && 12 != -1233866115 * Client.field2733 && class302.field3768.method115(-1321940215)) {
+                  if (class657.field9544[var3].method6324((byte)31) >= 100 && -1936794913 * class657.field9545 == var3 - 1 && 12 != -1233866115 * class730.field2733 && class302.field3768.method115(-1321940215)) {
                      try {
                         class657.field9544[var3].method6315(-1481032979);
                      } catch (Exception var5) {

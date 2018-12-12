@@ -15,7 +15,7 @@ public class class406 {
          class912.field10424.method5512((byte)16);
          class5.field4944.method1306(159760523);
          class837.field9161.setBackground(Color.black);
-         Client.field2816 = 766301529;
+         class730.field2816 = 766301529;
          class381.field1417 = class134.method1035(class837.field9161, 974053514);
          class912.field10424 = class69.method1335(class837.field9161, true, (short)391);
       } catch (RuntimeException var2) {

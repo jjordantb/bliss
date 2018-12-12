@@ -469,7 +469,7 @@ public abstract class class353 {
                   class471 var1 = class695.method3937(class601.field9195 * -64101949, (byte)-50);
                   if (var1 != null && -1 == var1.field8238 * 512449113) {
                      if (class601.field9202 == null) {
-                        class601.field9202 = Client.field2696.method5472(var1.field8236, (byte)111);
+                        class601.field9202 = class730.field2696.method5472(var1.field8236, (byte)111);
                      }
 
                      int var2 = class601.field9202.field544 * -747638219;

@@ -48,7 +48,7 @@ public class class650 implements class940 {
       try {
          if (!this.field9425 && this.field9434 == null) {
             try {
-               String[] var3 = class715.method2097(Client.field2630, ',', 1855531743);
+               String[] var3 = class715.method2097(class730.field2630, ',', 1855531743);
                if (var3.length != 23) {
                   this.field9425 = true;
                }
@@ -205,7 +205,7 @@ public class class650 implements class940 {
    public void method6320(boolean var1) {
       if (!this.field9425 && this.field9434 == null) {
          try {
-            String[] var2 = class715.method2097(Client.field2630, ',', 1881820708);
+            String[] var2 = class715.method2097(class730.field2630, ',', 1881820708);
             if (var2.length != 23) {
                this.field9425 = true;
             }
@@ -362,7 +362,7 @@ public class class650 implements class940 {
 
    void method5629(byte var1) {
       try {
-         class4.method2965(class302.field3768.method118(-15916663), class302.field3768.method119((short)1984), Client.field2670[745003679 * Client.field2953], Client.field2682[Client.field2953 * 745003679], Client.field2672[745003679 * Client.field2953], (byte)-117);
+         class4.method2965(class302.field3768.method118(-15916663), class302.field3768.method119((short)1984), class730.field2670[745003679 * class730.field2953], class730.field2682[class730.field2953 * 745003679], class730.field2672[745003679 * class730.field2953], (byte)-117);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jm.i(" + ')');
       }
@@ -406,7 +406,7 @@ public class class650 implements class940 {
    public void method6321(boolean var1) {
       if (!this.field9425 && this.field9434 == null) {
          try {
-            String[] var2 = class715.method2097(Client.field2630, ',', 1134178210);
+            String[] var2 = class715.method2097(class730.field2630, ',', 1134178210);
             if (var2.length != 23) {
                this.field9425 = true;
             }
@@ -601,8 +601,8 @@ public class class650 implements class940 {
    static final void method5632(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         if (Client.field2924 * 1131012101 != 0 && var2 < Client.field2934 * -548972447) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = Client.field2936[var2];
+         if (class730.field2924 * 1131012101 != 0 && var2 < class730.field2934 * -548972447) {
+            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class730.field2936[var2];
          } else {
             var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
          }

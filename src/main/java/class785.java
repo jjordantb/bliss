@@ -60,7 +60,7 @@ public class class785 {
    static void method2382(String var0, String var1, int var2) {
       try {
          class881.field10140 = Loader.field6962 ? -1058684408 : 471358088;
-         class881.field10177 = Loader.field6962 ? Client.field2674 : Client.field2692;
+         class881.field10177 = Loader.field6962 ? class730.field2674 : class730.field2692;
          class521.method2751(false, false, var0, var1, -1L);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "um.z(" + ')');

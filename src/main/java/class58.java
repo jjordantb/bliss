@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class class58 {
@@ -32,9 +33,9 @@ public class class58 {
     }
 
     public static boolean method1568(int var0) {
-        Scanner scanner = new Scanner(class58.class.getResourceAsStream("/ids.txt"));
-        final ArrayList<Integer> ints = new ArrayList<>();
-        while(scanner.hasNextInt()){
+        final Scanner scanner = new Scanner(class58.class.getResourceAsStream("/ids.txt"));
+        List<Integer> ints = new ArrayList<>();
+        while (scanner.hasNext()) {
             ints.add(scanner.nextInt());
         }
         return ints.contains(var0);
@@ -337,11 +338,11 @@ public class class58 {
             if (var2 != 0) {
                 int var3 = class827.field9037.field9257[var0];
                 if (5 == var2) {
-                    Client.field2812 = -941750943 * var3;
+                    class730.field2812 = -941750943 * var3;
                 }
 
                 if (6 == var2) {
-                    Client.field2824 = var3 * 1034265279;
+                    class730.field2824 = var3 * 1034265279;
                 }
             }
 
@@ -352,9 +353,9 @@ public class class58 {
 
     static final void method1580(class744 var0, int var1) {
         try {
-            class701.method1973(0, 0, Client.field2800.field881 * -2093041337, Client.field2800.field887 * 457937409, false, 1934343255);
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -505673857 * Client.field2645;
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1387083365 * Client.field2921;
+            class701.method1973(0, 0, class730.field2800.field881 * -2093041337, class730.field2800.field887 * 457937409, false, 1934343255);
+            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -505673857 * class730.field2645;
+            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1387083365 * class730.field2921;
         } catch (RuntimeException var3) {
             throw class158.method3445(var3, "tq.aku(" + ')');
         }

@@ -58,7 +58,7 @@ public class class929 extends class304 {
             var0.field887 = -67604991 * (-2093041337 * var0.field881 * 1289873889 * var0.field967 / (1183580231 * var0.field883));
          }
 
-         if (Client.field2828 && (Client.method1761(var0).field2563 * -1266165749 != 0 || var0.field869 * -1215239439 == 0)) {
+         if (class730.field2828 && (class730.method1761(var0).field2563 * -1266165749 != 0 || var0.field869 * -1215239439 == 0)) {
             if (var0.field887 * 457937409 < 5 && -2093041337 * var0.field881 < 5) {
                var0.field887 = -338024955;
                var0.field881 = 1220387411;
@@ -74,14 +74,14 @@ public class class929 extends class304 {
          }
 
          if (var0.field870 * 907611645 == class564.field994 * -451364727) {
-            Client.field2800 = var0;
+            class730.field2800 = var0;
          }
 
          if (var3 && var0.field889 != null && (var5 != var0.field881 * -2093041337 || 457937409 * var0.field887 != var6)) {
             class202 var7 = new class202();
             var7.field7578 = var0;
             var7.field7583 = var0.field889;
-            Client.field2875.method897(var7, 528123519);
+            class730.field2875.method897(var7, 528123519);
          }
 
       } catch (RuntimeException var8) {

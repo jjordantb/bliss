@@ -67,8 +67,8 @@ public class class611 extends class535 {
 
    static void method5155(class848 var0, int var1, int var2, class564 var3, class23 var4, int var5, int var6, int var7) {
       try {
-         for(int var8 = 0; var8 < Client.field2684 * -1230451913; ++var8) {
-            class437 var9 = (class437) Client.field2677.method2942((long) Client.field2680[var8]);
+         for(int var8 = 0; var8 < class730.field2684 * -1230451913; ++var8) {
+            class437 var9 = (class437)class730.field2677.method2942((long)class730.field2680[var8]);
             if (var9 != null) {
                class60 var10 = (class60)var9.field7515;
                if (var10.method1241(1140952765) && class923.field10295.field3639 == var10.field3639) {

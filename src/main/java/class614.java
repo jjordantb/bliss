@@ -14,7 +14,7 @@ public class class614 {
 
    int method5185(int var1) {
       try {
-         return Client.field2720[this.field8885 * -1511232243];
+         return class730.field2720[this.field8885 * -1511232243];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "qz.a(" + ')');
       }
@@ -36,19 +36,19 @@ public class class614 {
    class265 method5187(int var1) {
       try {
          int var2 = 1008331379 * this.field8887.field1523;
-         class389 var3 = Client.field2697.method5270(681479919);
+         class389 var3 = class730.field2697.method5270(681479919);
          int var4 = this.field8887.field1521 * -1760580017 - var3.field1521 * -1760580017;
          int var5 = this.field8887.field1522 * 283514611 - var3.field1522 * 283514611;
-         if (var4 >= 0 && var5 >= 0 && var4 < Client.field2697.method5271(-1998327105) && var5 < Client.field2697.method5272(539294898)) {
+         if (var4 >= 0 && var5 >= 0 && var4 < class730.field2697.method5271(-1998327105) && var5 < class730.field2697.method5272(539294898)) {
             switch(this.method5185(-2091768912)) {
             case 0:
-               return (class265) Client.field2697.method5317(-1611682495).method2425(var2, var4, var5, 1566382166);
+               return (class265)class730.field2697.method5317(-1611682495).method2425(var2, var4, var5, 1566382166);
             case 1:
-               return (class265) Client.field2697.method5317(-1611682495).method2427(var2, var4, var5, 1080081135);
+               return (class265)class730.field2697.method5317(-1611682495).method2427(var2, var4, var5, 1080081135);
             case 2:
-               return (class265) Client.field2697.method5317(-1611682495).method2429(var2, var4, var5, Client.field2942, -1306218271);
+               return (class265)class730.field2697.method5317(-1611682495).method2429(var2, var4, var5, class730.field2942, -1306218271);
             case 3:
-               return (class265) Client.field2697.method5317(-1611682495).method2452(var2, var4, var5, (byte)72);
+               return (class265)class730.field2697.method5317(-1611682495).method2452(var2, var4, var5, (byte)72);
             default:
                return null;
             }
@@ -127,7 +127,7 @@ public class class614 {
       try {
          class615.field8903.method5391(class615.field8903.field9124, var0.field3161[(var0.field3156 -= -391880689) * 681479919], 417121289);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "qz.ain(" + ')');
       }

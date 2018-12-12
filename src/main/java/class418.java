@@ -58,7 +58,7 @@ public class class418 {
 
    void method5667(byte var1) {
       try {
-         this.field9564.method5063((0.7F + (float)class615.field8903.field9118.method5874(-712203354) * 0.1F + Client.field2697.method5275(2016671740)) * this.field9571.field4933);
+         this.field9564.method5063((0.7F + (float)class615.field8903.field9118.method5874(-712203354) * 0.1F + class730.field2697.method5275(2016671740)) * this.field9571.field4933);
          this.field9564.method4872(-1951302757 * this.field9571.field4936, this.field9571.field4934, this.field9571.field4940, (float)((int)this.field9569.field5296 << 2), (float)((int)this.field9569.field5300 << 2), (float)((int)this.field9569.field5299 << 2));
          this.field9564.method4950(this.field9571.field4939);
       } catch (RuntimeException var3) {
@@ -137,7 +137,7 @@ public class class418 {
 
    public void method5672(class623 var1, int var2) {
       try {
-         if (!class162.method3544(-1233866115 * Client.field2733, 2068577506) && !class669.method4121(-1233866115 * Client.field2733, 1765230881)) {
+         if (!class162.method3544(-1233866115 * class730.field2733, 2068577506) && !class669.method4121(-1233866115 * class730.field2733, 1765230881)) {
             int var3 = -1;
             int var4 = -1;
             if (class923.field10295 != null) {
@@ -181,7 +181,7 @@ public class class418 {
 
    public void method5675(byte var1) {
       try {
-         this.field9564.method5063((0.7F + (float)class615.field8903.field9118.method5874(-1693044274) * 0.1F + Client.field2697.method5275(1910914073)) * 1.1523438F);
+         this.field9564.method5063((0.7F + (float)class615.field8903.field9118.method5874(-1693044274) * 0.1F + class730.field2697.method5275(1910914073)) * 1.1523438F);
          this.field9564.method4872(field9573 * 332664479, 0.69921875F, 1.2F, -200.0F, -240.0F, -200.0F);
          this.field9564.method4874(field9554 * -1971415573, -1, 0);
          this.field9564.method4950(class842.field9213);

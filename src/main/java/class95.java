@@ -24,7 +24,7 @@ public class class95 {
          class439 var1 = null;
 
          try {
-            var1 = class22.method3434("", Client.field2926.field7321, true, -1804643872);
+            var1 = class22.method3434("", class730.field2926.field7321, true, -1804643872);
             class907 var2 = class615.field8903.method5393(-804179286);
             var1.method4275(var2.field10375, 0, var2.field10376 * 385051775, -1257925796);
          } catch (Exception var4) {
@@ -49,7 +49,7 @@ public class class95 {
          class615.field8903.method5391(class615.field8903.field9123, var0.field3161[(var0.field3156 -= -391880689) * 681479919] == 1 ? 1 : 0, -223155318);
          method523(656179282);
          class362.method1508(1660250591);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ad.aim(" + ')');
       }

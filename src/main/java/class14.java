@@ -176,7 +176,7 @@ public abstract class class14 {
                var2.field3364.method6361(var4 / var5);
                var2.field3364.method6361(var4 % var5);
                var2.field3364.field10376 = 116413311 * var14;
-               Client.field2692.method4380(var2, (byte)-85);
+               class730.field2692.method4380(var2, (byte)-85);
             }
          }
 

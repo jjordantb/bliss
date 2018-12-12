@@ -67,7 +67,7 @@ public class class747 {
             }
 
             class881.field10145 = var0 * 2035975497;
-            Client.field2674.method4374((byte)49);
+            class730.field2674.method4374((byte)49);
             class967.method1750(4, 1551250847);
          }
 

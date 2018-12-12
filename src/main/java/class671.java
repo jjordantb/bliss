@@ -48,8 +48,8 @@ public class class671 implements class331 {
          class615.field8903.method5391(class615.field8903.field9132, 2, 1293702073);
          class615.field8903.method5391(class615.field8903.field9142, 2, 359344447);
          class362.method1508(123459893);
-         Client.field2697.method5282((byte)-42).method5673(-1416696139);
-         Client.field2657 = true;
+         class730.field2697.method5282((byte)-42).method5673(-1416696139);
+         class730.field2657 = true;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "ni.x(" + ')');
       }

@@ -275,7 +275,7 @@ public class class22 {
    static void method3438(String var0, String var1, short var2) {
       try {
          class881.field10140 = 471358088;
-         class881.field10177 = Client.field2692;
+         class881.field10177 = class730.field2692;
          class521.method2751(false, false, var0, var1, -1L);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "dm.t(" + ')');
@@ -289,9 +289,9 @@ public class class22 {
             class540.field3920 = -184109511 * var0;
             class800.field4577 = null;
             class508.field3967 = null;
-            class701 var4 = class637.method5936(class643.field9941, Client.field2692.field7765, (byte)49);
+            class701 var4 = class637.method5936(class643.field9941, class730.field2692.field7765, (byte)49);
             var4.field3364.method6364(-1, -735665420);
-            Client.field2692.method4380(var4, (byte)-21);
+            class730.field2692.method4380(var4, (byte)-21);
          } else {
             var1 = var1 * class615.field8903.field9150.method2717(-2143915756) >> 8;
             if (var0 == -1 && !class540.field3921) {

@@ -12,17 +12,17 @@ public class class878 {
 
    public class864 method5918(byte var1) {
       try {
-         class508 var2 = (class508) Client.field2666.method2942((long)(this.field9817.field1523 * 1008331379 << 28 | 283514611 * this.field9817.field1522 << 14 | -1760580017 * this.field9817.field1521));
+         class508 var2 = (class508)class730.field2666.method2942((long)(this.field9817.field1523 * 1008331379 << 28 | 283514611 * this.field9817.field1522 << 14 | -1760580017 * this.field9817.field1521));
          if (var2 == null) {
             return null;
          } else {
-            class389 var3 = Client.field2697.method5270(681479919);
+            class389 var3 = class730.field2697.method5270(681479919);
             int var4 = -1760580017 * this.field9817.field1521 - var3.field1521 * -1760580017;
             int var5 = 283514611 * this.field9817.field1522 - 283514611 * var3.field1522;
-            if (var4 >= 0 && var5 >= 0 && var4 < Client.field2697.method5271(-2079172057) && var5 < Client.field2697.method5272(-583720048)) {
+            if (var4 >= 0 && var5 >= 0 && var4 < class730.field2697.method5271(-2079172057) && var5 < class730.field2697.method5272(-583720048)) {
                for(class31 var6 = (class31)var2.field3966.method901(1766612795); var6 != null; var6 = (class31)var2.field3966.method906(49146)) {
                   if (-1600299847 * this.field9818 == var6.field5319 * 1768239597) {
-                     return (class864) Client.field2697.method5317(-1611682495).method2428(this.field9817.field1523 * 1008331379, var4, var5, -1919026118);
+                     return (class864)class730.field2697.method5317(-1611682495).method2428(this.field9817.field1523 * 1008331379, var4, var5, -1919026118);
                   }
                }
             }
@@ -74,7 +74,7 @@ public class class878 {
 
    static boolean method5922(byte var0) {
       try {
-         if (19 != -1233866115 * Client.field2733) {
+         if (19 != -1233866115 * class730.field2733) {
             return false;
          } else {
             return !class673.method4261((byte)-29) && !class556.method431(-391880689);

@@ -192,9 +192,9 @@ public class class807 {
    static final void method2830(class744 var0, byte var1) {
       try {
          class615.field8903.method5391(class615.field8903.field9122, var0.field3161[(var0.field3156 -= -391880689) * 681479919] == 1 ? 1 : 0, -802327901);
-         Client.field2697.method5309(549218846);
+         class730.field2697.method5309(549218846);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "in.aii(" + ')');
       }
@@ -208,9 +208,9 @@ public class class807 {
             var3 = class82.method917(var2, (short)6366);
          }
 
-         class701 var4 = class637.method5936(class643.field10011, Client.field2692.field7765, (byte)125);
+         class701 var4 = class637.method5936(class643.field10011, class730.field2692.field7765, (byte)125);
          var4.field3364.method6364(var3, -1055367891);
-         Client.field2692.method4380(var4, (byte)-42);
+         class730.field2692.method4380(var4, (byte)-42);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "in.sz(" + ')');
       }

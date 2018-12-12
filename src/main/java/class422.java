@@ -123,8 +123,8 @@ public class class422 {
 
    public static void method5724(byte var0) {
       try {
-         if (Client.field2817) {
-            class564 var1 = class554.method427(class543.field3820 * 1262526353, 392084321 * Client.field2818, -156511736);
+         if (class730.field2817) {
+            class564 var1 = class554.method427(class543.field3820 * 1262526353, 392084321 * class730.field2818, -156511736);
             if (var1 != null && var1.field845 != null) {
                class202 var2 = new class202();
                var2.field7578 = var1;
@@ -132,9 +132,9 @@ public class class422 {
                class408.method5470(var2, (byte)77);
             }
 
-            Client.field2919 = 280458557;
-            Client.field2888 = -398138063;
-            Client.field2817 = false;
+            class730.field2919 = 280458557;
+            class730.field2888 = -398138063;
+            class730.field2817 = false;
             if (var1 != null) {
                class814.method2932(var1, -1858273017);
             }

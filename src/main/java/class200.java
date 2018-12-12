@@ -54,7 +54,7 @@ public class class200 {
    static final void method4350(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         int var3 = Client.field2902[var2].method6657(-574288948);
+         int var3 = class730.field2902[var2].method6657(-574288948);
          var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3 == 5 ? 1 : 0;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "en.ye(" + ')');
@@ -63,7 +63,7 @@ public class class200 {
 
    static final void method4351(class564 var0, class744 var1, byte var2) {
       try {
-         class230 var3 = var0.method823(class785.field3827, Client.field2681, (byte)88);
+         class230 var3 = var0.method823(class785.field3827, class730.field2681, (byte)88);
          int var4 = var1.field3161[(var1.field3156 -= -391880689) * 681479919];
          int var5 = var1.field3161[(var1.field3156 -= -391880689) * 681479919];
          int var6 = var3.method4602(var0.field937, var0.field881 * -2093041337, var0.field916 * 418216501, var5, var4, class324.field621, (byte)-62);

@@ -70,7 +70,7 @@ public final class class170 {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
          class564 var3 = class449.method3756(var2, (byte)-49);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.method1761(var3).method1742((byte)14);
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.method1761(var3).method1742((byte)14);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ot.sr(" + ')');
       }
@@ -190,7 +190,7 @@ public final class class170 {
 
             if (var12) {
                if (!((class28)class403.field10092.method6142(-1994130525)).method3533(104668639)) {
-                  Client.field2787 = class5.field4944.method1317(-2027084439);
+                  class730.field2787 = class5.field4944.method1317(-2027084439);
                }
 
                class947.field3315 = null;

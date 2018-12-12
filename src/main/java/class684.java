@@ -109,7 +109,7 @@ public class class684 {
 
    void method4378(byte var1) {
       try {
-         if (Client.field2866 * 443738891 % 50 == 0) {
+         if (class730.field2866 * 443738891 % 50 == 0) {
             this.field7762 = -514533411 * this.field7777;
             this.field7777 = 0;
             this.field7778 = this.field7776 * 65385213;
@@ -207,7 +207,7 @@ public class class684 {
 
          class503.field4100[0] = var9;
          class503.field4098 += 760013237;
-         Client.field2864 = Client.field2915 * 1619726147;
+         class730.field2864 = class730.field2915 * 1619726147;
       } catch (RuntimeException var11) {
          throw class158.method3445(var11, "az.i(" + ')');
       }

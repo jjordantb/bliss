@@ -141,8 +141,8 @@ public class class637 {
 
    public static void method5939(String var0, String var1, int var2, boolean var3, int var4) {
       try {
-         if (Client.field2733 * -1233866115 == 8) {
-            class701 var5 = method5936(class643.field10009, Client.field2674.field7765, (byte)19);
+         if (class730.field2733 * -1233866115 == 8) {
+            class701 var5 = method5936(class643.field10009, class730.field2674.field7765, (byte)19);
             var5.field3364.method6362(0, 16711935);
             int var6 = 385051775 * var5.field3364.field10376;
             var5.field3364.method6366(var0, 2138689470);
@@ -152,9 +152,9 @@ public class class637 {
             var5.field3364.field10376 += 814893177;
             var5.field3364.method6388(class861.field9024, var6, var5.field3364.field10376 * 385051775, -1325657598);
             var5.field3364.method6369(385051775 * var5.field3364.field10376 - var6, 1585504133);
-            Client.field2674.method4380(var5, (byte)-20);
+            class730.field2674.method4380(var5, (byte)-20);
             if (var2 < 13) {
-               Client.field2661 = true;
+               class730.field2661 = true;
                class806.method2842((byte)12);
             }
 

@@ -344,7 +344,7 @@ public class class729 extends class676 implements class265 {
          if (this.field2499 || var4.field2273) {
             this.field2500 = this.field2500.method6017((byte)0, var14, false);
             if (var4.field2273) {
-               class923 var16 = Client.field2697.method5274(-2131923625);
+               class923 var16 = class730.field2697.method5274(-2131923625);
                this.field2500.method5987(var16.field10290 * 1599271859, 1630923113 * var16.field10291, var16.field10292 * -1560648831, var16.field10293 * -57569897);
             }
          }

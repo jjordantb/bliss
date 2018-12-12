@@ -15,7 +15,7 @@ public class class78 {
 
    static final void method1124(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 443738891 * Client.field2866;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 443738891 * class730.field2866;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "gq.tx(" + ')');
       }

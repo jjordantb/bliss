@@ -33,10 +33,10 @@ final class class455 implements class648 {
    static class838 method3817(int var0) {
       try {
          class439 var1 = null;
-         class838 var2 = new class838(Client.field2926, 0);
+         class838 var2 = new class838(class730.field2926, 0);
 
          try {
-            var1 = class22.method3434("", Client.field2926.field7321, false, -1804643872);
+            var1 = class22.method3434("", class730.field2926.field7321, false, -1804643872);
             byte[] var3 = new byte[(int)var1.method4277(-423906976)];
 
             int var5;
@@ -47,7 +47,7 @@ final class class455 implements class648 {
                }
             }
 
-            var2 = new class838(new class907(var3), Client.field2926, 0);
+            var2 = new class838(new class907(var3), class730.field2926, 0);
          } catch (Exception var7) {
             ;
          }

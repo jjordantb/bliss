@@ -122,7 +122,7 @@ public class class299 {
             var8 = 100;
          }
 
-         int var9 = Client.field2905 + var8 * (Client.field2913 - Client.field2905) / 100;
+         int var9 = class730.field2905 + var8 * (class730.field2913 - class730.field2905) / 100;
          var5 = var9 * var5 >> 8;
          int var10 = 16384 - var3 & 16383;
          int var11 = 16384 - var4 & 16383;
@@ -142,7 +142,7 @@ public class class299 {
          class103.field205 = (var0 - var12) * 547882953;
          class184.field5230 = 1078403147 * (var1 - var13);
          class7.field4918 = (var2 - var14) * 309839105;
-         Client.field2737 = -648269561 * var3;
+         class730.field2737 = -648269561 * var3;
          class232.field8266 = -1587695039 * var4;
          class791.field446 = 0;
       } catch (RuntimeException var15) {

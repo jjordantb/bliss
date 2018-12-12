@@ -48,8 +48,8 @@ public class class942 {
          if (var0 == null) {
             return false;
          } else {
-            for(int var2 = 0; var2 < Client.field2923 * -1054937867; ++var2) {
-               if (var0.equalsIgnoreCase(Client.field2685[var2])) {
+            for(int var2 = 0; var2 < class730.field2923 * -1054937867; ++var2) {
+               if (var0.equalsIgnoreCase(class730.field2685[var2])) {
                   return true;
                }
             }

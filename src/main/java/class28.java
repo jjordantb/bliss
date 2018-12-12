@@ -70,7 +70,7 @@ public class class28 implements class311 {
    static final void method3534(class744 var0, int var1) {
       try {
          String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         if (Client.field2790 * 1806357379 != 0 || (!Client.field2792 || Client.field2793) && !Client.field2783) {
+         if (class730.field2790 * 1806357379 != 0 || (!class730.field2792 || class730.field2793) && !class730.field2783) {
             String var3 = var2.toLowerCase();
             byte var4 = 0;
             if (var3.startsWith(class814.field4807.method2927(class423.field9583, -875414210))) {

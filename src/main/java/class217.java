@@ -6,7 +6,7 @@ public interface class217 {
 
    void method3942(Graphics var1);
 
-   void supplyApplet(Applet var1);
+   void method3943(Applet var1);
 
    void method3944();
 

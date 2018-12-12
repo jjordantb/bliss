@@ -53,7 +53,7 @@ public class class27 {
          int var10 = var1.method2555((byte)1);
          if (var10 != -1) {
             Object var11 = null;
-            class48 var12 = (class48) Client.field2678.method2974((long)var10);
+            class48 var12 = (class48)class730.field2678.method2974((long)var10);
             if (var12 == null) {
                class922[] var13 = class922.method6248(class562.field827, var10, 0);
                if (var13 == null) {
@@ -61,13 +61,13 @@ public class class27 {
                }
 
                var12 = class593.field1623.method4982(var13[0], true);
-               Client.field2678.method2984(var12, (long)var10);
+               class730.field2678.method2984(var12, (long)var10);
             }
 
             class32 var18 = var0.method1511().field7637;
             class176.method3171(var0.field3639, (int)var18.field5296, (int)var18.field5299, var0.method2550() * 256, 0, false, 2131920659);
-            int var14 = (int)((float)var3 + Client.field2873[0] - 18.0F);
-            int var15 = (int)((float)var4 + Client.field2873[1] - 16.0F - 54.0F);
+            int var14 = (int)((float)var3 + class730.field2873[0] - 18.0F);
+            int var15 = (int)((float)var4 + class730.field2873[1] - 16.0F - 54.0F);
             var14 += var2 / 4 * 18;
             var15 += 18 * (var2 % 4);
             var12.method3128(var14, var15);
@@ -81,7 +81,7 @@ public class class27 {
             var16.field1797 = var15 * -783084201;
             var16.field1798 = 1997526347 * (var14 + 16);
             var16.field1799 = 1675098759 * (var15 + 16);
-            Client.field2762.method5209(var16, -69122600);
+            class730.field2762.method5209(var16, -69122600);
          }
 
       } catch (RuntimeException var17) {

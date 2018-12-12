@@ -62,7 +62,7 @@ public class class968 extends class535 {
 
    static final void method1736(int var0) {
       try {
-         Iterator var1 = Client.field2806.iterator();
+         Iterator var1 = class730.field2806.iterator();
 
          while(var1.hasNext()) {
             class178 var2 = (class178)var1.next();
@@ -71,8 +71,8 @@ public class class968 extends class535 {
             if (var3.method3381(1662190190)) {
                var2.method545(-1460969981);
                var3.method3377((byte)54);
-            } else if (Client.field2697.method5317(-1611682495) != null && var3.method3378((byte)-116)) {
-               Client.field2697.method5317(-1611682495).method2416(var3, true, (byte)0);
+            } else if (class730.field2697.method5317(-1611682495) != null && var3.method3378((byte)-116)) {
+               class730.field2697.method5317(-1611682495).method2416(var3, true, (byte)0);
             }
          }
 

@@ -79,7 +79,7 @@ public class class662 {
 
    static final void method5804(class744 var0, int var1) {
       try {
-         if (Client.field2616) {
+         if (class730.field2616) {
             field9731.method5799(-1282139057);
          }
 

@@ -56,7 +56,7 @@ public class class652 extends class568 {
    static final void method5638(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = Client.field2939[var2] ? 1 : 0;
+         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2939[var2] ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "aax.wu(" + ')');
       }

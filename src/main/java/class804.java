@@ -45,9 +45,9 @@ public class class804 extends class304 {
    static final void method2825(class744 var0, int var1) {
       try {
          class615.field8903.method5391(class615.field8903.field9147, var0.field3161[(var0.field3156 -= -391880689) * 681479919], -2102625264);
-         Client.field2697.method5309(732894181);
+         class730.field2697.method5309(732894181);
          class95.method523(656179282);
-         Client.field2647 = false;
+         class730.field2647 = false;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "yf.aib(" + ')');
       }
@@ -93,18 +93,18 @@ public class class804 extends class304 {
    static final void method2827(class744 var0, byte var1) {
       try {
          var0.field3156 -= -1175642067;
-         Client.field2819 = 1583527743 * var0.field3161[681479919 * var0.field3156];
+         class730.field2819 = 1583527743 * var0.field3161[681479919 * var0.field3156];
          class184.field5231 = class11.method3572(var0.field3161[var0.field3156 * 681479919 + 1], 2087599862);
          if (class184.field5231 == null) {
             class184.field5231 = class12.field6677;
          }
 
-         Client.field2895 = -1777248765 * var0.field3161[2 + var0.field3156 * 681479919];
+         class730.field2895 = -1777248765 * var0.field3161[2 + var0.field3156 * 681479919];
          class684 var2 = class423.method5712((short)512);
          class701 var3 = class637.method5936(class643.field9990, var2.field7765, (byte)32);
-         var3.field3364.method6361(-1168328513 * Client.field2819);
+         var3.field3364.method6361(-1168328513 * class730.field2819);
          var3.field3364.method6361(1790024195 * class184.field5231.field6679);
-         var3.field3364.method6361(Client.field2895 * -1710848853);
+         var3.field3364.method6361(class730.field2895 * -1710848853);
          var2.method4380(var3, (byte)-13);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "yf.abz(" + ')');

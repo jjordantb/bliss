@@ -90,7 +90,7 @@ public class class84 implements Runnable {
    static void method939(byte var0) {
       try {
          class881.field10140 = -1058684408;
-         class881.field10177 = Client.field2674;
+         class881.field10177 = class730.field2674;
          class521.method2751(-1L == 122690138525332847L * class881.field10146, true, "", "", class881.field10146 * 122690138525332847L);
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "f.g(" + ')');
@@ -182,7 +182,7 @@ public class class84 implements Runnable {
 
    static final void method942(class746 var0, int var1) {
       try {
-         int var2 = var0.field4059 * -412225079 - Client.field2866 * 443738891;
+         int var2 = var0.field4059 * -412225079 - class730.field2866 * 443738891;
          int var3 = var0.field4062 * -719582720 + var0.method2550() * 256;
          int var4 = var0.field4064 * 1363846656 + var0.method2550() * 256;
          class32 var5 = var0.method1511().field7637;

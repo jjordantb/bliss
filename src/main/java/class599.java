@@ -171,7 +171,7 @@ public class class599 {
    static final void method1289(class744 var0, byte var1) {
       try {
          boolean var2 = true;
-         if (Client.field2616) {
+         if (class730.field2616) {
             try {
                Object var3 = class662.field9732.method5801(-1654113322);
                if (var3 != null) {
@@ -191,10 +191,10 @@ public class class599 {
    static final void method1290(class744 var0, byte var1) {
       try {
          String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         class701 var3 = class637.method5936(class643.field9978, Client.field2692.field7765, (byte)19);
+         class701 var3 = class637.method5936(class643.field9978, class730.field2692.field7765, (byte)19);
          var3.field3364.method6361(var2.length() + 1);
          var3.field3364.method6366(var2, 2140741369);
-         Client.field2692.method4380(var3, (byte)-70);
+         class730.field2692.method4380(var3, (byte)-70);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "sw.sf(" + ')');
       }

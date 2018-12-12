@@ -127,7 +127,7 @@ public class class45 {
 
                   int var11 = var0.method6382(1723054621);
                   int var12 = var0.method6397((byte)93);
-                  var2.method2548(var18, var8, var7, var9, 443738891 * Client.field2866, var11, var12, (byte)121);
+                  var2.method2548(var18, var8, var7, var9, 443738891 * class730.field2866, var11, var12, (byte)121);
                }
             }
          }
@@ -211,7 +211,7 @@ public class class45 {
             var2.field4060 = var0.method6396((short)-3023) * -494980103;
             var2.field4083 = (var5 & '耀') != 0;
             var2.field4051 = -257621575 * (var5 & 32767);
-            var2.field4050 = 1208636921 * Client.field2866 + -1132907677 * var2.field4051 + 1195117671 * var2.field4052;
+            var2.field4050 = 1208636921 * class730.field2866 + -1132907677 * var2.field4051 + 1195117671 * var2.field4052;
          }
 
          if ((var3 & 4096) != 0) {
@@ -219,8 +219,8 @@ public class class45 {
             var2.field4064 = var0.method6372(-12558881) * 516351707;
             var2.field4063 = var0.method6372(-12558881) * 1712047767;
             var2.field4065 = var0.method6407((byte)-17) * 2089924823;
-            var2.field4059 = (var0.method6374() + Client.field2866 * 443738891) * 996079737;
-            var2.field4067 = (var0.method6374() + Client.field2866 * 443738891) * 1000906529;
+            var2.field4059 = (var0.method6374() + class730.field2866 * 443738891) * 996079737;
+            var2.field4067 = (var0.method6374() + class730.field2866 * 443738891) * 1000906529;
             var2.field4068 = var0.method6374() * 1386670945;
             if (var2.field3396) {
                var2.field4062 += 259583125 * var2.field3397;
@@ -319,8 +319,8 @@ public class class45 {
             var2.field4072 = var0.method6398(981809760);
             var2.field4073 = var0.method6407((byte)-7);
             var2.field4094 = (byte)var0.method6396((short)-10460);
-            var2.field4069 = (443738891 * Client.field2866 + var0.method6374()) * 1828453179;
-            var2.field4070 = (Client.field2866 * 443738891 + var0.method6374()) * -473408095;
+            var2.field4069 = (443738891 * class730.field2866 + var0.method6374()) * 1828453179;
+            var2.field4070 = (class730.field2866 * 443738891 + var0.method6374()) * -473408095;
          }
 
          if ((var3 & 524288) != 0) {

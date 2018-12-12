@@ -132,7 +132,7 @@ public class class277 {
          int var3 = var0.field3161[681479919 * var0.field3156 + 1];
          int var4 = var0.field3161[var0.field3156 * 681479919 + 2];
          int var5 = var0.field3161[var0.field3156 * 681479919 + 3];
-         class389 var6 = Client.field2697.method5270(681479919);
+         class389 var6 = class730.field2697.method5270(681479919);
          class526.method2227((var2 >> 14 & 16383) - var6.field1521 * -1760580017, (var2 & 16383) - 283514611 * var6.field1522, var3 << 2, var4, var5, (byte)72);
       } catch (RuntimeException var7) {
          throw class158.method3445(var7, "fh.agc(" + ')');

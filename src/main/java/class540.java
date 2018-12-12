@@ -118,11 +118,11 @@ public class class540 {
          var8.field10638 = var0 * 1025727709;
          var8.field10637 = 862924059 * var1;
          var8.field10641 = var2 * -1389157181;
-         var8.field10640 = (var4 + Client.field2866 * 443738891) * -1019659005;
+         var8.field10640 = (var4 + class730.field2866 * 443738891) * -1019659005;
          var8.field10639 = var3 * 274200991;
          var8.field10642 = var6;
          var8.field10636 = var5 * 334332979;
-         Client.field2631.method5209(var8, 1639821588);
+         class730.field2631.method5209(var8, 1639821588);
       } catch (RuntimeException var9) {
          throw class158.method3445(var9, "mm.nv(" + ')');
       }

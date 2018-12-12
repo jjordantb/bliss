@@ -59,7 +59,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
    public final void windowOpened(WindowEvent var1) {
    }
 
-   public void supplyApplet(Applet var1) {
+   public void method3943(Applet var1) {
       try {
          class833.field9178 = var1;
       } catch (RuntimeException var3) {
@@ -1076,13 +1076,13 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
 
    static void method1341(int var0, String var1, String var2, int var3) {
       try {
-         if (Client.field2692 != null) {
-            class701 var4 = class637.method5936(class643.field10025, Client.field2692.field7765, (byte)94);
+         if (class730.field2692 != null) {
+            class701 var4 = class637.method5936(class643.field10025, class730.field2692.field7765, (byte)94);
             var4.field3364.method6362(1 + class981.method1930(var1, (byte)-1) + class981.method1930(var2, (byte)-1), 16711935);
             var4.field3364.method6418(var2, (short)-29506);
             var4.field3364.method6415(var0, (byte)1);
             var4.field3364.method6418(var1, (short)12393);
-            Client.field2692.method4380(var4, (byte)-120);
+            class730.field2692.method4380(var4, (byte)-120);
          }
 
       } catch (RuntimeException var5) {
