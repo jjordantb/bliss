@@ -20,7 +20,7 @@ public class class822 {
 
    static final void method5366(class744 var0, short var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var0.field3159.method2170((byte)51);
+         var0.field3161[++var0.field3156 - 1] = var0.field3159.method2170((byte)51);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "b.apg(" + ')');
       }
@@ -122,7 +122,7 @@ public class class822 {
          class103[] var2 = class874.method5853(1246199085);
 
          for(int var3 = 0; var3 < var2.length; ++var3) {
-            if (var0 == var2[var3].field201 * -1682932563) {
+            if (var0 == var2[var3].field201) {
                return var2[var3];
             }
          }
@@ -135,8 +135,8 @@ public class class822 {
 
    static final void method5369(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class85.field1121.method1566(var2).field4248 ? 1 : 0;
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class85.field1121.method1566(var2).field4248 ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "b.aak(" + ')');
       }

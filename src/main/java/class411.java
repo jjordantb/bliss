@@ -4,16 +4,8 @@ public class class411 extends class535 {
    public static int field9359 = 1;
    public static int field9360 = 0;
 
-   int method2277(int var1) {
-      return 1;
-   }
-
    public class411(class838 var1) {
       super(var1);
-   }
-
-   void method2271(int var1) {
-      this.field3708 = var1 * 1886334997;
    }
 
    int method2273(int var1, int var2) {
@@ -22,7 +14,7 @@ public class class411 extends class535 {
 
    void method2275(int var1, int var2) {
       try {
-         this.field3708 = var1 * 1886334997;
+         super.field3708 = var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "adk.p(" + ')');
       }
@@ -30,20 +22,16 @@ public class class411 extends class535 {
 
    public int method5590(int var1) {
       try {
-         return -1598873795 * this.field3708;
+         return super.field3708;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "adk.z(" + ')');
       }
    }
 
-   int method2276() {
-      return 1;
-   }
-
    public void method5591(int var1) {
       try {
-         if (1 != -1598873795 * this.field3708 && -1598873795 * this.field3708 != 0) {
-            this.field3708 = this.method2272(763127121) * 1886334997;
+         if (1 != super.field3708 && super.field3708 != 0) {
+            super.field3708 = this.method2272(763127121);
          }
 
       } catch (RuntimeException var3) {

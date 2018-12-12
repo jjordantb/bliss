@@ -13,7 +13,7 @@ public final class class6 implements Iterable {
 
    public void method2941(byte var1) {
       try {
-         for(int var2 = 0; var2 < 577108745 * this.field4926; ++var2) {
+         for(int var2 = 0; var2 < this.field4926; ++var2) {
             class568 var3 = this.field4923[var2];
 
             while(true) {
@@ -35,11 +35,11 @@ public final class class6 implements Iterable {
 
    public class568 method2942(long var1) {
       try {
-         this.field4925 = var1 * -1039549200087996967L;
-         class568 var3 = this.field4923[(int)(var1 & (long)(577108745 * this.field4926 - 1))];
+         this.field4925 = var1;
+         class568 var3 = this.field4923[(int)(var1 & (long)(this.field4926 - 1))];
 
          for(this.field4924 = var3.field640; this.field4924 != var3; this.field4924 = this.field4924.field640) {
-            if (this.field4924.field641 * 7051297995265073167L == var1) {
+            if (this.field4924.field641 == var1) {
                class568 var4 = this.field4924;
                this.field4924 = this.field4924.field640;
                return var4;
@@ -58,8 +58,8 @@ public final class class6 implements Iterable {
          if (this.field4924 == null) {
             return null;
          } else {
-            for(class568 var2 = this.field4923[(int)(this.field4925 * -6131383980927776151L & (long)(this.field4926 * 577108745 - 1))]; this.field4924 != var2; this.field4924 = this.field4924.field640) {
-               if (this.field4925 * -6131383980927776151L == this.field4924.field641 * 7051297995265073167L) {
+            for(class568 var2 = this.field4923[(int)(this.field4925 & (long)(this.field4926 - 1))]; this.field4924 != var2; this.field4924 = this.field4924.field640) {
+               if (this.field4925 == this.field4924.field641) {
                   class568 var3 = this.field4924;
                   this.field4924 = this.field4924.field640;
                   return var3;
@@ -78,7 +78,7 @@ public final class class6 implements Iterable {
       try {
          int var2 = 0;
 
-         for(int var3 = 0; var3 < this.field4926 * 577108745; ++var3) {
+         for(int var3 = 0; var3 < this.field4926; ++var3) {
             class568 var4 = this.field4923[var3];
 
             for(class568 var5 = var4.field640; var4 != var5; var5 = var5.field640) {
@@ -95,14 +95,14 @@ public final class class6 implements Iterable {
    public class568 method2945(byte var1) {
       try {
          class568 var2;
-         if (-1375920843 * this.field4928 > 0 && this.field4927 != this.field4923[this.field4928 * -1375920843 - 1]) {
+         if (this.field4928 > 0 && this.field4927 != this.field4923[this.field4928 - 1]) {
             var2 = this.field4927;
             this.field4927 = var2.field640;
             return var2;
          } else {
-            while(this.field4928 * -1375920843 < 577108745 * this.field4926) {
-               var2 = this.field4923[(this.field4928 += -1552413411) * -1375920843 - 1].field640;
-               if (var2 != this.field4923[-1375920843 * this.field4928 - 1]) {
+            while(this.field4928 < this.field4926) {
+               var2 = this.field4923[++this.field4928 - 1].field640;
+               if (var2 != this.field4923[this.field4928 - 1]) {
                   this.field4927 = var2.field640;
                   return var2;
                }
@@ -138,19 +138,19 @@ public final class class6 implements Iterable {
             var1.method545(-1460969981);
          }
 
-         class568 var4 = this.field4923[(int)(var2 & (long)(this.field4926 * 577108745 - 1))];
+         class568 var4 = this.field4923[(int)(var2 & (long)(this.field4926 - 1))];
          var1.field642 = var4.field642;
          var1.field640 = var4;
          var1.field642.field640 = var1;
          var1.field640.field642 = var1;
-         var1.field641 = 4191220306876042991L * var2;
+         var1.field641 = var2;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "sa.p(" + ')');
       }
    }
 
    public class6(int var1) {
-      this.field4926 = 1594491705 * var1;
+      this.field4926 = var1;
       this.field4923 = new class568[var1];
 
       for(int var2 = 0; var2 < var1; ++var2) {
@@ -168,21 +168,21 @@ public final class class6 implements Iterable {
             int var17;
             if (var1 < 0) {
                var17 = -var1 - 1;
-               if (var17 == -442628795 * class730.field2623) {
-                  var16 = class923.field10295;
+               if (var17 == class730.field2623) {
+                  var16 = class923.local;
                } else {
-                  var16 = class730.field2786[var17];
+                  var16 = class730.loaded[var17];
                }
             } else {
                var17 = var1 - 1;
                class437 var18 = (class437)class730.field2677.method2942((long)var17);
                if (var18 != null) {
-                  var16 = (class746)var18.field7515;
+                  var16 = (Actor)var18.field7515;
                }
             }
 
             if (var16 != null) {
-               class507 var21 = ((class746)var16).method2554(95049522);
+               class507 var21 = ((Actor)var16).method2554(95049522);
                if (var21.field3968 != null && var21.field3968[var3] != null) {
                   var4 -= var21.field3968[var3][1];
                }
@@ -193,8 +193,8 @@ public final class class6 implements Iterable {
             }
          }
 
-         class214 var20 = new class214(class730.field2697.method5317(-1611682495), var0, class509.field4023 * -191892109, class509.field4023 * -191892109, var6, var7, var4, class730.field2866 * 443738891 + var10, class730.field2866 * 443738891 + var11, var12, var13, var1, var2, var5, var14, var3);
-         var20.method3782(var8, var9, class679.method4271(var8, var9, class509.field4023 * -191892109, -968708982) - var5, 443738891 * class730.field2866 + var10, 1068285759);
+         class214 var20 = new class214(class730.field2697.method5317(-1611682495), var0, class509.field4023, class509.field4023, var6, var7, var4, class730.field2866 + var10, class730.field2866 + var11, var12, var13, var1, var2, var5, var14, var3);
+         var20.method3782(var8, var9, class679.method4271(var8, var9, class509.field4023, -968708982) - var5, class730.field2866 + var10, 1068285759);
          class730.field2805.method897(new class107(var20), 520361177);
       } catch (RuntimeException var19) {
          throw class158.method3445(var19, "sa.nu(" + ')');

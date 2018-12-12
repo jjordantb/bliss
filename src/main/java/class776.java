@@ -13,11 +13,11 @@ public class class776 extends class304 {
 
    public void method2383(int var1) {
       try {
-         class746 var2 = class949.field3322[this.field3725 * -2094920785].method6636(1714980357);
-         if (237701933 * this.field3723 == 0) {
+         Actor var2 = class949.field3322[this.field3725].method6636(1714980357);
+         if (this.field3723 == 0) {
             class488.method4740(var2, this.field3726, 0, false, (byte)11);
          } else {
-            class711.method2025(var2, new int[]{this.field3724 * 2090514815}, new int[1], new int[]{this.field3723 * 237701933}, 1644064563);
+            class711.method2025(var2, new int[]{this.field3724}, new int[1], new int[]{this.field3723}, 1644064563);
          }
 
       } catch (RuntimeException var3) {
@@ -27,45 +27,20 @@ public class class776 extends class304 {
 
    boolean method2387(int var1) {
       try {
-         class160 var2 = class936.field10313.method2256(2090514815 * this.field3724, (byte)111);
+         Animation var2 = class936.field10313.method2256(this.field3724, (byte)111);
          return var2.method3561(1778758091);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "xm.p(" + ')');
       }
    }
 
-   public void method2386() {
-      class746 var1 = class949.field3322[this.field3725 * -2094920785].method6636(318010293);
-      if (237701933 * this.field3723 == 0) {
-         class488.method4740(var1, this.field3726, 0, false, (byte)-52);
-      } else {
-         class711.method2025(var1, new int[]{this.field3724 * 2090514815}, new int[1], new int[]{this.field3723 * 237701933}, 1644064563);
-      }
-
-   }
-
-   public void method2385() {
-      class746 var1 = class949.field3322[this.field3725 * -2094920785].method6636(1968398843);
-      if (237701933 * this.field3723 == 0) {
-         class488.method4740(var1, this.field3726, 0, false, (byte)-20);
-      } else {
-         class711.method2025(var1, new int[]{this.field3724 * 2090514815}, new int[1], new int[]{this.field3723 * 237701933}, 1644064563);
-      }
-
-   }
-
-   boolean method2294() {
-      class160 var1 = class936.field10313.method2256(2090514815 * this.field3724, (byte)25);
-      return var1.method3561(524582595);
-   }
-
-   class776(class907 var1) {
+   class776(InputStream var1) {
       super(var1);
-      this.field3725 = var1.method6374() * 838347599;
+      this.field3725 = var1.method6374();
       this.field3726 = new int[class458.method3829((byte)-63).length];
-      this.field3724 = var1.method6423(1235052657) * 1100678783;
-      Arrays.fill(this.field3726, 0, this.field3726.length, this.field3724 * 2090514815);
-      this.field3723 = var1.method6420((byte)72) * -1086817115;
+      this.field3724 = var1.method6423(1235052657);
+      Arrays.fill(this.field3726, 0, this.field3726.length, this.field3724);
+      this.field3723 = var1.method6420((byte)72);
    }
 
    public static class701 method2295(int var0) {
@@ -95,10 +70,10 @@ public class class776 extends class304 {
 
    static final void method2297(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[1 + var0.field3156 * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var2 | 1 << var3;
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = var2 | 1 << var3;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "xm.yj(" + ')');
       }

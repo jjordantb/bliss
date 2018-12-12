@@ -20,14 +20,14 @@ public class class509 {
             class180 var5 = this.field4022;
             byte[] var10;
             synchronized(this.field4022) {
-               var10 = this.field4022.method3285(class981.field3250.field3271 * -1006924897, var1, (byte)-18);
+               var10 = this.field4022.method3285(class981.field3250.field3271, var1, (byte)-18);
             }
 
             var4 = new class593();
             var4.field1617 = this;
-            var4.field1605 = 1723715693 * var1;
+            var4.field1605 = var1;
             if (var10 != null) {
-               var4.method1230(new class907(var10), 690302848);
+               var4.method1230(new InputStream(var10), 690302848);
             }
 
             var4.method1228((byte)75);
@@ -45,7 +45,7 @@ public class class509 {
 
    public class509(class469 var1, class423 var2, class180 var3) {
       this.field4022 = var3;
-      this.field4021 = this.field4022.method3286(-1006924897 * class981.field3250.field3271, 774356441) * 1970250293;
+      this.field4021 = this.field4022.method3286(class981.field3250.field3271, 774356441);
    }
 
    public void method2528(byte var1) {
@@ -83,10 +83,10 @@ public class class509 {
 
    static final void method2531(class744 var0, int var1) {
       try {
-         var0.field3156 -= -1175642067;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
-         int var3 = var0.field3161[1 + var0.field3156 * 681479919];
-         int var4 = var0.field3161[681479919 * var0.field3156 + 2];
+         var0.field3156 -= 3;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
+         int var4 = var0.field3161[var0.field3156 + 2];
          if (var3 == -1) {
             throw new RuntimeException();
          } else {
@@ -100,7 +100,7 @@ public class class509 {
                   var7 = var6.length;
                }
 
-               var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var7;
+               var0.field3161[++var0.field3156 - 1] = var7;
             }
          }
       } catch (RuntimeException var8) {
@@ -110,7 +110,7 @@ public class class509 {
 
    static final void method2532(class744 var0, int var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         String var2 = (String)var0.field3157[--var0.field3158];
          class363.method1629(var2, (byte)62);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "pp.vl(" + ')');
@@ -135,21 +135,21 @@ public class class509 {
       }
    }
 
-   static int method2534(class946 var0, int var1) {
+   static int method2534(Player var0, int var1) {
       try {
-         int var2 = 1899133595 * var0.field3390;
+         int var2 = var0.field3390;
          class507 var3 = var0.method2554(657972326);
-         int var4 = var0.field4041.method2779(1741170329);
+         int var4 = var0.passiveAnimator.method2779(1741170329);
          if (-1 != var4 && !var0.field4058) {
-            if (var3.field3979 * 230243963 != var4 && var4 != var3.field4007 * 491753731 && var3.field3982 * -783166629 != var4 && var4 != var3.field4004 * -2054940183) {
-               if (var4 == var3.field4013 * 328817727 || -1238642279 * var3.field3980 == var4 || 124010991 * var3.field3986 == var4 || -907666203 * var3.field3985 == var4) {
-                  var2 = var0.field3389 * -1304250511;
+            if (var3.field3979 != var4 && var4 != var3.field4007 && var3.field3982 != var4 && var4 != var3.field4004) {
+               if (var4 == var3.field4013 || var3.field3980 == var4 || var3.field3986 == var4 || var3.field3985 == var4) {
+                  var2 = var0.field3389;
                }
             } else {
-               var2 = var0.field3391 * -978842273;
+               var2 = var0.field3391;
             }
          } else {
-            var2 = 1728220219 * var0.field3373;
+            var2 = var0.field3373;
          }
 
          return var2;

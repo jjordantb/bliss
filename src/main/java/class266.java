@@ -15,30 +15,6 @@ public final class class266 extends class655 {
       return true;
    }
 
-   public final int method5612(int var1) {
-      int var2 = this.field8206[var1];
-      int var3 = this.field8208[var1];
-      if (var2 != -1) {
-         return var2;
-      } else {
-         return var3 != -1 ? var3 | 65536 : -1;
-      }
-   }
-
-   public final int method5618(int var1) {
-      int var2 = this.field8206[var1];
-      int var3 = this.field8208[var1];
-      if (var2 != -1) {
-         return var2;
-      } else {
-         return var3 != -1 ? var3 | 65536 : -1;
-      }
-   }
-
-   public boolean method5611(int var1) {
-      return true;
-   }
-
    public final int method5614(int var1) {
       int var2 = this.field8206[var1];
       int var3 = this.field8208[var1];

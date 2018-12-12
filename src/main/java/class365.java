@@ -7,7 +7,7 @@ public class class365 {
    class241[] field2441;
    static int[] field2442 = new int[]{8, 11, 4, 6, 9, 7, 10, 0};
    public int[] field2443;
-   public int field2444 = 993979383;
+   public int field2444 = -1;
    long field2445;
    int field2446;
    public boolean field2447;
@@ -63,17 +63,17 @@ public class class365 {
 
    void method1640(int var1) {
       try {
-         long[] var2 = class907.field10382;
-         this.field2445 = -1662367026201571203L;
-         this.field2445 = 1662367026201571203L * (this.field2445 * 5093099708756449067L >>> 8 ^ var2[(int)((this.field2445 * 5093099708756449067L ^ (long)(this.field2446 * 767962207 >> 8)) & 255L)]);
-         this.field2445 = 1662367026201571203L * (5093099708756449067L * this.field2445 >>> 8 ^ var2[(int)((this.field2445 * 5093099708756449067L ^ (long)(this.field2446 * 767962207)) & 255L)]);
+         long[] var2 = InputStream.field10382;
+         this.field2445 = -1L;
+         this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)(this.field2446 >> 8)) & 255L)];
+         this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)this.field2446) & 255L)];
 
          int var3;
          for(var3 = 0; var3 < this.field2439.length; ++var3) {
-            this.field2445 = (this.field2445 * 5093099708756449067L >>> 8 ^ var2[(int)((5093099708756449067L * this.field2445 ^ (long)(this.field2439[var3] >> 24)) & 255L)]) * 1662367026201571203L;
-            this.field2445 = 1662367026201571203L * (5093099708756449067L * this.field2445 >>> 8 ^ var2[(int)((this.field2445 * 5093099708756449067L ^ (long)(this.field2439[var3] >> 16)) & 255L)]);
-            this.field2445 = (5093099708756449067L * this.field2445 >>> 8 ^ var2[(int)((5093099708756449067L * this.field2445 ^ (long)(this.field2439[var3] >> 8)) & 255L)]) * 1662367026201571203L;
-            this.field2445 = (this.field2445 * 5093099708756449067L >>> 8 ^ var2[(int)((this.field2445 * 5093099708756449067L ^ (long)this.field2439[var3]) & 255L)]) * 1662367026201571203L;
+            this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)(this.field2439[var3] >> 24)) & 255L)];
+            this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)(this.field2439[var3] >> 16)) & 255L)];
+            this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)(this.field2439[var3] >> 8)) & 255L)];
+            this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)this.field2439[var3]) & 255L)];
          }
 
          if (this.field2441 != null) {
@@ -92,29 +92,29 @@ public class class365 {
                   int var6;
                   if (var4 != null) {
                      for(var6 = 0; var6 < var4.length; ++var6) {
-                        this.field2445 = (this.field2445 * 5093099708756449067L >>> 8 ^ var2[(int)((this.field2445 * 5093099708756449067L ^ (long)(var4[var6] >> 8)) & 255L)]) * 1662367026201571203L;
-                        this.field2445 = (this.field2445 * 5093099708756449067L >>> 8 ^ var2[(int)((this.field2445 * 5093099708756449067L ^ (long)var4[var6]) & 255L)]) * 1662367026201571203L;
+                        this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)(var4[var6] >> 8)) & 255L)];
+                        this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)var4[var6]) & 255L)];
                      }
                   }
 
                   if (var5 != null) {
                      for(var6 = 0; var6 < var5.length; ++var6) {
-                        this.field2445 = 1662367026201571203L * (5093099708756449067L * this.field2445 >>> 8 ^ var2[(int)((5093099708756449067L * this.field2445 ^ (long)(var5[var6] >> 8)) & 255L)]);
-                        this.field2445 = (5093099708756449067L * this.field2445 >>> 8 ^ var2[(int)((this.field2445 * 5093099708756449067L ^ (long)var5[var6]) & 255L)]) * 1662367026201571203L;
+                        this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)(var5[var6] >> 8)) & 255L)];
+                        this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)var5[var6]) & 255L)];
                      }
                   }
 
                   if (this.field2441[var3].field8379 != null) {
                      for(var6 = 0; var6 < this.field2441[var3].field8379.length; ++var6) {
-                        this.field2445 = 1662367026201571203L * (this.field2445 * 5093099708756449067L >>> 8 ^ var2[(int)((5093099708756449067L * this.field2445 ^ (long)(this.field2441[var3].field8379[var6] >> 8)) & 255L)]);
-                        this.field2445 = 1662367026201571203L * (5093099708756449067L * this.field2445 >>> 8 ^ var2[(int)((5093099708756449067L * this.field2445 ^ (long)this.field2441[var3].field8379[var6]) & 255L)]);
+                        this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)(this.field2441[var3].field8379[var6] >> 8)) & 255L)];
+                        this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)this.field2441[var3].field8379[var6]) & 255L)];
                      }
                   }
 
                   if (this.field2441[var3].field8380 != null) {
                      for(var6 = 0; var6 < this.field2441[var3].field8380.length; ++var6) {
-                        this.field2445 = 1662367026201571203L * (5093099708756449067L * this.field2445 >>> 8 ^ var2[(int)((5093099708756449067L * this.field2445 ^ (long)(this.field2441[var3].field8380[var6] >> 8)) & 255L)]);
-                        this.field2445 = 1662367026201571203L * (5093099708756449067L * this.field2445 >>> 8 ^ var2[(int)((5093099708756449067L * this.field2445 ^ (long)this.field2441[var3].field8380[var6]) & 255L)]);
+                        this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)(this.field2441[var3].field8380[var6] >> 8)) & 255L)];
+                        this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)this.field2441[var3].field8380[var6]) & 255L)];
                      }
                   }
                }
@@ -122,25 +122,25 @@ public class class365 {
          }
 
          for(var3 = 0; var3 < 10; ++var3) {
-            this.field2445 = 1662367026201571203L * (this.field2445 * 5093099708756449067L >>> 8 ^ var2[(int)((this.field2445 * 5093099708756449067L ^ (long)this.field2443[var3]) & 255L)]);
+            this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)this.field2443[var3]) & 255L)];
          }
 
-         this.field2445 = (this.field2445 * 5093099708756449067L >>> 8 ^ var2[(int)((this.field2445 * 5093099708756449067L ^ (long)(this.field2447 ? 1 : 0)) & 255L)]) * 1662367026201571203L;
+         this.field2445 = this.field2445 >>> 8 ^ var2[(int)((this.field2445 ^ (long)(this.field2447 ? 1 : 0)) & 255L)];
       } catch (RuntimeException var7) {
          throw class158.method3445(var7, "pf.k(" + ')');
       }
    }
 
-   public class879 method1641(class848 var1, int var2, class422 var3, class329 var4, class58 var5, class769 var6, class415 var7, class765 var8, int var9) {
+   public class879 method1641(class848 var1, int var2, class422 var3, class329 var4, class58 var5, class769 var6, class415 var7, Animator var8, int var9) {
       try {
-         if (-1 != this.field2444 * 164936249) {
-            return var4.method12(this.field2444 * 164936249, 491367243).method6107(var1, var2, var7, var8, (class692)null, -218177955);
+         if (-1 != this.field2444) {
+            return var4.method12(this.field2444, 491367243).method6107(var1, var2, var7, var8, (class692)null, -218177955);
          } else {
             int var10 = var8 != null ? var2 | var8.method2785(-1790708337) : var2;
             class1 var11 = field2450;
             class879 var12;
             synchronized(field2450) {
-               var12 = (class879)field2450.method2974(5093099708756449067L * this.field2445);
+               var12 = (class879)field2450.method2974(this.field2445);
             }
 
             if (var12 == null || var1.method4836(var12.method5948(), var10) != 0) {
@@ -198,7 +198,7 @@ public class class365 {
 
                class25 var27 = new class25(var25, var15);
                int var23 = var10 | 16384;
-               var12 = var1.method4861(var27, var23, field2451 * 1931277641, 64, 768);
+               var12 = var1.method4861(var27, var23, field2451, 64, 768);
 
                for(var17 = 0; var17 < 10; ++var17) {
                   for(int var29 = 0; var29 < field2440[var17].length; ++var29) {
@@ -211,7 +211,7 @@ public class class365 {
                var12.method5947(var10);
                class1 var28 = field2450;
                synchronized(field2450) {
-                  field2450.method2984(var12, this.field2445 * 5093099708756449067L);
+                  field2450.method2984(var12, this.field2445);
                }
             }
 
@@ -228,7 +228,7 @@ public class class365 {
       }
    }
 
-   public class879 method1642(class848 var1, int var2, class422 var3, class769 var4, class765 var5, int var6, int var7, int var8, byte var9) {
+   public class879 method1642(class848 var1, int var2, class422 var3, class769 var4, Animator var5, int var6, int var7, int var8, byte var9) {
       try {
          int var10 = var5 != null ? var2 | var5.method2785(-1790708337) : var2;
          long var11 = (long)var8 << 32 | (long)(var7 << 16) | (long)var6;
@@ -266,7 +266,7 @@ public class class365 {
 
             var17 = new class25(var15, var16);
             int var23 = var10 | 16384;
-            var14 = var1.method4861(var17, var23, 1931277641 * field2451, 64, 768);
+            var14 = var1.method4861(var17, var23, field2451, 64, 768);
 
             for(int var18 = 0; var18 < 10; ++var18) {
                for(int var19 = 0; var19 < field2440[var18].length; ++var19) {
@@ -295,30 +295,30 @@ public class class365 {
       }
    }
 
-   public class879 method1643(class848 var1, int var2, class193 var3, class422 var4, class329 var5, class58 var6, class769 var7, class415 var8, class765 var9, class765 var10, class765[] var11, int[] var12, int var13, boolean var14, class385 var15, int var16) {
+   public class879 method1643(class848 var1, int var2, class193 var3, class422 var4, class329 var5, class58 var6, class769 var7, class415 var8, Animator var9, Animator var10, Animator[] var11, int[] var12, int var13, boolean var14, class385 var15, int var16) {
       try {
-         if (this.field2444 * 164936249 != -1) {
-            return var5.method12(this.field2444 * 164936249, 1899433887).method6116(var1, var2, var3, var8, var9, var10, var11, var12, var13, (class692)null, -884053309);
+         if (this.field2444 != -1) {
+            return var5.method12(this.field2444, 1899433887).method6116(var1, var2, var3, var8, var9, var10, var11, var12, var13, (class692)null, -884053309);
          } else {
             int var17 = var2;
-            long var18 = this.field2445 * 5093099708756449067L;
+            long var18 = this.field2445;
             int[] var20 = this.field2439;
             boolean var21 = false;
             boolean var22 = false;
             int var24;
             if (var9 != null) {
-               class160 var23 = var9.method2776(28542107);
-               if (var23 != null && (609841829 * var23.field6663 >= 0 || 1548903495 * var23.field6664 >= 0)) {
+               Animation var23 = var9.method2776(28542107);
+               if (var23 != null && (var23.field6663 >= 0 || var23.field6664 >= 0)) {
                   var20 = new int[this.field2439.length];
 
                   for(var24 = 0; var24 < var20.length; ++var24) {
                      var20[var24] = this.field2439[var24];
                   }
 
-                  if (var23.field6663 * 609841829 >= 0 && -1 != -817429509 * var15.field1541) {
+                  if (var23.field6663 >= 0 && -1 != var15.field1541) {
                      var21 = true;
-                     if (65535 == var23.field6663 * 609841829) {
-                        var20[-817429509 * var15.field1541] = 0;
+                     if (65535 == var23.field6663) {
+                        var20[var15.field1541] = 0;
 
                         for(var24 = 0; var24 < var15.field1547.length; ++var24) {
                            var20[var15.field1547[var24]] = 0;
@@ -326,20 +326,20 @@ public class class365 {
 
                         var18 ^= -4294967296L;
                      } else {
-                        var20[-817429509 * var15.field1541] = 609841829 * var23.field6663 | 1073741824;
+                        var20[var15.field1541] = var23.field6663 | 1073741824;
 
                         for(var24 = 0; var24 < var15.field1547.length; ++var24) {
                            var20[var15.field1547[var24]] = 0;
                         }
 
-                        var18 ^= (long)var20[var15.field1541 * -817429509] << 32;
+                        var18 ^= (long)var20[var15.field1541] << 32;
                      }
                   }
 
-                  if (1548903495 * var23.field6664 >= 0 && -1 != var15.field1545 * -2126257265) {
+                  if (var23.field6664 >= 0 && -1 != var15.field1545) {
                      var22 = true;
-                     if (var23.field6664 * 1548903495 == 65535) {
-                        var20[-2126257265 * var15.field1545] = 0;
+                     if (var23.field6664 == 65535) {
+                        var20[var15.field1545] = 0;
 
                         for(var24 = 0; var24 < var15.field1548.length; ++var24) {
                            var20[var15.field1548[var24]] = 0;
@@ -347,13 +347,13 @@ public class class365 {
 
                         var18 ^= 4294967295L;
                      } else {
-                        var20[-2126257265 * var15.field1545] = 1548903495 * var23.field6664 | 1073741824;
+                        var20[var15.field1545] = var23.field6664 | 1073741824;
 
                         for(var24 = 0; var24 < var15.field1548.length; ++var24) {
                            var20[var15.field1548[var24]] = 0;
                         }
 
-                        var18 ^= (long)var20[-2126257265 * var15.field1545];
+                        var18 ^= (long)var20[var15.field1545];
                      }
                   }
                }
@@ -396,8 +396,8 @@ public class class365 {
             }
 
             class507 var45 = null;
-            if (this.field2446 * 767962207 != -1) {
-               var45 = var3.method3736(this.field2446 * 767962207, (byte)29);
+            if (this.field2446 != -1) {
+               var45 = var3.method3736(this.field2446, (byte)29);
             }
 
             int var30;
@@ -414,10 +414,10 @@ public class class365 {
                   int var34;
                   if (var30 >= var20.length) {
                      if (var29) {
-                        if (-1L != 4366628042331861927L * this.field2436) {
+                        if (-1L != this.field2436) {
                            class1 var48 = field2449;
                            synchronized(field2449) {
-                              var44 = (class879)field2449.method2974(4366628042331861927L * this.field2436);
+                              var44 = (class879)field2449.method2974(this.field2436);
                            }
                         }
 
@@ -486,7 +486,7 @@ public class class365 {
 
                         class25 var50 = new class25(var49, var49.length);
                         int var28 = var17 | 16384;
-                        var44 = var1.method4861(var50, var28, 1931277641 * field2451, 64, 850);
+                        var44 = var1.method4861(var50, var28, field2451, 64, 850);
 
                         for(var51 = 0; var51 < 10; ++var51) {
                            for(var57 = 0; var57 < field2440[var51].length; ++var57) {
@@ -503,7 +503,7 @@ public class class365 {
                               field2449.method2984(var44, var18);
                            }
 
-                           this.field2436 = var18 * -2813682692256545769L;
+                           this.field2436 = var18;
                         }
                      }
                      break;
@@ -513,7 +513,7 @@ public class class365 {
                   class241 var32 = null;
                   boolean var33 = false;
                   if (var21) {
-                     if (-817429509 * var15.field1541 == var30) {
+                     if (var15.field1541 == var30) {
                         var33 = true;
                      } else {
                         for(var34 = 0; var34 < var15.field1547.length; ++var34) {
@@ -526,7 +526,7 @@ public class class365 {
                   }
 
                   if (var22) {
-                     if (var30 == -2126257265 * var15.field1545) {
+                     if (var30 == var15.field1545) {
                         var33 = true;
                      } else {
                         for(var34 = 0; var34 < var15.field1548.length; ++var34) {
@@ -623,15 +623,15 @@ public class class365 {
 
    public void method1644(int var1, int[] var2, class241[] var3, int[] var4, boolean var5, int var6, int var7) {
       try {
-         if (var1 != this.field2446 * 767962207) {
-            this.field2446 = -698667105 * var1;
+         if (var1 != this.field2446) {
+            this.field2446 = var1;
          }
 
          this.field2439 = var2;
          this.field2441 = var3;
          this.field2443 = var4;
          this.field2447 = var5;
-         this.field2444 = -993979383 * var6;
+         this.field2444 = var6;
          this.method1640(-330295212);
       } catch (RuntimeException var9) {
          throw class158.method3445(var9, "pf.a(" + ')');
@@ -641,10 +641,10 @@ public class class365 {
    static void method1645(int var0) {
       try {
          class730.field2674.method4374((byte)4);
-         if (-1868526275 * class904.field10354 < 2) {
+         if (class904.field10354 < 2) {
             class569.field24.method2743(-1528906992);
             class904.field10352 = 0;
-            class904.field10354 += -853495275;
+            ++class904.field10354;
          } else {
             class904.field10355 = null;
             class904.field10356 = class235.field8242;

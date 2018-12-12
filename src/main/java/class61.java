@@ -40,7 +40,7 @@ public class class61 {
       this.field1598 = var2;
       this.field1603 = var3;
       this.field1596 = var4;
-      this.field1602 = this.field1603 * this.field1596.field8406 * 685647847;
+      this.field1602 = this.field1603 * this.field1596.field8406;
       if (this.field1598 >= 16) {
          throw new RuntimeException();
       }

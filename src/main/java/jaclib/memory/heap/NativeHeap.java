@@ -6,8 +6,8 @@ public final class NativeHeap {
    private boolean f;
 
    public NativeHeap(int var1) {
-      this.a = 1264911109 * var1;
-      this.allocateHeap(-368553523 * this.a);
+      this.a = var1;
+      this.allocateHeap(this.a);
       this.f = true;
    }
 

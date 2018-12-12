@@ -16,12 +16,12 @@ public final class class246 {
 
    public final int method4728(int var1) {
       try {
-         if (815637839 * this.field8415 == 0) {
+         if (this.field8415 == 0) {
             this.method4731((byte)84);
-            this.field8415 = -1303269632;
+            this.field8415 = 256;
          }
 
-         return !Loader.field6959 ? 0 : this.field8419[(this.field8415 -= 1857180079) * 815637839];
+         return !Loader.field6959 ? 0 : this.field8419[--this.field8415];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "sn.a(" + ')');
       }
@@ -153,7 +153,7 @@ public final class class246 {
          }
 
          this.method4731((byte)-3);
-         this.field8415 = -1303269632;
+         this.field8415 = 256;
       } catch (RuntimeException var11) {
          throw class158.method3445(var11, "sn.p(" + ')');
       }
@@ -161,12 +161,12 @@ public final class class246 {
 
    public final int method4730(byte var1) {
       try {
-         if (815637839 * this.field8415 == 0) {
+         if (this.field8415 == 0) {
             this.method4731((byte)-13);
-            this.field8415 = -1303269632;
+            this.field8415 = 256;
          }
 
-         return !Loader.field6959 ? 0 : this.field8419[815637839 * this.field8415 - 1];
+         return !Loader.field6959 ? 0 : this.field8419[this.field8415 - 1];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "sn.f(" + ')');
       }
@@ -174,26 +174,26 @@ public final class class246 {
 
    final void method4731(byte var1) {
       try {
-         this.field8412 += (this.field8420 += 1595041509) * 1987923423;
+         this.field8412 += (this.field8420 += 634094203) * 149032115;
 
          for(int var2 = 0; var2 < 256; ++var2) {
             int var3 = this.field8417[var2];
             if ((var2 & 2) == 0) {
                if ((var2 & 1) == 0) {
-                  this.field8418 = (-840519441 * this.field8418 ^ this.field8418 * -840519441 << 13) * 368737807;
+                  this.field8418 ^= this.field8418 << 13;
                } else {
-                  this.field8418 = 368737807 * (-840519441 * this.field8418 ^ -840519441 * this.field8418 >>> 6);
+                  this.field8418 ^= this.field8418 >>> 6;
                }
             } else if ((var2 & 1) == 0) {
-               this.field8418 = (-840519441 * this.field8418 ^ this.field8418 * -840519441 << 2) * 368737807;
+               this.field8418 ^= this.field8418 << 2;
             } else {
-               this.field8418 = 368737807 * (this.field8418 * -840519441 ^ this.field8418 * -840519441 >>> 16);
+               this.field8418 ^= this.field8418 >>> 16;
             }
 
-            this.field8418 += 368737807 * this.field8417[128 + var2 & 255];
+            this.field8418 += this.field8417[128 + var2 & 255];
             int var4;
-            this.field8417[var2] = var4 = 149032115 * this.field8412 + -840519441 * this.field8418 + this.field8417[(var3 & 1020) >> 2];
-            this.field8419[var2] = (this.field8412 = 634094203 * (this.field8417[(var4 >> 8 & 1020) >> 2] + var3)) * 149032115;
+            this.field8417[var2] = var4 = this.field8412 + this.field8418 + this.field8417[(var3 & 1020) >> 2];
+            this.field8419[var2] = this.field8412 = this.field8417[(var4 >> 8 & 1020) >> 2] + var3;
          }
 
       } catch (RuntimeException var5) {

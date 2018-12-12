@@ -6,8 +6,8 @@ public class class2 {
 
    public byte[] method2969(byte[] var1, short var2) {
       try {
-         class907 var3 = new class907(var1);
-         var3.field10376 = (var1.length - 4) * 116413311;
+         InputStream var3 = new InputStream(var1);
+         var3.field10376 = var1.length - 4;
          int var4 = var3.method6377(-471458915);
          byte[] var5 = new byte[var4];
          var3.field10376 = 0;
@@ -18,15 +18,15 @@ public class class2 {
       }
    }
 
-   public void method2970(class907 var1, byte[] var2, int var3) {
+   public void method2970(InputStream var1, byte[] var2, int var3) {
       try {
-         if (31 == var1.field10375[var1.field10376 * 385051775] && -117 == var1.field10375[var1.field10376 * 385051775 + 1]) {
+         if (31 == var1.field10375[var1.field10376] && -117 == var1.field10375[var1.field10376 + 1]) {
             if (this.field4947 == null) {
                this.field4947 = new Inflater(true);
             }
 
             try {
-               this.field4947.setInput(var1.field10375, 10 + 385051775 * var1.field10376, var1.field10375.length - (8 + 385051775 * var1.field10376 + 10));
+               this.field4947.setInput(var1.field10375, 10 + var1.field10376, var1.field10375.length - (8 + var1.field10376 + 10));
                this.field4947.inflate(var2);
             } catch (Exception var5) {
                this.field4947.reset();

@@ -15,7 +15,7 @@ public class class662 {
 
    public String method5798(int var1) {
       try {
-         return "_" + 368445667 * this.field9735;
+         return "_" + this.field9735;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "iy.a(" + ')');
       }
@@ -64,14 +64,14 @@ public class class662 {
    }
 
    class662(int var1) {
-      this.field9735 = var1 * -665617205;
+      this.field9735 = var1;
    }
 
    static final void method5803(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)9);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 7329457 * var3.field915;
+         var0.field3161[++var0.field3156 - 1] = var3.field915;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "iy.ry(" + ')');
       }

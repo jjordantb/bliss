@@ -23,24 +23,24 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
    public static int field1807 = 0;
    static String field1808 = "rw";
    static int field1809 = 32;
-   public static int field1810 = 1245045379;
+   public static int field1810 = 1;
    protected static volatile boolean field1811 = true;
    protected static int field1812;
    public static int field1813 = 0;
    public static int field1814 = 0;
    static class645 field1815 = null;
    protected static class645 field1816 = null;
-   static int field1817 = -806102940;
+   static int field1817 = 500;
    protected static volatile boolean field1818 = false;
    static long[] field1819 = new long[32];
    protected static boolean field1820 = false;
    static volatile boolean field1821 = true;
    static int field1822 = 524288000;
    static int field1823 = 1048576;
-   static long field1824 = 8126035193609507072L;
+   static long field1824 = 20000000L;
    protected static String field1825 = null;
    static long[] field1826 = new long[32];
-   public static int field1827 = 1855823519;
+   public static int field1827 = -1;
    static String field1828 = "main_file_cache.idx255";
    static String field1829 = "random.dat";
    static String field1830 = "main_file_cache.idx";
@@ -71,13 +71,13 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
       try {
          try {
             this.method1312(class99.field626, var8, (short)-2229);
-            class919.field10433 = (class759.field4331 = var1.method2041((byte)-35) * -2010408377) * 1228593773;
-            field1812 = (class97.field614 = var1.method2045(2024501789) * 1445266787) * 1864178979;
+            class919.field10433 = class759.field4331 = var1.method2041((byte)-35);
+            field1812 = class97.field614 = var1.method2045(2024501789);
             field1813 = 0;
             field1814 = 0;
             if (class382.method1061((byte)35) == class99.field627) {
-               class919.field10433 += -1643230090 * var1.method2042((byte)52);
-               field1812 += 63301394 * var1.method2043(-974427485);
+               class919.field10433 += 2 * var1.method2042((byte)52);
+               field1812 += 2 * var1.method2043(-974427485);
                this.method1330(var1.method2044(1376340372), -260131528);
             }
 
@@ -95,10 +95,10 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
 
    final void method1302(String var1, String var2, int var3, int var4, int var5, int var6, byte var7) throws Exception {
       try {
-         class738.field3001 = var4 * -652430819;
-         class971.field2987 = var3 * 19765097;
-         class862.field8934 = var5 * 715279939;
-         class878.field9821 = var6 * 1366053379;
+         class738.field3001 = var4;
+         class971.field2987 = var3;
+         class862.field8934 = var5;
+         class878.field9821 = var6;
          class507.field4017 = "Unknown";
          class981.field3273 = "1.1";
 
@@ -165,7 +165,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
          }
 
          class82.field1108 = new String[]{"c:/rscache/", "/rscache/", "c:/windows/", "c:/winnt/", "c:/", class323.field631, "/tmp/", ""};
-         class396.field6516 = new String[]{".matrix_cache_" + class971.field2987 * -518493991, ".file_store_" + -518493991 * class971.field2987};
+         class396.field6516 = new String[]{".matrix_cache_" + class971.field2987, ".file_store_" + class971.field2987};
          int var8 = 0;
 
          label141:
@@ -206,9 +206,9 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
          class246.method4734(527600768);
          field1816 = new class645(new class439(class299.method6554("main_file_cache.dat2", (byte)-19), "rw", 524288000L), 5200, 0);
          field1815 = new class645(new class439(class299.method6554("main_file_cache.idx255", (byte)-21), "rw", 1048576L), 6000, 0);
-         class785.field3828 = new class645[class738.field3001 * 1210163253];
+         class785.field3828 = new class645[class738.field3001];
 
-         for(var8 = 0; var8 < 1210163253 * class738.field3001; ++var8) {
+         for(var8 = 0; var8 < class738.field3001; ++var8) {
             class785.field3828[var8] = new class645(new class439(class299.method6554("main_file_cache.idx" + var8, (byte)-49), "rw", 1048576L), 6000, 0);
          }
 
@@ -293,7 +293,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
       try {
          try {
             class439 var4 = new class439(class691.field7134, "rw", 10000L);
-            class907 var5 = new class907(500);
+            InputStream var5 = new InputStream(500);
             var5.method6361(2);
             var5.method6361(var2 != null ? 1 : 0);
             var5.method6418(var1.getPath(), (short)3940);
@@ -301,7 +301,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
                var5.method6418(var2.getPath(), (short)-4942);
             }
 
-            var4.method4275(var5.field10375, 0, 385051775 * var5.field10376, -1059972794);
+            var4.method4275(var5.field10375, 0, var5.field10376, -1059972794);
             var4.method4276(1033544132);
          } catch (IOException var6) {
             var6.printStackTrace();
@@ -316,15 +316,11 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
       try {
          this.method1307(-924154311);
          Container var2 = class348.method193((byte)114);
-         class837.field9161 = new class772(var2);
+         class837.field9161 = new CanvasImpl(var2);
          this.method1327(var2, -1139610021);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "mc.y(" + ')');
       }
-   }
-
-   public final void method3955(Graphics var1) {
-      this.method3947(var1);
    }
 
    void method1307(int var1) {
@@ -433,16 +429,16 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
          }
 
          class348.method193((byte)121).setFocusCycleRoot(true);
-         field1827 = ((int)(Runtime.getRuntime().maxMemory() / 1048576L) + 1) * -1855823519;
-         field1810 = Runtime.getRuntime().availableProcessors() * 1245045379;
+         field1827 = (int)(Runtime.getRuntime().maxMemory() / 1048576L) + 1;
+         field1810 = Runtime.getRuntime().availableProcessors();
          this.method1306(-781587209);
          this.method1313((byte)1);
          field1832 = class881.method6173(-978847778);
 
-         while(0L == 2916456661870185289L * field1836 || class27.method3468((byte)1) < field1836 * 2916456661870185289L) {
-            class845.field8630 = field1832.method3977(field1824 * -4639622049358970979L) * -2090388391;
+         while(0L == field1836 || class27.method3468((byte)1) < field1836) {
+            class845.field8630 = field1832.method3977(field1824);
 
-            for(int var7 = 0; var7 < class845.field8630 * -1597189143; ++var7) {
+            for(int var7 = 0; var7 < class845.field8630; ++var7) {
                this.method1314((byte)1);
             }
 
@@ -458,24 +454,24 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
    void method1310(int var1) {
       try {
          long var2 = class27.method3468((byte)1);
-         long var4 = field1826[-1371443851 * class111.field1907];
-         field1826[-1371443851 * class111.field1907] = var2;
-         class111.field1907 = 1423456989 * (-1371443851 * class111.field1907 + 1 & 31);
+         long var4 = field1826[class111.field1907];
+         field1826[class111.field1907] = var2;
+         class111.field1907 = class111.field1907 + 1 & 31;
          if (var4 != 0L && var2 > var4) {
             int var6 = (int)(var2 - var4);
-            field1807 = ((var6 >> 1) + 32000) / var6 * -863758789;
+            field1807 = ((var6 >> 1) + 32000) / var6;
          }
 
-         if ((field1817 += -2020246835) * 698024453 - 1 > 50) {
-            field1817 -= 2066873354;
+         if (++field1817 - 1 > 50) {
+            field1817 -= 50;
             field1811 = true;
-            class837.field9161.setSize(class759.field4331 * -2110394505, class97.field614 * -1111710645);
+            class837.field9161.setSize(class759.field4331, class97.field614);
             class837.field9161.setVisible(true);
             if (class701.field3371 != null && class296.field10468 == null) {
                Insets var9 = class701.field3371.getInsets();
-               class837.field9161.setLocation(var9.left + field1813 * 1898544019, 540368727 * field1814 + var9.top);
+               class837.field9161.setLocation(var9.left + field1813, field1814 + var9.top);
             } else {
-               class837.field9161.setLocation(field1813 * 1898544019, 540368727 * field1814);
+               class837.field9161.setLocation(field1813, field1814);
             }
          }
 
@@ -507,24 +503,13 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
       }
    }
 
-   public void method3944() {
-      try {
-         if (!field1837) {
-            field1836 = (class27.method3468((byte)1) + 4000L) * -5427437724707662087L;
-         }
-
-      } catch (RuntimeException var2) {
-         throw class158.method3445(var2, "mc.stop(" + ')');
-      }
-   }
-
    public final synchronized void method3947(Graphics var1) {
       try {
          if (!field1837) {
             field1811 = true;
-            if (class27.method3468((byte)1) - -4623726814665285853L * field1831 > 1000L) {
+            if (class27.method3468((byte)1) - field1831 > 1000L) {
                Rectangle var2 = var1.getClipBounds();
-               if (var2 == null || var2.width >= -639974669 * class919.field10433 && var2.height >= field1812 * 1282634425) {
+               if (var2 == null || var2.width >= class919.field10433 && var2.height >= field1812) {
                   field1818 = true;
                }
             }
@@ -583,9 +568,9 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
    void method1314(byte var1) {
       try {
          long var2 = class27.method3468((byte)1);
-         long var4 = field1819[class596.field2141 * -1495088089];
-         field1819[class596.field2141 * -1495088089] = var2;
-         class596.field2141 = -1259443305 * (1 + class596.field2141 * -1495088089 & 31);
+         long var4 = field1819[class596.field2141];
+         field1819[class596.field2141] = var2;
+         class596.field2141 = 1 + class596.field2141 & 31;
          if (0L != var4) {
             ;
          }
@@ -601,8 +586,6 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
    }
 
    abstract void method1315(int var1);
-
-   public abstract void method3957();
 
    public boolean method1316(int var1) {
       try {
@@ -629,72 +612,10 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
       }
    }
 
-   public final synchronized void method3942(Graphics var1) {
-      if (!field1837) {
-         field1811 = true;
-         if (class27.method3468((byte)1) - -4623726814665285853L * field1831 > 1000L) {
-            Rectangle var2 = var1.getClipBounds();
-            if (var2 == null || var2.width >= -639974669 * class919.field10433 && var2.height >= field1812 * 1282634425) {
-               field1818 = true;
-            }
-         }
-      }
-
-   }
-
-   public final void method3946(Graphics var1) {
-      try {
-         this.method3947(var1);
-      } catch (RuntimeException var3) {
-         throw class158.method3445(var3, "mc.update(" + ')');
-      }
-   }
-
-   abstract void method1318();
-
-   abstract void method1319();
-
-   abstract void method1320();
-
-   public abstract void method3964();
-
-   public final synchronized void method3953(Graphics var1) {
-      if (!field1837) {
-         field1811 = true;
-         if (class27.method3468((byte)1) - -4623726814665285853L * field1831 > 1000L) {
-            Rectangle var2 = var1.getClipBounds();
-            if (var2 == null || var2.width >= -639974669 * class919.field10433 && var2.height >= field1812 * 1282634425) {
-               field1818 = true;
-            }
-         }
-      }
-
-   }
-
-   abstract void method1321();
-
-   abstract void method1322();
-
-   public void method3948() {
-      if (!field1837) {
-         field1836 = 0L;
-      }
-
-   }
-
-   public void method3952() {
-      if (!field1837) {
-         field1836 = class27.method3468((byte)1) * -5427437724707662087L;
-         class764.method2745(5000L);
-         this.method1326(false, (byte)2);
-      }
-
-   }
-
    public void method3945() {
       try {
          if (!field1837) {
-            field1836 = class27.method3468((byte)1) * -5427437724707662087L;
+            field1836 = class27.method3468((byte)1);
             class764.method2745(5000L);
             this.method1326(false, (byte)120);
          }
@@ -707,8 +628,6 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
    abstract void method1323(byte var1);
 
    abstract void method1324(int var1);
-
-   abstract void method1325();
 
    final void method1326(boolean var1, byte var2) {
       try {
@@ -729,7 +648,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
          try {
             field1816.method6149(23087728);
 
-            for(int var3 = 0; var3 < 1210163253 * class738.field3001; ++var3) {
+            for(int var3 = 0; var3 < class738.field3001; ++var3) {
                class785.field3828[var3].method6149(1779540289);
             }
 
@@ -777,13 +696,13 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
          var1.setBackground(Color.black);
          var1.setLayout((LayoutManager)null);
          var1.add(class837.field9161);
-         class837.field9161.setSize(-2110394505 * class759.field4331, -1111710645 * class97.field614);
+         class837.field9161.setSize(class759.field4331, class97.field614);
          class837.field9161.setVisible(true);
          if (var1 == class701.field3371) {
             Insets var3 = class701.field3371.getInsets();
-            class837.field9161.setLocation(var3.left + 1898544019 * field1813, field1814 * 540368727 + var3.top);
+            class837.field9161.setLocation(var3.left + field1813, field1814 + var3.top);
          } else {
-            class837.field9161.setLocation(1898544019 * field1813, 540368727 * field1814);
+            class837.field9161.setLocation(field1813, field1814);
          }
 
          class837.field9161.addFocusListener(this);
@@ -793,44 +712,10 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
          class837.field9161.setFocusTraversalKeysEnabled(false);
          field1811 = true;
          field1818 = false;
-         field1831 = class27.method3468((byte)1) * -4845717340640327541L;
+         field1831 = class27.method3468((byte)1);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "mc.h(" + ')');
       }
-   }
-
-   public void method3949() {
-      if (!field1837) {
-         field1836 = (class27.method3468((byte)1) + 4000L) * -5427437724707662087L;
-      }
-
-   }
-
-   public void method3950() {
-      if (!field1837) {
-         field1836 = (class27.method3468((byte)1) + 4000L) * -5427437724707662087L;
-      }
-
-   }
-
-   public void method3951() {
-      if (!field1837) {
-         field1836 = (class27.method3468((byte)1) + 4000L) * -5427437724707662087L;
-      }
-
-   }
-
-   public void method3954() {
-      if (!field1837) {
-         field1836 = class27.method3468((byte)1) * -5427437724707662087L;
-         class764.method2745(5000L);
-         this.method1326(false, (byte)22);
-      }
-
-   }
-
-   public final void method3962(Graphics var1) {
-      this.method3947(var1);
    }
 
    void method1328(String var1, int var2) {
@@ -857,8 +742,6 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
       }
    }
 
-   abstract void method1329();
-
    public final void windowDeactivated(WindowEvent var1) {
    }
 
@@ -872,25 +755,11 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
          class701.field3371.setVisible(true);
          class701.field3371.toFront();
          Insets var3 = class701.field3371.getInsets();
-         class701.field3371.setSize(var3.right + class919.field10433 * -639974669 + var3.left, field1812 * 1282634425 + var3.top + var3.bottom);
+         class701.field3371.setSize(var3.right + class919.field10433 + var3.left, field1812 + var3.top + var3.bottom);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "mc.z(" + ')');
       }
    }
-
-   public abstract void method3961();
-
-   public abstract void method3958();
-
-   public abstract void method3959();
-
-   public abstract void method3960();
-
-   public abstract void method3963();
-
-   abstract void method1331();
-
-   abstract void method1332();
 
    public final void focusLost(FocusEvent var1) {
       try {
@@ -913,9 +782,9 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
             try {
                class439 var9 = new class439(class691.field7134, "rw", 10000L);
 
-               class907 var10;
-               for(var10 = new class907((int)var9.method4277(-840924897)); var10.field10376 * 385051775 < var10.field10375.length; var10.field10376 += var11 * 116413311) {
-                  var11 = var9.method4278(var10.field10375, var10.field10376 * 385051775, var10.field10375.length - var10.field10376 * 385051775, (short)-10746);
+               InputStream var10;
+               for(var10 = new InputStream((int)var9.method4277(-840924897)); var10.field10376 < var10.field10375.length; var10.field10376 += var11) {
+                  var11 = var9.method4278(var10.field10375, var10.field10376, var10.field10375.length - var10.field10376, (short)-10746);
                   if (var11 == -1) {
                      throw new IOException();
                   }
@@ -1009,8 +878,6 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
       }
    }
 
-   abstract void method1334();
-
    public static class888 method1335(Component var0, boolean var1, short var2) {
       try {
          return new class817(var0, var1);
@@ -1032,7 +899,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
 
    static final void method1337(class564 var0, class131 var1, class744 var2, int var3) {
       try {
-         var0.field903 = var2.field3161[(var2.field3156 -= -391880689) * 681479919] * 1158843261;
+         var0.field903 = var2.field3161[--var2.field3156];
          class814.method2932(var0, 510093055);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "mc.fy(" + ')');
@@ -1043,7 +910,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -1424956747 * var3.field892;
+         var0.field3161[++var0.field3156 - 1] = var3.field892;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "mc.pz(" + ')');
       }
@@ -1055,7 +922,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
 
          for(int var3 = 0; var3 < var2.length; ++var3) {
             class98 var4 = var2[var3];
-            if (var4.field610 * 1161031995 == var0) {
+            if (var4.field610 == var0) {
                return var4;
             }
          }
@@ -1068,7 +935,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
 
    static final void method1340(class744 var0, int var1) {
       try {
-         var0.field3161[var0.field3156 * 681479919 - 1] = var0.field3169.method5781((byte)4)[var0.field3161[var0.field3156 * 681479919 - 1]];
+         var0.field3161[var0.field3156 - 1] = var0.field3169.method5781((byte)4)[var0.field3161[var0.field3156 - 1]];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "mc.xv(" + ')');
       }

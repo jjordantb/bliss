@@ -24,15 +24,15 @@ public class class366 {
       this.field2419 = var2;
 
       try {
-         class907 var3 = new class907(var1);
-         class907 var4 = new class907(var1);
+         InputStream var3 = new InputStream(var1);
+         InputStream var4 = new InputStream(var1);
          var3.method6371();
-         var3.field10376 += 232826622;
+         var3.field10376 += 2;
          int var5 = var3.method6371();
          int var6 = 0;
          int var7 = -1;
          int var8 = -1;
-         var4.field10376 = (var3.field10376 * 385051775 + var5) * 116413311;
+         var4.field10376 = var3.field10376 + var5;
 
          int var9;
          for(var9 = 0; var9 < var5; ++var9) {
@@ -96,7 +96,7 @@ public class class366 {
             }
          }
 
-         if (var4.field10376 * 385051775 != var1.length) {
+         if (var4.field10376 != var1.length) {
             throw new RuntimeException();
          }
 

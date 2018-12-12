@@ -5,7 +5,7 @@ public class class498 {
    static int field8103 = 0;
    static byte[] field8104 = new byte[2048];
    static byte[] field8105 = new byte[2048];
-   static class907[] field8106 = new class907[2048];
+   static InputStream[] field8106 = new InputStream[2048];
    static int[] field8107 = new int[2048];
    static int[] field8108 = new int[2048];
    static int field8109 = 1;
@@ -18,7 +18,7 @@ public class class498 {
       throw new Error();
    }
 
-   public static void method4491(class907 var0, byte var1) {
+   public static void method4491(InputStream var0, byte var1) {
       try {
          byte[] var2 = new byte[24];
 
@@ -48,7 +48,7 @@ public class class498 {
 
    static final void method4492(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-13);
          class131 var4 = class382.field1410[var2 >> 16];
          class979.method1837(var3, var4, var0, (byte)-123);
@@ -59,7 +59,7 @@ public class class498 {
 
    static final void method4493(class744 var0, int var1) {
       try {
-         class362.method1509(var0.field3161[(var0.field3156 -= -391880689) * 681479919], (byte)0);
+         class362.method1509(var0.field3161[--var0.field3156], (byte)0);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ak.aef(" + ')');
       }
@@ -67,7 +67,7 @@ public class class498 {
 
    static final void method4494(class744 var0, byte var1) {
       try {
-         System.out.println(var0.field3157[(var0.field3158 -= 969361751) * -203050393]);
+         System.out.println(var0.field3157[--var0.field3158]);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ak.afw(" + ')');
       }

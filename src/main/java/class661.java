@@ -20,12 +20,12 @@ public class class661 {
             class180 var5 = this.field9623;
             byte[] var10;
             synchronized(this.field9623) {
-               var10 = this.field9623.method3285(-1006924897 * class981.field3232.field3271, var1, (byte)-4);
+               var10 = this.field9623.method3285(class981.field3232.field3271, var1, (byte)-4);
             }
 
             var4 = new class636();
             if (var10 != null) {
-               var4.method5909(new class907(var10), 27685189);
+               var4.method5909(new InputStream(var10), 27685189);
             }
 
             class1 var11 = this.field9625;
@@ -76,7 +76,7 @@ public class class661 {
    public class661(class469 var1, class423 var2, class180 var3) {
       this.field9623 = var3;
       if (this.field9623 != null) {
-         this.field9624 = this.field9623.method3286(class981.field3232.field3271 * -1006924897, 487068051) * 1946957321;
+         this.field9624 = this.field9623.method3286(class981.field3232.field3271, 487068051);
       } else {
          this.field9624 = 0;
       }

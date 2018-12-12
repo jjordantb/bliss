@@ -6,7 +6,7 @@ public final class class675 {
    static byte[] field7438 = new byte[520];
    class645 field7439 = null;
    int field7440;
-   int field7441 = -22135608;
+   int field7441 = 65000;
 
    boolean method4162(int var1, byte[] var2, int var3, boolean var4, int var5) {
       try {
@@ -83,7 +83,7 @@ public final class class675 {
                            }
 
                            boolean var11;
-                           if (var12 != var1 || var9 != var13 || var14 != -1194991041 * this.field7440) {
+                           if (var12 != var1 || var9 != var13 || var14 != this.field7440) {
                               var11 = false;
                               var10000 = var11;
                               return var10000;
@@ -122,7 +122,7 @@ public final class class675 {
                            field7438[6] = (byte)(var10 >> 16);
                            field7438[7] = (byte)(var10 >> 8);
                            field7438[8] = (byte)var10;
-                           field7438[9] = (byte)(-1194991041 * this.field7440);
+                           field7438[9] = (byte)this.field7440;
                            this.field7437.method6156((long)(var8 * 520));
                            this.field7437.method6150(field7438, 0, 10, 1531111935);
                            var12 = var3 - var21;
@@ -140,7 +140,7 @@ public final class class675 {
                            field7438[4] = (byte)(var10 >> 16);
                            field7438[5] = (byte)(var10 >> 8);
                            field7438[6] = (byte)var10;
-                           field7438[7] = (byte)(this.field7440 * -1194991041);
+                           field7438[7] = (byte)this.field7440;
                            this.field7437.method6156((long)(var8 * 520));
                            this.field7437.method6150(field7438, 0, 8, 1542282258);
                            var12 = var3 - var21;
@@ -188,7 +188,7 @@ public final class class675 {
                int var4 = ((field7438[0] & 255) << 16) + ((field7438[1] & 255) << 8) + (field7438[2] & 255);
                int var22 = (field7438[5] & 255) + ((field7438[4] & 255) << 8) + ((field7438[3] & 255) << 16);
                Object var6;
-               if (var4 < 0 || var4 > this.field7441 * -1289609275) {
+               if (var4 < 0 || var4 > this.field7441) {
                   var6 = null;
                   var10000 = var6;
                   return (byte[])var10000;
@@ -238,7 +238,7 @@ public final class class675 {
                      }
 
                      Object var15;
-                     if (var11 == var1 && var12 == var8 && -1194991041 * this.field7440 == var14) {
+                     if (var11 == var1 && var12 == var8 && this.field7440 == var14) {
                         if (var13 >= 0 && (long)var13 <= this.field7437.method6151(-1934019874) / 520L) {
                            int var25 = var9 + var10;
 
@@ -283,7 +283,7 @@ public final class class675 {
       try {
          class645 var5 = this.field7437;
          synchronized(this.field7437) {
-            if (var3 >= 0 && var3 <= -1289609275 * this.field7441) {
+            if (var3 >= 0 && var3 <= this.field7441) {
                boolean var6 = this.method4162(var1, var2, var3, true, 1494361890);
                if (!var6) {
                   var6 = this.method4162(var1, var2, var3, false, 1552417971);
@@ -301,17 +301,17 @@ public final class class675 {
 
    public String toString() {
       try {
-         return "" + this.field7440 * -1194991041;
+         return "" + this.field7440;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "ns.toString(" + ')');
       }
    }
 
    public class675(int var1, class645 var2, class645 var3, int var4) {
-      this.field7440 = var1 * 576785855;
+      this.field7440 = var1;
       this.field7437 = var2;
       this.field7439 = var3;
-      this.field7441 = var4 * 1731069709;
+      this.field7441 = var4;
    }
 
    static void method4165(byte var0) {
@@ -398,8 +398,8 @@ public final class class675 {
 
    static final void method4166(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3174[var0.field3176 * 1883543357];
-         String var3 = var0.field3169.method5780(-937307905 * class730.field2926.field7327 << 16 | var2, -1713280768);
+         int var2 = var0.field3174[var0.field3176];
+         String var3 = var0.field3169.method5780(class730.field2926.field7327 << 16 | var2, -1713280768);
          String var4;
          if (var3 == null) {
             var4 = "";
@@ -407,7 +407,7 @@ public final class class675 {
             var4 = var3;
          }
 
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var4;
+         var0.field3157[++var0.field3158 - 1] = var4;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ns.bi(" + ')');
       }
@@ -415,7 +415,7 @@ public final class class675 {
 
    static final void method4167(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-43);
          class131 var4 = class382.field1410[var2 >> 16];
          class296.method6509(var3, var4, var0, -2030984421);
@@ -426,7 +426,7 @@ public final class class675 {
 
    static final void method4168(class744 var0, int var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         String var2 = (String)var0.field3157[--var0.field3158];
          class701 var3 = class637.method5936(class643.field10010, class730.field2692.field7765, (byte)13);
          var3.field3364.method6361(var2.length() + 1);
          var3.field3364.method6366(var2, 2108270585);

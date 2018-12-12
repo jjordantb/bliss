@@ -14,22 +14,14 @@ public class class235 implements class331 {
 
    public int method89(int var1) {
       try {
-         return -1789529873 * this.field8252;
+         return this.field8252;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "rc.f(" + ')');
       }
    }
 
-   public int method91() {
-      return -1789529873 * this.field8252;
-   }
-
-   public int method90() {
-      return -1789529873 * this.field8252;
-   }
-
    class235(int var1) {
-      this.field8252 = -1875689969 * var1;
+      this.field8252 = var1;
    }
 
    static final int method4642(int var0, int var1, byte var2) {

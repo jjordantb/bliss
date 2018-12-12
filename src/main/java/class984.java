@@ -19,8 +19,8 @@ public class class984 {
 
    static void method1875(String var0, String var1, int var2, int var3, int var4, long var5, int var7, int var8, boolean var9, boolean var10, long var11, boolean var13, int var14) {
       try {
-         if (!class602.field8645 && -278777595 * class602.field8673 < 521) {
-            var2 = var2 != -1 ? var2 : class730.field2919 * -1808468501;
+         if (!class602.field8645 && class602.field8673 < 521) {
+            var2 = var2 != -1 ? var2 : class730.field2919 * -280458557 * -1808468501;
             class357 var15 = new class357(var0, var1, var2, var3, var4, var5, var7, var8, var9, var10, var11, var13);
             class647.method5482(var15, 1640099092);
          }
@@ -48,7 +48,7 @@ public class class984 {
 
    static final void method1877(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)60);
          class131 var4 = class382.field1410[var2 >> 16];
          class396.method3500(var3, var4, var0, -1168214437);
@@ -59,8 +59,8 @@ public class class984 {
 
    static final void method1878(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2902[var2].field10622 * 535421071;
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class730.field2902[var2].field10622;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jw.ya(" + ')');
       }
@@ -68,10 +68,10 @@ public class class984 {
 
    static final void method1879(class744 var0, int var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
-         int var3 = var0.field3161[1 + 681479919 * var0.field3156];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var2 % var3;
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = var2 % var3;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "jw.zu(" + ')');
       }
@@ -79,7 +79,7 @@ public class class984 {
 
    static final void method1880(class744 var0, short var1) {
       try {
-         class295.method6520(var0.field3161[(var0.field3156 -= -391880689) * 681479919], -1, -1, false, 752651181);
+         class295.method6520(var0.field3161[--var0.field3156], -1, -1, false, 752651181);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jw.adl(" + ')');
       }
@@ -87,7 +87,7 @@ public class class984 {
 
    static final void method1881(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9119.method2717(-2145285486);
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9119.method2717(-2145285486);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jw.ajz(" + ')');
       }
@@ -97,10 +97,10 @@ public class class984 {
       try {
          class149 var2 = (class149)class79.field1525.method901(1766612795);
          if (var2 != null) {
-            int var3 = 385051775 * var0.field10376;
-            var0.method6364(-1886044647 * var2.field1533, -169937628);
+            int var3 = var0.field10376;
+            var0.method6364(var2.field1533, -169937628);
 
-            for(int var4 = 0; var4 < 719522345 * var2.field1529; ++var4) {
+            for(int var4 = 0; var4 < var2.field1529; ++var4) {
                if (var2.field1527[var4] != 0) {
                   var0.method6361(var2.field1527[var4]);
                } else {
@@ -301,14 +301,14 @@ public class class984 {
 
    static final void method1885(class564 var0, class131 var1, class744 var2, byte var3) {
       try {
-         boolean var4 = var2.field3161[(var2.field3156 -= -391880689) * 681479919] == 1;
+         boolean var4 = var2.field3161[--var2.field3156] == 1;
          if (var0.field886 != var4) {
             var0.field886 = var4;
             class814.method2932(var0, -1214371857);
          }
 
-         if (-1 == -1309843523 * var0.field879 && !var1.field1101) {
-            class162.method3543(-440872681 * var0.field867, (short)945);
+         if (-1 == var0.field879 && !var1.field1101) {
+            class162.method3543(var0.field867, (short)945);
          }
 
       } catch (RuntimeException var5) {

@@ -28,7 +28,7 @@ public class class642 extends class568 {
    }
 
    void method6136(int var1, int var2, int var3) {
-      this.field10079[var2 * this.field10073.field7226 * -506105871 + var1] |= 1 << var3;
+      this.field10079[var2 * this.field10073.field7226 + var1] |= 1 << var3;
       ++this.field10080;
    }
 
@@ -179,7 +179,7 @@ public class class642 extends class568 {
       this.field10074 = var2;
       this.field10084 = (float)var3;
       this.field10076 = var4;
-      this.field10079 = new int[this.field10073.field7226 * -506105871 * this.field10073.field7225 * -1148794921];
+      this.field10079 = new int[this.field10073.field7226 * this.field10073.field7225];
       byte var5 = 10;
       if (var2 >= 0) {
          class414 var6 = this.field10078.field8581.method4625(var2, 1520533155);

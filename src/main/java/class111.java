@@ -104,7 +104,7 @@ public class class111 {
 
    static final void method1356(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)22);
          class131 var4 = class382.field1410[var2 >> 16];
          class492.method4395(var3, var4, var0, (byte)-127);
@@ -115,7 +115,7 @@ public class class111 {
 
    static final void method1357(class744 var0, int var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         String var2 = (String)var0.field3157[--var0.field3158];
          class701 var3 = class637.method5936(class643.field9964, class730.field2692.field7765, (byte)34);
          var3.field3364.method6361(var2.length() + 1);
          var3.field3364.method6366(var2, 2114518021);
@@ -127,30 +127,30 @@ public class class111 {
 
    static final void method1358(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          if (var2 == -1) {
             int var3 = var2 >> 14 & 16383;
             int var4 = var2 & 16383;
             class389 var5 = class730.field2697.method5270(681479919);
-            var3 -= var5.field1521 * -1760580017;
+            var3 -= var5.field1521;
             if (var3 < 0) {
                var3 = 0;
             } else if (var3 >= class730.field2697.method5271(-1866822819)) {
                var3 = class730.field2697.method5271(-1973847066);
             }
 
-            var4 -= 283514611 * var5.field1522;
+            var4 -= var5.field1522;
             if (var4 < 0) {
                var4 = 0;
             } else if (var4 >= class730.field2697.method5272(922370140)) {
                var4 = class730.field2697.method5272(271939870);
             }
 
-            class495.field8099 = ((var3 << 9) + 256) * -178575833;
-            class516.field4332 = 1001372047 * ((var4 << 9) + 256);
+            class495.field8099 = (var3 << 9) + 256;
+            class516.field4332 = (var4 << 9) + 256;
          } else {
-            class495.field8099 = 178575833;
-            class516.field4332 = -1001372047;
+            class495.field8099 = -1;
+            class516.field4332 = -1;
          }
 
       } catch (RuntimeException var6) {
@@ -160,7 +160,7 @@ public class class111 {
 
    static final void method1359(class744 var0, int var1) {
       try {
-         class615.field8903.method5391(class615.field8903.field9113, var0.field3161[(var0.field3156 -= -391880689) * 681479919] == 1 ? 1 : 0, 1031457025);
+         class615.field8903.method5391(class615.field8903.field9113, var0.field3161[--var0.field3156] == 1 ? 1 : 0, 1031457025);
          class730.field2697.method5309(2089019629);
          class95.method523(656179282);
          class730.field2647 = false;

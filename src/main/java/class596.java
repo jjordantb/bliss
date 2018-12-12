@@ -1,5 +1,5 @@
 public class class596 {
-   int field2140 = 377229199;
+   int field2140 = -1;
    static int field2141;
    int[] field2142;
    class346 field2143;

@@ -60,20 +60,20 @@ public class class981 {
 
    public int method1925(int var1, int var2) {
       try {
-         return var1 & (1 << this.field3272 * -82175751) - 1;
+         return var1 & (1 << this.field3272) - 1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ew.b(" + ')');
       }
    }
 
    class981(int var1, int var2) {
-      this.field3271 = var1 * -1878339489;
-      this.field3272 = var2 * -1094244023;
+      this.field3271 = var1;
+      this.field3272 = var2;
    }
 
    public int method1926(short var1) {
       try {
-         return 1 << -82175751 * this.field3272;
+         return 1 << this.field3272;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ew.a(" + ')');
       }
@@ -81,7 +81,7 @@ public class class981 {
 
    public int method1927(int var1, int var2) {
       try {
-         return var1 >>> -82175751 * this.field3272;
+         return var1 >>> this.field3272;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ew.f(" + ')');
       }
@@ -128,18 +128,18 @@ public class class981 {
 
    static void method1931(int var0) {
       try {
-         class881.field10140 = -1058684408;
+         class881.field10140 = 136;
          class881.field10177 = class730.field2674;
          if (class730.field2825 != null) {
-            class907 var1 = new class907(class730.field2825);
-            class881.field10146 = var1.method6375((short)19840) * -2742373017286080113L;
-            class881.field10183 = var1.method6375((short)15472) * 3207425516430892907L;
+            InputStream var1 = new InputStream(class730.field2825);
+            class881.field10146 = var1.method6375((short)19840);
+            class881.field10183 = var1.method6375((short)15472);
          }
 
-         if (122690138525332847L * class881.field10146 < 0L) {
+         if (class881.field10146 < 0L) {
             class919.method6486(35, 1176559477);
          } else {
-            class521.method2751(false, true, "", "", class881.field10146 * 122690138525332847L);
+            class521.method2751(false, true, "", "", class881.field10146);
          }
 
       } catch (RuntimeException var2) {
@@ -164,7 +164,7 @@ public class class981 {
             int var19 = (int)var16 >> 9;
             int var20 = (int)var18 >> 9;
             if (var19 > 0 && var20 > 0 && var19 < class730.field2697.method5271(-1954958237) && var20 < class730.field2697.method5272(-1173220944)) {
-               int var21 = class923.field10295.field3639;
+               int var21 = class923.local.field3639;
                if (var21 < 3 && (class730.field2697.method5296(936952439).field5406[1][var19][var20] & 2) != 0) {
                   ++var21;
                }
@@ -192,7 +192,7 @@ public class class981 {
 
    static final void method1933(class744 var0, int var1) {
       try {
-         class615.field8903.method5391(class615.field8903.field9121, var0.field3161[(var0.field3156 -= -391880689) * 681479919] == 1 ? 1 : 0, -1686668837);
+         class615.field8903.method5391(class615.field8903.field9121, var0.field3161[--var0.field3156] == 1 ? 1 : 0, -1686668837);
          class95.method523(656179282);
          class730.field2647 = false;
       } catch (RuntimeException var3) {

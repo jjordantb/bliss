@@ -26,7 +26,7 @@ public class class833 {
       }
    }
 
-   void method5424(class907 var1, int var2) {
+   void method5424(InputStream var1, int var2) {
       try {
          while(true) {
             int var3 = var1.method6371();
@@ -41,7 +41,7 @@ public class class833 {
       }
    }
 
-   void method5425(class907 var1, int var2, int var3) {
+   void method5425(InputStream var1, int var2, int var3) {
       try {
          if (1 == var2) {
             this.field9176 = class954.method2092(var1.method6372(-12558881), 2015897871);
@@ -50,17 +50,17 @@ public class class833 {
          } else if (3 == var2) {
             this.field9177 = var1.method6379(1756453424);
          } else if (4 == var2) {
-            this.field9172 = var1.method6420((byte)94) * -1961153765;
+            this.field9172 = var1.method6420((byte)94);
          } else {
             int var4;
             int var5;
             if (var2 != 5 && var2 != 6) {
                if (7 == var2 || 8 == var2) {
                   var4 = var1.method6374();
-                  this.field9170 = var1.method6374() * -1158380671;
+                  this.field9170 = var1.method6374();
                   this.field9175 = new Object[var4];
 
-                  for(var5 = 0; var5 < -1179140991 * this.field9170; ++var5) {
+                  for(var5 = 0; var5 < this.field9170; ++var5) {
                      int var8 = var1.method6374();
                      if (var2 == 7) {
                         this.field9175[var8] = var1.method6379(1730348772);
@@ -70,10 +70,10 @@ public class class833 {
                   }
                }
             } else {
-               this.field9170 = var1.method6374() * -1158380671;
-               this.field9174 = new HashMap(-1179140991 * this.field9170);
+               this.field9170 = var1.method6374();
+               this.field9174 = new HashMap(this.field9170);
 
-               for(var4 = 0; var4 < this.field9170 * -1179140991; ++var4) {
+               for(var4 = 0; var4 < this.field9170; ++var4) {
                   var5 = var1.method6420((byte)-59);
                   Object var6;
                   if (var2 == 5) {
@@ -95,7 +95,7 @@ public class class833 {
    public int method5426(int var1, int var2) {
       try {
          Object var3 = this.method5427(var1, (short)31709);
-         return var3 == null ? this.field9172 * -1363462381 : ((Integer)var3).intValue();
+         return var3 == null ? this.field9172 : ((Integer)var3).intValue();
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "tx.b(" + ')');
       }
@@ -115,7 +115,7 @@ public class class833 {
 
    public boolean method5428(Object var1, byte var2) {
       try {
-         if (this.field9170 * -1179140991 == 0) {
+         if (this.field9170 == 0) {
             return false;
          } else {
             if (this.field9173 == null) {
@@ -131,7 +131,7 @@ public class class833 {
 
    public int[] method5429(Object var1, short var2) {
       try {
-         if (this.field9170 * -1179140991 == 0) {
+         if (this.field9170 == 0) {
             return null;
          } else {
             if (this.field9173 == null) {
@@ -147,7 +147,7 @@ public class class833 {
 
    public int method5430(byte var1) {
       try {
-         return this.field9170 * -1179140991;
+         return this.field9170;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "tx.u(" + ')');
       }
@@ -230,7 +230,7 @@ public class class833 {
          }
 
          String var3 = class730.field2926.field7321 + ".com";
-         return "http://" + var1 + "." + var3 + "/l=" + class321.field1066 + "/a=" + class730.field2646 * -1154804873 + var2 + "/";
+         return "http://" + var1 + "." + var3 + "/l=" + class321.field1066 + "/a=" + class730.field2646 + var2 + "/";
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "tx.nn(" + ')');
       }
@@ -240,8 +240,8 @@ public class class833 {
       try {
          class682 var4 = class370.method881(11, (long)var0);
          var4.method4340((byte)23);
-         var4.field7687 = 1274450087 * var1;
-         var4.field7685 = var2 * 293101103;
+         var4.field7687 = var1;
+         var4.field7685 = var2;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "tx.aj(" + ')');
       }

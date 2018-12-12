@@ -6,10 +6,6 @@ public class class108 extends class348 {
    class735 field1561;
    class209 field1562;
 
-   public void method185(byte[] var1, int var2, int var3) throws IOException {
-      this.field1562.method3767(var1, var2, var3, -1957971249);
-   }
-
    public boolean method175(int var1, byte var2) throws IOException {
       try {
          return this.field1561.method1799(var1, 1797469509);
@@ -83,50 +79,9 @@ public class class108 extends class348 {
       this.field1562 = new class209(this.field1560.getOutputStream(), var2);
    }
 
-   public void method182() {
-      this.field1562.method3770(1904718634);
-
-      try {
-         this.field1560.close();
-      } catch (IOException var2) {
-         ;
-      }
-
-      this.field1561.method1801(2078389342);
-   }
-
-   public boolean method180(int var1) throws IOException {
-      return this.field1561.method1799(var1, 901344391);
-   }
-
-   public int method183(byte[] var1, int var2, int var3) throws IOException {
-      return this.field1561.method1802(var1, var2, var3, (byte)88);
-   }
-
-   public void method184(byte[] var1, int var2, int var3) throws IOException {
-      this.field1562.method3767(var1, var2, var3, -1140067311);
-   }
-
-   public int method188(byte[] var1, int var2, int var3) throws IOException {
-      return this.field1561.method1802(var1, var2, var3, (byte)44);
-   }
-
-   public void method181(byte[] var1, int var2, int var3) throws IOException {
-      this.field1562.method3767(var1, var2, var3, -629136417);
-   }
-
-   public int method174() throws IOException {
-      return this.field1561.method1800((byte)-61);
-   }
-
-   public void method178() {
-      this.field1561.method1798(124317487);
-      this.field1562.method3769((byte)25);
-   }
-
    static final void method1199(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
+         var0.field3161[++var0.field3156 - 1] = 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acl.uv(" + ')');
       }

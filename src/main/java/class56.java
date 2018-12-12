@@ -29,7 +29,7 @@ public final class class56 {
          class689 var2 = (class689)class371.field1088.method2942((long)var0);
          if (var2 != null) {
             var2.field7630.method1370((byte)57);
-            class176.method3166(1566028323 * var2.field7628, var2.field7627, 1982223094);
+            class176.method3166(var2.field7628, var2.field7627, 1982223094);
             var2.method545(-1460969981);
          }
 
@@ -50,7 +50,7 @@ public final class class56 {
 
    static final void method1548(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
       try {
-         if (var0 - var2 >= class964.field1416 * -1424479739 && var0 + var2 <= class964.field1413 * 1135094847 && var1 - var2 >= class964.field1414 * 1155384281 && var2 + var1 <= -1062447355 * class964.field1415) {
+         if (var0 - var2 >= class381.field1416 && var0 + var2 <= class381.field1413 && var1 - var2 >= class381.field1414 && var2 + var1 <= class381.field1415) {
             class945.method2009(var0, var1, var2, var3, var4, var5, 1691112571);
          } else {
             class673.method4260(var0, var1, var2, var3, var4, var5, (byte)55);
@@ -86,9 +86,9 @@ public final class class56 {
       try {
          if (!class602.field8645) {
             var0.method545(-1460969981);
-            class602.field8673 -= -970198067;
+            --class602.field8673;
             if (!var0.field1708) {
-               long var2 = 6619564980435866523L * var0.field1706;
+               long var2 = var0.field1706;
 
                class497 var4;
                for(var4 = (class497)class602.field8637.method2942(var2); var4 != null && !var4.field8122.equals(var0.field1697); var4 = (class497)class602.field8637.method2943(-1565779381)) {

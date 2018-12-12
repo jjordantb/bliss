@@ -1,79 +1,10 @@
 import jaclib.ping.IcmpService;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class class470 extends IcmpService {
    static volatile class470 field8223;
    List field8224 = new ArrayList();
-
-   protected void notify(int var1, int var2, int var3) {
-      try {
-         Iterator var4 = this.field8224.iterator();
-
-         while(var4.hasNext()) {
-            class477 var5 = (class477)var4.next();
-            var5.method4643(var1, var2, var3, (short)1503);
-         }
-
-      } catch (RuntimeException var6) {
-         throw class158.method3445(var6, "adv.notify(" + ')');
-      }
-   }
-
-   protected void notify(int var1) {
-      try {
-         Iterator var2 = this.field8224.iterator();
-
-         while(var2.hasNext()) {
-            class477 var3 = (class477)var2.next();
-            var3.method4645(var1 == 0, (byte)5);
-         }
-
-      } catch (RuntimeException var4) {
-         throw class158.method3445(var4, "adv.notify(" + ')');
-      }
-   }
-
-   protected void b(int var1, int var2, int var3) {
-      Iterator var4 = this.field8224.iterator();
-
-      while(var4.hasNext()) {
-         class477 var5 = (class477)var4.next();
-         var5.method4643(var1, var2, var3, (short)5654);
-      }
-
-   }
-
-   protected void a(int var1) {
-      Iterator var2 = this.field8224.iterator();
-
-      while(var2.hasNext()) {
-         class477 var3 = (class477)var2.next();
-         var3.method4645(var1 == 0, (byte)5);
-      }
-
-   }
-
-   protected void f(int var1) {
-      Iterator var2 = this.field8224.iterator();
-
-      while(var2.hasNext()) {
-         class477 var3 = (class477)var2.next();
-         var3.method4645(var1 == 0, (byte)5);
-      }
-
-   }
-
-   protected void p(int var1, int var2, int var3) {
-      Iterator var4 = this.field8224.iterator();
-
-      while(var4.hasNext()) {
-         class477 var5 = (class477)var4.next();
-         var5.method4643(var1, var2, var3, (short)26137);
-      }
-
-   }
 
    public static byte[][][] method4592(int var0, int var1) {
       try {
@@ -543,8 +474,8 @@ public class class470 extends IcmpService {
    static void method4593(boolean var0, int var1) {
       try {
          if (var0) {
-            if (-1 != -257444687 * class730.field2822) {
-               class407.method5536(-257444687 * class730.field2822, -2042512871);
+            if (-1 != class730.field2822) {
+               class407.method5536(class730.field2822, -2042512871);
             }
 
             for(class256 var2 = (class256)class730.field2823.method2946(2118062141); var2 != null; var2 = (class256)class730.field2823.method2945((byte)56)) {
@@ -558,13 +489,13 @@ public class class470 extends IcmpService {
                class526.method2226(var2, true, false, -113822480);
             }
 
-            class730.field2822 = -1785861201;
+            class730.field2822 = -1;
             class730.field2823 = new class6(8);
             class515.method2693((short)255);
-            class730.field2822 = -391544995 * class6.field4931.field9522;
+            class730.field2822 = class6.field4931.field9522;
             class161.method3551(false, (byte)8);
             class881.method6172(-1204145082);
-            class228.method4586(-257444687 * class730.field2822, (int[])null, 188692666);
+            class228.method4586(class730.field2822, (int[])null, 188692666);
          }
 
          class881.field10184 = true;
@@ -572,4 +503,34 @@ public class class470 extends IcmpService {
          throw class158.method3445(var3, "adv.fr(" + ')');
       }
    }
+
+    @Override
+    protected void notify(int var1) {
+
+    }
+
+    @Override
+    protected void notify(int var1, int var2, int var3) {
+
+    }
+
+    @Override
+    protected void a(int var1) {
+
+    }
+
+    @Override
+    protected void f(int var1) {
+
+    }
+
+    @Override
+    protected void b(int var1, int var2, int var3) {
+
+    }
+
+    @Override
+    protected void p(int var1, int var2, int var3) {
+
+    }
 }

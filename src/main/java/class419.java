@@ -6,14 +6,14 @@ public class class419 {
    public static boolean field9521;
 
    class419(int var1, int var2, int var3) {
-      this.field9519 = -1047476297 * var1;
-      this.field9517 = var2 * 463745529;
-      this.field9518 = var3 * 50067731;
+      this.field9519 = var1;
+      this.field9517 = var2;
+      this.field9518 = var3;
    }
 
    public static int[] method5641(int var0) {
       try {
-         return new int[]{399302739 * class295.field10470, class295.field10469 * 1178461027, class295.field10477 * -1372765471};
+         return new int[]{class295.field10470, class295.field10469, class295.field10477};
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "vc.b(" + ')');
       }
@@ -21,12 +21,12 @@ public class class419 {
 
    static final void method5642(class744 var0, int var1) {
       try {
-         var0.field3158 -= 969361751;
-         var0.field3156 -= -1175642067;
-         String var2 = (String)var0.field3157[-203050393 * var0.field3158];
-         boolean var3 = var0.field3161[681479919 * var0.field3156] == 1;
-         boolean var4 = 1 == var0.field3161[1 + 681479919 * var0.field3156];
-         boolean var5 = var0.field3161[var0.field3156 * 681479919 + 2] == 1;
+         --var0.field3158;
+         var0.field3156 -= 3;
+         String var2 = (String)var0.field3157[var0.field3158];
+         boolean var3 = var0.field3161[var0.field3156] == 1;
+         boolean var4 = 1 == var0.field3161[1 + var0.field3156];
+         boolean var5 = var0.field3161[var0.field3156 + 2] == 1;
          class701 var6 = class637.method5936(class643.field10030, class730.field2674.field7765, (byte)102);
          var6.field3364.method6362(class305.method372(var2, 1218902925) + 1, 16711935);
          var6.field3364.method6366(var2, 2143999999);
@@ -54,15 +54,15 @@ public class class419 {
       try {
          for(class689 var1 = (class689)class371.field1088.method2946(1729958795); var1 != null; var1 = (class689)class371.field1088.method2945((byte)-77)) {
             if (var1.field7630.method1372(-263786809)) {
-               class56.method1546(1566028323 * var1.field7628, (byte)5);
+               class56.method1546(var1.field7628, (byte)5);
             } else {
                var1.field7630.method2099((byte)40);
 
                try {
                   var1.field7630.method1379((byte)-21);
                } catch (Exception var4) {
-                  class764.method2747("" + 1566028323 * var1.field7628, var4, (short)-20610);
-                  class56.method1546(1566028323 * var1.field7628, (byte)85);
+                  class764.method2747("" + var1.field7628, var4, (short)-20610);
+                  class56.method1546(var1.field7628, (byte)85);
                }
 
                if (!var1.field7632 && !var1.field7631) {
@@ -70,7 +70,7 @@ public class class419 {
                   if (var2 != null) {
                      class977 var3 = var2.method93(-411389991);
                      if (var3 != null) {
-                        var3.method1804(1064671451 * var1.field7629, (byte)0);
+                        var3.method1804(var1.field7629, (byte)0);
                         class56.field2321.method3870(var3);
                         var1.field7632 = true;
                      }

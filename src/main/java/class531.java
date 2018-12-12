@@ -12,16 +12,16 @@ public class class531 extends class345 {
             if (this.field3736 == null) {
                class180 var2 = class394.field5418;
                synchronized(class394.field5418) {
-                  if (!class394.field5418.method3261(1899473659 * this.field3735, 334179097)) {
+                  if (!class394.field5418.method3261(this.field3735, 334179097)) {
                      boolean var19 = false;
                      return var19;
                   }
 
-                  int[] var3 = class394.field5418.method3277(this.field3735 * 1899473659, -2074944518);
+                  int[] var3 = class394.field5418.method3277(this.field3735, -2074944518);
                   this.field3736 = new byte[var3.length][];
 
                   for(int var4 = 0; var4 < var3.length; ++var4) {
-                     this.field3736[var4] = class394.field5418.method3285(1899473659 * this.field3735, var3[var4], (byte)-7);
+                     this.field3736[var4] = class394.field5418.method3285(this.field3735, var3[var4], (byte)-7);
                   }
                }
             }
@@ -31,8 +31,8 @@ public class class531 extends class345 {
             int var6;
             for(int var17 = 0; var17 < this.field3736.length; ++var17) {
                byte[] var20 = this.field3736[var17];
-               class907 var5 = new class907(var20);
-               var5.field10376 = 116413311;
+               InputStream var5 = new InputStream(var20);
+               var5.field10376 = 1;
                var6 = var5.method6374();
                class180 var7 = field3737;
                synchronized(field3737) {
@@ -47,20 +47,20 @@ public class class531 extends class345 {
                class180 var22 = class394.field5418;
                int[] var21;
                synchronized(class394.field5418) {
-                  var6 = class394.field5418.method3286(this.field3735 * 1899473659, -222662329);
+                  var6 = class394.field5418.method3286(this.field3735, -222662329);
                   this.field3734 = new class366[var6];
-                  var21 = class394.field5418.method3277(this.field3735 * 1899473659, -2046558264);
+                  var21 = class394.field5418.method3277(this.field3735, -2046558264);
                }
 
                for(int var23 = 0; var23 < var21.length; ++var23) {
                   byte[] var24 = this.field3736[var23];
-                  class907 var25 = new class907(var24);
-                  var25.field10376 = 116413311;
+                  InputStream var25 = new InputStream(var24);
+                  var25.field10376 = 1;
                   int var8 = var25.method6374();
                   class652 var9 = null;
 
                   for(class652 var10 = (class652)var18.method1281(2084946117); var10 != null; var10 = (class652)var18.method1283((byte)-23)) {
-                     if (var8 == var10.field9459 * 1029066723) {
+                     if (var8 == var10.field9459) {
                         var9 = var10;
                         break;
                      }
@@ -104,7 +104,7 @@ public class class531 extends class345 {
    }
 
    public class531(int var1) {
-      this.field3735 = -2073571277 * var1;
+      this.field3735 = var1;
    }
 
    public boolean method2310(int var1, int var2) {

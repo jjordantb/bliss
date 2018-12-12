@@ -12,7 +12,7 @@ public final class class439 {
    final void method4274(long var1) throws IOException {
       try {
          this.field7535.seek(var1);
-         this.field7536 = 5892097441890682535L * var1;
+         this.field7536 = var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "tp.a(" + ')');
       }
@@ -20,13 +20,13 @@ public final class class439 {
 
    public final void method4275(byte[] var1, int var2, int var3, int var4) throws IOException {
       try {
-         if (-1855833292870549225L * this.field7536 + (long)var3 > this.field7534 * -1095537870969537929L) {
-            this.field7535.seek(-1095537870969537929L * this.field7534);
+         if (this.field7536 + (long)var3 > this.field7534) {
+            this.field7535.seek(this.field7534);
             this.field7535.write(1);
             throw new EOFException();
          } else {
             this.field7535.write(var1, var2, var3);
-            this.field7536 += 5892097441890682535L * (long)var3;
+            this.field7536 += (long)var3;
          }
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "tp.f(" + ')');
@@ -57,7 +57,7 @@ public final class class439 {
       try {
          int var5 = this.field7535.read(var1, var2, var3);
          if (var5 > 0) {
-            this.field7536 += (long)var5 * 5892097441890682535L;
+            this.field7536 += (long)var5;
          }
 
          return var5;
@@ -87,7 +87,7 @@ public final class class439 {
       }
 
       this.field7535 = new RandomAccessFile(var1, var2);
-      this.field7534 = var3 * 1728399846774964039L;
+      this.field7534 = var3;
       this.field7536 = 0L;
       int var5 = this.field7535.read();
       if (-1 != var5 && !var2.equals("r")) {
@@ -100,7 +100,7 @@ public final class class439 {
 
    static final void method4279(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 707299179 * class881.field10164;
+         var0.field3161[++var0.field3156 - 1] = class881.field10164;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "tp.ahm(" + ')');
       }

@@ -81,18 +81,18 @@ public class class728 {
          int var11;
          int var12;
          if (var1 == 8) {
-            var7 = var3 << this.field2456.field3849 * -1688804109;
-            var8 = var7 + this.field2456.field3881 * 1828905535;
-            var9 = var4 << this.field2456.field3849 * -1688804109;
-            var10 = var9 + this.field2456.field3881 * 1828905535;
+            var7 = var3 << this.field2456.field3849;
+            var8 = var7 + this.field2456.field3881;
+            var9 = var4 << this.field2456.field3849;
+            var10 = var9 + this.field2456.field3881;
             var11 = this.field2456.field3864[var2].method3888(var3, var4, (byte)-46);
             var12 = this.field2456.field3864[var2].method3888(var3 + 1, var4 + 1, (byte)-53);
             this.field2473[this.field2466++] = new class167(this.field2456, var1, var2, var7, var8, var8, var7, var11, var12, var12 - var5, var11 - var5, var9, var10, var10, var9);
          } else {
-            var7 = (var3 << this.field2456.field3849 * -1688804109) + this.field2456.field3881 * 1828905535;
-            var8 = var7 - this.field2456.field3881 * 1828905535;
-            var9 = var4 << this.field2456.field3849 * -1688804109;
-            var10 = var9 + this.field2456.field3881 * 1828905535;
+            var7 = (var3 << this.field2456.field3849) + this.field2456.field3881;
+            var8 = var7 - this.field2456.field3881;
+            var9 = var4 << this.field2456.field3849;
+            var10 = var9 + this.field2456.field3881;
             var11 = this.field2456.field3864[var2].method3888(var3 + 1, var4, (byte)-128);
             var12 = this.field2456.field3864[var2].method3888(var3, var4 + 1, (byte)-126);
             this.field2473[this.field2466++] = new class167(this.field2456, var1, var2, var7, var8, var8, var7, var11, var12, var12 - var5, var11 - var5, var9, var10, var10, var9);
@@ -145,18 +145,18 @@ public class class728 {
       boolean var7;
       float var8;
       if (var2.field6946 == 1) {
-         var4 = var2.field6951 - this.field2456.field3898 * -804213305 + this.field2456.field3883 * 583010427;
-         if (var4 >= 0 && var4 <= this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427) {
-            var5 = var2.field6944 - this.field2456.field3858 * 465603579 + this.field2456.field3883 * 583010427;
+         var4 = var2.field6951 - this.field2456.field3898 + this.field2456.field3883;
+         if (var4 >= 0 && var4 <= this.field2456.field3883 + this.field2456.field3883) {
+            var5 = var2.field6944 - this.field2456.field3858 + this.field2456.field3883;
             if (var5 < 0) {
                var5 = 0;
-            } else if (var5 > this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427) {
+            } else if (var5 > this.field2456.field3883 + this.field2456.field3883) {
                return;
             }
 
-            var6 = var2.field6947 - this.field2456.field3858 * 465603579 + this.field2456.field3883 * 583010427;
-            if (var6 > this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427) {
-               var6 = this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427;
+            var6 = var2.field6947 - this.field2456.field3858 + this.field2456.field3883;
+            if (var6 > this.field2456.field3883 + this.field2456.field3883) {
+               var6 = this.field2456.field3883 + this.field2456.field3883;
             } else if (var6 < 0) {
                return;
             }
@@ -171,7 +171,7 @@ public class class728 {
             }
 
             if (var7) {
-               var8 = (float)(this.field2456.field3887 * -343859235 - var2.field6948[0]);
+               var8 = (float)(this.field2456.field3887 - var2.field6948[0]);
                if (var8 < 0.0F) {
                   var8 *= -1.0F;
                }
@@ -182,18 +182,18 @@ public class class728 {
             }
          }
       } else if (var2.field6946 == 2) {
-         var4 = var2.field6944 - this.field2456.field3858 * 465603579 + this.field2456.field3883 * 583010427;
-         if (var4 >= 0 && var4 <= this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427) {
-            var5 = var2.field6951 - this.field2456.field3898 * -804213305 + this.field2456.field3883 * 583010427;
+         var4 = var2.field6944 - this.field2456.field3858 + this.field2456.field3883;
+         if (var4 >= 0 && var4 <= this.field2456.field3883 + this.field2456.field3883) {
+            var5 = var2.field6951 - this.field2456.field3898 + this.field2456.field3883;
             if (var5 < 0) {
                var5 = 0;
-            } else if (var5 > this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427) {
+            } else if (var5 > this.field2456.field3883 + this.field2456.field3883) {
                return;
             }
 
-            var6 = var2.field6945 - this.field2456.field3898 * -804213305 + this.field2456.field3883 * 583010427;
-            if (var6 > this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427) {
-               var6 = this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427;
+            var6 = var2.field6945 - this.field2456.field3898 + this.field2456.field3883;
+            if (var6 > this.field2456.field3883 + this.field2456.field3883) {
+               var6 = this.field2456.field3883 + this.field2456.field3883;
             } else if (var6 < 0) {
                return;
             }
@@ -208,7 +208,7 @@ public class class728 {
             }
 
             if (var7) {
-               var8 = (float)(this.field2456.field3888 * -1526003751 - var2.field6950[0]);
+               var8 = (float)(this.field2456.field3888 - var2.field6950[0]);
                if (var8 < 0.0F) {
                   var8 *= -1.0F;
                }
@@ -220,32 +220,32 @@ public class class728 {
          }
       } else if (var2.field6946 != 16 && var2.field6946 != 8) {
          if (var2.field6946 == 4) {
-            float var12 = (float)(var2.field6949[0] - this.field2456.field3889 * 2104557959);
+            float var12 = (float)(var2.field6949[0] - this.field2456.field3889);
             if (var12 > (float)this.field2476) {
-               var5 = var2.field6944 - this.field2456.field3858 * 465603579 + this.field2456.field3883 * 583010427;
+               var5 = var2.field6944 - this.field2456.field3858 + this.field2456.field3883;
                if (var5 < 0) {
                   var5 = 0;
-               } else if (var5 > this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427) {
+               } else if (var5 > this.field2456.field3883 + this.field2456.field3883) {
                   return;
                }
 
-               var6 = var2.field6947 - this.field2456.field3858 * 465603579 + this.field2456.field3883 * 583010427;
-               if (var6 > this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427) {
-                  var6 = this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427;
+               var6 = var2.field6947 - this.field2456.field3858 + this.field2456.field3883;
+               if (var6 > this.field2456.field3883 + this.field2456.field3883) {
+                  var6 = this.field2456.field3883 + this.field2456.field3883;
                } else if (var6 < 0) {
                   return;
                }
 
-               int var15 = var2.field6951 - this.field2456.field3898 * -804213305 + this.field2456.field3883 * 583010427;
+               int var15 = var2.field6951 - this.field2456.field3898 + this.field2456.field3883;
                if (var15 < 0) {
                   var15 = 0;
-               } else if (var15 > this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427) {
+               } else if (var15 > this.field2456.field3883 + this.field2456.field3883) {
                   return;
                }
 
-               int var16 = var2.field6945 - this.field2456.field3898 * -804213305 + this.field2456.field3883 * 583010427;
-               if (var16 > this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427) {
-                  var16 = this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427;
+               int var16 = var2.field6945 - this.field2456.field3898 + this.field2456.field3883;
+               if (var16 > this.field2456.field3883 + this.field2456.field3883) {
+                  var16 = this.field2456.field3883 + this.field2456.field3883;
                } else if (var16 < 0) {
                   return;
                }
@@ -268,16 +268,16 @@ public class class728 {
             }
          }
       } else {
-         var4 = var2.field6951 - this.field2456.field3898 * -804213305 + this.field2456.field3883 * 583010427;
-         if (var4 >= 0 && var4 <= this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427) {
-            var5 = var2.field6944 - this.field2456.field3858 * 465603579 + this.field2456.field3883 * 583010427;
-            if (var5 >= 0 && var5 <= this.field2456.field3883 * 583010427 + this.field2456.field3883 * 583010427 && this.field2456.field3908[var4][var5]) {
-               float var13 = (float)(this.field2456.field3887 * -343859235 - var2.field6948[0]);
+         var4 = var2.field6951 - this.field2456.field3898 + this.field2456.field3883;
+         if (var4 >= 0 && var4 <= this.field2456.field3883 + this.field2456.field3883) {
+            var5 = var2.field6944 - this.field2456.field3858 + this.field2456.field3883;
+            if (var5 >= 0 && var5 <= this.field2456.field3883 + this.field2456.field3883 && this.field2456.field3908[var4][var5]) {
+               float var13 = (float)(this.field2456.field3887 - var2.field6948[0]);
                if (var13 < 0.0F) {
                   var13 *= -1.0F;
                }
 
-               float var14 = (float)(this.field2456.field3888 * -1526003751 - var2.field6950[0]);
+               float var14 = (float)(this.field2456.field3888 - var2.field6950[0]);
                if (var14 < 0.0F) {
                   var14 *= -1.0F;
                }
@@ -296,8 +296,8 @@ public class class728 {
    }
 
    class728(class545 var1) {
-      this.field2460 = var1.field3881 * 1828905535;
-      this.field2476 = var1.field3881 * 1828905535;
+      this.field2460 = var1.field3881;
+      this.field2476 = var1.field3881;
       this.field2456 = var1;
       this.field2463 = new class167[535];
       this.field2462 = 0;
@@ -307,7 +307,7 @@ public class class728 {
       this.field2466 = 0;
       this.field2469 = new class167[1045];
       this.field2468 = 0;
-      this.field2461 = new int[this.field2456.field3893 * 1678382205][this.field2456.field3859 * 1988988347 + 1][this.field2456.field3894 * 1340714547 + 1];
+      this.field2461 = new int[this.field2456.field3893][this.field2456.field3859 + 1][this.field2456.field3894 + 1];
       this.field2474 = false;
       if (this.field2456.field3853 instanceof class955) {
          this.field2459 = false;
@@ -327,20 +327,20 @@ public class class728 {
             return false;
          } else {
             int var4 = this.field2461[var1][var2][var3];
-            if (var4 == -(this.field2456.field3890 * -847572923)) {
+            if (var4 == -this.field2456.field3890) {
                return false;
-            } else if (var4 == this.field2456.field3890 * -847572923) {
+            } else if (var4 == this.field2456.field3890) {
                return true;
             } else if (this.field2456.field3862 == this.field2456.field3866) {
                return false;
             } else {
-               int var5 = var2 << this.field2456.field3849 * -1688804109;
-               int var6 = var3 << this.field2456.field3849 * -1688804109;
-               if (this.method1646(var5 + 1, this.field2456.field3862[var1].method3888(var2, var3, (byte)-88), var6 + 1, var5 + this.field2456.field3881 * 1828905535 - 1, this.field2456.field3862[var1].method3888(var2 + 1, var3 + 1, (byte)-108), var6 + this.field2456.field3881 * 1828905535 - 1, var5 + 1, this.field2456.field3862[var1].method3888(var2, var3 + 1, (byte)-91), var6 + this.field2456.field3881 * 1828905535 - 1) && this.method1646(var5 + 1, this.field2456.field3862[var1].method3888(var2, var3, (byte)-42), var6 + 1, var5 + this.field2456.field3881 * 1828905535 - 1, this.field2456.field3862[var1].method3888(var2 + 1, var3, (byte)-46), var6 + 1, var5 + this.field2456.field3881 * 1828905535 - 1, this.field2456.field3862[var1].method3888(var2 + 1, var3 + 1, (byte)-12), var6 + this.field2456.field3881 * 1828905535 - 1)) {
-                  this.field2461[var1][var2][var3] = this.field2456.field3890 * -847572923;
+               int var5 = var2 << this.field2456.field3849;
+               int var6 = var3 << this.field2456.field3849;
+               if (this.method1646(var5 + 1, this.field2456.field3862[var1].method3888(var2, var3, (byte)-88), var6 + 1, var5 + this.field2456.field3881 - 1, this.field2456.field3862[var1].method3888(var2 + 1, var3 + 1, (byte)-108), var6 + this.field2456.field3881 - 1, var5 + 1, this.field2456.field3862[var1].method3888(var2, var3 + 1, (byte)-91), var6 + this.field2456.field3881 - 1) && this.method1646(var5 + 1, this.field2456.field3862[var1].method3888(var2, var3, (byte)-42), var6 + 1, var5 + this.field2456.field3881 - 1, this.field2456.field3862[var1].method3888(var2 + 1, var3, (byte)-46), var6 + 1, var5 + this.field2456.field3881 - 1, this.field2456.field3862[var1].method3888(var2 + 1, var3 + 1, (byte)-12), var6 + this.field2456.field3881 - 1)) {
+                  this.field2461[var1][var2][var3] = this.field2456.field3890;
                   return true;
                } else {
-                  this.field2461[var1][var2][var3] = -(this.field2456.field3890 * -847572923);
+                  this.field2461[var1][var2][var3] = -this.field2456.field3890;
                   return false;
                }
             }
@@ -357,42 +357,42 @@ public class class728 {
          } else if (!this.method1651(var2, var3, var4)) {
             return false;
          } else {
-            int var5 = var3 << this.field2456.field3849 * -1688804109;
-            int var6 = var4 << this.field2456.field3849 * -1688804109;
+            int var5 = var3 << this.field2456.field3849;
+            int var6 = var4 << this.field2456.field3849;
             int var7 = this.field2456.field3862[var2].method3888(var3, var4, (byte)-91) - 1;
             int var8 = var7 + var1.method2168(1951240662);
             if (var1.field7433 == 1) {
-               if (!this.method1646(var5, var7, var6, var5, var8, var6, var5, var8, var6 + this.field2456.field3881 * 1828905535)) {
+               if (!this.method1646(var5, var7, var6, var5, var8, var6, var5, var8, var6 + this.field2456.field3881)) {
                   return false;
                } else {
-                  return this.method1646(var5, var7, var6, var5, var8, var6 + this.field2456.field3881 * 1828905535, var5, var7, var6 + this.field2456.field3881 * 1828905535);
+                  return this.method1646(var5, var7, var6, var5, var8, var6 + this.field2456.field3881, var5, var7, var6 + this.field2456.field3881);
                }
             } else if (var1.field7433 == 2) {
-               if (!this.method1646(var5, var7, var6 + this.field2456.field3881 * 1828905535, var5 + this.field2456.field3881 * 1828905535, var8, var6 + this.field2456.field3881 * 1828905535, var5, var8, var6 + this.field2456.field3881 * 1828905535)) {
+               if (!this.method1646(var5, var7, var6 + this.field2456.field3881, var5 + this.field2456.field3881, var8, var6 + this.field2456.field3881, var5, var8, var6 + this.field2456.field3881)) {
                   return false;
                } else {
-                  return this.method1646(var5, var7, var6 + this.field2456.field3881 * 1828905535, var5 + this.field2456.field3881 * 1828905535, var7, var6 + this.field2456.field3881 * 1828905535, var5 + this.field2456.field3881 * 1828905535, var8, var6 + this.field2456.field3881 * 1828905535);
+                  return this.method1646(var5, var7, var6 + this.field2456.field3881, var5 + this.field2456.field3881, var7, var6 + this.field2456.field3881, var5 + this.field2456.field3881, var8, var6 + this.field2456.field3881);
                }
             } else if (var1.field7433 == 4) {
-               if (!this.method1646(var5 + this.field2456.field3881 * 1828905535, var7, var6, var5 + this.field2456.field3881 * 1828905535, var8, var6, var5 + this.field2456.field3881 * 1828905535, var8, var6 + this.field2456.field3881 * 1828905535)) {
+               if (!this.method1646(var5 + this.field2456.field3881, var7, var6, var5 + this.field2456.field3881, var8, var6, var5 + this.field2456.field3881, var8, var6 + this.field2456.field3881)) {
                   return false;
                } else {
-                  return this.method1646(var5 + this.field2456.field3881 * 1828905535, var7, var6, var5 + this.field2456.field3881 * 1828905535, var8, var6 + this.field2456.field3881 * 1828905535, var5 + this.field2456.field3881 * 1828905535, var7, var6 + this.field2456.field3881 * 1828905535);
+                  return this.method1646(var5 + this.field2456.field3881, var7, var6, var5 + this.field2456.field3881, var8, var6 + this.field2456.field3881, var5 + this.field2456.field3881, var7, var6 + this.field2456.field3881);
                }
             } else if (var1.field7433 == 8) {
-               if (!this.method1646(var5, var7, var6, var5 + this.field2456.field3881 * 1828905535, var8, var6, var5, var8, var6)) {
+               if (!this.method1646(var5, var7, var6, var5 + this.field2456.field3881, var8, var6, var5, var8, var6)) {
                   return false;
                } else {
-                  return this.method1646(var5, var7, var6, var5 + this.field2456.field3881 * 1828905535, var7, var6, var5 + this.field2456.field3881 * 1828905535, var8, var6);
+                  return this.method1646(var5, var7, var6, var5 + this.field2456.field3881, var7, var6, var5 + this.field2456.field3881, var8, var6);
                }
             } else if (var1.field7433 == 16) {
-               return this.method1657(var5, var7, var6 + this.field2456.field3891 * 394962841, this.field2456.field3891 * 394962841, var8, this.field2456.field3891 * 394962841);
+               return this.method1657(var5, var7, var6 + this.field2456.field3891, this.field2456.field3891, var8, this.field2456.field3891);
             } else if (var1.field7433 == 32) {
-               return this.method1657(var5 + this.field2456.field3891 * 394962841, var7, var6 + this.field2456.field3891 * 394962841, this.field2456.field3891 * 394962841, var8, this.field2456.field3891 * 394962841);
+               return this.method1657(var5 + this.field2456.field3891, var7, var6 + this.field2456.field3891, this.field2456.field3891, var8, this.field2456.field3891);
             } else if (var1.field7433 == 64) {
-               return this.method1657(var5 + this.field2456.field3891 * 394962841, var7, var6, this.field2456.field3891 * 394962841, var8, this.field2456.field3891 * 394962841);
+               return this.method1657(var5 + this.field2456.field3891, var7, var6, this.field2456.field3891, var8, this.field2456.field3891);
             } else if (var1.field7433 == 128) {
-               return this.method1657(var5, var7, var6, this.field2456.field3891 * 394962841, var8, this.field2456.field3891 * 394962841);
+               return this.method1657(var5, var7, var6, this.field2456.field3891, var8, this.field2456.field3891);
             } else {
                return true;
             }
@@ -409,9 +409,9 @@ public class class728 {
          } else if (!this.method1651(var1, var2, var3)) {
             return false;
          } else {
-            int var5 = var2 << this.field2456.field3849 * -1688804109;
-            int var6 = var3 << this.field2456.field3849 * -1688804109;
-            return this.method1657(var5, this.field2456.field3862[var1].method3888(var2, var3, (byte)-113), var6, this.field2456.field3881 * 1828905535, var4, this.field2456.field3881 * 1828905535);
+            int var5 = var2 << this.field2456.field3849;
+            int var6 = var3 << this.field2456.field3849;
+            return this.method1657(var5, this.field2456.field3862[var1].method3888(var2, var3, (byte)-113), var6, this.field2456.field3881, var4, this.field2456.field3881);
          }
       } else {
          return false;
@@ -431,7 +431,7 @@ public class class728 {
          } else {
             for(int var7 = var2; var7 <= var3; ++var7) {
                for(int var8 = var4; var8 <= var5; ++var8) {
-                  if (this.field2461[var1][var7][var8] == -(this.field2456.field3890 * -847572923)) {
+                  if (this.field2461[var1][var7][var8] == -this.field2456.field3890) {
                      return false;
                   }
                }
@@ -472,7 +472,7 @@ public class class728 {
       } else if (!this.method1646(var1, var8, var3, var7, var8, var3, var7, var8, var9)) {
          return false;
       } else {
-         if (var1 < this.field2456.field3887 * -343859235) {
+         if (var1 < this.field2456.field3887) {
             if (!this.method1646(var1, var2, var9, var1, var8, var3, var1, var8, var9)) {
                return false;
             }
@@ -490,7 +490,7 @@ public class class728 {
             }
          }
 
-         if (var3 < this.field2456.field3888 * -1526003751) {
+         if (var3 < this.field2456.field3888) {
             if (!this.method1646(var1, var2, var3, var7, var8, var3, var1, var8, var3)) {
                return false;
             }
@@ -534,9 +534,9 @@ public class class728 {
       int var2;
       int var3;
       class190 var4;
-      for(var1 = 0; var1 < this.field2456.field3893 * 1678382205; ++var1) {
-         for(var2 = 0; var2 < this.field2456.field3859 * 1988988347; ++var2) {
-            for(var3 = 0; var3 < this.field2456.field3894 * 1340714547; ++var3) {
+      for(var1 = 0; var1 < this.field2456.field3893; ++var1) {
+         for(var2 = 0; var2 < this.field2456.field3859; ++var2) {
+            for(var3 = 0; var3 < this.field2456.field3894; ++var3) {
                var4 = this.field2456.field3861[var1][var3][var2];
                if (var4 != null) {
                   if (var4.field7014 > 0) {
@@ -551,9 +551,9 @@ public class class728 {
          }
       }
 
-      for(var1 = 0; var1 < this.field2456.field3893 * 1678382205; ++var1) {
-         for(var2 = 0; var2 < this.field2456.field3859 * 1988988347; ++var2) {
-            for(var3 = 0; var3 < this.field2456.field3894 * 1340714547; ++var3) {
+      for(var1 = 0; var1 < this.field2456.field3893; ++var1) {
+         for(var2 = 0; var2 < this.field2456.field3859; ++var2) {
+            for(var3 = 0; var3 < this.field2456.field3894; ++var3) {
                var4 = this.field2456.field3861[var1][var3][var2];
                if (var4 != null) {
                   boolean var5 = this.field2456.field3861[0][var3][var2] != null && this.field2456.field3861[0][var3][var2].field7005 != null;
@@ -582,7 +582,7 @@ public class class728 {
                         --var6;
                      }
 
-                     for(var10 = this.field2456.field3861[var1][var3][var2 + 1]; var7 < this.field2456.field3894 * 1340714547 && var10 != null && var10.field7014 < 0 && var10.field7014 == var4.field7014 && var10.field7015 == var4.field7015 && var11 == this.field2456.field3864[var1].method3888(var3, var7 + 1, (byte)-51) && (var7 + 1 >= this.field2456.field3894 * 1340714547 || var11 == this.field2456.field3864[var1].method3888(var3, var7 + 2, (byte)-31)); var10 = this.field2456.field3861[var1][var3][var7 + 1]) {
+                     for(var10 = this.field2456.field3861[var1][var3][var2 + 1]; var7 < this.field2456.field3894 && var10 != null && var10.field7014 < 0 && var10.field7014 == var4.field7014 && var10.field7015 == var4.field7015 && var11 == this.field2456.field3864[var1].method3888(var3, var7 + 1, (byte)-51) && (var7 + 1 >= this.field2456.field3894 || var11 == this.field2456.field3864[var1].method3888(var3, var7 + 2, (byte)-31)); var10 = this.field2456.field3861[var1][var3][var7 + 1]) {
                         ++var7;
                      }
 
@@ -591,9 +591,9 @@ public class class728 {
                      var14 = var13 + var4.field7014 * var12;
                      var15 = this.field2456.field3864[var5 ? var1 + 1 : var1].method3888(var3, var7 + 1, (byte)-12);
                      var16 = var15 + var4.field7014 * var12;
-                     var17 = var3 << this.field2456.field3849 * -1688804109;
-                     var18 = var6 << this.field2456.field3849 * -1688804109;
-                     var19 = (var7 << this.field2456.field3849 * -1688804109) + this.field2456.field3881 * 1828905535;
+                     var17 = var3 << this.field2456.field3849;
+                     var18 = var6 << this.field2456.field3849;
+                     var19 = (var7 << this.field2456.field3849) + this.field2456.field3881;
                      this.field2467[this.field2464++] = new class167(this.field2456, 1, var1, var17 + var4.field7015, var17 + var4.field7015, var17 + var4.field7015, var17 + var4.field7015, var13, var15, var16, var14, var18, var19, var19, var18);
 
                      for(var20 = var1; var20 <= var9; ++var20) {
@@ -613,7 +613,7 @@ public class class728 {
                         --var6;
                      }
 
-                     for(var10 = this.field2456.field3861[var1][var3 + 1][var2]; var7 < this.field2456.field3859 * 1988988347 && var10 != null && var10.field7013 < 0 && var10.field7013 == var4.field7013 && var10.field7017 == var4.field7017 && var11 == this.field2456.field3864[var1].method3888(var7 + 1, var2, (byte)-31) && (var7 + 1 >= this.field2456.field3859 * 1988988347 || var11 == this.field2456.field3864[var1].method3888(var7 + 2, var2, (byte)-27)); var10 = this.field2456.field3861[var1][var7 + 1][var2]) {
+                     for(var10 = this.field2456.field3861[var1][var3 + 1][var2]; var7 < this.field2456.field3859 && var10 != null && var10.field7013 < 0 && var10.field7013 == var4.field7013 && var10.field7017 == var4.field7017 && var11 == this.field2456.field3864[var1].method3888(var7 + 1, var2, (byte)-31) && (var7 + 1 >= this.field2456.field3859 || var11 == this.field2456.field3864[var1].method3888(var7 + 2, var2, (byte)-27)); var10 = this.field2456.field3861[var1][var7 + 1][var2]) {
                         ++var7;
                      }
 
@@ -622,9 +622,9 @@ public class class728 {
                      var14 = var13 + var4.field7013 * var12;
                      var15 = this.field2456.field3864[var5 ? var1 + 1 : var1].method3888(var7 + 1, var2, (byte)-68);
                      var16 = var15 + var4.field7013 * var12;
-                     var17 = var6 << this.field2456.field3849 * -1688804109;
-                     var18 = (var7 << this.field2456.field3849 * -1688804109) + this.field2456.field3881 * 1828905535;
-                     var19 = var2 << this.field2456.field3849 * -1688804109;
+                     var17 = var6 << this.field2456.field3849;
+                     var18 = (var7 << this.field2456.field3849) + this.field2456.field3881;
+                     var19 = var2 << this.field2456.field3849;
                      this.field2467[this.field2464++] = new class167(this.field2456, 2, var1, var17, var18, var18, var17, var13, var15, var16, var14, var19 + var4.field7017, var19 + var4.field7017, var19 + var4.field7017, var19 + var4.field7017);
 
                      for(var20 = var1; var20 <= var9; ++var20) {

@@ -124,11 +124,11 @@ public class class388 extends class727 {
       class924 var17 = (class924)var14;
       int[] var18 = var17.field10289;
       int[] var19 = var17.field10288;
-      int var20 = var11 - this.field1556.field7921 * -912871679;
+      int var20 = var11 - this.field1556.field7921;
       int var21 = var12;
       if (var16 > var12) {
          var21 = var16;
-         var6 += (var16 - var12) * 692106883 * this.field1556.field7918;
+         var6 += (var16 - var12) * this.field1556.field7918;
          var5 += var13 * (var16 - var12);
       }
 
@@ -188,11 +188,11 @@ public class class388 extends class727 {
       class924 var16 = (class924)var13;
       int[] var17 = var16.field10289;
       int[] var18 = var16.field10288;
-      int var19 = var10 - this.field1556.field7921 * -912871679;
+      int var19 = var10 - this.field1556.field7921;
       int var20 = var11;
       if (var15 > var11) {
          var20 = var15;
-         var5 += this.field1556.field7918 * 692106883 * (var15 - var11);
+         var5 += this.field1556.field7918 * (var15 - var11);
          var4 += var12 * (var15 - var11);
       }
 
@@ -246,110 +246,6 @@ public class class388 extends class727 {
 
    }
 
-   void method1675(char var1, int var2, int var3, int var4, boolean var5) {
-      if (this.field1556.field7914 != null) {
-         var2 += this.field1558[var1];
-         var3 += this.field1552[var1];
-         int var6 = this.field1555[var1];
-         int var7 = this.field1553[var1];
-         int var8 = this.field1556.field7918 * 692106883;
-         int var9 = var3 * var8 + var2;
-         int var10 = var8 - var6;
-         int var11 = 0;
-         int var12 = 0;
-         int var13;
-         if (var3 < this.field1556.field7923 * -1278653805) {
-            var13 = this.field1556.field7923 * -1278653805 - var3;
-            var7 -= var13;
-            var3 = this.field1556.field7923 * -1278653805;
-            var12 += var13 * var6;
-            var9 += var8 * var13;
-         }
-
-         if (var7 + var3 > this.field1556.field7924 * 63686679) {
-            var7 -= var3 + var7 - 63686679 * this.field1556.field7924;
-         }
-
-         if (var2 < this.field1556.field7921 * -912871679) {
-            var13 = -912871679 * this.field1556.field7921 - var2;
-            var6 -= var13;
-            var2 = this.field1556.field7921 * -912871679;
-            var12 += var13;
-            var9 += var13;
-            var11 += var13;
-            var10 += var13;
-         }
-
-         if (var2 + var6 > -1416794725 * this.field1556.field7938) {
-            var13 = var2 + var6 - this.field1556.field7938 * -1416794725;
-            var6 -= var13;
-            var11 += var13;
-            var10 += var13;
-         }
-
-         if (var6 > 0 && var7 > 0) {
-            if (var5) {
-               this.method1185(this.field1557[var1], this.field1556.field7914, var4, var12, var9, var6, var7, var10, var11);
-            } else {
-               this.method1184(this.field1557[var1], this.field1556.field7914, this.field1554, var12, var9, var6, var7, var10, var11);
-            }
-         }
-      }
-
-   }
-
-   void method1676(char var1, int var2, int var3, int var4, boolean var5) {
-      if (this.field1556.field7914 != null) {
-         var2 += this.field1558[var1];
-         var3 += this.field1552[var1];
-         int var6 = this.field1555[var1];
-         int var7 = this.field1553[var1];
-         int var8 = this.field1556.field7918 * 692106883;
-         int var9 = var3 * var8 + var2;
-         int var10 = var8 - var6;
-         int var11 = 0;
-         int var12 = 0;
-         int var13;
-         if (var3 < this.field1556.field7923 * -1278653805) {
-            var13 = this.field1556.field7923 * -1278653805 - var3;
-            var7 -= var13;
-            var3 = this.field1556.field7923 * -1278653805;
-            var12 += var13 * var6;
-            var9 += var8 * var13;
-         }
-
-         if (var7 + var3 > this.field1556.field7924 * 63686679) {
-            var7 -= var3 + var7 - 63686679 * this.field1556.field7924;
-         }
-
-         if (var2 < this.field1556.field7921 * -912871679) {
-            var13 = -912871679 * this.field1556.field7921 - var2;
-            var6 -= var13;
-            var2 = this.field1556.field7921 * -912871679;
-            var12 += var13;
-            var9 += var13;
-            var11 += var13;
-            var10 += var13;
-         }
-
-         if (var2 + var6 > -1416794725 * this.field1556.field7938) {
-            var13 = var2 + var6 - this.field1556.field7938 * -1416794725;
-            var6 -= var13;
-            var11 += var13;
-            var10 += var13;
-         }
-
-         if (var6 > 0 && var7 > 0) {
-            if (var5) {
-               this.method1185(this.field1557[var1], this.field1556.field7914, var4, var12, var9, var6, var7, var10, var11);
-            } else {
-               this.method1184(this.field1557[var1], this.field1556.field7914, this.field1554, var12, var9, var6, var7, var10, var11);
-            }
-         }
-      }
-
-   }
-
    void method1674(char var1, int var2, int var3, int var4, boolean var5, class23 var6, int var7, int var8) {
       if (this.field1556.field7914 != null) {
          if (var6 == null) {
@@ -359,92 +255,36 @@ public class class388 extends class727 {
             var3 += this.field1552[var1];
             int var9 = this.field1555[var1];
             int var10 = this.field1553[var1];
-            int var11 = this.field1556.field7918 * 692106883;
+            int var11 = this.field1556.field7918;
             int var12 = var3 * var11 + var2;
             int var13 = var11 - var9;
             int var14 = 0;
             int var15 = 0;
             int var16;
-            if (var3 < this.field1556.field7923 * -1278653805) {
-               var16 = this.field1556.field7923 * -1278653805 - var3;
+            if (var3 < this.field1556.field7923) {
+               var16 = this.field1556.field7923 - var3;
                var10 -= var16;
-               var3 = -1278653805 * this.field1556.field7923;
+               var3 = this.field1556.field7923;
                var15 += var9 * var16;
                var12 += var11 * var16;
             }
 
-            if (var10 + var3 > this.field1556.field7924 * 63686679) {
-               var10 -= var10 + var3 - this.field1556.field7924 * 63686679;
+            if (var10 + var3 > this.field1556.field7924) {
+               var10 -= var10 + var3 - this.field1556.field7924;
             }
 
-            if (var2 < -912871679 * this.field1556.field7921) {
-               var16 = -912871679 * this.field1556.field7921 - var2;
+            if (var2 < this.field1556.field7921) {
+               var16 = this.field1556.field7921 - var2;
                var9 -= var16;
-               var2 = this.field1556.field7921 * -912871679;
+               var2 = this.field1556.field7921;
                var15 += var16;
                var12 += var16;
                var14 += var16;
                var13 += var16;
             }
 
-            if (var9 + var2 > -1416794725 * this.field1556.field7938) {
-               var16 = var2 + var9 - this.field1556.field7938 * -1416794725;
-               var9 -= var16;
-               var14 += var16;
-               var13 += var16;
-            }
-
-            if (var9 > 0 && var10 > 0) {
-               if (var5) {
-                  this.method1187(this.field1557[var1], this.field1556.field7914, var4, var15, var12, var9, var10, var13, var14, var2, var3, this.field1555[var1], var6, var7, var8);
-               } else {
-                  this.method1186(this.field1557[var1], this.field1556.field7914, this.field1554, var4, var15, var12, var9, var10, var13, var14, var2, var3, this.field1555[var1], var6, var7, var8);
-               }
-            }
-         }
-      }
-
-   }
-
-   void method1679(char var1, int var2, int var3, int var4, boolean var5, class23 var6, int var7, int var8) {
-      if (this.field1556.field7914 != null) {
-         if (var6 == null) {
-            this.method1680(var1, var2, var3, var4, var5);
-         } else {
-            var2 += this.field1558[var1];
-            var3 += this.field1552[var1];
-            int var9 = this.field1555[var1];
-            int var10 = this.field1553[var1];
-            int var11 = this.field1556.field7918 * 692106883;
-            int var12 = var3 * var11 + var2;
-            int var13 = var11 - var9;
-            int var14 = 0;
-            int var15 = 0;
-            int var16;
-            if (var3 < this.field1556.field7923 * -1278653805) {
-               var16 = this.field1556.field7923 * -1278653805 - var3;
-               var10 -= var16;
-               var3 = -1278653805 * this.field1556.field7923;
-               var15 += var9 * var16;
-               var12 += var11 * var16;
-            }
-
-            if (var10 + var3 > this.field1556.field7924 * 63686679) {
-               var10 -= var10 + var3 - this.field1556.field7924 * 63686679;
-            }
-
-            if (var2 < -912871679 * this.field1556.field7921) {
-               var16 = -912871679 * this.field1556.field7921 - var2;
-               var9 -= var16;
-               var2 = this.field1556.field7921 * -912871679;
-               var15 += var16;
-               var12 += var16;
-               var14 += var16;
-               var13 += var16;
-            }
-
-            if (var9 + var2 > -1416794725 * this.field1556.field7938) {
-               var16 = var2 + var9 - this.field1556.field7938 * -1416794725;
+            if (var9 + var2 > this.field1556.field7938) {
+               var16 = var2 + var9 - this.field1556.field7938;
                var9 -= var16;
                var14 += var16;
                var13 += var16;
@@ -468,36 +308,36 @@ public class class388 extends class727 {
          var3 += this.field1552[var1];
          int var6 = this.field1555[var1];
          int var7 = this.field1553[var1];
-         int var8 = this.field1556.field7918 * 692106883;
+         int var8 = this.field1556.field7918;
          int var9 = var3 * var8 + var2;
          int var10 = var8 - var6;
          int var11 = 0;
          int var12 = 0;
          int var13;
-         if (var3 < this.field1556.field7923 * -1278653805) {
-            var13 = this.field1556.field7923 * -1278653805 - var3;
+         if (var3 < this.field1556.field7923) {
+            var13 = this.field1556.field7923 - var3;
             var7 -= var13;
-            var3 = this.field1556.field7923 * -1278653805;
+            var3 = this.field1556.field7923;
             var12 += var13 * var6;
             var9 += var8 * var13;
          }
 
-         if (var7 + var3 > this.field1556.field7924 * 63686679) {
-            var7 -= var3 + var7 - 63686679 * this.field1556.field7924;
+         if (var7 + var3 > this.field1556.field7924) {
+            var7 -= var3 + var7 - this.field1556.field7924;
          }
 
-         if (var2 < this.field1556.field7921 * -912871679) {
-            var13 = -912871679 * this.field1556.field7921 - var2;
+         if (var2 < this.field1556.field7921) {
+            var13 = this.field1556.field7921 - var2;
             var6 -= var13;
-            var2 = this.field1556.field7921 * -912871679;
+            var2 = this.field1556.field7921;
             var12 += var13;
             var9 += var13;
             var11 += var13;
             var10 += var13;
          }
 
-         if (var2 + var6 > -1416794725 * this.field1556.field7938) {
-            var13 = var2 + var6 - this.field1556.field7938 * -1416794725;
+         if (var2 + var6 > this.field1556.field7938) {
+            var13 = var2 + var6 - this.field1556.field7938;
             var6 -= var13;
             var11 += var13;
             var10 += var13;
@@ -529,12 +369,12 @@ public class class388 extends class727 {
             int var9 = var1 - (var8 * var0 >> 12);
             int var10;
             int var11;
-            if (var0 < class216.field1416 * -1424479739) {
-               var10 = var9 + (var8 * class216.field1416 * -1424479739 >> 12);
-               var11 = -1424479739 * class216.field1416;
-            } else if (var0 > 1135094847 * class216.field1413) {
-               var10 = (var8 * 1135094847 * class216.field1413 >> 12) + var9;
-               var11 = class216.field1413 * 1135094847;
+            if (var0 < class381.field1416) {
+               var10 = var9 + (var8 * class381.field1416 >> 12);
+               var11 = class381.field1416;
+            } else if (var0 > class381.field1413) {
+               var10 = (var8 * class381.field1413 >> 12) + var9;
+               var11 = class381.field1413;
             } else {
                var10 = var1;
                var11 = var0;
@@ -542,31 +382,31 @@ public class class388 extends class727 {
 
             int var12;
             int var13;
-            if (var2 < class216.field1416 * -1424479739) {
-               var12 = (var8 * class216.field1416 * -1424479739 >> 12) + var9;
-               var13 = -1424479739 * class216.field1416;
-            } else if (var2 > 1135094847 * class216.field1413) {
-               var12 = (class216.field1413 * 1135094847 * var8 >> 12) + var9;
-               var13 = 1135094847 * class216.field1413;
+            if (var2 < class381.field1416) {
+               var12 = (var8 * class381.field1416 >> 12) + var9;
+               var13 = class381.field1416;
+            } else if (var2 > class381.field1413) {
+               var12 = (class381.field1413 * var8 >> 12) + var9;
+               var13 = class381.field1413;
             } else {
                var12 = var3;
                var13 = var2;
             }
 
-            if (var10 < 1155384281 * class216.field1414) {
-               var10 = 1155384281 * class216.field1414;
-               var11 = (class216.field1414 * 1155384281 - var9 << 12) / var8;
-            } else if (var10 > class216.field1415 * -1062447355) {
-               var10 = -1062447355 * class216.field1415;
-               var11 = (class216.field1415 * -1062447355 - var9 << 12) / var8;
+            if (var10 < class381.field1414) {
+               var10 = class381.field1414;
+               var11 = (class381.field1414 - var9 << 12) / var8;
+            } else if (var10 > class381.field1415) {
+               var10 = class381.field1415;
+               var11 = (class381.field1415 - var9 << 12) / var8;
             }
 
-            if (var12 < class216.field1414 * 1155384281) {
-               var12 = 1155384281 * class216.field1414;
-               var13 = (class216.field1414 * 1155384281 - var9 << 12) / var8;
-            } else if (var12 > class216.field1415 * -1062447355) {
-               var12 = class216.field1415 * -1062447355;
-               var13 = (class216.field1415 * -1062447355 - var9 << 12) / var8;
+            if (var12 < class381.field1414) {
+               var12 = class381.field1414;
+               var13 = (class381.field1414 - var9 << 12) / var8;
+            } else if (var12 > class381.field1415) {
+               var12 = class381.field1415;
+               var13 = (class381.field1415 - var9 << 12) / var8;
             }
 
             class650.method5635(var11, var10, var13, var12, var4, -207106920);

@@ -38,8 +38,8 @@ public class class554 implements Runnable {
    public void run() {
       try {
          try {
-            int var1 = class916.field10415 == class721.field3634 ? 80 : 1606920449 * class601.field9200.field4347 + 7000;
-            BufferedReader var2 = new BufferedReader(new InputStreamReader(new DataInputStream((new URL("http://" + class601.field9200.field4343 + ":" + var1 + "/news.ws?game=" + -937307905 * class730.field2926.field7327)).openStream())));
+            int var1 = class916.field10415 == class721.field3634 ? 80 : class601.field9200.field4347 + 7000;
+            BufferedReader var2 = new BufferedReader(new InputStreamReader(new DataInputStream((new URL("http://" + class601.field9200.field4343 + ":" + var1 + "/news.ws?game=" + class730.field2926.field7327)).openStream())));
             String var3 = var2.readLine();
 
             ArrayList var4;
@@ -76,15 +76,15 @@ public class class554 implements Runnable {
          } else {
             byte[] var3 = class923.field10294.method3285(1, var0, (byte)-28);
             var2 = new class660();
-            var2.field9640 = var0 * -1112552131;
+            var2.field9640 = var0;
             if (var3 != null) {
-               var2.method5744(new class907(var3), 1143811540);
+               var2.method5744(new InputStream(var3), 1143811540);
             }
 
             var2.method5746(-1168443566);
-            if (2 == var2.field9650 * -1955592777 && class660.field9638.method2942((long)var0) == null) {
-               class660.field9638.method2947(new class722(class660.field9642 * 1105746915), (long)var0);
-               class660.field9636[(class660.field9642 += -34356789) * 1105746915 - 1] = var2;
+            if (2 == var2.field9650 && class660.field9638.method2942((long)var0) == null) {
+               class660.field9638.method2947(new class722(class660.field9642), (long)var0);
+               class660.field9636[++class660.field9642 - 1] = var2;
             }
 
             class660.field9639.method2984(var2, (long)var0);
@@ -95,10 +95,10 @@ public class class554 implements Runnable {
       }
    }
 
-   static void method424(class60 var0, boolean var1, byte var2) {
+   static void method424(Npc var0, boolean var1, byte var2) {
       try {
-         if (class602.field8673 * -278777595 < 410) {
-            class401 var3 = var0.field1637;
+         if (class602.field8673 < 410) {
+            NpcDefinition var3 = var0.field1637;
             String var4 = var0.field1633;
             if (var3.field9924 != null) {
                var3 = var3.method6110(class827.field9037, 1662486316);
@@ -106,23 +106,23 @@ public class class554 implements Runnable {
                   return;
                }
 
-               var4 = var3.field9863;
+               var4 = var3.name;
             }
 
             if (var3.field9899) {
-               if (1817570317 * var0.field1636 != 0) {
+               if (var0.field1636 != 0) {
                   String var5 = class730.field2926 == class469.field7320 ? class814.field4802.method2927(class321.field1066, -875414210) : class814.field4785.method2927(class321.field1066, -875414210);
-                  if (1817570317 * var0.field1636 <= 0) {
-                     var4 = var4 + class637.method5935(1817570317 * var0.field1636, class923.field10295.field3385 * 696798311, (byte)4);
+                  if (var0.field1636 <= 0) {
+                     var4 = var4 + class637.method5935(var0.field1636, class923.local.field3385, (byte)4);
                   } else {
-                     var4 = var4 + class637.method5935(1817570317 * var0.field1636, class923.field10295.field3385 * 696798311, (byte)4) + class822.field9046 + var5 + 1817570317 * var0.field1636 + class822.field9049;
+                     var4 = var4 + class637.method5935(var0.field1636, class923.local.field3385, (byte)4) + class822.field9046 + var5 + var0.field1636 + class822.field9049;
                   }
                }
 
                if (class730.field2817 && !var1) {
-                  class785 var11 = 831522399 * class354.field2139 != -1 ? class452.field7216.method5148(831522399 * class354.field2139, 1875400558) : null;
-                  if ((class568.field645 * -112110875 & 2) != 0 && (var11 == null || var3.method6109(class354.field2139 * 831522399, -388931549 * var11.field3822, (byte)47) != var11.field3822 * -388931549)) {
-                     class984.method1875(class730.field2820, class730.field2735 + " " + class822.field9048 + " " + class56.method1545(16776960, -2021390481) + var4, 697885143 * class175.field5075, 8, -1, (long)(1888274983 * var0.field4028), 0, 0, true, false, (long)(1888274983 * var0.field4028), false, -1507413924);
+                  class785 var11 = class354.field2139 != -1 ? class452.field7216.method5148(class354.field2139, 1875400558) : null;
+                  if ((class568.field645 & 2) != 0 && (var11 == null || var3.method6109(class354.field2139, var11.field3822, (byte)47) != var11.field3822)) {
+                     class984.method1875(class730.field2820, class730.field2735 + " " + class822.field9048 + " " + class56.method1545(16776960, -2021390481) + var4, class175.field5075, 8, -1, (long)var0.field4028, 0, 0, true, false, (long)var0.field4028, false, -1507413924);
                   }
                }
 
@@ -138,7 +138,7 @@ public class class554 implements Runnable {
                      for(var6 = var12.length - 1; var6 >= 0; --var6) {
                         if (var12[var6] != null && (var3.field9894 == 0 || !var12[var6].equalsIgnoreCase(class814.field4780.method2927(class321.field1066, -875414210)) && !var12[var6].equalsIgnoreCase(class814.field4779.method2927(class321.field1066, -875414210)))) {
                            var7 = 0;
-                           int var8 = 1395924385 * class730.field2671;
+                           int var8 = class730.field2671;
                            if (var6 == 0) {
                               var7 = 9;
                            }
@@ -163,15 +163,15 @@ public class class554 implements Runnable {
                               var7 = 1003;
                            }
 
-                           if (var3.field9881 * 1095931419 == var6) {
-                              var8 = var3.field9864 * 846965703;
+                           if (var3.field9881 == var6) {
+                              var8 = var3.field9864;
                            }
 
-                           if (var6 == var3.field9882 * -598113659) {
-                              var8 = var3.field9880 * -899602593;
+                           if (var6 == var3.field9882) {
+                              var8 = var3.field9880;
                            }
 
-                           class984.method1875(var12[var6], class56.method1545(16776960, -1768803512) + var4, var12[var6].equalsIgnoreCase(class814.field4780.method2927(class321.field1066, -875414210)) ? var3.field9883 * 1183282735 : var8, var7, -1, (long)(var0.field4028 * 1888274983), 0, 0, true, false, (long)(var0.field4028 * 1888274983), false, -1881687525);
+                           class984.method1875(var12[var6], class56.method1545(16776960, -1768803512) + var4, var12[var6].equalsIgnoreCase(class814.field4780.method2927(class321.field1066, -875414210)) ? var3.field9883 * 1737724111 * 1183282735 : var8, var7, -1, (long)var0.field4028, 0, 0, true, false, (long)var0.field4028, false, -1881687525);
                         }
                      }
 
@@ -179,12 +179,12 @@ public class class554 implements Runnable {
                         for(var6 = 0; var6 < var12.length; ++var6) {
                            if (var12[var6] != null && (var12[var6].equalsIgnoreCase(class814.field4780.method2927(class321.field1066, -875414210)) || var12[var6].equalsIgnoreCase(class814.field4779.method2927(class321.field1066, -875414210)))) {
                               var7 = 0;
-                              if (!class923.field10295.field3403 && !var0.field1633.equalsIgnoreCase("Chicken God") && !var0.field1633.equalsIgnoreCase("WildyWyrm") && 1817570317 * var0.field1636 > class923.field10295.field3385 * 696798311) {
+                              if (!class923.local.field3403 && !var0.field1633.equalsIgnoreCase("Chicken God") && !var0.field1633.equalsIgnoreCase("WildyWyrm") && var0.field1636 > class923.local.field3385) {
                                  var7 = 2000;
                               }
 
                               short var13 = 0;
-                              int var9 = 1395924385 * class730.field2671;
+                              int var9 = class730.field2671;
                               if (var6 == 0) {
                                  var13 = 9;
                               }
@@ -213,15 +213,15 @@ public class class554 implements Runnable {
                                  var13 += var7;
                               }
 
-                              if (var6 == var3.field9881 * 1095931419) {
-                                 var9 = var3.field9864 * 846965703;
+                              if (var6 == var3.field9881) {
+                                 var9 = var3.field9864;
                               }
 
-                              if (-598113659 * var3.field9882 == var6) {
-                                 var9 = -899602593 * var3.field9880;
+                              if (var3.field9882 == var6) {
+                                 var9 = var3.field9880;
                               }
 
-                              class984.method1875(var12[var6], class56.method1545(16776960, -1391055346) + var4, var12[var6].equalsIgnoreCase(class814.field4780.method2927(class321.field1066, -875414210)) ? var3.field9883 * 1183282735 : var9, var13, -1, (long)(var0.field4028 * 1888274983), 0, 0, true, false, (long)(1888274983 * var0.field4028), false, -1360691095);
+                              class984.method1875(var12[var6], class56.method1545(16776960, -1391055346) + var4, var12[var6].equalsIgnoreCase(class814.field4780.method2927(class321.field1066, -875414210)) ? var3.field9883 * 1737724111 * 1183282735 : var9, var13, -1, (long)var0.field4028, 0, 0, true, false, (long)var0.field4028, false, -1360691095);
                            }
                         }
                      }
@@ -237,7 +237,7 @@ public class class554 implements Runnable {
 
    static final void method425(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          if (var2 < 0 || var2 > 1) {
             var2 = 0;
          }
@@ -288,7 +288,7 @@ public class class554 implements Runnable {
 
    static final boolean method428(class240 var0, int var1, int var2, byte var3) {
       try {
-         class50 var4 = var0.method4713(var1);
+         ObjectDefinition var4 = var0.method4713(var1);
          if (11 == var2) {
             var2 = 10;
          }

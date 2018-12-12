@@ -7,7 +7,7 @@ public class class739 {
 
    static final void method1793(class744 var0, int var1) {
       try {
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var0.field3169.field9697;
+         var0.field3157[++var0.field3158 - 1] = var0.field3169.field9697;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ox.xl(" + ')');
       }

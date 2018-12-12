@@ -35,10 +35,10 @@ public class class167 {
       this.field6950[1] = var13;
       this.field6950[2] = var14;
       this.field6950[3] = var15;
-      this.field6951 = (short)(var4 >> -1688804109 * var1.field3849);
-      this.field6945 = (short)(var6 >> -1688804109 * var1.field3849);
-      this.field6944 = (short)(var12 >> -1688804109 * var1.field3849);
-      this.field6947 = (short)(var14 >> var1.field3849 * -1688804109);
+      this.field6951 = (short)(var4 >> var1.field3849);
+      this.field6945 = (short)(var6 >> var1.field3849);
+      this.field6944 = (short)(var12 >> var1.field3849);
+      this.field6947 = (short)(var14 >> var1.field3849);
       this.field6938 = new short[4];
       this.field6952 = new short[4];
       this.field6953 = new short[4];
@@ -57,7 +57,7 @@ public class class167 {
 
    static final void method3696(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2623 * -442628795;
+         var0.field3161[++var0.field3156 - 1] = class730.field2623;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "nr.vd(" + ')');
       }
@@ -65,9 +65,9 @@ public class class167 {
 
    static final void method3697(class744 var0, byte var1) {
       try {
-         var0.field3158 -= 1938723502;
-         String var2 = (String)var0.field3157[var0.field3158 * -203050393];
-         String var3 = (String)var0.field3157[-203050393 * var0.field3158 + 1];
+         var0.field3158 -= 2;
+         String var2 = (String)var0.field3157[var0.field3158];
+         String var3 = (String)var0.field3157[var0.field3158 + 1];
          class935.method6311(var2, var3, 2101690439);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "nr.agx(" + ')');
@@ -76,7 +76,7 @@ public class class167 {
 
    static final void method3698(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9136.method3693(-1938875884) ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9136.method3693(-1938875884) ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "nr.aot(" + ')');
       }
@@ -142,7 +142,7 @@ public class class167 {
    static final void method3700(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         if (-1309843523 * var2.field8255.field879 == -1) {
+         if (var2.field8255.field879 == -1) {
             if (var0.field3178) {
                throw new RuntimeException("");
             } else {
@@ -150,7 +150,7 @@ public class class167 {
             }
          } else {
             class564 var3 = var2.method4650(-2049654672);
-            var3.field1017[-1309843523 * var2.field8255.field879] = null;
+            var3.field1017[var2.field8255.field879] = null;
             class814.method2932(var3, 575626440);
          }
       } catch (RuntimeException var4) {

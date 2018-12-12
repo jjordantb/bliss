@@ -7,50 +7,12 @@ public class class512 extends class9 {
    static char field4203 = '\u0001';
    static float[] field4204 = new float[4];
 
-   void method3012(int var1, int var2) {
-      float var3 = -5.0E-4F * (float)((var1 & 3) + 1);
-      float var4 = 5.0E-4F * (float)((var1 >> 3 & 3) + 1);
-      float var5 = (var1 & 64) == 0 ? 4.8828125E-4F : 9.765625E-4F;
-      boolean var6 = (var1 & 128) != 0;
-      this.field4965.method3638(1);
-      if (var6) {
-         field4204[0] = var5;
-         field4204[1] = 0.0F;
-         field4204[2] = 0.0F;
-         field4204[3] = 0.0F;
-      } else {
-         field4204[0] = 0.0F;
-         field4204[1] = 0.0F;
-         field4204[2] = var5;
-         field4204[3] = 0.0F;
-      }
-
-      OpenGL.glTexGenfv(8192, 9474, field4204, 0);
-      field4204[0] = 0.0F;
-      field4204[1] = var5;
-      field4204[2] = 0.0F;
-      field4204[3] = (float)this.field4965.field6749 * var3 % 1.0F;
-      OpenGL.glTexGenfv(8193, 9474, field4204, 0);
-      if (!this.field4200.field8716) {
-         int var7 = (int)(var4 * (float)this.field4965.field6749 * 16.0F);
-         this.field4965.method3639(this.field4200.field8719[var7 % 16]);
-      } else {
-         field4204[0] = 0.0F;
-         field4204[1] = 0.0F;
-         field4204[2] = 0.0F;
-         field4204[3] = (float)this.field4965.field6749 * var4 % 1.0F;
-         OpenGL.glTexGenfv(8194, 9473, field4204, 0);
-      }
-
-      this.field4965.method3638(0);
-   }
-
    class512(class13 var1, class604 var2) {
       super(var1);
       this.field4200 = var2;
       this.field4201 = new class41(var1, 2);
       this.field4201.method3056(0);
-      this.field4965.method3638(1);
+      super.field4965.method3638(1);
       if (this.field4200.field8716) {
          OpenGL.glTexGeni(8194, 9472, 9217);
          OpenGL.glEnable(3170);
@@ -60,26 +22,26 @@ public class class512 extends class9 {
       OpenGL.glTexGeni(8193, 9472, 9216);
       OpenGL.glEnable(3168);
       OpenGL.glEnable(3169);
-      this.field4965.method3638(0);
+      super.field4965.method3638(0);
       this.field4201.method3054();
       this.field4201.method3056(1);
-      this.field4965.method3638(1);
+      super.field4965.method3638(1);
       if (this.field4200.field8716) {
          OpenGL.glDisable(3170);
       }
 
       OpenGL.glDisable(3168);
       OpenGL.glDisable(3169);
-      this.field4965.method3638(0);
+      super.field4965.method3638(0);
       this.field4201.method3054();
    }
 
    void method3001(boolean var1) {
       this.field4201.method3055('\u0000');
       if (this.field4200.field8716) {
-         this.field4965.method3638(1);
-         this.field4965.method3639(this.field4200.field8720);
-         this.field4965.method3638(0);
+         super.field4965.method3638(1);
+         super.field4965.method3639(this.field4200.field8720);
+         super.field4965.method3638(0);
       }
 
    }
@@ -88,8 +50,8 @@ public class class512 extends class9 {
    }
 
    void method2996(class203 var1, int var2) {
-      this.field4965.method3639(var1);
-      this.field4965.method3626(var2);
+      super.field4965.method3639(var1);
+      super.field4965.method3626(var2);
    }
 
    void method2999(int var1, int var2) {
@@ -97,7 +59,7 @@ public class class512 extends class9 {
       float var4 = 5.0E-4F * (float)((var1 >> 3 & 3) + 1);
       float var5 = (var1 & 64) == 0 ? 4.8828125E-4F : 9.765625E-4F;
       boolean var6 = (var1 & 128) != 0;
-      this.field4965.method3638(1);
+      super.field4965.method3638(1);
       if (var6) {
          field4204[0] = var5;
          field4204[1] = 0.0F;
@@ -114,239 +76,30 @@ public class class512 extends class9 {
       field4204[0] = 0.0F;
       field4204[1] = var5;
       field4204[2] = 0.0F;
-      field4204[3] = (float)this.field4965.field6749 * var3 % 1.0F;
+      field4204[3] = (float)super.field4965.field6749 * var3 % 1.0F;
       OpenGL.glTexGenfv(8193, 9474, field4204, 0);
       if (!this.field4200.field8716) {
-         int var7 = (int)(var4 * (float)this.field4965.field6749 * 16.0F);
-         this.field4965.method3639(this.field4200.field8719[var7 % 16]);
+         int var7 = (int)(var4 * (float)super.field4965.field6749 * 16.0F);
+         super.field4965.method3639(this.field4200.field8719[var7 % 16]);
       } else {
          field4204[0] = 0.0F;
          field4204[1] = 0.0F;
          field4204[2] = 0.0F;
-         field4204[3] = (float)this.field4965.field6749 * var4 % 1.0F;
+         field4204[3] = (float)super.field4965.field6749 * var4 % 1.0F;
          OpenGL.glTexGenfv(8194, 9473, field4204, 0);
       }
 
-      this.field4965.method3638(0);
-   }
-
-   void method3002(boolean var1) {
-      this.field4201.method3055('\u0000');
-      if (this.field4200.field8716) {
-         this.field4965.method3638(1);
-         this.field4965.method3639(this.field4200.field8720);
-         this.field4965.method3638(0);
-      }
-
+      super.field4965.method3638(0);
    }
 
    void method3000() {
       this.field4201.method3055('\u0001');
-      this.field4965.method3638(1);
-      this.field4965.method3639((class203)null);
-      this.field4965.method3638(0);
-   }
-
-   void method3015(class203 var1, int var2) {
-      this.field4965.method3639(var1);
-      this.field4965.method3626(var2);
-   }
-
-   void method3003(boolean var1) {
-      this.field4201.method3055('\u0000');
-      if (this.field4200.field8716) {
-         this.field4965.method3638(1);
-         this.field4965.method3639(this.field4200.field8720);
-         this.field4965.method3638(0);
-      }
-
-   }
-
-   void method3004(boolean var1) {
-   }
-
-   void method3005(boolean var1) {
-   }
-
-   void method3006(boolean var1) {
-   }
-
-   void method3007() {
-      this.field4201.method3055('\u0001');
-      this.field4965.method3638(1);
-      this.field4965.method3639((class203)null);
-      this.field4965.method3638(0);
-   }
-
-   void method3008() {
-      this.field4201.method3055('\u0001');
-      this.field4965.method3638(1);
-      this.field4965.method3639((class203)null);
-      this.field4965.method3638(0);
-   }
-
-   void method3009(int var1, int var2) {
-      float var3 = -5.0E-4F * (float)((var1 & 3) + 1);
-      float var4 = 5.0E-4F * (float)((var1 >> 3 & 3) + 1);
-      float var5 = (var1 & 64) == 0 ? 4.8828125E-4F : 9.765625E-4F;
-      boolean var6 = (var1 & 128) != 0;
-      this.field4965.method3638(1);
-      if (var6) {
-         field4204[0] = var5;
-         field4204[1] = 0.0F;
-         field4204[2] = 0.0F;
-         field4204[3] = 0.0F;
-      } else {
-         field4204[0] = 0.0F;
-         field4204[1] = 0.0F;
-         field4204[2] = var5;
-         field4204[3] = 0.0F;
-      }
-
-      OpenGL.glTexGenfv(8192, 9474, field4204, 0);
-      field4204[0] = 0.0F;
-      field4204[1] = var5;
-      field4204[2] = 0.0F;
-      field4204[3] = (float)this.field4965.field6749 * var3 % 1.0F;
-      OpenGL.glTexGenfv(8193, 9474, field4204, 0);
-      if (!this.field4200.field8716) {
-         int var7 = (int)(var4 * (float)this.field4965.field6749 * 16.0F);
-         this.field4965.method3639(this.field4200.field8719[var7 % 16]);
-      } else {
-         field4204[0] = 0.0F;
-         field4204[1] = 0.0F;
-         field4204[2] = 0.0F;
-         field4204[3] = (float)this.field4965.field6749 * var4 % 1.0F;
-         OpenGL.glTexGenfv(8194, 9473, field4204, 0);
-      }
-
-      this.field4965.method3638(0);
-   }
-
-   void method2998(int var1, int var2) {
-      float var3 = -5.0E-4F * (float)((var1 & 3) + 1);
-      float var4 = 5.0E-4F * (float)((var1 >> 3 & 3) + 1);
-      float var5 = (var1 & 64) == 0 ? 4.8828125E-4F : 9.765625E-4F;
-      boolean var6 = (var1 & 128) != 0;
-      this.field4965.method3638(1);
-      if (var6) {
-         field4204[0] = var5;
-         field4204[1] = 0.0F;
-         field4204[2] = 0.0F;
-         field4204[3] = 0.0F;
-      } else {
-         field4204[0] = 0.0F;
-         field4204[1] = 0.0F;
-         field4204[2] = var5;
-         field4204[3] = 0.0F;
-      }
-
-      OpenGL.glTexGenfv(8192, 9474, field4204, 0);
-      field4204[0] = 0.0F;
-      field4204[1] = var5;
-      field4204[2] = 0.0F;
-      field4204[3] = (float)this.field4965.field6749 * var3 % 1.0F;
-      OpenGL.glTexGenfv(8193, 9474, field4204, 0);
-      if (!this.field4200.field8716) {
-         int var7 = (int)(var4 * (float)this.field4965.field6749 * 16.0F);
-         this.field4965.method3639(this.field4200.field8719[var7 % 16]);
-      } else {
-         field4204[0] = 0.0F;
-         field4204[1] = 0.0F;
-         field4204[2] = 0.0F;
-         field4204[3] = (float)this.field4965.field6749 * var4 % 1.0F;
-         OpenGL.glTexGenfv(8194, 9473, field4204, 0);
-      }
-
-      this.field4965.method3638(0);
-   }
-
-   void method3011(int var1, int var2) {
-      float var3 = -5.0E-4F * (float)((var1 & 3) + 1);
-      float var4 = 5.0E-4F * (float)((var1 >> 3 & 3) + 1);
-      float var5 = (var1 & 64) == 0 ? 4.8828125E-4F : 9.765625E-4F;
-      boolean var6 = (var1 & 128) != 0;
-      this.field4965.method3638(1);
-      if (var6) {
-         field4204[0] = var5;
-         field4204[1] = 0.0F;
-         field4204[2] = 0.0F;
-         field4204[3] = 0.0F;
-      } else {
-         field4204[0] = 0.0F;
-         field4204[1] = 0.0F;
-         field4204[2] = var5;
-         field4204[3] = 0.0F;
-      }
-
-      OpenGL.glTexGenfv(8192, 9474, field4204, 0);
-      field4204[0] = 0.0F;
-      field4204[1] = var5;
-      field4204[2] = 0.0F;
-      field4204[3] = (float)this.field4965.field6749 * var3 % 1.0F;
-      OpenGL.glTexGenfv(8193, 9474, field4204, 0);
-      if (!this.field4200.field8716) {
-         int var7 = (int)(var4 * (float)this.field4965.field6749 * 16.0F);
-         this.field4965.method3639(this.field4200.field8719[var7 % 16]);
-      } else {
-         field4204[0] = 0.0F;
-         field4204[1] = 0.0F;
-         field4204[2] = 0.0F;
-         field4204[3] = (float)this.field4965.field6749 * var4 % 1.0F;
-         OpenGL.glTexGenfv(8194, 9473, field4204, 0);
-      }
-
-      this.field4965.method3638(0);
+      super.field4965.method3638(1);
+      super.field4965.method3639((class203)null);
+      super.field4965.method3638(0);
    }
 
    boolean method2997() {
-      return true;
-   }
-
-   void method3013(int var1, int var2) {
-      float var3 = -5.0E-4F * (float)((var1 & 3) + 1);
-      float var4 = 5.0E-4F * (float)((var1 >> 3 & 3) + 1);
-      float var5 = (var1 & 64) == 0 ? 4.8828125E-4F : 9.765625E-4F;
-      boolean var6 = (var1 & 128) != 0;
-      this.field4965.method3638(1);
-      if (var6) {
-         field4204[0] = var5;
-         field4204[1] = 0.0F;
-         field4204[2] = 0.0F;
-         field4204[3] = 0.0F;
-      } else {
-         field4204[0] = 0.0F;
-         field4204[1] = 0.0F;
-         field4204[2] = var5;
-         field4204[3] = 0.0F;
-      }
-
-      OpenGL.glTexGenfv(8192, 9474, field4204, 0);
-      field4204[0] = 0.0F;
-      field4204[1] = var5;
-      field4204[2] = 0.0F;
-      field4204[3] = (float)this.field4965.field6749 * var3 % 1.0F;
-      OpenGL.glTexGenfv(8193, 9474, field4204, 0);
-      if (!this.field4200.field8716) {
-         int var7 = (int)(var4 * (float)this.field4965.field6749 * 16.0F);
-         this.field4965.method3639(this.field4200.field8719[var7 % 16]);
-      } else {
-         field4204[0] = 0.0F;
-         field4204[1] = 0.0F;
-         field4204[2] = 0.0F;
-         field4204[3] = (float)this.field4965.field6749 * var4 % 1.0F;
-         OpenGL.glTexGenfv(8194, 9473, field4204, 0);
-      }
-
-      this.field4965.method3638(0);
-   }
-
-   void method3010(class203 var1, int var2) {
-      this.field4965.method3639(var1);
-      this.field4965.method3626(var2);
-   }
-
-   boolean method3016() {
       return true;
    }
 }

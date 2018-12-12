@@ -5,23 +5,15 @@ public class class671 implements class331 {
    public static class942 field7472;
 
    class671(int var1) {
-      this.field7471 = -1849427999 * var1;
-   }
-
-   public int method90() {
-      return 2012122145 * this.field7471;
+      this.field7471 = var1;
    }
 
    public int method89(int var1) {
       try {
-         return 2012122145 * this.field7471;
+         return this.field7471;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ni.f(" + ')');
       }
-   }
-
-   public int method91() {
-      return 2012122145 * this.field7471;
    }
 
    public static void method4234(int var0) {
@@ -41,7 +33,7 @@ public class class671 implements class331 {
          class615.field8903.method5391(class615.field8903.field9115, 0, 737950253);
          class615.field8903.method5391(class615.field8903.field9116, 0, -1008071138);
          class615.field8903.method5391(class615.field8903.field9129, 0, -1232122850);
-         class615.field8903.method5391(class615.field8903.field9124, -160182505 * class157.field6552.field6556, 466531848);
+         class615.field8903.method5391(class615.field8903.field9124, class157.field6552.field6556, 466531848);
          class615.field8903.method5391(class615.field8903.field9117, 0, -1276228451);
          class615.field8903.method5391(class615.field8903.field9133, 0, -23282776);
          class308.method382(1113089752);
@@ -57,7 +49,7 @@ public class class671 implements class331 {
 
    static final void method4235(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-83);
          class131 var4 = class382.field1410[var2 >> 16];
          class161.method3549(var3, var4, var0, 505360650);
@@ -68,8 +60,8 @@ public class class671 implements class331 {
 
    static final void method4236(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9122.method2273(var2, 1352882135);
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9122.method2273(var2, 1352882135);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ni.aoy(" + ')');
       }
@@ -77,9 +69,9 @@ public class class671 implements class331 {
 
    public static class45 method4237(int var0, int var1, int var2, int var3, boolean var4, int var5, int var6) {
       try {
-         if ((var4 ? class615.field8903.field9149.method2717(-2146212397) : class615.field8903.field9119.method2717(-2145707047)) != 0 && var1 != 0 && -991384187 * class540.field3926 < 50 && var0 != -1) {
-            class45 var7 = new class45((byte)(var4 ? 3 : 2), var0, var1, var2, var3, 0, var5, (class963)null);
-            class540.field3927[(class540.field3926 += -598588595) * -991384187 - 1] = var7;
+         if ((var4 ? class615.field8903.field9149.method2717(-2146212397) : class615.field8903.field9119.method2717(-2145707047)) != 0 && var1 != 0 && class540.field3926 < 50 && var0 != -1) {
+            class45 var7 = new class45((byte)(var4 ? 3 : 2), var0, var1, var2, var3, 0, var5, (Interactable)null);
+            class540.field3927[++class540.field3926 - 1] = var7;
             return var7;
          } else {
             return null;

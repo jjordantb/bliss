@@ -8,25 +8,25 @@ public class class216 extends class381 {
 
    static final void method3827(class744 var0, int var1) {
       try {
-         var0.field3156 -= -1567522756;
-         class730.field2821 = (short)var0.field3161[681479919 * var0.field3156];
+         var0.field3156 -= 4;
+         class730.field2821 = (short)var0.field3161[var0.field3156];
          if (class730.field2821 <= 0) {
             class730.field2821 = 1;
          }
 
-         class730.field2724 = (short)var0.field3161[1 + 681479919 * var0.field3156];
+         class730.field2724 = (short)var0.field3161[1 + var0.field3156];
          if (class730.field2724 <= 0) {
             class730.field2724 = 32767;
          } else if (class730.field2724 < class730.field2821) {
             class730.field2724 = class730.field2821;
          }
 
-         class730.field2916 = (short)var0.field3161[681479919 * var0.field3156 + 2];
+         class730.field2916 = (short)var0.field3161[var0.field3156 + 2];
          if (class730.field2916 <= 0) {
             class730.field2916 = 1;
          }
 
-         class730.field2917 = (short)var0.field3161[3 + 681479919 * var0.field3156];
+         class730.field2917 = (short)var0.field3161[3 + var0.field3156];
          if (class730.field2917 <= 0) {
             class730.field2917 = 32767;
          } else if (class730.field2917 < class730.field2916) {

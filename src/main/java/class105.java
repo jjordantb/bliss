@@ -39,7 +39,7 @@ public class class105 extends class284 {
 
    public int method195(byte var1) {
       try {
-         return this.field253 * -1497786335;
+         return this.field253;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ajw.at(" + ')');
       }
@@ -47,19 +47,15 @@ public class class105 extends class284 {
 
    public int method196(byte var1) {
       try {
-         return 1151921009 * this.field252;
+         return this.field252;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ajw.ah(" + ')');
       }
    }
 
-   public int method6674() {
-      return this.field243 * 2113899933;
-   }
-
    public int method6666(int var1) {
       try {
-         switch(this.field252 * 1151921009) {
+         switch(this.field252) {
          case 160:
          case 512:
             return -1;
@@ -100,7 +96,7 @@ public class class105 extends class284 {
 
    public int method6668(int var1) {
       try {
-         switch(this.field252 * 1151921009) {
+         switch(this.field252) {
          case 160:
          case 512:
             return 0;
@@ -123,7 +119,7 @@ public class class105 extends class284 {
 
    public long method6669(byte var1) {
       try {
-         return -1729630536048907557L * this.field249;
+         return this.field249;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ajw.i(" + ')');
       }
@@ -131,7 +127,7 @@ public class class105 extends class284 {
 
    public int method6667(byte var1) {
       try {
-         return this.field243 * 2113899933;
+         return this.field243;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ajw.f(" + ')');
       }
@@ -139,7 +135,7 @@ public class class105 extends class284 {
 
    public int method6680(int var1) {
       try {
-         return -1537929791 * this.field229;
+         return this.field229;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ajw.b(" + ')');
       }
@@ -147,7 +143,7 @@ public class class105 extends class284 {
 
    public boolean method197(int var1) {
       try {
-         switch(this.field252 * 1151921009) {
+         switch(this.field252) {
          case 160:
          case 161:
          case 162:
@@ -174,63 +170,12 @@ public class class105 extends class284 {
       }
    }
 
-   public void method6675() {
-      class105[] var1 = field251;
-      synchronized(field251) {
-         if (656179585 * class19.field5364 < 200219789 * class310.field533 - 1) {
-            field251[(class19.field5364 += 453361281) * 656179585 - 1] = this;
-         }
-
-      }
-   }
-
-   public int method6677() {
-      switch(this.field252 * 1151921009) {
-      case 160:
-      case 512:
-         return -1;
-      case 161:
-      case 163:
-      case 513:
-      case 515:
-         return 0;
-      case 162:
-      case 514:
-         return 3;
-      case 164:
-      case 166:
-      case 516:
-      case 518:
-         return 2;
-      case 165:
-      case 517:
-         return 5;
-      case 167:
-      case 169:
-      case 519:
-      case 521:
-         return 1;
-      case 168:
-      case 520:
-         return 4;
-      case 170:
-      case 522:
-         return 6;
-      default:
-         return -2;
-      }
-   }
-
-   public int method6673() {
-      return this.field243 * 2113899933;
-   }
-
    public void method6670(int var1) {
       try {
          class105[] var2 = field251;
          synchronized(field251) {
-            if (656179585 * class19.field5364 < 200219789 * class310.field533 - 1) {
-               field251[(class19.field5364 += 453361281) * 656179585 - 1] = this;
+            if (class19.field5364 < class310.field533 - 1) {
+               field251[++class19.field5364 - 1] = this;
             }
 
          }
@@ -239,119 +184,10 @@ public class class105 extends class284 {
       }
    }
 
-   public int method6682() {
-      return -1537929791 * this.field229;
-   }
-
-   public long method6676() {
-      return -1729630536048907557L * this.field249;
-   }
-
-   public long method6678() {
-      return -1729630536048907557L * this.field249;
-   }
-
-   public long method6679() {
-      return -1729630536048907557L * this.field249;
-   }
-
-   public int method6684() {
-      switch(this.field252 * 1151921009) {
-      case 160:
-      case 512:
-         return 0;
-      case 163:
-      case 166:
-      case 169:
-      case 173:
-      case 515:
-      case 518:
-      case 521:
-      case 525:
-         return 2;
-      default:
-         return 1;
-      }
-   }
-
-   public long method6672() {
-      return -1729630536048907557L * this.field249;
-   }
-
-   public int method6685() {
-      return -1537929791 * this.field229;
-   }
-
-   public void method6683() {
-      class105[] var1 = field251;
-      synchronized(field251) {
-         if (656179585 * class19.field5364 < 200219789 * class310.field533 - 1) {
-            field251[(class19.field5364 += 453361281) * 656179585 - 1] = this;
-         }
-
-      }
-   }
-
-   public int method6681() {
-      switch(this.field252 * 1151921009) {
-      case 160:
-      case 512:
-         return 0;
-      case 163:
-      case 166:
-      case 169:
-      case 173:
-      case 515:
-      case 518:
-      case 521:
-      case 525:
-         return 2;
-      default:
-         return 1;
-      }
-   }
-
-   public int method6671() {
-      switch(this.field252 * 1151921009) {
-      case 160:
-      case 512:
-         return -1;
-      case 161:
-      case 163:
-      case 513:
-      case 515:
-         return 0;
-      case 162:
-      case 514:
-         return 3;
-      case 164:
-      case 166:
-      case 516:
-      case 518:
-         return 2;
-      case 165:
-      case 517:
-         return 5;
-      case 167:
-      case 169:
-      case 519:
-      case 521:
-         return 1;
-      case 168:
-      case 520:
-         return 4;
-      case 170:
-      case 522:
-         return 6;
-      default:
-         return -2;
-      }
-   }
-
    public void method198(Point var1, int var2) {
       try {
-         this.field243 -= var1.x * 1060004021;
-         this.field229 -= var1.y * 1196163649;
+         this.field243 -= var1.x * 2113899933;
+         this.field229 -= var1.y * -1537929791;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ajw.al(" + ')');
       }
@@ -359,7 +195,7 @@ public class class105 extends class284 {
 
    static void method199(int var0, byte var1) {
       try {
-         class358.field1896 = 912274055 * var0;
+         class358.field1896 = var0;
          class358.field1897 = new class358[var0];
          class358.field1895 = 0;
       } catch (RuntimeException var3) {

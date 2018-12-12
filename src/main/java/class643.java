@@ -108,13 +108,13 @@ public class class643 {
    public static int field10036;
 
    class643(int var1, int var2) {
-      this.field10018 = -525230381 * var1;
-      this.field10034 = 1381077963 * var2;
+      this.field10018 = var1;
+      this.field10034 = var2;
    }
 
    static final void method6118(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)0);
          class131 var4 = class382.field1410[var2 >> 16];
          class593.method1231(var3, var4, var0, -1722505013);
@@ -125,7 +125,7 @@ public class class643 {
 
    static final void method6119(class564 var0, class131 var1, class744 var2, int var3) {
       try {
-         String var4 = (String)var2.field3157[(var2.field3158 -= 969361751) * -203050393];
+         String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -699082754) != null) {
             var4 = var4.substring(0, var4.length() - 1);
          }
@@ -139,7 +139,7 @@ public class class643 {
 
    static final void method6120(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var0.field3154.field1166;
+         var0.field3161[++var0.field3156 - 1] = var0.field3154.field1166;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ij.xb(" + ')');
       }
@@ -147,7 +147,7 @@ public class class643 {
 
    static final void method6121(class744 var0, int var1) {
       try {
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class818.method2900(class469.method4016(var0.field3161[(var0.field3156 -= -391880689) * 681479919], 2103151536), class321.field1066.method89(694163818), -1841335173);
+         var0.field3157[++var0.field3158 - 1] = class818.method2900(class469.method4016(var0.field3161[--var0.field3156], 2103151536), class321.field1066.method89(694163818), -1841335173);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ij.zo(" + ')');
       }
@@ -155,7 +155,7 @@ public class class643 {
 
    static final void method6122(class564 var0, class131 var1, class744 var2, byte var3) {
       try {
-         var0.field964 = var2.field3161[(var2.field3156 -= -391880689) * 681479919] * 476443207;
+         var0.field964 = var2.field3161[--var2.field3156];
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ij.ik(" + ')');
       }

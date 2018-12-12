@@ -7,18 +7,18 @@ public class class256 extends class568 {
    }
 
    public class256(int var1, int var2) {
-      this.field8101 = var1 * 84132523;
-      this.field8100 = -1287090225 * var2;
+      this.field8101 = var1;
+      this.field8100 = var2;
    }
 
    static final void method4488(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-86);
          if (var3.field953 == null) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
+            var0.field3157[++var0.field3158 - 1] = "";
          } else {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var3.field953;
+            var0.field3157[++var0.field3158 - 1] = var3.field953;
          }
 
       } catch (RuntimeException var4) {
@@ -33,10 +33,10 @@ public class class256 extends class568 {
          class808.field4596 = class730.field2821;
          class559.field542 = class730.field2724;
          class949.field3330 = true;
-         if (class949.field3329 * 57998513 != 0 && 1705830085 * class949.field3328 != 0) {
+         if (class949.field3329 != 0 && class949.field3328 != 0) {
             class730.field2821 = 334;
             class730.field2724 = 334;
-            class730.field2917 = class730.field2916 = (short)(class949.field3329 * -369532416 / (1705830085 * class949.field3328));
+            class730.field2917 = class730.field2916 = (short)(class949.field3329 * 512 / class949.field3328);
          }
 
       } catch (RuntimeException var2) {

@@ -1,6 +1,3 @@
-import java.lang.reflect.AccessibleObject;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.util.AbstractQueue;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -15,36 +12,23 @@ public class class226 extends AbstractQueue {
    Comparator field7333;
    int field7334;
 
-   static void method4023(int var0) {
-      try {
-         Class var1 = ClassLoader.class;
-         Field var2 = var1.getDeclaredField("nativeLibraries");
-         Class var3 = AccessibleObject.class;
-         Method var4 = var3.getDeclaredMethod("setAccessible", Boolean.TYPE);
-         var4.invoke(var2, Boolean.TRUE);
-      } catch (Throwable var5) {
-         ;
-      }
-
-   }
-
    void method4024(int var1, int var2) {
       try {
          class71 var3 = this.field7331[var1];
 
          int var9;
-         for(int var4 = this.field7332 * -400292665 >>> 1; var1 < var4; var1 = var9) {
+         for(int var4 = this.field7332 >>> 1; var1 < var4; var1 = var9) {
             int var5 = 1 + (var1 << 1);
             class71 var6 = this.field7331[var5];
             int var7 = 2 + (var1 << 1);
             class71 var8 = this.field7331[var7];
             if (this.field7333 != null) {
-               if (var7 < this.field7332 * -400292665 && this.field7333.compare(var6.field1433, var8.field1433) > 0) {
+               if (var7 < this.field7332 && this.field7333.compare(var6.field1433, var8.field1433) > 0) {
                   var9 = var7;
                } else {
                   var9 = var5;
                }
-            } else if (var7 < this.field7332 * -400292665 && ((Comparable)var6.field1433).compareTo(var8.field1433) > 0) {
+            } else if (var7 < this.field7332 && ((Comparable)var6.field1433).compareTo(var8.field1433) > 0) {
                var9 = var7;
             } else {
                var9 = var5;
@@ -65,11 +49,11 @@ public class class226 extends AbstractQueue {
             }
 
             this.field7331[var1] = this.field7331[var9];
-            this.field7331[var1].field1432 = var1 * 533229453;
+            this.field7331[var1].field1432 = var1;
          }
 
          this.field7331[var1] = var3;
-         this.field7331[var1].field1432 = var1 * 533229453;
+         this.field7331[var1].field1432 = var1;
       } catch (RuntimeException var10) {
          throw class158.method3445(var10, "ajy.b(" + ')');
       }
@@ -93,7 +77,7 @@ public class class226 extends AbstractQueue {
 
    public int size() {
       try {
-         return -400292665 * this.field7332;
+         return this.field7332;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "ajy.size(" + ')');
       }
@@ -109,19 +93,19 @@ public class class226 extends AbstractQueue {
 
    public Object poll() {
       try {
-         if (-400292665 * this.field7332 == 0) {
+         if (this.field7332 == 0) {
             return null;
          } else {
-            this.field7334 += 1445240763;
+            ++this.field7334;
             Object var1 = this.field7331[0].field1433;
             this.field7330.remove(var1);
-            this.field7332 -= -2003206921;
-            if (-400292665 * this.field7332 == 0) {
-               this.field7331[-400292665 * this.field7332] = null;
+            --this.field7332;
+            if (this.field7332 == 0) {
+               this.field7331[this.field7332] = null;
             } else {
-               this.field7331[0] = this.field7331[this.field7332 * -400292665];
+               this.field7331[0] = this.field7331[this.field7332];
                this.field7331[0].field1432 = 0;
-               this.field7331[this.field7332 * -400292665] = null;
+               this.field7331[this.field7332] = null;
                this.method4024(0, 280830604);
             }
 
@@ -154,11 +138,11 @@ public class class226 extends AbstractQueue {
             }
 
             this.field7331[var1] = var5;
-            this.field7331[var1].field1432 = 533229453 * var1;
+            this.field7331[var1].field1432 = var1;
          }
 
          this.field7331[var1] = var3;
-         this.field7331[var1].field1432 = 533229453 * var1;
+         this.field7331[var1].field1432 = var1;
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "ajy.f(" + ')');
       }
@@ -189,7 +173,7 @@ public class class226 extends AbstractQueue {
 
    public Object peek() {
       try {
-         return this.field7332 * -400292665 == 0 ? null : this.field7331[0].field1433;
+         return this.field7332 == 0 ? null : this.field7331[0].field1433;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "ajy.peek(" + ')');
       }
@@ -204,13 +188,13 @@ public class class226 extends AbstractQueue {
          if (this.field7330.containsKey(var1)) {
             throw new IllegalArgumentException("");
          } else {
-            this.field7334 += 1445240763;
-            int var2 = -400292665 * this.field7332;
+            ++this.field7334;
+            int var2 = this.field7332;
             if (var2 >= this.field7331.length) {
                this.method4025(-1001796105);
             }
 
-            this.field7332 += -2003206921;
+            ++this.field7332;
             if (var2 == 0) {
                this.field7331[0] = new class71(var1, 0);
                this.field7330.put(var1, this.field7331[0]);
@@ -233,19 +217,19 @@ public class class226 extends AbstractQueue {
          if (var2 == null) {
             return false;
          } else {
-            this.field7334 += 1445240763;
-            this.field7332 -= -2003206921;
-            if (-29201595 * var2.field1432 == -400292665 * this.field7332) {
-               this.field7331[this.field7332 * -400292665] = null;
+            ++this.field7334;
+            --this.field7332;
+            if (var2.field1432 == this.field7332) {
+               this.field7331[this.field7332] = null;
                return true;
             } else {
-               class71 var3 = this.field7331[this.field7332 * -400292665];
-               this.field7331[-400292665 * this.field7332] = null;
-               this.field7331[var2.field1432 * -29201595] = var3;
-               this.field7331[-29201595 * var2.field1432].field1432 = var2.field1432 * 1;
-               this.method4024(-29201595 * var2.field1432, 1851130853);
-               if (this.field7331[-29201595 * var2.field1432] == var3) {
-                  this.method4026(-29201595 * var2.field1432, -1459206324);
+               class71 var3 = this.field7331[this.field7332];
+               this.field7331[this.field7332] = null;
+               this.field7331[var2.field1432] = var3;
+               this.field7331[var2.field1432].field1432 = var2.field1432;
+               this.method4024(var2.field1432, 1851130853);
+               if (this.field7331[var2.field1432] == var3) {
+                  this.method4026(var2.field1432, -1459206324);
                }
 
                return true;
@@ -258,7 +242,7 @@ public class class226 extends AbstractQueue {
 
    static final void method4027(class744 var0, byte var1) {
       try {
-         class519.method2669((String)var0.field3157[(var0.field3158 -= 969361751) * -203050393], false, false, 945299991);
+         class519.method2669((String)var0.field3157[--var0.field3158], false, false, 945299991);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ajy.afx(" + ')');
       }

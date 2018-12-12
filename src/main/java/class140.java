@@ -89,7 +89,7 @@ public class class140 implements Runnable {
 
    static final void method1045(class564 var0, class131 var1, class744 var2, byte var3) {
       try {
-         var0.field997 = var2.field3161[(var2.field3156 -= -391880689) * 681479919] * -1122372539;
+         var0.field997 = var2.field3161[--var2.field3156];
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "j.kb(" + ')');
       }
@@ -107,7 +107,7 @@ public class class140 implements Runnable {
 
    static final void method1047(class744 var0, int var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         String var2 = (String)var0.field3157[--var0.field3158];
          class928.method6200(var2, -878846096);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "j.wq(" + ')');
@@ -116,8 +116,8 @@ public class class140 implements Runnable {
 
    static final void method1048(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var0.field3154.field1165[var2].field1497;
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3157[++var0.field3158 - 1] = var0.field3154.field1165[var2].field1497;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "j.xm(" + ')');
       }
@@ -142,7 +142,7 @@ public class class140 implements Runnable {
             var2 = "";
          }
 
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var2;
+         var0.field3157[++var0.field3158 - 1] = var2;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "j.afh(" + ')');
       }

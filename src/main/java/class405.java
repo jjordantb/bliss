@@ -90,7 +90,7 @@ public class class405 implements Runnable {
                var9 = 1000;
             }
 
-            var4.field544 = var9 * 842879005;
+            var4.field544 = var9;
          }
       } catch (RuntimeException var8) {
          throw class158.method3445(var8, "qu.run(" + ')');
@@ -99,8 +99,8 @@ public class class405 implements Runnable {
 
    static final void method5475(class744 var0, int var1) {
       try {
-         int var2 = var0.field3174[var0.field3176 * 1883543357];
-         class14.field6693[var2] = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3174[var0.field3176];
+         class14.field6693[var2] = var0.field3161[--var0.field3156];
          class379.method968(var2, (byte)0);
          class730.field2717 |= class474.field8271[var2];
       } catch (RuntimeException var3) {
@@ -110,8 +110,8 @@ public class class405 implements Runnable {
 
    static final void method5476(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class85.field1121.method1566(var2).field4251 * -906758929;
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class85.field1121.method1566(var2).field4251;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "qu.aai(" + ')');
       }
@@ -119,7 +119,7 @@ public class class405 implements Runnable {
 
    static final void method5477(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9136.method3689(-1832021198);
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9136.method3689(-1832021198);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "qu.akf(" + ')');
       }
@@ -166,7 +166,7 @@ public class class405 implements Runnable {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -1232467723 * var3.field1005;
+         var0.field3161[++var0.field3156 - 1] = var3.field1005;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "qu.pv(" + ')');
       }

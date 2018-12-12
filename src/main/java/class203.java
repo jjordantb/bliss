@@ -137,7 +137,7 @@ public abstract class class203 {
       } else if (var3 > 0 && !class51.method1530(var3, 2088094849)) {
          throw new IllegalArgumentException("");
       } else {
-         int var6 = var4.field8190 * 845115459;
+         int var6 = var4.field8190;
          int var7 = 0;
          int var8 = var2 < var3 ? var2 : var3;
          int var9 = var2 >> 1;
@@ -220,7 +220,7 @@ public abstract class class203 {
       } else if (var3 > 0 && !class51.method1530(var3, 2048879832)) {
          throw new IllegalArgumentException("");
       } else {
-         int var6 = var4.field8190 * 845115459;
+         int var6 = var4.field8190;
          int var7 = 0;
          int var8 = var2 < var3 ? var2 : var3;
          int var9 = var2 >> 1;
@@ -274,7 +274,7 @@ public abstract class class203 {
    }
 
    int method4295() {
-      int var1 = this.field7567.field8190 * 845115459 * this.field7568.field8406 * 685647847 * this.field7570;
+      int var1 = this.field7567.field8190 * this.field7568.field8406 * this.field7570;
       return this.field7569 ? var1 * 4 / 3 : var1;
    }
 

@@ -157,10 +157,10 @@ public class class599 {
    static final void method1288(class744 var0, byte var1) {
       try {
          if (class509.field4024 != null) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1;
+            var0.field3161[++var0.field3156 - 1] = 1;
             var0.field3154 = class509.field4024;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
+            var0.field3161[++var0.field3156 - 1] = 0;
          }
 
       } catch (RuntimeException var3) {
@@ -182,7 +182,7 @@ public class class599 {
             }
          }
 
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var2 ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = var2 ? 1 : 0;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "sw.ank(" + ')');
       }
@@ -190,7 +190,7 @@ public class class599 {
 
    static final void method1290(class744 var0, byte var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         String var2 = (String)var0.field3157[--var0.field3158];
          class701 var3 = class637.method5936(class643.field9978, class730.field2692.field7765, (byte)19);
          var3.field3364.method6361(var2.length() + 1);
          var3.field3364.method6366(var2, 2140741369);

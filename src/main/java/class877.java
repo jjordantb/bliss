@@ -34,7 +34,7 @@ public class class877 {
 
    static final void method5927(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)79);
          class131 var4 = class382.field1410[var2 >> 16];
          class250.method4387(var3, var4, var0, -535116520);
@@ -48,11 +48,11 @@ public class class877 {
          class684 var2 = class423.method5712((short)512);
          class701 var3 = class637.method5936(class643.field10016, var2.field7765, (byte)51);
          var3.field3364.method6361(0);
-         int var4 = var3.field3364.field10376 * 385051775;
+         int var4 = var3.field3364.field10376;
          var3.field3364.method6361(0);
-         var3.field3364.method6362(var0.field3160.field6482 * -2034569943, 16711935);
+         var3.field3364.method6362(var0.field3160.field6482, 16711935);
          var0.field3160.field6483.method6656(var3.field3364, var0.field3160.field6484, 1127792065);
-         var3.field3364.method6426(385051775 * var3.field3364.field10376 - var4, (byte)-111);
+         var3.field3364.method6426(var3.field3364.field10376 - var4, (byte)-111);
          var2.method4380(var3, (byte)-47);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "qy.acg(" + ')');

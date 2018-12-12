@@ -24,41 +24,6 @@ public class class116 extends class92 {
       this.field1894.method552(this);
    }
 
-   void method1351() {
-      if (this.field1893 != 0L) {
-         this.field1894.method6218(this.field1893);
-         this.field1893 = 0L;
-      }
-
-   }
-
-   public void method2754() {
-      if (this.field1893 != 0L) {
-         IUnknown.Release(this.field1893);
-         this.field1893 = 0L;
-      }
-
-      this.field1894.method552(this);
-   }
-
-   public void method2756() {
-      if (this.field1893 != 0L) {
-         IUnknown.Release(this.field1893);
-         this.field1893 = 0L;
-      }
-
-      this.field1894.method552(this);
-   }
-
-   public void method2753() {
-      if (this.field1893 != 0L) {
-         IUnknown.Release(this.field1893);
-         this.field1893 = 0L;
-      }
-
-      this.field1894.method552(this);
-   }
-
    class116(class927 var1, class39[] var2) {
       super(var2);
       this.field1894 = var1;
@@ -66,9 +31,9 @@ public class class116 extends class92 {
       ByteBuffer var4 = this.field1894.field660;
       var4.clear();
 
-      for(short var5 = 0; var5 < this.field555.length; ++var5) {
+      for(short var5 = 0; var5 < super.field555.length; ++var5) {
          short var6 = 0;
-         class39 var7 = this.field555[var5];
+         class39 var7 = super.field555[var5];
 
          for(int var8 = 0; var8 < var7.method3359(); ++var8) {
             class61 var9 = var7.method3356(var8);

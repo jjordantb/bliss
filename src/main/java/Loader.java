@@ -2,7 +2,7 @@ import java.applet.Applet;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dimension;
-import java.io.IOException;
+import java.lang.reflect.Field;
 import java.net.URL;
 import java.util.Properties;
 import javax.imageio.ImageIO;
@@ -10,7 +10,6 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Loader extends Applet {
-   private static final long field6954 = 7639088664641445302L;
    public static Properties field6955 = new Properties();
    public JFrame field6956;
    public JPanel field6957 = new JPanel();
@@ -23,17 +22,22 @@ public class Loader extends Applet {
    public static boolean field6964 = true;
    public static boolean field6965 = false;
    public static boolean field6966 = true;
-   public static final int field6967 = 718;
-   public static final int field6968 = 43594;
    public static String field6969 = "";
    public static int field6970 = 27;
    public static Loader field6971;
    public static int[] field6972 = new int[256];
    public static boolean field6973;
 
-   public static void main(String[] var0) {
+   public static void main(String[] var0) throws InterruptedException, IllegalAccessException {
       Loader var1 = field6971 = new Loader();
       var1.method3702();
+
+      while (true) {
+          if (Players.getLocal() != null) {
+              System.out.println(Players.getLocal().getAnimationId());
+          }
+          Thread.sleep(1000);
+      }
    }
 
    public void init() {
@@ -140,17 +144,5 @@ public class Loader extends Applet {
          var2.printStackTrace();
          return null;
       }
-   }
-
-   void method3706() throws IOException {
-      String var1 = "";
-      int[] var2 = field6972;
-      int var3 = field6972.length;
-
-      for(int var4 = 0; var4 < var3; ++var4) {
-         int var5 = var2[var4];
-         var1 = var1 + var5 + ", ";
-      }
-
    }
 }

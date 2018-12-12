@@ -1,23 +1,11 @@
 public abstract class class806 extends class783 {
    protected static int field4575 = 4;
 
-   public abstract boolean method2833();
-
    public abstract void method2834(class893 var1);
-
-   public abstract boolean method2835();
 
    public abstract boolean method2836();
 
-   public abstract void method2837(int var1, class813 var2);
-
-   public abstract void method2838(int var1, class813 var2);
-
    public abstract void method2839(int var1, class813 var2);
-
-   public abstract void method2840(class893 var1);
-
-   public abstract boolean method2841();
 
    public static void method2842(byte var0) {
       try {
@@ -39,10 +27,10 @@ public abstract class class806 extends class783 {
 
    public static class392 method2843(int var0) {
       try {
-         if (class740.field7811 != null && class740.field3208 != null) {
+         if (class491.field7811 != null && class740.field3208 != null) {
             for(class392 var1 = (class392)class740.field3208.next(); var1 != null; var1 = (class392)class740.field3208.next()) {
-               class718 var2 = class740.field7826.method5091(var1.field5396 * -530122905, -616779677);
-               if (var2 != null && var2.field3531 && var2.method2063(class740.field7798, 1789313805)) {
+               class718 var2 = class491.field7826.method5091(var1.field5396, -616779677);
+               if (var2 != null && var2.field3531 && var2.method2063(class491.field7798, 1789313805)) {
                   return var1;
                }
             }

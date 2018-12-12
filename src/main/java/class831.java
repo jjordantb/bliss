@@ -54,9 +54,9 @@ public class class831 {
 
    static final void method5382(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class718 var3 = class333.field139.method5091(var2, -2093323393);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3.field3532 * -804513353;
+         var0.field3161[++var0.field3156 - 1] = var3.field3532;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ax.ama(" + ')');
       }
@@ -109,20 +109,20 @@ public class class831 {
 
    static final void method5385(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -278777595 * class602.field8673;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1592446965 * class602.field8646;
+         var0.field3161[++var0.field3156 - 1] = class602.field8673;
+         var0.field3161[++var0.field3156 - 1] = class602.field8646;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ax.ua(" + ')');
       }
    }
 
-   public static int method5386(class907 var0, String var1, int var2) {
+   public static int method5386(InputStream var0, String var1, int var2) {
       try {
-         int var3 = 385051775 * var0.field10376;
+         int var3 = var0.field10376;
          byte[] var4 = class482.method4718(var1, 1241279576);
          var0.method6370(var4.length, (byte)34);
-         var0.field10376 += class530.field3740.method1137(var4, 0, var4.length, var0.field10375, 385051775 * var0.field10376, (byte)-45) * 116413311;
-         return 385051775 * var0.field10376 - var3;
+         var0.field10376 += class530.field3740.method1137(var4, 0, var4.length, var0.field10375, var0.field10376, (byte)-45);
+         return var0.field10376 - var3;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ax.f(" + ')');
       }

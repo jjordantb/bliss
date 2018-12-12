@@ -4,7 +4,7 @@ public class class278 {
    static int field10602 = 2;
    int[] field10603;
 
-   class278(class907 var1) {
+   class278(InputStream var1) {
       int var2 = var1.method6382(1723054621);
       this.field10601 = new int[var2];
       this.field10603 = new int[var2];
@@ -23,14 +23,14 @@ public class class278 {
       try {
          int var4 = this.field10603[0];
          var1.method6638(var2, var4 >>> 16, var4 & '\uffff', -1002380279);
-         class746 var5 = var1.method6636(1609800550);
+         Actor var5 = var1.method6636(1609800550);
          var5.field4084 = 0;
 
          for(int var6 = this.field10601.length - 1; var6 >= 0; --var6) {
             int var7 = this.field10601[var6];
             int var8 = this.field10603[var6];
-            var5.field4085[var5.field4084 * 2050671733] = var8 >> 16;
-            var5.field4055[2050671733 * var5.field4084] = var8 & '\uffff';
+            var5.field4085[var5.field4084] = var8 >> 16;
+            var5.field4055[var5.field4084] = var8 & '\uffff';
             byte var9 = class647.field9228.field9230;
             if (var7 == 0) {
                var9 = class647.field9233.field9230;
@@ -38,8 +38,8 @@ public class class278 {
                var9 = class647.field9229.field9230;
             }
 
-            var5.field4074[var5.field4084 * 2050671733] = var9;
-            var5.field4084 += -1013322787;
+            var5.field4074[var5.field4084] = var9;
+            ++var5.field4084;
          }
 
       } catch (RuntimeException var10) {
@@ -47,7 +47,7 @@ public class class278 {
       }
    }
 
-   public static class562 method6626(class907 var0, short var1) {
+   public static class562 method6626(InputStream var0, short var1) {
       try {
          int var2 = var0.method6423(1235052657);
          class971 var3 = class812.method2915((byte)44)[var0.method6371()];
@@ -62,9 +62,9 @@ public class class278 {
 
    static final void method6627(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)76);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3.field887 * 457937409;
+         var0.field3161[++var0.field3156 - 1] = var3.field887;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "df.qn(" + ')');
       }
@@ -79,7 +79,7 @@ public class class278 {
          byte var5 = 0;
          byte var2 = 3;
          int var3;
-         if (class730.field2705 * 1596783995 == 0) {
+         if (class730.field2705 == 0) {
             for(var3 = var5; var3 <= var2; ++var3) {
                class730.method1757(var3);
             }
@@ -105,11 +105,11 @@ public class class278 {
 
    static final void method6629(class744 var0, int var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         var0.field3156 -= -783761378;
-         int var3 = var0.field3161[681479919 * var0.field3156];
-         int var4 = var0.field3161[681479919 * var0.field3156 + 1];
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var2.substring(var3, var4);
+         String var2 = (String)var0.field3157[--var0.field3158];
+         var0.field3156 -= 2;
+         int var3 = var0.field3161[var0.field3156];
+         int var4 = var0.field3161[var0.field3156 + 1];
+         var0.field3157[++var0.field3158 - 1] = var2.substring(var3, var4);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "df.aas(" + ')');
       }

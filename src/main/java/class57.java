@@ -18,69 +18,12 @@ public class class57 extends class442 {
    static int field2365 = 256;
    boolean field2366;
 
-   void method4360() {
-   }
-
    boolean method1589() {
-      return this.field7760.field793 && this.field7760.method742();
+      return super.field7760.field793 && super.field7760.method742();
    }
 
    boolean method4355() {
       return this.field2366;
-   }
-
-   void method4368(int var1, class806 var2, class801 var3, class893 var4, class801 var5) {
-      float var6 = this.field7760.method574();
-      float var7 = (float)var2.method2481();
-      float var8 = (float)var2.method2493();
-      class801 var9 = var3;
-      float[] var10 = new float[]{-1.0F, 1.0F, 0.0F, 0.0F, -1.0F, -3.0F, 0.0F, 2.0F, 3.0F, 1.0F, 2.0F, 0.0F};
-      int var11 = (int)var7;
-      int var12 = (int)var8;
-      int var13 = var11;
-      int var14 = var12;
-      if (var1 == 0) {
-         var11 = 256;
-         var12 = 256;
-         this.field2354.method4057(this.field2364);
-         this.field2354.method4066();
-      } else if (var1 == 1) {
-         var11 = 256;
-         var12 = 256;
-         var13 = var11;
-         var14 = var12;
-         this.field2354.method4057(this.field2357);
-         this.field2354.method4066();
-         this.field2354.method4050(this.field2363, field2353 / var7, 0.0F, 1650378474);
-      } else if (var1 == 2) {
-         var11 = 256;
-         var12 = 256;
-         var13 = var11;
-         var14 = var12;
-         this.field2354.method4057(this.field2357);
-         this.field2354.method4066();
-         this.field2354.method4050(this.field2363, 0.0F, field2353 / var8, 1292626481);
-      } else if (var1 == 3) {
-         this.field2354.method4057(this.field2355);
-         var9 = var5;
-         this.field2354.method4067(this.field2361, 1, var3, -1982319210);
-         this.field2354.method4066();
-      }
-
-      float var15 = (float)var11 / var7;
-      float var16 = (float)var12 / var8;
-      float var17 = (float)var13 / var7;
-      float var18 = (float)var14 / var8;
-      var10[8] = (var10[8] + 1.0F) * var15 - 1.0F;
-      var10[5] = (var10[5] - 1.0F) * var16 + 1.0F;
-      var10[10] *= var17;
-      var10[7] *= var18;
-      this.field2354.method4073(this.field2358, var10, (byte)-59);
-      this.field2354.method4067(this.field2359, 0, var9, -2011924567);
-      this.field2354.method4092(this.field2362, field2349, field2350, field2351, 0.0F, -256612832);
-      this.field2354.method4092(this.field2352, var6 / var7, var6 / var8, 256.0F / var7, 256.0F / var8, 841962720);
-      this.field7760.method5059(0, 0, var11, var12);
-      this.field7760.method4986(0, 0, var11, var12);
    }
 
    void method4359(int var1, int var2) {
@@ -91,7 +34,7 @@ public class class57 extends class442 {
    }
 
    void method4371(int var1, class806 var2, class801 var3, class893 var4, class801 var5) {
-      float var6 = this.field7760.method574();
+      float var6 = super.field7760.method574();
       float var7 = (float)var2.method2481();
       float var8 = (float)var2.method2493();
       class801 var9 = var3;
@@ -140,20 +83,17 @@ public class class57 extends class442 {
       this.field2354.method4067(this.field2359, 0, var9, -709560507);
       this.field2354.method4092(this.field2362, field2349, field2350, field2351, 0.0F, -749411893);
       this.field2354.method4092(this.field2352, var6 / var7, var6 / var8, 256.0F / var7, 256.0F / var8, -14612883);
-      this.field7760.method5059(0, 0, var11, var12);
-      this.field7760.method4986(0, 0, var11, var12);
+      super.field7760.method5059(0, 0, var11, var12);
+      super.field7760.method4986(0, 0, var11, var12);
    }
 
    void method4361(int var1) {
       this.field2354.method4098();
    }
 
-   void method4367(int var1, int var2) {
-   }
-
    boolean method4356() {
       if (this.method1589()) {
-         this.field2354 = this.field7760.method556("FilterBloom");
+         this.field2354 = super.field7760.method556("FilterBloom");
          if (this.field2354 == null) {
             return false;
          } else {
@@ -196,99 +136,14 @@ public class class57 extends class442 {
       }
    }
 
-   boolean method4366() {
-      if (this.method1589()) {
-         this.field2354 = this.field7760.method556("FilterBloom");
-         if (this.field2354 == null) {
-            return false;
-         } else {
-            try {
-               this.field2359 = this.field2354.method4086("sceneTex", 1800902874);
-               this.field2361 = this.field2354.method4086("bloomTex1", 258882417);
-               this.field2362 = this.field2354.method4086("params", 710877895);
-               this.field2363 = this.field2354.method4086("sampleSize", -764686170);
-               this.field2352 = this.field2354.method4086("pixelOffsetAndBloomScale", -2115103811);
-               this.field2358 = this.field2354.method4086("PosAndTexCoords", 279862210);
-               this.field2354.method4053("test", (byte)-106);
-               this.field2360 = this.field2354.method4053("techFullscreenTri", (byte)-43);
-               this.field2364 = this.field2354.method4053("brightpass", (byte)-115);
-               this.field2357 = this.field2354.method4053("blur", (byte)-80);
-               this.field2355 = this.field2354.method4053("composite", (byte)-103);
-               this.field2356 = this.field2354.method4053("techDefault", (byte)-21);
-            } catch (class338 var2) {
-               return false;
-            } catch (class336 var3) {
-               return false;
-            }
-
-            if (!this.field2360.method3237()) {
-               return false;
-            } else if (!this.field2364.method3237()) {
-               return false;
-            } else if (!this.field2357.method3237()) {
-               return false;
-            } else if (!this.field2355.method3237()) {
-               return false;
-            } else if (!this.field2356.method3237()) {
-               return false;
-            } else {
-               this.field2366 = true;
-               return true;
-            }
-         }
-      } else {
-         return false;
-      }
-   }
-
    int method4363() {
-      return 1;
-   }
-
-   int method1590() {
       return 1;
    }
 
    void method4358() {
    }
 
-   void method4369(int var1) {
-      this.field2354.method4098();
-   }
-
-   void method4370(int var1) {
-      this.field2354.method4098();
-   }
-
-   int method1591() {
-      return 1;
-   }
-
-   int method1592() {
-      return 1;
-   }
-
    public class57(class325 var1) {
       super(var1);
-   }
-
-   int method1593() {
-      return 1;
-   }
-
-   int method1594() {
-      return 4;
-   }
-
-   int method1595() {
-      return 1;
-   }
-
-   boolean method4372() {
-      return this.field2366;
-   }
-
-   int method1596() {
-      return 4;
    }
 }

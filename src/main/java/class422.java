@@ -19,13 +19,13 @@ public class class422 {
             class180 var5 = this.field9600;
             byte[] var10;
             synchronized(this.field9600) {
-               var10 = this.field9600.method3285(class981.field3236.field3271 * -1006924897, var1, (byte)-128);
+               var10 = this.field9600.method3285(class981.field3236.field3271, var1, (byte)-128);
             }
 
             var4 = new class354();
             var4.field2131 = this;
             if (var10 != null) {
-               var4.method1446(new class907(var10), 1546025245);
+               var4.method1446(new InputStream(var10), 1546025245);
             }
 
             class1 var11 = this.field9602;
@@ -76,7 +76,7 @@ public class class422 {
    public class422(class469 var1, class423 var2, class180 var3, class180 var4) {
       this.field9600 = var3;
       this.field9601 = var4;
-      this.field9600.method3286(-1006924897 * class981.field3236.field3271, -2109974583);
+      this.field9600.method3286(class981.field3236.field3271, -2109974583);
    }
 
    static final void method5720(class744 var0, int var1) {
@@ -92,7 +92,7 @@ public class class422 {
 
    static final void method5721(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var0.field3169.field9713 * 873199607;
+         var0.field3161[++var0.field3156 - 1] = var0.field3169.field9713;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "fv.xc(" + ')');
       }
@@ -100,8 +100,8 @@ public class class422 {
 
    static final void method5722(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9114.method2273(var2, 1352882135);
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9114.method2273(var2, 1352882135);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "fv.aog(" + ')');
       }
@@ -109,13 +109,13 @@ public class class422 {
 
    static final void method5723(class744 var0, int var1) {
       try {
-         class60 var2 = (class60)var0.field3159;
-         class401 var3 = var2.field1637;
+         Npc var2 = (Npc)var0.field3159;
+         NpcDefinition var3 = var2.field1637;
          if (var3.field9924 != null) {
             var3 = var3.method6110(class827.field9037, 1999627505);
          }
 
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3 != null ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = var3 != null ? 1 : 0;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "fv.apl(" + ')');
       }
@@ -124,7 +124,7 @@ public class class422 {
    public static void method5724(byte var0) {
       try {
          if (class730.field2817) {
-            class564 var1 = class554.method427(class543.field3820 * 1262526353, 392084321 * class730.field2818, -156511736);
+            class564 var1 = class554.method427(class543.field3820, class730.field2818, -156511736);
             if (var1 != null && var1.field845 != null) {
                class202 var2 = new class202();
                var2.field7578 = var1;
@@ -132,8 +132,8 @@ public class class422 {
                class408.method5470(var2, (byte)77);
             }
 
-            class730.field2919 = 280458557;
-            class730.field2888 = -398138063;
+            class730.field2919 = -1;
+            class730.field2888 = -1;
             class730.field2817 = false;
             if (var1 != null) {
                class814.method2932(var1, -1858273017);
@@ -147,11 +147,11 @@ public class class422 {
 
    static final void method5725(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[var0.field3156 * 681479919 + 1];
-         if (class923.field10295.field3388 != null) {
-            class923.field10295.field3388.method1639(var2, var3, class85.field1121, (byte)-1);
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1];
+         if (class923.local.field3388 != null) {
+            class923.local.field3388.method1639(var2, var3, class85.field1121, (byte)-1);
          }
 
       } catch (RuntimeException var4) {

@@ -11,7 +11,7 @@ public class class408 {
 
    class408(String var1, int var2) {
       this.field9223 = var1;
-      this.field9224 = var2 * -1854515921;
+      this.field9224 = var2;
    }
 
    public static class408 method5469(int var0, byte var1) {
@@ -20,7 +20,7 @@ public class class408 {
 
          for(int var3 = 0; var3 < var2.length; ++var3) {
             class408 var4 = var2[var3];
-            if (var0 == var4.field9224 * 1286017487) {
+            if (var0 == var4.field9224) {
                return var4;
             }
          }

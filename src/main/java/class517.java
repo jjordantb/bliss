@@ -20,7 +20,7 @@ public class class517 extends class535 {
 
    void method2275(int var1, int var2) {
       try {
-         this.field3708 = 1886334997 * var1;
+         super.field3708 = var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "aer.p(" + ')');
       }
@@ -28,33 +28,21 @@ public class class517 extends class535 {
 
    public int method2717(int var1) {
       try {
-         return -1598873795 * this.field3708;
+         return super.field3708;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "aer.z(" + ')');
       }
    }
 
-   int method2276() {
-      return 127;
-   }
-
-   void method2271(int var1) {
-      this.field3708 = 1886334997 * var1;
-   }
-
    public void method2718(byte var1) {
       try {
-         if (this.field3708 * -1598873795 < 0 && this.field3708 * -1598873795 > 127) {
-            this.field3708 = this.method2272(-1091362223) * 1886334997;
+         if (super.field3708 < 0 && super.field3708 > 127) {
+            super.field3708 = this.method2272(-1091362223);
          }
 
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "aer.s(" + ')');
       }
-   }
-
-   int method2277(int var1) {
-      return 1;
    }
 
    static boolean method2719(class718 var0, int var1) {
@@ -63,12 +51,12 @@ public class class517 extends class535 {
             return false;
          } else if (!var0.field3525) {
             return false;
-         } else if (!var0.method2063(class740.field7798, 655699987)) {
+         } else if (!var0.method2063(class491.field7798, 655699987)) {
             return false;
-         } else if (class740.field3210.method2942((long)(-1262065485 * var0.field3499)) != null) {
+         } else if (class740.field3210.method2942((long)var0.field3499) != null) {
             return false;
          } else {
-            return class740.field3211.method2942((long)(var0.field3532 * -804513353)) == null;
+            return class740.field3211.method2942((long)var0.field3532) == null;
          }
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "aer.bn(" + ')');

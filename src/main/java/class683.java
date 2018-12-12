@@ -46,10 +46,10 @@ public class class683 extends class568 {
    }
 
    class683(byte[] var1) {
-      class907 var2 = new class907(var1);
+      InputStream var2 = new InputStream(var1);
 
       int var3;
-      for(var3 = 0; var2.field10375[var3 + 385051775 * var2.field10376] != 0; ++var3) {
+      for(var3 = 0; var2.field10375[var3 + var2.field10376] != 0; ++var3) {
          ;
       }
 
@@ -60,13 +60,13 @@ public class class683 extends class568 {
          var4[var5] = var2.method6372(-12558881);
       }
 
-      var2.field10376 += 116413311;
+      ++var2.field10376;
       ++var3;
-      var5 = 385051775 * var2.field10376;
-      var2.field10376 += 116413311 * var3;
+      var5 = var2.field10376;
+      var2.field10376 += var3;
 
       int var6;
-      for(var6 = 0; var2.field10375[var2.field10376 * 385051775 + var6] != 0; ++var6) {
+      for(var6 = 0; var2.field10375[var2.field10376 + var6] != 0; ++var6) {
          ;
       }
 
@@ -77,13 +77,13 @@ public class class683 extends class568 {
          var7[var8] = var2.method6372(-12558881);
       }
 
-      var2.field10376 += 116413311;
+      ++var2.field10376;
       ++var6;
-      var8 = var2.field10376 * 385051775;
-      var2.field10376 += var6 * 116413311;
+      var8 = var2.field10376;
+      var2.field10376 += var6;
 
       int var9;
-      for(var9 = 0; var2.field10375[385051775 * var2.field10376 + var9] != 0; ++var9) {
+      for(var9 = 0; var2.field10375[var2.field10376 + var9] != 0; ++var9) {
          ;
       }
 
@@ -93,7 +93,7 @@ public class class683 extends class568 {
          var10[var11] = var2.method6372(-12558881);
       }
 
-      var2.field10376 += 116413311;
+      ++var2.field10376;
       ++var9;
       byte[] var36 = new byte[var9];
       int var13;
@@ -143,7 +143,7 @@ public class class683 extends class568 {
       byte[] var40 = var14 > 0 ? new byte[var14 * 2] : null;
 
       int var17;
-      for(var17 = 0; var2.field10375[var17 + 385051775 * var2.field10376] != 0; ++var17) {
+      for(var17 = 0; var2.field10375[var17 + var2.field10376] != 0; ++var17) {
          ;
       }
 
@@ -154,7 +154,7 @@ public class class683 extends class568 {
          var18[var19] = var2.method6372(-12558881);
       }
 
-      var2.field10376 += 116413311;
+      ++var2.field10376;
       ++var17;
       var19 = 0;
 
@@ -278,7 +278,7 @@ public class class683 extends class568 {
          --var20;
       }
 
-      this.field7646 = (var2.method6371() + 1) * 306353405;
+      this.field7646 = var2.method6371() + 1;
 
       class154 var28;
       int var29;
@@ -444,39 +444,39 @@ public class class683 extends class568 {
       }
 
       for(var27 = 0; var27 < var13; ++var27) {
-         var37[var27].field6501 = var2.method6371() * 890917585;
+         var37[var27].field6501 = var2.method6371();
       }
 
       for(var27 = 0; var27 < var13; ++var27) {
          var28 = var37[var27];
          if (var28.field6504 != null) {
-            var28.field6502 = var2.method6371() * 1553889121;
+            var28.field6502 = var2.method6371();
          }
 
          if (var28.field6500 != null) {
-            var28.field6503 = var2.method6371() * -1467946285;
+            var28.field6503 = var2.method6371();
          }
 
-         if (1753302577 * var28.field6501 > 0) {
-            var28.field6499 = var2.method6371() * 189354207;
+         if (var28.field6501 > 0) {
+            var28.field6499 = var2.method6371();
          }
       }
 
       for(var27 = 0; var27 < var13; ++var27) {
-         var37[var27].field6506 = var2.method6371() * 419117413;
-      }
-
-      for(var27 = 0; var27 < var13; ++var27) {
-         var28 = var37[var27];
-         if (430264429 * var28.field6506 > 0) {
-            var28.field6505 = var2.method6371() * -1131925083;
-         }
+         var37[var27].field6506 = var2.method6371();
       }
 
       for(var27 = 0; var27 < var13; ++var27) {
          var28 = var37[var27];
-         if (var28.field6505 * 671305261 > 0) {
-            var28.field6507 = var2.method6371() * 1175770411;
+         if (var28.field6506 > 0) {
+            var28.field6505 = var2.method6371();
+         }
+      }
+
+      for(var27 = 0; var27 < var13; ++var27) {
+         var28 = var37[var27];
+         if (var28.field6505 > 0) {
+            var28.field6507 = var2.method6371();
          }
       }
 

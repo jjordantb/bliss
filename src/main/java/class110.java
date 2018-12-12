@@ -6,23 +6,23 @@ public class class110 {
    int field1930;
 
    class110(int var1, int var2, int var3, int var4, int var5) {
-      this.field1930 = -727927571 * var2;
-      this.field1927 = 1245468715 * var3;
-      this.field1928 = var4 * -75483929;
-      this.field1929 = var5 * -821826869;
-      this.field1926 = -1374344735 * this.field1929 - this.field1928 * -193549091;
+      this.field1930 = var2;
+      this.field1927 = var3;
+      this.field1928 = var4;
+      this.field1929 = var5;
+      this.field1926 = this.field1929 - this.field1928;
    }
 
    static final void method1384(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         int var4 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var4 = var0.field3161[--var0.field3156];
          --var4;
          if (var3.field920 != null && var4 < var3.field920.length && var3.field920[var4] != null) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var3.field920[var4];
+            var0.field3157[++var0.field3158 - 1] = var3.field920[var4];
          } else {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
+            var0.field3157[++var0.field3158 - 1] = "";
          }
 
       } catch (RuntimeException var5) {
@@ -32,8 +32,8 @@ public class class110 {
 
    static final void method1385(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -1567522756;
-         class587.method167(var0.field3161[var0.field3156 * 681479919], var0.field3161[681479919 * var0.field3156 + 1], var0.field3161[681479919 * var0.field3156 + 2], var0.field3161[3 + 681479919 * var0.field3156], 256, 1676570424);
+         var0.field3156 -= 4;
+         class587.method167(var0.field3161[var0.field3156], var0.field3161[var0.field3156 + 1], var0.field3161[var0.field3156 + 2], var0.field3161[3 + var0.field3156], 256, 1676570424);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "mp.tz(" + ')');
       }
@@ -41,8 +41,8 @@ public class class110 {
 
    static final void method1386(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2902[var2].field10625 * 5713347;
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class730.field2902[var2].field10625;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "mp.yu(" + ')');
       }
@@ -50,7 +50,7 @@ public class class110 {
 
    static final void method1387(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -783761378;
+         var0.field3156 -= 2;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "mp.afs(" + ')');
       }
@@ -58,7 +58,7 @@ public class class110 {
 
    static final void method1388(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class237 var3;
          if (var0.field3178) {
             var3 = var0.field3164;
@@ -66,13 +66,13 @@ public class class110 {
             var3 = var0.field3163;
          }
 
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3.method4648(var0.field3159.field4095, var2, -1, 867608709) ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = var3.method4648(var0.field3159.field4095, var2, -1, 867608709) ? 1 : 0;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "mp.aob(" + ')');
       }
    }
 
-   public static final void method1389(class946 var0, int var1, int var2, byte var3, byte var4) {
+   public static final void method1389(Player var0, int var1, int var2, byte var3, byte var4) {
       try {
          int var5 = var0.field4085[0];
          int var6 = var0.field4055[0];

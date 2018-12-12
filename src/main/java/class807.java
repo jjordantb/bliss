@@ -163,16 +163,16 @@ public class class807 {
    public static class807 field4574 = new class807(111, 3);
 
    class807(int var1, int var2) {
-      this.field4450 = -477306055 * var1;
-      this.field4428 = -1324781857 * var2;
+      this.field4450 = var1;
+      this.field4428 = var2;
    }
 
    static final void method2828(class744 var0, int var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[681479919 * var0.field3156 + 1];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class776.method2296(var2, var3, false, 1051533242);
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1];
+         var0.field3161[++var0.field3156 - 1] = class776.method2296(var2, var3, false, 1051533242);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "in.tv(" + ')');
       }
@@ -180,10 +180,10 @@ public class class807 {
 
    static final void method2829(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[1 + var0.field3156 * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3 + var2;
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = var3 + var2;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "in.yk(" + ')');
       }
@@ -191,7 +191,7 @@ public class class807 {
 
    static final void method2830(class744 var0, byte var1) {
       try {
-         class615.field8903.method5391(class615.field8903.field9122, var0.field3161[(var0.field3156 -= -391880689) * 681479919] == 1 ? 1 : 0, -802327901);
+         class615.field8903.method5391(class615.field8903.field9122, var0.field3161[--var0.field3156] == 1 ? 1 : 0, -802327901);
          class730.field2697.method5309(549218846);
          class95.method523(656179282);
          class730.field2647 = false;
@@ -202,7 +202,7 @@ public class class807 {
 
    static final void method2831(class744 var0, byte var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         String var2 = (String)var0.field3157[--var0.field3158];
          int var3 = 0;
          if (class808.method2894(var2, 1423765975)) {
             var3 = class82.method917(var2, (short)6366);

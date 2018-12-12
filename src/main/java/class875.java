@@ -5,25 +5,6 @@ public class class875 extends class727 {
    class325 field9801;
    class525 field9802;
 
-   void method1676(char var1, int var2, int var3, int var4, boolean var5) {
-      this.field9801.method596();
-      this.field9801.method633(1);
-      class523 var6 = this.field9801.field701;
-      var6.field4362 = this.field9800;
-      var6.method2762(3, var4);
-      float var7 = (float)this.field9801.method4800((short)4206).method2481();
-      float var8 = (float)this.field9801.method4800((short)5279).method2493();
-      var6.field4365.method274(2.0F / var7, 2.0F / var8, 1.0F, 1.0F);
-      var6.field4365.field325[12] = ((float)var2 + this.field9801.method574()) * 2.0F / var7 - 1.0F;
-      var6.field4365.field325[13] = ((float)var3 + this.field9801.method574()) * 2.0F / var8 - 1.0F;
-      var6.field4365.field325[14] = -1.0F;
-      var6.field4366.method299();
-      var6.field4363 = this.field9802;
-      var6.field4368 = var1 * 4;
-      var6.field4369 = this.field9801.field803;
-      var6.method2763();
-   }
-
    void method1680(char var1, int var2, int var3, int var4, boolean var5) {
       this.field9801.method596();
       this.field9801.method633(1);
@@ -32,28 +13,6 @@ public class class875 extends class727 {
       var6.method2762(3, var4);
       float var7 = (float)this.field9801.method4800((short)-19985).method2481();
       float var8 = (float)this.field9801.method4800((short)-4306).method2493();
-      var6.field4365.method274(2.0F / var7, 2.0F / var8, 1.0F, 1.0F);
-      var6.field4365.field325[12] = ((float)var2 + this.field9801.method574()) * 2.0F / var7 - 1.0F;
-      var6.field4365.field325[13] = ((float)var3 + this.field9801.method574()) * 2.0F / var8 - 1.0F;
-      var6.field4365.field325[14] = -1.0F;
-      var6.field4366.method299();
-      var6.field4363 = this.field9802;
-      var6.field4368 = var1 * 4;
-      var6.field4369 = this.field9801.field803;
-      var6.method2763();
-   }
-
-   void method1679(char var1, int var2, int var3, int var4, boolean var5, class23 var6, int var7, int var8) {
-   }
-
-   void method1675(char var1, int var2, int var3, int var4, boolean var5) {
-      this.field9801.method596();
-      this.field9801.method633(1);
-      class523 var6 = this.field9801.field701;
-      var6.field4362 = this.field9800;
-      var6.method2762(3, var4);
-      float var7 = (float)this.field9801.method4800((short)-6084).method2481();
-      float var8 = (float)this.field9801.method4800((short)-21308).method2493();
       var6.field4365.method274(2.0F / var7, 2.0F / var8, 1.0F, 1.0F);
       var6.field4365.field325[12] = ((float)var2 + this.field9801.method574()) * 2.0F / var7 - 1.0F;
       var6.field4365.field325[13] = ((float)var3 + this.field9801.method574()) * 2.0F / var8 - 1.0F;

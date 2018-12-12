@@ -22,7 +22,7 @@ public class class308 {
 
    static void method382(int var0) {
       try {
-         if (1090452523 * class69.field1810 > 1) {
+         if (class69.field1810 > 1) {
             class615.field8903.method5391(class615.field8903.field9143, 4, 102316213);
          } else {
             class615.field8903.method5391(class615.field8903.field9143, 2, -437930362);

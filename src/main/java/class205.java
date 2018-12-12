@@ -5,7 +5,7 @@ public class class205 extends class345 {
    public int[] field7621;
    public int[] field7622;
 
-   void method4308(class907 var1, int var2) {
+   void method4308(InputStream var1, int var2) {
       try {
          while(true) {
             int var3 = var1.method6371();
@@ -80,7 +80,7 @@ public class class205 extends class345 {
       }
    }
 
-   void method4312(class907 var1, int var2, int var3) {
+   void method4312(InputStream var1, int var2, int var3) {
       try {
          if (1 == var2) {
             this.field7619 = var1.method6379(-1462506580);
@@ -120,13 +120,13 @@ public class class205 extends class345 {
 
    static final void method4313(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
-         int var3 = var0.field3161[var0.field3156 * 681479919 + 1];
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1];
          if (var3 == -1) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -1;
+            var0.field3161[++var0.field3156 - 1] = -1;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class848.field8597.method3399(var2, -1823486068).method4311((char)var3, -446763636);
+            var0.field3161[++var0.field3156 - 1] = class848.field8597.method3399(var2, -1823486068).method4311((char)var3, -446763636);
          }
 
       } catch (RuntimeException var4) {

@@ -56,9 +56,9 @@ public class class320 {
                var2.method156(-1671221720);
                this.field821 += var2.field1136;
             }
-         } else if ((var2.field209 += 1476940603538232441L) * -5533549728640346679L > (long)var1) {
+         } else if (++var2.field209 > (long)var1) {
             class685 var3 = new class685(var2.field1135, var2.method952(), var2.field1136);
-            this.field820.method2947(var3, var2.field641 * 7051297995265073167L);
+            this.field820.method2947(var3, var2.field641);
             class599.method1287(var3, var2, -1652592361);
             var2.method545(-1460969981);
             var2.method156(-1787171462);
@@ -86,7 +86,7 @@ public class class320 {
             if (var5 != null) {
                if (var4.method953()) {
                   class145 var6 = new class145(var1, var5, var4.field1136);
-                  this.field820.method2947(var6, var4.field641 * 7051297995265073167L);
+                  this.field820.method2947(var6, var4.field641);
                   this.field819.method2704(var6, (byte)-106);
                   var6.field209 = 0L;
                   var4.method545(-1460969981);

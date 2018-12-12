@@ -56,12 +56,12 @@ public class class44 {
 
    public static synchronized void method3082(byte[] var0, int var1) {
       try {
-         if (100 == var0.length && 355907107 * class18.field6929 < 1000) {
-            class18.field6931[(class18.field6929 += -996497013) * 355907107 - 1] = var0;
-         } else if (5000 == var0.length && class18.field6927 * 1904890379 < 250) {
-            class18.field6926[(class18.field6927 += -1583470173) * 1904890379 - 1] = var0;
-         } else if (30000 == var0.length && -1426745913 * class18.field6928 < 50) {
-            class18.field6932[(class18.field6928 += 1975229431) * -1426745913 - 1] = var0;
+         if (100 == var0.length && class18.field6929 < 1000) {
+            class18.field6931[++class18.field6929 - 1] = var0;
+         } else if (5000 == var0.length && class18.field6927 < 250) {
+            class18.field6926[++class18.field6927 - 1] = var0;
+         } else if (30000 == var0.length && class18.field6928 < 50) {
+            class18.field6932[++class18.field6928 - 1] = var0;
          } else if (class681.field7538 != null) {
             for(int var2 = 0; var2 < class128.field2348.length; ++var2) {
                if (var0.length == class128.field2348[var2] && class18.field6930[var2] < class681.field7538[var2].length) {
@@ -78,8 +78,8 @@ public class class44 {
 
    static final void method3083(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var2 & 16383;
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = var2 & 16383;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "im.te(" + ')');
       }
@@ -87,7 +87,7 @@ public class class44 {
 
    public static int method3084(byte var0) {
       try {
-         return 1197525581 * class198.field7038;
+         return class198.field7038;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "im.k(" + ')');
       }

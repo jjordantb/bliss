@@ -13,19 +13,19 @@ public class class346 extends class345 {
    public int field182;
    public class6[] field183;
 
-   int method148(class907 var1, int var2) {
+   int method148(InputStream var1, int var2) {
       try {
-         var1.field10376 = 116413311 * (var1.field10375.length - 2);
+         var1.field10376 = var1.field10375.length - 2;
          int var3 = var1.method6374();
          int var4 = var1.field10375.length - 2 - var3 - 16;
-         var1.field10376 = var4 * 116413311;
+         var1.field10376 = var4;
          int var5 = var1.method6420((byte)-30);
-         this.field177 = var1.method6374() * 1835188737;
-         this.field178 = var1.method6374() * 906205405;
-         this.field179 = var1.method6374() * 229244435;
-         this.field180 = var1.method6374() * 1421877143;
-         this.field172 = var1.method6374() * -479946185;
-         this.field182 = var1.method6374() * 896501837;
+         this.field177 = var1.method6374();
+         this.field178 = var1.method6374();
+         this.field179 = var1.method6374();
+         this.field180 = var1.method6374();
+         this.field172 = var1.method6374();
+         this.field182 = var1.method6374();
          int var6 = var1.method6371();
          if (var6 > 0) {
             this.field183 = new class6[var6];
@@ -52,18 +52,18 @@ public class class346 extends class345 {
       }
    }
 
-   public class346(class907 var1) {
+   public class346(InputStream var1) {
       int var2 = this.method148(var1, 1653647818);
       int var3 = 0;
 
-      for(class20[] var4 = class202.method4299((byte)-29); 385051775 * var1.field10376 < var2; ++var3) {
+      for(class20[] var4 = class202.method4299((byte)-29); var1.field10376 < var2; ++var3) {
          class20 var5 = this.method149(var1, var4, (byte)29);
          this.method150(var1, var3, var5, (byte)-25);
       }
 
    }
 
-   class20 method149(class907 var1, class20[] var2, byte var3) {
+   class20 method149(InputStream var1, class20[] var2, byte var3) {
       try {
          int var4 = var1.method6374();
          if (var4 >= 0 && var4 < var2.length) {
@@ -77,7 +77,7 @@ public class class346 extends class345 {
       }
    }
 
-   void method150(class907 var1, int var2, class20 var3, byte var4) {
+   void method150(InputStream var1, int var2, class20 var3, byte var4) {
       try {
          int var5 = this.field173.length;
          if (var3 == class20.field6163) {

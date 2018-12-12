@@ -39,12 +39,12 @@ public class class638 extends class663 {
          this.field9839[0] = 0.0F;
          this.field9839[1] = var6;
          this.field9839[2] = 0.0F;
-         this.field9839[3] = var4 * (float)this.field10421.field786 % 1.0F;
+         this.field9839[3] = var4 * (float)super.field10421.field786 % 1.0F;
          if (!this.field9832.field7236) {
-            int var8 = (int)((float)this.field10421.field786 * var5 * 16.0F);
-            this.field10421.method617(this.field9832.field7239[var8 % 16]);
+            int var8 = (int)((float)super.field10421.field786 * var5 * 16.0F);
+            super.field10421.method617(this.field9832.field7239[var8 % 16]);
          } else {
-            this.field9841 = (float)((double)var5 * (double)this.field10421.field786 % 1.0D);
+            this.field9841 = (float)((double)var5 * (double)super.field10421.field786 % 1.0D);
          }
 
       } catch (RuntimeException var9) {
@@ -52,43 +52,25 @@ public class class638 extends class663 {
       }
    }
 
-   boolean method5772() throws class934 {
-      this.field9835 = this.field9666.method4086("WorldMatrix", -867744099);
-      this.field9833 = this.field9666.method4086("WVPMatrix", -250672432);
-      this.field9837 = this.field9666.method4086("UGenerationPlane", -1602523427);
-      this.field9836 = this.field9666.method4086("VGenerationPlane", 1186138394);
-      this.field9829 = this.field9666.method4086("Time", -2093315319);
-      this.field9830 = this.field9666.method4086("billowSampler3D", -1560961563);
-      if (this.field9832.field7236) {
-         this.field9840 = this.field9666.method4053("Waterfall3D", (byte)0);
-         this.field9666.method4057(this.field9840);
-      } else {
-         this.field9828 = this.field9666.method4053("Waterfall2D", (byte)-112);
-         this.field9666.method4057(this.field9828);
-      }
-
-      return true;
-   }
-
    public void method5930(int var1) {
       try {
          if (this.field9832.field7236) {
-            this.field9666.method4057(this.field9840);
+            super.field9666.method4057(this.field9840);
          } else {
-            this.field9666.method4057(this.field9828);
+            super.field9666.method4057(this.field9828);
          }
 
-         this.field9666.method4066();
+         super.field9666.method4066();
          if (this.field9832.field7236) {
-            this.field9666.method4067(this.field9830, 0, this.field9832.field7240, -1892543284);
+            super.field9666.method4067(this.field9830, 0, this.field9832.field7240, -1892543284);
          }
 
-         this.field9666.method4094(this.field9835, this.field9831, 600012267);
-         this.field9666.method4094(this.field9833, this.field9834, 600012267);
-         this.field9666.method4065(this.field9837, new class267(this.field9838[0], this.field9838[1], this.field9838[2], this.field9838[3]), 1385384483);
-         this.field9666.method4065(this.field9836, new class267(this.field9839[0], this.field9839[1], this.field9839[2], this.field9839[3]), 560835049);
-         this.field9666.method4065(this.field9829, new class267(this.field9841, 0.0F, 0.0F, 0.0F), -247168453);
-         this.field10421.method651(class427.field7386, this.field9842 * 540763355, this.field9843 * -754699637, this.field9844 * -863719041, this.field9845 * 507848871);
+         super.field9666.method4094(this.field9835, this.field9831, 600012267);
+         super.field9666.method4094(this.field9833, this.field9834, 600012267);
+         super.field9666.method4065(this.field9837, new class267(this.field9838[0], this.field9838[1], this.field9838[2], this.field9838[3]), 1385384483);
+         super.field9666.method4065(this.field9836, new class267(this.field9839[0], this.field9839[1], this.field9839[2], this.field9839[3]), 560835049);
+         super.field9666.method4065(this.field9829, new class267(this.field9841, 0.0F, 0.0F, 0.0F), -247168453);
+         super.field10421.method651(class427.field7386, this.field9842, this.field9843, this.field9844 * 3, this.field9845);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "afj.am(" + ')');
       }
@@ -105,18 +87,18 @@ public class class638 extends class663 {
 
    boolean method5762() throws class934 {
       try {
-         this.field9835 = this.field9666.method4086("WorldMatrix", -2088418999);
-         this.field9833 = this.field9666.method4086("WVPMatrix", -363138804);
-         this.field9837 = this.field9666.method4086("UGenerationPlane", 1661649711);
-         this.field9836 = this.field9666.method4086("VGenerationPlane", 2031421483);
-         this.field9829 = this.field9666.method4086("Time", 293420542);
-         this.field9830 = this.field9666.method4086("billowSampler3D", 2054271289);
+         this.field9835 = super.field9666.method4086("WorldMatrix", -2088418999);
+         this.field9833 = super.field9666.method4086("WVPMatrix", -363138804);
+         this.field9837 = super.field9666.method4086("UGenerationPlane", 1661649711);
+         this.field9836 = super.field9666.method4086("VGenerationPlane", 2031421483);
+         this.field9829 = super.field9666.method4086("Time", 293420542);
+         this.field9830 = super.field9666.method4086("billowSampler3D", 2054271289);
          if (this.field9832.field7236) {
-            this.field9840 = this.field9666.method4053("Waterfall3D", (byte)-79);
-            this.field9666.method4057(this.field9840);
+            this.field9840 = super.field9666.method4053("Waterfall3D", (byte)-79);
+            super.field9666.method4057(this.field9840);
          } else {
-            this.field9828 = this.field9666.method4053("Waterfall2D", (byte)-52);
-            this.field9666.method4057(this.field9828);
+            this.field9828 = super.field9666.method4053("Waterfall2D", (byte)-52);
+            super.field9666.method4057(this.field9828);
          }
 
          return true;
@@ -125,12 +107,12 @@ public class class638 extends class663 {
       }
    }
 
-   static class304 method5931(class907 var0, byte var1) {
+   static class304 method5931(InputStream var0, byte var1) {
       try {
          int var2 = var0.method6371();
          class928 var3 = class213.method3811(var2, -707576455);
          Object var4 = null;
-         switch(var3.field10237 * -1646556509) {
+         switch(var3.field10237) {
          case 1:
             var4 = new class810(var0);
             break;

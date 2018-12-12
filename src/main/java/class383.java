@@ -8,12 +8,12 @@ public class class383 extends class535 {
 
    public void method1096(byte var1) {
       try {
-         if (this.field3704.field9137.method3691(16711680) && !class510.method2624(this.field3704.field9137.method3689(-1298559578), 1142209695)) {
-            this.field3708 = 0;
+         if (super.field3704.field9137.method3691(16711680) && !class510.method2624(super.field3704.field9137.method3689(-1298559578), 1142209695)) {
+            super.field3708 = 0;
          }
 
-         if (this.field3708 * -1598873795 < 0 || this.field3708 * -1598873795 > 2) {
-            this.field3708 = this.method2272(-1016152227) * 1886334997;
+         if (super.field3708 < 0 || super.field3708 > 2) {
+            super.field3708 = this.method2272(-1016152227);
          }
 
       } catch (RuntimeException var3) {
@@ -27,7 +27,7 @@ public class class383 extends class535 {
 
    public boolean method1097(int var1) {
       try {
-         return class510.method2624(this.field3704.field9137.method3689(-541516290), 718607573);
+         return class510.method2624(super.field3704.field9137.method3689(-541516290), 718607573);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ado.z(" + ')');
       }
@@ -39,7 +39,7 @@ public class class383 extends class535 {
 
    void method2275(int var1, int var2) {
       try {
-         this.field3708 = var1 * 1886334997;
+         super.field3708 = var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ado.p(" + ')');
       }
@@ -47,27 +47,15 @@ public class class383 extends class535 {
 
    public int method1098(int var1) {
       try {
-         return this.field3708 * -1598873795;
+         return super.field3708;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ado.y(" + ')');
       }
    }
 
-   int method2276() {
-      return 0;
-   }
-
-   public int method2277(int var1) {
-      return !class510.method2624(this.field3704.field9137.method3689(-2048845946), -31427967) ? 3 : 1;
-   }
-
-   void method2271(int var1) {
-      this.field3708 = var1 * 1886334997;
-   }
-
    public int method2273(int var1, int var2) {
       try {
-         return !class510.method2624(this.field3704.field9137.method3689(-1771476690), -1583872086) ? 3 : 1;
+         return !class510.method2624(super.field3704.field9137.method3689(-1771476690), -1583872086) ? 3 : 1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ado.f(" + ')');
       }
@@ -110,12 +98,12 @@ public class class383 extends class535 {
          int var41;
          int var42;
          int var43;
-         if (var1 >= 1155384281 * class465.field1414 && var1 <= class465.field1415 * -1062447355) {
-            int[] var39 = class465.field1412[var1];
-            var40 = class972.method1776(var0 - var2, class465.field1416 * -1424479739, class465.field1413 * 1135094847, -1212608691);
-            var41 = class972.method1776(var0 + var2, -1424479739 * class465.field1416, class465.field1413 * 1135094847, -1212608691);
-            var42 = class972.method1776(var0 - var11, class465.field1416 * -1424479739, 1135094847 * class465.field1413, -1212608691);
-            var43 = class972.method1776(var11 + var0, class465.field1416 * -1424479739, class465.field1413 * 1135094847, -1212608691);
+         if (var1 >= class381.field1414 && var1 <= class381.field1415) {
+            int[] var39 = class381.field1412[var1];
+            var40 = class972.method1776(var0 - var2, class381.field1416, class381.field1413, -1212608691);
+            var41 = class972.method1776(var0 + var2, class381.field1416, class381.field1413, -1212608691);
+            var42 = class972.method1776(var0 - var11, class381.field1416, class381.field1413, -1212608691);
+            var43 = class972.method1776(var11 + var0, class381.field1416, class381.field1413, -1212608691);
             class484.method4769(var39, var40, var42, var5, 1844098272);
             class484.method4769(var39, var42, var43, var4, -739253867);
             class484.method4769(var39, var43, var41, var5, 133831113);
@@ -173,33 +161,33 @@ public class class383 extends class535 {
             --var9;
             var40 = var1 - var9;
             var41 = var9 + var1;
-            if (var41 >= class465.field1414 * 1155384281 && var40 <= -1062447355 * class465.field1415) {
-               var42 = class972.method1776(var0 + var8, class465.field1416 * -1424479739, 1135094847 * class465.field1413, -1212608691);
-               var43 = class972.method1776(var0 - var8, -1424479739 * class465.field1416, class465.field1413 * 1135094847, -1212608691);
+            if (var41 >= class381.field1414 && var40 <= class381.field1415) {
+               var42 = class972.method1776(var0 + var8, class381.field1416, class381.field1413, -1212608691);
+               var43 = class972.method1776(var0 - var8, class381.field1416, class381.field1413, -1212608691);
                if (var48) {
-                  int var44 = class972.method1776(var0 + var10, -1424479739 * class465.field1416, class465.field1413 * 1135094847, -1212608691);
-                  int var45 = class972.method1776(var0 - var10, class465.field1416 * -1424479739, 1135094847 * class465.field1413, -1212608691);
+                  int var44 = class972.method1776(var0 + var10, class381.field1416, class381.field1413, -1212608691);
+                  int var45 = class972.method1776(var0 - var10, class381.field1416, class381.field1413, -1212608691);
                   int[] var46;
-                  if (var40 >= 1155384281 * class465.field1414) {
-                     var46 = class465.field1412[var40];
+                  if (var40 >= class381.field1414) {
+                     var46 = class381.field1412[var40];
                      class484.method4769(var46, var43, var45, var5, -1776826233);
                      class484.method4769(var46, var45, var44, var4, 651762139);
                      class484.method4769(var46, var44, var42, var5, 1941324857);
                   }
 
-                  if (var41 <= class465.field1415 * -1062447355) {
-                     var46 = class465.field1412[var41];
+                  if (var41 <= class381.field1415) {
+                     var46 = class381.field1412[var41];
                      class484.method4769(var46, var43, var45, var5, -1085147179);
                      class484.method4769(var46, var45, var44, var4, -2113781639);
                      class484.method4769(var46, var44, var42, var5, 154634107);
                   }
                } else {
-                  if (var40 >= 1155384281 * class465.field1414) {
-                     class484.method4769(class465.field1412[var40], var43, var42, var5, -1094701951);
+                  if (var40 >= class381.field1414) {
+                     class484.method4769(class381.field1412[var40], var43, var42, var5, -1094701951);
                   }
 
-                  if (var41 <= class465.field1415 * -1062447355) {
-                     class484.method4769(class465.field1412[var41], var43, var42, var5, 1089051807);
+                  if (var41 <= class381.field1415) {
+                     class484.method4769(class381.field1412[var41], var43, var42, var5, 1089051807);
                   }
                }
             }

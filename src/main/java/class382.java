@@ -43,9 +43,9 @@ public class class382 {
 
             var4 = new class745();
             var4.field4112 = this;
-            var4.field4104 = var1 * 1757755963;
+            var4.field4104 = var1;
             if (var10 != null) {
-               var4.method2588(new class907(var10), (byte)-38);
+               var4.method2588(new InputStream(var10), (byte)-38);
             }
 
             class1 var11 = this.field1406;
@@ -94,7 +94,7 @@ public class class382 {
 
    public void method1056(int var1, int var2) {
       try {
-         this.field1408 = var1 * -1451688935;
+         this.field1408 = var1;
          class1 var3 = this.field1407;
          synchronized(this.field1407) {
             this.field1407.method2977();
@@ -125,7 +125,7 @@ public class class382 {
 
    static final void method1058(class564 var0, class131 var1, class744 var2, int var3) {
       try {
-         var0.field890 = var2.field3161[(var2.field3156 -= -391880689) * 681479919] == 1;
+         var0.field890 = var2.field3161[--var2.field3156] == 1;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "qc.cr(" + ')');
       }
@@ -133,7 +133,7 @@ public class class382 {
 
    static final void method1059(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9124.method1910(-369768513);
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9124.method1910(-369768513);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "qc.ajk(" + ')');
       }
@@ -141,10 +141,10 @@ public class class382 {
 
    static final void method1060(class744 var0, int var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
-         int var3 = var0.field3161[1 + 681479919 * var0.field3156];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class848.field8597.method3399(var2, 2021332528).field7620[var3];
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class848.field8597.method3399(var2, 2021332528).field7620[var3];
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "qc.acp(" + ')');
       }

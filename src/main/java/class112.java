@@ -22,19 +22,19 @@ public class class112 implements class799 {
    public int field2129;
 
    class112(String var1, int var2) {
-      this.field2129 = var2 * 1197369919;
+      this.field2129 = var2;
    }
 
    static void method1443(int var0) {
       try {
-         int var1 = class759.field4331 * -2110394505;
-         int var2 = class97.field614 * -1111710645;
-         if (-639974669 * class919.field10433 < var1) {
-            var1 = -639974669 * class919.field10433;
+         int var1 = class759.field4331;
+         int var2 = class97.field614;
+         if (class919.field10433 < var1) {
+            var1 = class919.field10433;
          }
 
-         if (1282634425 * class730.field1812 < var2) {
-            var2 = class730.field1812 * 1282634425;
+         if (class69.field1812 < var2) {
+            var2 = class69.field1812;
          }
 
          try {

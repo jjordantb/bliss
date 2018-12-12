@@ -7,10 +7,10 @@ public final class class510 implements Comparable {
 
    int method2621(class510 var1, int var2) {
       try {
-         if (-547428082756159857L * this.field4161 < -547428082756159857L * var1.field4161) {
+         if (this.field4161 < var1.field4161) {
             return -1;
          } else {
-            return -547428082756159857L * this.field4161 > -547428082756159857L * var1.field4161 ? 1 : 0;
+            return this.field4161 > var1.field4161 ? 1 : 0;
          }
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "kx.a(" + ')');
@@ -44,7 +44,7 @@ public final class class510 implements Comparable {
 
    static final void method2622(class564 var0, class131 var1, class744 var2, byte var3) {
       try {
-         String var4 = (String)var2.field3157[(var2.field3158 -= 969361751) * -203050393];
+         String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -209664788) != null) {
             var4 = var4.substring(0, var4.length() - 1);
          }
@@ -58,7 +58,7 @@ public final class class510 implements Comparable {
 
    static final void method2623(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)52);
          class131 var4 = class382.field1410[var2 >> 16];
          class122.method1603(var3, var4, var0, -1603621953);

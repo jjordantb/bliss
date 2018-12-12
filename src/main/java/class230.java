@@ -384,19 +384,19 @@ public class class230 {
    public int method4601(String var1, int var2, int var3, class653[] var4, int var5) {
       try {
          if (var3 == 0) {
-            var3 = -2028004825 * this.field8228;
+            var3 = this.field8228;
          }
 
          int var6 = this.method4598(var1, new int[]{var2}, field8229, var4, (byte)11);
          int var7 = (var6 - 1) * var3;
-         return var7 + this.field8230 * 1110385787 + -1883958527 * this.field8225;
+         return var7 + this.field8230 + this.field8225;
       } catch (RuntimeException var8) {
          throw class158.method3445(var8, "uw.s(" + ')');
       }
    }
 
    class230(byte[] var1) {
-      class907 var2 = new class907(var1);
+      InputStream var2 = new InputStream(var1);
       int var3 = var2.method6371();
       if (var3 != 0) {
          throw new RuntimeException("");
@@ -455,22 +455,22 @@ public class class230 {
                }
             }
 
-            this.field8228 = 1673966999 * (var6[32] + var5[32]);
+            this.field8228 = var6[32] + var5[32];
          } else {
-            this.field8228 = var2.method6371() * 1673966999;
+            this.field8228 = var2.method6371();
          }
 
          var2.method6371();
          var2.method6371();
-         this.field8230 = var2.method6371() * -93381965;
-         this.field8225 = var2.method6371() * -2068583167;
+         this.field8230 = var2.method6371();
+         this.field8225 = var2.method6371();
       }
    }
 
    public int method4602(String var1, int var2, int var3, int var4, int var5, class653[] var6, byte var7) {
       try {
          if (var3 == 0) {
-            var3 = -2028004825 * this.field8228;
+            var3 = this.field8228;
          }
 
          int var8 = this.method4598(var1, new int[]{var2}, field8229, var6, (byte)-28);
@@ -526,14 +526,14 @@ public class class230 {
    public Point method4604(String var1, int var2, int var3, int var4, class653[] var5, int var6) {
       try {
          if (var4 <= 0) {
-            return new Point(0, var3 + 1110385787 * this.field8230);
+            return new Point(0, var3 + this.field8230);
          } else {
             if (var4 > var1.length()) {
                var4 = var1.length();
             }
 
             if (var3 == 0) {
-               var3 = -2028004825 * this.field8228;
+               var3 = this.field8228;
             }
 
             int var7 = this.method4599(var1, new int[]{var2}, field8229, var5, false, 116413311);
@@ -550,7 +550,7 @@ public class class230 {
                   }
 
                   int var12 = this.method4595(var11, var5, 1319235613);
-                  int var13 = var9 * var3 + 1110385787 * this.field8230;
+                  int var13 = var9 * var3 + this.field8230;
                   return new Point(var12, var13);
                }
 
@@ -577,7 +577,7 @@ public class class230 {
          boolean var1 = true;
          boolean var2 = false;
          boolean var3 = false;
-         if (class86.field1134.field3064 * 399637415 < 512 && 399637415 * class86.field1134.field3064 != 0) {
+         if (class86.field1134.field3064 < 512 && class86.field1134.field3064 != 0) {
             var1 = false;
          }
 
@@ -608,7 +608,7 @@ public class class230 {
             int var6 = -1;
             if (var1) {
                try {
-                  var4 = class518.method2689(2, 1000, 280501708);
+                  var4 = ItemDefinition.method2689(2, 1000, 280501708);
                } catch (Exception var12) {
                   ;
                }
@@ -616,11 +616,11 @@ public class class230 {
 
             if (var3) {
                try {
-                  var6 = class518.method2689(3, 1000, -2071277019);
+                  var6 = ItemDefinition.method2689(3, 1000, -2071277019);
                   if (class615.field8903.field9137.method3689(-491668376) == 3) {
                      class305 var7 = class593.field1623.method4795();
-                     long var8 = var7.field407 * 703334160035735425L & 281474976710655L;
-                     switch(var7.field398 * 267107087) {
+                     long var8 = var7.field407 & 281474976710655L;
+                     switch(var7.field398) {
                      case 4098:
                         var2 &= var8 >= 60129613779L;
                         break;
@@ -635,7 +635,7 @@ public class class230 {
 
             if (var2) {
                try {
-                  var5 = class518.method2689(1, 1000, -1485617713);
+                  var5 = ItemDefinition.method2689(1, 1000, -1485617713);
                } catch (Exception var10) {
                   ;
                }
@@ -662,11 +662,11 @@ public class class230 {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         var0.field3156 -= -783761378;
-         int var4 = var0.field3161[var0.field3156 * 681479919];
-         int var5 = var0.field3161[1 + 681479919 * var0.field3156];
+         var0.field3156 -= 2;
+         int var4 = var0.field3161[var0.field3156];
+         int var5 = var0.field3161[1 + var0.field3156];
          class785 var6 = class452.field7216.method5148(var4, 381661715);
-         if (var5 != var6.field3822 * -388931549) {
+         if (var5 != var6.field3822) {
             var3.method835(var4, var5, 1713038115);
          } else {
             var3.method833(var4, 1279288503);
@@ -694,8 +694,8 @@ public class class230 {
 
    static final void method4609(class744 var0, byte var1) {
       try {
-         var0.field3158 -= 1938723502;
-         class831.method5384((String)var0.field3157[-203050393 * var0.field3158], (String)var0.field3157[1 + -203050393 * var0.field3158], "", var0.field3161[(var0.field3156 -= -391880689) * 681479919] == 1, false, (byte)-37);
+         var0.field3158 -= 2;
+         class831.method5384((String)var0.field3157[var0.field3158], (String)var0.field3157[1 + var0.field3158], "", var0.field3161[--var0.field3156] == 1, false, (byte)-37);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "uw.aft(" + ')');
       }

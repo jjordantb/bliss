@@ -12,17 +12,17 @@ public class class35 {
 
    static final byte[] method3335(byte[] var0, int var1) {
       try {
-         class907 var2 = new class907(var0);
+         InputStream var2 = new InputStream(var0);
          int var3 = var2.method6371();
          int var4 = var2.method6420((byte)-98);
-         if (var4 >= 0 && (-989796335 * class180.field5293 == 0 || var4 <= -989796335 * class180.field5293)) {
+         if (var4 >= 0 && (class180.field5293 == 0 || var4 <= class180.field5293)) {
             if (var3 == 0) {
                byte[] var10 = new byte[var4];
                var2.method6381(var10, 0, var4, -953523806);
                return var10;
             } else {
                int var5 = var2.method6420((byte)-15);
-               if (var5 < 0 || -989796335 * class180.field5293 != 0 && var5 > class180.field5293 * -989796335) {
+               if (var5 < 0 || class180.field5293 != 0 && var5 > class180.field5293) {
                   throw new RuntimeException();
                } else {
                   byte[] var6 = new byte[var5];
@@ -52,10 +52,10 @@ public class class35 {
 
    static final void method3336(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -1175642067;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[var0.field3156 * 681479919 + 1];
-         int var4 = var0.field3161[var0.field3156 * 681479919 + 2];
+         var0.field3156 -= 3;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1];
+         int var4 = var0.field3161[var0.field3156 + 2];
          class740.method1920(8, var2 << 16 | var3, var4, "", 1153707798);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "jy.all(" + ')');
@@ -64,14 +64,14 @@ public class class35 {
 
    public static class392 method3337(int var0) {
       try {
-         if (class740.field7811 != null && class740.field3208 != null) {
-            class740.field3208.method3365(class740.field7811, 1595014600);
+         if (class491.field7811 != null && class740.field3208 != null) {
+            class740.field3208.method3365(class491.field7811, 1595014600);
             class392 var1 = (class392)class740.field3208.method3367(1453357547);
             if (var1 == null) {
                return null;
             } else {
-               class718 var2 = class740.field7826.method5091(-530122905 * var1.field5396, -113320818);
-               return var2 != null && var2.field3531 && var2.method2063(class740.field7798, 391184195) ? var1 : class806.method2843(-20548648);
+               class718 var2 = class491.field7826.method5091(var1.field5396, -113320818);
+               return var2 != null && var2.field3531 && var2.method2063(class491.field7798, 391184195) ? var1 : class806.method2843(-20548648);
             }
          } else {
             return null;

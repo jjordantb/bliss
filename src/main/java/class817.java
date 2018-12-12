@@ -22,7 +22,7 @@ public class class817 extends class888 implements MouseListener, MouseMotionList
 
    public boolean method5508(int var1) {
       try {
-         return (-31480187 * this.field4631 & 1) != 0;
+         return (this.field4631 & 1) != 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "aci.p(" + ')');
       }
@@ -62,14 +62,10 @@ public class class817 extends class888 implements MouseListener, MouseMotionList
       }
    }
 
-   public boolean method5520() {
-      return (-31480187 * this.field4631 & 1) != 0;
-   }
-
    void method2907(int var1, int var2, int var3) {
       try {
-         this.field4633 = var1 * -213131387;
-         this.field4634 = var2 * -968658837;
+         this.field4633 = var1;
+         this.field4634 = var2;
          if (this.field4638) {
             this.method2908(-1, var1, var2, 0, 1553525097);
          }
@@ -81,7 +77,7 @@ public class class817 extends class888 implements MouseListener, MouseMotionList
 
    public boolean method5517(int var1) {
       try {
-         return (-31480187 * this.field4631 & 2) != 0;
+         return (this.field4631 & 2) != 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "aci.i(" + ')');
       }
@@ -103,19 +99,15 @@ public class class817 extends class888 implements MouseListener, MouseMotionList
 
    public boolean method5510(byte var1) {
       try {
-         return (this.field4631 * -31480187 & 4) != 0;
+         return (this.field4631 & 4) != 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "aci.k(" + ')');
       }
    }
 
-   public int method5529() {
-      return this.field4635 * 28748355;
-   }
-
    public int method5513(byte var1) {
       try {
-         return this.field4635 * 28748355;
+         return this.field4635;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "aci.x(" + ')');
       }
@@ -181,7 +173,7 @@ public class class817 extends class888 implements MouseListener, MouseMotionList
             this.method2908(1, var1.getX(), var1.getY(), var1.getClickCount(), 2016030026);
          }
 
-         this.field4628 = (2114498315 * this.field4628 | var2) * 1282483363;
+         this.field4628 |= var2;
          if (var1.isPopupTrigger()) {
             var1.consume();
          }
@@ -194,8 +186,8 @@ public class class817 extends class888 implements MouseListener, MouseMotionList
    public synchronized void mouseReleased(MouseEvent var1) {
       try {
          int var2 = this.method2909(var1, 1755922620);
-         if ((2114498315 * this.field4628 & var2) == 0) {
-            var2 = this.field4628 * 2114498315;
+         if ((this.field4628 & var2) == 0) {
+            var2 = this.field4628;
          }
 
          if ((var2 & 1) != 0) {
@@ -210,7 +202,7 @@ public class class817 extends class888 implements MouseListener, MouseMotionList
             this.method2908(4, var1.getX(), var1.getY(), var1.getClickCount(), 1204760399);
          }
 
-         this.field4628 = (this.field4628 * 2114498315 & ~var2) * 1282483363;
+         this.field4628 &= ~var2;
          if (var1.isPopupTrigger()) {
             var1.consume();
          }
@@ -268,47 +260,11 @@ public class class817 extends class888 implements MouseListener, MouseMotionList
       }
    }
 
-   public synchronized void method5507() {
-      this.field4629 = this.field4633 * -867321853;
-      this.field4635 = this.field4634 * -1698396671;
-      this.field4631 = this.field4628 * 866311247;
-      class373 var1 = this.field4632;
-      this.field4632 = this.field4626;
-      this.field4626 = var1;
-      this.field4626.method905((byte)1);
-   }
-
-   public synchronized void method5514() {
-      this.field4629 = this.field4633 * -867321853;
-      this.field4635 = this.field4634 * -1698396671;
-      this.field4631 = this.field4628 * 866311247;
-      class373 var1 = this.field4632;
-      this.field4632 = this.field4626;
-      this.field4626 = var1;
-      this.field4626.method905((byte)1);
-   }
-
-   public boolean method5519() {
-      return (-31480187 * this.field4631 & 2) != 0;
-   }
-
-   public void method5528() {
-      this.method2906(-1710561997);
-   }
-
-   public boolean method5518() {
-      return (-31480187 * this.field4631 & 1) != 0;
-   }
-
-   public boolean method5522() {
-      return (-31480187 * this.field4631 & 2) != 0;
-   }
-
    public synchronized void method5516(int var1) {
       try {
-         this.field4629 = this.field4633 * -867321853;
-         this.field4635 = this.field4634 * -1698396671;
-         this.field4631 = this.field4628 * 866311247;
+         this.field4629 = this.field4633;
+         this.field4635 = this.field4634;
+         this.field4631 = this.field4628;
          class373 var2 = this.field4632;
          this.field4632 = this.field4626;
          this.field4626 = var2;
@@ -318,25 +274,9 @@ public class class817 extends class888 implements MouseListener, MouseMotionList
       }
    }
 
-   public boolean method5523() {
-      return (this.field4631 * -31480187 & 4) != 0;
-   }
-
-   public int method5525() {
-      return this.field4629 * 1215441007;
-   }
-
-   public class284 method5526() {
-      return (class284)this.field4632.method898(2123266868);
-   }
-
-   public class284 method5515() {
-      return (class284)this.field4632.method898(2127727655);
-   }
-
    public int method5524(byte var1) {
       try {
-         return this.field4629 * 1215441007;
+         return this.field4629;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "aci.u(" + ')');
       }
@@ -348,13 +288,5 @@ public class class817 extends class888 implements MouseListener, MouseMotionList
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "aci.r(" + ')');
       }
-   }
-
-   public void method5527() {
-      this.method2906(-1322459721);
-   }
-
-   public boolean method5521() {
-      return (-31480187 * this.field4631 & 1) != 0;
    }
 }

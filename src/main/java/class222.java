@@ -49,9 +49,9 @@ public class class222 {
 
    static final void method4107(class744 var0, int var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         String var2 = (String)var0.field3157[--var0.field3158];
          boolean var3 = class5.field4944.method1304(new File(var2), -714101418);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3 ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = var3 ? 1 : 0;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "el.agp(" + ')');
       }
@@ -59,7 +59,7 @@ public class class222 {
 
    static final void method4108(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9133.method5728(-1741518508);
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9133.method5728(-1741518508);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "el.aks(" + ')');
       }
@@ -67,12 +67,12 @@ public class class222 {
 
    static final void method4109(class744 var0, int var1) {
       try {
-         byte var2 = class923.field10295.field3639;
-         class32 var3 = class923.field10295.method1511().field7637;
+         byte var2 = class923.local.field3639;
+         class32 var3 = class923.local.method1511().field7637;
          class389 var4 = class730.field2697.method5270(681479919);
-         int var5 = ((int)var3.field5296 >> 9) + -1760580017 * var4.field1521;
-         int var6 = ((int)var3.field5299 >> 9) + 283514611 * var4.field1522;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (var5 << 14) + (var2 << 28) + var6;
+         int var5 = ((int)var3.field5296 >> 9) + var4.field1521;
+         int var6 = ((int)var3.field5299 >> 9) + var4.field1522;
+         var0.field3161[++var0.field3156 - 1] = (var5 << 14) + (var2 << 28) + var6;
       } catch (RuntimeException var7) {
          throw class158.method3445(var7, "el.tt(" + ')');
       }

@@ -6,10 +6,6 @@ import java.awt.image.PixelGrabber;
 public class class830 implements class311 {
    class180 field9060;
 
-   public class972 method449() {
-      return class972.field2963;
-   }
-
    public int method444(int var1) {
       try {
          return this.field9060.method3262(380717281) ? 100 : this.field9060.method3263((byte)4);
@@ -26,25 +22,13 @@ public class class830 implements class311 {
       }
    }
 
-   public int method446() {
-      return this.field9060.method3262(380717281) ? 100 : this.field9060.method3263((byte)4);
-   }
-
    class830(class180 var1) {
       this.field9060 = var1;
    }
 
-   public class972 method445() {
-      return class972.field2963;
-   }
-
-   public class972 method447() {
-      return class972.field2963;
-   }
-
    static final void method5371(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-35);
          class131 var4 = class382.field1410[var2 >> 16];
          class896.method5589(var3, var4, var0, 2138455691);
@@ -55,7 +39,7 @@ public class class830 implements class311 {
 
    static final void method5372(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)14);
          class131 var4 = class382.field1410[var2 >> 16];
          class537.method2317(var3, var4, var0, 1442704062);
@@ -66,8 +50,8 @@ public class class830 implements class311 {
 
    static final void method5373(class744 var0, int var1) {
       try {
-         var0.field3156 -= -1567522756;
-         class671.method4237(var0.field3161[var0.field3156 * 681479919], var0.field3161[1 + var0.field3156 * 681479919], var0.field3161[2 + var0.field3156 * 681479919], var0.field3161[3 + var0.field3156 * 681479919], false, 256, 1465436328);
+         var0.field3156 -= 4;
+         class671.method4237(var0.field3161[var0.field3156], var0.field3161[1 + var0.field3156], var0.field3161[2 + var0.field3156], var0.field3161[3 + var0.field3156], false, 256, 1465436328);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jl.ty(" + ')');
       }
@@ -178,11 +162,11 @@ public class class830 implements class311 {
    static final void method5377(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
       try {
          for(class281 var7 = (class281)class730.field2631.method5207(-16777216); var7 != null; var7 = (class281)class730.field2631.method5211(1278684124)) {
-            if (class730.field2866 * 443738891 >= 591467947 * var7.field10640) {
+            if (class730.field2866 >= var7.field10640) {
                var7.method2028(1699061251);
             } else {
-               class971.method1790(var7.field10638 * 1759796085, 256 + (var7.field10637 * 1495033107 << 9), 256 + (-1852462101 * var7.field10641 << 9), 587842750 * var7.field10639, -549885479);
-               class501.field3182.method1681(var7.field10642, (int)((float)var0 + class730.field2873[0]), (int)(class730.field2873[1] + (float)var1), -16777216 | 1160845051 * var7.field10636, 0, 8619684);
+               class971.method1790(var7.field10638, 256 + (var7.field10637 << 9), 256 + (var7.field10641 << 9), var7.field10639 * 2, -549885479);
+               class501.field3182.method1681(var7.field10642, (int)((float)var0 + class730.field2873[0]), (int)(class730.field2873[1] + (float)var1), -16777216 | var7.field10636, 0, 8619684);
             }
          }
 

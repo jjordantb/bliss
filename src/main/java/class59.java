@@ -22,7 +22,7 @@ public class class59 {
 
    static final void method1616(class744 var0, int var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         String var2 = (String)var0.field3157[--var0.field3158];
          StringBuilder var3 = new StringBuilder(var2.length());
          boolean var4 = false;
 
@@ -37,7 +37,7 @@ public class class59 {
             }
          }
 
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var3.toString();
+         var0.field3157[++var0.field3158 - 1] = var3.toString();
       } catch (RuntimeException var7) {
          throw class158.method3445(var7, "jq.aaf(" + ')');
       }
@@ -52,11 +52,11 @@ public class class59 {
          class949.field3326 = null;
          class949.field3323 = null;
          class949.field3325 = null;
-         class949.field3331 = 2029434363;
+         class949.field3331 = 1;
          class949.field3328 = 0;
          class949.field3329 = 0;
          class122.field2373 = null;
-         class949.field3332 = 1692564793;
+         class949.field3332 = -1;
          if (class949.field3330) {
             class730.field2916 = class949.field3320;
             class730.field2917 = class673.field7509;
@@ -72,7 +72,7 @@ public class class59 {
 
    static final void method1618(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)116);
          class131 var4 = class382.field1410[var2 >> 16];
          class352.method1403(var3, var4, var0, 845844637);
@@ -81,9 +81,9 @@ public class class59 {
       }
    }
 
-   public static void method1619(class160 var0, int var1, int var2) {
+   public static void method1619(Animation var0, int var1, int var2) {
       try {
-         if (class540.field3926 * -991384187 < 50 && var0 != null && var0.field6671 != null && var1 < var0.field6671.length && var0.field6671[var1] != null) {
+         if (class540.field3926 < 50 && var0 != null && var0.field6671 != null && var1 < var0.field6671.length && var0.field6671[var1] != null) {
             int var3 = var0.field6671[var1][0];
             int var4 = var3 >> 8;
             int var5 = var3 >> 5 & 7;
@@ -97,7 +97,7 @@ public class class59 {
 
             var6 = 256;
             if (var0.field6667 != null && var0.field6674 != null) {
-               var6 = class160.method3569(var0.field6667[var1], var0.field6674[var1], 1444813491);
+               var6 = Animation.method3569(var0.field6667[var1], var0.field6674[var1], 1444813491);
             }
 
             if (var0.field6657) {
@@ -136,11 +136,11 @@ public class class59 {
             var12 = var12 + 1 & 4095;
             int var18 = var5 - var9;
             int var19 = var6 - var10;
-            int var14 = var5 - var3.field8179 * 1487776559;
-            int var15 = var6 - 1415525851 * var3.field8180;
+            int var14 = var5 - var3.field8179;
+            int var15 = var6 - var3.field8180;
             if (var2.method415(2, var5, var6, var3, -16711936)) {
-               class56.field2316 = 1021042197 * var5;
-               class78.field1500 = -575994451 * var6;
+               class56.field2316 = var5;
+               class78.field1500 = var6;
                return true;
             }
 
@@ -286,8 +286,8 @@ public class class59 {
             }
          }
 
-         class56.field2316 = 1021042197 * var5;
-         class78.field1500 = -575994451 * var6;
+         class56.field2316 = var5;
+         class78.field1500 = var6;
          return false;
       } catch (RuntimeException var17) {
          throw class158.method3445(var17, "jq.b(" + ')');

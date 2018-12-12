@@ -21,9 +21,9 @@ public class class865 {
    public String field9002;
    public String[] field9003;
    public boolean field9004 = false;
-   public int field9005 = -301919677;
+   public int field9005 = -1;
 
-   void method5321(class907 var1, int var2) {
+   void method5321(InputStream var1, int var2) {
       try {
          while(true) {
             int var3 = var1.method6371();
@@ -38,7 +38,7 @@ public class class865 {
       }
    }
 
-   void method5322(class907 var1, int var2, int var3) {
+   void method5322(InputStream var1, int var2, int var3) {
       try {
          if (1 == var2) {
             this.field9002 = var1.method6413(681479919);
@@ -68,13 +68,13 @@ public class class865 {
             } else if (var2 == 5) {
                var1.method6374();
             } else if (6 == var2) {
-               this.field8988 = var1.method6371() * -1975598225;
+               this.field8988 = var1.method6371();
             } else if (7 == var2) {
-               this.field8989 = var1.method6371() * 203571345;
+               this.field8989 = var1.method6371();
             } else if (8 == var2) {
                this.field9004 = true;
             } else if (9 == var2) {
-               this.field8991 = var1.method6371() * 1044902997;
+               this.field8991 = var1.method6371();
             } else if (10 == var2) {
                var4 = var1.method6371();
                this.field8992 = new int[var4];
@@ -100,9 +100,9 @@ public class class865 {
                   this.field8994[var5][1] = var1.method6371();
                }
             } else if (15 == var2) {
-               this.field8983 = var1.method6374() * 96808193;
+               this.field8983 = var1.method6374();
             } else if (var2 == 17) {
-               this.field9005 = var1.method6423(1235052657) * 301919677;
+               this.field9005 = var1.method6423(1235052657);
             } else if (var2 == 18) {
                var4 = var1.method6371();
                this.field8996 = new int[var4];
@@ -219,7 +219,7 @@ public class class865 {
 
    public boolean method5326(class415 var1, int[] var2, byte var3) {
       try {
-         if (this.field8984.method4225(var1, -2006575627) < this.field8983 * 1327747841) {
+         if (this.field8984.method4225(var1, -2006575627) < this.field8983) {
             return false;
          } else {
             int var4;
@@ -321,7 +321,7 @@ public class class865 {
             return var2;
          } else {
             class722 var4 = (class722)this.field8995.method2942((long)var1);
-            return var4 == null ? var2 : var4.field3631 * -774922497;
+            return var4 == null ? var2 : var4.field3631;
          }
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "pi.p(" + ')');
@@ -330,7 +330,7 @@ public class class865 {
 
    public boolean method5332(class415 var1, int var2) {
       try {
-         return this.field8984.method4225(var1, -1427823636) >= this.field8983 * 1327747841;
+         return this.field8984.method4225(var1, -1427823636) >= this.field8983;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "pi.x(" + ')');
       }
@@ -351,8 +351,8 @@ public class class865 {
 
    static final void method5334(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var0.field3169.field9709[var2];
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = var0.field3169.field9709[var2];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "pi.xd(" + ')');
       }
@@ -360,7 +360,7 @@ public class class865 {
 
    public static void method5335(int var0, int var1) {
       try {
-         class75.field1494 = 925615037 * var0;
+         class75.field1494 = var0;
          class564.field863.method2977();
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "pi.v(" + ')');

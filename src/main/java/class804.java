@@ -3,40 +3,28 @@ public class class804 extends class304 {
    int field4411;
    int field4412;
 
-   public void method2385() {
-      class283 var1 = class949.field3322[this.field4412 * -824702981];
-      class278 var2 = class949.field3323[this.field4411 * -1213610501];
-      var2.method6625(var1, this.field4410 * 301530619, 1628828546);
-   }
-
    public void method2383(int var1) {
       try {
-         class283 var2 = class949.field3322[this.field4412 * -824702981];
-         class278 var3 = class949.field3323[this.field4411 * -1213610501];
-         var3.method6625(var2, this.field4410 * 301530619, 1628828546);
+         class283 var2 = class949.field3322[this.field4412];
+         class278 var3 = class949.field3323[this.field4411];
+         var3.method6625(var2, this.field4410, 1628828546);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "yf.f(" + ')');
       }
    }
 
-   class804(class907 var1) {
+   class804(InputStream var1) {
       super(var1);
-      this.field4412 = var1.method6374() * 1115286323;
-      this.field4411 = var1.method6374() * -1394180813;
-      this.field4410 = var1.method6371() * 1303807283;
-   }
-
-   public void method2386() {
-      class283 var1 = class949.field3322[this.field4412 * -824702981];
-      class278 var2 = class949.field3323[this.field4411 * -1213610501];
-      var2.method6625(var1, this.field4410 * 301530619, 1628828546);
+      this.field4412 = var1.method6374();
+      this.field4411 = var1.method6374();
+      this.field4410 = var1.method6371();
    }
 
    static void method2824(class564 var0, int var1, int var2, int var3) {
       try {
          class602.field8653 = var0;
-         class602.field8654 = var1 * -1021462033;
-         class602.field8669 = var2 * -1325119769;
+         class602.field8654 = var1;
+         class602.field8669 = var2;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "yf.av(" + ')');
       }
@@ -44,7 +32,7 @@ public class class804 extends class304 {
 
    static final void method2825(class744 var0, int var1) {
       try {
-         class615.field8903.method5391(class615.field8903.field9147, var0.field3161[(var0.field3156 -= -391880689) * 681479919], -2102625264);
+         class615.field8903.method5391(class615.field8903.field9147, var0.field3161[--var0.field3156], -2102625264);
          class730.field2697.method5309(732894181);
          class95.method523(656179282);
          class730.field2647 = false;
@@ -92,19 +80,19 @@ public class class804 extends class304 {
 
    static final void method2827(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -1175642067;
-         class730.field2819 = 1583527743 * var0.field3161[681479919 * var0.field3156];
-         class184.field5231 = class11.method3572(var0.field3161[var0.field3156 * 681479919 + 1], 2087599862);
+         var0.field3156 -= 3;
+         class730.field2819 = var0.field3161[var0.field3156];
+         class184.field5231 = class11.method3572(var0.field3161[var0.field3156 + 1], 2087599862);
          if (class184.field5231 == null) {
             class184.field5231 = class12.field6677;
          }
 
-         class730.field2895 = -1777248765 * var0.field3161[2 + var0.field3156 * 681479919];
+         class730.field2895 = var0.field3161[2 + var0.field3156];
          class684 var2 = class423.method5712((short)512);
          class701 var3 = class637.method5936(class643.field9990, var2.field7765, (byte)32);
-         var3.field3364.method6361(-1168328513 * class730.field2819);
-         var3.field3364.method6361(1790024195 * class184.field5231.field6679);
-         var3.field3364.method6361(class730.field2895 * -1710848853);
+         var3.field3364.method6361(class730.field2819);
+         var3.field3364.method6361(class184.field5231.field6679);
+         var3.field3364.method6361(class730.field2895);
          var2.method4380(var3, (byte)-13);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "yf.abz(" + ')');

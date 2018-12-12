@@ -10,7 +10,7 @@ public class class354 {
    int[] field2138;
    static int field2139;
 
-   void method1446(class907 var1, int var2) {
+   void method1446(InputStream var1, int var2) {
       try {
          while(true) {
             int var3 = var1.method6371();
@@ -25,7 +25,7 @@ public class class354 {
       }
    }
 
-   void method1447(class907 var1, int var2, byte var3) {
+   void method1447(InputStream var1, int var2, byte var3) {
       try {
          if (var2 == 1) {
             var1.method6371();
@@ -217,7 +217,7 @@ public class class354 {
 
    static final void method1452(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)36);
          class131 var4 = class382.field1410[var2 >> 16];
          class362.method1506(var3, var4, var0, (byte)-37);
@@ -228,15 +228,15 @@ public class class354 {
 
    static final void method1453(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          if (class382.field1410[var2] == null) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
+            var0.field3157[++var0.field3158 - 1] = "";
          } else {
             String var3 = class382.field1410[var2].field1103[0].field984;
             if (var3 == null) {
-               var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
+               var0.field3157[++var0.field3158 - 1] = "";
             } else {
-               var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var3.substring(0, var3.indexOf(58));
+               var0.field3157[++var0.field3158 - 1] = var3.substring(0, var3.indexOf(58));
             }
          }
 
@@ -260,7 +260,7 @@ public class class354 {
       try {
          class978.field3128.method3578(-1793011066);
          class978.field3124.method3578(-437755640);
-         class978.field3126 = 7881601697932874601L;
+         class978.field3126 = -1L;
          class978.field3125 = true;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "fi.b(" + ')');

@@ -6,8 +6,8 @@ public class class900 {
    public int field10374;
 
    class900(int var1, int var2) {
-      this.field10373 = var1 * -869034129;
-      this.field10374 = -1628605819 * var2;
+      this.field10373 = var1;
+      this.field10374 = var2;
    }
 
    public static void method6347(class564 var0, int var1, int var2, int var3) {
@@ -21,13 +21,13 @@ public class class900 {
             }
 
             class730.field2817 = true;
-            class543.field3820 = var0.field867 * 1167811111;
-            class730.field2818 = var0.field879 * -298861091;
-            class568.field645 = 1282349805 * var1;
-            class354.field2139 = var2 * 1881265567;
-            class730.field2888 = 746397723 * var0.field1005;
-            class175.field5075 = 1745504609 * var0.field904;
-            class730.field2919 = -472067203 * var0.field888;
+            class543.field3820 = var0.field867;
+            class730.field2818 = var0.field879;
+            class568.field645 = var1;
+            class354.field2139 = var2;
+            class730.field2888 = var0.field1005;
+            class175.field5075 = var0.field904;
+            class730.field2919 = var0.field888;
             class814.method2932(var0, -284512508);
          }
 
@@ -40,7 +40,7 @@ public class class900 {
       try {
          if (class730.field2825 != null) {
             class981.method1931(-1491321338);
-         } else if (2084404473 * class881.field10145 != -1) {
+         } else if (class881.field10145 != -1) {
             class84.method939((byte)-89);
          } else {
             class785.method2382(class881.field10170, class881.field10171, 712466234);

@@ -5,7 +5,7 @@ public class class342 {
    static String field281 = "";
    static int field282 = 0;
    static int field283 = 0;
-   static int field284 = 1428832631;
+   static int field284 = -1;
    static int field285 = 0;
    static int field286;
    static String[] field287;
@@ -35,7 +35,7 @@ public class class342 {
 
    static final void method218(class744 var0, byte var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         String var2 = (String)var0.field3157[--var0.field3158];
          class967.method1749(var2, 1986272342);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ai.vh(" + ')');
@@ -44,7 +44,7 @@ public class class342 {
 
    static final void method219(class744 var0, int var1) {
       try {
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var0.field3154.field1164;
+         var0.field3157[++var0.field3158 - 1] = var0.field3154.field1164;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ai.xj(" + ')');
       }
@@ -75,9 +75,9 @@ public class class342 {
       try {
          class625 var2 = var0.field3159.method2565(658355638);
          if (var2 == null) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
+            var0.field3157[++var0.field3158 - 1] = "";
          } else {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var2.method5820((byte)1);
+            var0.field3157[++var0.field3158 - 1] = var2.method5820((byte)1);
          }
 
       } catch (RuntimeException var3) {

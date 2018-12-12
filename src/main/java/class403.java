@@ -62,12 +62,12 @@ public class class403 {
 
    class403(class972 var1) {
       this.field10093 = var1;
-      this.field10114 = -427537929;
+      this.field10114 = 1;
    }
 
    public int method6141(int var1) {
       try {
-         return this.field10114 * 617695175;
+         return this.field10114;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "tt.f(" + ')');
       }
@@ -95,7 +95,7 @@ public class class403 {
 
    public void method6144(int var1, int var2) {
       try {
-         this.field10114 = var1 * -427537929;
+         this.field10114 = var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "tt.b(" + ')');
       }
@@ -111,14 +111,14 @@ public class class403 {
 
    static final void method6146(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class506 var3 = class395.method3397(var2, 431272670);
          int var4 = -1;
          if (var3 != null) {
-            var4 = var3.field4120 * 40869749;
+            var4 = var3.field4120;
          }
 
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var4;
+         var0.field3161[++var0.field3156 - 1] = var4;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "tt.aco(" + ')');
       }
@@ -126,7 +126,7 @@ public class class403 {
 
    static final void method6147(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)57);
          class131 var4 = class382.field1410[var2 >> 16];
          class115.method1275(var3, var4, var0, (byte)-76);
@@ -137,7 +137,7 @@ public class class403 {
 
    static final void method6148(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)74);
          class131 var4 = class382.field1410[var2 >> 16];
          class914.method6442(var3, var4, var0, 39715579);

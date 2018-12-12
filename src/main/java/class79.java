@@ -7,9 +7,9 @@ public class class79 {
 
    static final void method1156(class564 var0, class131 var1, class744 var2, int var3) {
       try {
-         int var4 = var2.field3161[(var2.field3156 -= -391880689) * 681479919];
-         if (var4 == 270446479 * class564.field991 || -1179480373 * class564.field844 == var4 || 1432814379 * class564.field931 == var4) {
-            var0.field961 = var4 * 2138287179;
+         int var4 = var2.field3161[--var2.field3156];
+         if (var4 == class564.field991 || class564.field844 == var4 || class564.field931 == var4) {
+            var0.field961 = var4;
          }
 
       } catch (RuntimeException var5) {
@@ -22,7 +22,7 @@ public class class79 {
          if (var0 == null) {
             return -1;
          } else {
-            for(int var2 = 0; var2 < -1054937867 * class730.field2923; ++var2) {
+            for(int var2 = 0; var2 < class730.field2923; ++var2) {
                if (var0.equalsIgnoreCase(class730.field2685[var2])) {
                   return var2;
                }

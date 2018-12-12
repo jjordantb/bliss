@@ -11,7 +11,7 @@ public abstract class class958 {
 
    public boolean method2050(byte var1) {
       try {
-         return (-877023375 * this.field3476 & 2) != 0;
+         return (this.field3476 & 2) != 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "oh.f(" + ')');
       }
@@ -19,7 +19,7 @@ public abstract class class958 {
 
    public boolean method2051(int var1) {
       try {
-         return (this.field3476 * -877023375 & 4) != 0;
+         return (this.field3476 & 4) != 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "oh.b(" + ')');
       }
@@ -27,7 +27,7 @@ public abstract class class958 {
 
    public boolean method2052(int var1) {
       try {
-         return (-877023375 * this.field3476 & 8) != 0;
+         return (this.field3476 & 8) != 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "oh.p(" + ')');
       }
@@ -35,7 +35,7 @@ public abstract class class958 {
 
    public boolean method2053(int var1) {
       try {
-         return (-877023375 * this.field3476 & 1) != 0;
+         return (this.field3476 & 1) != 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "oh.a(" + ')');
       }
@@ -43,8 +43,8 @@ public abstract class class958 {
 
    static final void method2054(class744 var0, int var1) {
       try {
-         int var2 = var0.field3174[1883543357 * var0.field3176];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class827.field9037.method5653(var2, (byte)38);
+         int var2 = var0.field3174[var0.field3176];
+         var0.field3161[++var0.field3156 - 1] = class827.field9037.method5653(var2, (byte)38);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "oh.at(" + ')');
       }
@@ -52,7 +52,7 @@ public abstract class class958 {
 
    static final void method2055(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9148.method2717(-2143352335);
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9148.method2717(-2143352335);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "oh.ajf(" + ')');
       }
@@ -87,7 +87,7 @@ public abstract class class958 {
 
    static boolean method2057(int var0) {
       try {
-         class730.field2694 += -75983735;
+         ++class730.field2694;
          class730.field2695 = true;
          return true;
       } catch (RuntimeException var2) {

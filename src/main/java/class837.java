@@ -21,10 +21,10 @@ public abstract class class837 extends class749 {
 
    void method5396(int var1) {
       try {
-         this.field9158 = new int[2061776189 * this.field9157 * 1038713159 * this.field9156];
-         this.field9159 = new float[2061776189 * this.field9157 * 1038713159 * this.field9156];
+         this.field9158 = new int[this.field9157 * this.field9156];
+         this.field9159 = new float[this.field9157 * this.field9156];
          if (this.field9160) {
-            this.field9155.method4455(1038713159 * this.field9156, 2061776189 * this.field9157, this.field9158, this.field9159);
+            this.field9155.method4455(this.field9156, this.field9157, this.field9158, this.field9159);
          }
 
       } catch (RuntimeException var3) {
@@ -35,17 +35,13 @@ public abstract class class837 extends class749 {
    class837(class257 var1, Canvas var2, int var3, int var4) {
       this.field9154 = var2;
       this.field9155 = var1;
-      this.field9156 = -1172842377 * var3;
-      this.field9157 = -374060523 * var4;
-   }
-
-   public int method2483() {
-      return this.field9156 * 1038713159;
+      this.field9156 = var3;
+      this.field9157 = var4;
    }
 
    final boolean method2484() {
       try {
-         this.field9155.method4455(1038713159 * this.field9156, 2061776189 * this.field9157, this.field9158, this.field9159);
+         this.field9155.method4455(this.field9156, this.field9157, this.field9158, this.field9159);
          this.field9160 = true;
          return true;
       } catch (RuntimeException var2) {
@@ -55,32 +51,17 @@ public abstract class class837 extends class749 {
 
    public int method2493() {
       try {
-         return 2061776189 * this.field9157;
+         return this.field9157;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "afi.f(" + ')');
       }
    }
 
-   public int method2480() {
-      return 2061776189 * this.field9157;
-   }
-
-   final boolean method2486() {
-      this.field9155.method4455(1038713159 * this.field9156, 2061776189 * this.field9157, this.field9158, this.field9159);
-      this.field9160 = true;
-      return true;
-   }
-
-   final boolean method2485() {
-      this.field9160 = false;
-      return true;
-   }
-
    final void method2518(int var1, int var2) {
       try {
-         if (var1 != 1038713159 * this.field9156 || 2061776189 * this.field9157 != var2) {
-            this.field9156 = -1172842377 * var1;
-            this.field9157 = -374060523 * var2;
+         if (var1 != this.field9156 || this.field9157 != var2) {
+            this.field9156 = var1;
+            this.field9157 = var2;
             this.method5396(251162115);
          }
 
@@ -89,32 +70,11 @@ public abstract class class837 extends class749 {
       }
    }
 
-   final void method2519(int var1, int var2) {
-      if (var1 != 1038713159 * this.field9156 || 2061776189 * this.field9157 != var2) {
-         this.field9156 = -1172842377 * var1;
-         this.field9157 = -374060523 * var2;
-         this.method5396(251162115);
-      }
-
-   }
-
-   public int method2490() {
-      return this.field9156 * 1038713159;
-   }
-
    public int method2481() {
       try {
-         return this.field9156 * 1038713159;
+         return this.field9156;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "afi.a(" + ')');
       }
-   }
-
-   public int method2492() {
-      return this.field9156 * 1038713159;
-   }
-
-   public int method2491() {
-      return this.field9156 * 1038713159;
    }
 }

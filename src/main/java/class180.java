@@ -22,8 +22,8 @@ public final class class180 {
                return false;
             }
 
-            this.field5288 = new Object[-1583970959 * this.field5284.field7259];
-            this.field5289 = new Object[-1583970959 * this.field5284.field7259][];
+            this.field5288 = new Object[this.field5284.field7259];
+            this.field5289 = new Object[this.field5284.field7259][];
          }
 
          return true;
@@ -37,7 +37,7 @@ public final class class180 {
          if (!this.method3254(14382781)) {
             throw new IllegalStateException("");
          } else {
-            return this.field5284.field7251 * 1600327191;
+            return this.field5284.field7251;
          }
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ke.f(" + ')');
@@ -109,12 +109,12 @@ public final class class180 {
                }
 
                if (var5 != null) {
-                  if (this.field5290 * -1870742467 == 1) {
+                  if (this.field5290 == 1) {
                      this.field5289[var1][var2] = null;
                      if (1 == this.field5284.field7255[var1]) {
                         this.field5289[var1] = null;
                      }
-                  } else if (this.field5290 * -1870742467 == 2) {
+                  } else if (this.field5290 == 2) {
                      this.field5289[var1] = null;
                   }
                }
@@ -285,7 +285,7 @@ public final class class180 {
       if (var3 >= 0 && var3 <= 2) {
          this.field5291 = var1;
          this.field5286 = var2;
-         this.field5290 = -98387179 * var3;
+         this.field5290 = var3;
       } else {
          throw new IllegalArgumentException("");
       }
@@ -441,7 +441,7 @@ public final class class180 {
                   var24 = class886.method6166(this.field5288[var1], false, -144584373);
                } else {
                   var24 = class886.method6166(this.field5288[var1], true, -858479492);
-                  class907 var25 = new class907(var24);
+                  InputStream var25 = new InputStream(var24);
                   var25.method6389(var3, 5, var25.field10375.length, -1429633724);
                }
 
@@ -449,7 +449,7 @@ public final class class180 {
                try {
                   var26 = class35.method3335(var24, 1072675128);
                } catch (RuntimeException var22) {
-                  throw class158.method3445(var22, (var3 != null) + " " + var1 + " " + var24.length + " " + class528.method2247(var24, var24.length, -1914018334) + " " + class528.method2247(var24, var24.length - 2, -1788280058) + " " + this.field5284.field7260[var1] + " " + 1600327191 * this.field5284.field7251);
+                  throw class158.method3445(var22, (var3 != null) + " " + var1 + " " + var24.length + " " + class528.method2247(var24, var24.length, -1914018334) + " " + class528.method2247(var24, var24.length - 2, -1788280058) + " " + this.field5284.field7260[var1] + " " + this.field5284.field7251);
                }
 
                if (this.field5286) {
@@ -459,20 +459,20 @@ public final class class180 {
                int var11;
                if (var5 > 1) {
                   int var12;
-                  class907 var13;
+                  InputStream var13;
                   int var15;
                   int var16;
                   int var17;
                   int var18;
                   int var19;
-                  if (2 != this.field5290 * -1870742467) {
+                  if (2 != this.field5290) {
                      var11 = var26.length;
                      --var11;
                      var12 = var26[var11] & 255;
                      var11 -= 4 * var12 * var5;
-                     var13 = new class907(var26);
+                     var13 = new InputStream(var26);
                      int[] var14 = new int[var5];
-                     var13.field10376 = var11 * 116413311;
+                     var13.field10376 = var11;
 
                      for(var15 = 0; var15 < var12; ++var15) {
                         var16 = 0;
@@ -490,7 +490,7 @@ public final class class180 {
                         var14[var16] = 0;
                      }
 
-                     var13.field10376 = var11 * 116413311;
+                     var13.field10376 = var11;
                      var16 = 0;
 
                      for(var17 = 0; var17 < var12; ++var17) {
@@ -511,7 +511,7 @@ public final class class180 {
                            var18 = var6[var17];
                         }
 
-                        if (-1870742467 * this.field5290 == 0) {
+                        if (this.field5290 == 0) {
                            var7[var18] = class562.method812(var28[var17], false, (short)-26522);
                         } else {
                            var7[var18] = var28[var17];
@@ -522,10 +522,10 @@ public final class class180 {
                      --var11;
                      var12 = var26[var11] & 255;
                      var11 -= var5 * var12 * 4;
-                     var13 = new class907(var26);
+                     var13 = new InputStream(var26);
                      int var27 = 0;
                      var15 = 0;
-                     var13.field10376 = 116413311 * var11;
+                     var13.field10376 = var11;
 
                      for(var16 = 0; var16 < var12; ++var16) {
                         var17 = 0;
@@ -551,7 +551,7 @@ public final class class180 {
 
                      byte[] var29 = new byte[var27];
                      var27 = 0;
-                     var13.field10376 = var11 * 116413311;
+                     var13.field10376 = var11;
                      var17 = 0;
 
                      for(var18 = 0; var18 < var12; ++var18) {
@@ -584,7 +584,7 @@ public final class class180 {
                      var11 = var6[0];
                   }
 
-                  if (this.field5290 * -1870742467 == 0) {
+                  if (this.field5290 == 0) {
                      var7[var11] = class562.method812(var26, false, (short)-11343);
                   } else {
                      var7[var11] = var26;
@@ -617,198 +617,6 @@ public final class class180 {
          }
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ke.t(" + ')');
-      }
-   }
-
-   synchronized boolean method3278(int var1, int var2, int[] var3) {
-      if (!this.method3279(var1, (byte)1)) {
-         return false;
-      } else if (this.field5288[var1] == null) {
-         return false;
-      } else {
-         int var4 = this.field5284.field7263[var1];
-         int[] var5 = this.field5284.field7264[var1];
-         if (this.field5289[var1] == null) {
-            this.field5289[var1] = new Object[this.field5284.field7255[var1]];
-         }
-
-         Object[] var6 = this.field5289[var1];
-         boolean var7 = true;
-
-         for(int var8 = 0; var8 < var4; ++var8) {
-            int var9;
-            if (var5 == null) {
-               var9 = var8;
-            } else {
-               var9 = var5[var8];
-            }
-
-            if (var6[var9] == null) {
-               var7 = false;
-               break;
-            }
-         }
-
-         if (var7) {
-            return true;
-         } else {
-            byte[] var22;
-            if (var3 == null || var3[0] == 0 && var3[1] == 0 && var3[2] == 0 && var3[3] == 0) {
-               var22 = class886.method6166(this.field5288[var1], false, 959051680);
-            } else {
-               var22 = class886.method6166(this.field5288[var1], true, -1017882504);
-               class907 var23 = new class907(var22);
-               var23.method6389(var3, 5, var23.field10375.length, -2120558016);
-            }
-
-            byte[] var24;
-            try {
-               var24 = class35.method3335(var22, -199793511);
-            } catch (RuntimeException var21) {
-               throw class158.method3445(var21, (var3 != null) + " " + var1 + " " + var22.length + " " + class528.method2247(var22, var22.length, -2111183372) + " " + class528.method2247(var22, var22.length - 2, -1919903806) + " " + this.field5284.field7260[var1] + " " + 1600327191 * this.field5284.field7251);
-            }
-
-            if (this.field5286) {
-               this.field5288[var1] = null;
-            }
-
-            int var10;
-            if (var4 > 1) {
-               int var11;
-               class907 var12;
-               int var14;
-               int var15;
-               int var16;
-               int var17;
-               int var18;
-               if (2 != this.field5290 * -1870742467) {
-                  var10 = var24.length;
-                  --var10;
-                  var11 = var24[var10] & 255;
-                  var10 -= 4 * var11 * var4;
-                  var12 = new class907(var24);
-                  int[] var13 = new int[var4];
-                  var12.field10376 = var10 * 116413311;
-
-                  for(var14 = 0; var14 < var11; ++var14) {
-                     var15 = 0;
-
-                     for(var16 = 0; var16 < var4; ++var16) {
-                        var15 += var12.method6420((byte)-6);
-                        var13[var16] += var15;
-                     }
-                  }
-
-                  byte[][] var26 = new byte[var4][];
-
-                  for(var15 = 0; var15 < var4; ++var15) {
-                     var26[var15] = new byte[var13[var15]];
-                     var13[var15] = 0;
-                  }
-
-                  var12.field10376 = var10 * 116413311;
-                  var15 = 0;
-
-                  for(var16 = 0; var16 < var11; ++var16) {
-                     var17 = 0;
-
-                     for(var18 = 0; var18 < var4; ++var18) {
-                        var17 += var12.method6420((byte)5);
-                        System.arraycopy(var24, var15, var26[var18], var13[var18], var17);
-                        var13[var18] += var17;
-                        var15 += var17;
-                     }
-                  }
-
-                  for(var16 = 0; var16 < var4; ++var16) {
-                     if (var5 == null) {
-                        var17 = var16;
-                     } else {
-                        var17 = var5[var16];
-                     }
-
-                     if (-1870742467 * this.field5290 == 0) {
-                        var6[var17] = class562.method812(var26[var16], false, (short)3420);
-                     } else {
-                        var6[var17] = var26[var16];
-                     }
-                  }
-               } else {
-                  var10 = var24.length;
-                  --var10;
-                  var11 = var24[var10] & 255;
-                  var10 -= var4 * var11 * 4;
-                  var12 = new class907(var24);
-                  int var25 = 0;
-                  var14 = 0;
-                  var12.field10376 = 116413311 * var10;
-
-                  for(var15 = 0; var15 < var11; ++var15) {
-                     var16 = 0;
-
-                     for(var17 = 0; var17 < var4; ++var17) {
-                        var16 += var12.method6420((byte)-22);
-                        if (var5 == null) {
-                           var18 = var17;
-                        } else {
-                           var18 = var5[var17];
-                        }
-
-                        if (var18 == var2) {
-                           var25 += var16;
-                           var14 = var18;
-                        }
-                     }
-                  }
-
-                  if (var25 == 0) {
-                     return true;
-                  }
-
-                  byte[] var27 = new byte[var25];
-                  var25 = 0;
-                  var12.field10376 = var10 * 116413311;
-                  var16 = 0;
-
-                  for(var17 = 0; var17 < var11; ++var17) {
-                     var18 = 0;
-
-                     for(int var19 = 0; var19 < var4; ++var19) {
-                        var18 += var12.method6420((byte)49);
-                        int var20;
-                        if (var5 == null) {
-                           var20 = var19;
-                        } else {
-                           var20 = var5[var19];
-                        }
-
-                        if (var20 == var2) {
-                           System.arraycopy(var24, var16, var27, var25, var18);
-                           var25 += var18;
-                        }
-
-                        var16 += var18;
-                     }
-                  }
-
-                  var6[var14] = var27;
-               }
-            } else {
-               if (var5 == null) {
-                  var10 = 0;
-               } else {
-                  var10 = var5[0];
-               }
-
-               if (this.field5290 * -1870742467 == 0) {
-                  var6[var10] = class562.method812(var24, false, (short)-45);
-               } else {
-                  var6[var10] = var24;
-               }
-            }
-
-            return true;
-         }
       }
    }
 
@@ -883,198 +691,6 @@ public final class class180 {
       }
    }
 
-   synchronized boolean method3284(int var1, int var2, int[] var3) {
-      if (!this.method3279(var1, (byte)1)) {
-         return false;
-      } else if (this.field5288[var1] == null) {
-         return false;
-      } else {
-         int var4 = this.field5284.field7263[var1];
-         int[] var5 = this.field5284.field7264[var1];
-         if (this.field5289[var1] == null) {
-            this.field5289[var1] = new Object[this.field5284.field7255[var1]];
-         }
-
-         Object[] var6 = this.field5289[var1];
-         boolean var7 = true;
-
-         for(int var8 = 0; var8 < var4; ++var8) {
-            int var9;
-            if (var5 == null) {
-               var9 = var8;
-            } else {
-               var9 = var5[var8];
-            }
-
-            if (var6[var9] == null) {
-               var7 = false;
-               break;
-            }
-         }
-
-         if (var7) {
-            return true;
-         } else {
-            byte[] var22;
-            if (var3 == null || var3[0] == 0 && var3[1] == 0 && var3[2] == 0 && var3[3] == 0) {
-               var22 = class886.method6166(this.field5288[var1], false, 235085962);
-            } else {
-               var22 = class886.method6166(this.field5288[var1], true, 1730830793);
-               class907 var23 = new class907(var22);
-               var23.method6389(var3, 5, var23.field10375.length, -458895567);
-            }
-
-            byte[] var24;
-            try {
-               var24 = class35.method3335(var22, 2053445966);
-            } catch (RuntimeException var21) {
-               throw class158.method3445(var21, (var3 != null) + " " + var1 + " " + var22.length + " " + class528.method2247(var22, var22.length, -2054415257) + " " + class528.method2247(var22, var22.length - 2, -1915676199) + " " + this.field5284.field7260[var1] + " " + 1600327191 * this.field5284.field7251);
-            }
-
-            if (this.field5286) {
-               this.field5288[var1] = null;
-            }
-
-            int var10;
-            if (var4 > 1) {
-               int var11;
-               class907 var12;
-               int var14;
-               int var15;
-               int var16;
-               int var17;
-               int var18;
-               if (2 != this.field5290 * -1870742467) {
-                  var10 = var24.length;
-                  --var10;
-                  var11 = var24[var10] & 255;
-                  var10 -= 4 * var11 * var4;
-                  var12 = new class907(var24);
-                  int[] var13 = new int[var4];
-                  var12.field10376 = var10 * 116413311;
-
-                  for(var14 = 0; var14 < var11; ++var14) {
-                     var15 = 0;
-
-                     for(var16 = 0; var16 < var4; ++var16) {
-                        var15 += var12.method6420((byte)-16);
-                        var13[var16] += var15;
-                     }
-                  }
-
-                  byte[][] var26 = new byte[var4][];
-
-                  for(var15 = 0; var15 < var4; ++var15) {
-                     var26[var15] = new byte[var13[var15]];
-                     var13[var15] = 0;
-                  }
-
-                  var12.field10376 = var10 * 116413311;
-                  var15 = 0;
-
-                  for(var16 = 0; var16 < var11; ++var16) {
-                     var17 = 0;
-
-                     for(var18 = 0; var18 < var4; ++var18) {
-                        var17 += var12.method6420((byte)-61);
-                        System.arraycopy(var24, var15, var26[var18], var13[var18], var17);
-                        var13[var18] += var17;
-                        var15 += var17;
-                     }
-                  }
-
-                  for(var16 = 0; var16 < var4; ++var16) {
-                     if (var5 == null) {
-                        var17 = var16;
-                     } else {
-                        var17 = var5[var16];
-                     }
-
-                     if (-1870742467 * this.field5290 == 0) {
-                        var6[var17] = class562.method812(var26[var16], false, (short)-1311);
-                     } else {
-                        var6[var17] = var26[var16];
-                     }
-                  }
-               } else {
-                  var10 = var24.length;
-                  --var10;
-                  var11 = var24[var10] & 255;
-                  var10 -= var4 * var11 * 4;
-                  var12 = new class907(var24);
-                  int var25 = 0;
-                  var14 = 0;
-                  var12.field10376 = 116413311 * var10;
-
-                  for(var15 = 0; var15 < var11; ++var15) {
-                     var16 = 0;
-
-                     for(var17 = 0; var17 < var4; ++var17) {
-                        var16 += var12.method6420((byte)51);
-                        if (var5 == null) {
-                           var18 = var17;
-                        } else {
-                           var18 = var5[var17];
-                        }
-
-                        if (var18 == var2) {
-                           var25 += var16;
-                           var14 = var18;
-                        }
-                     }
-                  }
-
-                  if (var25 == 0) {
-                     return true;
-                  }
-
-                  byte[] var27 = new byte[var25];
-                  var25 = 0;
-                  var12.field10376 = var10 * 116413311;
-                  var16 = 0;
-
-                  for(var17 = 0; var17 < var11; ++var17) {
-                     var18 = 0;
-
-                     for(int var19 = 0; var19 < var4; ++var19) {
-                        var18 += var12.method6420((byte)10);
-                        int var20;
-                        if (var5 == null) {
-                           var20 = var19;
-                        } else {
-                           var20 = var5[var19];
-                        }
-
-                        if (var20 == var2) {
-                           System.arraycopy(var24, var16, var27, var25, var18);
-                           var25 += var18;
-                        }
-
-                        var16 += var18;
-                     }
-                  }
-
-                  var6[var14] = var27;
-               }
-            } else {
-               if (var5 == null) {
-                  var10 = 0;
-               } else {
-                  var10 = var5[0];
-               }
-
-               if (this.field5290 * -1870742467 == 0) {
-                  var6[var10] = class562.method812(var24, false, (short)7031);
-               } else {
-                  var6[var10] = var24;
-               }
-            }
-
-            return true;
-         }
-      }
-   }
-
    public byte[] method3285(int var1, int var2, byte var3) {
       try {
          return this.method3259(var1, var2, (int[])null, -1954204331);
@@ -1093,7 +709,7 @@ public final class class180 {
 
    static final void method3287(class564 var0, class131 var1, class744 var2, int var3) {
       try {
-         String var4 = (String)var2.field3157[(var2.field3158 -= 969361751) * -203050393];
+         String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -1820459724) != null) {
             var4 = var4.substring(0, var4.length() - 1);
          }
@@ -1107,7 +723,7 @@ public final class class180 {
 
    static final void method3288(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)(class27.method3468((byte)1) / 86400000L) - 11745;
+         var0.field3161[++var0.field3156 - 1] = (int)(class27.method3468((byte)1) / 86400000L) - 11745;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ke.aka(" + ')');
       }

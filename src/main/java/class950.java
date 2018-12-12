@@ -1,14 +1,6 @@
 public class class950 extends class727 implements class297 {
    long field3445;
 
-   native void am(class955 var1, class887 var2, byte[][] var3, int[] var4, int[] var5, int[] var6, int[] var7, int[] var8);
-
-   native void method1676(char var1, int var2, int var3, int var4, boolean var5);
-
-   void method1679(char var1, int var2, int var3, int var4, boolean var5, class23 var6, int var7, int var8) {
-      this.GA(var1, var2, var3, var4, var5, var6, var7, var8);
-   }
-
    native void method1680(char var1, int var2, int var3, int var4, boolean var5);
 
    void method1674(char var1, int var2, int var3, int var4, boolean var5, class23 var6, int var7, int var8) {
@@ -16,8 +8,6 @@ public class class950 extends class727 implements class297 {
    }
 
    native void GA(char var1, int var2, int var3, int var4, boolean var5, class23 var6, int var7, int var8);
-
-   native void method1675(char var1, int var2, int var3, int var4, boolean var5);
 
    class950(class955 var1, class887 var2, class230 var3, class922[] var4, class48[] var5) {
       super(var1, var3);
@@ -38,21 +28,7 @@ public class class950 extends class727 implements class297 {
       this.EA(var1, var2, var6, var4[0].field10274, var7, var8, var9, var10);
    }
 
-   native void bm(char var1, int var2, int var3, int var4, boolean var5, class23 var6, int var7, int var8);
-
-   public native void method6551(boolean var1);
-
-   native void n(class955 var1, class887 var2, byte[][] var3, int[] var4, int[] var5, int[] var6, int[] var7, int[] var8);
-
    public native void method6550(boolean var1);
 
-   native void bd(class955 var1, class887 var2, byte[][] var3, int[] var4, int[] var5, int[] var6, int[] var7, int[] var8);
-
-   native void bf(char var1, int var2, int var3, int var4, boolean var5, class23 var6, int var7, int var8);
-
    native void EA(class955 var1, class887 var2, byte[][] var3, int[] var4, int[] var5, int[] var6, int[] var7, int[] var8);
-
-   native void by(char var1, int var2, int var3, int var4, boolean var5, class23 var6, int var7, int var8);
-
-   native void be(char var1, int var2, int var3, int var4, boolean var5, class23 var6, int var7, int var8);
 }

@@ -47,10 +47,10 @@ public final class class956 extends class352 implements KeyListener, FocusListen
    void method2110(int var1, char var2, int var3, int var4) {
       try {
          class492 var5 = new class492();
-         var5.field7788 = var1 * -492671955;
+         var5.field7788 = var1;
          var5.field7792 = var2;
-         var5.field7790 = var3 * 666762723;
-         var5.field7791 = class27.method3468((byte)1) * -6780259989437506341L;
+         var5.field7790 = var3;
+         var5.field7791 = class27.method3468((byte)1);
          this.field3614.method897(var5, -134660083);
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "acn.g(" + ')');
@@ -114,40 +114,40 @@ public final class class956 extends class352 implements KeyListener, FocusListen
          this.field3610.method905((byte)1);
 
          for(class492 var2 = (class492)this.field3614.method898(2094124912); var2 != null; var2 = (class492)this.field3614.method898(2145579859)) {
-            var2.field7789 = this.method2112(-2041069828) * -387842989;
-            if (var2.field7788 * 1490207653 == 0) {
-               if (!this.field3612[var2.field7790 * 122236875]) {
+            var2.field7789 = this.method2112(-2041069828);
+            if (var2.field7788 == 0) {
+               if (!this.field3612[var2.field7790]) {
                   class492 var6 = new class492();
                   var6.field7788 = 0;
                   var6.field7792 = '\uffff';
-                  var6.field7790 = var2.field7790 * 1;
-                  var6.field7791 = var2.field7791 * 1L;
-                  var6.field7789 = 1 * var2.field7789;
+                  var6.field7790 = var2.field7790;
+                  var6.field7791 = var2.field7791;
+                  var6.field7789 = var2.field7789;
                   this.field3610.method897(var6, 1964794553);
-                  this.field3612[var2.field7790 * 122236875] = true;
+                  this.field3612[var2.field7790] = true;
                }
 
-               var2.field7788 = -985343910;
+               var2.field7788 = 2;
                this.field3610.method897(var2, -407108127);
-            } else if (1 == var2.field7788 * 1490207653) {
-               if (this.field3612[var2.field7790 * 122236875]) {
+            } else if (1 == var2.field7788) {
+               if (this.field3612[var2.field7790]) {
                   this.field3610.method897(var2, 1996250465);
-                  this.field3612[var2.field7790 * 122236875] = false;
+                  this.field3612[var2.field7790] = false;
                }
-            } else if (1490207653 * var2.field7788 == -1) {
+            } else if (var2.field7788 == -1) {
                for(int var3 = 0; var3 < 112; ++var3) {
                   if (this.field3612[var3]) {
                      class492 var4 = new class492();
-                     var4.field7788 = -492671955;
+                     var4.field7788 = 1;
                      var4.field7792 = '\uffff';
-                     var4.field7790 = 666762723 * var3;
-                     var4.field7791 = 1L * var2.field7791;
-                     var4.field7789 = var2.field7789 * 1;
+                     var4.field7790 = var3;
+                     var4.field7791 = var2.field7791;
+                     var4.field7789 = var2.field7789;
                      this.field3610.method897(var4, 98009925);
                      this.field3612[var3] = false;
                   }
                }
-            } else if (3 == var2.field7788 * 1490207653) {
+            } else if (3 == var2.field7788) {
                this.field3610.method897(var2, 1631613634);
             }
          }
@@ -211,25 +211,9 @@ public final class class956 extends class352 implements KeyListener, FocusListen
       }
    }
 
-   public class742 method1395() {
-      return (class742)this.field3610.method898(2115276453);
-   }
-
-   public void method1399() {
-      this.method2109(560458852);
-   }
-
-   public class742 method1396() {
-      return (class742)this.field3610.method898(2103688875);
-   }
-
    class956(Component var1) {
       class766.method2759((byte)-1);
       this.method2108(var1, (byte)0);
-   }
-
-   public void method1390() {
-      this.method2109(1992664348);
    }
 
    public synchronized void keyPressed(KeyEvent var1) {
@@ -240,105 +224,9 @@ public final class class956 extends class352 implements KeyListener, FocusListen
       }
    }
 
-   public void method1397() {
-      this.method2109(-743392356);
-   }
-
-   public synchronized void method1391() {
-      this.field3610.method905((byte)1);
-
-      for(class492 var1 = (class492)this.field3614.method898(2122541864); var1 != null; var1 = (class492)this.field3614.method898(2131772835)) {
-         var1.field7789 = this.method2112(-1895745792) * -387842989;
-         if (var1.field7788 * 1490207653 == 0) {
-            if (!this.field3612[var1.field7790 * 122236875]) {
-               class492 var4 = new class492();
-               var4.field7788 = 0;
-               var4.field7792 = '\uffff';
-               var4.field7790 = var1.field7790 * 1;
-               var4.field7791 = var1.field7791 * 1L;
-               var4.field7789 = 1 * var1.field7789;
-               this.field3610.method897(var4, 1485790720);
-               this.field3612[var1.field7790 * 122236875] = true;
-            }
-
-            var1.field7788 = -985343910;
-            this.field3610.method897(var1, 1477219467);
-         } else if (1 == var1.field7788 * 1490207653) {
-            if (this.field3612[var1.field7790 * 122236875]) {
-               this.field3610.method897(var1, 1423768539);
-               this.field3612[var1.field7790 * 122236875] = false;
-            }
-         } else if (1490207653 * var1.field7788 == -1) {
-            for(int var2 = 0; var2 < 112; ++var2) {
-               if (this.field3612[var2]) {
-                  class492 var3 = new class492();
-                  var3.field7788 = -492671955;
-                  var3.field7792 = '\uffff';
-                  var3.field7790 = 666762723 * var2;
-                  var3.field7791 = 1L * var1.field7791;
-                  var3.field7789 = var1.field7789 * 1;
-                  this.field3610.method897(var3, 1448812234);
-                  this.field3612[var2] = false;
-               }
-            }
-         } else if (3 == var1.field7788 * 1490207653) {
-            this.field3610.method897(var1, 1538711449);
-         }
-      }
-
-   }
-
-   public synchronized void method1400() {
-      this.field3610.method905((byte)1);
-
-      for(class492 var1 = (class492)this.field3614.method898(2115108568); var1 != null; var1 = (class492)this.field3614.method898(2096117527)) {
-         var1.field7789 = this.method2112(-1945297664) * -387842989;
-         if (var1.field7788 * 1490207653 == 0) {
-            if (!this.field3612[var1.field7790 * 122236875]) {
-               class492 var4 = new class492();
-               var4.field7788 = 0;
-               var4.field7792 = '\uffff';
-               var4.field7790 = var1.field7790 * 1;
-               var4.field7791 = var1.field7791 * 1L;
-               var4.field7789 = 1 * var1.field7789;
-               this.field3610.method897(var4, 957532762);
-               this.field3612[var1.field7790 * 122236875] = true;
-            }
-
-            var1.field7788 = -985343910;
-            this.field3610.method897(var1, 568318912);
-         } else if (1 == var1.field7788 * 1490207653) {
-            if (this.field3612[var1.field7790 * 122236875]) {
-               this.field3610.method897(var1, 953828364);
-               this.field3612[var1.field7790 * 122236875] = false;
-            }
-         } else if (1490207653 * var1.field7788 == -1) {
-            for(int var2 = 0; var2 < 112; ++var2) {
-               if (this.field3612[var2]) {
-                  class492 var3 = new class492();
-                  var3.field7788 = -492671955;
-                  var3.field7792 = '\uffff';
-                  var3.field7790 = 666762723 * var2;
-                  var3.field7791 = 1L * var1.field7791;
-                  var3.field7789 = var1.field7789 * 1;
-                  this.field3610.method897(var3, 961213075);
-                  this.field3612[var2] = false;
-               }
-            }
-         } else if (3 == var1.field7788 * 1490207653) {
-            this.field3610.method897(var1, 287234432);
-         }
-      }
-
-   }
-
-   public boolean method1401(int var1) {
-      return var1 >= 0 && var1 < 112 ? this.field3612[var1] : false;
-   }
-
    public static void method2113(int var0, int var1, int var2) {
       try {
-         if (617004265 * class818.field4611 != 0) {
+         if (class818.field4611 != 0) {
             if (var0 < 0) {
                for(int var3 = 0; var3 < 16; ++var3) {
                   class639.field9810[var3] = var1;

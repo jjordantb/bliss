@@ -39,8 +39,8 @@ public class class345 extends class568 {
 
          var9 = var0 - 64;
          int var10 = var1 - 64;
-         int var11 = -1035599555 * class56.field2316;
-         int var12 = 1111664165 * class78.field1500;
+         int var11 = class56.field2316;
+         int var12 = class78.field1500;
          int var13;
          int var14;
          int var16;
@@ -52,10 +52,10 @@ public class class345 extends class568 {
             var13 = Integer.MAX_VALUE;
             var14 = Integer.MAX_VALUE;
             byte var15 = 10;
-            var16 = var3.field476 * -1331662251;
-            int var17 = 1517720743 * var3.field475;
-            int var18 = var3.field477 * -1900284579;
-            int var19 = 772610897 * var3.field478;
+            var16 = var3.field476;
+            int var17 = var3.field475;
+            int var18 = var3.field477;
+            int var19 = var3.field478;
 
             for(int var20 = var16 - var15; var20 <= var15 + var16; ++var20) {
                for(int var21 = var17 - var15; var21 <= var17 + var15; ++var21) {
@@ -139,14 +139,14 @@ public class class345 extends class568 {
 
    static final void method158(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class327 var3 = class491.method4412(var2);
          if (var3 == null) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
+            var0.field3161[++var0.field3156 - 1] = 0;
+            var0.field3161[++var0.field3156 - 1] = 0;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -2052483955 * var3.field20 - var3.field23 * 1364716801;
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 929385381 * var3.field19 - var3.field22 * 1345239131;
+            var0.field3161[++var0.field3156 - 1] = var3.field20 - var3.field23;
+            var0.field3161[++var0.field3156 - 1] = var3.field19 - var3.field22;
          }
 
       } catch (RuntimeException var4) {
@@ -154,7 +154,7 @@ public class class345 extends class568 {
       }
    }
 
-   static class417 method159(class907 var0, int var1) {
+   static class417 method159(InputStream var0, int var1) {
       try {
          return new class417(var0.method6367(1780611979), var0.method6367(2084327915), var0.method6367(1750072102), var0.method6367(1941131752), var0.method6390((byte)56), var0.method6371());
       } catch (RuntimeException var3) {

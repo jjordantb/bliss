@@ -56,7 +56,7 @@ public class class762 {
 
    static final void method2809(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-78);
          class131 var4 = class382.field1410[var2 >> 16];
          class643.method6119(var3, var4, var0, 2041063660);
@@ -67,7 +67,7 @@ public class class762 {
 
    static final void method2810(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var0.field3169.field9704 * 2125429757;
+         var0.field3161[++var0.field3156 - 1] = var0.field3169.field9704;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "fu.xs(" + ')');
       }
@@ -75,7 +75,7 @@ public class class762 {
 
    static final void method2811(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class321.field1066.method89(694163818);
+         var0.field3161[++var0.field3156 - 1] = class321.field1066.method89(694163818);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "fu.up(" + ')');
       }
@@ -84,12 +84,12 @@ public class class762 {
    static final boolean method2812(class190[][][] var0, int var1, int var2, int var3, boolean var4, int var5) {
       try {
          byte[][][] var6 = class730.field2697.method5284(1330177323);
-         byte var7 = var4 ? 1 : (byte)(-1953789277 * class730.field2758 & 255);
-         if (var7 == var6[1855729883 * class899.field9552][var2][var3]) {
+         byte var7 = var4 ? 1 : (byte)(class730.field2758 & 255);
+         if (var7 == var6[class899.field9552][var2][var3]) {
             return false;
          } else {
             class153 var8 = class730.field2697.method5296(-334353018);
-            if ((var8.field5406[class899.field9552 * 1855729883][var2][var3] & 4) == 0) {
+            if ((var8.field5406[class899.field9552][var2][var3] & 4) == 0) {
                return false;
             } else {
                byte var9 = 0;
@@ -97,7 +97,7 @@ public class class762 {
                class730.field2716[var9] = var2;
                int var27 = var9 + 1;
                class730.field2829[var9] = var3;
-               var6[1855729883 * class899.field9552][var2][var3] = var7;
+               var6[class899.field9552][var2][var3] = var7;
 
                while(var10 != var27) {
                   int var11 = class730.field2716[var10] & '\uffff';
@@ -107,7 +107,7 @@ public class class762 {
                   int var15 = class730.field2829[var10] >> 16 & 255;
                   var10 = var10 + 1 & 4095;
                   boolean var16 = false;
-                  if ((var8.field5406[1855729883 * class899.field9552][var11][var14] & 4) == 0) {
+                  if ((var8.field5406[class899.field9552][var11][var14] & 4) == 0) {
                      var16 = true;
                   }
 
@@ -117,13 +117,13 @@ public class class762 {
                   int var20;
                   if (var0 != null) {
                      label257:
-                     for(var18 = class899.field9552 * 1855729883 + 1; var18 <= 3; ++var18) {
+                     for(var18 = class899.field9552 + 1; var18 <= 3; ++var18) {
                         if (var0[var18] == null) {
                            if (var5 != -777988087) {
                               throw new IllegalStateException();
                            }
                         } else if ((var8.field5406[var18][var11][var14] & 8) == 0) {
-                           class476 var21;
+                           Animable var21;
                            int var23;
                            class190 var28;
                            class398 var29;
@@ -212,8 +212,7 @@ public class class762 {
                   }
 
                   if (var17) {
-                     int var31 = 1855729883 * class899.field9552;
-                     var18 = class730.field2697.method5317(-1611682495).field3862[var31 + 1].method3888(var11, var14, (byte)-36);
+                     var18 = class730.field2697.method5317(-1611682495).field3862[class899.field9552 + 1].method3888(var11, var14, (byte)-36);
                      if (class730.field2774[var1] < var18) {
                         class730.field2774[var1] = var18;
                      }
@@ -234,66 +233,66 @@ public class class762 {
                   }
 
                   if (!var16) {
-                     if (var11 >= 1 && var7 != var6[1855729883 * class899.field9552][var11 - 1][var14]) {
+                     if (var11 >= 1 && var7 != var6[class899.field9552][var11 - 1][var14]) {
                         class730.field2716[var27] = var11 - 1 | 1179648 | -754974720;
                         class730.field2829[var27] = var14 | 1245184;
                         var27 = var27 + 1 & 4095;
-                        var6[class899.field9552 * 1855729883][var11 - 1][var14] = var7;
+                        var6[class899.field9552][var11 - 1][var14] = var7;
                      }
 
                      ++var14;
                      if (var14 < class730.field2697.method5272(-1603394405)) {
-                        if (var11 - 1 >= 0 && var7 != var6[class899.field9552 * 1855729883][var11 - 1][var14] && (var8.field5406[1855729883 * class899.field9552][var11][var14] & 4) == 0 && (var8.field5406[class899.field9552 * 1855729883][var11 - 1][var14 - 1] & 4) == 0) {
+                        if (var11 - 1 >= 0 && var7 != var6[class899.field9552][var11 - 1][var14] && (var8.field5406[class899.field9552][var11][var14] & 4) == 0 && (var8.field5406[class899.field9552][var11 - 1][var14 - 1] & 4) == 0) {
                            class730.field2716[var27] = var11 - 1 | 1179648 | 1375731712;
                            class730.field2829[var27] = var14 | 1245184;
                            var27 = 1 + var27 & 4095;
-                           var6[class899.field9552 * 1855729883][var11 - 1][var14] = var7;
+                           var6[class899.field9552][var11 - 1][var14] = var7;
                         }
 
-                        if (var6[1855729883 * class899.field9552][var11][var14] != var7) {
+                        if (var6[class899.field9552][var11][var14] != var7) {
                            class730.field2716[var27] = var11 | 5373952 | 318767104;
                            class730.field2829[var27] = var14 | 5439488;
                            var27 = var27 + 1 & 4095;
-                           var6[1855729883 * class899.field9552][var11][var14] = var7;
+                           var6[class899.field9552][var11][var14] = var7;
                         }
 
-                        if (1 + var11 < class730.field2697.method5271(-1968040539) && var7 != var6[class899.field9552 * 1855729883][1 + var11][var14] && (var8.field5406[1855729883 * class899.field9552][var11][var14] & 4) == 0 && (var8.field5406[1855729883 * class899.field9552][1 + var11][var14 - 1] & 4) == 0) {
+                        if (1 + var11 < class730.field2697.method5271(-1968040539) && var7 != var6[class899.field9552][1 + var11][var14] && (var8.field5406[class899.field9552][var11][var14] & 4) == 0 && (var8.field5406[class899.field9552][1 + var11][var14 - 1] & 4) == 0) {
                            class730.field2716[var27] = var11 + 1 | 5373952 | -1845493760;
                            class730.field2829[var27] = var14 | 5439488;
                            var27 = 1 + var27 & 4095;
-                           var6[1855729883 * class899.field9552][var11 + 1][var14] = var7;
+                           var6[class899.field9552][var11 + 1][var14] = var7;
                         }
                      }
 
                      --var14;
-                     if (1 + var11 < class730.field2697.method5271(-1881854697) && var7 != var6[1855729883 * class899.field9552][var11 + 1][var14]) {
+                     if (1 + var11 < class730.field2697.method5271(-1881854697) && var7 != var6[class899.field9552][var11 + 1][var14]) {
                         class730.field2716[var27] = 1 + var11 | 9568256 | 1392508928;
                         class730.field2829[var27] = var14 | 9633792;
                         var27 = var27 + 1 & 4095;
-                        var6[class899.field9552 * 1855729883][var11 + 1][var14] = var7;
+                        var6[class899.field9552][var11 + 1][var14] = var7;
                      }
 
                      --var14;
                      if (var14 >= 0) {
-                        if (var11 - 1 >= 0 && var7 != var6[1855729883 * class899.field9552][var11 - 1][var14] && (var8.field5406[1855729883 * class899.field9552][var11][var14] & 4) == 0 && (var8.field5406[1855729883 * class899.field9552][var11 - 1][1 + var14] & 4) == 0) {
+                        if (var11 - 1 >= 0 && var7 != var6[class899.field9552][var11 - 1][var14] && (var8.field5406[class899.field9552][var11][var14] & 4) == 0 && (var8.field5406[class899.field9552][var11 - 1][1 + var14] & 4) == 0) {
                            class730.field2716[var27] = var11 - 1 | 13762560 | 301989888;
                            class730.field2829[var27] = var14 | 13828096;
                            var27 = var27 + 1 & 4095;
-                           var6[1855729883 * class899.field9552][var11 - 1][var14] = var7;
+                           var6[class899.field9552][var11 - 1][var14] = var7;
                         }
 
-                        if (var7 != var6[1855729883 * class899.field9552][var11][var14]) {
+                        if (var7 != var6[class899.field9552][var11][var14]) {
                            class730.field2716[var27] = var11 | 13762560 | -1828716544;
                            class730.field2829[var27] = var14 | 13828096;
                            var27 = var27 + 1 & 4095;
-                           var6[class899.field9552 * 1855729883][var11][var14] = var7;
+                           var6[class899.field9552][var11][var14] = var7;
                         }
 
-                        if (1 + var11 < class730.field2697.method5271(-1909288528) && var6[1855729883 * class899.field9552][var11 + 1][var14] != var7 && (var8.field5406[class899.field9552 * 1855729883][var11][var14] & 4) == 0 && (var8.field5406[class899.field9552 * 1855729883][var11 + 1][var14 + 1] & 4) == 0) {
+                        if (1 + var11 < class730.field2697.method5271(-1909288528) && var6[class899.field9552][var11 + 1][var14] != var7 && (var8.field5406[class899.field9552][var11][var14] & 4) == 0 && (var8.field5406[class899.field9552][var11 + 1][var14 + 1] & 4) == 0) {
                            class730.field2716[var27] = 1 + var11 | 9568256 | -771751936;
                            class730.field2829[var27] = var14 | 9633792;
                            var27 = var27 + 1 & 4095;
-                           var6[class899.field9552 * 1855729883][1 + var11][var14] = var7;
+                           var6[class899.field9552][1 + var11][var14] = var7;
                         }
                      }
                   }

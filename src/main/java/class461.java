@@ -16,43 +16,27 @@ public abstract class class461 {
 
    abstract long method3979(int var1);
 
-   abstract long method3980();
-
    abstract int method3981(long var1);
-
-   abstract void method3982();
-
-   abstract void method3983();
 
    abstract long method3984(int var1);
 
-   abstract long method3985();
-
-   abstract long method3986();
-
-   abstract long method3987();
-
-   abstract void method3988();
-
-   abstract int method3989(long var1);
-
    static final void method3990(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[681479919 * var0.field3156 + 1];
-         if (class923.field10295.field3388 != null) {
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1];
+         if (class923.local.field3388 != null) {
             int var4;
             for(var4 = 0; var4 < class354.field2137.length; ++var4) {
                if (var2 == class354.field2137[var4]) {
-                  class923.field10295.field3388.method1636(var4, var3, class662.field9736, -1907587275);
+                  class923.local.field3388.method1636(var4, var3, class662.field9736, -1907587275);
                   return;
                }
             }
 
             for(var4 = 0; var4 < class354.field2130.length; ++var4) {
                if (class354.field2130[var4] == var2) {
-                  class923.field10295.field3388.method1636(var4, var3, class662.field9736, 909710113);
+                  class923.local.field3388.method1636(var4, var3, class662.field9736, 909710113);
                   break;
                }
             }
@@ -68,9 +52,9 @@ public abstract class class461 {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
          if (var3.field953 == null) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
+            var0.field3157[++var0.field3158 - 1] = "";
          } else {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var3.field953;
+            var0.field3157[++var0.field3158 - 1] = var3.field953;
          }
 
       } catch (RuntimeException var4) {
@@ -80,11 +64,11 @@ public abstract class class461 {
 
    static final void method3992(class564 var0, class131 var1, class744 var2, byte var3) {
       try {
-         var2.field3156 -= -783761378;
-         var0.field893 = -1609060375 * var2.field3161[var2.field3156 * 681479919];
-         var0.field894 = -1638942269 * var2.field3161[1 + 681479919 * var2.field3156];
+         var2.field3156 -= 2;
+         var0.field893 = var2.field3161[var2.field3156];
+         var0.field894 = var2.field3161[1 + var2.field3156];
          class814.method2932(var0, -1480345787);
-         if (var0.field869 * -1215239439 == 0) {
+         if (var0.field869 == 0) {
             class948.method1938(var1, var0, false, 112223880);
          }
 
@@ -107,40 +91,40 @@ public abstract class class461 {
       try {
          boolean var1 = true;
          if (class417.field9582 == null) {
-            if (class562.field827.method3280(class370.field1097 * 2131310071, -457216440)) {
-               class417.field9582 = class922.method6234(class562.field827, class370.field1097 * 2131310071);
+            if (class562.field827.method3280(class370.field1097, -457216440)) {
+               class417.field9582 = class922.method6234(class562.field827, class370.field1097);
             } else {
                var1 = false;
             }
          }
 
          if (class968.field2552 == null) {
-            if (class562.field827.method3280(1636425877 * class228.field8219, -457216440)) {
-               class968.field2552 = class922.method6234(class562.field827, 1636425877 * class228.field8219);
+            if (class562.field827.method3280(class228.field8219, -457216440)) {
+               class968.field2552 = class922.method6234(class562.field827, class228.field8219);
             } else {
                var1 = false;
             }
          }
 
          if (class5.field4945 == null) {
-            if (class562.field827.method3280(1475733439 * class348.field221, -457216440)) {
-               class5.field4945 = class922.method6234(class562.field827, class348.field221 * 1475733439);
+            if (class562.field827.method3280(class348.field221, -457216440)) {
+               class5.field4945 = class922.method6234(class562.field827, class348.field221);
             } else {
                var1 = false;
             }
          }
 
          if (class228.field8221 == null) {
-            if (class526.field3666.method3280(class228.field8213 * -227610265, -457216440)) {
-               class228.field8221 = class213.method3814(class526.field3666, class228.field8213 * -227610265, -1873768956);
+            if (class526.field3666.method3280(class228.field8213, -457216440)) {
+               class228.field8221 = class213.method3814(class526.field3666, class228.field8213, -1873768956);
             } else {
                var1 = false;
             }
          }
 
          if (class228.field8214 == null) {
-            if (class562.field827.method3280(-227610265 * class228.field8213, -457216440)) {
-               class228.field8214 = class922.method6236(class562.field827, -227610265 * class228.field8213);
+            if (class562.field827.method3280(class228.field8213, -457216440)) {
+               class228.field8214 = class922.method6236(class562.field827, class228.field8213);
             } else {
                var1 = false;
             }

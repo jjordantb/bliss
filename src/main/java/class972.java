@@ -19,10 +19,10 @@ public class class972 {
 
    public static void method1773(int var0, int var1, int var2, int var3, int var4) {
       try {
-         class381.field1416 = var0 * 1418334925;
-         class381.field1413 = 728613823 * var2;
-         class381.field1414 = var1 * 1131449449;
-         class381.field1415 = var3 * -879501875;
+         class381.field1416 = var0;
+         class381.field1413 = var2;
+         class381.field1414 = var1;
+         class381.field1415 = var3;
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "tc.f(" + ')');
       }
@@ -30,7 +30,7 @@ public class class972 {
 
    static final void method1774(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-30);
          class131 var4 = class382.field1410[var2 >> 16];
          class221.method4036(var3, var4, var0, (short)255);

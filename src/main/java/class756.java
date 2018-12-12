@@ -13,11 +13,11 @@ public class class756 {
       this.field4323 = var3;
       this.field4327 = var4;
       if (this.field4325 != null) {
-         this.field4322 = this.field4325.method3286(1, -331738803) * -1970727647;
+         this.field4322 = this.field4325.method3286(1, -331738803);
       }
 
       if (this.field4323 != null) {
-         this.field4324 = this.field4323.method3286(1, 1090973479) * 1286548437;
+         this.field4324 = this.field4323.method3286(1, 1090973479);
       }
 
    }
@@ -53,7 +53,7 @@ public class class756 {
             var3 = new class282();
             var3.field10615 = this;
             if (var4 != null) {
-               var3.method6649(new class907(var4), 1219453152);
+               var3.method6649(new InputStream(var4), 1219453152);
             }
 
             if (var1 >= 32768) {
@@ -84,46 +84,46 @@ public class class756 {
 
    static void method2715(class848 var0, class478 var1, int var2, int var3, int var4, int var5, int var6) {
       try {
-         if (class740.field3198 * -1289394455 < 100) {
+         if (class740.field3198 < 100) {
             class423.method5713(var0, var1, (byte)-95);
          }
 
          var0.method4986(var2, var3, var2 + var4, var5 + var3);
          int var8;
          int var9;
-         if (class740.field3198 * -1289394455 < 100) {
+         if (class740.field3198 < 100) {
             byte var7 = 20;
             var8 = var2 + var4 / 2;
             var9 = var5 / 2 + var3 - 18 - var7;
             var0.method4984(var2, var3, var4, var5, -16777216, 0);
-            var0.method4838(var8 - 152, var9, 304, 34, class730.field2682[745003679 * class730.field2953].getRGB(), 0);
-            var0.method4984(var8 - 150, var9 + 2, class740.field3198 * 426783931, 30, class730.field2670[745003679 * class730.field2953].getRGB(), 0);
-            class501.field3182.method1681(class814.field4812.method2927(class321.field1066, -875414210), var8, var9 + var7, class730.field2672[class730.field2953 * 745003679].getRGB(), -1, -863370132);
+            var0.method4838(var8 - 152, var9, 304, 34, class730.field2682[class730.field2953].getRGB(), 0);
+            var0.method4984(var8 - 150, var9 + 2, class740.field3198 * 3, 30, class730.field2670[class730.field2953].getRGB(), 0);
+            class501.field3182.method1681(class814.field4812.method2927(class321.field1066, -875414210), var8, var9 + var7, class730.field2672[class730.field2953].getRGB(), -1, -863370132);
          } else {
-            int var18 = 1196508279 * class896.field9358 - (int)((float)var4 / class740.field7808);
-            var8 = 1882038855 * class747.field4148 + (int)((float)var5 / class740.field7808);
-            var9 = (int)((float)var4 / class740.field7808) + class896.field9358 * 1196508279;
-            int var10 = class747.field4148 * 1882038855 - (int)((float)var5 / class740.field7808);
-            class596.field2146 = (1196508279 * class896.field9358 - (int)((float)var4 / class740.field7808)) * 1478623195;
-            class510.field4165 = (class747.field4148 * 1882038855 - (int)((float)var5 / class740.field7808)) * -1415233655;
-            class740.field3199 = (int)((float)(2 * var4) / class740.field7808) * -830037779;
-            class162.field6603 = (int)((float)(var5 * 2) / class740.field7808) * 827686411;
-            class740.method4416(var18 + class740.field7820, var8 + class740.field7813, class740.field7820 + var9, var10 + class740.field7813, var2, var3, var4 + var2, 1 + var3 + var5);
+            int var18 = class896.field9358 - (int)((float)var4 / class491.field7808);
+            var8 = class747.field4148 + (int)((float)var5 / class491.field7808);
+            var9 = (int)((float)var4 / class491.field7808) + class896.field9358;
+            int var10 = class747.field4148 - (int)((float)var5 / class491.field7808);
+            class596.field2146 = class896.field9358 - (int)((float)var4 / class491.field7808);
+            class510.field4165 = class747.field4148 - (int)((float)var5 / class491.field7808);
+            class740.field3199 = (int)((float)(2 * var4) / class491.field7808);
+            class162.field6603 = (int)((float)(var5 * 2) / class491.field7808);
+            class740.method4416(var18 + class491.field7820, var8 + class491.field7813, class491.field7820 + var9, var10 + class491.field7813, var2, var3, var4 + var2, 1 + var3 + var5);
             class740.method4405(var0);
             class373 var11 = class740.method4409(var0);
             class335.method41(var0, var11, 0, 0, 1029726200);
-            if (class10.field6652 * -1983068885 > 0) {
-               class622.field9010 -= -1077128129;
-               if (class622.field9010 * -1581933633 == 0) {
-                  class10.field6652 -= -63057533;
-                  class622.field9010 = -67726100;
+            if (class10.field6652 > 0) {
+               --class622.field9010;
+               if (class622.field9010 == 0) {
+                  --class10.field6652;
+                  class622.field9010 = 20;
                }
             }
 
             if (class730.field2648) {
                int var12 = var2 + var4 - 5;
                int var13 = var5 + var3 - 8;
-               class958.field3479.method1662("Fps:" + 914379507 * class69.field1807, var12, var13, 16776960, -1, (byte)-35);
+               class958.field3479.method1662("Fps:" + class69.field1807, var12, var13, 16776960, -1, (byte)-35);
                var13 -= 15;
                Runtime var14 = Runtime.getRuntime();
                int var15 = (int)((var14.totalMemory() - var14.freeMemory()) / 1024L);
@@ -144,7 +144,7 @@ public class class756 {
 
    static class327 method2716(class180 var0, int var1, int var2, int var3) {
       try {
-         class907 var4 = new class907(var0.method3285(var1, var2, (byte)3));
+         InputStream var4 = new InputStream(var0.method3285(var1, var2, (byte)3));
          class327 var5 = new class327(var2, var4.method6379(-1014876746), var4.method6379(-346433981), var4.method6420((byte)-81), var4.method6420((byte)27), var4.method6371() == 1, var4.method6371(), var4.method6371());
          int var6 = var4.method6371();
 

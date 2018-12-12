@@ -79,7 +79,7 @@ public class class432 {
 
                   for(int var19 = var12; var19 < var13; ++var19) {
                      if (var19 - var3 >= -var4 && var19 - var3 <= var4) {
-                        int var20 = var19 * this.field7474.field7226 * -506105871 + var17;
+                        int var20 = var19 * this.field7474.field7226 + var17;
 
                         for(int var21 = var17; var21 < var18; ++var21) {
                            if (var21 - var2 >= -var4 && var21 - var2 <= var4 && var5[var21 - var2 + var4][var19 - var3 + var4]) {
@@ -337,12 +337,12 @@ public class class432 {
    class432(class325 var1, class894 var2) {
       this.field7478 = var1;
       this.field7474 = var2;
-      this.field7475 = 2 + (this.field7474.field7226 * -506105871 * this.field7474.field7227 * -1212653763 >> this.field7478.field757);
-      this.field7473 = 2 + (this.field7474.field7225 * -1148794921 * this.field7474.field7227 * -1212653763 >> this.field7478.field757);
+      this.field7475 = 2 + (this.field7474.field7226 * this.field7474.field7227 >> this.field7478.field757);
+      this.field7473 = 2 + (this.field7474.field7225 * this.field7474.field7227 >> this.field7478.field757);
       this.field7479 = new byte[this.field7475 * this.field7473];
-      this.field7480 = 7 + this.field7478.field757 - this.field7474.field7228 * -2137349879;
-      this.field7477 = this.field7474.field7226 * -506105871 >> this.field7480;
-      this.field7476 = this.field7474.field7225 * -1148794921 >> this.field7480;
+      this.field7480 = 7 + this.field7478.field757 - this.field7474.field7228;
+      this.field7477 = this.field7474.field7226 >> this.field7480;
+      this.field7476 = this.field7474.field7225 >> this.field7480;
    }
 
    boolean method4247(class770 var1, int var2, int var3) {

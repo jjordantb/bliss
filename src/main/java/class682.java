@@ -34,7 +34,7 @@ public class class682 extends class345 {
 
    void method4336(int var1) {
       try {
-         this.field209 = (this.field209 * -5533549728640346679L & Long.MIN_VALUE | class27.method3468((byte)1) + 500L) * 1476940603538232441L;
+         super.field209 = super.field209 & Long.MIN_VALUE | class27.method3468((byte)1) + 500L;
          field7684.method2704(this, (byte)-90);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ais.bf(" + ')');
@@ -42,12 +42,12 @@ public class class682 extends class345 {
    }
 
    class682(int var1, long var2) {
-      this.field641 = ((long)var1 << 56 | var2) * 4191220306876042991L;
+      super.field641 = (long)var1 << 56 | var2;
    }
 
    int method4337(int var1) {
       try {
-         return (int)(this.field641 * 7051297995265073167L >>> 56 & 255L);
+         return (int)(super.field641 >>> 56 & 255L);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ais.by(" + ')');
       }
@@ -55,7 +55,7 @@ public class class682 extends class345 {
 
    long method4338(int var1) {
       try {
-         return 7051297995265073167L * this.field641 & 72057594037927935L;
+         return super.field641 & 72057594037927935L;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ais.bm(" + ')');
       }
@@ -63,7 +63,7 @@ public class class682 extends class345 {
 
    long method4339(int var1) {
       try {
-         return this.field209 * -5533549728640346679L & Long.MAX_VALUE;
+         return super.field209 & Long.MAX_VALUE;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ais.bc(" + ')');
       }
@@ -71,7 +71,7 @@ public class class682 extends class345 {
 
    void method4340(byte var1) {
       try {
-         this.field209 = (this.field209 * -5533549728640346679L | Long.MIN_VALUE) * 1476940603538232441L;
+         super.field209 |= Long.MIN_VALUE;
          if (this.method4339(1430514987) == 0L) {
             field7715.method2704(this, (byte)-59);
          }

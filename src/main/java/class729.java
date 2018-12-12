@@ -15,10 +15,6 @@ public class class729 extends class676 implements class265 {
    boolean field2508;
    boolean field2509;
 
-   boolean method2191() {
-      return this.field2499;
-   }
-
    boolean method2206(byte var1) {
       try {
          if (this.field2500 != null) {
@@ -62,16 +58,16 @@ public class class729 extends class676 implements class265 {
 
    class486 method1699(class848 var1, int var2, boolean var3, byte var4) {
       try {
-         class50 var5 = this.field2505.method4713(1940788231 * this.field2503);
+         ObjectDefinition var5 = this.field2505.method4713(this.field2503);
          class454 var6;
          class454 var7;
          if (this.field2508) {
-            var6 = this.field3638.field3866[this.field3640];
-            var7 = this.field3638.field3864[0];
+            var6 = super.field3638.field3866[super.field3640];
+            var7 = super.field3638.field3864[0];
          } else {
-            var6 = this.field3638.field3864[this.field3640];
-            if (this.field3640 < 3) {
-               var7 = this.field3638.field3864[this.field3640 + 1];
+            var6 = super.field3638.field3864[super.field3640];
+            if (super.field3640 < 3) {
+               var7 = super.field3638.field3864[super.field3640 + 1];
             } else {
                var7 = null;
             }
@@ -99,16 +95,12 @@ public class class729 extends class676 implements class265 {
          } else {
             class135 var3 = this.method1521();
             class192 var4 = class221.method4033(this.field2507, 1739349745);
-            this.field2500.method5965(var3, this.field3642[0], 0);
+            this.field2500.method5965(var3, super.field3642[0], 0);
             return var4;
          }
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "wg.bo(" + ')');
       }
-   }
-
-   boolean method2189() {
-      return this.field2500 != null ? this.field2500.method5989() : false;
    }
 
    boolean method2173(int var1) {
@@ -119,7 +111,7 @@ public class class729 extends class676 implements class265 {
       }
    }
 
-   void method2162(class848 var1, class963 var2, int var3, int var4, int var5, boolean var6, int var7) {
+   void method2162(class848 var1, Interactable var2, int var3, int var4, int var5, boolean var6, int var7) {
       try {
          if (var2 instanceof class729) {
             class729 var8 = (class729)var2;
@@ -150,10 +142,6 @@ public class class729 extends class676 implements class265 {
       }
    }
 
-   public int method4554() {
-      return this.field2506;
-   }
-
    public int method4548(int var1) {
       try {
          return this.field2506;
@@ -170,63 +158,6 @@ public class class729 extends class676 implements class265 {
       }
    }
 
-   boolean method2158() {
-      return this.field2500 != null ? this.field2500.method5989() : false;
-   }
-
-   class192 method2177(class848 var1) {
-      if (this.field2500 == null) {
-         return null;
-      } else {
-         class135 var2 = this.method1521();
-         class192 var3 = class221.method4033(this.field2507, 1174280404);
-         this.field2500.method5965(var2, this.field3642[0], 0);
-         return var3;
-      }
-   }
-
-   boolean method2190() {
-      return this.field2500 != null ? this.field2500.method5989() : false;
-   }
-
-   void method2184() {
-      this.field2499 = false;
-      if (this.field2500 != null) {
-         this.field2500.method5947(this.field2500.method5948() & -65537);
-      }
-
-   }
-
-   public int method4564() {
-      return 1940788231 * this.field2503;
-   }
-
-   public int method4555() {
-      return this.field2506;
-   }
-
-   public void method4559(class848 var1) {
-      Object var2 = null;
-      class770 var4;
-      if (this.field2501 == null && this.field2509) {
-         class486 var3 = this.method1699(var1, 262144, true, (byte)-75);
-         var4 = (class770)(var3 != null ? var3.field8555 : null);
-      } else {
-         var4 = this.field2501;
-         this.field2501 = null;
-      }
-
-      class32 var5 = this.method1511().field7637;
-      if (var4 != null) {
-         this.field3638.method2441(var4, this.field3640, (int)var5.field5296, (int)var5.field5299, (boolean[])null, 1555439691);
-      }
-
-   }
-
-   public int method4561() {
-      return this.field2504;
-   }
-
    boolean method2157(class848 var1, int var2, int var3, byte var4) {
       try {
          class879 var5 = this.method1698(var1, 131072, -546231639);
@@ -241,91 +172,22 @@ public class class729 extends class676 implements class265 {
       }
    }
 
-   public void method4553() {
-      if (this.field2500 != null) {
-         this.field2500.method6093();
-      }
-
-   }
-
-   public class719 method2174(class848 var1) {
-      class32 var2 = this.method1511().field7637;
-      if (this.field2502 == null) {
-         this.field2502 = class905.method6344((int)var2.field5296, (int)var2.field5300, (int)var2.field5299, this.method1698(var1, 0, -541574626), 2030586614);
-      }
-
-      return this.field2502;
-   }
-
-   public void method4547(class848 var1) {
-      Object var2 = null;
-      class770 var4;
-      if (this.field2501 == null && this.field2509) {
-         class486 var3 = this.method1699(var1, 262144, true, (byte)-35);
-         var4 = (class770)(var3 != null ? var3.field8555 : null);
-      } else {
-         var4 = this.field2501;
-         this.field2501 = null;
-      }
-
-      class32 var5 = this.method1511().field7637;
-      if (var4 != null) {
-         this.field3638.method2449(var4, this.field3640, (int)var5.field5296, (int)var5.field5299, (boolean[])null, 932138106);
-      }
-
-   }
-
    public int method4551(byte var1) {
       try {
-         return 1940788231 * this.field2503;
+         return this.field2503;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "wg.a(" + ')');
       }
    }
 
-   public void method4563(class848 var1) {
-      Object var2 = null;
-      class770 var4;
-      if (this.field2501 == null && this.field2509) {
-         class486 var3 = this.method1699(var1, 262144, true, (byte)-118);
-         var4 = (class770)(var3 != null ? var3.field8555 : null);
-      } else {
-         var4 = this.field2501;
-         this.field2501 = null;
-      }
-
-      class32 var5 = this.method1511().field7637;
-      if (var4 != null) {
-         this.field3638.method2441(var4, this.field3640, (int)var5.field5296, (int)var5.field5299, (boolean[])null, 1480402841);
-      }
-
-   }
-
-   public class719 method2175(class848 var1) {
-      class32 var2 = this.method1511().field7637;
-      if (this.field2502 == null) {
-         this.field2502 = class905.method6344((int)var2.field5296, (int)var2.field5300, (int)var2.field5299, this.method1698(var1, 0, -2141517966), 2144329713);
-      }
-
-      return this.field2502;
-   }
-
-   boolean method2160() {
-      if (this.field2500 != null) {
-         return !this.field2500.method6036();
-      } else {
-         return true;
-      }
-   }
-
-   public class729(class545 var1, class848 var2, class240 var3, class50 var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12, boolean var13) {
+   public class729(class545 var1, class848 var2, class240 var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12, boolean var13) {
       super(var1, var7, var8, var9, var5, var6, class606.method4793(var11, var12, 800544861));
       this.field2505 = var3;
-      this.field2503 = var4.field2197 * 584655573;
+      this.field2503 = var4.field2197;
       this.field2508 = var10;
       this.field2506 = (byte)var11;
       this.field2504 = (byte)var12;
-      this.field2507 = 1532834983 * var4.field2214 != 0 && !var10;
+      this.field2507 = var4.field2214 != 0 && !var10;
       this.field2499 = var13;
       this.field2509 = var2.method4916() && var4.field2265 && !this.field2508 && class615.field8903.field9147.method5182(57385915) != 0;
       int var14 = 2048;
@@ -345,20 +207,12 @@ public class class729 extends class676 implements class265 {
             this.field2500 = this.field2500.method6017((byte)0, var14, false);
             if (var4.field2273) {
                class923 var16 = class730.field2697.method5274(-2131923625);
-               this.field2500.method5987(var16.field10290 * 1599271859, 1630923113 * var16.field10291, var16.field10292 * -1560648831, var16.field10293 * -57569897);
+               this.field2500.method5987(var16.field10290, var16.field10291, var16.field10292, var16.field10293);
             }
          }
       }
 
       this.method2169(1, -1008898449);
-   }
-
-   boolean method2181() {
-      if (this.field2500 != null) {
-         return !this.field2500.method6036();
-      } else {
-         return true;
-      }
    }
 
    public void method4556(class848 var1, int var2) {
@@ -375,86 +229,12 @@ public class class729 extends class676 implements class265 {
 
          class32 var7 = this.method1511().field7637;
          if (var5 != null) {
-            this.field3638.method2441(var5, this.field3640, (int)var7.field5296, (int)var7.field5299, (boolean[])null, 580390895);
+            super.field3638.method2441(var5, super.field3640, (int)var7.field5296, (int)var7.field5299, (boolean[])null, 580390895);
          }
 
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "wg.d(" + ')');
       }
-   }
-
-   boolean method2172() {
-      if (this.field2500 != null) {
-         return !this.field2500.method6036();
-      } else {
-         return true;
-      }
-   }
-
-   void method2195(class848 var1, class963 var2, int var3, int var4, int var5, boolean var6) {
-      if (var2 instanceof class729) {
-         class729 var7 = (class729)var2;
-         if (this.field2500 != null && var7.field2500 != null) {
-            this.field2500.method5994(var7.field2500, var3, var4, var5, var6);
-         }
-      } else if (var2 instanceof class0) {
-         class0 var8 = (class0)var2;
-         if (this.field2500 != null && var8.field4953 != null) {
-            this.field2500.method5994(var8.field4953, var3, var4, var5, var6);
-         }
-      }
-
-   }
-
-   void method2178(class848 var1) {
-   }
-
-   void method2180(class848 var1) {
-   }
-
-   boolean method2179(class848 var1, int var2, int var3) {
-      class879 var4 = this.method1698(var1, 131072, -1405605049);
-      if (var4 != null) {
-         class135 var5 = this.method1521();
-         return var4.method6097(var2, var3, var5, false, 0);
-      } else {
-         return false;
-      }
-   }
-
-   boolean method2192(class848 var1, int var2, int var3) {
-      class879 var4 = this.method1698(var1, 131072, -189727936);
-      if (var4 != null) {
-         class135 var5 = this.method1521();
-         return var4.method6097(var2, var3, var5, false, 0);
-      } else {
-         return false;
-      }
-   }
-
-   boolean method2159(class848 var1, int var2, int var3) {
-      class879 var4 = this.method1698(var1, 131072, -673650245);
-      if (var4 != null) {
-         class135 var5 = this.method1521();
-         return var4.method6097(var2, var3, var5, false, 0);
-      } else {
-         return false;
-      }
-   }
-
-   void method2182(class848 var1, class963 var2, int var3, int var4, int var5, boolean var6) {
-      if (var2 instanceof class729) {
-         class729 var7 = (class729)var2;
-         if (this.field2500 != null && var7.field2500 != null) {
-            this.field2500.method5994(var7.field2500, var3, var4, var5, var6);
-         }
-      } else if (var2 instanceof class0) {
-         class0 var8 = (class0)var2;
-         if (this.field2500 != null && var8.field4953 != null) {
-            this.field2500.method5994(var8.field4953, var3, var4, var5, var6);
-         }
-      }
-
    }
 
    public void method4552(class848 var1, int var2) {
@@ -471,24 +251,12 @@ public class class729 extends class676 implements class265 {
 
          class32 var7 = this.method1511().field7637;
          if (var5 != null) {
-            this.field3638.method2449(var5, this.field3640, (int)var7.field5296, (int)var7.field5299, (boolean[])null, 2001227588);
+            super.field3638.method2449(var5, super.field3640, (int)var7.field5296, (int)var7.field5299, (boolean[])null, 2001227588);
          }
 
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "wg.k(" + ')');
       }
-   }
-
-   boolean method2194() {
-      return this.field2499;
-   }
-
-   void method2185() {
-      this.field2499 = false;
-      if (this.field2500 != null) {
-         this.field2500.method5947(this.field2500.method5948() & -65537);
-      }
-
    }
 
    public class719 method2165(class848 var1, byte var2) {
@@ -507,44 +275,6 @@ public class class729 extends class676 implements class265 {
    void method2164(class848 var1, int var2) {
    }
 
-   public int method2188() {
-      return this.field2500 != null ? this.field2500.method5976() : 0;
-   }
-
-   boolean method2176() {
-      return this.field2500 != null ? this.field2500.method5989() : false;
-   }
-
-   boolean method2207() {
-      return this.field2499;
-   }
-
-   boolean method2156() {
-      return this.field2500 != null ? this.field2500.method5989() : false;
-   }
-
-   public void method4562(class848 var1) {
-      Object var2 = null;
-      class770 var4;
-      if (this.field2501 == null && this.field2509) {
-         class486 var3 = this.method1699(var1, 262144, true, (byte)-118);
-         var4 = (class770)(var3 != null ? var3.field8555 : null);
-      } else {
-         var4 = this.field2501;
-         this.field2501 = null;
-      }
-
-      class32 var5 = this.method1511().field7637;
-      if (var4 != null) {
-         this.field3638.method2441(var4, this.field3640, (int)var5.field5296, (int)var5.field5299, (boolean[])null, 310306064);
-      }
-
-   }
-
-   public boolean method4560() {
-      return this.field2509;
-   }
-
    public void method4550(byte var1) {
       try {
          if (this.field2500 != null) {
@@ -554,22 +284,6 @@ public class class729 extends class676 implements class265 {
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "wg.p(" + ')');
       }
-   }
-
-   public int method2187() {
-      return this.field2500 != null ? this.field2500.method5976() : 0;
-   }
-
-   boolean method2193() {
-      return this.field2499;
-   }
-
-   public int method4557() {
-      return this.field2504;
-   }
-
-   public int method2186() {
-      return this.field2500 != null ? this.field2500.method5976() : 0;
    }
 
    public static boolean method1700(boolean var0, int var1) {
@@ -601,12 +315,12 @@ public class class729 extends class676 implements class265 {
 
    static final void method1701(class744 var0, int var1) {
       try {
-         int var2 = var0.field3174[var0.field3176 * 1883543357];
+         int var2 = var0.field3174[var0.field3176];
          String var3 = (String)class166.field6896[var2];
          if (var3 == null) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
+            var0.field3157[++var0.field3158 - 1] = "";
          } else {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var3;
+            var0.field3157[++var0.field3158 - 1] = var3;
          }
 
       } catch (RuntimeException var4) {
@@ -616,9 +330,9 @@ public class class729 extends class676 implements class265 {
 
    static final void method1702(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class718 var3 = class333.field139.method5091(var2, -1520948528);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3.field3498 * 1023000389;
+         var0.field3161[++var0.field3156 - 1] = var3.field3498;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "wg.amx(" + ')');
       }
@@ -639,11 +353,11 @@ public class class729 extends class676 implements class265 {
 
    static void method1704(int var0, int var1, int var2, int var3, int var4, int var5) {
       try {
-         class484.method4769(class534.field1412[var2++], var0, var1, var4, 718097597);
-         class484.method4769(class534.field1412[var3--], var0, var1, var4, 1200953445);
+         class484.method4769(class381.field1412[var2++], var0, var1, var4, 718097597);
+         class484.method4769(class381.field1412[var3--], var0, var1, var4, 1200953445);
 
          for(int var6 = var2; var6 <= var3; ++var6) {
-            int[] var7 = class534.field1412[var6];
+            int[] var7 = class381.field1412[var6];
             var7[var0] = var7[var1] = var4;
          }
 

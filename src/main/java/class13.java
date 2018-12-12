@@ -363,13 +363,13 @@ public class class13 extends class848 {
 
    void method4797(int var1, int var2) throws class937 {
       try {
-         this.field8594.method2516();
+         super.field8594.method2516();
       } catch (Exception var4) {
          ;
       }
 
-      if (this.field8581 != null) {
-         this.field8581.method4627(185441622);
+      if (super.field8581 != null) {
+         super.field8581.method4627(185441622);
       }
 
    }
@@ -471,11 +471,11 @@ public class class13 extends class848 {
    }
 
    public int[] method5051(int var1, int var2, int var3, int var4) {
-      if (this.field8574 == null) {
+      if (super.field8574 == null) {
          return null;
       } else {
          int[] var5 = new int[var3 * var4];
-         int var6 = this.field8574.method2493();
+         int var6 = super.field8574.method2493();
 
          for(int var7 = 0; var7 < var4; ++var7) {
             OpenGL.glReadPixelsi(var1, var6 - var2 - var7 - 1, var3, 1, 32993, this.field6873, var5, var7 * var3);
@@ -486,7 +486,7 @@ public class class13 extends class848 {
    }
 
    public void method5046() {
-      if (this.field6872 && this.field8574 != null) {
+      if (this.field6872 && super.field8574 != null) {
          int var1 = this.field6768;
          int var2 = this.field6711;
          int var3 = this.field6796;
@@ -514,7 +514,7 @@ public class class13 extends class848 {
          OpenGL.glMatrixMode(5888);
          OpenGL.glLoadIdentity();
          OpenGL.glRasterPos2i(0, 0);
-         OpenGL.glCopyPixels(0, 0, this.field8574.method2481(), this.field8574.method2493(), 6144);
+         OpenGL.glCopyPixels(0, 0, super.field8574.method2481(), super.field8574.method2493(), 6144);
          OpenGL.glFlush();
          OpenGL.glReadBuffer(1029);
          OpenGL.glDrawBuffer(1029);
@@ -580,22 +580,6 @@ public class class13 extends class848 {
       OpenGL.glEnd();
    }
 
-   public boolean method4967() {
-      return true;
-   }
-
-   public void method4948(int var1, int var2, int var3, int var4, int var5) {
-      this.method3633();
-      this.method3649(var5);
-      float var6 = (float)var1 + 0.35F;
-      float var7 = (float)var2 + 0.35F;
-      OpenGL.glColor4ub((byte)(var4 >> 16), (byte)(var4 >> 8), (byte)var4, (byte)(var4 >> 24));
-      OpenGL.glBegin(1);
-      OpenGL.glVertex2f(var6, var7);
-      OpenGL.glVertex2f(var6, var7 + (float)var3);
-      OpenGL.glEnd();
-   }
-
    final void method3609(boolean var1) {
       if (var1 != this.field6825) {
          this.field6825 = var1;
@@ -603,10 +587,6 @@ public class class13 extends class848 {
          this.field6767 &= -16;
       }
 
-   }
-
-   public boolean method4985() {
-      return true;
    }
 
    public void method4845(int var1, int var2, int var3, int var4, int var5, int var6, class23 var7, int var8, int var9) {
@@ -854,7 +834,7 @@ public class class13 extends class848 {
             var2.method2469(0.0F);
          }
 
-         this.field6724 = this.method3627(20, var2.field10375, var2.field10376 * 385051775, false);
+         this.field6724 = this.method3627(20, var2.field10375, var2.field10376, false);
          this.field6779 = new class847(this.field6724, 5126, 3, 0);
          this.field6880 = new class847(this.field6724, 5126, 2, 12);
          this.field6744.method4284(this);
@@ -906,7 +886,7 @@ public class class13 extends class848 {
    }
 
    static int method3611(class264 var0) {
-      switch(var0.field8200 * -976336893) {
+      switch(var0.field8200) {
       case 1:
          return 6409;
       case 2:
@@ -940,16 +920,12 @@ public class class13 extends class848 {
 
    final synchronized void method3612(int var1, int var2) {
       class722 var3 = new class722(var2);
-      var3.field641 = (long)var1 * 4191220306876042991L;
+      var3.field641 = (long)var1;
       this.field6760.method1282(var3, 91285961);
    }
 
    public int method4817(int var1, int var2) {
       return var1 | var2;
-   }
-
-   public class454 method4979(int var1, int var2, int[][] var3, int[][] var4, int var5, int var6, int var7) {
-      return new class291(this, var6, var7, var1, var2, var3, var4, var5);
    }
 
    public class344 method4860() {
@@ -990,12 +966,6 @@ public class class13 extends class848 {
       this.field6833 = false;
    }
 
-   public void method5037(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
-      OpenGL.glLineWidth((float)var6);
-      this.method4934(var1, var2, var3, var4, var5, var7);
-      OpenGL.glLineWidth(1.0F);
-   }
-
    public void method5059(int var1, int var2, int var3, int var4) {
       this.field6802 = var1;
       this.field6881 = var2;
@@ -1017,79 +987,22 @@ public class class13 extends class848 {
       OpenGL.glLightfv(16385, 4609, field6850, 0);
    }
 
-   public void method4941(int var1, int var2, int var3, int var4, int var5, int var6, byte[] var7, int var8, int var9) {
-      float var10;
-      float var11;
-      if (this.field6798 != null && this.field6798.field7457 >= var3 && this.field6798.field7458 >= var4) {
-         this.field6798.method4213(0, 0, var3, var4, var7, class264.field8201, 0, 0, false);
-         var10 = this.field6798.field324 * (float)var4 / (float)this.field6798.field7458;
-         var11 = this.field6798.field322 * (float)var3 / (float)this.field6798.field7457;
-      } else {
-         this.field6798 = class102.method267(this, class264.field8201, class482.field8399, var3, var4, false, var7, class264.field8201);
-         this.field6798.method4212(false, false);
-         var10 = this.field6798.field324;
-         var11 = this.field6798.field322;
-      }
-
-      this.method3634();
-      this.method3639(this.field6798);
-      this.method3649(var9);
-      OpenGL.glColor4ub((byte)(var5 >> 16), (byte)(var5 >> 8), (byte)var5, (byte)(var5 >> 24));
-      this.method3656(var6);
-      this.method3641(34165, 34165);
-      this.method3642(0, 34166, 768);
-      this.method3642(2, 5890, 770);
-      this.method3669(0, 34166, 770);
-      this.method3669(2, 5890, 770);
-      float var12 = (float)var1;
-      float var13 = (float)var2;
-      float var14 = var12 + (float)var3;
-      float var15 = var13 + (float)var4;
-      OpenGL.glBegin(7);
-      OpenGL.glTexCoord2f(0.0F, 0.0F);
-      OpenGL.glVertex2f(var12, var13);
-      OpenGL.glTexCoord2f(0.0F, var11);
-      OpenGL.glVertex2f(var12, var15);
-      OpenGL.glTexCoord2f(var10, var11);
-      OpenGL.glVertex2f(var14, var15);
-      OpenGL.glTexCoord2f(var10, 0.0F);
-      OpenGL.glVertex2f(var14, var13);
-      OpenGL.glEnd();
-      this.method3642(0, 5890, 768);
-      this.method3642(2, 34166, 770);
-      this.method3669(0, 5890, 770);
-      this.method3669(2, 34166, 770);
-   }
-
-   public final void method4989(class135 var1) {
-      this.field6774.method1024(var1);
-      this.field6797.method272(this.field6774);
-      this.field6790.method1024(var1);
-      this.field6790.method1012();
-      this.field6776.method272(this.field6790);
-      this.method3618();
-      if (this.field6794 != 1) {
-         this.method3617();
-      }
-
-   }
-
    public final void method4986(int var1, int var2, int var3, int var4) {
-      if (this.field8574 != null) {
+      if (super.field8574 != null) {
          if (var1 < 0) {
             var1 = 0;
          }
 
-         if (var3 > this.field8574.method2481()) {
-            var3 = this.field8574.method2481();
+         if (var3 > super.field8574.method2481()) {
+            var3 = super.field8574.method2481();
          }
 
          if (var2 < 0) {
             var2 = 0;
          }
 
-         if (var4 > this.field8574.method2493()) {
-            var4 = this.field8574.method2493();
+         if (var4 > super.field8574.method2493()) {
+            var4 = super.field8574.method2493();
          }
 
          this.field6768 = var1;
@@ -1128,7 +1041,7 @@ public class class13 extends class848 {
    }
 
    final void method3614() {
-      if (this.field8574 != null) {
+      if (super.field8574 != null) {
          int var1;
          int var2;
          int var3;
@@ -1141,8 +1054,8 @@ public class class13 extends class848 {
          } else {
             var1 = 0;
             var2 = 0;
-            var3 = this.field8574.method2481();
-            var4 = this.field8574.method2493();
+            var3 = super.field8574.method2481();
+            var4 = super.field8574.method2493();
          }
 
          if (var3 < 1) {
@@ -1153,7 +1066,7 @@ public class class13 extends class848 {
             var4 = 1;
          }
 
-         OpenGL.glViewport(this.field6800 + var1, this.field6801 + this.field8574.method2493() - var2 - var4, var3, var4);
+         OpenGL.glViewport(this.field6800 + var1, this.field6801 + super.field8574.method2493() - var2 - var4, var3, var4);
          this.field6783 = (float)this.field6804 / 2.0F;
          this.field6785 = (float)this.field6867 / 2.0F;
          this.field6782 = (float)this.field6802 + this.field6783;
@@ -1163,8 +1076,8 @@ public class class13 extends class848 {
    }
 
    final void method3615() {
-      if (this.field8574 != null && this.field6768 < this.field6711 && this.field6796 < this.field6746) {
-         OpenGL.glScissor(this.field6800 + this.field6768, this.field6801 + this.field8574.method2493() - this.field6746, this.field6711 - this.field6768, this.field6746 - this.field6796);
+      if (super.field8574 != null && this.field6768 < this.field6711 && this.field6796 < this.field6746) {
+         OpenGL.glScissor(this.field6800 + this.field6768, this.field6801 + super.field8574.method2493() - this.field6746, this.field6711 - this.field6768, this.field6746 - this.field6796);
       } else {
          OpenGL.glScissor(0, 0, 0, 0);
       }
@@ -1209,86 +1122,6 @@ public class class13 extends class848 {
       this.method3623();
    }
 
-   public void method4914() {
-      if (this.field6872 && this.field8574 != null) {
-         int var1 = this.field6768;
-         int var2 = this.field6711;
-         int var3 = this.field6796;
-         int var4 = this.field6746;
-         this.method4827();
-         int var5 = this.field6802;
-         int var6 = this.field6881;
-         int var7 = this.field6804;
-         int var8 = this.field6867;
-         this.method4824();
-         OpenGL.glReadBuffer(1028);
-         OpenGL.glDrawBuffer(1029);
-         this.method3674();
-         this.method3609(false);
-         this.method3645(false);
-         this.method3647(false);
-         this.method3664(false);
-         this.method3639((class203)null);
-         this.method3658(-2);
-         this.method3626(1);
-         this.method3649(0);
-         OpenGL.glMatrixMode(5889);
-         OpenGL.glLoadIdentity();
-         OpenGL.glOrtho(0.0D, 1.0D, 0.0D, 1.0D, -1.0D, 1.0D);
-         OpenGL.glMatrixMode(5888);
-         OpenGL.glLoadIdentity();
-         OpenGL.glRasterPos2i(0, 0);
-         OpenGL.glCopyPixels(0, 0, this.field8574.method2481(), this.field8574.method2493(), 6144);
-         OpenGL.glFlush();
-         OpenGL.glReadBuffer(1029);
-         OpenGL.glDrawBuffer(1029);
-         this.method4986(var1, var3, var2, var4);
-         this.method5059(var5, var6, var7, var8);
-      }
-
-   }
-
-   public class48 method4957(class922 var1, boolean var2) {
-      int[] var3 = new int[var1.field10269 * var1.field10273];
-      int var4 = 0;
-      int var5 = 0;
-      int var6;
-      int var7;
-      if (var1.field10276 != null) {
-         for(var6 = 0; var6 < var1.field10273; ++var6) {
-            for(var7 = 0; var7 < var1.field10269; ++var7) {
-               var3[var5++] = var1.field10276[var4] << 24 | var1.field10274[var1.field10275[var4] & 255];
-               ++var4;
-            }
-         }
-      } else {
-         for(var6 = 0; var6 < var1.field10273; ++var6) {
-            for(var7 = 0; var7 < var1.field10269; ++var7) {
-               int var8 = var1.field10274[var1.field10275[var4++] & 255];
-               var3[var5++] = var8 != 0 ? -16777216 | var8 : 0;
-            }
-         }
-      }
-
-      class48 var9 = this.method4854(var3, 0, var1.field10269, var1.field10269, var1.field10273, -797687723);
-      var9.method3104(var1.field10272, var1.field10268, var1.field10271, var1.field10270);
-      return var9;
-   }
-
-   public class454 method4980(int var1, int var2, int[][] var3, int[][] var4, int var5, int var6, int var7) {
-      return new class291(this, var6, var7, var1, var2, var3, var4, var5);
-   }
-
-   public void method5030(float var1, float var2, float var3, float[] var4) {
-      float var5 = this.field6756.field325[15] + this.field6756.field325[3] * var1 + this.field6756.field325[7] * var2 + this.field6756.field325[11] * var3;
-      float var6 = this.field6756.field325[12] + this.field6756.field325[0] * var1 + this.field6756.field325[4] * var2 + this.field6756.field325[8] * var3;
-      float var7 = this.field6756.field325[13] + this.field6756.field325[1] * var1 + this.field6756.field325[5] * var2 + this.field6756.field325[9] * var3;
-      float var8 = this.field6797.field325[14] + this.field6797.field325[2] * var1 + this.field6797.field325[6] * var2 + this.field6797.field325[10] * var3;
-      var4[0] = this.field6782 + this.field6783 * var6 / var5;
-      var4[1] = this.field6784 + this.field6785 * var7 / var5;
-      var4[2] = var8;
-   }
-
    final void method3618() {
       this.field6756.method269(this.field6797);
       this.field6756.method271(this.field6728);
@@ -1319,56 +1152,6 @@ public class class13 extends class848 {
       OpenGL.glPushMatrix();
    }
 
-   void method4943(int var1, int var2, int var3, int var4, int var5) {
-      if (var3 < 0) {
-         var3 = -var3;
-      }
-
-      if (var1 + var3 >= this.field6768 && var1 - var3 <= this.field6711 && var2 + var3 >= this.field6796 && var2 - var3 <= this.field6746) {
-         this.method3633();
-         this.method3649(var5);
-         OpenGL.glColor4ub((byte)(var4 >> 16), (byte)(var4 >> 8), (byte)var4, (byte)(var4 >> 24));
-         float var6 = (float)var1 + 0.35F;
-         float var7 = (float)var2 + 0.35F;
-         int var8 = var3 << 1;
-         if ((float)var8 < this.field6875) {
-            OpenGL.glBegin(7);
-            OpenGL.glVertex2f(var6 + 1.0F, var7 + 1.0F);
-            OpenGL.glVertex2f(var6 + 1.0F, var7 - 1.0F);
-            OpenGL.glVertex2f(var6 - 1.0F, var7 - 1.0F);
-            OpenGL.glVertex2f(var6 - 1.0F, var7 + 1.0F);
-            OpenGL.glEnd();
-         } else if ((float)var8 <= this.field6874) {
-            OpenGL.glEnable(2832);
-            OpenGL.glPointSize((float)var8);
-            OpenGL.glBegin(0);
-            OpenGL.glVertex2f(var6, var7);
-            OpenGL.glEnd();
-            OpenGL.glDisable(2832);
-         } else {
-            OpenGL.glBegin(6);
-            OpenGL.glVertex2f(var6, var7);
-            int var9 = 262144 / (6 * var3);
-            if (var9 <= 64) {
-               var9 = 64;
-            } else if (var9 > 512) {
-               var9 = 512;
-            }
-
-            var9 = class236.method4619(var9, 2146982068);
-            OpenGL.glVertex2f(var6 + (float)var3, var7);
-
-            for(int var10 = 16384 - var9; var10 > 0; var10 -= var9) {
-               OpenGL.glVertex2f(var6 + class548.field396[var10] * (float)var3, var7 + class548.field397[var10] * (float)var3);
-            }
-
-            OpenGL.glVertex2f(var6 + (float)var3, var7);
-            OpenGL.glEnd();
-         }
-      }
-
-   }
-
    final void method3620() {
       if (this.field6794 != 2) {
          this.field6794 = 2;
@@ -1377,72 +1160,6 @@ public class class13 extends class848 {
          this.method3614();
          this.method3659();
          this.field6767 &= -8;
-      }
-
-   }
-
-   public void method4959(class792 var1) {
-      this.field6868 = ((class292)var1).field10483;
-      if (this.field6724 == null) {
-         class782 var2 = new class782(80);
-         if (this.field6830) {
-            var2.method2468(-1.0F);
-            var2.method2468(-1.0F);
-            var2.method2468(0.0F);
-            var2.method2468(0.0F);
-            var2.method2468(0.0F);
-            var2.method2468(-1.0F);
-            var2.method2468(1.0F);
-            var2.method2468(0.0F);
-            var2.method2468(0.0F);
-            var2.method2468(1.0F);
-            var2.method2468(1.0F);
-            var2.method2468(1.0F);
-            var2.method2468(0.0F);
-            var2.method2468(1.0F);
-            var2.method2468(1.0F);
-            var2.method2468(1.0F);
-            var2.method2468(-1.0F);
-            var2.method2468(0.0F);
-            var2.method2468(1.0F);
-            var2.method2468(0.0F);
-         } else {
-            var2.method2469(-1.0F);
-            var2.method2469(-1.0F);
-            var2.method2469(0.0F);
-            var2.method2469(0.0F);
-            var2.method2469(0.0F);
-            var2.method2469(-1.0F);
-            var2.method2469(1.0F);
-            var2.method2469(0.0F);
-            var2.method2469(0.0F);
-            var2.method2469(1.0F);
-            var2.method2469(1.0F);
-            var2.method2469(1.0F);
-            var2.method2469(0.0F);
-            var2.method2469(1.0F);
-            var2.method2469(1.0F);
-            var2.method2469(1.0F);
-            var2.method2469(-1.0F);
-            var2.method2469(0.0F);
-            var2.method2469(1.0F);
-            var2.method2469(0.0F);
-         }
-
-         this.field6724 = this.method3627(20, var2.field10375, var2.field10376 * 385051775, false);
-         this.field6779 = new class847(this.field6724, 5126, 3, 0);
-         this.field6880 = new class847(this.field6724, 5126, 2, 12);
-         this.field6744.method4284(this);
-
-         try {
-            Class var3 = ClassLoader.class;
-            Field var4 = var3.getDeclaredField("nativeLibraries");
-            Class var5 = AccessibleObject.class;
-            Method var6 = var5.getDeclaredMethod("setAccessible", Boolean.TYPE);
-            var6.invoke(var4, Boolean.TRUE);
-         } catch (Throwable var7) {
-            ;
-         }
       }
 
    }
@@ -1560,36 +1277,6 @@ public class class13 extends class848 {
       return var3 < 0.5F ? var1 : var2;
    }
 
-   public void method4884(float var1, float var2, float var3, float[] var4) {
-      float var5 = this.field6756.field325[14] + this.field6756.field325[2] * var1 + this.field6756.field325[6] * var2 + this.field6756.field325[10] * var3;
-      float var6 = this.field6756.field325[15] + this.field6756.field325[3] * var1 + this.field6756.field325[7] * var2 + this.field6756.field325[11] * var3;
-      if (var5 >= -var6 && var5 <= var6) {
-         float var7 = this.field6756.field325[12] + this.field6756.field325[0] * var1 + this.field6756.field325[4] * var2 + this.field6756.field325[8] * var3;
-         if (var7 >= -var6 && var7 <= var6) {
-            float var8 = this.field6756.field325[13] + this.field6756.field325[1] * var1 + this.field6756.field325[5] * var2 + this.field6756.field325[9] * var3;
-            if (var8 >= -var6 && var8 <= var6) {
-               float var9 = this.field6797.field325[14] + this.field6797.field325[2] * var1 + this.field6797.field325[6] * var2 + this.field6797.field325[10] * var3;
-               var4[0] = this.field6782 + this.field6783 * var7 / var6;
-               var4[1] = this.field6784 + this.field6785 * var8 / var6;
-               var4[2] = var9;
-            } else {
-               var4[2] = Float.NaN;
-               var4[1] = Float.NaN;
-               var4[0] = Float.NaN;
-            }
-         } else {
-            var4[2] = Float.NaN;
-            var4[1] = Float.NaN;
-            var4[0] = Float.NaN;
-         }
-      } else {
-         var4[2] = Float.NaN;
-         var4[1] = Float.NaN;
-         var4[0] = Float.NaN;
-      }
-
-   }
-
    public class23 method4857(int var1, int var2, int[] var3, int[] var4) {
       return class944.method1971(this, var1, var2, var3, var4);
    }
@@ -1614,10 +1301,6 @@ public class class13 extends class848 {
 
    public class806 method4942() {
       return new class275(this);
-   }
-
-   public final void method5061(class621 var1) {
-      this.field6846 = (class913)var1;
    }
 
    final class269 method3627(int var1, byte[] var2, int var3, boolean var4) {
@@ -1685,12 +1368,6 @@ public class class13 extends class848 {
 
    }
 
-   final void method5016(float var1, float var2, float var3, float var4, float var5, float var6) {
-      class183.field5235 = var1;
-      class183.field5234 = var2;
-      class183.field5233 = var3;
-   }
-
    final synchronized void method3632(int var1) {
       class722 var2 = new class722(var1);
       this.field6755.method1282(var2, 241612105);
@@ -1736,12 +1413,6 @@ public class class13 extends class848 {
 
    }
 
-   public final void method4993(class344 var1) {
-      this.field6728.method269(var1);
-      this.method3618();
-      this.method3623();
-   }
-
    final void method3636(int var1, boolean var2) {
       this.method3661(var1, var2, true);
    }
@@ -1784,8 +1455,8 @@ public class class13 extends class848 {
    }
 
    void method3640() {
-      int var1 = this.field8574.method2481();
-      int var2 = this.field8574.method2493();
+      int var1 = super.field8574.method2481();
+      int var2 = super.field8574.method2493();
       this.field6778.method278(0.0F, (float)var1, 0.0F, (float)var2, -1.0F, 1.0F);
       this.method4824();
       this.method3674();
@@ -1827,25 +1498,6 @@ public class class13 extends class848 {
    final void method3642(int var1, int var2, int var3) {
       OpenGL.glTexEnvi(8960, '薀' + var1, var2);
       OpenGL.glTexEnvi(8960, '薐' + var1, var3);
-   }
-
-   public void method5026(int var1, int var2, float var3, int var4, int var5, float var6, int var7, int var8, float var9, int var10, int var11, int var12, int var13) {
-      this.method3633();
-      this.method3649(var13);
-      OpenGL.glBegin(4);
-      OpenGL.glColor4ub((byte)(var10 >> 16), (byte)(var10 >> 8), (byte)var10, (byte)(var10 >> 24));
-      OpenGL.glVertex3f((float)var1 + 0.35F, (float)var2 + 0.35F, var3);
-      OpenGL.glColor4ub((byte)(var11 >> 16), (byte)(var11 >> 8), (byte)var11, (byte)(var11 >> 24));
-      OpenGL.glVertex3f((float)var4 + 0.35F, (float)var5 + 0.35F, var6);
-      OpenGL.glColor4ub((byte)(var12 >> 16), (byte)(var12 >> 8), (byte)var12, (byte)(var12 >> 24));
-      OpenGL.glVertex3f((float)var7 + 0.35F, (float)var8 + 0.35F, var9);
-      OpenGL.glEnd();
-   }
-
-   public void method4924(float var1, float var2) {
-      this.field6786 = var1;
-      this.field6787 = var2;
-      this.method3659();
    }
 
    final void method3643(float var1, float var2, float var3, float var4) {
@@ -1894,10 +1546,6 @@ public class class13 extends class848 {
 
    }
 
-   public final boolean method5014() {
-      return this.field6743 != null && this.field6743.method3863();
-   }
-
    final void method3647(boolean var1) {
       if (var1 != this.field6808) {
          if (var1) {
@@ -1919,8 +1567,8 @@ public class class13 extends class848 {
       class722 var3;
       while(!this.field6840.method1284((byte)109)) {
          var3 = (class722)this.field6840.method1285(1624694038);
-         field6766[var2++] = (int)(var3.field641 * 7051297995265073167L);
-         this.field6799 -= var3.field3631 * -774922497;
+         field6766[var2++] = (int)var3.field641;
+         this.field6799 -= var3.field3631;
          if (var2 == 1000) {
             OpenGL.glDeleteBuffersARB(var2, field6766, 0);
             var2 = 0;
@@ -1934,8 +1582,8 @@ public class class13 extends class848 {
 
       while(!this.field6760.method1284((byte)109)) {
          var3 = (class722)this.field6760.method1285(1990742795);
-         field6766[var2++] = (int)(var3.field641 * 7051297995265073167L);
-         this.field6862 -= var3.field3631 * -774922497;
+         field6766[var2++] = (int)var3.field641;
+         this.field6862 -= var3.field3631;
          if (var2 == 1000) {
             OpenGL.glDeleteTextures(var2, field6766, 0);
             var2 = 0;
@@ -1949,7 +1597,7 @@ public class class13 extends class848 {
 
       while(!this.field6755.method1284((byte)124)) {
          var3 = (class722)this.field6755.method1285(1696221823);
-         field6766[var2++] = var3.field3631 * -774922497;
+         field6766[var2++] = var3.field3631;
          if (var2 == 1000) {
             OpenGL.glDeleteFramebuffersEXT(var2, field6766, 0);
             var2 = 0;
@@ -1963,8 +1611,8 @@ public class class13 extends class848 {
 
       while(!this.field6762.method1284((byte)109)) {
          var3 = (class722)this.field6762.method1285(1834890584);
-         field6766[var2++] = (int)(var3.field641 * 7051297995265073167L);
-         this.field6757 -= var3.field3631 * -774922497;
+         field6766[var2++] = (int)var3.field641;
+         this.field6757 -= var3.field3631;
          if (var2 == 1000) {
             OpenGL.glDeleteRenderbuffersEXT(var2, field6766, 0);
             var2 = 0;
@@ -1978,23 +1626,23 @@ public class class13 extends class848 {
 
       while(!this.field6758.method1284((byte)104)) {
          var3 = (class722)this.field6758.method1285(1957497379);
-         OpenGL.glDeleteLists((int)(var3.field641 * 7051297995265073167L), var3.field3631 * -774922497);
+         OpenGL.glDeleteLists((int)var3.field641, var3.field3631);
       }
 
       class568 var5;
       while(!this.field6763.method1284((byte)76)) {
          var5 = this.field6763.method1285(1672075374);
-         OpenGL.glDeleteProgramARB((int)(var5.field641 * 7051297995265073167L));
+         OpenGL.glDeleteProgramARB((int)var5.field641);
       }
 
       while(!this.field6848.method1284((byte)105)) {
          var5 = this.field6848.method1285(1793950137);
-         OpenGL.glDeleteShader((int)(var5.field641 * 7051297995265073167L));
+         OpenGL.glDeleteShader((int)var5.field641);
       }
 
       while(!this.field6758.method1284((byte)88)) {
          var3 = (class722)this.field6758.method1285(1623809962);
-         OpenGL.glDeleteLists((int)(var3.field641 * 7051297995265073167L), var3.field3631 * -774922497);
+         OpenGL.glDeleteLists((int)var3.field641, var3.field3631);
       }
 
       this.field6739.method4512();
@@ -2075,23 +1723,13 @@ public class class13 extends class848 {
       return this.field6799 + this.field6862 + this.field6757;
    }
 
-   final synchronized void method3650(int var1, int var2) {
-      class722 var3 = new class722(var2);
-      var3.field641 = (long)var1 * 4191220306876042991L;
-      this.field6840.method1282(var3, 161198069);
-   }
-
-   public boolean method4907() {
-      return true;
-   }
-
    public void method4866(class874 var1) {
       this.field6744.method4281(this, var1);
    }
 
    final synchronized void method3651(int var1, int var2) {
       class722 var3 = new class722(var2);
-      var3.field641 = (long)var1 * 4191220306876042991L;
+      var3.field641 = (long)var1;
       this.field6762.method1282(var3, 1393821197);
    }
 
@@ -2119,58 +1757,7 @@ public class class13 extends class848 {
       this.method3642(0, 5890, 768);
    }
 
-   final synchronized void method3652(int var1) {
-      class568 var2 = new class568();
-      var2.field641 = (long)var1 * 4191220306876042991L;
-      this.field6763.method1282(var2, 577290901);
-   }
-
    public void method4891(boolean var1) {
-   }
-
-   public int method5047() {
-      return 4;
-   }
-
-   public class305 method4893() {
-      int var1 = -1;
-      if (this.field6709.indexOf("nvidia") != -1) {
-         var1 = 4318;
-      } else if (this.field6709.indexOf("intel") != -1) {
-         var1 = 32902;
-      } else if (this.field6709.indexOf("ati") != -1) {
-         var1 = 4098;
-      }
-
-      return new class305(var1, "OpenGL", this.field6788, this.field6849, 0L);
-   }
-
-   public int[] method4918(int var1, int var2, int var3, int var4) {
-      if (this.field8574 == null) {
-         return null;
-      } else {
-         int[] var5 = new int[var3 * var4];
-         int var6 = this.field8574.method2493();
-
-         for(int var7 = 0; var7 < var4; ++var7) {
-            OpenGL.glReadPixelsi(var1, var6 - var2 - var7 - 1, var3, 1, 32993, this.field6873, var5, var7 * var3);
-         }
-
-         return var5;
-      }
-   }
-
-   void method4895(int var1, int var2) throws class937 {
-      try {
-         this.field8594.method2516();
-      } catch (Exception var4) {
-         ;
-      }
-
-      if (this.field8581 != null) {
-         this.field8581.method4627(1384205509);
-      }
-
    }
 
    final void method3653() {
@@ -2187,231 +1774,16 @@ public class class13 extends class848 {
 
    }
 
-   public void method4897() {
-      OpenGL.glFinish();
-   }
-
-   void method4822() {
-      for(class568 var1 = this.field6754.method1281(1349337677); var1 != null; var1 = this.field6754.method1283((byte)-2)) {
-         ((class292)var1).method6524();
-      }
-
-      if (this.field6742 != null) {
-         this.field6742.method2701();
-      }
-
-      if (this.field6752) {
-         class82.method919(false, true, (short)11532);
-         this.field6752 = false;
-      }
-
-   }
-
    public final class344 method4870() {
       return new class344(this.field6728);
-   }
-
-   public final synchronized void method5044(int var1) {
-      int var2 = 0;
-      var1 &= Integer.MAX_VALUE;
-
-      class722 var3;
-      while(!this.field6840.method1284((byte)96)) {
-         var3 = (class722)this.field6840.method1285(1817899200);
-         field6766[var2++] = (int)(var3.field641 * 7051297995265073167L);
-         this.field6799 -= var3.field3631 * -774922497;
-         if (var2 == 1000) {
-            OpenGL.glDeleteBuffersARB(var2, field6766, 0);
-            var2 = 0;
-         }
-      }
-
-      if (var2 > 0) {
-         OpenGL.glDeleteBuffersARB(var2, field6766, 0);
-         var2 = 0;
-      }
-
-      while(!this.field6760.method1284((byte)53)) {
-         var3 = (class722)this.field6760.method1285(1913013745);
-         field6766[var2++] = (int)(var3.field641 * 7051297995265073167L);
-         this.field6862 -= var3.field3631 * -774922497;
-         if (var2 == 1000) {
-            OpenGL.glDeleteTextures(var2, field6766, 0);
-            var2 = 0;
-         }
-      }
-
-      if (var2 > 0) {
-         OpenGL.glDeleteTextures(var2, field6766, 0);
-         var2 = 0;
-      }
-
-      while(!this.field6755.method1284((byte)47)) {
-         var3 = (class722)this.field6755.method1285(1781470933);
-         field6766[var2++] = var3.field3631 * -774922497;
-         if (var2 == 1000) {
-            OpenGL.glDeleteFramebuffersEXT(var2, field6766, 0);
-            var2 = 0;
-         }
-      }
-
-      if (var2 > 0) {
-         OpenGL.glDeleteFramebuffersEXT(var2, field6766, 0);
-         var2 = 0;
-      }
-
-      while(!this.field6762.method1284((byte)74)) {
-         var3 = (class722)this.field6762.method1285(1659174916);
-         field6766[var2++] = (int)(var3.field641 * 7051297995265073167L);
-         this.field6757 -= var3.field3631 * -774922497;
-         if (var2 == 1000) {
-            OpenGL.glDeleteRenderbuffersEXT(var2, field6766, 0);
-            var2 = 0;
-         }
-      }
-
-      if (var2 > 0) {
-         OpenGL.glDeleteRenderbuffersEXT(var2, field6766, 0);
-         boolean var4 = false;
-      }
-
-      while(!this.field6758.method1284((byte)66)) {
-         var3 = (class722)this.field6758.method1285(1908940488);
-         OpenGL.glDeleteLists((int)(var3.field641 * 7051297995265073167L), var3.field3631 * -774922497);
-      }
-
-      class568 var5;
-      while(!this.field6763.method1284((byte)73)) {
-         var5 = this.field6763.method1285(1809693478);
-         OpenGL.glDeleteProgramARB((int)(var5.field641 * 7051297995265073167L));
-      }
-
-      while(!this.field6848.method1284((byte)40)) {
-         var5 = this.field6848.method1285(1808532873);
-         OpenGL.glDeleteShader((int)(var5.field641 * 7051297995265073167L));
-      }
-
-      while(!this.field6758.method1284((byte)94)) {
-         var3 = (class722)this.field6758.method1285(1903219721);
-         OpenGL.glDeleteLists((int)(var3.field641 * 7051297995265073167L), var3.field3631 * -774922497);
-      }
-
-      this.field6739.method4512();
-      if (this.method4802() > 100663296 && class27.method3468((byte)1) > this.field6765 + 60000L) {
-         System.gc();
-         this.field6765 = class27.method3468((byte)1);
-      }
-
-      this.field6749 = var1;
-   }
-
-   public final int method4902() {
-      return this.field6799 + this.field6862 + this.field6757;
-   }
-
-   public final int method4903() {
-      return this.field6799 + this.field6862 + this.field6757;
-   }
-
-   public boolean method4904() {
-      return true;
-   }
-
-   public boolean method4905() {
-      return true;
-   }
-
-   public final class344 method5042() {
-      return new class344(this.field6728);
-   }
-
-   public void method4939(int var1, int var2, int var3, int var4, int var5, int var6) {
-      float var7 = (float)var1 + 0.35F;
-      float var8 = (float)var2 + 0.35F;
-      float var9 = var7 + (float)var3 - 1.0F;
-      float var10 = var8 + (float)var4 - 1.0F;
-      this.method3633();
-      this.method3649(var6);
-      OpenGL.glColor4ub((byte)(var5 >> 16), (byte)(var5 >> 8), (byte)var5, (byte)(var5 >> 24));
-      if (this.field6860) {
-         OpenGL.glDisable(32925);
-      }
-
-      OpenGL.glBegin(2);
-      OpenGL.glVertex2f(var7, var8);
-      OpenGL.glVertex2f(var7, var10);
-      OpenGL.glVertex2f(var9, var10);
-      OpenGL.glVertex2f(var9, var8);
-      OpenGL.glEnd();
-      if (this.field6860) {
-         OpenGL.glEnable(32925);
-      }
-
-   }
-
-   public boolean method4915() {
-      return true;
    }
 
    public class48 method4852(int var1, int var2, boolean var3, boolean var4) {
       return new class328(this, var1, var2, var3);
    }
 
-   public final boolean method5012() {
-      return this.field6743 != null && this.field6743.method3863();
-   }
-
-   public boolean method4910() {
-      return this.field6860 && (!this.method4883() || this.field6861);
-   }
-
-   public boolean method4911() {
-      return this.field6860 && (!this.method4883() || this.field6861);
-   }
-
-   public boolean method4912() {
-      return true;
-   }
-
-   public boolean method4913() {
-      return true;
-   }
-
-   public boolean method4803() {
-      return true;
-   }
-
    public boolean method4814() {
       return true;
-   }
-
-   public void method4825(boolean var1) {
-   }
-
-   public void method4920(boolean var1) {
-   }
-
-   class749 method4974(Canvas var1, int var2, int var3) {
-      return new class479(this, var1);
-   }
-
-   public int[] method4813(int var1, int var2, int var3, int var4) {
-      if (this.field8574 == null) {
-         return null;
-      } else {
-         int[] var5 = new int[var3 * var4];
-         int var6 = this.field8574.method2493();
-
-         for(int var7 = 0; var7 < var4; ++var7) {
-            OpenGL.glReadPixelsi(var1, var6 - var2 - var7 - 1, var3, 1, 32993, this.field6873, var5, var7 * var3);
-         }
-
-         return var5;
-      }
-   }
-
-   public class48 method5064(int[] var1, int var2, int var3, int var4, int var5, boolean var6) {
-      return new class328(this, var4, var5, var1, var2, var3);
    }
 
    final void method3654() {
@@ -2422,173 +1794,6 @@ public class class13 extends class848 {
          this.field6777 = false;
       }
 
-   }
-
-   public void method4859(boolean var1) {
-      this.field6795 = var1;
-      this.method3648();
-   }
-
-   final synchronized void method3655(long var1) {
-      class568 var3 = new class568();
-      var3.field641 = var1 * 4191220306876042991L;
-      this.field6848.method1282(var3, 1529923054);
-   }
-
-   public void method4921() {
-      this.field6802 = 0;
-      this.field6881 = 0;
-      this.field6804 = this.field8574.method2481();
-      this.field6867 = this.field8574.method2493();
-      this.method3614();
-   }
-
-   public void method4871(float var1, float var2) {
-      this.field6786 = var1;
-      this.field6787 = var2;
-      this.method3659();
-   }
-
-   public void method5040(float var1, float var2) {
-      this.field6786 = var1;
-      this.field6787 = var2;
-      this.method3659();
-   }
-
-   public final void method4925() {
-      if (this.field8574 != null) {
-         this.field6768 = 0;
-         this.field6796 = 0;
-         this.field6711 = this.field8574.method2481();
-         this.field6746 = this.field8574.method2493();
-         OpenGL.glDisable(3089);
-      }
-
-   }
-
-   void method5007() {
-      for(class568 var1 = this.field6754.method1281(1553115518); var1 != null; var1 = this.field6754.method1283((byte)-25)) {
-         ((class292)var1).method6524();
-      }
-
-      if (this.field6742 != null) {
-         this.field6742.method2701();
-      }
-
-      if (this.field6752) {
-         class82.method919(false, true, (short)-1007);
-         this.field6752 = false;
-      }
-
-   }
-
-   public final void method4927() {
-      if (this.field8574 != null) {
-         this.field6768 = 0;
-         this.field6796 = 0;
-         this.field6711 = this.field8574.method2481();
-         this.field6746 = this.field8574.method2493();
-         OpenGL.glDisable(3089);
-      }
-
-   }
-
-   public final void method4928(int var1, int var2, int var3, int var4) {
-      if (this.field8574 != null) {
-         if (var1 < 0) {
-            var1 = 0;
-         }
-
-         if (var3 > this.field8574.method2481()) {
-            var3 = this.field8574.method2481();
-         }
-
-         if (var2 < 0) {
-            var2 = 0;
-         }
-
-         if (var4 > this.field8574.method2493()) {
-            var4 = this.field8574.method2493();
-         }
-
-         this.field6768 = var1;
-         this.field6796 = var2;
-         this.field6711 = var3;
-         this.field6746 = var4;
-         OpenGL.glEnable(3089);
-         this.method3615();
-      }
-
-   }
-
-   public final void method4951(int var1, int var2, int var3, int var4) {
-      if (this.field8574 != null) {
-         if (var1 < 0) {
-            var1 = 0;
-         }
-
-         if (var3 > this.field8574.method2481()) {
-            var3 = this.field8574.method2481();
-         }
-
-         if (var2 < 0) {
-            var2 = 0;
-         }
-
-         if (var4 > this.field8574.method2493()) {
-            var4 = this.field8574.method2493();
-         }
-
-         this.field6768 = var1;
-         this.field6796 = var2;
-         this.field6711 = var3;
-         this.field6746 = var4;
-         OpenGL.glEnable(3089);
-         this.method3615();
-      }
-
-   }
-
-   public final void method4930(int var1, int var2, int var3, int var4) {
-      if (this.field6768 < var1) {
-         this.field6768 = var1;
-      }
-
-      if (this.field6711 > var3) {
-         this.field6711 = var3;
-      }
-
-      if (this.field6796 < var2) {
-         this.field6796 = var2;
-      }
-
-      if (this.field6746 > var4) {
-         this.field6746 = var4;
-      }
-
-      OpenGL.glEnable(3089);
-      this.method3615();
-   }
-
-   public final void method4931(int var1, int var2, int var3, int var4) {
-      if (this.field6768 < var1) {
-         this.field6768 = var1;
-      }
-
-      if (this.field6711 > var3) {
-         this.field6711 = var3;
-      }
-
-      if (this.field6796 < var2) {
-         this.field6796 = var2;
-      }
-
-      if (this.field6746 > var4) {
-         this.field6746 = var4;
-      }
-
-      OpenGL.glEnable(3089);
-      this.method3615();
    }
 
    class13(Canvas var1, class478 var2, int var3) {
@@ -2700,7 +1905,7 @@ public class class13 extends class848 {
 
                   class771.method2300(false, true, -162450455);
                   this.field6752 = true;
-                  this.field6739 = new class261(this, this.field8581);
+                  this.field6739 = new class261(this, super.field8581);
                   this.method3605();
                   this.field6748 = new class778(this);
                   this.field6742 = new class757(this);
@@ -2731,93 +1936,12 @@ public class class13 extends class848 {
       }
    }
 
-   public final void method4933(int[] var1) {
-      var1[0] = this.field6768;
-      var1[1] = this.field6796;
-      var1[2] = this.field6711;
-      var1[3] = this.field6746;
-   }
-
-   public final void method4805(int[] var1) {
-      var1[0] = this.field6768;
-      var1[1] = this.field6796;
-      var1[2] = this.field6711;
-      var1[3] = this.field6746;
-   }
-
-   public void method4952(int var1, int var2, int var3, int var4, int var5, int var6, class23 var7, int var8, int var9) {
-      class944 var10 = (class944)var7;
-      class102 var11 = var10.field3363;
-      this.method3634();
-      this.method3639(var10.field3363);
-      this.method3649(var6);
-      this.method3641(7681, 8448);
-      this.method3642(0, 34167, 768);
-      float var12 = var11.field322 / (float)var11.field321;
-      float var13 = var11.field324 / (float)var11.field320;
-      float var14 = (float)var3 - (float)var1;
-      float var15 = (float)var4 - (float)var2;
-      float var16 = (float)(1.0D / Math.sqrt((double)(var14 * var14 + var15 * var15)));
-      var14 *= var16;
-      var15 *= var16;
-      OpenGL.glColor4ub((byte)(var5 >> 16), (byte)(var5 >> 8), (byte)var5, (byte)(var5 >> 24));
-      OpenGL.glBegin(1);
-      OpenGL.glTexCoord2f(var12 * (float)(var1 - var8), var13 * (float)(var2 - var9));
-      OpenGL.glVertex2f((float)var1 + 0.35F, (float)var2 + 0.35F);
-      OpenGL.glTexCoord2f(var12 * (float)(var3 - var8), var13 * (float)(var4 - var9));
-      OpenGL.glVertex2f((float)var3 + var14 + 0.35F, (float)var4 + var15 + 0.35F);
-      OpenGL.glEnd();
-      this.method3642(0, 5890, 768);
-   }
-
-   public void method5023(int var1, int var2) {
-      int var3 = 0;
-      if ((var1 & 1) != 0) {
-         OpenGL.glClearColor((float)(var2 & 16711680) / 1.671168E7F, (float)(var2 & '\uff00') / 65280.0F, (float)(var2 & 255) / 255.0F, (float)(var2 >>> 24) / 255.0F);
-         var3 = 16384;
-      }
-
-      if ((var1 & 2) != 0) {
-         this.method3664(true);
-         var3 |= 256;
-      }
-
-      if ((var1 & 4) != 0) {
-         var3 |= 1024;
-      }
-
-      OpenGL.glClear(var3);
-   }
-
    public void method4824() {
       this.field6802 = 0;
       this.field6881 = 0;
-      this.field6804 = this.field8574.method2481();
-      this.field6867 = this.field8574.method2493();
+      this.field6804 = super.field8574.method2481();
+      this.field6867 = super.field8574.method2493();
       this.method3614();
-   }
-
-   public void method4938(int var1, int var2) {
-      int var3 = 0;
-      if ((var1 & 1) != 0) {
-         OpenGL.glClearColor((float)(var2 & 16711680) / 1.671168E7F, (float)(var2 & '\uff00') / 65280.0F, (float)(var2 & 255) / 255.0F, (float)(var2 >>> 24) / 255.0F);
-         var3 = 16384;
-      }
-
-      if ((var1 & 2) != 0) {
-         this.method3664(true);
-         var3 |= 256;
-      }
-
-      if ((var1 & 4) != 0) {
-         var3 |= 1024;
-      }
-
-      OpenGL.glClear(var3);
-   }
-
-   public int method4847(int var1, int var2) {
-      return var1 & var2 ^ var2;
    }
 
    public class893 method5058(int var1, int var2) {
@@ -2825,253 +1949,14 @@ public class class13 extends class848 {
    }
 
    public final void method4827() {
-      if (this.field8574 != null) {
+      if (super.field8574 != null) {
          this.field6768 = 0;
          this.field6796 = 0;
-         this.field6711 = this.field8574.method2481();
-         this.field6746 = this.field8574.method2493();
+         this.field6711 = super.field8574.method2481();
+         this.field6746 = super.field8574.method2493();
          OpenGL.glDisable(3089);
       }
 
-   }
-
-   public void method5062(int var1, int var2, int var3, int var4, int var5, int var6, byte[] var7, int var8, int var9) {
-      float var10;
-      float var11;
-      if (this.field6798 != null && this.field6798.field7457 >= var3 && this.field6798.field7458 >= var4) {
-         this.field6798.method4213(0, 0, var3, var4, var7, class264.field8201, 0, 0, false);
-         var10 = this.field6798.field324 * (float)var4 / (float)this.field6798.field7458;
-         var11 = this.field6798.field322 * (float)var3 / (float)this.field6798.field7457;
-      } else {
-         this.field6798 = class102.method267(this, class264.field8201, class482.field8399, var3, var4, false, var7, class264.field8201);
-         this.field6798.method4212(false, false);
-         var10 = this.field6798.field324;
-         var11 = this.field6798.field322;
-      }
-
-      this.method3634();
-      this.method3639(this.field6798);
-      this.method3649(var9);
-      OpenGL.glColor4ub((byte)(var5 >> 16), (byte)(var5 >> 8), (byte)var5, (byte)(var5 >> 24));
-      this.method3656(var6);
-      this.method3641(34165, 34165);
-      this.method3642(0, 34166, 768);
-      this.method3642(2, 5890, 770);
-      this.method3669(0, 34166, 770);
-      this.method3669(2, 5890, 770);
-      float var12 = (float)var1;
-      float var13 = (float)var2;
-      float var14 = var12 + (float)var3;
-      float var15 = var13 + (float)var4;
-      OpenGL.glBegin(7);
-      OpenGL.glTexCoord2f(0.0F, 0.0F);
-      OpenGL.glVertex2f(var12, var13);
-      OpenGL.glTexCoord2f(0.0F, var11);
-      OpenGL.glVertex2f(var12, var15);
-      OpenGL.glTexCoord2f(var10, var11);
-      OpenGL.glVertex2f(var14, var15);
-      OpenGL.glTexCoord2f(var10, 0.0F);
-      OpenGL.glVertex2f(var14, var13);
-      OpenGL.glEnd();
-      this.method3642(0, 5890, 768);
-      this.method3642(2, 34166, 770);
-      this.method3669(0, 5890, 770);
-      this.method3669(2, 34166, 770);
-   }
-
-   void method4944(int var1, int var2, int var3, int var4, int var5) {
-      if (var3 < 0) {
-         var3 = -var3;
-      }
-
-      if (var1 + var3 >= this.field6768 && var1 - var3 <= this.field6711 && var2 + var3 >= this.field6796 && var2 - var3 <= this.field6746) {
-         this.method3633();
-         this.method3649(var5);
-         OpenGL.glColor4ub((byte)(var4 >> 16), (byte)(var4 >> 8), (byte)var4, (byte)(var4 >> 24));
-         float var6 = (float)var1 + 0.35F;
-         float var7 = (float)var2 + 0.35F;
-         int var8 = var3 << 1;
-         if ((float)var8 < this.field6875) {
-            OpenGL.glBegin(7);
-            OpenGL.glVertex2f(var6 + 1.0F, var7 + 1.0F);
-            OpenGL.glVertex2f(var6 + 1.0F, var7 - 1.0F);
-            OpenGL.glVertex2f(var6 - 1.0F, var7 - 1.0F);
-            OpenGL.glVertex2f(var6 - 1.0F, var7 + 1.0F);
-            OpenGL.glEnd();
-         } else if ((float)var8 <= this.field6874) {
-            OpenGL.glEnable(2832);
-            OpenGL.glPointSize((float)var8);
-            OpenGL.glBegin(0);
-            OpenGL.glVertex2f(var6, var7);
-            OpenGL.glEnd();
-            OpenGL.glDisable(2832);
-         } else {
-            OpenGL.glBegin(6);
-            OpenGL.glVertex2f(var6, var7);
-            int var9 = 262144 / (6 * var3);
-            if (var9 <= 64) {
-               var9 = 64;
-            } else if (var9 > 512) {
-               var9 = 512;
-            }
-
-            var9 = class236.method4619(var9, 1068867591);
-            OpenGL.glVertex2f(var6 + (float)var3, var7);
-
-            for(int var10 = 16384 - var9; var10 > 0; var10 -= var9) {
-               OpenGL.glVertex2f(var6 + class548.field396[var10] * (float)var3, var7 + class548.field397[var10] * (float)var3);
-            }
-
-            OpenGL.glVertex2f(var6 + (float)var3, var7);
-            OpenGL.glEnd();
-         }
-      }
-
-   }
-
-   public void method4945(int var1, int var2, int var3, int var4, int var5) {
-      this.method3633();
-      this.method3649(var5);
-      float var6 = (float)var1 + 0.35F;
-      float var7 = (float)var2 + 0.35F;
-      OpenGL.glColor4ub((byte)(var4 >> 16), (byte)(var4 >> 8), (byte)var4, (byte)(var4 >> 24));
-      OpenGL.glBegin(1);
-      OpenGL.glVertex2f(var6, var7);
-      OpenGL.glVertex2f(var6 + (float)var3, var7);
-      OpenGL.glEnd();
-   }
-
-   public class727 method4971(class230 var1, class922[] var2, boolean var3) {
-      return new class101(this, var1, var2, var3);
-   }
-
-   public void method4947(int var1, int var2, int var3, int var4, int var5) {
-      this.method3633();
-      this.method3649(var5);
-      float var6 = (float)var1 + 0.35F;
-      float var7 = (float)var2 + 0.35F;
-      OpenGL.glColor4ub((byte)(var4 >> 16), (byte)(var4 >> 8), (byte)var4, (byte)(var4 >> 24));
-      OpenGL.glBegin(1);
-      OpenGL.glVertex2f(var6, var7);
-      OpenGL.glVertex2f(var6, var7 + (float)var3);
-      OpenGL.glEnd();
-   }
-
-   public void method4949(int var1, int var2, int var3, int var4, int var5) {
-      this.method3633();
-      this.method3649(var5);
-      float var6 = (float)var1 + 0.35F;
-      float var7 = (float)var2 + 0.35F;
-      OpenGL.glColor4ub((byte)(var4 >> 16), (byte)(var4 >> 8), (byte)var4, (byte)(var4 >> 24));
-      OpenGL.glBegin(1);
-      OpenGL.glVertex2f(var6, var7);
-      OpenGL.glVertex2f(var6, var7 + (float)var3);
-      OpenGL.glEnd();
-   }
-
-   public void method4862(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
-      if (var1 != var3 || var2 != var4) {
-         this.method3633();
-         this.method3649(var6);
-         float var10 = (float)var3 - (float)var1;
-         float var11 = (float)var4 - (float)var2;
-         float var12 = (float)(1.0D / Math.sqrt((double)(var10 * var10 + var11 * var11)));
-         var10 *= var12;
-         var11 *= var12;
-         OpenGL.glColor4ub((byte)(var5 >> 16), (byte)(var5 >> 8), (byte)var5, (byte)(var5 >> 24));
-         var9 %= var8 + var7;
-         float var13 = var10 * (float)var7;
-         float var14 = var11 * (float)var7;
-         float var15 = 0.0F;
-         float var16 = 0.0F;
-         float var17 = var13;
-         float var18 = var14;
-         if (var9 > var7) {
-            var15 = var10 * (float)(var7 + var8 - var9);
-            var16 = var11 * (float)(var7 + var8 - var9);
-         } else {
-            var17 = var10 * (float)(var7 - var9);
-            var18 = var11 * (float)(var7 - var9);
-         }
-
-         float var19 = (float)var1 + 0.35F + var15;
-         float var20 = (float)var2 + 0.35F + var16;
-         float var21 = var10 * (float)var8;
-         float var22 = var11 * (float)var8;
-
-         while(true) {
-            if (var3 > var1) {
-               if (var19 > (float)var3 + 0.35F) {
-                  break;
-               }
-
-               if (var19 + var17 > (float)var3) {
-                  var17 = (float)var3 - var19;
-               }
-            } else {
-               if (var19 < (float)var3 + 0.35F) {
-                  break;
-               }
-
-               if (var19 + var17 < (float)var3) {
-                  var17 = (float)var3 - var19;
-               }
-            }
-
-            if (var4 > var2) {
-               if (var20 > (float)var4 + 0.35F) {
-                  break;
-               }
-
-               if (var20 + var18 > (float)var4) {
-                  var18 = (float)var4 - var20;
-               }
-            } else {
-               if (var20 < (float)var4 + 0.35F) {
-                  break;
-               }
-
-               if (var20 + var18 < (float)var4) {
-                  var18 = (float)var4 - var20;
-               }
-            }
-
-            OpenGL.glBegin(1);
-            OpenGL.glVertex2f(var19, var20);
-            OpenGL.glVertex2f(var19 + var17, var20 + var18);
-            OpenGL.glEnd();
-            var19 += var21 + var17;
-            var20 += var22 + var18;
-            var17 = var13;
-            var18 = var14;
-         }
-      }
-
-   }
-
-   public void method4926(int var1, int var2, int var3, int var4, int var5, int var6, class23 var7, int var8, int var9) {
-      class944 var10 = (class944)var7;
-      class102 var11 = var10.field3363;
-      this.method3634();
-      this.method3639(var10.field3363);
-      this.method3649(var6);
-      this.method3641(7681, 8448);
-      this.method3642(0, 34167, 768);
-      float var12 = var11.field322 / (float)var11.field321;
-      float var13 = var11.field324 / (float)var11.field320;
-      float var14 = (float)var3 - (float)var1;
-      float var15 = (float)var4 - (float)var2;
-      float var16 = (float)(1.0D / Math.sqrt((double)(var14 * var14 + var15 * var15)));
-      var14 *= var16;
-      var15 *= var16;
-      OpenGL.glColor4ub((byte)(var5 >> 16), (byte)(var5 >> 8), (byte)var5, (byte)(var5 >> 24));
-      OpenGL.glBegin(1);
-      OpenGL.glTexCoord2f(var12 * (float)(var1 - var8), var13 * (float)(var2 - var9));
-      OpenGL.glVertex2f((float)var1 + 0.35F, (float)var2 + 0.35F);
-      OpenGL.glTexCoord2f(var12 * (float)(var3 - var8), var13 * (float)(var4 - var9));
-      OpenGL.glVertex2f((float)var3 + var14 + 0.35F, (float)var4 + var15 + 0.35F);
-      OpenGL.glEnd();
-      this.method3642(0, 5890, 768);
    }
 
    public void method4839(int var1, int var2, int var3, int var4, int var5) {
@@ -3086,368 +1971,8 @@ public class class13 extends class848 {
       OpenGL.glEnd();
    }
 
-   public void method4953(int var1, int var2, int var3, int var4, int var5, int var6, class23 var7, int var8, int var9) {
-      class944 var10 = (class944)var7;
-      class102 var11 = var10.field3363;
-      this.method3634();
-      this.method3639(var10.field3363);
-      this.method3649(var6);
-      this.method3641(7681, 8448);
-      this.method3642(0, 34167, 768);
-      float var12 = var11.field322 / (float)var11.field321;
-      float var13 = var11.field324 / (float)var11.field320;
-      float var14 = (float)var3 - (float)var1;
-      float var15 = (float)var4 - (float)var2;
-      float var16 = (float)(1.0D / Math.sqrt((double)(var14 * var14 + var15 * var15)));
-      var14 *= var16;
-      var15 *= var16;
-      OpenGL.glColor4ub((byte)(var5 >> 16), (byte)(var5 >> 8), (byte)var5, (byte)(var5 >> 24));
-      OpenGL.glBegin(1);
-      OpenGL.glTexCoord2f(var12 * (float)(var1 - var8), var13 * (float)(var2 - var9));
-      OpenGL.glVertex2f((float)var1 + 0.35F, (float)var2 + 0.35F);
-      OpenGL.glTexCoord2f(var12 * (float)(var3 - var8), var13 * (float)(var4 - var9));
-      OpenGL.glVertex2f((float)var3 + var14 + 0.35F, (float)var4 + var15 + 0.35F);
-      OpenGL.glEnd();
-      this.method3642(0, 5890, 768);
-   }
-
-   public void method4954(int var1, int var2, int var3, int var4, int var5, int var6, class23 var7, int var8, int var9, int var10, int var11, int var12) {
-      if (var1 != var3 || var2 != var4) {
-         class944 var13 = (class944)var7;
-         class102 var14 = var13.field3363;
-         this.method3634();
-         this.method3639(var13.field3363);
-         this.method3649(var6);
-         this.method3641(7681, 8448);
-         this.method3642(0, 34167, 768);
-         float var15 = var14.field322 / (float)var14.field321;
-         float var16 = var14.field324 / (float)var14.field320;
-         float var17 = (float)var3 - (float)var1;
-         float var18 = (float)var4 - (float)var2;
-         float var19 = (float)(1.0D / Math.sqrt((double)(var17 * var17 + var18 * var18)));
-         var17 *= var19;
-         var18 *= var19;
-         OpenGL.glColor4ub((byte)(var5 >> 16), (byte)(var5 >> 8), (byte)var5, (byte)(var5 >> 24));
-         var12 %= var11 + var10;
-         float var20 = var17 * (float)var10;
-         float var21 = var18 * (float)var10;
-         float var22 = 0.0F;
-         float var23 = 0.0F;
-         float var24 = var20;
-         float var25 = var21;
-         if (var12 > var10) {
-            var22 = var17 * (float)(var10 + var11 - var12);
-            var23 = var18 * (float)(var10 + var11 - var12);
-         } else {
-            var24 = var17 * (float)(var10 - var12);
-            var25 = var18 * (float)(var10 - var12);
-         }
-
-         float var26 = (float)var1 + 0.35F + var22;
-         float var27 = (float)var2 + 0.35F + var23;
-         float var28 = var17 * (float)var11;
-         float var29 = var18 * (float)var11;
-
-         while(true) {
-            if (var3 > var1) {
-               if (var26 > (float)var3 + 0.35F) {
-                  break;
-               }
-
-               if (var26 + var24 > (float)var3) {
-                  var24 = (float)var3 - var26;
-               }
-            } else {
-               if (var26 < (float)var3 + 0.35F) {
-                  break;
-               }
-
-               if (var26 + var24 < (float)var3) {
-                  var24 = (float)var3 - var26;
-               }
-            }
-
-            if (var4 > var2) {
-               if (var27 > (float)var4 + 0.35F) {
-                  break;
-               }
-
-               if (var27 + var25 > (float)var4) {
-                  var25 = (float)var4 - var27;
-               }
-            } else {
-               if (var27 < (float)var4 + 0.35F) {
-                  break;
-               }
-
-               if (var27 + var25 < (float)var4) {
-                  var25 = (float)var4 - var27;
-               }
-            }
-
-            OpenGL.glBegin(1);
-            OpenGL.glTexCoord2f(var15 * (var26 - (float)var8), var16 * (var27 - (float)var9));
-            OpenGL.glVertex2f(var26, var27);
-            OpenGL.glTexCoord2f(var15 * (var26 + var24 - (float)var8), var16 * (var27 + var25 - (float)var9));
-            OpenGL.glVertex2f(var26 + var24, var27 + var25);
-            OpenGL.glEnd();
-            var26 += var28 + var24;
-            var27 += var29 + var25;
-            var24 = var20;
-            var25 = var21;
-         }
-
-         this.method3642(0, 5890, 768);
-      }
-
-   }
-
-   public int method4955(int var1, int var2, int var3, int var4, int var5, int var6) {
-      int var7 = 0;
-      float var8 = this.field6756.field325[14] + this.field6756.field325[2] * (float)var1 + this.field6756.field325[6] * (float)var2 + this.field6756.field325[10] * (float)var3;
-      float var9 = this.field6756.field325[14] + this.field6756.field325[2] * (float)var4 + this.field6756.field325[6] * (float)var5 + this.field6756.field325[10] * (float)var6;
-      float var10 = this.field6756.field325[15] + this.field6756.field325[3] * (float)var1 + this.field6756.field325[7] * (float)var2 + this.field6756.field325[11] * (float)var3;
-      float var11 = this.field6756.field325[15] + this.field6756.field325[3] * (float)var4 + this.field6756.field325[7] * (float)var5 + this.field6756.field325[11] * (float)var6;
-      if (var8 < -var10 && var9 < -var11) {
-         var7 |= 16;
-      } else if (var8 > var10 && var9 > var11) {
-         var7 |= 32;
-      }
-
-      float var12 = this.field6756.field325[12] + this.field6756.field325[0] * (float)var1 + this.field6756.field325[4] * (float)var2 + this.field6756.field325[8] * (float)var3;
-      float var13 = this.field6756.field325[12] + this.field6756.field325[0] * (float)var4 + this.field6756.field325[4] * (float)var5 + this.field6756.field325[8] * (float)var6;
-      if (var12 < -var10 && var13 < -var11) {
-         var7 |= 1;
-      }
-
-      if (var12 > var10 && var13 > var11) {
-         var7 |= 2;
-      }
-
-      float var14 = this.field6756.field325[13] + this.field6756.field325[1] * (float)var1 + this.field6756.field325[5] * (float)var2 + this.field6756.field325[9] * (float)var3;
-      float var15 = this.field6756.field325[13] + this.field6756.field325[1] * (float)var4 + this.field6756.field325[5] * (float)var5 + this.field6756.field325[9] * (float)var6;
-      if (var14 < -var10 && var15 < -var11) {
-         var7 |= 4;
-      }
-
-      if (var14 > var10 && var15 > var11) {
-         var7 |= 8;
-      }
-
-      return var7;
-   }
-
-   public int method4956(int var1, int var2, int var3, int var4, int var5, int var6) {
-      int var7 = 0;
-      float var8 = this.field6756.field325[14] + this.field6756.field325[2] * (float)var1 + this.field6756.field325[6] * (float)var2 + this.field6756.field325[10] * (float)var3;
-      float var9 = this.field6756.field325[14] + this.field6756.field325[2] * (float)var4 + this.field6756.field325[6] * (float)var5 + this.field6756.field325[10] * (float)var6;
-      float var10 = this.field6756.field325[15] + this.field6756.field325[3] * (float)var1 + this.field6756.field325[7] * (float)var2 + this.field6756.field325[11] * (float)var3;
-      float var11 = this.field6756.field325[15] + this.field6756.field325[3] * (float)var4 + this.field6756.field325[7] * (float)var5 + this.field6756.field325[11] * (float)var6;
-      if (var8 < -var10 && var9 < -var11) {
-         var7 |= 16;
-      } else if (var8 > var10 && var9 > var11) {
-         var7 |= 32;
-      }
-
-      float var12 = this.field6756.field325[12] + this.field6756.field325[0] * (float)var1 + this.field6756.field325[4] * (float)var2 + this.field6756.field325[8] * (float)var3;
-      float var13 = this.field6756.field325[12] + this.field6756.field325[0] * (float)var4 + this.field6756.field325[4] * (float)var5 + this.field6756.field325[8] * (float)var6;
-      if (var12 < -var10 && var13 < -var11) {
-         var7 |= 1;
-      }
-
-      if (var12 > var10 && var13 > var11) {
-         var7 |= 2;
-      }
-
-      float var14 = this.field6756.field325[13] + this.field6756.field325[1] * (float)var1 + this.field6756.field325[5] * (float)var2 + this.field6756.field325[9] * (float)var3;
-      float var15 = this.field6756.field325[13] + this.field6756.field325[1] * (float)var4 + this.field6756.field325[5] * (float)var5 + this.field6756.field325[9] * (float)var6;
-      if (var14 < -var10 && var15 < -var11) {
-         var7 |= 4;
-      }
-
-      if (var14 > var10 && var15 > var11) {
-         var7 |= 8;
-      }
-
-      return var7;
-   }
-
-   public int method4995(int var1, int var2, int var3, int var4, int var5, int var6) {
-      int var7 = 0;
-      float var8 = this.field6756.field325[14] + this.field6756.field325[2] * (float)var1 + this.field6756.field325[6] * (float)var2 + this.field6756.field325[10] * (float)var3;
-      float var9 = this.field6756.field325[14] + this.field6756.field325[2] * (float)var4 + this.field6756.field325[6] * (float)var5 + this.field6756.field325[10] * (float)var6;
-      float var10 = this.field6756.field325[15] + this.field6756.field325[3] * (float)var1 + this.field6756.field325[7] * (float)var2 + this.field6756.field325[11] * (float)var3;
-      float var11 = this.field6756.field325[15] + this.field6756.field325[3] * (float)var4 + this.field6756.field325[7] * (float)var5 + this.field6756.field325[11] * (float)var6;
-      if (var8 < -var10 && var9 < -var11) {
-         var7 |= 16;
-      } else if (var8 > var10 && var9 > var11) {
-         var7 |= 32;
-      }
-
-      float var12 = this.field6756.field325[12] + this.field6756.field325[0] * (float)var1 + this.field6756.field325[4] * (float)var2 + this.field6756.field325[8] * (float)var3;
-      float var13 = this.field6756.field325[12] + this.field6756.field325[0] * (float)var4 + this.field6756.field325[4] * (float)var5 + this.field6756.field325[8] * (float)var6;
-      if (var12 < -var10 && var13 < -var11) {
-         var7 |= 1;
-      }
-
-      if (var12 > var10 && var13 > var11) {
-         var7 |= 2;
-      }
-
-      float var14 = this.field6756.field325[13] + this.field6756.field325[1] * (float)var1 + this.field6756.field325[5] * (float)var2 + this.field6756.field325[9] * (float)var3;
-      float var15 = this.field6756.field325[13] + this.field6756.field325[1] * (float)var4 + this.field6756.field325[5] * (float)var5 + this.field6756.field325[9] * (float)var6;
-      if (var14 < -var10 && var15 < -var11) {
-         var7 |= 4;
-      }
-
-      if (var14 > var10 && var15 > var11) {
-         var7 |= 8;
-      }
-
-      return var7;
-   }
-
-   public class792 method4958(int var1) {
-      class292 var2 = new class292(var1);
-      this.field6754.method1282(var2, 1583518091);
-      return var2;
-   }
-
-   public class305 method4892() {
-      int var1 = -1;
-      if (this.field6709.indexOf("nvidia") != -1) {
-         var1 = 4318;
-      } else if (this.field6709.indexOf("intel") != -1) {
-         var1 = 32902;
-      } else if (this.field6709.indexOf("ati") != -1) {
-         var1 = 4098;
-      }
-
-      return new class305(var1, "OpenGL", this.field6788, this.field6849, 0L);
-   }
-
-   public class48 method4961(int[] var1, int var2, int var3, int var4, int var5, boolean var6) {
-      return new class328(this, var4, var5, var1, var2, var3);
-   }
-
-   public class48 method4962(int[] var1, int var2, int var3, int var4, int var5, boolean var6) {
-      return new class328(this, var4, var5, var1, var2, var3);
-   }
-
    class749 method4819(Canvas var1, int var2, int var3) {
       return new class479(this, var1);
-   }
-
-   public class48 method4963(class922 var1, boolean var2) {
-      int[] var3 = new int[var1.field10269 * var1.field10273];
-      int var4 = 0;
-      int var5 = 0;
-      int var6;
-      int var7;
-      if (var1.field10276 != null) {
-         for(var6 = 0; var6 < var1.field10273; ++var6) {
-            for(var7 = 0; var7 < var1.field10269; ++var7) {
-               var3[var5++] = var1.field10276[var4] << 24 | var1.field10274[var1.field10275[var4] & 255];
-               ++var4;
-            }
-         }
-      } else {
-         for(var6 = 0; var6 < var1.field10273; ++var6) {
-            for(var7 = 0; var7 < var1.field10269; ++var7) {
-               int var8 = var1.field10274[var1.field10275[var4++] & 255];
-               var3[var5++] = var8 != 0 ? -16777216 | var8 : 0;
-            }
-         }
-      }
-
-      class48 var9 = this.method4854(var3, 0, var1.field10269, var1.field10269, var1.field10273, 906612103);
-      var9.method3104(var1.field10272, var1.field10268, var1.field10271, var1.field10270);
-      return var9;
-   }
-
-   public void method4999(boolean var1) {
-      this.field6795 = var1;
-      this.method3648();
-   }
-
-   public void method4901(int var1, class23 var2, int var3, int var4) {
-      class944 var5 = (class944)var2;
-      class102 var6 = var5.field3363;
-      this.method3634();
-      this.method3639(var5.field3363);
-      this.method3649(1);
-      this.method3641(7681, 8448);
-      this.method3642(0, 34167, 768);
-      float var7 = var6.field322 / (float)var6.field321;
-      float var8 = var6.field324 / (float)var6.field320;
-      OpenGL.glColor4ub((byte)(var1 >> 16), (byte)(var1 >> 8), (byte)var1, (byte)(var1 >> 24));
-      OpenGL.glBegin(7);
-      OpenGL.glTexCoord2f(var7 * (float)(this.field6768 - var3), var8 * (float)(this.field6796 - var4));
-      OpenGL.glVertex2i(this.field6768, this.field6796);
-      OpenGL.glTexCoord2f(var7 * (float)(this.field6768 - var3), var8 * (float)(this.field6746 - var4));
-      OpenGL.glVertex2i(this.field6768, this.field6746);
-      OpenGL.glTexCoord2f(var7 * (float)(this.field6711 - var3), var8 * (float)(this.field6746 - var4));
-      OpenGL.glVertex2i(this.field6711, this.field6746);
-      OpenGL.glTexCoord2f(var7 * (float)(this.field6711 - var3), var8 * (float)(this.field6796 - var4));
-      OpenGL.glVertex2i(this.field6711, this.field6796);
-      OpenGL.glEnd();
-      this.method3642(0, 5890, 768);
-   }
-
-   void method4900() {
-      for(class568 var1 = this.field6754.method1281(1818492578); var1 != null; var1 = this.field6754.method1283((byte)-36)) {
-         ((class292)var1).method6524();
-      }
-
-      if (this.field6742 != null) {
-         this.field6742.method2701();
-      }
-
-      if (this.field6752) {
-         class82.method919(false, true, (short)19373);
-         this.field6752 = false;
-      }
-
-   }
-
-   public class23 method4966(int var1, int var2, int[] var3, int[] var4) {
-      return class944.method1971(this, var1, var2, var3, var4);
-   }
-
-   public class135 method4828() {
-      return this.field6747;
-   }
-
-   public void method4969(int var1, class23 var2, int var3, int var4) {
-      class944 var5 = (class944)var2;
-      class102 var6 = var5.field3363;
-      this.method3634();
-      this.method3639(var5.field3363);
-      this.method3649(1);
-      this.method3641(7681, 8448);
-      this.method3642(0, 34167, 768);
-      float var7 = var6.field322 / (float)var6.field321;
-      float var8 = var6.field324 / (float)var6.field320;
-      OpenGL.glColor4ub((byte)(var1 >> 16), (byte)(var1 >> 8), (byte)var1, (byte)(var1 >> 24));
-      OpenGL.glBegin(7);
-      OpenGL.glTexCoord2f(var7 * (float)(this.field6768 - var3), var8 * (float)(this.field6796 - var4));
-      OpenGL.glVertex2i(this.field6768, this.field6796);
-      OpenGL.glTexCoord2f(var7 * (float)(this.field6768 - var3), var8 * (float)(this.field6746 - var4));
-      OpenGL.glVertex2i(this.field6768, this.field6746);
-      OpenGL.glTexCoord2f(var7 * (float)(this.field6711 - var3), var8 * (float)(this.field6746 - var4));
-      OpenGL.glVertex2i(this.field6711, this.field6746);
-      OpenGL.glTexCoord2f(var7 * (float)(this.field6711 - var3), var8 * (float)(this.field6796 - var4));
-      OpenGL.glVertex2i(this.field6711, this.field6796);
-      OpenGL.glEnd();
-      this.method3642(0, 5890, 768);
-   }
-
-   public class727 method4970(class230 var1, class922[] var2, boolean var3) {
-      return new class101(this, var1, var2, var3);
-   }
-
-   public class344 method4917() {
-      return this.field6745;
    }
 
    final void method3656(int var1) {
@@ -3458,33 +1983,9 @@ public class class13 extends class848 {
       OpenGL.glTexEnvfv(8960, 8705, field6850, 0);
    }
 
-   public class879 method4973(class25 var1, int var2, int var3, int var4, int var5) {
-      return new class248(this, var1, var2, var4, var5, var3);
-   }
-
-   public int method4983(int var1, int var2) {
-      return var1 & var2 ^ var2;
-   }
-
-   public int method4975(int var1, int var2) {
-      return var1 & var2 ^ var2;
-   }
-
-   public void method4896() {
-      OpenGL.glFinish();
-   }
-
-   public int method4977(int var1, int var2) {
-      return var1 & var2 ^ var2;
-   }
-
-   public class454 method4978(int var1, int var2, int[][] var3, int[][] var4, int var5, int var6, int var7) {
-      return new class291(this, var6, var7, var1, var2, var3, var4, var5);
-   }
-
    static int method3657(class264 var0, class482 var1) {
       if (var1 == class482.field8399) {
-         switch(var0.field8200 * -976336893) {
+         switch(var0.field8200) {
          case 1:
             return 6409;
          case 2:
@@ -3503,7 +2004,7 @@ public class class13 extends class848 {
             return 6408;
          }
       } else if (var1 == class482.field8400) {
-         switch(var0.field8200 * -976336893) {
+         switch(var0.field8200) {
          case 1:
             return 32834;
          case 2:
@@ -3523,14 +2024,14 @@ public class class13 extends class848 {
             return 32859;
          }
       } else if (var1 == class482.field8401) {
-         switch(var0.field8200 * -976336893) {
+         switch(var0.field8200) {
          case 2:
             return 33190;
          default:
             throw new IllegalArgumentException();
          }
       } else if (var1 == class482.field8396) {
-         switch(var0.field8200 * -976336893) {
+         switch(var0.field8200) {
          case 1:
             return 34846;
          case 2:
@@ -3549,7 +2050,7 @@ public class class13 extends class848 {
             return 34842;
          }
       } else if (var1 == class482.field8403) {
-         switch(var0.field8200 * -976336893) {
+         switch(var0.field8200) {
          case 1:
             return 34840;
          case 2:
@@ -3570,10 +2071,6 @@ public class class13 extends class848 {
       } else {
          throw new IllegalArgumentException();
       }
-   }
-
-   public class454 method4922(int var1, int var2, int[][] var3, int[][] var4, int var5, int var6, int var7) {
-      return new class291(this, var6, var7, var1, var2, var3, var4, var5);
    }
 
    void method4841(int var1, int var2, int var3, int var4, int var5) {
@@ -3626,95 +2123,8 @@ public class class13 extends class848 {
 
    }
 
-   public class135 method5055() {
-      return this.field6747;
-   }
-
-   public class135 method4821() {
-      return this.field6747;
-   }
-
-   public class23 method4965(int var1, int var2, int[] var3, int[] var4) {
-      return class944.method1971(this, var1, var2, var3, var4);
-   }
-
-   public void method4808(int var1, class639[] var2) {
-      for(int var3 = 0; var3 < var1; ++var3) {
-         this.field6851[var3] = var2[var3];
-      }
-
-      this.field6822 = var1;
-      if (this.field6794 != 1) {
-         this.method3660();
-      }
-
-   }
-
-   public void method4940(int var1, int var2, int var3, int var4, int var5, int var6) {
-      float var7 = (float)var1 + 0.35F;
-      float var8 = (float)var2 + 0.35F;
-      float var9 = var7 + (float)var3;
-      float var10 = var8 + (float)var4;
-      this.method3633();
-      this.method3649(var6);
-      OpenGL.glColor4ub((byte)(var5 >> 16), (byte)(var5 >> 8), (byte)var5, (byte)(var5 >> 24));
-      if (this.field6860) {
-         OpenGL.glDisable(32925);
-      }
-
-      OpenGL.glBegin(7);
-      OpenGL.glVertex2f(var7, var8);
-      OpenGL.glVertex2f(var7, var10);
-      OpenGL.glVertex2f(var9, var10);
-      OpenGL.glVertex2f(var9, var8);
-      OpenGL.glEnd();
-      if (this.field6860) {
-         OpenGL.glEnable(32925);
-      }
-
-   }
-
    final void method3658(int var1) {
       this.method3636(var1, true);
-   }
-
-   public final void method4990(class135 var1) {
-      this.field6774.method1024(var1);
-      this.field6797.method272(this.field6774);
-      this.field6790.method1024(var1);
-      this.field6790.method1012();
-      this.field6776.method272(this.field6790);
-      this.method3618();
-      if (this.field6794 != 1) {
-         this.method3617();
-      }
-
-   }
-
-   public final void method4991(class135 var1) {
-      this.field6774.method1024(var1);
-      this.field6797.method272(this.field6774);
-      this.field6790.method1024(var1);
-      this.field6790.method1012();
-      this.field6776.method272(this.field6790);
-      this.method3618();
-      if (this.field6794 != 1) {
-         this.method3617();
-      }
-
-   }
-
-   public final void method4992(class135 var1) {
-      this.field6774.method1024(var1);
-      this.field6797.method272(this.field6774);
-      this.field6790.method1024(var1);
-      this.field6790.method1012();
-      this.field6776.method272(this.field6790);
-      this.method3618();
-      if (this.field6794 != 1) {
-         this.method3617();
-      }
-
    }
 
    public void method4863(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
@@ -3797,232 +2207,14 @@ public class class13 extends class848 {
 
    }
 
-   public final void method4994(class344 var1) {
-      this.field6728.method269(var1);
-      this.method3618();
-      this.method3623();
-   }
-
-   public final void method5000(float var1) {
-      if (this.field6817 != var1) {
-         this.field6817 = var1;
-         this.method3622();
-      }
-
-   }
-
-   public final void method4898(float var1) {
-      if (this.field6817 != var1) {
-         this.field6817 = var1;
-         this.method3622();
-      }
-
-   }
-
-   public final void method4997(int var1, float var2, float var3, float var4, float var5, float var6) {
-      boolean var7 = this.field6720 != var1;
-      if (var7 || this.field6818 != var2 || this.field6819 != var3) {
-         this.field6720 = var1;
-         this.field6818 = var2;
-         this.field6819 = var3;
-         if (var7) {
-            this.field6812 = (float)(this.field6720 & 16711680) / 1.671168E7F;
-            this.field6815 = (float)(this.field6720 & '\uff00') / 65280.0F;
-            this.field6878 = (float)(this.field6720 & 255) / 255.0F;
-            this.method3622();
-         }
-
-         this.method3613();
-      }
-
-      if (this.field6809[0] != var4 || this.field6809[1] != var5 || this.field6809[2] != var6) {
-         this.field6809[0] = var4;
-         this.field6809[1] = var5;
-         this.field6809[2] = var6;
-         this.field6810[0] = -var4;
-         this.field6810[1] = -var5;
-         this.field6810[2] = -var6;
-         float var8 = (float)(1.0D / Math.sqrt((double)(var4 * var4 + var5 * var5 + var6 * var6)));
-         this.field6811[0] = var4 * var8;
-         this.field6811[1] = var5 * var8;
-         this.field6811[2] = var6 * var8;
-         this.field6844[0] = -this.field6811[0];
-         this.field6844[1] = -this.field6811[1];
-         this.field6844[2] = -this.field6811[2];
-         this.method3662();
-         this.field6753 = (int)(var4 * 256.0F / var5);
-         this.field6713 = (int)(var6 * 256.0F / var5);
-      }
-
-   }
-
-   public final void method4998(int var1) {
-      for(this.field6751 = 0; var1 > 1; var1 >>= 1) {
-         ++this.field6751;
-      }
-
-      this.field6750 = 1 << this.field6751;
-   }
-
-   public final void method4842(int var1, int var2, int var3) {
-      if (this.field6826 != var1 || this.field6694 != var2 || this.field6882 != var3) {
-         this.field6826 = var1;
-         this.field6694 = var2;
-         this.field6882 = var3;
-         this.method3625();
-         this.method3624();
-      }
-
-   }
-
-   public final void method5053(int var1, int var2, int var3) {
-      if (this.field6826 != var1 || this.field6694 != var2 || this.field6882 != var3) {
-         this.field6826 = var1;
-         this.field6694 = var2;
-         this.field6882 = var3;
-         this.method3625();
-         this.method3624();
-      }
-
-   }
-
-   public final void method5001(int var1, int var2, int var3) {
-      if (this.field6826 != var1 || this.field6694 != var2 || this.field6882 != var3) {
-         this.field6826 = var1;
-         this.field6694 = var2;
-         this.field6882 = var3;
-         this.method3625();
-         this.method3624();
-      }
-
-   }
-
-   public final void method5002(int var1, int var2, int var3) {
-      if (this.field6826 != var1 || this.field6694 != var2 || this.field6882 != var3) {
-         this.field6826 = var1;
-         this.field6694 = var2;
-         this.field6882 = var3;
-         this.method3625();
-         this.method3624();
-      }
-
-   }
-
-   public void method5003(boolean var1) {
-   }
-
-   public void method5056(boolean var1) {
-   }
-
    public void method4826(float var1, float var2) {
       this.field6786 = var1;
       this.field6787 = var2;
       this.method3659();
    }
 
-   public class621 method5006(int var1, int var2, int var3, int var4, int var5, int var6) {
-      return this.field6865 ? new class88(this, var1, var2, var3, var4, var5, var6) : null;
-   }
-
-   public class621 method5052(int var1, int var2, int var3, int var4, int var5, int var6) {
-      return this.field6865 ? new class88(this, var1, var2, var3, var4, var5, var6) : null;
-   }
-
-   public class621 method4919(int var1, int var2, int var3, int var4, int var5, int var6) {
-      return this.field6865 ? new class88(this, var1, var2, var3, var4, var5, var6) : null;
-   }
-
-   public class621 method4794(class621 var1, class621 var2, float var3, class621 var4) {
-      if (var1 != null && var2 != null && this.field6865 && this.field6857) {
-         class803 var5 = null;
-         class913 var6 = (class913)var1;
-         class913 var7 = (class913)var2;
-         class169 var8 = var6.method6478();
-         class169 var9 = var7.method6478();
-         if (var8 != null && var9 != null) {
-            int var10 = var8.field6687 > var9.field6687 ? var8.field6687 : var9.field6687;
-            if (var1 != var4 && var2 != var4 && var4 instanceof class803) {
-               class803 var11 = (class803)var4;
-               if (var11.method2883() == var10) {
-                  var5 = var11;
-               }
-            }
-
-            if (var5 == null) {
-               var5 = new class803(this, var10);
-            }
-
-            if (var5.method2884(var8, var9, var3)) {
-               return var5;
-            }
-         }
-      }
-
-      return var3 < 0.5F ? var1 : var2;
-   }
-
-   public class621 method5008(class621 var1, class621 var2, float var3, class621 var4) {
-      if (var1 != null && var2 != null && this.field6865 && this.field6857) {
-         class803 var5 = null;
-         class913 var6 = (class913)var1;
-         class913 var7 = (class913)var2;
-         class169 var8 = var6.method6478();
-         class169 var9 = var7.method6478();
-         if (var8 != null && var9 != null) {
-            int var10 = var8.field6687 > var9.field6687 ? var8.field6687 : var9.field6687;
-            if (var1 != var4 && var2 != var4 && var4 instanceof class803) {
-               class803 var11 = (class803)var4;
-               if (var11.method2883() == var10) {
-                  var5 = var11;
-               }
-            }
-
-            if (var5 == null) {
-               var5 = new class803(this, var10);
-            }
-
-            if (var5.method2884(var8, var9, var3)) {
-               return var5;
-            }
-         }
-      }
-
-      return var3 < 0.5F ? var1 : var2;
-   }
-
-   public class621 method5057(int var1, int var2, int var3, int var4, int var5, int var6) {
-      return this.field6865 ? new class88(this, var1, var2, var3, var4, var5, var6) : null;
-   }
-
-   public final void method5011() {
-      if (this.field6743 != null && this.field6743.method3863()) {
-         this.field6742.method2700(this.field6743);
-         this.field6739.method4513();
-      }
-
-   }
-
    public class454 method4864(int var1, int var2, int[][] var3, int[][] var4, int var5, int var6, int var7) {
       return new class291(this, var6, var7, var1, var2, var3, var4, var5);
-   }
-
-   public final boolean method4976() {
-      return this.field6743 != null && this.field6743.method3863();
-   }
-
-   public void method4972(int var1) {
-   }
-
-   public final boolean method5015() {
-      return this.field6743 != null && this.field6743.method3863();
-   }
-
-   public final void method4799(int var1, int var2, int var3, int var4) {
-      this.field6742.method2696(var1, var2, var3, var4);
-   }
-
-   public void method4988(class874 var1) {
-      this.field6744.method4281(this, var1);
    }
 
    final void method3659() {
@@ -4034,142 +2226,12 @@ public class class13 extends class848 {
 
    }
 
-   public final void method5020() {
-      this.field6742.method2698();
-   }
-
-   public void method5021(int var1, class919 var2) {
-      this.field6842 = var1;
-      this.field6836 = var2;
-      this.field6833 = true;
-   }
-
-   public void method5022(int var1, class919 var2) {
-      this.field6842 = var1;
-      this.field6836 = var2;
-      this.field6833 = true;
-   }
-
-   public void method4929(int var1, class919 var2) {
-      if (!this.field6833) {
-         throw new RuntimeException("");
-      } else {
-         this.field6842 = var1;
-         this.field6836 = var2;
-         if (this.field6834) {
-            this.field6741.field1453.method3375();
-            this.field6741.field1453.method3374();
-         }
-
-      }
-   }
-
-   public void method5024() {
-      this.field6833 = false;
-   }
-
-   public void method5025() {
-      this.field6833 = false;
-   }
-
-   public void method5027(int var1, int var2, float var3, int var4, int var5, float var6, int var7, int var8, float var9, int var10, int var11, int var12, int var13) {
-      this.method3633();
-      this.method3649(var13);
-      OpenGL.glBegin(4);
-      OpenGL.glColor4ub((byte)(var10 >> 16), (byte)(var10 >> 8), (byte)var10, (byte)(var10 >> 24));
-      OpenGL.glVertex3f((float)var1 + 0.35F, (float)var2 + 0.35F, var3);
-      OpenGL.glColor4ub((byte)(var11 >> 16), (byte)(var11 >> 8), (byte)var11, (byte)(var11 >> 24));
-      OpenGL.glVertex3f((float)var4 + 0.35F, (float)var5 + 0.35F, var6);
-      OpenGL.glColor4ub((byte)(var12 >> 16), (byte)(var12 >> 8), (byte)var12, (byte)(var12 >> 24));
-      OpenGL.glVertex3f((float)var7 + 0.35F, (float)var8 + 0.35F, var9);
-      OpenGL.glEnd();
-   }
-
-   public void method5005(int var1, int var2, float var3, int var4, int var5, float var6, int var7, int var8, float var9, int var10, int var11, int var12, int var13) {
-      this.method3633();
-      this.method3649(var13);
-      OpenGL.glBegin(4);
-      OpenGL.glColor4ub((byte)(var10 >> 16), (byte)(var10 >> 8), (byte)var10, (byte)(var10 >> 24));
-      OpenGL.glVertex3f((float)var1 + 0.35F, (float)var2 + 0.35F, var3);
-      OpenGL.glColor4ub((byte)(var11 >> 16), (byte)(var11 >> 8), (byte)var11, (byte)(var11 >> 24));
-      OpenGL.glVertex3f((float)var4 + 0.35F, (float)var5 + 0.35F, var6);
-      OpenGL.glColor4ub((byte)(var12 >> 16), (byte)(var12 >> 8), (byte)var12, (byte)(var12 >> 24));
-      OpenGL.glVertex3f((float)var7 + 0.35F, (float)var8 + 0.35F, var9);
-      OpenGL.glEnd();
-   }
-
-   public void method5029(float var1, float var2, float var3, float[] var4) {
-      float var5 = this.field6756.field325[15] + this.field6756.field325[3] * var1 + this.field6756.field325[7] * var2 + this.field6756.field325[11] * var3;
-      float var6 = this.field6756.field325[12] + this.field6756.field325[0] * var1 + this.field6756.field325[4] * var2 + this.field6756.field325[8] * var3;
-      float var7 = this.field6756.field325[13] + this.field6756.field325[1] * var1 + this.field6756.field325[5] * var2 + this.field6756.field325[9] * var3;
-      float var8 = this.field6797.field325[14] + this.field6797.field325[2] * var1 + this.field6797.field325[6] * var2 + this.field6797.field325[10] * var3;
-      var4[0] = this.field6782 + this.field6783 * var6 / var5;
-      var4[1] = this.field6784 + this.field6785 * var7 / var5;
-      var4[2] = var8;
-   }
-
    public final void method4882() {
       if (this.field6743 != null && this.field6743.method3863()) {
          this.field6742.method2700(this.field6743);
          this.field6739.method4513();
       }
 
-   }
-
-   public void method5031(float var1, float var2, float var3, float[] var4) {
-      float var5 = this.field6756.field325[15] + this.field6756.field325[3] * var1 + this.field6756.field325[7] * var2 + this.field6756.field325[11] * var3;
-      float var6 = this.field6756.field325[12] + this.field6756.field325[0] * var1 + this.field6756.field325[4] * var2 + this.field6756.field325[8] * var3;
-      float var7 = this.field6756.field325[13] + this.field6756.field325[1] * var1 + this.field6756.field325[5] * var2 + this.field6756.field325[9] * var3;
-      float var8 = this.field6797.field325[14] + this.field6797.field325[2] * var1 + this.field6797.field325[6] * var2 + this.field6797.field325[10] * var3;
-      var4[0] = this.field6782 + this.field6783 * var6 / var5;
-      var4[1] = this.field6784 + this.field6785 * var7 / var5;
-      var4[2] = var8;
-   }
-
-   public void method5033(float var1, float var2, float var3, float[] var4) {
-      float var5 = this.field6756.field325[14] + this.field6756.field325[2] * var1 + this.field6756.field325[6] * var2 + this.field6756.field325[10] * var3;
-      float var6 = this.field6756.field325[15] + this.field6756.field325[3] * var1 + this.field6756.field325[7] * var2 + this.field6756.field325[11] * var3;
-      if (var5 >= -var6 && var5 <= var6) {
-         float var7 = this.field6756.field325[12] + this.field6756.field325[0] * var1 + this.field6756.field325[4] * var2 + this.field6756.field325[8] * var3;
-         if (var7 >= -var6 && var7 <= var6) {
-            float var8 = this.field6756.field325[13] + this.field6756.field325[1] * var1 + this.field6756.field325[5] * var2 + this.field6756.field325[9] * var3;
-            if (var8 >= -var6 && var8 <= var6) {
-               float var9 = this.field6797.field325[14] + this.field6797.field325[2] * var1 + this.field6797.field325[6] * var2 + this.field6797.field325[10] * var3;
-               var4[0] = this.field6782 + this.field6783 * var7 / var6;
-               var4[1] = this.field6784 + this.field6785 * var8 / var6;
-               var4[2] = var9;
-            } else {
-               var4[2] = Float.NaN;
-               var4[1] = Float.NaN;
-               var4[0] = Float.NaN;
-            }
-         } else {
-            var4[2] = Float.NaN;
-            var4[1] = Float.NaN;
-            var4[0] = Float.NaN;
-         }
-      } else {
-         var4[2] = Float.NaN;
-         var4[1] = Float.NaN;
-         var4[0] = Float.NaN;
-      }
-
-   }
-
-   public class806 method5004() {
-      return new class275(this);
-   }
-
-   public class893 method5034(int var1, int var2) {
-      return new class239(this, class264.field8195, class482.field8401, var1, var2);
-   }
-
-   public boolean method5050() {
-      return false;
-   }
-
-   public boolean method5035() {
-      return this.field6743 != null && (this.field6738 <= 1 || this.field6861);
    }
 
    void method3660() {
@@ -4211,7 +2273,7 @@ public class class13 extends class848 {
             this.method3654();
          } else {
             var4 = this.field6739.method4510(var1);
-            class414 var9 = this.field8581.method4625(var1, 2098871583);
+            class414 var9 = super.field8581.method4625(var1, 2098871583);
             if (var9.field9389 == 0 && var9.field9363 == 0) {
                this.method3654();
             } else {
@@ -4220,11 +2282,11 @@ public class class13 extends class848 {
 
             if (!this.field6833) {
                var6 = var9.field9390;
-               var7 = var9.field9385 * 1616831825;
+               var7 = var9.field9385;
                var8 = var9.field9383;
             }
 
-            var5 = var9.field9373 * -490972023;
+            var5 = var9.field9373;
          }
 
          this.field6741.method1105(var8, var6, var7, var2, var3);
@@ -4240,26 +2302,6 @@ public class class13 extends class848 {
       this.field6767 &= -8;
    }
 
-   public void method5036(int var1, int var2, int var3, int var4, int var5, int var6) {
-      this.method3633();
-      this.method3649(var6);
-      float var7 = (float)var3 - (float)var1;
-      float var8 = (float)var4 - (float)var2;
-      if (var7 == 0.0F && var8 == 0.0F) {
-         var7 = 1.0F;
-      } else {
-         float var9 = (float)(1.0D / Math.sqrt((double)(var7 * var7 + var8 * var8)));
-         var7 *= var9;
-         var8 *= var9;
-      }
-
-      OpenGL.glColor4ub((byte)(var5 >> 16), (byte)(var5 >> 8), (byte)var5, (byte)(var5 >> 24));
-      OpenGL.glBegin(1);
-      OpenGL.glVertex2f((float)var1 + 0.35F, (float)var2 + 0.35F);
-      OpenGL.glVertex2f((float)var3 + var7 + 0.35F, (float)var4 + var8 + 0.35F);
-      OpenGL.glEnd();
-   }
-
    public void method4886(int var1, class919 var2) {
       this.field6842 = var1;
       this.field6836 = var2;
@@ -4269,18 +2311,6 @@ public class class13 extends class848 {
    void method3662() {
       OpenGL.glLightfv(16384, 4611, this.field6811, 0);
       OpenGL.glLightfv(16385, 4611, this.field6844, 0);
-   }
-
-   public int method5039(int var1, int var2) {
-      return var1 | var2;
-   }
-
-   public void method4932(int var1, int var2, int var3, int var4) {
-      this.field6802 = var1;
-      this.field6881 = var2;
-      this.field6804 = var3;
-      this.field6867 = var4;
-      this.method3614();
    }
 
    final class169 method3663() {
@@ -4296,31 +2326,8 @@ public class class13 extends class848 {
 
    }
 
-   public class135 method5041() {
-      return new class135(this.field6774);
-   }
-
    public int method4836(int var1, int var2) {
       return var1 & var2 ^ var2;
-   }
-
-   public void method4935(int var1, int var2) {
-      int var3 = 0;
-      if ((var1 & 1) != 0) {
-         OpenGL.glClearColor((float)(var2 & 16711680) / 1.671168E7F, (float)(var2 & '\uff00') / 65280.0F, (float)(var2 & 255) / 255.0F, (float)(var2 >>> 24) / 255.0F);
-         var3 = 16384;
-      }
-
-      if ((var1 & 2) != 0) {
-         this.method3664(true);
-         var3 |= 256;
-      }
-
-      if ((var1 & 4) != 0) {
-         var3 |= 1024;
-      }
-
-      OpenGL.glClear(var3);
    }
 
    public final void method4835(int var1) {
@@ -4329,26 +2336,6 @@ public class class13 extends class848 {
       }
 
       this.field6750 = 1 << this.field6751;
-   }
-
-   public final class344 method4981() {
-      return new class344(this.field6728);
-   }
-
-   void method4899() {
-      for(class568 var1 = this.field6754.method1281(1739578177); var1 != null; var1 = this.field6754.method1283((byte)-106)) {
-         ((class292)var1).method6524();
-      }
-
-      if (this.field6742 != null) {
-         this.field6742.method2701();
-      }
-
-      if (this.field6752) {
-         class82.method919(false, true, (short)-19800);
-         this.field6752 = false;
-      }
-
    }
 
    void method3665() {
@@ -4414,39 +2401,8 @@ public class class13 extends class848 {
       OpenGL.glMultMatrixf(var1.field325, 0);
    }
 
-   public void method4823(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
-      OpenGL.glLineWidth((float)var6);
-      this.method4934(var1, var2, var3, var4, var5, var7);
-      OpenGL.glLineWidth(1.0F);
-   }
-
-   public final void method5045() {
-      this.field6742.method2698();
-   }
-
-   public class48 method4960(int var1, int var2, boolean var3, boolean var4) {
-      return new class328(this, var1, var2, var3);
-   }
-
-   public final void method5019() {
-      this.field6742.method2698();
-   }
-
    final class387 method3667(int var1, byte[] var2, int var3, boolean var4) {
       return (class387)(!this.field6813 || var4 && !this.field6863 ? new class424(this, var1, var2, var3) : new class254(this, var1, var2, var3, var4));
-   }
-
-   void method4894(int var1, int var2) throws class937 {
-      try {
-         this.field8594.method2516();
-      } catch (Exception var4) {
-         ;
-      }
-
-      if (this.field8581 != null) {
-         this.field8581.method4627(1477655879);
-      }
-
    }
 
    public final boolean method4881() {
@@ -4463,41 +2419,6 @@ public class class13 extends class848 {
       } else {
          return false;
       }
-   }
-
-   public class48 method4964(int var1, int var2, int var3, int var4, boolean var5) {
-      return new class328(this, var1, var2, var3, var4);
-   }
-
-   public final void method4923(int[] var1) {
-      var1[0] = this.field6768;
-      var1[1] = this.field6796;
-      var1[2] = this.field6711;
-      var1[3] = this.field6746;
-   }
-
-   public void method4987(int var1, class23 var2, int var3, int var4) {
-      class944 var5 = (class944)var2;
-      class102 var6 = var5.field3363;
-      this.method3634();
-      this.method3639(var5.field3363);
-      this.method3649(1);
-      this.method3641(7681, 8448);
-      this.method3642(0, 34167, 768);
-      float var7 = var6.field322 / (float)var6.field321;
-      float var8 = var6.field324 / (float)var6.field320;
-      OpenGL.glColor4ub((byte)(var1 >> 16), (byte)(var1 >> 8), (byte)var1, (byte)(var1 >> 24));
-      OpenGL.glBegin(7);
-      OpenGL.glTexCoord2f(var7 * (float)(this.field6768 - var3), var8 * (float)(this.field6796 - var4));
-      OpenGL.glVertex2i(this.field6768, this.field6796);
-      OpenGL.glTexCoord2f(var7 * (float)(this.field6768 - var3), var8 * (float)(this.field6746 - var4));
-      OpenGL.glVertex2i(this.field6768, this.field6746);
-      OpenGL.glTexCoord2f(var7 * (float)(this.field6711 - var3), var8 * (float)(this.field6746 - var4));
-      OpenGL.glVertex2i(this.field6711, this.field6746);
-      OpenGL.glTexCoord2f(var7 * (float)(this.field6711 - var3), var8 * (float)(this.field6796 - var4));
-      OpenGL.glVertex2i(this.field6711, this.field6796);
-      OpenGL.glEnd();
-      this.method3642(0, 5890, 768);
    }
 
    final void method3668(int var1, int var2, int var3) {
@@ -4543,22 +2464,6 @@ public class class13 extends class848 {
       OpenGL.glVertex2f(var6, var7);
       OpenGL.glVertex2f(var6, var7 + (float)var3);
       OpenGL.glEnd();
-   }
-
-   public final boolean method5010() {
-      if (this.field6743 != null) {
-         if (!this.field6743.method3863()) {
-            if (!this.field6742.method2699(this.field6743)) {
-               return false;
-            }
-
-            this.field6739.method4513();
-         }
-
-         return true;
-      } else {
-         return false;
-      }
    }
 
    final void method3670() {
@@ -4633,34 +2538,11 @@ public class class13 extends class848 {
 
    }
 
-   public final void method4806() {
-      if (this.field8574 != null) {
-         this.field6768 = 0;
-         this.field6796 = 0;
-         this.field6711 = this.field8574.method2481();
-         this.field6746 = this.field8574.method2493();
-         OpenGL.glDisable(3089);
-      }
-
-   }
-
    final void method3672(int var1, int var2) {
       this.field6800 = var1;
       this.field6801 = var2;
       this.method3614();
       this.method3615();
-   }
-
-   public void method4946(int var1, int var2, int var3, int var4, int var5) {
-      this.method3633();
-      this.method3649(var5);
-      float var6 = (float)var1 + 0.35F;
-      float var7 = (float)var2 + 0.35F;
-      OpenGL.glColor4ub((byte)(var4 >> 16), (byte)(var4 >> 8), (byte)var4, (byte)(var4 >> 24));
-      OpenGL.glBegin(1);
-      OpenGL.glVertex2f(var6, var7);
-      OpenGL.glVertex2f(var6 + (float)var3, var7);
-      OpenGL.glEnd();
    }
 
    void method3673() {
@@ -4670,29 +2552,6 @@ public class class13 extends class848 {
          OpenGL.glDisable(2896);
       }
 
-   }
-
-   public boolean method4906() {
-      return true;
-   }
-
-   public void method4937(int var1, int var2) {
-      int var3 = 0;
-      if ((var1 & 1) != 0) {
-         OpenGL.glClearColor((float)(var2 & 16711680) / 1.671168E7F, (float)(var2 & '\uff00') / 65280.0F, (float)(var2 & 255) / 255.0F, (float)(var2 >>> 24) / 255.0F);
-         var3 = 16384;
-      }
-
-      if ((var1 & 2) != 0) {
-         this.method3664(true);
-         var3 |= 256;
-      }
-
-      if ((var1 & 4) != 0) {
-         var3 |= 1024;
-      }
-
-      OpenGL.glClear(var3);
    }
 
    final void method3674() {

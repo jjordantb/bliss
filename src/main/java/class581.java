@@ -10,14 +10,6 @@ public class class581 {
    public class581() throws Exception {
    }
 
-   public void method143(int var1, int var2) {
-      try {
-         this.field166.mouseMove(var1, var2);
-      } catch (RuntimeException var4) {
-         throw class158.method3445(var4, "mg.movemouse(" + ')');
-      }
-   }
-
    public void method144(Component var1, int[] var2, int var3, int var4, Point var5) {
       try {
          if (var2 != null) {

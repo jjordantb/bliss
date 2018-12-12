@@ -1,13 +1,9 @@
 public class class771 extends class14 {
    public static class180 field3732;
 
-   boolean method3598() {
-      return this.method2299((short)10438) != null || this.field6690 * 8383148474145196457L < class27.method3468((byte)1) - 2000L;
-   }
-
    boolean method3583(int var1) {
       try {
-         return this.method2299((short)10071) != null || this.field6690 * 8383148474145196457L < class27.method3468((byte)1) - 2000L;
+         return this.method2299((short)10071) != null || super.field6690 < class27.method3468((byte)1) - 2000L;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "adi.u(" + ')');
       }
@@ -29,80 +25,7 @@ public class class771 extends class14 {
       }
    }
 
-   void method3581(class907 var1, class284 var2, byte var3) {
-   }
-
-   boolean method3588() {
-      return this.method2299((short)-18072) != null || this.field6690 * 8383148474145196457L < class27.method3468((byte)1) - 2000L;
-   }
-
-   void method3585() {
-      class284 var1 = this.method2299((short)7682);
-      if (var1 != null) {
-         int var2 = this.method3579(var1, 32767, (byte)48);
-         int var3 = var1.method6680(-1340824693);
-         if (var3 < 0) {
-            var3 = 0;
-         } else if (var3 > 65535) {
-            var3 = 65535;
-         }
-
-         int var4 = var1.method6667((byte)-58);
-         if (var4 < 0) {
-            var4 = 0;
-         } else if (var4 > 65535) {
-            var4 = 65535;
-         }
-
-         byte var5 = 0;
-         if (var1.method6666(-1372966703) == 2) {
-            var5 = 1;
-         }
-
-         class701 var6 = class637.method5936(class643.field9945, class730.field2692.field7765, (byte)77);
-         var6.field3364.method6364(var4 | var3 << 16, -1426845039);
-         var6.field3364.method6419(var2 | var5 << 15);
-         class730.field2692.method4380(var6, (byte)-38);
-      }
-
-   }
-
-   void method3577() {
-      class284 var1 = this.method2299((short)14253);
-      if (var1 != null) {
-         int var2 = this.method3579(var1, 32767, (byte)78);
-         int var3 = var1.method6680(-964598213);
-         if (var3 < 0) {
-            var3 = 0;
-         } else if (var3 > 65535) {
-            var3 = 65535;
-         }
-
-         int var4 = var1.method6667((byte)26);
-         if (var4 < 0) {
-            var4 = 0;
-         } else if (var4 > 65535) {
-            var4 = 65535;
-         }
-
-         byte var5 = 0;
-         if (var1.method6666(-1372966703) == 2) {
-            var5 = 1;
-         }
-
-         class701 var6 = class637.method5936(class643.field9945, class730.field2692.field7765, (byte)71);
-         var6.field3364.method6364(var4 | var3 << 16, -1629465959);
-         var6.field3364.method6419(var2 | var5 << 15);
-         class730.field2692.method4380(var6, (byte)-6);
-      }
-
-   }
-
-   void method3576(class907 var1, class284 var2) {
-   }
-
-   boolean method3587() {
-      return this.method2299((short)8384) != null || this.field6690 * 8383148474145196457L < class27.method3468((byte)1) - 2000L;
+   void method3581(InputStream var1, class284 var2, byte var3) {
    }
 
    void method3582(byte var1) {
@@ -140,66 +63,6 @@ public class class771 extends class14 {
       }
    }
 
-   int method3593() {
-      return 0;
-   }
-
-   class701 method3589() {
-      return class637.method5936(class643.field9932, class730.field2692.field7765, (byte)126);
-   }
-
-   class701 method3595() {
-      return class637.method5936(class643.field9932, class730.field2692.field7765, (byte)67);
-   }
-
-   int method3599() {
-      return 0;
-   }
-
-   int method3592() {
-      return 0;
-   }
-
-   void method3591(class907 var1, class284 var2) {
-   }
-
-   void method3594(class907 var1, class284 var2) {
-   }
-
-   void method3596(class907 var1, class284 var2) {
-   }
-
-   void method3586() {
-      class284 var1 = this.method2299((short)-5180);
-      if (var1 != null) {
-         int var2 = this.method3579(var1, 32767, (byte)103);
-         int var3 = var1.method6680(-2028653571);
-         if (var3 < 0) {
-            var3 = 0;
-         } else if (var3 > 65535) {
-            var3 = 65535;
-         }
-
-         int var4 = var1.method6667((byte)-30);
-         if (var4 < 0) {
-            var4 = 0;
-         } else if (var4 > 65535) {
-            var4 = 65535;
-         }
-
-         byte var5 = 0;
-         if (var1.method6666(-1372966703) == 2) {
-            var5 = 1;
-         }
-
-         class701 var6 = class637.method5936(class643.field9945, class730.field2692.field7765, (byte)43);
-         var6.field3364.method6364(var4 | var3 << 16, -611244662);
-         var6.field3364.method6419(var2 | var5 << 15);
-         class730.field2692.method4380(var6, (byte)-78);
-      }
-
-   }
-
    int method3580(int var1) {
       return 0;
    }
@@ -207,12 +70,12 @@ public class class771 extends class14 {
    public static void method2300(boolean var0, boolean var1, int var2) {
       try {
          if (var0) {
-            class543.field3818 += 1929855733;
+            ++class543.field3818;
             class190.method3726(-1915881134);
          }
 
          if (var1) {
-            class543.field3816 += -1931699395;
+            ++class543.field3816;
             class675.method4165((byte)1);
          }
 
@@ -223,9 +86,9 @@ public class class771 extends class14 {
 
    static final void method2301(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -783761378;
-         class730.field2813 = var0.field3161[var0.field3156 * 681479919] * 443563833;
-         class730.field2671 = var0.field3161[1 + var0.field3156 * 681479919] * -802224543;
+         var0.field3156 -= 2;
+         class730.field2813 = var0.field3161[var0.field3156];
+         class730.field2671 = var0.field3161[1 + var0.field3156];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "adi.afv(" + ')');
       }

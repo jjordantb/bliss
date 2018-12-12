@@ -104,7 +104,7 @@ public final class class873 {
 
    static final void method5871(class744 var0, int var1) {
       try {
-         var0.field3162 -= -682569305;
+         --var0.field3162;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "sm.be(" + ')');
       }

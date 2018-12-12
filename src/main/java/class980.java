@@ -22,28 +22,20 @@ public class class980 implements class925 {
       }
    }
 
-   public class7 method6198() {
-      return class7.field4907;
-   }
-
-   public class7 method6199() {
-      return class7.field4907;
-   }
-
    class980(String var1, class971 var2, class49 var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13) {
       this.field3191 = var1;
       this.field3190 = var2;
       this.field3189 = var3;
-      this.field3186 = 983212181 * var4;
-      this.field3187 = 703753783 * var5;
-      this.field3188 = -719694677 * var6;
-      this.field3183 = var7 * 1732454243;
-      this.field3192 = var8 * -1607745933;
-      this.field3184 = -2102344545 * var9;
-      this.field3185 = -299852093 * var10;
-      this.field3193 = var11 * 299588697;
-      this.field3194 = -732046791 * var12;
-      this.field3195 = -1239794753 * var13;
+      this.field3186 = var4;
+      this.field3187 = var5;
+      this.field3188 = var6;
+      this.field3183 = var7;
+      this.field3192 = var8;
+      this.field3184 = var9;
+      this.field3185 = var10;
+      this.field3193 = var11;
+      this.field3194 = var12;
+      this.field3195 = var13;
    }
 
    public static class114 method1912(int var0, int var1) {
@@ -55,7 +47,7 @@ public class class980 implements class925 {
             byte[] var3 = class114.field1727.method3285(0, var0, (byte)-125);
             var2 = new class114();
             if (var3 != null) {
-               var2.method1292(new class907(var3), (byte)20);
+               var2.method1292(new InputStream(var3), (byte)20);
             }
 
             var2.method1294(-721593745);
@@ -77,7 +69,7 @@ public class class980 implements class925 {
 
    static final void method1914(class744 var0, byte var1) {
       try {
-         var0.field3168[(var0.field3162 += -682569305) * 1685767703 - 1] = var0.field3177.field175[1883543357 * var0.field3176];
+         var0.field3168[++var0.field3162 - 1] = var0.field3177.field175[var0.field3176];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "gc.bf(" + ')');
       }

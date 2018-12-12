@@ -18,18 +18,18 @@ public class class909 {
       class909[] var0 = class284.method6686(-2004417351);
 
       for(int var1 = 0; var1 < var0.length; ++var1) {
-         field10386[-1813470547 * var0[var1].field10394] = var0[var1];
+         field10386[var0[var1].field10394] = var0[var1];
       }
 
    }
 
    class909(int var1, int var2) {
-      this.field10394 = var1 * 876548389;
+      this.field10394 = var1;
    }
 
    static final void method6435(class744 var0, int var1) {
       try {
-         var0.field3161[var0.field3156 * 681479919 - 1] = var0.field3154.method974(-1121517922)[var0.field3161[681479919 * var0.field3156 - 1]];
+         var0.field3161[var0.field3156 - 1] = var0.field3154.method974(-1121517922)[var0.field3161[var0.field3156 - 1]];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ix.yt(" + ')');
       }
@@ -37,7 +37,7 @@ public class class909 {
 
    public static void method6436(int var0) {
       try {
-         if (-1233866115 * class730.field2733 == 14 && !class673.method4261((byte)46) && !class556.method431(-391880689)) {
+         if (class730.field2733 == 14 && !class673.method4261((byte)46) && !class556.method431(-391880689)) {
             class967.method1750(18, 2092937740);
          }
 
@@ -48,8 +48,8 @@ public class class909 {
 
    static final void method6437(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class341.method262((char)var2, -691475600) ? 1 : 0;
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class341.method262((char)var2, -691475600) ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ix.zg(" + ')');
       }
@@ -68,12 +68,12 @@ public class class909 {
 
    static final class744 method6439(int var0) {
       try {
-         if (597504395 * class384.field1430 == class384.field1422.size()) {
+         if (class384.field1430 == class384.field1422.size()) {
             class384.field1422.add(new class744());
          }
 
-         class744 var1 = (class744)class384.field1422.get(class384.field1430 * 597504395);
-         class384.field1430 += -1866863069;
+         class744 var1 = (class744)class384.field1422.get(class384.field1430);
+         ++class384.field1430;
          return var1;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "ix.a(" + ')');

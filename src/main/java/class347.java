@@ -39,7 +39,7 @@ public abstract class class347 extends class568 {
 
    void method202(int var1, int var2, int var3) {
       try {
-         int var4 = 255 == this.field267 * -1006569959 ? var2 : this.field267 * -1006569959;
+         int var4 = 255 == this.field267 ? var2 : this.field267 * -2127296983 * -1006569959;
          if (this.field268) {
             this.field270 = new class161(var4, var2, var1);
          } else {
@@ -97,13 +97,13 @@ public abstract class class347 extends class568 {
       return -1;
    }
 
-   void method209(int var1, class907 var2, byte var3) {
+   void method209(int var1, InputStream var2, byte var3) {
    }
 
    static void method210(int var0, int var1, byte var2) {
       try {
-         class602.field8656 = var0 * -305664667;
-         class602.field8657 = var1 * 67681267;
+         class602.field8656 = var0;
+         class602.field8657 = var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "abq.ad(" + ')');
       }

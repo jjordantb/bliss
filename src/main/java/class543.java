@@ -11,14 +11,14 @@ public class class543 {
 
    static final void method2374(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class506 var3 = class395.method3397(var2, 1063164911);
          String var4 = "";
          if (var3 != null && var3.field4129 != null) {
             var4 = var3.field4129;
          }
 
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var4;
+         var0.field3157[++var0.field3158 - 1] = var4;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "pt.abe(" + ')');
       }
@@ -26,20 +26,20 @@ public class class543 {
 
    public static void method2375(class180 var0, int var1) {
       try {
-         class295.field10471 = var0.method3281("hitbar_default", -1490079436) * 2112064137;
-         class295.field10473 = var0.method3281("timerbar_default", -1467775420) * 1617597269;
-         class762.field4391 = var0.method3281("headicons_pk", -1596188459) * 1432033185;
-         class878.field9819 = var0.method3281("headicons_prayer", -926614872) * -1214334111;
-         class295.field10472 = var0.method3281("hint_headicons", -604307983) * 250641705;
-         class295.field10475 = var0.method3281("hint_mapmarkers", -1518589898) * 1711228595;
-         class701.field3366 = var0.method3281("mapflag", -633755996) * 1542214111;
-         class776.field3727 = var0.method3281("cross", -929033367) * -626988461;
-         class942.field10348 = var0.method3281("mapdots", -1089743906) * -1409898789;
-         class295.field10476 = var0.method3281("name_icons", -946611786) * 1606490933;
-         class161.field6604 = var0.method3281("floorshadows", -2138341450) * -1276802557;
-         class229.field8211 = var0.method3281("compass", -1033709469) * 1540144067;
-         class665.field9599 = var0.method3281("otherlevel", -1683756229) * -233695275;
-         class573.field110 = var0.method3281("hint_mapedge", -769864981) * 902133497;
+         class295.field10471 = var0.method3281("hitbar_default", -1490079436);
+         class295.field10473 = var0.method3281("timerbar_default", -1467775420);
+         class762.field4391 = var0.method3281("headicons_pk", -1596188459);
+         class878.field9819 = var0.method3281("headicons_prayer", -926614872);
+         class295.field10472 = var0.method3281("hint_headicons", -604307983);
+         class295.field10475 = var0.method3281("hint_mapmarkers", -1518589898);
+         class701.field3366 = var0.method3281("mapflag", -633755996);
+         class776.field3727 = var0.method3281("cross", -929033367);
+         class942.field10348 = var0.method3281("mapdots", -1089743906);
+         class295.field10476 = var0.method3281("name_icons", -946611786);
+         class161.field6604 = var0.method3281("floorshadows", -2138341450);
+         class229.field8211 = var0.method3281("compass", -1033709469);
+         class665.field9599 = var0.method3281("otherlevel", -1683756229);
+         class573.field110 = var0.method3281("hint_mapedge", -769864981);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "pt.f(" + ')');
       }
@@ -71,7 +71,7 @@ public class class543 {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 2053897963 * var3.field894;
+         var0.field3161[++var0.field3156 - 1] = var3.field894;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "pt.pg(" + ')');
       }

@@ -1,14 +1,14 @@
-public class class361 {
-   class361 field2295;
+public class Entity {
+   Entity field2295;
    class446 field2296 = new class446();
    class446 field2297 = new class446();
    class446 field2298 = new class446();
    boolean field2299 = true;
    boolean field2300;
    class135 field2301;
-   class361 field2302;
+   Entity field2302;
    boolean field2303 = true;
-   class361 field2304;
+   Entity field2304;
 
    public final class446 method1511() {
       if (this.field2303) {
@@ -86,7 +86,7 @@ public class class361 {
    }
 
    public final void method1519() {
-      class361 var1;
+      Entity var1;
       if (this.field2302 != null) {
          var1 = this.field2302.field2295;
          if (var1 == this) {
@@ -141,7 +141,7 @@ public class class361 {
       return this.field2301;
    }
 
-   class361() {
+   Entity() {
       new class344();
       new class344();
       this.field2301 = new class135();

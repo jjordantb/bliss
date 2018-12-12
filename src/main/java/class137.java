@@ -2,8 +2,8 @@ public class class137 extends class568 {
    byte[] field1137;
    class539 field1138;
 
-   class137(class907 var1) {
-      var1.field10376 = (var1.field10375.length - 3) * 116413311;
+   class137(InputStream var1) {
+      var1.field10376 = var1.field10375.length - 3;
       int var2 = var1.method6371();
       int var3 = var1.method6374();
       int var4 = 14 + var2 * 10;
@@ -61,15 +61,15 @@ public class class137 extends class568 {
       var4 += 5 * var5;
       var4 += 2 * (var7 + var8 + var6 + var9 + var11);
       var4 += var10 + var12;
-      var13 = var1.field10376 * 385051775;
+      var13 = var1.field10376;
       var14 = var2 + var5 + var6 + var7 + var8 + var9 + var10 + var11 + var12;
 
       for(var15 = 0; var15 < var14; ++var15) {
          var1.method6386(1692297361);
       }
 
-      var4 += var1.field10376 * 385051775 - var13;
-      var15 = var1.field10376 * 385051775;
+      var4 += var1.field10376 - var13;
+      var15 = var1.field10376;
       int var16 = 0;
       int var17 = 0;
       int var18 = 0;
@@ -119,56 +119,56 @@ public class class137 extends class568 {
       }
 
       var29 = 0;
-      int var30 = var1.field10376 * 385051775;
-      var1.field10376 += var26 * 116413311;
-      int var31 = var1.field10376 * 385051775;
-      var1.field10376 += var11 * 116413311;
-      int var32 = var1.field10376 * 385051775;
-      var1.field10376 += var10 * 116413311;
-      int var33 = var1.field10376 * 385051775;
-      var1.field10376 += var9 * 116413311;
-      int var34 = var1.field10376 * 385051775;
-      var1.field10376 += var16 * 116413311;
-      int var35 = var1.field10376 * 385051775;
-      var1.field10376 += var18 * 116413311;
-      int var36 = var1.field10376 * 385051775;
-      var1.field10376 += var20 * 116413311;
-      int var37 = var1.field10376 * 385051775;
-      var1.field10376 += (var7 + var8 + var11) * 116413311;
-      int var38 = var1.field10376 * 385051775;
-      var1.field10376 += var7 * 116413311;
-      int var39 = var1.field10376 * 385051775;
-      var1.field10376 += var27 * 116413311;
-      int var40 = var1.field10376 * 385051775;
-      var1.field10376 += var8 * 116413311;
-      int var41 = var1.field10376 * 385051775;
-      var1.field10376 += var17 * 116413311;
-      int var42 = var1.field10376 * 385051775;
-      var1.field10376 += var19 * 116413311;
-      int var43 = var1.field10376 * 385051775;
-      var1.field10376 += var21 * 116413311;
-      int var44 = var1.field10376 * 385051775;
-      var1.field10376 += var12 * 116413311;
-      int var45 = var1.field10376 * 385051775;
-      var1.field10376 += var9 * 116413311;
-      int var46 = var1.field10376 * 385051775;
-      var1.field10376 += var22 * 116413311;
-      int var47 = var1.field10376 * 385051775;
-      var1.field10376 += var23 * 116413311;
-      int var48 = var1.field10376 * 385051775;
-      var1.field10376 += var24 * 116413311;
-      int var49 = var1.field10376 * 385051775;
-      var1.field10376 += var25 * 116413311;
-      int var50 = var1.field10376 * 385051775;
-      var1.field10376 += var5 * 349239933;
+      int var30 = var1.field10376;
+      var1.field10376 += var26;
+      int var31 = var1.field10376;
+      var1.field10376 += var11;
+      int var32 = var1.field10376;
+      var1.field10376 += var10;
+      int var33 = var1.field10376;
+      var1.field10376 += var9;
+      int var34 = var1.field10376;
+      var1.field10376 += var16;
+      int var35 = var1.field10376;
+      var1.field10376 += var18;
+      int var36 = var1.field10376;
+      var1.field10376 += var20;
+      int var37 = var1.field10376;
+      var1.field10376 += var7 + var8 + var11;
+      int var38 = var1.field10376;
+      var1.field10376 += var7;
+      int var39 = var1.field10376;
+      var1.field10376 += var27;
+      int var40 = var1.field10376;
+      var1.field10376 += var8;
+      int var41 = var1.field10376;
+      var1.field10376 += var17;
+      int var42 = var1.field10376;
+      var1.field10376 += var19;
+      int var43 = var1.field10376;
+      var1.field10376 += var21;
+      int var44 = var1.field10376;
+      var1.field10376 += var12;
+      int var45 = var1.field10376;
+      var1.field10376 += var9;
+      int var46 = var1.field10376;
+      var1.field10376 += var22;
+      int var47 = var1.field10376;
+      var1.field10376 += var23;
+      int var48 = var1.field10376;
+      var1.field10376 += var24;
+      int var49 = var1.field10376;
+      var1.field10376 += var25;
+      int var50 = var1.field10376;
+      var1.field10376 += var5 * 3;
       this.field1137 = new byte[var4];
-      class907 var51 = new class907(this.field1137);
+      InputStream var51 = new InputStream(this.field1137);
       var51.method6364(1297377380, -316974152);
       var51.method6364(6, -588529934);
       var51.method6362(var2 > 1 ? 1 : 0, 16711935);
       var51.method6362(var2, 16711935);
       var51.method6362(var3, 16711935);
-      var1.field10376 = var13 * 116413311;
+      var1.field10376 = var13;
       int var52 = 0;
       int var53 = 0;
       int var54 = 0;
@@ -182,8 +182,8 @@ public class class137 extends class568 {
       label223:
       for(int var60 = 0; var60 < var2; ++var60) {
          var51.method6364(1297379947, -1929295606);
-         var51.field10376 += 465653244;
-         int var61 = var51.field10376 * 385051775;
+         var51.field10376 += 4;
+         int var61 = var51.field10376;
          int var62 = -1;
 
          while(true) {
@@ -200,7 +200,7 @@ public class class137 extends class568 {
 
                   var51.method6361(47);
                   var51.method6361(0);
-                  var51.method6376(var51.field10376 * 385051775 - var61, 1397495562);
+                  var51.method6376(var51.field10376 - var61, 1397495562);
                   continue label223;
                }
 
@@ -400,7 +400,7 @@ public class class137 extends class568 {
 
    static class137 method958(class180 var0, int var1, int var2) {
       byte[] var3 = var0.method3285(var1, var2, (byte)-117);
-      return var3 == null ? null : new class137(new class907(var3));
+      return var3 == null ? null : new class137(new InputStream(var3));
    }
 
    void method959() {

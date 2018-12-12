@@ -94,14 +94,14 @@ public final class class452 {
 
    static final void method3869(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
-         int var3 = var0.field3161[1 + var0.field3156 * 681479919];
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
          class785 var4 = field7216.method5148(var3, 198575555);
          if (var4.method2380(1883696427)) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class58.field2342.method135(var2, 1811541401).method2024(var3, var4.field3823, (byte)-113);
+            var0.field3157[++var0.field3158 - 1] = class58.field2342.method135(var2, 1811541401).method2024(var3, var4.field3823, (byte)-113);
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class58.field2342.method135(var2, 685502248).method2022(var3, -388931549 * var4.field3822, (short)-22084);
+            var0.field3161[++var0.field3156 - 1] = class58.field2342.method135(var2, 685502248).method2022(var3, var4.field3822, (short)-22084);
          }
 
       } catch (RuntimeException var5) {

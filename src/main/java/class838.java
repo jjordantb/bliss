@@ -249,13 +249,13 @@ public class class838 extends class568 {
       }
    }
 
-   void method5389(class907 var1, int var2, int var3) {
+   void method5389(InputStream var1, int var2, int var3) {
       try {
          this.field9118 = new class876(var1.method6371(), this);
-         var1.field10376 += 116413311;
+         ++var1.field10376;
          this.field9130 = new class620(var1.method6371() + 1, this);
          this.field9113 = new class378(var1.method6371(), this);
-         var1.field10376 += 116413311;
+         ++var1.field10376;
          this.field9135 = new class615(var1.method6371(), this);
          this.field9121 = new class411(var1.method6371(), this);
          var1.method6371();
@@ -400,9 +400,9 @@ public class class838 extends class568 {
       }
    }
 
-   public class907 method5393(int var1) {
+   public InputStream method5393(int var1) {
       try {
-         class907 var2 = new class907(40);
+         InputStream var2 = new InputStream(40);
          var2.method6361(27);
          var2.method6361(this.field9115.method1098(-263957055));
          var2.method6361(this.field9117.method5848(-1699421232));
@@ -453,7 +453,7 @@ public class class838 extends class568 {
       }
    }
 
-   void method5395(class907 var1, int var2) {
+   void method5395(InputStream var1, int var2) {
       try {
          if (var1 != null && var1.field10375 != null) {
             int var3 = var1.method6371();
@@ -498,7 +498,7 @@ public class class838 extends class568 {
 
                this.field9127 = new class252(var1.method6371(), this);
                if (var3 <= 25) {
-                  var1.field10376 += 116413311;
+                  ++var1.field10376;
                }
 
                this.field9123 = new class869(var1.method6371(), this);
@@ -537,14 +537,14 @@ public class class838 extends class568 {
 
    public class838(class469 var1, int var2) {
       this.field9134 = var1;
-      this.field9128 = new class775(class69.field1827 * 1126040225, class69.field1810 * 1090452523, class198.field7050.toLowerCase().indexOf("arm") != -1);
+      this.field9128 = new class775(class69.field1827, class69.field1810, class198.field7050.toLowerCase().indexOf("arm") != -1);
       this.field9137 = new class17(var2, this);
       this.method5388(true, -214971626);
    }
 
-   public class838(class907 var1, class469 var2, int var3) {
+   public class838(InputStream var1, class469 var2, int var3) {
       this.field9134 = var2;
-      this.field9128 = new class775(class69.field1827 * 1126040225, 1090452523 * class69.field1810, class198.field7050.indexOf("arm") != -1);
+      this.field9128 = new class775(class69.field1827, class69.field1810, class198.field7050.indexOf("arm") != -1);
       this.field9137 = new class17(var3, this);
       this.method5395(var1, -2103020083);
    }

@@ -155,10 +155,6 @@ public class class803 extends class913 {
       return var4;
    }
 
-   class169 method6479() {
-      return this.field4582;
-   }
-
    class803(class13 var1, int var2) {
       this.field4583 = var1;
       this.field4582 = new class169(var1, class264.field8191, class482.field8399, var2);

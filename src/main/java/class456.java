@@ -31,7 +31,7 @@ public class class456 {
       }
    }
 
-   class456(class907 var1) {
+   class456(InputStream var1) {
       int var2 = var1.method6382(1723054621);
       this.field7160 = new int[var2];
       this.field7157 = new int[var2];
@@ -55,7 +55,7 @@ public class class456 {
 
    public static final class752 method3791(Component var0, int var1, int var2, int var3) {
       try {
-         if (class752.field4179 * 1164070869 == 0) {
+         if (class752.field4179 == 0) {
             throw new IllegalStateException();
          } else if (var1 >= 0 && var1 < 2) {
             if (var2 < 256) {
@@ -66,20 +66,20 @@ public class class456 {
             try {
                class429 var4 = new class429();
                var4.field4172 = new int[(class752.field4167 ? 2 : 1) * 256];
-               var4.field4191 = var2 * -949520941;
+               var4.field4191 = var2;
                var4.method2629(var0, (byte)127);
-               var4.field4166 = 2121848755 * ((var2 & -1024) + 1024);
-               if (-1894797445 * var4.field4166 > 16384) {
-                  var4.field4166 = 904708096;
+               var4.field4166 = (var2 & -1024) + 1024;
+               if (var4.field4166 > 16384) {
+                  var4.field4166 = 16384;
                }
 
-               var4.method2630(var4.field4166 * -1894797445, 557897773);
-               if (-1869204691 * class752.field4168 > 0 && class752.field4177 == null) {
+               var4.method2630(var4.field4166, 557897773);
+               if (class752.field4168 > 0 && class752.field4177 == null) {
                   class752.field4177 = new class302();
                   Thread var5 = new Thread(class752.field4177);
                   var5.setDaemon(true);
                   var5.start();
-                  var5.setPriority(class752.field4168 * -1869204691);
+                  var5.setPriority(class752.field4168);
                }
 
                if (class752.field4177 != null) {
@@ -106,7 +106,7 @@ public class class456 {
 
    static final void method3792(class564 var0, class131 var1, class744 var2, byte var3) {
       try {
-         var0.field953 = (String)var2.field3157[(var2.field3158 -= 969361751) * -203050393];
+         var0.field953 = (String)var2.field3157[--var2.field3158];
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "da.js(" + ')');
       }
@@ -114,12 +114,12 @@ public class class456 {
 
    static final void method3793(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          if (class740.field3211 != null) {
             class568 var3 = class740.field3211.method2942((long)var2);
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3 != null ? 1 : 0;
+            var0.field3161[++var0.field3156 - 1] = var3 != null ? 1 : 0;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
+            var0.field3161[++var0.field3156 - 1] = 0;
          }
 
       } catch (RuntimeException var4) {

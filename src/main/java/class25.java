@@ -209,7 +209,7 @@ public class class25 {
             if (var14.field6481 != null) {
                for(var15 = 0; var15 < var14.field6481.length; ++var15) {
                   class606 var16 = var14.field6481[var15];
-                  this.field6481[var5++] = var16.method4786(var16.field8569 * 1512514121 + this.field6453, 214949543);
+                  this.field6481[var5++] = var16.method4786(var16.field8569 + this.field6453, 214949543);
                }
             }
 
@@ -256,9 +256,9 @@ public class class25 {
 
             if (var14.field6479 != null) {
                for(var15 = 0; var15 < var14.field6479.length; ++var15) {
-                  var22 = this.method3446(var14, var14.field6479[var15].field10326 * -710317103, var19);
-                  int var17 = this.method3446(var14, var14.field6479[var15].field10327 * 1705862021, var19);
-                  int var18 = this.method3446(var14, var14.field6479[var15].field10328 * 1636170731, var19);
+                  var22 = this.method3446(var14, var14.field6479[var15].field10326, var19);
+                  int var17 = this.method3446(var14, var14.field6479[var15].field10327, var19);
+                  int var18 = this.method3446(var14, var14.field6479[var15].field10328, var19);
                   this.field6479[var3] = var14.field6479[var15].method6285(var22, var17, var18, -1991744488);
                   ++var3;
                }
@@ -266,7 +266,7 @@ public class class25 {
 
             if (var14.field6445 != null) {
                for(var15 = 0; var15 < var14.field6445.length; ++var15) {
-                  var22 = this.method3446(var14, var14.field6445[var15].field6511 * -180596249, var19);
+                  var22 = this.method3446(var14, var14.field6445[var15].field6511, var19);
                   this.field6445[var4] = var14.field6445[var15].method3494(var22, (byte)0);
                   ++var4;
                }
@@ -339,7 +339,7 @@ public class class25 {
       return this.field6446++;
    }
 
-   void method3447(class907 var1, class907 var2) {
+   void method3447(InputStream var1, InputStream var2) {
       short var3 = 0;
       short var4 = 0;
       short var5 = 0;
@@ -410,7 +410,7 @@ public class class25 {
       ++this.field6458;
    }
 
-   void method3448(class907 var1, class907 var2, class907 var3, class907 var4, class907 var5, class907 var6) {
+   void method3448(InputStream var1, InputStream var2, InputStream var3, InputStream var4, InputStream var5, InputStream var6) {
       for(int var7 = 0; var7 < this.field6466; ++var7) {
          int var8 = this.field6454[var7] & 255;
          if (var8 == 0) {
@@ -499,12 +499,12 @@ public class class25 {
    void method3449(byte[] var1) {
       boolean var2 = false;
       boolean var3 = false;
-      class907 var4 = new class907(var1);
-      class907 var5 = new class907(var1);
-      class907 var6 = new class907(var1);
-      class907 var7 = new class907(var1);
-      class907 var8 = new class907(var1);
-      var4.field10376 = (var1.length - 18) * 116413311;
+      InputStream var4 = new InputStream(var1);
+      InputStream var5 = new InputStream(var1);
+      InputStream var6 = new InputStream(var1);
+      InputStream var7 = new InputStream(var1);
+      InputStream var8 = new InputStream(var1);
+      var4.field10376 = var1.length - 18;
       this.field6446 = var4.method6374();
       this.field6453 = var4.method6374();
       this.field6466 = var4.method6371();
@@ -595,11 +595,11 @@ public class class25 {
       }
 
       this.field6461 = new short[this.field6453];
-      var4.field10376 = var18 * 116413311;
-      var5.field10376 = var29 * 116413311;
-      var6.field10376 = var30 * 116413311;
-      var7.field10376 = var42 * 116413311;
-      var8.field10376 = var24 * 116413311;
+      var4.field10376 = var18;
+      var5.field10376 = var29;
+      var6.field10376 = var30;
+      var7.field10376 = var42;
+      var8.field10376 = var24;
       int var32 = 0;
       int var33 = 0;
       int var34 = 0;
@@ -635,11 +635,11 @@ public class class25 {
          }
       }
 
-      var4.field10376 = var27 * 116413311;
-      var5.field10376 = var23 * 116413311;
-      var6.field10376 = var21 * 116413311;
-      var7.field10376 = var25 * 116413311;
-      var8.field10376 = var22 * 116413311;
+      var4.field10376 = var27;
+      var5.field10376 = var23;
+      var6.field10376 = var21;
+      var7.field10376 = var25;
+      var8.field10376 = var22;
 
       for(var35 = 0; var35 < this.field6453; ++var35) {
          this.field6461[var35] = (short)var4.method6374();
@@ -679,8 +679,8 @@ public class class25 {
       }
 
       this.field6458 = -1;
-      var4.field10376 = var26 * 116413311;
-      var5.field10376 = var20 * 116413311;
+      var4.field10376 = var26;
+      var5.field10376 = var20;
       short var43 = 0;
       short var44 = 0;
       short var45 = 0;
@@ -750,7 +750,7 @@ public class class25 {
       }
 
       ++this.field6458;
-      var4.field10376 = var28 * 116413311;
+      var4.field10376 = var28;
 
       for(var39 = 0; var39 < this.field6466; ++var39) {
          this.field6454[var39] = 0;
@@ -992,14 +992,14 @@ public class class25 {
    }
 
    void method3461(byte[] var1) {
-      class907 var2 = new class907(var1);
-      class907 var3 = new class907(var1);
-      class907 var4 = new class907(var1);
-      class907 var5 = new class907(var1);
-      class907 var6 = new class907(var1);
-      class907 var7 = new class907(var1);
-      class907 var8 = new class907(var1);
-      var2.field10376 = (var1.length - 23) * 116413311;
+      InputStream var2 = new InputStream(var1);
+      InputStream var3 = new InputStream(var1);
+      InputStream var4 = new InputStream(var1);
+      InputStream var5 = new InputStream(var1);
+      InputStream var6 = new InputStream(var1);
+      InputStream var7 = new InputStream(var1);
+      InputStream var8 = new InputStream(var1);
+      var2.field10376 = var1.length - 23;
       this.field6446 = var2.method6374();
       this.field6453 = var2.method6374();
       this.field6466 = var2.method6371();
@@ -1009,9 +1009,9 @@ public class class25 {
       boolean var12 = (var9 & 4) == 4;
       boolean var13 = (var9 & 8) == 8;
       if (var13) {
-         var2.field10376 -= 814893177;
+         var2.field10376 -= 7;
          this.field6462 = var2.method6371();
-         var2.field10376 += 698479866;
+         var2.field10376 += 6;
       }
 
       int var14 = var2.method6371();
@@ -1170,11 +1170,11 @@ public class class25 {
          }
       }
 
-      var2.field10376 = var59 * 116413311;
-      var3.field10376 = var39 * 116413311;
-      var4.field10376 = var40 * 116413311;
-      var5.field10376 = var41 * 116413311;
-      var6.field10376 = var33 * 116413311;
+      var2.field10376 = var59;
+      var3.field10376 = var39;
+      var4.field10376 = var40;
+      var5.field10376 = var41;
+      var6.field10376 = var33;
       int var50 = 0;
       int var51 = 0;
       int var52 = 0;
@@ -1212,13 +1212,13 @@ public class class25 {
          }
       }
 
-      var2.field10376 = var38 * 116413311;
-      var3.field10376 = var29 * 116413311;
-      var4.field10376 = var31 * 116413311;
-      var5.field10376 = var34 * 116413311;
-      var6.field10376 = var32 * 116413311;
-      var7.field10376 = var36 * 116413311;
-      var8.field10376 = var37 * 116413311;
+      var2.field10376 = var38;
+      var3.field10376 = var29;
+      var4.field10376 = var31;
+      var5.field10376 = var34;
+      var6.field10376 = var32;
+      var7.field10376 = var36;
+      var8.field10376 = var37;
 
       for(var53 = 0; var53 < this.field6453; ++var53) {
          this.field6461[var53] = (short)var2.method6374();
@@ -1252,17 +1252,17 @@ public class class25 {
       }
 
       this.field6458 = -1;
-      var2.field10376 = var35 * 116413311;
-      var3.field10376 = var30 * 116413311;
+      var2.field10376 = var35;
+      var3.field10376 = var30;
       this.method3447(var2, var3);
-      var2.field10376 = var42 * 116413311;
-      var3.field10376 = var43 * 116413311;
-      var4.field10376 = var45 * 116413311;
-      var5.field10376 = var46 * 116413311;
-      var6.field10376 = var47 * 116413311;
-      var7.field10376 = var48 * 116413311;
+      var2.field10376 = var42;
+      var3.field10376 = var43;
+      var4.field10376 = var45;
+      var5.field10376 = var46;
+      var6.field10376 = var47;
+      var7.field10376 = var48;
       this.method3448(var2, var3, var4, var5, var6, var7);
-      var2.field10376 = var27 * 116413311;
+      var2.field10376 = var27;
       if (var11) {
          var53 = var2.method6371();
          if (var53 > 0) {
@@ -1317,7 +1317,7 @@ public class class25 {
 
       int var4;
       for(int var3 = 0; var3 < this.field6481.length; ++var3) {
-         var4 = this.field6481[var3].field8568 * -1606786303;
+         var4 = this.field6481[var3].field8568;
          if (var4 >= 0) {
             ++var1[var4];
             if (var4 > var2) {
@@ -1334,7 +1334,7 @@ public class class25 {
       }
 
       for(var4 = 0; var4 < this.field6481.length; ++var4) {
-         int var5 = this.field6481[var4].field8568 * -1606786303;
+         int var5 = this.field6481[var4].field8568;
          if (var5 >= 0) {
             var6[var5][var1[var5]++] = var4;
          }

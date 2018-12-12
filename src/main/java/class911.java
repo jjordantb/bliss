@@ -18,20 +18,8 @@ public abstract class class911 {
       this.field10421 = var1;
    }
 
-   abstract void method6470();
-
    abstract void method6471();
-
-   abstract void method6472();
-
-   abstract void method6473();
-
-   abstract void method6474();
-
-   abstract void method6475();
 
    void method6476() {
    }
-
-   abstract void method6477();
 }

@@ -33,7 +33,7 @@ public class class846 extends class717 {
          class615.field8903.method5391(class615.field8903.field9115, 0, -802724940);
          class615.field8903.method5391(class615.field8903.field9116, 0, -1875981876);
          class615.field8903.method5391(class615.field8903.field9129, 1, 1215494852);
-         class615.field8903.method5391(class615.field8903.field9124, class157.field6552.field6556 * -160182505, -342617786);
+         class615.field8903.method5391(class615.field8903.field9124, class157.field6552.field6556, -342617786);
          class615.field8903.method5391(class615.field8903.field9117, 0, -952954318);
          class615.field8903.method5391(class615.field8903.field9133, 1, 571491634);
          class308.method382(1113089752);
@@ -49,7 +49,7 @@ public class class846 extends class717 {
 
    static final void method5124(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)8);
          class131 var4 = class382.field1410[var2 >> 16];
          class140.method1045(var3, var4, var0, (byte)121);

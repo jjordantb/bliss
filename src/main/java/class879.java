@@ -2,8 +2,6 @@ public abstract class class879 {
    static float field9858 = 3.1415927F;
    protected boolean field9859 = false;
 
-   public abstract int method5940();
-
    public abstract class396[] method5941();
 
    int method5942(float var1, float var2, float var3) {
@@ -65,8 +63,6 @@ public abstract class class879 {
       var13[0] = var17;
       var13[1] = var18;
    }
-
-   public abstract void method5944(int var1);
 
    float[] method5945(int var1, int var2, int var3, int var4, float var5, float var6, float var7) {
       float[] var8 = new float[9];
@@ -130,8 +126,6 @@ public abstract class class879 {
       return var9;
    }
 
-   public abstract void method5946(int var1);
-
    public abstract void method5947(int var1);
 
    public abstract int method5948();
@@ -149,8 +143,6 @@ public abstract class class879 {
    public abstract void method5954();
 
    public abstract void method5955(int var1, int var2, int var3);
-
-   public abstract void method5956(int var1, int var2, int var3);
 
    void method5957(class454 var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
       boolean var9 = false;
@@ -322,25 +314,15 @@ public abstract class class879 {
 
    public abstract void method5965(class135 var1, class211 var2, int var3);
 
-   abstract void method5966(int var1, int[] var2, int var3, int var4, int var5, boolean var6, int var7, int[] var8);
-
    abstract void method5967(int var1, int[] var2, int var3, int var4, int var5, boolean var6, int var7, int[] var8);
 
    abstract void method5968(int var1, int var2, int var3, int var4);
 
-   public abstract void method5969(class135 var1, class211 var2, int var3);
-
    public abstract void method5970(class135 var1, int var2, boolean var3);
-
-   public abstract void method5971(int var1);
 
    public abstract int method5972();
 
    public abstract int method5973();
-
-   abstract void method5974(int var1, int var2, int var3, int var4);
-
-   public abstract void method5975(short var1, short var2);
 
    public abstract int method5976();
 
@@ -369,8 +351,6 @@ public abstract class class879 {
    public abstract boolean method5988();
 
    public abstract boolean method5989();
-
-   public abstract void method5990(short var1, short var2);
 
    void method5991(int var1, int var2, int var3, int var4, int var5, int var6, float[] var7, float var8, int var9, float var10, float[] var11) {
       var1 -= var4;
@@ -403,133 +383,17 @@ public abstract class class879 {
       var11[1] = var16;
    }
 
-   public abstract void method5992(int var1, int var2, int var3);
-
-   public abstract int method5993();
-
    public abstract void method5994(class879 var1, int var2, int var3, int var4, boolean var5);
 
-   public abstract boolean method5995(int var1, int var2, class135 var3, boolean var4, int var5);
-
-   public abstract void method5996(class879 var1, int var2, int var3, int var4, boolean var5);
-
-   public abstract class879 method5997(byte var1, int var2, boolean var3);
-
-   public abstract boolean method5998();
-
-   public abstract class879 method5999(byte var1, int var2, boolean var3);
-
-   public abstract class879 method6000(byte var1, int var2, boolean var3);
-
-   public abstract boolean method6001();
-
-   public abstract void method6002(int var1);
-
-   public abstract void method6003(int var1);
-
-   public abstract void method6004(class135 var1);
-
-   public abstract void method6005();
-
    public abstract int method6006();
-
-   public abstract void method6007(int var1);
-
-   public abstract void method6008(int var1);
-
-   public abstract class396[] method6009();
-
-   public abstract void method6010(int var1);
-
-   public abstract void method6011(int var1);
-
-   public abstract void method6012(int var1);
-
-   abstract void method6013();
-
-   public abstract void method6014(int var1);
-
-   public abstract void method6015(int var1, int var2, int var3);
 
    public abstract void method6016(int var1);
 
    public abstract class879 method6017(byte var1, int var2, boolean var3);
 
-   abstract void method6018();
-
-   public abstract void method6019(int var1, int var2, int var3);
-
-   public abstract void method6020(int var1, int var2, class454 var3, class454 var4, int var5, int var6, int var7);
-
-   public abstract void method6021(int var1, int var2, class454 var3, class454 var4, int var5, int var6, int var7);
-
-   public abstract void method6022(int var1, int var2, class454 var3, class454 var4, int var5, int var6, int var7);
-
-   abstract void method6023();
-
-   abstract boolean method6024();
-
-   abstract void method6025();
-
-   abstract boolean method6026();
-
-   public abstract class770 method6027(class770 var1);
-
-   abstract void method6028();
-
-   public abstract void method6029(class135 var1, class211 var2, int var3);
-
-   abstract void method6030();
-
-   abstract void method6031();
-
-   abstract void method6032(int var1, int[] var2, int var3, int var4, int var5, int var6, boolean var7);
-
-   abstract void method6033(int var1, int[] var2, int var3, int var4, int var5, int var6, boolean var7);
-
-   abstract void method6034(int var1, int[] var2, int var3, int var4, int var5, boolean var6, int var7, int[] var8);
-
-   abstract void method6035(int var1, int var2, int var3, int var4);
-
    public abstract boolean method6036();
 
-   public abstract void method6037(class135 var1, int var2, boolean var3);
-
-   public abstract void method6038(int var1);
-
-   public abstract boolean method6039(int var1, int var2, class135 var3, boolean var4, int var5);
-
-   public abstract void method6040(short var1, short var2);
-
    public abstract void method6041(int var1);
-
-   public abstract int method6042();
-
-   public abstract int method6043();
-
-   public abstract void method6044(short var1, short var2);
-
-   public abstract int method6045();
-
-   public abstract int method6046();
-
-   public abstract int method6047();
-
-   public abstract int method6048();
-
-   public abstract void method6049();
-
-   public abstract int method6050();
-
-   public abstract int method6051();
-
-   public abstract int method6052();
-
-   public abstract int method6053();
-
-   public abstract int method6054();
-
-   public abstract int method6055();
 
    public final void method6056(class531 var1, int var2, class531 var3, int var4, int var5, int var6, int var7, int var8, boolean var9, int[] var10) {
       if (var2 != -1) {
@@ -615,7 +479,7 @@ public abstract class class879 {
          var12 = 0;
          int var35 = 0;
 
-         for(int var36 = 0; var36 < var1.field9451 * 92429039; ++var36) {
+         for(int var36 = 0; var36 < var1.field9451; ++var36) {
             boolean var15 = false;
             if (var12 < var2.field2413 && var2.field2421[var12] == var36) {
                var15 = true;
@@ -761,61 +625,7 @@ public abstract class class879 {
 
    }
 
-   public abstract void method6059(int var1);
-
-   public abstract int method6060();
-
-   public abstract int method6061();
-
-   public abstract int method6062();
-
-   public abstract byte[] method6063();
-
-   public abstract void method6064(byte var1, byte[] var2);
-
-   public abstract void method6065(byte var1, byte[] var2);
-
-   public abstract void method6066(short var1, short var2);
-
-   public abstract class879 method6067(byte var1, int var2, boolean var3);
-
-   abstract void method6068();
-
-   public abstract void method6069(short var1, short var2);
-
-   public abstract void method6070(short var1, short var2);
-
-   public abstract void method6071(int var1, int var2, int var3, int var4);
-
-   public abstract void method6072(int var1, int var2, int var3, int var4);
-
-   public abstract void method6073(int var1, int var2, int var3, int var4);
-
-   public abstract class933[] method6074();
-
-   public abstract class933[] method6075();
-
-   public abstract class396[] method6076();
-
-   public abstract class396[] method6077();
-
-   public abstract int method6078();
-
-   public abstract class396[] method6079();
-
-   public abstract void method6080(class135 var1, int var2, boolean var3);
-
-   public abstract boolean method6081();
-
-   public abstract boolean method6082();
-
-   public abstract void method6083(class879 var1, int var2, int var3, int var4, boolean var5);
-
    abstract void method6084();
-
-   public abstract boolean method6085();
-
-   public abstract void method6086();
 
    void method6087(int var1, int var2, int var3, int var4, int var5, int var6, float[] var7, int var8, float var9, float[] var10) {
       var1 -= var4;
@@ -845,19 +655,9 @@ public abstract class class879 {
       var10[1] = var16;
    }
 
-   public abstract int method6088();
-
    public abstract class933[] method6089();
 
-   public abstract void method6090(class135 var1);
-
-   public abstract void method6091(class135 var1);
-
-   public abstract class770 method6092(class770 var1);
-
    public abstract void method6093();
-
-   public abstract void method6094(int var1, int var2, int var3);
 
    class251 method6095(class25 var1, int[] var2, int var3) {
       int[] var4 = null;
@@ -979,17 +779,7 @@ public abstract class class879 {
 
    public abstract boolean method6097(int var1, int var2, class135 var3, boolean var4, int var5);
 
-   public abstract boolean method6098();
-
    public abstract int method6099();
 
-   public abstract int method6100();
-
-   public abstract boolean method6101();
-
    public abstract class770 method6102(class770 var1);
-
-   public abstract void method6103(int var1);
-
-   abstract void method6104(int var1, int[] var2, int var3, int var4, int var5, boolean var6, int var7, int[] var8);
 }

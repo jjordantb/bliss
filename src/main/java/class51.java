@@ -28,10 +28,10 @@ public class class51 {
 
    static final void method1527(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[1 + 681479919 * var0.field3156];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class1.method2987(var2, var3, false, (byte)12);
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class1.method2987(var2, var3, false, (byte)12);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "u.tf(" + ')');
       }
@@ -39,8 +39,8 @@ public class class51 {
 
    static final void method1528(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -804725095 * class730.field2902[var2].field10626;
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class730.field2902[var2].field10626;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "u.yh(" + ')');
       }
@@ -48,9 +48,9 @@ public class class51 {
 
    static final void method1529(class744 var0, int var1) {
       try {
-         var0.field3162 -= -1365138610;
-         if (var0.field3168[1685767703 * var0.field3162] != var0.field3168[1 + 1685767703 * var0.field3162]) {
-            var0.field3176 += 286750741 * var0.field3174[1883543357 * var0.field3176];
+         var0.field3162 -= 2;
+         if (var0.field3168[var0.field3162] != var0.field3168[1 + var0.field3162]) {
+            var0.field3176 += var0.field3174[var0.field3176];
          }
 
       } catch (RuntimeException var3) {
@@ -111,23 +111,23 @@ public class class51 {
 
    static final void method1532(class564 var0, byte var1) {
       try {
-         if (class564.field846 * -918321179 == var0.field870 * 907611645) {
-            if (class923.field10295.field3374 == null) {
+         if (class564.field846 == var0.field870) {
+            if (class923.local.field3374 == null) {
                var0.field876 = 0;
                var0.field865 = 0;
             } else {
-               var0.field915 = 818038;
-               var0.field987 = ((int)(Math.sin((double)(443738891 * class730.field2866) / 40.0D) * 256.0D) & 2047) * 1590511671;
-               var0.field909 = 939239877;
-               var0.field876 = class730.field2623 * -127794683;
-               var0.field865 = class904.method6336(class923.field10295.field3374, (byte)123) * 908204397;
-               class765 var2 = class923.field10295.field4041;
+               var0.field915 = 150;
+               var0.field987 = (int)(Math.sin((double)class730.field2866 / 40.0D) * 256.0D) & 2047;
+               var0.field909 = 5;
+               var0.field876 = class730.field2623;
+               var0.field865 = class904.method6336(class923.local.field3374, (byte)123);
+               Animator var2 = class923.local.passiveAnimator;
                if (var2 != null) {
                   if (var0.field877 == null) {
                      var0.field877 = new class522();
                   }
 
-                  var0.field1015 = var2.method2779(1818062906) * 1587382585;
+                  var0.field1015 = var2.method2779(1818062906);
                   var0.field877.method2796(var2, -947942211);
                } else {
                   var0.field877 = null;
@@ -142,7 +142,7 @@ public class class51 {
 
    static final void method1533(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class601.field9203.field4347 * 1606920449;
+         var0.field3161[++var0.field3156 - 1] = class601.field9203.field4347;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "u.uj(" + ')');
       }
@@ -150,9 +150,9 @@ public class class51 {
 
    static final void method1534(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-3);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3.field909 * 1548853569 == 1 ? 572201537 * var3.field876 : -1;
+         var0.field3161[++var0.field3156 - 1] = var3.field909 == 1 ? 572201537 * var3.field876 * -1825442367 : -1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "u.rd(" + ')');
       }
@@ -160,7 +160,7 @@ public class class51 {
 
    static final void method1535(class564 var0, class131 var1, class744 var2, byte var3) {
       try {
-         int var4 = var2.field3161[(var2.field3156 -= -391880689) * 681479919];
+         int var4 = var2.field3161[--var2.field3156];
          var0.field899 = var4 == 1;
          class814.method2932(var0, -501234662);
       } catch (RuntimeException var5) {
@@ -170,7 +170,7 @@ public class class51 {
 
    static final void method1536(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var0.field3174[var0.field3176 * 1883543357];
+         var0.field3161[++var0.field3156 - 1] = var0.field3174[var0.field3176];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "u.e(" + ')');
       }

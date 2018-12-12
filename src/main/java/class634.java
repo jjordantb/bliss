@@ -11,18 +11,10 @@ public class class634 extends class827 {
       }
    }
 
-   public class7 method6198() {
-      return class7.field4908;
-   }
-
    class634(class971 var1, class49 var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11) {
       super(var1, var2, var3, var4, var5, var6, var7, var8, var9);
-      this.field9788 = var10 * 175032877;
-      this.field9789 = var11 * 43687401;
-   }
-
-   public class7 method6199() {
-      return class7.field4908;
+      this.field9788 = var10;
+      this.field9789 = var11;
    }
 
    static final Object[] method5872(String var0, class744 var1, int var2) {
@@ -32,15 +24,15 @@ public class class634 extends class827 {
          int var4;
          for(var4 = var3.length - 1; var4 >= 1; --var4) {
             if (var0.charAt(var4 - 1) == 's') {
-               var3[var4] = var1.field3157[(var1.field3158 -= 969361751) * -203050393];
+               var3[var4] = var1.field3157[--var1.field3158];
             } else if (var0.charAt(var4 - 1) == '§') {
-               var3[var4] = new Long(var1.field3168[(var1.field3162 -= -682569305) * 1685767703]);
+               var3[var4] = new Long(var1.field3168[--var1.field3162]);
             } else {
-               var3[var4] = new Integer(var1.field3161[(var1.field3156 -= -391880689) * 681479919]);
+               var3[var4] = new Integer(var1.field3161[--var1.field3156]);
             }
          }
 
-         var4 = var1.field3161[(var1.field3156 -= -391880689) * 681479919];
+         var4 = var1.field3161[--var1.field3156];
          if (-1 != var4) {
             var3[0] = new Integer(var4);
          } else {

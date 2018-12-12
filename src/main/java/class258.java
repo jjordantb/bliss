@@ -117,12 +117,12 @@ public class class258 {
 
    static final void method4441(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         class518 var3 = class85.field1121.method1566(var2);
-         if (-1673957995 * var3.field4273 == -1 && 809765849 * var3.field4226 >= 0) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 809765849 * var3.field4226;
+         int var2 = var0.field3161[--var0.field3156];
+         ItemDefinition var3 = class85.field1121.method1566(var2);
+         if (var3.field4273 == -1 && var3.field4226 >= 0) {
+            var0.field3161[++var0.field3156 - 1] = var3.field4226;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var2;
+            var0.field3161[++var0.field3156 - 1] = var2;
          }
 
       } catch (RuntimeException var4) {
@@ -132,8 +132,8 @@ public class class258 {
 
    static final void method4442(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class543.field3817[class526.method2228(var2, (byte)0) & '\uffff'];
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class543.field3817[class526.method2228(var2, (byte)0) & '\uffff'];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ap.zl(" + ')');
       }

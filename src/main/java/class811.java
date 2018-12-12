@@ -29,7 +29,7 @@ public class class811 {
 
    public boolean method2920(byte var1) {
       try {
-         return 1285026069 * this.field4652 == 2;
+         return this.field4652 == 2;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "dw.p(" + ')');
       }
@@ -38,22 +38,22 @@ public class class811 {
    public boolean method2921(byte var1) {
       try {
          class182.method3307(-727077730);
-         if (this.field4652 * 1285026069 == 0) {
-            this.field4644 = class137.method958(this.field4647, this.field4651 * 1941368041, 0);
+         if (this.field4652 == 0) {
+            this.field4644 = class137.method958(this.field4647, this.field4651, 0);
             if (this.field4644 == null) {
                return false;
             }
 
             this.field4650 = new class111(class818.field4613, class818.field4612);
-            this.field4652 = -1271605699;
+            this.field4652 = 1;
          }
 
-         if (1 == 1285026069 * this.field4652) {
+         if (1 == this.field4652) {
             if (!this.field4646.method6562(this.field4644, class818.field4624, this.field4650, 22050, -1303478218)) {
                return false;
             }
 
-            this.field4652 = 1751755898;
+            this.field4652 = 2;
          }
 
          return true;
@@ -64,7 +64,7 @@ public class class811 {
 
    public class811(class180 var1, int var2) {
       this.field4647 = var1;
-      this.field4651 = -1830245543 * var2;
+      this.field4651 = var2;
       this.field4646 = new class272();
       this.field4646.method6569(9, 128, 346222187);
    }
@@ -73,7 +73,7 @@ public class class811 {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 840270937 * var3.field1031;
+         var0.field3161[++var0.field3156 - 1] = var3.field1031;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "dw.pt(" + ')');
       }
@@ -81,7 +81,7 @@ public class class811 {
 
    static final void method2923(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class418.method5685(2134288170).method89(694163818);
+         var0.field3161[++var0.field3156 - 1] = class418.method5685(2134288170).method89(694163818);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "dw.ahv(" + ')');
       }
@@ -102,7 +102,7 @@ public class class811 {
       try {
          class682 var3 = class370.method881(21, (long)var0);
          var3.method4340((byte)33);
-         var3.field7687 = 1274450087 * (var1 ? 1 : 0);
+         var3.field7687 = var1 ? 1 : 0;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "dw.au(" + ')');
       }

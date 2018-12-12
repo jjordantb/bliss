@@ -1,16 +1,16 @@
 public class class327 extends class345 {
-   int field12 = 1105193455;
+   int field12 = -1;
    public String field13;
    public String field14;
    class373 field15;
    public int field16;
    public int field17;
-   public int field18 = 715250349;
+   public int field18 = -1;
    public int field19 = 0;
    public int field20 = 0;
    boolean field21 = true;
-   public int field22 = 1374107136;
-   public int field23 = 1438003712;
+   public int field22 = 12800;
+   public int field23 = 12800;
 
    boolean method4(int var1, int var2, byte var3) {
       try {
@@ -73,26 +73,26 @@ public class class327 extends class345 {
 
    void method8(int var1) {
       try {
-         this.field23 = 1438003712;
+         this.field23 = 12800;
          this.field20 = 0;
-         this.field22 = 1374107136;
+         this.field22 = 12800;
          this.field19 = 0;
 
          for(class542 var2 = (class542)this.field15.method901(1766612795); var2 != null; var2 = (class542)this.field15.method906(49146)) {
-            if (var2.field3943 * 1528024175 < 1364716801 * this.field23) {
-               this.field23 = var2.field3943 * -878769809;
+            if (var2.field3943 < this.field23) {
+               this.field23 = var2.field3943;
             }
 
-            if (var2.field3947 * 37578241 > this.field20 * -2052483955) {
-               this.field20 = var2.field3947 * -1211577275;
+            if (var2.field3947 > this.field20) {
+               this.field20 = var2.field3947;
             }
 
-            if (50981941 * var2.field3949 < this.field22 * 1345239131) {
-               this.field22 = -608005457 * var2.field3949;
+            if (var2.field3949 < this.field22) {
+               this.field22 = var2.field3949;
             }
 
-            if (1374138429 * var2.field3951 > 929385381 * this.field19) {
-               this.field19 = -1870852423 * var2.field3951;
+            if (var2.field3951 > this.field19) {
+               this.field19 = var2.field3951;
             }
          }
 
@@ -102,14 +102,14 @@ public class class327 extends class345 {
    }
 
    class327(int var1, String var2, String var3, int var4, int var5, boolean var6, int var7, int var8) {
-      this.field16 = -1929943701 * var1;
+      this.field16 = var1;
       this.field13 = var2;
       this.field14 = var3;
-      this.field17 = var4 * 350230413;
-      this.field12 = -1105193455 * var5;
+      this.field17 = var4;
+      this.field12 = var5;
       this.field21 = var6;
-      this.field18 = var7 * -715250349;
-      if (1110271707 * this.field18 == 255) {
+      this.field18 = var7;
+      if (this.field18 == 255) {
          this.field18 = 0;
       }
 
@@ -119,7 +119,7 @@ public class class327 extends class345 {
 
    public static final void method9(int var0, int var1) {
       try {
-         if (class507.field4015 != null && var0 >= 0 && var0 < 649879491 * class507.field4015.field1162) {
+         if (class507.field4015 != null && var0 >= 0 && var0 < class507.field4015.field1162) {
             class78 var2 = class507.field4015.field1165[var0];
             if (-1 == var2.field1499) {
                class684 var3 = class423.method5712((short)512);

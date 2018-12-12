@@ -1,7 +1,7 @@
 import java.util.Iterator;
 
 public class class545 {
-   class963[] field3848;
+   Interactable[] field3848;
    public int field3849;
    float[] field3850;
    int field3851 = 16;
@@ -13,7 +13,7 @@ public class class545 {
    public class728 field3857;
    int field3858;
    public int field3859;
-   class963[] field3860;
+   Interactable[] field3860;
    public class190[][][] field3861;
    public class454[] field3862;
    public class190[][][] field3863;
@@ -30,14 +30,14 @@ public class class545 {
    class639[] field3874;
    int field3875 = 5029;
    int field3876 = 10093;
-   class963[] field3877;
+   Interactable[] field3877;
    int field3878;
-   class963[] field3879;
+   Interactable[] field3879;
    int field3880;
    int field3881;
    int field3882 = 5043;
    int field3883;
-   class476[] field3884;
+   Animable[] field3884;
    public static boolean field3885 = true;
    int field3886 = 0;
    int field3887;
@@ -55,7 +55,7 @@ public class class545 {
    long[][][] field3899;
    int field3900 = 65391;
    int field3901;
-   class963[] field3902;
+   Interactable[] field3902;
    class321[] field3903;
    boolean[] field3904;
    int field3905;
@@ -93,8 +93,8 @@ public class class545 {
 
    public void method2404(int var1) {
       try {
-         for(int var2 = 0; var2 < 1204219039 * this.field3886; ++var2) {
-            class476 var3 = this.field3884[var2];
+         for(int var2 = 0; var2 < this.field3886; ++var2) {
+            Animable var3 = this.field3884[var2];
             this.method2423(var3, true, 2052556984);
             this.field3884[var2] = null;
          }
@@ -113,30 +113,30 @@ public class class545 {
             class190 var6 = this.field3861[var5][var1][var2] = this.field3861[var5 + 1][var1][var2];
             if (var6 != null) {
                for(class398 var7 = var6.field7006; var7 != null; var7 = var7.field6586) {
-                  class476 var8 = var7.field6585;
+                  Animable var8 = var7.field6585;
                   if (var1 == var8.field8299 && var8.field8296 == var2) {
-                     var8.field3639 = (byte)(var8.field3639 - 1);
+                     --var8.field3639;
                   }
                }
 
                if (var6.field7011 != null) {
-                  var6.field7011.field3639 = (byte)(var6.field7011.field3639 - 1);
+                  --var6.field7011.field3639;
                }
 
                if (var6.field7007 != null) {
-                  var6.field7007.field3639 = (byte)(var6.field7007.field3639 - 1);
+                  --var6.field7007.field3639;
                }
 
                if (var6.field7008 != null) {
-                  var6.field7008.field3639 = (byte)(var6.field7008.field3639 - 1);
+                  --var6.field7008.field3639;
                }
 
                if (var6.field7009 != null) {
-                  var6.field7009.field3639 = (byte)(var6.field7009.field3639 - 1);
+                  --var6.field7009.field3639;
                }
 
                if (var6.field7010 != null) {
-                  var6.field7010.field3639 = (byte)(var6.field7010.field3639 - 1);
+                  --var6.field7010.field3639;
                }
             }
          }
@@ -157,7 +157,7 @@ public class class545 {
       try {
          if (this.field3861[var1][var2][var3] == null) {
             boolean var5 = this.field3861[0][var2][var3] != null && this.field3861[0][var2][var3].field7005 != null;
-            if (var5 && var1 >= 1678382205 * this.field3893 - 1) {
+            if (var5 && var1 >= this.field3893 - 1) {
                return null;
             }
 
@@ -341,14 +341,14 @@ public class class545 {
       }
    }
 
-   public boolean method2416(class476 var1, boolean var2, byte var3) {
+   public boolean method2416(Animable var1, boolean var2, byte var3) {
       try {
          boolean var4 = this.field3862 == this.field3866;
          int var5 = 0;
          short var6 = 0;
          byte var7 = 0;
          var1.method4691(449273804);
-         if (var1.field8299 >= 0 && var1.field8296 >= 0 && var1.field8297 < 1988988347 * this.field3859 && var1.field8298 < this.field3894 * 1340714547) {
+         if (var1.field8299 >= 0 && var1.field8296 >= 0 && var1.field8297 < this.field3859 && var1.field8298 < this.field3894) {
             short var8 = 0;
 
             int var9;
@@ -395,7 +395,7 @@ public class class545 {
             }
 
             if (var2) {
-               this.field3884[(this.field3886 += -1037881505) * 1204219039 - 1] = var1;
+               this.field3884[++this.field3886 - 1] = var1;
                var1.field3638 = this;
             } else {
                var9 = this.field3862 == this.field3866 ? 1 : 0;
@@ -436,13 +436,13 @@ public class class545 {
             class732 var7 = var6.field7009;
             class732 var8 = var6.field7010;
             if (var7 != null) {
-               var7.field2978 = (short)(var4 * var7.field2978 / (16 << this.field3849 * -1688804109 - 7));
-               var7.field2979 = (short)(var7.field2979 * var4 / (16 << -1688804109 * this.field3849 - 7));
+               var7.field2978 = (short)(var4 * var7.field2978 / (16 << this.field3849 - 7));
+               var7.field2979 = (short)(var7.field2979 * var4 / (16 << this.field3849 - 7));
             }
 
             if (var8 != null) {
-               var8.field2978 = (short)(var4 * var8.field2978 / (16 << this.field3849 * -1688804109 - 7));
-               var8.field2979 = (short)(var8.field2979 * var4 / (16 << this.field3849 * -1688804109 - 7));
+               var8.field2978 = (short)(var4 * var8.field2978 / (16 << this.field3849 - 7));
+               var8.field2979 = (short)(var8.field2979 * var4 / (16 << this.field3849 - 7));
             }
          }
 
@@ -453,7 +453,7 @@ public class class545 {
 
    public void method2418(byte var1) {
       try {
-         this.method2442(1, this.field3893 * 1678382205, 722872945);
+         this.method2442(1, this.field3893, 722872945);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "nu.am(" + ')');
       }
@@ -522,25 +522,25 @@ public class class545 {
       this.field3900 = 65391;
       this.field3853 = var1;
       this.field3855 = this.field3853.method4876() > 0;
-      this.field3849 = var2 * -1524575173;
-      this.field3881 = (1 << this.field3849 * -1688804109) * 732171711;
-      this.field3891 = -413418327 * (this.field3881 * 1828905535 >> 1);
-      this.field3893 = var3 * 1634141397;
-      this.field3859 = 1005334387 * var4;
-      this.field3894 = -1342636805 * var5;
-      this.field3883 = var6 * 1571198643;
+      this.field3849 = var2;
+      this.field3881 = 1 << this.field3849;
+      this.field3891 = this.field3881 >> 1;
+      this.field3893 = var3;
+      this.field3859 = var4;
+      this.field3894 = var5;
+      this.field3883 = var6;
       this.field3854 = new class644();
       this.field3857 = new class728(this);
-      this.field3863 = new class190[var3][1988988347 * this.field3859][1340714547 * this.field3894];
+      this.field3863 = new class190[var3][this.field3859][this.field3894];
       this.field3864 = new class454[var3];
       if (var7) {
-         this.field3867 = new int[1988988347 * this.field3859][1340714547 * this.field3894];
-         this.field3869 = new byte[1988988347 * this.field3859][1340714547 * this.field3894];
-         this.field3868 = new short[this.field3859 * 1988988347][1340714547 * this.field3894];
-         this.field3870 = new byte[1988988347 * this.field3859][1340714547 * this.field3894];
-         this.field3871 = new byte[this.field3859 * 1988988347][this.field3894 * 1340714547];
-         this.field3872 = new byte[this.field3859 * 1988988347][1340714547 * this.field3894];
-         this.field3865 = new class190[1][this.field3859 * 1988988347][this.field3894 * 1340714547];
+         this.field3867 = new int[this.field3859][this.field3894];
+         this.field3869 = new byte[this.field3859][this.field3894];
+         this.field3868 = new short[this.field3859][this.field3894];
+         this.field3870 = new byte[this.field3859][this.field3894];
+         this.field3871 = new byte[this.field3859][this.field3894];
+         this.field3872 = new byte[this.field3859][this.field3894];
+         this.field3865 = new class190[1][this.field3859][this.field3894];
          this.field3866 = new class454[1];
       }
 
@@ -552,29 +552,29 @@ public class class545 {
       }
 
       this.method2446(false, -740850409);
-      this.field3877 = new class963[2];
-      this.field3902 = new class963[2];
-      this.field3879 = new class963[2];
-      this.field3860 = new class963[10093];
+      this.field3877 = new Interactable[2];
+      this.field3902 = new Interactable[2];
+      this.field3879 = new Interactable[2];
+      this.field3860 = new Interactable[10093];
       this.field3880 = 0;
-      this.field3848 = new class963[5029];
+      this.field3848 = new Interactable[5029];
       this.field3905 = 0;
-      this.field3884 = new class476[5043];
+      this.field3884 = new Animable[5043];
       this.field3886 = 0;
-      this.field3908 = new boolean[this.field3883 * 583010427 + this.field3883 * 583010427 + 1][this.field3883 * 583010427 + this.field3883 * 583010427 + 1];
-      this.field3906 = new boolean[2 + 583010427 * this.field3883 + this.field3883 * 583010427][583010427 * this.field3883 + 583010427 * this.field3883 + 2];
-      this.field3907 = new int[2 + 583010427 * this.field3883 + this.field3883 * 583010427];
+      this.field3908 = new boolean[this.field3883 + this.field3883 + 1][this.field3883 + this.field3883 + 1];
+      this.field3906 = new boolean[2 + this.field3883 + this.field3883][this.field3883 + this.field3883 + 2];
+      this.field3907 = new int[2 + this.field3883 + this.field3883];
       this.field3873 = new class472(false);
    }
 
-   public class476 method2422(int var1, int var2, int var3, class832 var4, short var5) {
+   public Animable method2422(int var1, int var2, int var3, class832 var4, short var5) {
       try {
          class190 var6 = this.field3861[var1][var2][var3];
          if (var6 == null) {
             return null;
          } else {
             for(class398 var7 = var6.field7006; var7 != null; var7 = var7.field6586) {
-               class476 var8 = var7.field6585;
+               Animable var8 = var7.field6585;
                if ((var4 == null || var4.method5380(var8, -98426520)) && var8.field8299 == var2 && var8.field8296 == var3) {
                   this.method2423(var8, false, 2114979879);
                   return var8;
@@ -588,7 +588,7 @@ public class class545 {
       }
    }
 
-   void method2423(class476 var1, boolean var2, int var3) {
+   void method2423(Animable var1, boolean var2, int var3) {
       try {
          for(int var4 = var1.field8299; var4 <= var1.field8297; ++var4) {
             for(int var5 = var1.field8296; var5 <= var1.field8298; ++var5) {
@@ -623,15 +623,15 @@ public class class545 {
       }
    }
 
-   void method2424(class963 var1, int var2) {
+   void method2424(Interactable var1, int var2) {
       try {
          if (var1 != null) {
             var1.method1519();
 
             for(int var3 = 0; var3 < 2; ++var3) {
-               class963 var4 = null;
+               Interactable var4 = null;
 
-               class963 var5;
+               Interactable var5;
                for(var5 = this.field3877[var3]; var5 != null; var5 = var5.field3637) {
                   if (var5 == var1) {
                      if (var4 != null) {
@@ -721,14 +721,14 @@ public class class545 {
       }
    }
 
-   public class476 method2429(int var1, int var2, int var3, class832 var4, int var5) {
+   public Animable method2429(int var1, int var2, int var3, class832 var4, int var5) {
       try {
          class190 var6 = this.field3861[var1][var2][var3];
          if (var6 == null) {
             return null;
          } else {
             for(class398 var7 = var6.field7006; var7 != null; var7 = var7.field6586) {
-               class476 var8 = var7.field6585;
+               Animable var8 = var7.field6585;
                if ((var4 == null || var4.method5380(var8, 240755990)) && var8.field8299 == var2 && var8.field8296 == var3) {
                   return var8;
                }
@@ -751,9 +751,9 @@ public class class545 {
    }
 
    public void method2431() {
-      for(int var1 = 0; var1 < 1678382205 * this.field3893; ++var1) {
-         for(int var2 = 0; var2 < this.field3859 * 1988988347; ++var2) {
-            for(int var3 = 0; var3 < 1340714547 * this.field3894; ++var3) {
+      for(int var1 = 0; var1 < this.field3893; ++var1) {
+         for(int var2 = 0; var2 < this.field3859; ++var2) {
+            for(int var3 = 0; var3 < this.field3894; ++var3) {
                class190 var4 = this.field3861[var1][var2][var3];
                if (var4 != null) {
                   class676 var5 = var4.field7007;
@@ -770,7 +770,7 @@ public class class545 {
                   }
 
                   for(class398 var7 = var4.field7006; var7 != null; var7 = var7.field6586) {
-                     class476 var8 = var7.field6585;
+                     Animable var8 = var7.field6585;
                      if (var8 != null && var8.method2173(1908249416)) {
                         this.method2433(var8, var1, var2, var3, 1 + (var8.field8297 - var8.field8299), var8.field8298 - var8.field8296 + 1);
                         var8.method2205((byte)61);
@@ -789,34 +789,34 @@ public class class545 {
 
    }
 
-   void method2432(class963 var1, int var2, int var3, int var4, int var5) {
+   void method2432(Interactable var1, int var2, int var3, int var4, int var5) {
       try {
          class190 var6;
-         if (var3 < this.field3859 * 1988988347) {
+         if (var3 < this.field3859) {
             var6 = this.field3861[var2][var3 + 1][var4];
             if (var6 != null && var6.field7011 != null && var6.field7011.method2173(1670858079)) {
-               var1.method2162(this.field3853, var6.field7011, 1828905535 * this.field3881, 0, 0, true, 1480517000);
+               var1.method2162(this.field3853, var6.field7011, this.field3881, 0, 0, true, 1480517000);
             }
          }
 
-         if (var4 < 1988988347 * this.field3859) {
+         if (var4 < this.field3859) {
             var6 = this.field3861[var2][var3][var4 + 1];
             if (var6 != null && var6.field7011 != null && var6.field7011.method2173(1930175079)) {
-               var1.method2162(this.field3853, var6.field7011, 0, 0, 1828905535 * this.field3881, true, 1828441739);
+               var1.method2162(this.field3853, var6.field7011, 0, 0, this.field3881, true, 1828441739);
             }
          }
 
-         if (var3 < 1988988347 * this.field3859 && var4 < this.field3894 * 1340714547) {
+         if (var3 < this.field3859 && var4 < this.field3894) {
             var6 = this.field3861[var2][1 + var3][var4 + 1];
             if (var6 != null && var6.field7011 != null && var6.field7011.method2173(2111976416)) {
-               var1.method2162(this.field3853, var6.field7011, this.field3881 * 1828905535, 0, this.field3881 * 1828905535, true, 1058354287);
+               var1.method2162(this.field3853, var6.field7011, this.field3881, 0, this.field3881, true, 1058354287);
             }
          }
 
-         if (var3 < 1988988347 * this.field3859 && var4 > 0) {
+         if (var3 < this.field3859 && var4 > 0) {
             var6 = this.field3861[var2][var3 + 1][var4 - 1];
             if (var6 != null && var6.field7011 != null && var6.field7011.method2173(1781377638)) {
-               var1.method2162(this.field3853, var6.field7011, this.field3881 * 1828905535, 0, -(1828905535 * this.field3881), true, 151502999);
+               var1.method2162(this.field3853, var6.field7011, this.field3881, 0, -this.field3881, true, 151502999);
             }
          }
 
@@ -825,7 +825,7 @@ public class class545 {
       }
    }
 
-   void method2433(class963 var1, int var2, int var3, int var4, int var5, int var6) {
+   void method2433(Interactable var1, int var2, int var3, int var4, int var5, int var6) {
       boolean var7 = true;
       int var8 = var3;
       int var9 = var5 + var3;
@@ -833,30 +833,30 @@ public class class545 {
       int var11 = var4 + var6;
 
       for(int var12 = var2; var12 <= var2 + 1; ++var12) {
-         if (this.field3893 * 1678382205 != var12) {
+         if (this.field3893 != var12) {
             for(int var13 = var8; var13 <= var9; ++var13) {
-               if (var13 >= 0 && var13 < this.field3859 * 1988988347) {
+               if (var13 >= 0 && var13 < this.field3859) {
                   for(int var14 = var10; var14 <= var11; ++var14) {
-                     if (var14 >= 0 && var14 < 1340714547 * this.field3894 && (!var7 || var13 >= var9 || var14 >= var11 || var14 < var4 && var13 != var3)) {
+                     if (var14 >= 0 && var14 < this.field3894 && (!var7 || var13 >= var9 || var14 >= var11 || var14 < var4 && var13 != var3)) {
                         class190 var15 = this.field3861[var12][var13][var14];
                         if (var15 != null) {
                            int var16 = (this.field3862[var12].method3888(var13, var14, (byte)-40) + this.field3862[var12].method3888(1 + var13, var14, (byte)-92) + this.field3862[var12].method3888(var13, 1 + var14, (byte)-41) + this.field3862[var12].method3888(var13 + 1, var14 + 1, (byte)-106)) / 4 - (this.field3862[var2].method3888(var3, var4, (byte)0) + this.field3862[var2].method3888(var3 + 1, var4, (byte)-79) + this.field3862[var2].method3888(var3, 1 + var4, (byte)-78) + this.field3862[var2].method3888(1 + var3, 1 + var4, (byte)-80)) / 4;
                            class676 var17 = var15.field7007;
                            class676 var18 = var15.field7008;
                            if (var17 != null && var17.method2173(2051783389)) {
-                              var1.method2162(this.field3853, var17, this.field3891 * 394962841 * (1 - var5) + 1828905535 * this.field3881 * (var13 - var3), var16, (var14 - var4) * 1828905535 * this.field3881 + this.field3891 * 394962841 * (1 - var6), var7, 1604469537);
+                              var1.method2162(this.field3853, var17, this.field3891 * (1 - var5) + this.field3881 * (var13 - var3), var16, (var14 - var4) * this.field3881 + this.field3891 * (1 - var6), var7, 1604469537);
                            }
 
                            if (var18 != null && var18.method2173(1486894505)) {
-                              var1.method2162(this.field3853, var18, this.field3881 * 1828905535 * (var13 - var3) + this.field3891 * 394962841 * (1 - var5), var16, 1828905535 * this.field3881 * (var14 - var4) + (1 - var6) * 394962841 * this.field3891, var7, 1798941005);
+                              var1.method2162(this.field3853, var18, this.field3881 * (var13 - var3) + this.field3891 * (1 - var5), var16, this.field3881 * (var14 - var4) + (1 - var6) * this.field3891, var7, 1798941005);
                            }
 
                            for(class398 var19 = var15.field7006; var19 != null; var19 = var19.field6586) {
-                              class476 var20 = var19.field6585;
+                              Animable var20 = var19.field6585;
                               if (var20 != null && var20.method2173(1399351341) && (var20.field8299 == var13 || var8 == var13) && (var20.field8296 == var14 || var10 == var14)) {
                                  int var21 = 1 + (var20.field8297 - var20.field8299);
                                  int var22 = var20.field8298 - var20.field8296 + 1;
-                                 var1.method2162(this.field3853, var20, 1828905535 * this.field3881 * (var20.field8299 - var3) + (var21 - var5) * 394962841 * this.field3891, var16, (var20.field8296 - var4) * this.field3881 * 1828905535 + 394962841 * this.field3891 * (var22 - var6), var7, 784338104);
+                                 var1.method2162(this.field3853, var20, this.field3881 * (var20.field8299 - var3) + (var21 - var5) * this.field3891, var16, (var20.field8296 - var4) * this.field3881 + this.field3891 * (var22 - var6), var7, 784338104);
                               }
                            }
                         }
@@ -875,35 +875,35 @@ public class class545 {
    public void method2434(int var1, int var2, int var3, int var4, byte[][][] var5, int[] var6, int[] var7, int[] var8, int[] var9, int[] var10, int var11, byte var12, int var13, int var14, boolean var15, boolean var16, int var17, boolean var18) {
       this.field3857.field2453 = true;
       this.field3856 = var16;
-      this.field3898 = (var2 >> this.field3849 * -1688804109) * -14089225;
-      this.field3858 = (var4 >> -1688804109 * this.field3849) * 1732036403;
-      this.field3887 = var2 * -648073099;
-      this.field3888 = var4 * -701298583;
-      this.field3889 = var3 * -1885539273;
-      this.field3878 = 1283818765 * this.field3898 - this.field3883 * -1864237879;
-      if (this.field3878 * 1387802915 < 0) {
-         this.field3892 = -(153202551 * this.field3878);
+      this.field3898 = var2 >> this.field3849;
+      this.field3858 = var4 >> this.field3849;
+      this.field3887 = var2;
+      this.field3888 = var4;
+      this.field3889 = var3;
+      this.field3878 = this.field3898 - this.field3883;
+      if (this.field3878 < 0) {
+         this.field3892 = -(this.field3878 * -931950691) * -1810993483;
          this.field3878 = 0;
       } else {
          this.field3892 = 0;
       }
 
-      this.field3896 = this.field3858 * 1233371147 - this.field3883 * -678030197;
-      if (1655515601 * this.field3896 < 0) {
-         this.field3852 = -(754782463 * this.field3896);
+      this.field3896 = this.field3858 - this.field3883;
+      if (this.field3896 < 0) {
+         this.field3852 = -(this.field3896 * -1995214385) * -301075153;
          this.field3896 = 0;
       } else {
          this.field3852 = 0;
       }
 
-      this.field3895 = -1827235035 * this.field3898 + this.field3883 * -679030015;
-      if (this.field3895 * 945006459 > this.field3859 * 1988988347) {
-         this.field3895 = this.field3859 * -1126318399;
+      this.field3895 = this.field3898 + this.field3883;
+      if (this.field3895 > this.field3859) {
+         this.field3895 = this.field3859;
       }
 
-      this.field3897 = this.field3883 * -1363529219 + this.field3858 * -690201987;
-      if (this.field3897 * 779833815 > this.field3894 * 1340714547) {
-         this.field3897 = 1467937541 * this.field3894;
+      this.field3897 = this.field3883 + this.field3858;
+      if (this.field3897 > this.field3894) {
+         this.field3897 = this.field3894;
       }
 
       boolean[][] var19 = this.field3908;
@@ -911,24 +911,24 @@ public class class545 {
       int var21;
       int var22;
       if (this.field3856) {
-         for(var21 = 0; var21 < 583010427 * this.field3883 + this.field3883 * 583010427 + 2; ++var21) {
+         for(var21 = 0; var21 < this.field3883 + this.field3883 + 2; ++var21) {
             var22 = 0;
             int var23 = 0;
 
-            for(int var24 = 0; var24 < 583010427 * this.field3883 + this.field3883 * 583010427 + 2; ++var24) {
+            for(int var24 = 0; var24 < this.field3883 + this.field3883 + 2; ++var24) {
                if (var24 > 1) {
                   this.field3907[var24 - 2] = var22;
                }
 
                var22 = var23;
-               int var25 = this.field3898 * -804213305 - 583010427 * this.field3883 + var21;
-               int var26 = 465603579 * this.field3858 - this.field3883 * 583010427 + var24;
+               int var25 = this.field3898 - this.field3883 + var21;
+               int var26 = this.field3858 - this.field3883 + var24;
                int var27;
-               if (var25 >= 0 && var26 >= 0 && var25 < 1988988347 * this.field3859 && var26 < 1340714547 * this.field3894) {
-                  var27 = var25 << this.field3849 * -1688804109;
-                  int var28 = var26 << -1688804109 * this.field3849;
-                  int var29 = this.field3864[this.field3864.length - 1].method3888(var25, var26, (byte)-48) - (1000 << -1688804109 * this.field3849 - 7);
-                  int var30 = (this.field3866 != null ? this.field3866[0].method3888(var25, var26, (byte)-75) + 1828905535 * this.field3881 : this.field3864[0].method3888(var25, var26, (byte)-70) + 1828905535 * this.field3881) + (1000 << this.field3849 * -1688804109 - 7);
+               if (var25 >= 0 && var26 >= 0 && var25 < this.field3859 && var26 < this.field3894) {
+                  var27 = var25 << this.field3849;
+                  int var28 = var26 << this.field3849;
+                  int var29 = this.field3864[this.field3864.length - 1].method3888(var25, var26, (byte)-48) - (1000 << this.field3849 - 7);
+                  int var30 = (this.field3866 != null ? this.field3866[0].method3888(var25, var26, (byte)-75) + this.field3881 : this.field3864[0].method3888(var25, var26, (byte)-70) + this.field3881) + (1000 << this.field3849 - 7);
                   var23 = this.field3853.method4848(var27, var29, var28, var27, var30, var28);
                   this.field3906[var21][var24] = var23 == 0;
                } else {
@@ -942,8 +942,8 @@ public class class545 {
                }
             }
 
-            this.field3907[583010427 * this.field3883 + this.field3883 * 583010427] = var22;
-            this.field3907[1 + 583010427 * this.field3883 + 583010427 * this.field3883] = var23;
+            this.field3907[this.field3883 + this.field3883] = var22;
+            this.field3907[1 + this.field3883 + this.field3883] = var23;
          }
 
          if (!var18) {
@@ -958,7 +958,7 @@ public class class545 {
          }
       } else {
          if (this.field3909 == null) {
-            this.field3909 = new boolean[this.field3883 * 583010427 + 583010427 * this.field3883 + 2][583010427 * this.field3883 + 583010427 * this.field3883 + 2];
+            this.field3909 = new boolean[this.field3883 + this.field3883 + 2][this.field3883 + this.field3883 + 2];
          }
 
          for(var21 = 0; var21 < this.field3909.length; ++var21) {
@@ -971,8 +971,8 @@ public class class545 {
          this.field3908 = this.field3909;
          this.field3878 = 0;
          this.field3896 = 0;
-         this.field3895 = -1126318399 * this.field3859;
-         this.field3897 = this.field3894 * 1467937541;
+         this.field3895 = this.field3859;
+         this.field3897 = this.field3894;
          this.field3857.field2453 = false;
       }
 
@@ -988,7 +988,7 @@ public class class545 {
       }
 
       if (this.field3855) {
-         for(var21 = 0; var21 < this.field3901 * -2060364501; ++var21) {
+         for(var21 = 0; var21 < this.field3901; ++var21) {
             this.field3903[var21].method850(var1, var15, (byte)1);
          }
       }
@@ -1013,13 +1013,13 @@ public class class545 {
       int var6 = var1 ? 1 : 0;
       this.field3880 = 0;
       this.field3905 = 0;
-      this.field3890 += 888242829;
-      class963 var7;
+      ++this.field3890;
+      Interactable var7;
       if ((var5 & 2) == 0) {
          for(var7 = this.field3877[var6]; var7 != null; var7 = var7.field3637) {
             this.method2436(var7, -51028335);
-            if (-1 != -1235150701 * var7.field3641 && !this.method2439(var7, var1, var2, var3, var4)) {
-               this.field3860[(this.field3880 += -770473687) * -1367168231 - 1] = var7;
+            if (-1 != var7.height && !this.method2439(var7, var1, var2, var3, var4)) {
+               this.field3860[++this.field3880 - 1] = var7;
             }
          }
       }
@@ -1028,40 +1028,40 @@ public class class545 {
       if ((var5 & 1) == 0) {
          for(var7 = this.field3902[var6]; var7 != null; var7 = var7.field3637) {
             this.method2436(var7, 520875779);
-            if (-1 != -1235150701 * var7.field3641 && !this.method2439(var7, var1, var2, var3, var4)) {
-               this.field3848[(this.field3905 += -749214421) * 708424067 - 1] = var7;
+            if (-1 != var7.height && !this.method2439(var7, var1, var2, var3, var4)) {
+               this.field3848[++this.field3905 - 1] = var7;
             }
          }
 
          for(var7 = this.field3879[var6]; var7 != null; var7 = var7.field3637) {
             this.method2436(var7, 1278144320);
-            if (var7.field3641 * -1235150701 != -1 && !this.method2439(var7, var1, var2, var3, var4)) {
+            if (var7.height != -1 && !this.method2439(var7, var1, var2, var3, var4)) {
                if (var7.method2183((short)255)) {
-                  this.field3848[(this.field3905 += -749214421) * 708424067 - 1] = var7;
+                  this.field3848[++this.field3905 - 1] = var7;
                } else {
-                  this.field3860[(this.field3880 += -770473687) * -1367168231 - 1] = var7;
+                  this.field3860[++this.field3880 - 1] = var7;
                }
             }
          }
 
          if (!var1) {
-            for(var16 = 0; var16 < 1204219039 * this.field3886; ++var16) {
+            for(var16 = 0; var16 < this.field3886; ++var16) {
                this.method2436(this.field3884[var16], -765484247);
-               if (-1 != this.field3884[var16].field3641 * -1235150701 && !this.method2439(this.field3884[var16], var1, var2, var3, var4)) {
+               if (-1 != this.field3884[var16].height && !this.method2439(this.field3884[var16], var1, var2, var3, var4)) {
                   if (this.field3884[var16].method2183((short)255)) {
-                     this.field3848[(this.field3905 += -749214421) * 708424067 - 1] = this.field3884[var16];
+                     this.field3848[++this.field3905 - 1] = this.field3884[var16];
                   } else {
-                     this.field3860[(this.field3880 += -770473687) * -1367168231 - 1] = this.field3884[var16];
+                     this.field3860[++this.field3880 - 1] = this.field3884[var16];
                   }
                }
             }
          }
       }
 
-      if (-1367168231 * this.field3880 > 0) {
-         this.method2438(this.field3860, 0, -1367168231 * this.field3880 - 1);
+      if (this.field3880 > 0) {
+         this.method2438(this.field3860, 0, this.field3880 - 1);
 
-         for(var16 = 0; var16 < this.field3880 * -1367168231; ++var16) {
+         for(var16 = 0; var16 < this.field3880; ++var16) {
             this.method2440(this.field3860[var16], this.field3874);
          }
       }
@@ -1071,7 +1071,7 @@ public class class545 {
       }
 
       if ((var5 & 2) == 0) {
-         for(var16 = 0; var16 < this.field3893 * 1678382205; ++var16) {
+         for(var16 = 0; var16 < this.field3893; ++var16) {
             int var8;
             int var9;
             boolean[][] var10;
@@ -1080,24 +1080,24 @@ public class class545 {
             int var13;
             if (var16 >= var3 && var2 != null) {
                var8 = this.field3908.length;
-               if (this.field3908.length + 1387802915 * this.field3878 > 1988988347 * this.field3859) {
-                  var8 -= this.field3878 * 1387802915 + this.field3908.length - 1988988347 * this.field3859;
+               if (this.field3908.length + this.field3878 > this.field3859) {
+                  var8 -= this.field3878 + this.field3908.length - this.field3859;
                }
 
                var9 = this.field3908[0].length;
-               if (1655515601 * this.field3896 + this.field3908[0].length > this.field3894 * 1340714547) {
-                  var9 -= 1655515601 * this.field3896 + this.field3908[0].length - 1340714547 * this.field3894;
+               if (this.field3896 + this.field3908[0].length > this.field3894) {
+                  var9 -= this.field3896 + this.field3908[0].length - this.field3894;
                }
 
                var10 = this.field3906;
                if (this.field3856) {
-                  for(var11 = -1810993483 * this.field3892; var11 < var8; ++var11) {
-                     var12 = this.field3878 * 1387802915 + var11 - -1810993483 * this.field3892;
+                  for(var11 = this.field3892; var11 < var8; ++var11) {
+                     var12 = this.field3878 + var11 - this.field3892;
 
-                     for(var13 = this.field3852 * -301075153; var13 < var9; ++var13) {
+                     for(var13 = this.field3852; var13 < var9; ++var13) {
                         var10[var11][var13] = false;
                         if (this.field3908[var11][var13]) {
-                           int var14 = var13 + 1655515601 * this.field3896 - this.field3852 * -301075153;
+                           int var14 = var13 + this.field3896 - this.field3852;
 
                            for(int var15 = var16; var15 >= 0; --var15) {
                               if (this.field3861[var15][var12][var14] != null && this.field3861[var15][var12][var14].field7016 == var16) {
@@ -1115,25 +1115,25 @@ public class class545 {
                   }
                }
 
-               this.field3862[var16].method3885(-804213305 * this.field3898, this.field3858 * 465603579, this.field3883 * 583010427, this.field3906, false, var5);
+               this.field3862[var16].method3885(this.field3898, this.field3858, this.field3883, this.field3906, false, var5);
             } else {
                var8 = this.field3908.length;
-               if (1387802915 * this.field3878 + this.field3908.length > this.field3859 * 1988988347) {
-                  var8 -= 1387802915 * this.field3878 + this.field3908.length - 1988988347 * this.field3859;
+               if (this.field3878 + this.field3908.length > this.field3859) {
+                  var8 -= this.field3878 + this.field3908.length - this.field3859;
                }
 
                var9 = this.field3908[0].length;
-               if (1655515601 * this.field3896 + this.field3908[0].length > this.field3894 * 1340714547) {
-                  var9 -= this.field3908[0].length + this.field3896 * 1655515601 - this.field3894 * 1340714547;
+               if (this.field3896 + this.field3908[0].length > this.field3894) {
+                  var9 -= this.field3908[0].length + this.field3896 - this.field3894;
                }
 
                var10 = this.field3906;
                if (this.field3856) {
-                  for(var11 = this.field3892 * -1810993483; var11 < var8; ++var11) {
-                     var12 = var11 + this.field3878 * 1387802915 - -1810993483 * this.field3892;
+                  for(var11 = this.field3892; var11 < var8; ++var11) {
+                     var12 = var11 + this.field3878 - this.field3892;
 
-                     for(var13 = this.field3852 * -301075153; var13 < var9; ++var13) {
-                        if (this.field3908[var11][var13] && !this.field3857.method1651(var16, var12, var13 + this.field3896 * 1655515601 - this.field3852 * -301075153)) {
+                     for(var13 = this.field3852; var13 < var9; ++var13) {
+                        if (this.field3908[var11][var13] && !this.field3857.method1651(var16, var12, var13 + this.field3896 - this.field3852)) {
                            var10[var11][var13] = true;
                         } else {
                            var10[var11][var13] = false;
@@ -1142,43 +1142,43 @@ public class class545 {
                   }
                }
 
-               this.field3862[var16].method3885(this.field3898 * -804213305, this.field3858 * 465603579, 583010427 * this.field3883, this.field3906, true, var5);
+               this.field3862[var16].method3885(this.field3898, this.field3858, this.field3883, this.field3906, true, var5);
             }
          }
       }
 
-      if (708424067 * this.field3905 > 0) {
-         this.method2437(this.field3848, 0, 708424067 * this.field3905 - 1);
+      if (this.field3905 > 0) {
+         this.method2437(this.field3848, 0, this.field3905 - 1);
 
-         for(var16 = 0; var16 < this.field3905 * 708424067; ++var16) {
+         for(var16 = 0; var16 < this.field3905; ++var16) {
             this.method2440(this.field3848[var16], this.field3874);
          }
       }
 
    }
 
-   void method2436(class963 var1, int var2) {
+   void method2436(Interactable var1, int var2) {
       try {
          class32 var3 = var1.method1511().field7637;
          this.field3853.method4890((float)((int)var3.field5296), (float)((int)var3.field5300 + (var1.method2168(1951240662) >> 1)), (float)((int)var3.field5299), this.field3850);
-         var1.field3641 = 144688539 * (int)this.field3850[2];
+         var1.height = (int)this.field3850[2];
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "nu.aj(" + ')');
       }
    }
 
-   void method2437(class963[] var1, int var2, int var3) {
+   void method2437(Interactable[] var1, int var2, int var3) {
       if (var2 < var3) {
          int var4 = (var3 + var2) / 2;
          int var5 = var2;
-         class963 var6 = var1[var4];
+         Interactable var6 = var1[var4];
          var1[var4] = var1[var3];
          var1[var3] = var6;
-         int var7 = -1235150701 * var6.field3641;
+         int var7 = var6.height;
 
          for(int var8 = var2; var8 < var3; ++var8) {
-            if (-1235150701 * var1[var8].field3641 > (var8 & 1) + var7) {
-               class963 var9 = var1[var8];
+            if (var1[var8].height > (var8 & 1) + var7) {
+               Interactable var9 = var1[var8];
                var1[var8] = var1[var5];
                var1[var5++] = var9;
             }
@@ -1192,18 +1192,18 @@ public class class545 {
 
    }
 
-   void method2438(class963[] var1, int var2, int var3) {
+   void method2438(Interactable[] var1, int var2, int var3) {
       if (var2 < var3) {
          int var4 = (var3 + var2) / 2;
          int var5 = var2;
-         class963 var6 = var1[var4];
+         Interactable var6 = var1[var4];
          var1[var4] = var1[var3];
          var1[var3] = var6;
-         int var7 = var6.field3641 * -1235150701;
+         int var7 = var6.height;
 
          for(int var8 = var2; var8 < var3; ++var8) {
-            if (-1235150701 * var1[var8].field3641 < (var8 & 1) + var7) {
-               class963 var9 = var1[var8];
+            if (var1[var8].height < (var8 & 1) + var7) {
+               Interactable var9 = var1[var8];
                var1[var8] = var1[var5];
                var1[var5++] = var9;
             }
@@ -1217,23 +1217,23 @@ public class class545 {
 
    }
 
-   boolean method2439(class963 var1, boolean var2, byte[][][] var3, int var4, byte var5) {
+   boolean method2439(Interactable var1, boolean var2, byte[][][] var3, int var4, byte var5) {
       if (!this.field3856) {
          return false;
-      } else if (var1 instanceof class476) {
-         short var12 = ((class476)var1).field8297;
-         short var13 = ((class476)var1).field8298;
-         short var14 = ((class476)var1).field8299;
-         short var9 = ((class476)var1).field8296;
+      } else if (var1 instanceof Animable) {
+         short var12 = ((Animable)var1).field8297;
+         short var13 = ((Animable)var1).field8298;
+         short var14 = ((Animable)var1).field8299;
+         short var9 = ((Animable)var1).field8296;
 
          for(int var10 = var14; var10 <= var12; ++var10) {
             for(int var11 = var9; var11 <= var13; ++var11) {
-               if (var1.field3640 < 1678382205 * this.field3893 && var10 >= this.field3878 * 1387802915 && var10 < this.field3895 * 945006459 && var11 >= 1655515601 * this.field3896 && var11 < this.field3897 * 779833815) {
+               if (var1.field3640 < this.field3893 && var10 >= this.field3878 && var10 < this.field3895 && var11 >= this.field3896 && var11 < this.field3897) {
                   if ((var3 == null || var1.field3639 < var4 || var3[var1.field3639][var10][var11] != var5) && var1.method2167(1467136065) && !var1.method2171(this.field3853, (byte)-33)) {
                      return false;
                   }
 
-                  if (!var2 && var10 >= this.field3898 * -804213305 - 16 && var10 <= -804213305 * this.field3898 + 16 && var11 >= this.field3858 * 465603579 - 16 && var11 <= 16 + 465603579 * this.field3858) {
+                  if (!var2 && var10 >= this.field3898 - 16 && var10 <= this.field3898 + 16 && var11 >= this.field3858 - 16 && var11 <= 16 + this.field3858) {
                      var1.method2164(this.field3853, 1659529754);
                   }
 
@@ -1245,13 +1245,13 @@ public class class545 {
          return true;
       } else {
          class32 var6 = var1.method1511().field7637;
-         int var7 = (int)var6.field5296 >> this.field3849 * -1688804109;
-         int var8 = (int)var6.field5299 >> -1688804109 * this.field3849;
-         if (var1.field3640 < this.field3893 * 1678382205 && var7 >= 1387802915 * this.field3878 && var7 < 945006459 * this.field3895 && var8 >= 1655515601 * this.field3896 && var8 < 779833815 * this.field3897) {
+         int var7 = (int)var6.field5296 >> this.field3849;
+         int var8 = (int)var6.field5299 >> this.field3849;
+         if (var1.field3640 < this.field3893 && var7 >= this.field3878 && var7 < this.field3895 && var8 >= this.field3896 && var8 < this.field3897) {
             if ((var3 == null || var1.field3639 < var4 || var3[var1.field3639][var7][var8] != var5) && var1.method2167(1252283375) && !var1.method2171(this.field3853, (byte)91)) {
                return false;
             } else {
-               if (!var2 && var7 >= this.field3898 * -804213305 - 16 && var7 <= 16 + -804213305 * this.field3898 && var8 >= 465603579 * this.field3858 - 16 && var8 <= 16 + 465603579 * this.field3858) {
+               if (!var2 && var7 >= this.field3898 - 16 && var7 <= 16 + this.field3898 && var8 >= this.field3858 - 16 && var8 <= 16 + this.field3858) {
                   var1.method2164(this.field3853, 1423007257);
                }
 
@@ -1263,7 +1263,7 @@ public class class545 {
       }
    }
 
-   void method2440(class963 var1, class639[] var2) {
+   void method2440(Interactable var1, class639[] var2) {
       if (this.field3855) {
          int var3 = var1.method2161(var2, -331363526);
          this.field3853.method4844(var3, var2);
@@ -1275,21 +1275,21 @@ public class class545 {
          class32 var5 = var1.method1511().field7637;
          int var6;
          int var7;
-         if (var1 instanceof class476) {
-            var6 = ((class476)var1).field8299;
-            var7 = ((class476)var1).field8296;
+         if (var1 instanceof Animable) {
+            var6 = ((Animable)var1).field8299;
+            var7 = ((Animable)var1).field8296;
          } else {
-            var6 = (int)var5.field5296 >> this.field3849 * -1688804109;
-            var7 = (int)var5.field5299 >> this.field3849 * -1688804109;
+            var6 = (int)var5.field5296 >> this.field3849;
+            var7 = (int)var5.field5299 >> this.field3849;
          }
 
          class919 var8 = new class919();
-         var8.field10426 = this.method2409(var6, var7, (byte)76) * 614121861;
-         var8.field10425 = this.method2408(var6, var7, (byte)-5) * -885436027;
-         var8.field10427 = this.method2410(var6, var7, (byte)11) * 399458545;
-         var8.field10429 = this.method2411(var6, var7, (byte)27) * 1507836083;
-         var8.field10430 = this.method2454(var6, var7, -1020454437) * -1927451111;
-         var8.field10432 = this.method2412(var6, var7, -1965414520) * -875460563;
+         var8.field10426 = this.method2409(var6, var7, (byte)76);
+         var8.field10425 = this.method2408(var6, var7, (byte)-5);
+         var8.field10427 = this.method2410(var6, var7, (byte)11);
+         var8.field10429 = this.method2411(var6, var7, (byte)27);
+         var8.field10430 = this.method2454(var6, var7, -1020454437);
+         var8.field10432 = this.method2412(var6, var7, -1965414520);
          this.field3853.method4887(this.field3864[0].method3887((int)var5.field5296, (int)var5.field5299, -1986155301), var8);
       }
 
@@ -1336,12 +1336,12 @@ public class class545 {
          for(int var5 = var1; var5 < var2; ++var5) {
             class454 var6 = this.field3864[var5];
             if (var6 != null) {
-               for(int var7 = 0; var7 < 1340714547 * this.field3894; ++var7) {
-                  for(int var8 = 0; var8 < this.field3859 * 1988988347; ++var8) {
+               for(int var7 = 0; var7 < this.field3894; ++var7) {
+                  for(int var8 = 0; var8 < this.field3859; ++var8) {
                      var4 = var6.method3889(var8, var7, var4);
                      if (var4 != null) {
-                        int var9 = var8 << -1688804109 * this.field3849;
-                        int var10 = var7 << -1688804109 * this.field3849;
+                        int var9 = var8 << this.field3849;
+                        int var10 = var7 << this.field3849;
 
                         for(int var11 = var5 - 1; var11 >= 0; --var11) {
                            class454 var12 = this.field3864[var11];
@@ -1370,25 +1370,25 @@ public class class545 {
 
    public void method2443(byte var1) {
       try {
-         for(int var2 = 0; var2 < -2060364501 * this.field3901; ++var2) {
+         for(int var2 = 0; var2 < this.field3901; ++var2) {
             if (!this.field3904[var2]) {
                class321 var3 = this.field3903[var2];
                class639 var4 = var3.field1046;
-               int var5 = var3.field1054 * -1565952249;
-               int var6 = var4.method5907(-2066581282) - this.field3891 * 394962841;
-               int var7 = 1 + (2 * var6 >> -1688804109 * this.field3849);
+               int var5 = var3.field1054;
+               int var6 = var4.method5907(-2066581282) - this.field3891;
+               int var7 = 1 + (2 * var6 >> this.field3849);
                int var8 = 0;
                int[] var9 = new int[var7 * var7];
-               int var10 = var4.method5902(823958259) - var6 >> this.field3849 * -1688804109;
-               int var11 = var4.method5904((byte)84) - var6 >> -1688804109 * this.field3849;
-               int var12 = var4.method5904((byte)73) + var6 >> this.field3849 * -1688804109;
+               int var10 = var4.method5902(823958259) - var6 >> this.field3849;
+               int var11 = var4.method5904((byte)84) - var6 >> this.field3849;
+               int var12 = var4.method5904((byte)73) + var6 >> this.field3849;
                if (var11 < 0) {
                   var8 -= var11;
                   var11 = 0;
                }
 
-               if (var12 >= this.field3894 * 1340714547) {
-                  var12 = 1340714547 * this.field3894 - 1;
+               if (var12 >= this.field3894) {
+                  var12 = this.field3894 - 1;
                }
 
                for(int var13 = var11; var13 <= var12; ++var13) {
@@ -1402,13 +1402,13 @@ public class class545 {
                      var17 = 0;
                   }
 
-                  if (var18 >= this.field3859 * 1988988347) {
-                     var18 = 1988988347 * this.field3859 - 1;
+                  if (var18 >= this.field3859) {
+                     var18 = this.field3859 - 1;
                   }
 
                   for(int var19 = var17; var19 <= var18; ++var19) {
                      byte var20 = 1;
-                     class476 var21 = this.method2429(var5, var19, var13, (class832)null, -741941433);
+                     Animable var21 = this.method2429(var5, var19, var13, (class832)null, -741941433);
                      if (var21 != null && var21.field8301 != 0) {
                         boolean var22;
                         boolean var23;
@@ -1482,8 +1482,8 @@ public class class545 {
 
    public void method2444(int var1) {
       try {
-         for(int var2 = 0; var2 < this.field3859 * 1988988347; ++var2) {
-            for(int var3 = 0; var3 < this.field3894 * 1340714547; ++var3) {
+         for(int var2 = 0; var2 < this.field3859; ++var2) {
+            for(int var3 = 0; var3 < this.field3894; ++var3) {
                if (this.field3861[0][var2][var3] == null) {
                   this.field3861[0][var2][var3] = new class190(0);
                }
@@ -1497,56 +1497,56 @@ public class class545 {
 
    public void method2445(class321 var1, int var2) {
       try {
-         if (this.field3901 * -2060364501 < 65391) {
+         if (this.field3901 < 65391) {
             class639 var3 = var1.field1046;
-            this.field3903[-2060364501 * this.field3901] = var1;
-            this.field3904[this.field3901 * -2060364501] = false;
-            this.field3901 += -979058301;
-            int var4 = -1565952249 * var1.field1054;
+            this.field3903[this.field3901] = var1;
+            this.field3904[this.field3901] = false;
+            ++this.field3901;
+            int var4 = var1.field1054;
             if (var1.field1057) {
                var4 = 0;
             }
 
-            int var5 = var1.field1054 * -1565952249;
+            int var5 = var1.field1054;
             if (var1.field1056) {
-               var5 = this.field3893 * 1678382205 - 1;
+               var5 = this.field3893 - 1;
             }
 
             for(int var6 = var4; var6 <= var5; ++var6) {
                int var7 = 0;
-               int var8 = var3.method5904((byte)46) - var3.method5907(1506691) + 394962841 * this.field3891 >> this.field3849 * -1688804109;
+               int var8 = var3.method5904((byte)46) - var3.method5907(1506691) + this.field3891 >> this.field3849;
                if (var8 < 0) {
                   var7 -= var8;
                   var8 = 0;
                }
 
-               int var9 = var3.method5904((byte)8) + var3.method5907(-884319007) - this.field3891 * 394962841 >> -1688804109 * this.field3849;
-               if (var9 >= 1340714547 * this.field3894) {
-                  var9 = this.field3894 * 1340714547 - 1;
+               int var9 = var3.method5904((byte)8) + var3.method5907(-884319007) - this.field3891 >> this.field3849;
+               if (var9 >= this.field3894) {
+                  var9 = this.field3894 - 1;
                }
 
                for(int var10 = var8; var10 <= var9; ++var10) {
                   short var11 = var1.field1059[var7++];
-                  int var12 = (var3.method5902(823958259) - var3.method5907(-701525248) + this.field3891 * 394962841 >> this.field3849 * -1688804109) + (var11 >>> 8);
+                  int var12 = (var3.method5902(823958259) - var3.method5907(-701525248) + this.field3891 >> this.field3849) + (var11 >>> 8);
                   int var13 = var12 + (var11 & 255) - 1;
                   if (var12 < 0) {
                      var12 = 0;
                   }
 
-                  if (var13 >= 1988988347 * this.field3859) {
-                     var13 = 1988988347 * this.field3859 - 1;
+                  if (var13 >= this.field3859) {
+                     var13 = this.field3859 - 1;
                   }
 
                   for(int var14 = var12; var14 <= var13; ++var14) {
                      long var15 = this.field3899[var6][var14][var10];
                      if ((var15 & 65535L) == 0L) {
-                        this.field3899[var6][var14][var10] = var15 | (long)(this.field3901 * -2060364501);
+                        this.field3899[var6][var14][var10] = var15 | (long)this.field3901;
                      } else if ((var15 & 4294901760L) == 0L) {
-                        this.field3899[var6][var14][var10] = var15 | (long)(this.field3901 * -2060364501) << 16;
+                        this.field3899[var6][var14][var10] = var15 | (long)this.field3901 << 16;
                      } else if ((var15 & 281470681743360L) == 0L) {
-                        this.field3899[var6][var14][var10] = var15 | (long)(this.field3901 * -2060364501) << 32;
+                        this.field3899[var6][var14][var10] = var15 | (long)this.field3901 << 32;
                      } else if ((var15 & -281474976710656L) == 0L) {
-                        this.field3899[var6][var14][var10] = var15 | (long)(this.field3901 * -2060364501) << 48;
+                        this.field3899[var6][var14][var10] = var15 | (long)this.field3901 << 48;
                      }
                   }
                }
@@ -1568,7 +1568,7 @@ public class class545 {
             this.field3862 = this.field3864;
          }
 
-         this.field3893 = this.field3861.length * 1634141397;
+         this.field3893 = this.field3861.length;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "nu.b(" + ')');
       }
@@ -1578,7 +1578,7 @@ public class class545 {
       try {
          class190 var7 = this.method2406(var1, var2, var3, 1185117443);
          if (var7 != null) {
-            var5.method1514(new class32((float)((var2 << this.field3849 * -1688804109) + 394962841 * this.field3891), (float)var4, (float)((var3 << -1688804109 * this.field3849) + 394962841 * this.field3891)));
+            var5.method1514(new class32((float)((var2 << this.field3849) + this.field3891), (float)var4, (float)((var3 << this.field3849) + this.field3891)));
             var7.field7012 = var5;
             int var8 = this.field3866 == this.field3862 ? 1 : 0;
             if (var5.method2206((byte)13)) {
@@ -1722,14 +1722,14 @@ public class class545 {
 
    static final void method2455(class744 var0, byte var1) {
       try {
-         var0.field3156 -= 1551802473;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[var0.field3156 * 681479919 + 1] << 1;
-         int var4 = var0.field3161[2 + var0.field3156 * 681479919];
-         int var5 = var0.field3161[681479919 * var0.field3156 + 3];
-         int var6 = var0.field3161[681479919 * var0.field3156 + 4];
-         int var7 = var0.field3161[var0.field3156 * 681479919 + 5];
-         int var8 = var0.field3161[681479919 * var0.field3156 + 6];
+         var0.field3156 -= 7;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1] << 1;
+         int var4 = var0.field3161[2 + var0.field3156];
+         int var5 = var0.field3161[var0.field3156 + 3];
+         int var6 = var0.field3161[var0.field3156 + 4];
+         int var7 = var0.field3161[var0.field3156 + 5];
+         int var8 = var0.field3161[var0.field3156 + 6];
          if (var2 >= 0 && var2 < 2 && class730.field2748[var2] != null && var3 >= 0 && var3 < class730.field2748[var2].length) {
             class730.field2748[var2][var3] = new int[]{(var4 >> 14 & 16383) << 9, var5 << 2, (var4 & 16383) << 9, var8};
             class730.field2748[var2][1 + var3] = new int[]{(var6 >> 14 & 16383) << 9, var7 << 2, (var6 & 16383) << 9};
@@ -1744,7 +1744,7 @@ public class class545 {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1045422783 * var3.field895;
+         var0.field3161[++var0.field3156 - 1] = var3.field895;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "nu.pc(" + ')');
       }

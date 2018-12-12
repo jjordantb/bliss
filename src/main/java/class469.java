@@ -13,7 +13,7 @@ public class class469 {
    class469(String var1, String var2, int var3) {
       this.field7321 = var1;
       this.field7326 = var2;
-      this.field7327 = var3 * 977088255;
+      this.field7327 = var3;
    }
 
    public static long method4016(int var0, int var1) {
@@ -24,14 +24,14 @@ public class class469 {
       }
    }
 
-   static void method4017(class746 var0, int var1, int var2) {
+   static void method4017(Actor var0, int var1, int var2) {
       try {
          if (var0.field4057 != null) {
             class647 var3 = (class647)class367.method1565(class458.method3829((byte)-26), var1, (byte)2);
             int var4 = var0.field4057[var3.method5481((byte)-118)];
-            if (var4 != var0.field4042.method2779(1579357241)) {
-               var0.field4042.method2789(var4, var0.field4042.method2783((short)758), -684011169);
-               var0.field4089 = var0.field4084 * -526956429;
+            if (var4 != var0.activeAnimator.method2779(1579357241)) {
+               var0.activeAnimator.method2789(var4, var0.activeAnimator.method2783((short)758), -684011169);
+               var0.field4089 = var0.field4084;
             }
          }
 
@@ -49,17 +49,17 @@ public class class469 {
             class730.field2666.method2947(var7, var5);
             var7.field3966.method897(var3, 1567854006);
          } else {
-            class518 var8 = class85.field1121.method1566(1768239597 * var3.field5319);
-            int var9 = 785788887 * var8.field4238;
-            if (789409129 * var8.field4221 == 1) {
-               var9 *= 1 + 567630807 * var3.field5318;
+            ItemDefinition var8 = class85.field1121.method1566(var3.field5319);
+            int var9 = var8.field4238;
+            if (var8.field4221 == 1) {
+               var9 *= 1 + var3.field5318;
             }
 
             for(class31 var10 = (class31)var7.field3966.method901(1766612795); var10 != null; var10 = (class31)var7.field3966.method906(49146)) {
-               var8 = class85.field1121.method1566(var10.field5319 * 1768239597);
-               int var11 = 785788887 * var8.field4238;
-               if (1 == 789409129 * var8.field4221) {
-                  var11 *= 1 + var10.field5318 * 567630807;
+               var8 = class85.field1121.method1566(var10.field5319);
+               int var11 = var8.field4238;
+               if (1 == var8.field4221) {
+                  var11 *= 1 + var10.field5318;
                }
 
                if (var9 > var11) {
@@ -78,7 +78,7 @@ public class class469 {
 
    static void method4019(class564 var0, int var1) {
       try {
-         if (5 == -1215239439 * var0.field869 && -1 != var0.field1005 * -1232467723) {
+         if (5 == var0.field869 && -1 != var0.field1005) {
             class657.method5659(class593.field1623, var0, -1423422969);
          }
 
@@ -91,31 +91,31 @@ public class class469 {
       try {
          for(int var3 = 0; var3 < var0.length; ++var3) {
             class564 var4 = var0[var3];
-            if (var4 != null && var1 == var4.field885 * 1573706803) {
+            if (var4 != null && var1 == var4.field885) {
                if (class730.method1762(var4)) {
                   if (var2 != 1) {
                      throw new IllegalStateException();
                   }
                } else {
-                  if (-1215239439 * var4.field869 == 0) {
-                     method4020(var0, var4.field867 * -440872681, (byte)1);
+                  if (var4.field869 == 0) {
+                     method4020(var0, var4.field867, (byte)1);
                      if (var4.field1018 != null) {
-                        method4020(var4.field1018, var4.field867 * -440872681, (byte)1);
+                        method4020(var4.field1018, var4.field867, (byte)1);
                      }
 
-                     class256 var5 = (class256)class730.field2823.method2942((long)(var4.field867 * -440872681));
+                     class256 var5 = (class256)class730.field2823.method2942((long)var4.field867);
                      if (var5 != null) {
-                        class758.method2735(-1617025021 * var5.field8101, 587240851);
+                        class758.method2735(var5.field8101, 587240851);
                      }
                   }
 
-                  if (6 == var4.field869 * -1215239439 && var4.field1015 * 1347982601 != -1) {
+                  if (6 == var4.field869 && var4.field1015 != -1) {
                      if (var4.field877 == null) {
                         var4.field877 = new class522();
-                        var4.field877.method2777(1347982601 * var4.field1015, -1878217807);
+                        var4.field877.method2777(var4.field1015, -1878217807);
                      }
 
-                     if (var4.field877.method2778(class730.field2943 * 614680345, 1675733273) && var4.field877.method2788(1621670182)) {
+                     if (var4.field877.method2778(class730.field2943, 1675733273) && var4.field877.method2788(1621670182)) {
                         var4.field877.method2790(507141034);
                      }
                   }
@@ -130,7 +130,7 @@ public class class469 {
 
    static void method4021(int var0) {
       try {
-         if (13 == class730.field2733 * -1233866115) {
+         if (13 == class730.field2733) {
             class364.method1612(-1611681764);
          }
 
@@ -146,19 +146,19 @@ public class class469 {
 
          class730.field2817 = false;
          class127.method1600(-338598105);
-         class730.field2798 = ((int)(Math.random() * 100.0D) - 50) * 1640262285;
-         class730.field2723 = ((int)(Math.random() * 110.0D) - 55) * 974956735;
-         class730.field2725 = ((int)(Math.random() * 80.0D) - 40) * -1010535049;
-         class730.field2782 = ((int)(Math.random() * 120.0D) - 60) * -1216239003;
-         class730.field2730 = ((int)(Math.random() * 30.0D) - 20) * -852543493;
+         class730.field2798 = (int)(Math.random() * 100.0D) - 50;
+         class730.field2723 = (int)(Math.random() * 110.0D) - 55;
+         class730.field2725 = (int)(Math.random() * 80.0D) - 40;
+         class730.field2782 = (int)(Math.random() * 120.0D) - 60;
+         class730.field2730 = (int)(Math.random() * 30.0D) - 20;
          class730.field2931 = (float)((int)(Math.random() * 160.0D) - 80 & 16383);
          class75.method1122(1944021119);
 
          for(var1 = 0; var1 < 2048; ++var1) {
-            class730.field2786[var1] = null;
+            class730.loaded[var1] = null;
          }
 
-         class923.field10295 = null;
+         class923.local = null;
          class730.field2684 = 0;
          class730.field2753 = 0;
          class730.field2677.method2941((byte)-7);
@@ -187,8 +187,8 @@ public class class469 {
             }
          }
 
-         if (-257444687 * class730.field2822 != -1) {
-            class407.method5536(-257444687 * class730.field2822, -2042512871);
+         if (class730.field2822 != -1) {
+            class407.method5536(class730.field2822, -2042512871);
          }
 
          for(class256 var3 = (class256)class730.field2823.method2946(1962409913); var3 != null; var3 = (class256)class730.field2823.method2945((byte)-39)) {
@@ -202,7 +202,7 @@ public class class469 {
             class526.method2226(var3, true, false, -113822480);
          }
 
-         class730.field2822 = -1785861201;
+         class730.field2822 = -1;
          class730.field2823 = new class6(8);
          class515.method2693((short)255);
          class730.field2633 = null;
@@ -226,7 +226,7 @@ public class class469 {
 
          class730.field2697.method5282((byte)-46).method5673(-1196946367);
          class730.field2744 = true;
-         class503.field4103 = class50.field2255 = class401.field9918 = class518.field4275 = new short[256];
+         class503.field4103 = ObjectDefinition.field2255 = NpcDefinition.field9918 = ItemDefinition.field4275 = new short[256];
          class776.field3730 = class814.field4728.method2927(class321.field1066, -875414210);
          class615.field8903.method5391(class615.field8903.field9131, class615.field8903.field9130.method5267(-2013953489), 185315871);
          class730.field2694 = 0;
@@ -241,7 +241,7 @@ public class class469 {
 
    static final void method4022(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class606.field8572.method5401("jagtheora", -935061597) ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = class606.field8572.method5401("jagtheora", -935061597) ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "rb.and(" + ')');
       }

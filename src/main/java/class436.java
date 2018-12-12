@@ -27,16 +27,16 @@ public class class436 extends class298 {
       int var1 = this.field7442 * 3 >> 6;
       var1 = (var1 ^ var1 >> 31) + (var1 >>> 31);
       if (this.field7446 == 0) {
-         var1 -= var1 * this.field7449 / (((class656)this.field10520).field9400.length << 8);
+         var1 -= var1 * this.field7449 / (((class656)super.field10520).field9400.length << 8);
       } else if (this.field7446 >= 0) {
-         var1 -= var1 * this.field7450 / ((class656)this.field10520).field9400.length;
+         var1 -= var1 * this.field7450 / ((class656)super.field10520).field9400.length;
       }
 
       return var1 > 255 ? 255 : var1;
    }
 
    class436(class656 var1, int var2, int var3, int var4) {
-      this.field10520 = var1;
+      super.field10520 = var1;
       this.field7450 = var1.field9402;
       this.field7451 = var1.field9401;
       this.field7452 = var1.field9404;
@@ -105,18 +105,6 @@ public class class436 extends class298 {
 
    }
 
-   int method4175() {
-      int var1 = this.field7442 * 3 >> 6;
-      var1 = (var1 ^ var1 >> 31) + (var1 >>> 31);
-      if (this.field7446 == 0) {
-         var1 -= var1 * this.field7449 / (((class656)this.field10520).field9400.length << 8);
-      } else if (this.field7446 >= 0) {
-         var1 -= var1 * this.field7450 / ((class656)this.field10520).field9400.length;
-      }
-
-      return var1 > 255 ? 255 : var1;
-   }
-
    synchronized void method4176(int var1, int var2) {
       this.field7444 = var1;
       this.field7455 = var2;
@@ -129,7 +117,7 @@ public class class436 extends class298 {
    }
 
    public synchronized void method4178(int var1) {
-      int var2 = ((class656)this.field10520).field9400.length << 8;
+      int var2 = ((class656)super.field10520).field9400.length << 8;
       if (var1 < -1) {
          var1 = -1;
       }
@@ -179,7 +167,7 @@ public class class436 extends class298 {
          }
       }
 
-      class656 var2 = (class656)this.field10520;
+      class656 var2 = (class656)super.field10520;
       int var3 = this.field7450 << 8;
       int var4 = this.field7451 << 8;
       int var5 = var2.field9400.length << 8;
@@ -335,175 +323,11 @@ public class class436 extends class298 {
    }
 
    public synchronized boolean method4183() {
-      return this.field7449 < 0 || this.field7449 >= ((class656)this.field10520).field9400.length << 8;
+      return this.field7449 < 0 || this.field7449 >= ((class656)super.field10520).field9400.length << 8;
    }
 
    public synchronized boolean method4184() {
       return this.field7453 != 0;
-   }
-
-   public synchronized void method6547(int var1) {
-      if (this.field7453 > 0) {
-         if (var1 >= this.field7453) {
-            if (this.field7444 == Integer.MIN_VALUE) {
-               this.field7444 = 0;
-               this.field7448 = 0;
-               this.field7447 = 0;
-               this.field7442 = 0;
-               this.method545(-1460969981);
-               var1 = this.field7453;
-            }
-
-            this.field7453 = 0;
-            this.method4171();
-         } else {
-            this.field7442 += this.field7454 * var1;
-            this.field7447 += this.field7445 * var1;
-            this.field7448 += this.field7456 * var1;
-            this.field7453 -= var1;
-         }
-      }
-
-      class656 var2 = (class656)this.field10520;
-      int var3 = this.field7450 << 8;
-      int var4 = this.field7451 << 8;
-      int var5 = var2.field9400.length << 8;
-      int var6 = var4 - var3;
-      if (var6 <= 0) {
-         this.field7446 = 0;
-      }
-
-      if (this.field7449 < 0) {
-         if (this.field7443 <= 0) {
-            this.method4179();
-            this.method545(-1460969981);
-            return;
-         }
-
-         this.field7449 = 0;
-      }
-
-      if (this.field7449 >= var5) {
-         if (this.field7443 >= 0) {
-            this.method4179();
-            this.method545(-1460969981);
-            return;
-         }
-
-         this.field7449 = var5 - 1;
-      }
-
-      this.field7449 += this.field7443 * var1;
-      if (this.field7446 < 0) {
-         if (this.field7452) {
-            if (this.field7443 < 0) {
-               if (this.field7449 >= var3) {
-                  return;
-               }
-
-               this.field7449 = var3 + var3 - 1 - this.field7449;
-               this.field7443 = -this.field7443;
-            }
-
-            while(this.field7449 >= var4) {
-               this.field7449 = var4 + var4 - 1 - this.field7449;
-               this.field7443 = -this.field7443;
-               if (this.field7449 >= var3) {
-                  break;
-               }
-
-               this.field7449 = var3 + var3 - 1 - this.field7449;
-               this.field7443 = -this.field7443;
-            }
-         } else if (this.field7443 < 0) {
-            if (this.field7449 < var3) {
-               this.field7449 = var4 - 1 - (var4 - 1 - this.field7449) % var6;
-            }
-         } else if (this.field7449 >= var4) {
-            this.field7449 = var3 + (this.field7449 - var3) % var6;
-         }
-      } else {
-         if (this.field7446 > 0) {
-            if (this.field7452) {
-               label120: {
-                  if (this.field7443 < 0) {
-                     if (this.field7449 >= var3) {
-                        return;
-                     }
-
-                     this.field7449 = var3 + var3 - 1 - this.field7449;
-                     this.field7443 = -this.field7443;
-                     if (--this.field7446 == 0) {
-                        break label120;
-                     }
-                  }
-
-                  do {
-                     if (this.field7449 < var4) {
-                        return;
-                     }
-
-                     this.field7449 = var4 + var4 - 1 - this.field7449;
-                     this.field7443 = -this.field7443;
-                     if (--this.field7446 == 0) {
-                        break;
-                     }
-
-                     if (this.field7449 >= var3) {
-                        return;
-                     }
-
-                     this.field7449 = var3 + var3 - 1 - this.field7449;
-                     this.field7443 = -this.field7443;
-                  } while(--this.field7446 != 0);
-               }
-            } else {
-               int var7;
-               if (this.field7443 < 0) {
-                  if (this.field7449 >= var3) {
-                     return;
-                  }
-
-                  var7 = (var4 - 1 - this.field7449) / var6;
-                  if (var7 < this.field7446) {
-                     this.field7449 += var6 * var7;
-                     this.field7446 -= var7;
-                     return;
-                  }
-
-                  this.field7449 += var6 * this.field7446;
-                  this.field7446 = 0;
-               } else {
-                  if (this.field7449 < var4) {
-                     return;
-                  }
-
-                  var7 = (this.field7449 - var3) / var6;
-                  if (var7 < this.field7446) {
-                     this.field7449 -= var6 * var7;
-                     this.field7446 -= var7;
-                     return;
-                  }
-
-                  this.field7449 -= var6 * this.field7446;
-                  this.field7446 = 0;
-               }
-            }
-         }
-
-         if (this.field7443 < 0) {
-            if (this.field7449 < 0) {
-               this.field7449 = -1;
-               this.method4179();
-               this.method545(-1460969981);
-            }
-         } else if (this.field7449 >= var5) {
-            this.field7449 = var5;
-            this.method4179();
-            this.method545(-1460969981);
-         }
-      }
-
    }
 
    int method6528() {
@@ -514,7 +338,7 @@ public class class436 extends class298 {
       if (this.field7444 == 0 && this.field7453 == 0) {
          this.method6534(var3);
       } else {
-         class656 var4 = (class656)this.field10520;
+         class656 var4 = (class656)super.field10520;
          int var5 = this.field7450 << 8;
          int var6 = this.field7451 << 8;
          int var7 = var4.field9400.length << 8;
@@ -695,17 +519,17 @@ public class class436 extends class298 {
          if (this.field7453 <= 0) {
             if (this.field7443 == 256 && (this.field7449 & 255) == 0) {
                if (class752.field4167) {
-                  return method4209(0, ((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, 0, var4, var3, this);
+                  return method4209(0, ((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, 0, var4, var3, this);
                }
 
-               return method4198(((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7442, 0, var4, var3, this);
+               return method4198(((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7442, 0, var4, var3, this);
             }
 
             if (class752.field4167) {
-               return method4191(0, 0, ((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, 0, var4, var3, this, this.field7443, var5);
+               return method4191(0, 0, ((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, 0, var4, var3, this, this.field7443, var5);
             }
 
-            return method4190(0, 0, ((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7442, 0, var4, var3, this, this.field7443, var5);
+            return method4190(0, 0, ((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7442, 0, var4, var3, this, this.field7443, var5);
          }
 
          int var6 = var2 + this.field7453;
@@ -716,14 +540,14 @@ public class class436 extends class298 {
          this.field7453 += var2;
          if (this.field7443 == 256 && (this.field7449 & 255) == 0) {
             if (class752.field4167) {
-               var2 = method4193(0, ((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, this.field7445, this.field7456, 0, var6, var3, this);
+               var2 = method4193(0, ((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, this.field7445, this.field7456, 0, var6, var3, this);
             } else {
-               var2 = method4186(((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7442, this.field7454, 0, var6, var3, this);
+               var2 = method4186(((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7442, this.field7454, 0, var6, var3, this);
             }
          } else if (class752.field4167) {
-            var2 = method4199(0, 0, ((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, this.field7445, this.field7456, 0, var6, var3, this, this.field7443, var5);
+            var2 = method4199(0, 0, ((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, this.field7445, this.field7456, 0, var6, var3, this, this.field7443, var5);
          } else {
-            var2 = method4203(0, 0, ((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7442, this.field7454, 0, var6, var3, this, this.field7443, var5);
+            var2 = method4203(0, 0, ((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7442, this.field7454, 0, var6, var3, this, this.field7443, var5);
          }
 
          this.field7453 -= var2;
@@ -915,10 +739,6 @@ public class class436 extends class298 {
 
       var11.field7449 = var4;
       return var5 >> 1;
-   }
-
-   int method6535() {
-      return this.field7444 == 0 && this.field7453 == 0 ? 0 : 1;
    }
 
    static int method4192(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, class436 var11, int var12, int var13) {
@@ -1141,40 +961,8 @@ public class class436 extends class298 {
       return var5;
    }
 
-   class298 method6543() {
-      return null;
-   }
-
-   class298 method6536() {
-      return null;
-   }
-
-   class298 method6537() {
-      return null;
-   }
-
-   class298 method6545() {
-      return null;
-   }
-
-   class298 method6538() {
-      return null;
-   }
-
-   class298 method6539() {
-      return null;
-   }
-
-   class298 method6540() {
-      return null;
-   }
-
    public synchronized int method4197() {
       return this.field7443 < 0 ? -this.field7443 : this.field7443;
-   }
-
-   int method6542() {
-      return this.field7444 == 0 && this.field7453 == 0 ? 0 : 1;
    }
 
    static int method4198(byte[] var0, int[] var1, int var2, int var3, int var4, int var5, int var6, int var7, class436 var8) {
@@ -1202,334 +990,6 @@ public class class436 extends class298 {
 
       var8.field7449 = var2 << 8;
       return var3;
-   }
-
-   public synchronized void method6546(int var1) {
-      if (this.field7453 > 0) {
-         if (var1 >= this.field7453) {
-            if (this.field7444 == Integer.MIN_VALUE) {
-               this.field7444 = 0;
-               this.field7448 = 0;
-               this.field7447 = 0;
-               this.field7442 = 0;
-               this.method545(-1460969981);
-               var1 = this.field7453;
-            }
-
-            this.field7453 = 0;
-            this.method4171();
-         } else {
-            this.field7442 += this.field7454 * var1;
-            this.field7447 += this.field7445 * var1;
-            this.field7448 += this.field7456 * var1;
-            this.field7453 -= var1;
-         }
-      }
-
-      class656 var2 = (class656)this.field10520;
-      int var3 = this.field7450 << 8;
-      int var4 = this.field7451 << 8;
-      int var5 = var2.field9400.length << 8;
-      int var6 = var4 - var3;
-      if (var6 <= 0) {
-         this.field7446 = 0;
-      }
-
-      if (this.field7449 < 0) {
-         if (this.field7443 <= 0) {
-            this.method4179();
-            this.method545(-1460969981);
-            return;
-         }
-
-         this.field7449 = 0;
-      }
-
-      if (this.field7449 >= var5) {
-         if (this.field7443 >= 0) {
-            this.method4179();
-            this.method545(-1460969981);
-            return;
-         }
-
-         this.field7449 = var5 - 1;
-      }
-
-      this.field7449 += this.field7443 * var1;
-      if (this.field7446 < 0) {
-         if (this.field7452) {
-            if (this.field7443 < 0) {
-               if (this.field7449 >= var3) {
-                  return;
-               }
-
-               this.field7449 = var3 + var3 - 1 - this.field7449;
-               this.field7443 = -this.field7443;
-            }
-
-            while(this.field7449 >= var4) {
-               this.field7449 = var4 + var4 - 1 - this.field7449;
-               this.field7443 = -this.field7443;
-               if (this.field7449 >= var3) {
-                  break;
-               }
-
-               this.field7449 = var3 + var3 - 1 - this.field7449;
-               this.field7443 = -this.field7443;
-            }
-         } else if (this.field7443 < 0) {
-            if (this.field7449 < var3) {
-               this.field7449 = var4 - 1 - (var4 - 1 - this.field7449) % var6;
-            }
-         } else if (this.field7449 >= var4) {
-            this.field7449 = var3 + (this.field7449 - var3) % var6;
-         }
-      } else {
-         if (this.field7446 > 0) {
-            if (this.field7452) {
-               label120: {
-                  if (this.field7443 < 0) {
-                     if (this.field7449 >= var3) {
-                        return;
-                     }
-
-                     this.field7449 = var3 + var3 - 1 - this.field7449;
-                     this.field7443 = -this.field7443;
-                     if (--this.field7446 == 0) {
-                        break label120;
-                     }
-                  }
-
-                  do {
-                     if (this.field7449 < var4) {
-                        return;
-                     }
-
-                     this.field7449 = var4 + var4 - 1 - this.field7449;
-                     this.field7443 = -this.field7443;
-                     if (--this.field7446 == 0) {
-                        break;
-                     }
-
-                     if (this.field7449 >= var3) {
-                        return;
-                     }
-
-                     this.field7449 = var3 + var3 - 1 - this.field7449;
-                     this.field7443 = -this.field7443;
-                  } while(--this.field7446 != 0);
-               }
-            } else {
-               int var7;
-               if (this.field7443 < 0) {
-                  if (this.field7449 >= var3) {
-                     return;
-                  }
-
-                  var7 = (var4 - 1 - this.field7449) / var6;
-                  if (var7 < this.field7446) {
-                     this.field7449 += var6 * var7;
-                     this.field7446 -= var7;
-                     return;
-                  }
-
-                  this.field7449 += var6 * this.field7446;
-                  this.field7446 = 0;
-               } else {
-                  if (this.field7449 < var4) {
-                     return;
-                  }
-
-                  var7 = (this.field7449 - var3) / var6;
-                  if (var7 < this.field7446) {
-                     this.field7449 -= var6 * var7;
-                     this.field7446 -= var7;
-                     return;
-                  }
-
-                  this.field7449 -= var6 * this.field7446;
-                  this.field7446 = 0;
-               }
-            }
-         }
-
-         if (this.field7443 < 0) {
-            if (this.field7449 < 0) {
-               this.field7449 = -1;
-               this.method4179();
-               this.method545(-1460969981);
-            }
-         } else if (this.field7449 >= var5) {
-            this.field7449 = var5;
-            this.method4179();
-            this.method545(-1460969981);
-         }
-      }
-
-   }
-
-   public synchronized void method6548(int var1) {
-      if (this.field7453 > 0) {
-         if (var1 >= this.field7453) {
-            if (this.field7444 == Integer.MIN_VALUE) {
-               this.field7444 = 0;
-               this.field7448 = 0;
-               this.field7447 = 0;
-               this.field7442 = 0;
-               this.method545(-1460969981);
-               var1 = this.field7453;
-            }
-
-            this.field7453 = 0;
-            this.method4171();
-         } else {
-            this.field7442 += this.field7454 * var1;
-            this.field7447 += this.field7445 * var1;
-            this.field7448 += this.field7456 * var1;
-            this.field7453 -= var1;
-         }
-      }
-
-      class656 var2 = (class656)this.field10520;
-      int var3 = this.field7450 << 8;
-      int var4 = this.field7451 << 8;
-      int var5 = var2.field9400.length << 8;
-      int var6 = var4 - var3;
-      if (var6 <= 0) {
-         this.field7446 = 0;
-      }
-
-      if (this.field7449 < 0) {
-         if (this.field7443 <= 0) {
-            this.method4179();
-            this.method545(-1460969981);
-            return;
-         }
-
-         this.field7449 = 0;
-      }
-
-      if (this.field7449 >= var5) {
-         if (this.field7443 >= 0) {
-            this.method4179();
-            this.method545(-1460969981);
-            return;
-         }
-
-         this.field7449 = var5 - 1;
-      }
-
-      this.field7449 += this.field7443 * var1;
-      if (this.field7446 < 0) {
-         if (this.field7452) {
-            if (this.field7443 < 0) {
-               if (this.field7449 >= var3) {
-                  return;
-               }
-
-               this.field7449 = var3 + var3 - 1 - this.field7449;
-               this.field7443 = -this.field7443;
-            }
-
-            while(this.field7449 >= var4) {
-               this.field7449 = var4 + var4 - 1 - this.field7449;
-               this.field7443 = -this.field7443;
-               if (this.field7449 >= var3) {
-                  break;
-               }
-
-               this.field7449 = var3 + var3 - 1 - this.field7449;
-               this.field7443 = -this.field7443;
-            }
-         } else if (this.field7443 < 0) {
-            if (this.field7449 < var3) {
-               this.field7449 = var4 - 1 - (var4 - 1 - this.field7449) % var6;
-            }
-         } else if (this.field7449 >= var4) {
-            this.field7449 = var3 + (this.field7449 - var3) % var6;
-         }
-      } else {
-         if (this.field7446 > 0) {
-            if (this.field7452) {
-               label120: {
-                  if (this.field7443 < 0) {
-                     if (this.field7449 >= var3) {
-                        return;
-                     }
-
-                     this.field7449 = var3 + var3 - 1 - this.field7449;
-                     this.field7443 = -this.field7443;
-                     if (--this.field7446 == 0) {
-                        break label120;
-                     }
-                  }
-
-                  do {
-                     if (this.field7449 < var4) {
-                        return;
-                     }
-
-                     this.field7449 = var4 + var4 - 1 - this.field7449;
-                     this.field7443 = -this.field7443;
-                     if (--this.field7446 == 0) {
-                        break;
-                     }
-
-                     if (this.field7449 >= var3) {
-                        return;
-                     }
-
-                     this.field7449 = var3 + var3 - 1 - this.field7449;
-                     this.field7443 = -this.field7443;
-                  } while(--this.field7446 != 0);
-               }
-            } else {
-               int var7;
-               if (this.field7443 < 0) {
-                  if (this.field7449 >= var3) {
-                     return;
-                  }
-
-                  var7 = (var4 - 1 - this.field7449) / var6;
-                  if (var7 < this.field7446) {
-                     this.field7449 += var6 * var7;
-                     this.field7446 -= var7;
-                     return;
-                  }
-
-                  this.field7449 += var6 * this.field7446;
-                  this.field7446 = 0;
-               } else {
-                  if (this.field7449 < var4) {
-                     return;
-                  }
-
-                  var7 = (this.field7449 - var3) / var6;
-                  if (var7 < this.field7446) {
-                     this.field7449 -= var6 * var7;
-                     this.field7446 -= var7;
-                     return;
-                  }
-
-                  this.field7449 -= var6 * this.field7446;
-                  this.field7446 = 0;
-               }
-            }
-         }
-
-         if (this.field7443 < 0) {
-            if (this.field7449 < 0) {
-               this.field7449 = -1;
-               this.method4179();
-               this.method545(-1460969981);
-            }
-         } else if (this.field7449 >= var5) {
-            this.field7449 = var5;
-            this.method4179();
-            this.method545(-1460969981);
-         }
-      }
-
    }
 
    static int method4199(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, class436 var13, int var14, int var15) {
@@ -1581,18 +1041,6 @@ public class class436 extends class298 {
 
    public synchronized int method4200() {
       return this.field7444 == Integer.MIN_VALUE ? 0 : this.field7444;
-   }
-
-   int method4201() {
-      int var1 = this.field7442 * 3 >> 6;
-      var1 = (var1 ^ var1 >> 31) + (var1 >>> 31);
-      if (this.field7446 == 0) {
-         var1 -= var1 * this.field7449 / (((class656)this.field10520).field9400.length << 8);
-      } else if (this.field7446 >= 0) {
-         var1 -= var1 * this.field7450 / ((class656)this.field10520).field9400.length;
-      }
-
-      return var1 > 255 ? 255 : var1;
    }
 
    boolean method4202() {
@@ -1699,190 +1147,6 @@ public class class436 extends class298 {
       return var5;
    }
 
-   int method6541() {
-      return this.field7444 == 0 && this.field7453 == 0 ? 0 : 1;
-   }
-
-   public synchronized void method6531(int[] var1, int var2, int var3) {
-      if (this.field7444 == 0 && this.field7453 == 0) {
-         this.method6534(var3);
-      } else {
-         class656 var4 = (class656)this.field10520;
-         int var5 = this.field7450 << 8;
-         int var6 = this.field7451 << 8;
-         int var7 = var4.field9400.length << 8;
-         int var8 = var6 - var5;
-         if (var8 <= 0) {
-            this.field7446 = 0;
-         }
-
-         int var9 = var2;
-         var3 += var2;
-         if (this.field7449 < 0) {
-            if (this.field7443 <= 0) {
-               this.method4179();
-               this.method545(-1460969981);
-               return;
-            }
-
-            this.field7449 = 0;
-         }
-
-         if (this.field7449 >= var7) {
-            if (this.field7443 >= 0) {
-               this.method4179();
-               this.method545(-1460969981);
-               return;
-            }
-
-            this.field7449 = var7 - 1;
-         }
-
-         if (this.field7446 < 0) {
-            if (this.field7452) {
-               if (this.field7443 < 0) {
-                  var9 = this.method4206(var1, var2, var5, var3, var4.field9400[this.field7450]);
-                  if (this.field7449 >= var5) {
-                     return;
-                  }
-
-                  this.field7449 = var5 + var5 - 1 - this.field7449;
-                  this.field7443 = -this.field7443;
-               }
-
-               while(true) {
-                  var9 = this.method4185(var1, var9, var6, var3, var4.field9400[this.field7451 - 1]);
-                  if (this.field7449 < var6) {
-                     break;
-                  }
-
-                  this.field7449 = var6 + var6 - 1 - this.field7449;
-                  this.field7443 = -this.field7443;
-                  var9 = this.method4206(var1, var9, var5, var3, var4.field9400[this.field7450]);
-                  if (this.field7449 >= var5) {
-                     break;
-                  }
-
-                  this.field7449 = var5 + var5 - 1 - this.field7449;
-                  this.field7443 = -this.field7443;
-               }
-            } else if (this.field7443 < 0) {
-               while(true) {
-                  var9 = this.method4206(var1, var9, var5, var3, var4.field9400[this.field7451 - 1]);
-                  if (this.field7449 >= var5) {
-                     break;
-                  }
-
-                  this.field7449 = var6 - 1 - (var6 - 1 - this.field7449) % var8;
-               }
-            } else {
-               while(true) {
-                  var9 = this.method4185(var1, var9, var6, var3, var4.field9400[this.field7450]);
-                  if (this.field7449 < var6) {
-                     break;
-                  }
-
-                  this.field7449 = var5 + (this.field7449 - var5) % var8;
-               }
-            }
-         } else {
-            if (this.field7446 > 0) {
-               if (this.field7452) {
-                  label94: {
-                     if (this.field7443 < 0) {
-                        var9 = this.method4206(var1, var2, var5, var3, var4.field9400[this.field7450]);
-                        if (this.field7449 >= var5) {
-                           return;
-                        }
-
-                        this.field7449 = var5 + var5 - 1 - this.field7449;
-                        this.field7443 = -this.field7443;
-                        if (--this.field7446 == 0) {
-                           break label94;
-                        }
-                     }
-
-                     do {
-                        var9 = this.method4185(var1, var9, var6, var3, var4.field9400[this.field7451 - 1]);
-                        if (this.field7449 < var6) {
-                           return;
-                        }
-
-                        this.field7449 = var6 + var6 - 1 - this.field7449;
-                        this.field7443 = -this.field7443;
-                        if (--this.field7446 == 0) {
-                           break;
-                        }
-
-                        var9 = this.method4206(var1, var9, var5, var3, var4.field9400[this.field7450]);
-                        if (this.field7449 >= var5) {
-                           return;
-                        }
-
-                        this.field7449 = var5 + var5 - 1 - this.field7449;
-                        this.field7443 = -this.field7443;
-                     } while(--this.field7446 != 0);
-                  }
-               } else {
-                  int var10;
-                  if (this.field7443 < 0) {
-                     while(true) {
-                        var9 = this.method4206(var1, var9, var5, var3, var4.field9400[this.field7451 - 1]);
-                        if (this.field7449 >= var5) {
-                           return;
-                        }
-
-                        var10 = (var6 - 1 - this.field7449) / var8;
-                        if (var10 >= this.field7446) {
-                           this.field7449 += var8 * this.field7446;
-                           this.field7446 = 0;
-                           break;
-                        }
-
-                        this.field7449 += var8 * var10;
-                        this.field7446 -= var10;
-                     }
-                  } else {
-                     while(true) {
-                        var9 = this.method4185(var1, var9, var6, var3, var4.field9400[this.field7450]);
-                        if (this.field7449 < var6) {
-                           return;
-                        }
-
-                        var10 = (this.field7449 - var5) / var8;
-                        if (var10 >= this.field7446) {
-                           this.field7449 -= var8 * this.field7446;
-                           this.field7446 = 0;
-                           break;
-                        }
-
-                        this.field7449 -= var8 * var10;
-                        this.field7446 -= var10;
-                     }
-                  }
-               }
-            }
-
-            if (this.field7443 < 0) {
-               this.method4206(var1, var9, 0, var3, 0);
-               if (this.field7449 < 0) {
-                  this.field7449 = -1;
-                  this.method4179();
-                  this.method545(-1460969981);
-               }
-            } else {
-               this.method4185(var1, var9, var7, var3, 0);
-               if (this.field7449 >= var7) {
-                  this.field7449 = var7;
-                  this.method4179();
-                  this.method545(-1460969981);
-               }
-            }
-         }
-      }
-
-   }
-
    public synchronized void method4204(int var1, int var2, int var3) {
       if (var1 == 0) {
          this.method4176(var2, var3);
@@ -1928,186 +1192,6 @@ public class class436 extends class298 {
 
    }
 
-   public synchronized void method6527(int[] var1, int var2, int var3) {
-      if (this.field7444 == 0 && this.field7453 == 0) {
-         this.method6534(var3);
-      } else {
-         class656 var4 = (class656)this.field10520;
-         int var5 = this.field7450 << 8;
-         int var6 = this.field7451 << 8;
-         int var7 = var4.field9400.length << 8;
-         int var8 = var6 - var5;
-         if (var8 <= 0) {
-            this.field7446 = 0;
-         }
-
-         int var9 = var2;
-         var3 += var2;
-         if (this.field7449 < 0) {
-            if (this.field7443 <= 0) {
-               this.method4179();
-               this.method545(-1460969981);
-               return;
-            }
-
-            this.field7449 = 0;
-         }
-
-         if (this.field7449 >= var7) {
-            if (this.field7443 >= 0) {
-               this.method4179();
-               this.method545(-1460969981);
-               return;
-            }
-
-            this.field7449 = var7 - 1;
-         }
-
-         if (this.field7446 < 0) {
-            if (this.field7452) {
-               if (this.field7443 < 0) {
-                  var9 = this.method4206(var1, var2, var5, var3, var4.field9400[this.field7450]);
-                  if (this.field7449 >= var5) {
-                     return;
-                  }
-
-                  this.field7449 = var5 + var5 - 1 - this.field7449;
-                  this.field7443 = -this.field7443;
-               }
-
-               while(true) {
-                  var9 = this.method4185(var1, var9, var6, var3, var4.field9400[this.field7451 - 1]);
-                  if (this.field7449 < var6) {
-                     break;
-                  }
-
-                  this.field7449 = var6 + var6 - 1 - this.field7449;
-                  this.field7443 = -this.field7443;
-                  var9 = this.method4206(var1, var9, var5, var3, var4.field9400[this.field7450]);
-                  if (this.field7449 >= var5) {
-                     break;
-                  }
-
-                  this.field7449 = var5 + var5 - 1 - this.field7449;
-                  this.field7443 = -this.field7443;
-               }
-            } else if (this.field7443 < 0) {
-               while(true) {
-                  var9 = this.method4206(var1, var9, var5, var3, var4.field9400[this.field7451 - 1]);
-                  if (this.field7449 >= var5) {
-                     break;
-                  }
-
-                  this.field7449 = var6 - 1 - (var6 - 1 - this.field7449) % var8;
-               }
-            } else {
-               while(true) {
-                  var9 = this.method4185(var1, var9, var6, var3, var4.field9400[this.field7450]);
-                  if (this.field7449 < var6) {
-                     break;
-                  }
-
-                  this.field7449 = var5 + (this.field7449 - var5) % var8;
-               }
-            }
-         } else {
-            if (this.field7446 > 0) {
-               if (this.field7452) {
-                  label94: {
-                     if (this.field7443 < 0) {
-                        var9 = this.method4206(var1, var2, var5, var3, var4.field9400[this.field7450]);
-                        if (this.field7449 >= var5) {
-                           return;
-                        }
-
-                        this.field7449 = var5 + var5 - 1 - this.field7449;
-                        this.field7443 = -this.field7443;
-                        if (--this.field7446 == 0) {
-                           break label94;
-                        }
-                     }
-
-                     do {
-                        var9 = this.method4185(var1, var9, var6, var3, var4.field9400[this.field7451 - 1]);
-                        if (this.field7449 < var6) {
-                           return;
-                        }
-
-                        this.field7449 = var6 + var6 - 1 - this.field7449;
-                        this.field7443 = -this.field7443;
-                        if (--this.field7446 == 0) {
-                           break;
-                        }
-
-                        var9 = this.method4206(var1, var9, var5, var3, var4.field9400[this.field7450]);
-                        if (this.field7449 >= var5) {
-                           return;
-                        }
-
-                        this.field7449 = var5 + var5 - 1 - this.field7449;
-                        this.field7443 = -this.field7443;
-                     } while(--this.field7446 != 0);
-                  }
-               } else {
-                  int var10;
-                  if (this.field7443 < 0) {
-                     while(true) {
-                        var9 = this.method4206(var1, var9, var5, var3, var4.field9400[this.field7451 - 1]);
-                        if (this.field7449 >= var5) {
-                           return;
-                        }
-
-                        var10 = (var6 - 1 - this.field7449) / var8;
-                        if (var10 >= this.field7446) {
-                           this.field7449 += var8 * this.field7446;
-                           this.field7446 = 0;
-                           break;
-                        }
-
-                        this.field7449 += var8 * var10;
-                        this.field7446 -= var10;
-                     }
-                  } else {
-                     while(true) {
-                        var9 = this.method4185(var1, var9, var6, var3, var4.field9400[this.field7450]);
-                        if (this.field7449 < var6) {
-                           return;
-                        }
-
-                        var10 = (this.field7449 - var5) / var8;
-                        if (var10 >= this.field7446) {
-                           this.field7449 -= var8 * this.field7446;
-                           this.field7446 = 0;
-                           break;
-                        }
-
-                        this.field7449 -= var8 * var10;
-                        this.field7446 -= var10;
-                     }
-                  }
-               }
-            }
-
-            if (this.field7443 < 0) {
-               this.method4206(var1, var9, 0, var3, 0);
-               if (this.field7449 < 0) {
-                  this.field7449 = -1;
-                  this.method4179();
-                  this.method545(-1460969981);
-               }
-            } else {
-               this.method4185(var1, var9, var7, var3, 0);
-               if (this.field7449 >= var7) {
-                  this.field7449 = var7;
-                  this.method4179();
-                  this.method545(-1460969981);
-               }
-            }
-         }
-      }
-
-   }
-
    static int method4205(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, class436 var10, int var11, int var12) {
       if (var11 == 0 || (var7 = var5 + (var9 + 256 - var4 + var11) / var11) > var8) {
          var7 = var8;
@@ -2146,17 +1230,17 @@ public class class436 extends class298 {
          if (this.field7453 <= 0) {
             if (this.field7443 == -256 && (this.field7449 & 255) == 0) {
                if (class752.field4167) {
-                  return method4189(0, ((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, 0, var4, var3, this);
+                  return method4189(0, ((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, 0, var4, var3, this);
                }
 
-               return method4188(((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7442, 0, var4, var3, this);
+               return method4188(((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7442, 0, var4, var3, this);
             }
 
             if (class752.field4167) {
-               return method4192(0, 0, ((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, 0, var4, var3, this, this.field7443, var5);
+               return method4192(0, 0, ((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, 0, var4, var3, this, this.field7443, var5);
             }
 
-            return method4205(0, 0, ((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7442, 0, var4, var3, this, this.field7443, var5);
+            return method4205(0, 0, ((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7442, 0, var4, var3, this, this.field7443, var5);
          }
 
          int var6 = var2 + this.field7453;
@@ -2167,14 +1251,14 @@ public class class436 extends class298 {
          this.field7453 += var2;
          if (this.field7443 == -256 && (this.field7449 & 255) == 0) {
             if (class752.field4167) {
-               var2 = method4210(0, ((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, this.field7445, this.field7456, 0, var6, var3, this);
+               var2 = method4210(0, ((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, this.field7445, this.field7456, 0, var6, var3, this);
             } else {
-               var2 = method4194(((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7442, this.field7454, 0, var6, var3, this);
+               var2 = method4194(((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7442, this.field7454, 0, var6, var3, this);
             }
          } else if (class752.field4167) {
-            var2 = method4196(0, 0, ((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, this.field7445, this.field7456, 0, var6, var3, this, this.field7443, var5);
+            var2 = method4196(0, 0, ((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7447, this.field7448, this.field7445, this.field7456, 0, var6, var3, this, this.field7443, var5);
          } else {
-            var2 = method4195(0, 0, ((class656)this.field10520).field9400, var1, this.field7449, var2, this.field7442, this.field7454, 0, var6, var3, this, this.field7443, var5);
+            var2 = method4195(0, 0, ((class656)super.field10520).field9400, var1, this.field7449, var2, this.field7442, this.field7454, 0, var6, var3, this, this.field7443, var5);
          }
 
          this.field7453 -= var2;
@@ -2196,186 +1280,6 @@ public class class436 extends class298 {
 
    public static class436 method4208(class656 var0, int var1, int var2, int var3) {
       return var0.field9400 != null && var0.field9400.length != 0 ? new class436(var0, var1, var2, var3) : null;
-   }
-
-   public synchronized void method6544(int[] var1, int var2, int var3) {
-      if (this.field7444 == 0 && this.field7453 == 0) {
-         this.method6534(var3);
-      } else {
-         class656 var4 = (class656)this.field10520;
-         int var5 = this.field7450 << 8;
-         int var6 = this.field7451 << 8;
-         int var7 = var4.field9400.length << 8;
-         int var8 = var6 - var5;
-         if (var8 <= 0) {
-            this.field7446 = 0;
-         }
-
-         int var9 = var2;
-         var3 += var2;
-         if (this.field7449 < 0) {
-            if (this.field7443 <= 0) {
-               this.method4179();
-               this.method545(-1460969981);
-               return;
-            }
-
-            this.field7449 = 0;
-         }
-
-         if (this.field7449 >= var7) {
-            if (this.field7443 >= 0) {
-               this.method4179();
-               this.method545(-1460969981);
-               return;
-            }
-
-            this.field7449 = var7 - 1;
-         }
-
-         if (this.field7446 < 0) {
-            if (this.field7452) {
-               if (this.field7443 < 0) {
-                  var9 = this.method4206(var1, var2, var5, var3, var4.field9400[this.field7450]);
-                  if (this.field7449 >= var5) {
-                     return;
-                  }
-
-                  this.field7449 = var5 + var5 - 1 - this.field7449;
-                  this.field7443 = -this.field7443;
-               }
-
-               while(true) {
-                  var9 = this.method4185(var1, var9, var6, var3, var4.field9400[this.field7451 - 1]);
-                  if (this.field7449 < var6) {
-                     break;
-                  }
-
-                  this.field7449 = var6 + var6 - 1 - this.field7449;
-                  this.field7443 = -this.field7443;
-                  var9 = this.method4206(var1, var9, var5, var3, var4.field9400[this.field7450]);
-                  if (this.field7449 >= var5) {
-                     break;
-                  }
-
-                  this.field7449 = var5 + var5 - 1 - this.field7449;
-                  this.field7443 = -this.field7443;
-               }
-            } else if (this.field7443 < 0) {
-               while(true) {
-                  var9 = this.method4206(var1, var9, var5, var3, var4.field9400[this.field7451 - 1]);
-                  if (this.field7449 >= var5) {
-                     break;
-                  }
-
-                  this.field7449 = var6 - 1 - (var6 - 1 - this.field7449) % var8;
-               }
-            } else {
-               while(true) {
-                  var9 = this.method4185(var1, var9, var6, var3, var4.field9400[this.field7450]);
-                  if (this.field7449 < var6) {
-                     break;
-                  }
-
-                  this.field7449 = var5 + (this.field7449 - var5) % var8;
-               }
-            }
-         } else {
-            if (this.field7446 > 0) {
-               if (this.field7452) {
-                  label94: {
-                     if (this.field7443 < 0) {
-                        var9 = this.method4206(var1, var2, var5, var3, var4.field9400[this.field7450]);
-                        if (this.field7449 >= var5) {
-                           return;
-                        }
-
-                        this.field7449 = var5 + var5 - 1 - this.field7449;
-                        this.field7443 = -this.field7443;
-                        if (--this.field7446 == 0) {
-                           break label94;
-                        }
-                     }
-
-                     do {
-                        var9 = this.method4185(var1, var9, var6, var3, var4.field9400[this.field7451 - 1]);
-                        if (this.field7449 < var6) {
-                           return;
-                        }
-
-                        this.field7449 = var6 + var6 - 1 - this.field7449;
-                        this.field7443 = -this.field7443;
-                        if (--this.field7446 == 0) {
-                           break;
-                        }
-
-                        var9 = this.method4206(var1, var9, var5, var3, var4.field9400[this.field7450]);
-                        if (this.field7449 >= var5) {
-                           return;
-                        }
-
-                        this.field7449 = var5 + var5 - 1 - this.field7449;
-                        this.field7443 = -this.field7443;
-                     } while(--this.field7446 != 0);
-                  }
-               } else {
-                  int var10;
-                  if (this.field7443 < 0) {
-                     while(true) {
-                        var9 = this.method4206(var1, var9, var5, var3, var4.field9400[this.field7451 - 1]);
-                        if (this.field7449 >= var5) {
-                           return;
-                        }
-
-                        var10 = (var6 - 1 - this.field7449) / var8;
-                        if (var10 >= this.field7446) {
-                           this.field7449 += var8 * this.field7446;
-                           this.field7446 = 0;
-                           break;
-                        }
-
-                        this.field7449 += var8 * var10;
-                        this.field7446 -= var10;
-                     }
-                  } else {
-                     while(true) {
-                        var9 = this.method4185(var1, var9, var6, var3, var4.field9400[this.field7450]);
-                        if (this.field7449 < var6) {
-                           return;
-                        }
-
-                        var10 = (this.field7449 - var5) / var8;
-                        if (var10 >= this.field7446) {
-                           this.field7449 -= var8 * this.field7446;
-                           this.field7446 = 0;
-                           break;
-                        }
-
-                        this.field7449 -= var8 * var10;
-                        this.field7446 -= var10;
-                     }
-                  }
-               }
-            }
-
-            if (this.field7443 < 0) {
-               this.method4206(var1, var9, 0, var3, 0);
-               if (this.field7449 < 0) {
-                  this.field7449 = -1;
-                  this.method4179();
-                  this.method545(-1460969981);
-               }
-            } else {
-               this.method4185(var1, var9, var7, var3, 0);
-               if (this.field7449 >= var7) {
-                  this.field7449 = var7;
-                  this.method4179();
-                  this.method545(-1460969981);
-               }
-            }
-         }
-      }
-
    }
 
    static int method4209(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class436 var10) {

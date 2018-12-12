@@ -25,7 +25,7 @@ public class class261 {
             var6 = new class678(this.field8126, 3553, class264.field8191, class482.field8396, var2, var2, var4.field9391 != 0, var7, class264.field8191);
          } else {
             int[] var5;
-            if (var4.field9382 * -2138060883 != 2 && class355.method1414(var4.field9383, -769385379)) {
+            if (var4.field9382 != 2 && class355.method1414(var4.field9383, -769385379)) {
                var5 = this.field8124.method4622(var1, 0.7F, var2, var2, true, 1090878298);
             } else {
                var5 = this.field8124.method4623(var1, 0.7F, var2, var2, false, (byte)2);

@@ -27,7 +27,7 @@ public class class480 {
 
    static final void method4703(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class314.field501;
+         var0.field3161[++var0.field3156 - 1] = class314.field501;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "hk.wb(" + ')');
       }
@@ -35,7 +35,7 @@ public class class480 {
 
    static final void method4704(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9150.method2717(-2143935557);
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9150.method2717(-2143935557);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "hk.ajx(" + ')');
       }

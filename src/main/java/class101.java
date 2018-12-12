@@ -6,66 +6,6 @@ public class class101 extends class727 {
    class41 field329;
    boolean field330;
 
-   void method1675(char var1, int var2, int var3, int var4, boolean var5) {
-      this.field328.method3653();
-      this.field328.method3639(this.field327);
-      if (!this.field330 && !var5) {
-         this.field328.method3641(7681, 7681);
-      } else {
-         this.field328.method3641(7681, 8448);
-         this.field328.method3642(0, 34168, 768);
-      }
-
-      OpenGL.glColor4ub((byte)(var4 >> 16), (byte)(var4 >> 8), (byte)var4, (byte)(var4 >> 24));
-      OpenGL.glTranslatef((float)var2, (float)var3, 0.0F);
-      this.field329.method3055(var1);
-      OpenGL.glLoadIdentity();
-      if (this.field330 || var5) {
-         this.field328.method3642(0, 5890, 768);
-      }
-
-   }
-
-   void method1679(char var1, int var2, int var3, int var4, boolean var5, class23 var6, int var7, int var8) {
-      class944 var9 = (class944)var6;
-      class102 var10 = var9.field3363;
-      this.field328.method3653();
-      this.field328.method3639(this.field327);
-      if (!this.field330 && !var5) {
-         this.field328.method3641(7681, 7681);
-      } else {
-         this.field328.method3641(7681, 8448);
-         this.field328.method3642(0, 34168, 768);
-      }
-
-      this.field328.method3638(1);
-      this.field328.method3639(var10);
-      this.field328.method3641(7681, 8448);
-      this.field328.method3642(0, 34168, 768);
-      OpenGL.glTexGeni(8192, 9472, 9216);
-      OpenGL.glTexGeni(8193, 9472, 9216);
-      float var11 = var10.field322 / (float)var10.field321;
-      float var12 = var10.field324 / (float)var10.field320;
-      OpenGL.glTexGenfv(8192, 9474, new float[]{var11, 0.0F, 0.0F, (float)(-var7) * var11}, 0);
-      OpenGL.glTexGenfv(8193, 9474, new float[]{0.0F, var12, 0.0F, (float)(-var8) * var12}, 0);
-      OpenGL.glEnable(3168);
-      OpenGL.glEnable(3169);
-      OpenGL.glColor4ub((byte)(var4 >> 16), (byte)(var4 >> 8), (byte)var4, (byte)(var4 >> 24));
-      OpenGL.glTranslatef((float)var2, (float)var3, 0.0F);
-      this.field329.method3055(var1);
-      OpenGL.glLoadIdentity();
-      OpenGL.glDisable(3168);
-      OpenGL.glDisable(3169);
-      this.field328.method3642(0, 5890, 768);
-      this.field328.method3641(8448, 8448);
-      this.field328.method3639((class203)null);
-      this.field328.method3638(0);
-      if (this.field330 || var5) {
-         this.field328.method3642(0, 5890, 768);
-      }
-
-   }
-
    void method1674(char var1, int var2, int var3, int var4, boolean var5, class23 var6, int var7, int var8) {
       class944 var9 = (class944)var6;
       class102 var10 = var9.field3363;
@@ -107,26 +47,6 @@ public class class101 extends class727 {
    }
 
    void method1680(char var1, int var2, int var3, int var4, boolean var5) {
-      this.field328.method3653();
-      this.field328.method3639(this.field327);
-      if (!this.field330 && !var5) {
-         this.field328.method3641(7681, 7681);
-      } else {
-         this.field328.method3641(7681, 8448);
-         this.field328.method3642(0, 34168, 768);
-      }
-
-      OpenGL.glColor4ub((byte)(var4 >> 16), (byte)(var4 >> 8), (byte)var4, (byte)(var4 >> 24));
-      OpenGL.glTranslatef((float)var2, (float)var3, 0.0F);
-      this.field329.method3055(var1);
-      OpenGL.glLoadIdentity();
-      if (this.field330 || var5) {
-         this.field328.method3642(0, 5890, 768);
-      }
-
-   }
-
-   void method1676(char var1, int var2, int var3, int var4, boolean var5) {
       this.field328.method3653();
       this.field328.method3639(this.field327);
       if (!this.field330 && !var5) {

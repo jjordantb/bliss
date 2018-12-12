@@ -4,7 +4,7 @@ public class class829 extends class568 {
 
    static final void method5359(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class904.field10357 ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = class904.field10357 ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "abp.amd(" + ')');
       }

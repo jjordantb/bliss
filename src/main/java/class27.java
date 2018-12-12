@@ -13,7 +13,7 @@ public class class27 {
       }
    }
 
-   public static class980 method3467(class907 var0, byte var1) {
+   public static class980 method3467(InputStream var0, byte var1) {
       try {
          String var2 = var0.method6379(-564007296);
          class971 var3 = class812.method2915((byte)112)[var0.method6371()];
@@ -37,18 +37,18 @@ public class class27 {
    public static final synchronized long method3468(byte var0) {
       try {
          long var1 = System.currentTimeMillis();
-         if (var1 < -1072184856876656313L * class323.field629) {
-            class323.field628 += -7920182256634826327L * (-1072184856876656313L * class323.field629 - var1);
+         if (var1 < class323.field629) {
+            class323.field628 += class323.field629 - var1;
          }
 
-         class323.field629 = -8643661642579214217L * var1;
-         return class323.field628 * 8643379242525344409L + var1;
+         class323.field629 = var1;
+         return class323.field628 + var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ey.a(" + ')');
       }
    }
 
-   static final void method3469(class746 var0, class746 var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
+   static final void method3469(Actor var0, Actor var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
       try {
          int var10 = var1.method2555((byte)1);
          if (var10 != -1) {
@@ -77,10 +77,10 @@ public class class27 {
 
             class356 var16 = class791.method396((byte)60);
             var16.field1794 = var1;
-            var16.field1793 = var14 * 514092373;
-            var16.field1797 = var15 * -783084201;
-            var16.field1798 = 1997526347 * (var14 + 16);
-            var16.field1799 = 1675098759 * (var15 + 16);
+            var16.field1793 = var14;
+            var16.field1797 = var15;
+            var16.field1798 = var14 + 16;
+            var16.field1799 = var15 + 16;
             class730.field2762.method5209(var16, -69122600);
          }
 
@@ -91,7 +91,7 @@ public class class27 {
 
    static final void method3470(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9114.method5154((byte)92);
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9114.method5154((byte)92);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ey.akg(" + ')');
       }
@@ -99,10 +99,10 @@ public class class27 {
 
    static final void method3471(class744 var0, short var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[var0.field3156 * 681479919 + 1];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var2 < var3 ? var2 : var3;
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1];
+         var0.field3161[++var0.field3156 - 1] = var2 < var3 ? var2 : var3;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ey.or(" + ')');
       }

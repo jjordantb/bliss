@@ -98,10 +98,10 @@ public class class819 {
 
    static final void method2935(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[1 + 681479919 * var0.field3156];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var2 & var3;
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = var2 & var3;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ds.zx(" + ')');
       }
@@ -109,7 +109,7 @@ public class class819 {
 
    static final void method2936(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-34);
          class131 var4 = class382.field1410[var2 >> 16];
          class370.method880(var3, var4, var0, (byte)7);
@@ -118,16 +118,16 @@ public class class819 {
       }
    }
 
-   static void method2937(class746 var0, byte var1) {
+   static void method2937(Actor var0, byte var1) {
       try {
-         if (var0 instanceof class60) {
-            class60 var2 = (class60)var0;
+         if (var0 instanceof Npc) {
+            Npc var2 = (Npc)var0;
             if (var2.field1637 != null) {
-               class554.method424(var2, var2.field3639 != class923.field10295.field3639, (byte)-64);
+               class554.method424(var2, var2.field3639 != class923.local.field3639, (byte)-64);
             }
-         } else if (var0 instanceof class946) {
-            class946 var4 = (class946)var0;
-            class149.method1159(var4, class923.field10295.field3639 != var4.field3639, 1531362210);
+         } else if (var0 instanceof Player) {
+            Player var4 = (Player)var0;
+            class149.method1159(var4, class923.local.field3639 != var4.field3639, 1531362210);
          }
 
       } catch (RuntimeException var3) {
@@ -155,15 +155,15 @@ public class class819 {
 
          class153 var1 = class730.field2697.method5296(1252790814);
          class545 var2 = class730.field2697.method5317(-1611682495);
-         int var3 = 1103750049 * class456.field7163 >> 9;
-         int var4 = 1346160791 * class530.field3741 >> 9;
-         int var5 = class679.method4271(class456.field7163 * 1103750049, class530.field3741 * 1346160791, class899.field9552 * 1855729883, -737895541);
+         int var3 = class456.field7163 >> 9;
+         int var4 = class530.field3741 >> 9;
+         int var5 = class679.method4271(class456.field7163, class530.field3741, class899.field9552, -737895541);
          int var6 = 0;
          int var7;
          if (var3 > 3 && var4 > 3 && var3 < class730.field2697.method5271(-1981660153) - 4 && var4 < class730.field2697.method5272(1904630701) - 4) {
             for(var7 = var3 - 4; var7 <= 4 + var3; ++var7) {
                for(int var8 = var4 - 4; var8 <= 4 + var4; ++var8) {
-                  int var9 = class899.field9552 * 1855729883;
+                  int var9 = class899.field9552;
                   if (var9 < 3 && var1.method3386(var7, var8, -316177210)) {
                      ++var9;
                   }
@@ -193,10 +193,10 @@ public class class819 {
             var7 = 262144;
          }
 
-         if (var7 > class730.field2745 * -523207831) {
-            class730.field2745 += (var7 - -523207831 * class730.field2745) / 24 * 1746126041;
-         } else if (var7 < -523207831 * class730.field2745) {
-            class730.field2745 += 1746126041 * ((var7 - class730.field2745 * -523207831) / 80);
+         if (var7 > class730.field2745) {
+            class730.field2745 += (var7 - class730.field2745) / 24;
+         } else if (var7 < class730.field2745) {
+            class730.field2745 += (var7 - class730.field2745) / 80;
          }
 
       } catch (RuntimeException var13) {

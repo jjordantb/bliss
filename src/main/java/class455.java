@@ -3,10 +3,6 @@ import java.io.IOException;
 final class class455 implements class648 {
    static int[] field7199;
 
-   public long method5550(String var1) {
-      return class880.method6175(var1, (byte)51);
-   }
-
    public long method5549(String var1, byte var2) {
       try {
          return class880.method6175(var1, (byte)51);
@@ -15,13 +11,9 @@ final class class455 implements class648 {
       }
    }
 
-   public long method5548(String var1) {
-      return class880.method6175(var1, (byte)104);
-   }
-
    static final void method3816(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-40);
          class131 var4 = class382.field1410[var2 >> 16];
          class333.method111(var3, var4, var0, 280747696);
@@ -47,7 +39,7 @@ final class class455 implements class648 {
                }
             }
 
-            var2 = new class838(new class907(var3), class730.field2926, 0);
+            var2 = new class838(new InputStream(var3), class730.field2926, 0);
          } catch (Exception var7) {
             ;
          }

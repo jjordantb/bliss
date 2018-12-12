@@ -1,7 +1,7 @@
 public class class466 {
    public class925[] field7304;
 
-   void method4006(class907 var1, int var2) {
+   void method4006(InputStream var1, int var2) {
       try {
          this.field7304 = new class925[var1.method6371()];
          class7[] var3 = class310.method456(1755655127);
@@ -15,12 +15,12 @@ public class class466 {
       }
    }
 
-   class925 method4007(class907 var1, class7 var2, int var3) {
+   class925 method4007(InputStream var1, class7 var2, int var3) {
       try {
          if (var2 == class7.field4912) {
             return class28.method3535(var1, 791939430);
          } else if (var2 == class7.field4908) {
-            return class401.method6117(var1, 1486124265);
+            return NpcDefinition.method6117(var1, 1486124265);
          } else if (var2 == class7.field4911) {
             return class305.method374(var1, -1734441948);
          } else if (var2 == class7.field4916) {
@@ -45,14 +45,14 @@ public class class466 {
 
    static final void method4008(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[var0.field3156 * 681479919 + 1];
-         class518 var4 = class85.field1121.method1566(var2);
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1];
+         ItemDefinition var4 = class85.field1121.method1566(var2);
          if (var3 >= 1 && var3 <= 5 && var4.field4240[var3 - 1] != null) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var4.field4240[var3 - 1];
+            var0.field3157[++var0.field3158 - 1] = var4.field4240[var3 - 1];
          } else {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
+            var0.field3157[++var0.field3158 - 1] = "";
          }
 
       } catch (RuntimeException var5) {

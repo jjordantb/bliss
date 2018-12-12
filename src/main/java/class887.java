@@ -37,16 +37,4 @@ public class class887 extends class792 implements class297 {
    native void ha();
 
    native void u();
-
-   public native void method6551(boolean var1);
-
-   native void a(class955 var1, int var2);
-
-   native void f();
-
-   native void b();
-
-   native void i();
-
-   native void p();
 }

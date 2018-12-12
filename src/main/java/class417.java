@@ -6,16 +6,13 @@ public class class417 extends class138 {
    int field9581;
    static class922 field9582;
 
-   void method988(int var1, int var2) {
-   }
-
    void method991(int var1, int var2, byte var3) {
       try {
-         int var4 = var1 * this.field9580 * -737606811 >> 12;
-         int var5 = var1 * this.field9579 * 627591597 >> 12;
-         int var6 = var2 * 870171747 * this.field9577 >> 12;
-         int var7 = var2 * this.field9581 * 1837883371 >> 12;
-         class388.method1188(var4, var6, var5, var7, 1785836763 * this.field1169, -479015291);
+         int var4 = var1 * this.field9580 >> 12;
+         int var5 = var1 * this.field9579 >> 12;
+         int var6 = var2 * this.field9577 >> 12;
+         int var7 = var2 * this.field9581 >> 12;
+         class388.method1188(var4, var6, var5, var7, super.field1169, -479015291);
       } catch (RuntimeException var8) {
          throw class158.method3445(var8, "yh.a(" + ')');
       }
@@ -24,35 +21,15 @@ public class class417 extends class138 {
    void method984(int var1, int var2, byte var3) {
    }
 
-   void method983(int var1, int var2) {
-   }
-
    void method985(int var1, int var2, byte var3) {
-   }
-
-   void method986(int var1, int var2) {
-      int var3 = var1 * this.field9580 * -737606811 >> 12;
-      int var4 = var1 * this.field9579 * 627591597 >> 12;
-      int var5 = var2 * 870171747 * this.field9577 >> 12;
-      int var6 = var2 * this.field9581 * 1837883371 >> 12;
-      class388.method1188(var3, var5, var4, var6, 1785836763 * this.field1169, -1924061875);
    }
 
    class417(int var1, int var2, int var3, int var4, int var5, int var6) {
       super(-1, var5, var6);
-      this.field9580 = 388331117 * var1;
-      this.field9577 = var2 * -1813324469;
-      this.field9579 = var3 * -2080243163;
-      this.field9581 = 1437683907 * var4;
-   }
-
-   void method989(int var1, int var2) {
-   }
-
-   void method987(int var1, int var2) {
-   }
-
-   void method990(int var1, int var2) {
+      this.field9580 = var1;
+      this.field9577 = var2;
+      this.field9579 = var3;
+      this.field9581 = var4;
    }
 
    static class683 method5686(class180 var0, int var1, int var2) {
@@ -69,7 +46,7 @@ public class class417 extends class138 {
 
    static final void method5688(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class684 var3 = class423.method5712((short)512);
          class701 var4 = class637.method5936(class643.field10013, var3.field7765, (byte)56);
          var4.field3364.method6361(var2);
@@ -81,11 +58,11 @@ public class class417 extends class138 {
 
    static final void method5689(class744 var0, byte var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         String var2 = (String)var0.field3157[--var0.field3158];
          if (class143.field1540 != null && class143.field1540.equalsIgnoreCase(var2)) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1;
+            var0.field3161[++var0.field3156 - 1] = 1;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
+            var0.field3161[++var0.field3156 - 1] = 0;
          }
 
       } catch (RuntimeException var3) {
@@ -107,9 +84,9 @@ public class class417 extends class138 {
    static void method5691(byte var0) {
       try {
          for(class497 var1 = (class497)class602.field8649.method2706(-431286975); var1 != null; var1 = (class497)class602.field8649.method2707(-2120194897)) {
-            if (-628325139 * var1.field8120 > 1) {
+            if (var1.field8120 > 1) {
                var1.field8120 = 0;
-               class602.field8631.method2984(var1, 6619564980435866523L * ((class357)var1.field8121.field4317.field208).field1706);
+               class602.field8631.method2984(var1, ((class357)var1.field8121.field4317.field208).field1706);
                var1.field8121.method2710(2132471610);
             }
          }
@@ -127,7 +104,7 @@ public class class417 extends class138 {
 
    static final void method5692(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 2119035647 * class82.field1110;
+         var0.field3161[++var0.field3156 - 1] = class82.field1110;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "yh.amq(" + ')');
       }

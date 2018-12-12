@@ -5,9 +5,9 @@ public class class502 {
 
    static final void method1894(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -783761378;
-         if (var0.field3161[681479919 * var0.field3156] > var0.field3161[var0.field3156 * 681479919 + 1]) {
-            var0.field3176 += 286750741 * var0.field3174[var0.field3176 * 1883543357];
+         var0.field3156 -= 2;
+         if (var0.field3161[var0.field3156] > var0.field3161[var0.field3156 + 1]) {
+            var0.field3176 += var0.field3174[var0.field3176];
          }
 
       } catch (RuntimeException var3) {
@@ -17,10 +17,10 @@ public class class502 {
 
    static final void method1895(class744 var0, int var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[681479919 * var0.field3156 + 1];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class1.method2987(var2, var3, true, (byte)12);
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1];
+         var0.field3161[++var0.field3156 - 1] = class1.method2987(var2, var3, true, (byte)12);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "me.tw(" + ')');
       }
@@ -28,7 +28,7 @@ public class class502 {
 
    static final void method1896(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 816811163 * class221.field7347;
+         var0.field3161[++var0.field3156 - 1] = class221.field7347;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "me.wc(" + ')');
       }
@@ -36,7 +36,7 @@ public class class502 {
 
    static final void method1897(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var0.field3169.field9701;
+         var0.field3161[++var0.field3156 - 1] = var0.field3169.field9701;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "me.xu(" + ')');
       }
@@ -44,8 +44,8 @@ public class class502 {
 
    static final void method1898(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9133.method2273(var2, 1352882135);
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9133.method2273(var2, 1352882135);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "me.aon(" + ')');
       }

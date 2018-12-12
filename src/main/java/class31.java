@@ -3,7 +3,7 @@ public class class31 extends class568 {
    public int field5319;
 
    class31(int var1, int var2) {
-      this.field5319 = var1 * 388289509;
-      this.field5318 = var2 * -1076181017;
+      this.field5319 = var1;
+      this.field5318 = var2;
    }
 }

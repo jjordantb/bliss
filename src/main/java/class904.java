@@ -14,7 +14,7 @@ public class class904 {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3.field973 * -1523987341;
+         var0.field3161[++var0.field3156 - 1] = var3.field973;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "z.pa(" + ')');
       }
@@ -37,8 +37,8 @@ public class class904 {
 
    static final void method6337(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9127.method2273(var2, 1352882135);
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9127.method2273(var2, 1352882135);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "z.aoe(" + ')');
       }

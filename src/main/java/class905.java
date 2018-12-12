@@ -8,18 +8,18 @@ public class class905 {
 
    public int hashCode() {
       try {
-         return this.field10366 * -211035667;
+         return this.field10366;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "tl.hashCode(" + ')');
       }
    }
 
    class905(int var1, int var2, int var3, int var4, int var5) {
-      this.field10366 = var1 * -1875874843;
-      this.field10365 = -1675562787 * var2;
-      this.field10364 = var3 * -1764081097;
-      this.field10367 = var4 * -531314479;
-      this.field10368 = -2080773359 * var5;
+      this.field10366 = var1;
+      this.field10365 = var2;
+      this.field10364 = var3;
+      this.field10367 = var4;
+      this.field10368 = var5;
    }
 
    static class719 method6344(int var0, int var1, int var2, class879 var3, int var4) {
@@ -52,7 +52,7 @@ public class class905 {
 
    static final void method6346(class564 var0, class131 var1, class744 var2, int var3) {
       try {
-         String var4 = (String)var2.field3157[(var2.field3158 -= 969361751) * -203050393];
+         String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -71305478) != null) {
             var4 = var4.substring(0, var4.length() - 1);
          }

@@ -5,7 +5,7 @@ public class class552 {
    int[] field537;
 
    public class552(long var1, int[] var3, short[] var4, short[] var5) {
-      this.field534 = var1 * 8069314464859468115L;
+      this.field534 = var1;
       this.field537 = var3;
       this.field536 = var4;
       this.field535 = var5;

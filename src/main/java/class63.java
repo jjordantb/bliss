@@ -8,9 +8,9 @@ public class class63 {
 
    static final void method1251(class744 var0, int var1) {
       try {
-         var0.field3156 -= -783761378;
-         if (var0.field3161[1 + var0.field3156 * 681479919] != var0.field3161[var0.field3156 * 681479919]) {
-            var0.field3176 += 286750741 * var0.field3174[var0.field3176 * 1883543357];
+         var0.field3156 -= 2;
+         if (var0.field3161[1 + var0.field3156] != var0.field3161[var0.field3156]) {
+            var0.field3176 += var0.field3174[var0.field3176];
          }
 
       } catch (RuntimeException var3) {

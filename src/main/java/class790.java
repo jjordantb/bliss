@@ -48,7 +48,7 @@ public class class790 {
       int var14;
       int var15;
       for(int var13 = 0; var13 < var9; ++var13) {
-         var14 = (var12 + var13) * var3.field7226 * -506105871 + var11;
+         var14 = (var12 + var13) * var3.field7226 + var11;
 
          for(var15 = 0; var15 < var9; ++var15) {
             short[] var16 = var3.field9474[var14++];
@@ -67,7 +67,7 @@ public class class790 {
          var20.clear();
 
          for(var14 = 0; var14 < var9; ++var14) {
-            var15 = (var12 + var14) * var3.field7226 * -506105871 + var11;
+            var15 = (var12 + var14) * var3.field7226 + var11;
 
             for(int var21 = 0; var21 < var9; ++var21) {
                short[] var17 = var3.field9474[var15++];

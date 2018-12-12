@@ -66,9 +66,9 @@ public class class153 {
 
    static final void method3389(class564 var0, class131 var1, class744 var2, int var3) {
       try {
-         var2.field3156 -= -783761378;
-         var0.field918 = var2.field3161[var2.field3156 * 681479919] * 437213185;
-         var0.field919 = 1266800241 * var2.field3161[681479919 * var2.field3156 + 1];
+         var2.field3156 -= 2;
+         var0.field918 = var2.field3161[var2.field3156];
+         var0.field919 = var2.field3161[var2.field3156 + 1];
          class814.method2932(var0, -147880968);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "kf.fq(" + ')');
@@ -77,10 +77,10 @@ public class class153 {
 
    static final void method3390(class744 var0, int var1) {
       try {
-         var0.field3156 -= -391880689;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
+         --var0.field3156;
+         int var2 = var0.field3161[var0.field3156];
          class256 var3 = (class256)class730.field2823.method2942((long)var2);
-         if (var3 != null && 3 == 27137839 * var3.field8100) {
+         if (var3 != null && 3 == var3.field8100) {
             class526.method2226(var3, true, true, -113822480);
          }
 
@@ -91,7 +91,7 @@ public class class153 {
 
    static final void method3391(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class122.method1608(var2 >> 14 & 16383, var2 & 16383, -548972447);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "kf.aeb(" + ')');
@@ -108,7 +108,7 @@ public class class153 {
 
    static void method3393(byte[] var0, int var1) {
       try {
-         class907 var2 = new class907(var0);
+         InputStream var2 = new InputStream(var0);
 
          while(true) {
             int var3 = var2.method6371();
@@ -122,8 +122,8 @@ public class class153 {
 
             if (1 == var3) {
                int var4 = var2.method6374();
-               if (class540.field3923 * 782166935 == -1) {
-                  class540.field3923 = var4 * 154813479;
+               if (class540.field3923 == -1) {
+                  class540.field3923 = var4;
                }
             }
          }
@@ -149,8 +149,8 @@ public class class153 {
 
    static final void method3395(class744 var0, int var1) {
       try {
-         if (var0.field3161[(var0.field3156 -= -391880689) * 681479919] == 1) {
-            var0.field3176 += var0.field3174[1883543357 * var0.field3176] * 286750741;
+         if (var0.field3161[--var0.field3156] == 1) {
+            var0.field3176 += var0.field3174[var0.field3176];
          }
 
       } catch (RuntimeException var3) {
@@ -158,7 +158,7 @@ public class class153 {
       }
    }
 
-   public static void method3396(class60 var0, byte var1) {
+   public static void method3396(Npc var0, byte var1) {
       try {
          for(class206 var2 = (class206)class206.field7098.method901(1766612795); var2 != null; var2 = (class206)class206.field7098.method906(49146)) {
             if (var0 == var2.field7076) {

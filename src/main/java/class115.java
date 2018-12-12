@@ -24,7 +24,7 @@ public class class115 {
          class829 var3 = this.method1270(var1, (byte)-123);
          if (var3 != null) {
             var3.method545(-1460969981);
-            this.field1694[-1836037967 * var3.field9040] = null;
+            this.field1694[var3.field9040] = null;
          }
 
       } catch (RuntimeException var4) {
@@ -35,7 +35,7 @@ public class class115 {
    public void method1269(int var1, String var2, class829 var3, int var4) {
       try {
          class829 var5 = this.method1267(var2, -1827449503);
-         if (var5 != null && var1 != var5.field9040 * -1836037967) {
+         if (var5 != null && var1 != var5.field9040) {
             throw new IllegalArgumentException(var2);
          } else {
             this.method1268(var1, -1882252920);
@@ -50,7 +50,7 @@ public class class115 {
                for(int var7 = 0; var7 < this.field1694.length; ++var7) {
                   class829 var8 = this.field1694[var7];
                   if (var8 != null) {
-                     this.field1696.method2947(var8, var8.field641 * 7051297995265073167L);
+                     this.field1696.method2947(var8, var8.field641);
                   }
                }
 
@@ -63,7 +63,7 @@ public class class115 {
                this.field1694 = var10;
             }
 
-            var3.field9040 = -1138163631 * var1;
+            var3.field9040 = var1;
             var3.field9041 = var2;
             this.field1696.method2947(var3, this.field1695.method5549(var2, (byte)-48));
             this.field1694[var1] = var3;
@@ -119,13 +119,13 @@ public class class115 {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var3.field937;
+         var0.field3157[++var0.field3158 - 1] = var3.field937;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "es.pf(" + ')');
       }
    }
 
-   static final void method1274(class746 var0, int var1) {
+   static final void method1274(Actor var0, int var1) {
       try {
          if (var0.field4056 != null || var0.field4049 != null) {
             boolean var2 = true;
@@ -153,13 +153,13 @@ public class class115 {
                      var9 = var5 & 268435455;
                      int var10 = var9 >> 14;
                      int var11 = var9 & 16383;
-                     var12 = (int)var8.field5296 - (256 + 512 * (var10 - var3.field1521 * -1760580017));
-                     var13 = (int)var8.field5299 - (256 + (var11 - 283514611 * var3.field1522) * 512);
+                     var12 = (int)var8.field5296 - (256 + 512 * (var10 - var3.field1521));
+                     var13 = (int)var8.field5299 - (256 + (var11 - var3.field1522) * 512);
                   } else {
                      class32 var18;
                      if ((var5 & '耀') != 0) {
                         var9 = var5 & 32767;
-                        class946 var16 = class730.field2786[var9];
+                        Player var16 = class730.loaded[var9];
                         if (var16 == null) {
                            var0.method2545(var4, -1, (byte)16);
                            continue;
@@ -175,7 +175,7 @@ public class class115 {
                            continue;
                         }
 
-                        class60 var17 = (class60)var15.field7515;
+                        Npc var17 = (Npc)var15.field7515;
                         var18 = var17.method1511().field7637;
                         var12 = (int)var8.field5296 - (int)var18.field5296;
                         var13 = (int)var8.field5299 - (int)var18.field5299;
@@ -201,17 +201,17 @@ public class class115 {
 
    static final void method1275(class564 var0, class131 var1, class744 var2, byte var3) {
       try {
-         var2.field3156 -= -1567522756;
-         var0.field1011 = var2.field3161[var2.field3156 * 681479919] * 2145953887;
-         var0.field884 = 1215865909 * var2.field3161[1 + 681479919 * var2.field3156];
-         int var4 = var2.field3161[681479919 * var2.field3156 + 2];
+         var2.field3156 -= 4;
+         var0.field1011 = var2.field3161[var2.field3156];
+         var0.field884 = var2.field3161[1 + var2.field3156];
+         int var4 = var2.field3161[var2.field3156 + 2];
          if (var4 < 0) {
             var4 = 0;
          } else if (var4 > 5) {
             var4 = 5;
          }
 
-         int var5 = var2.field3161[681479919 * var2.field3156 + 3];
+         int var5 = var2.field3161[var2.field3156 + 3];
          if (var5 < 0) {
             var5 = 0;
          } else if (var5 > 5) {
@@ -221,13 +221,13 @@ public class class115 {
          var0.field871 = (byte)var4;
          var0.field872 = (byte)var5;
          class814.method2932(var0, -1806072234);
-         class765.method2801(var1, var0, -1959938301);
-         if (var0.field869 * -1215239439 == 0) {
+         Animator.method2801(var1, var0, -1959938301);
+         if (var0.field869 == 0) {
             class948.method1938(var1, var0, false, 112223880);
          }
 
-         if (var0.field879 * -1309843523 == -1 && !var1.field1101) {
-            class649.method5546(var0.field867 * -440872681, 1058352947);
+         if (var0.field879 == -1 && !var1.field1101) {
+            class649.method5546(var0.field867, 1058352947);
          }
 
       } catch (RuntimeException var6) {
@@ -252,7 +252,7 @@ public class class115 {
          class615.field8903.method5391(class615.field8903.field9115, 0, -33681458);
          class615.field8903.method5391(class615.field8903.field9116, 0, 1421186288);
          class615.field8903.method5391(class615.field8903.field9129, 2, 540542372);
-         class615.field8903.method5391(class615.field8903.field9124, -160182505 * class157.field6552.field6556, -1761179616);
+         class615.field8903.method5391(class615.field8903.field9124, class157.field6552.field6556, -1761179616);
          class615.field8903.method5391(class615.field8903.field9117, 0, -224292435);
          class615.field8903.method5391(class615.field8903.field9133, 1, -1095753213);
          class308.method382(1113089752);

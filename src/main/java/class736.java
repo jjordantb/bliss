@@ -11,9 +11,9 @@ public class class736 extends class345 {
    boolean method1838(class180 var1, class478 var2, byte var3) {
       try {
          int var4;
-         if (-1132597157 * class43.field5089 >= 0) {
+         if (class43.field5089 >= 0) {
             for(var4 = 0; var4 < this.field3122.length; ++var4) {
-               if (!var1.method3260(-1132597157 * class43.field5089, this.field3122[var4], -416567288)) {
+               if (!var1.method3260(class43.field5089, this.field3122[var4], -416567288)) {
                   return false;
                }
             }
@@ -218,7 +218,7 @@ public class class736 extends class345 {
       }
    }
 
-   class736(class907 var1) {
+   class736(InputStream var1) {
       int var2 = var1.method6371();
       int var3 = 0;
       int var4 = 0;

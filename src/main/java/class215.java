@@ -8,7 +8,7 @@ public class class215 {
 
    static final void method3833(class744 var0, byte var1) {
       try {
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var0.field3151[var0.field3174[1883543357 * var0.field3176]];
+         var0.field3157[++var0.field3158 - 1] = var0.field3151[var0.field3174[var0.field3176]];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ps.ap(" + ')');
       }

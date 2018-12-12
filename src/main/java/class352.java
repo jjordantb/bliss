@@ -83,48 +83,32 @@ public abstract class class352 {
    public static int field2012 = 104;
    public static int field2013 = 105;
 
-   public abstract void method1390();
-
-   public abstract void method1391();
-
    public abstract boolean method1392(int var1, int var2);
 
    public abstract class742 method1393(byte var1);
 
    public abstract void method1394(int var1);
 
-   public abstract class742 method1395();
-
-   public abstract class742 method1396();
-
-   public abstract void method1397();
-
    public abstract void method1398(int var1);
-
-   public abstract void method1399();
-
-   public abstract void method1400();
-
-   public abstract boolean method1401(int var1);
 
    static final void method1402(class744 var0, int var1) {
       try {
-         int var2 = class488.field8421 * -1012194159;
-         int var3 = 1953279233 * class849.field8567;
+         int var2 = class488.field8421;
+         int var3 = class849.field8567;
          int var4 = -1;
          if (class53.field2311) {
             class125[] var5 = class528.method2244((byte)-2);
 
             for(int var6 = 0; var6 < var5.length; ++var6) {
                class125 var7 = var5[var6];
-               if (var2 == var7.field2325 * 28445523 && var7.field2327 * 262154323 == var3) {
+               if (var2 == var7.field2325 && var7.field2327 == var3) {
                   var4 = var6;
                   break;
                }
             }
          }
 
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var4;
+         var0.field3161[++var0.field3156 - 1] = var4;
       } catch (RuntimeException var8) {
          throw class158.method3445(var8, "nl.aeu(" + ')');
       }
@@ -132,7 +116,7 @@ public abstract class class352 {
 
    static final void method1403(class564 var0, class131 var1, class744 var2, int var3) {
       try {
-         if (4 == var0.field869 * -1215239439) {
+         if (4 == var0.field869) {
             class912.method6480(var0, var1, var2, (short)8629);
          }
 
@@ -153,12 +137,12 @@ public abstract class class352 {
 
    static final void method1405(class744 var0, byte var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         var0.field3156 -= -783761378;
-         int var3 = var0.field3161[var0.field3156 * 681479919];
-         int var4 = var0.field3161[var0.field3156 * 681479919 + 1];
+         String var2 = (String)var0.field3157[--var0.field3158];
+         var0.field3156 -= 2;
+         int var3 = var0.field3161[var0.field3156];
+         int var4 = var0.field3161[var0.field3156 + 1];
          class230 var5 = class398.method3539(class526.field3666, var4, 0, (byte)49);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var5.method4600(var2, var3, class324.field621, -1274509130);
+         var0.field3161[++var0.field3156 - 1] = var5.method4600(var2, var3, class324.field621, -1274509130);
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "nl.zn(" + ')');
       }

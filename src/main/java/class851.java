@@ -17,7 +17,7 @@ public class class851 {
    public class851(class469 var1, class423 var2, class180 var3) {
       this.field8729 = var3;
       if (this.field8729 != null) {
-         this.field8729.method3286(class981.field3227.field3271 * -1006924897, 1020653544);
+         this.field8729.method3286(class981.field3227.field3271, 1020653544);
       }
 
    }
@@ -58,12 +58,12 @@ public class class851 {
             class180 var5 = this.field8729;
             byte[] var10;
             synchronized(this.field8729) {
-               var10 = this.field8729.method3285(-1006924897 * class981.field3227.field3271, var1, (byte)-62);
+               var10 = this.field8729.method3285(class981.field3227.field3271, var1, (byte)-62);
             }
 
             var4 = new class785();
             if (var10 != null) {
-               var4.method2378(new class907(var10), -1070488617);
+               var4.method2378(new InputStream(var10), -1070488617);
             }
 
             class1 var11 = this.field8730;
@@ -80,10 +80,10 @@ public class class851 {
 
    static final void method5149(class744 var0, int var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         boolean var3 = var0.field3161[(var0.field3156 -= -391880689) * 681479919] == 1;
+         String var2 = (String)var0.field3157[--var0.field3158];
+         boolean var3 = var0.field3161[--var0.field3156] == 1;
          class716.method2047(var2, var3, 729356820);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class198.field7051 * 367592105;
+         var0.field3161[++var0.field3156 - 1] = class198.field7051;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "uv.adv(" + ')');
       }

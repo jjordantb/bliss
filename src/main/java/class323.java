@@ -21,7 +21,7 @@ public final class class323 {
 
    static final void method540(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var0.field3169.field9692 * -2079715533;
+         var0.field3161[++var0.field3156 - 1] = var0.field3169.field9692;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "dj.xz(" + ')');
       }
@@ -29,10 +29,10 @@ public final class class323 {
 
    public static void method541(int var0, int var1) {
       try {
-         class740.field3207 = -2138103821;
-         class740.field3204 = var0 * 1998014133;
-         class10.field6652 = -189172599;
-         class622.field9010 = -338630500;
+         class740.field3207 = -1;
+         class740.field3204 = var0;
+         class10.field6652 = 3;
+         class622.field9010 = 100;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "dj.cg(" + ')');
       }

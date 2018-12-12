@@ -29,32 +29,6 @@ public class class28 implements class311 {
       }
    }
 
-   public class972 method449() {
-      return class972.field2961;
-   }
-
-   public int method446() {
-      if (this.field6580) {
-         return 100;
-      } else {
-         int var1 = class606.field8572.method5398(this.field6579, 963304472);
-         if (var1 >= 0 && var1 <= 100) {
-            return var1;
-         } else {
-            this.field6580 = true;
-            return 100;
-         }
-      }
-   }
-
-   public class972 method447() {
-      return class972.field2961;
-   }
-
-   public class972 method445() {
-      return class972.field2961;
-   }
-
    class28(String var1) {
       this.field6579 = var1;
    }
@@ -69,8 +43,8 @@ public class class28 implements class311 {
 
    static final void method3534(class744 var0, int var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         if (class730.field2790 * 1806357379 != 0 || (!class730.field2792 || class730.field2793) && !class730.field2783) {
+         String var2 = (String)var0.field3157[--var0.field3158];
+         if (class730.field2790 != 0 || (!class730.field2792 || class730.field2793) && !class730.field2783) {
             String var3 = var2.toLowerCase();
             byte var4 = 0;
             if (var3.startsWith(class814.field4807.method2927(class423.field9583, -875414210))) {
@@ -188,11 +162,11 @@ public class class28 implements class311 {
             class684 var6 = class423.method5712((short)512);
             class701 var7 = class637.method5936(class643.field9983, var6.field7765, (byte)107);
             var7.field3364.method6361(0);
-            int var8 = 385051775 * var7.field3364.field10376;
+            int var8 = var7.field3364.field10376;
             var7.field3364.method6361(var4);
             var7.field3364.method6361(var5);
             class831.method5386(var7.field3364, var2, 1526854691);
-            var7.field3364.method6426(var7.field3364.field10376 * 385051775 - var8, (byte)-57);
+            var7.field3364.method6426(var7.field3364.field10376 - var8, (byte)-57);
             var6.method4380(var7, (byte)-12);
          }
 
@@ -201,7 +175,7 @@ public class class28 implements class311 {
       }
    }
 
-   public static class374 method3535(class907 var0, int var1) {
+   public static class374 method3535(InputStream var0, int var1) {
       try {
          int var2 = var0.method6420((byte)-17);
          return new class374(var2);

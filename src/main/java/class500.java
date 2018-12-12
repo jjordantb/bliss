@@ -185,7 +185,7 @@ public class class500 {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -1086526073 * var3.field987;
+         var0.field3161[++var0.field3156 - 1] = var3.field987;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ii.px(" + ')');
       }
@@ -193,7 +193,7 @@ public class class500 {
 
    static final void method1861(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)71);
          class131 var4 = class382.field1410[var2 >> 16];
          class255.method4495(var3, var4, var0, (byte)102);

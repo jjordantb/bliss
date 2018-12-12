@@ -1,7 +1,7 @@
 import java.util.List;
 
 public class class198 {
-   static int field7038 = 1483930890;
+   static int field7038 = 2;
    static class737[] field7039;
    static int field7040 = 0;
    static int field7041 = 0;
@@ -22,7 +22,7 @@ public class class198 {
 
    static final void method3751(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)9);
          class131 var4 = class382.field1410[var2 >> 16];
          class382.method1058(var3, var4, var0, -2144331170);
@@ -38,10 +38,10 @@ public class class198 {
          var2 <<= 3;
          class730.field2738 = (float)var0;
          class730.field2931 = (float)var1;
-         if (class563.field1083 * -863531439 == 3) {
-            class730.field2737 = -648269561 * var0;
-            class232.field8266 = -1587695039 * var1;
-            class791.field446 = -851711283 * var2;
+         if (class563.field1083 == 3) {
+            class730.field2737 = var0;
+            class232.field8266 = var1;
+            class791.field446 = var2;
          }
 
          class819.method2938((byte)63);

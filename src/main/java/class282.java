@@ -19,7 +19,7 @@ public class class282 extends class345 {
       }
    }
 
-   void method6649(class907 var1, int var2) {
+   void method6649(InputStream var1, int var2) {
       try {
          while(true) {
             int var3 = var1.method6371();
@@ -46,13 +46,13 @@ public class class282 extends class345 {
       }
    }
 
-   public String method6651(class907 var1, int var2) {
+   public String method6651(InputStream var1, int var2) {
       try {
          StringBuilder var3 = new StringBuilder(80);
          if (this.field10620 != null) {
             for(int var4 = 0; var4 < this.field10620.length; ++var4) {
                var3.append(this.field10616[var4]);
-               var3.append(this.field10615.method2712(this.method6652(var4, -237770641), this.field10618[var4], var1.method6424(class822.method5368(this.field10620[var4], -818645984).field203 * 153532243, (byte)67)));
+               var3.append(this.field10615.method2712(this.method6652(var4, -237770641), this.field10618[var4], var1.method6424(class822.method5368(this.field10620[var4], -818645984).field203, (byte)67)));
             }
          }
 
@@ -102,7 +102,7 @@ public class class282 extends class345 {
       }
    }
 
-   void method6655(class907 var1, int var2, int var3) {
+   void method6655(InputStream var1, int var2, int var3) {
       try {
          if (1 == var2) {
             this.field10616 = class715.method2097(var1.method6379(1602597054), '<', 1942688210);
@@ -126,9 +126,9 @@ public class class282 extends class345 {
                   class103 var7 = class822.method5368(var6, -1170894592);
                   if (var7 != null) {
                      this.field10620[var5] = var6;
-                     this.field10618[var5] = new int[-213410761 * var7.field190];
+                     this.field10618[var5] = new int[var7.field190];
 
-                     for(int var8 = 0; var8 < -213410761 * var7.field190; ++var8) {
+                     for(int var8 = 0; var8 < var7.field190; ++var8) {
                         this.field10618[var5][var8] = var1.method6374();
                      }
                   }
@@ -143,11 +143,11 @@ public class class282 extends class345 {
       }
    }
 
-   public void method6656(class907 var1, int[] var2, int var3) {
+   public void method6656(InputStream var1, int[] var2, int var3) {
       try {
          if (this.field10620 != null) {
             for(int var4 = 0; var4 < this.field10620.length && var4 < var2.length; ++var4) {
-               int var5 = this.method6652(var4, -1152183855).field191 * 128255187;
+               int var5 = this.method6652(var4, -1152183855).field191;
                if (var5 > 0) {
                   var1.method6380((long)var2[var4], var5, -211202833);
                }

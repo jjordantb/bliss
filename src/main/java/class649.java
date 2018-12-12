@@ -5,7 +5,7 @@ public abstract class class649 implements Runnable {
 
    static final void method5541(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-16);
          class131 var4 = class382.field1410[var2 >> 16];
          class91.method495(var3, var4, var0, 1489338850);
@@ -27,7 +27,7 @@ public abstract class class649 implements Runnable {
 
    static final void method5543(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-42);
          class812.method2916(var3, var0, 59297703);
       } catch (RuntimeException var4) {
@@ -37,7 +37,7 @@ public abstract class class649 implements Runnable {
 
    static final void method5544(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -1372893999 * class881.field10143;
+         var0.field3161[++var0.field3156 - 1] = class881.field10143;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ly.ahs(" + ')');
       }
@@ -45,14 +45,14 @@ public abstract class class649 implements Runnable {
 
    static final void method5545(class564 var0, class131 var1, class744 var2, int var3) {
       try {
-         String var4 = (String)var2.field3157[(var2.field3158 -= 969361751) * -203050393];
+         String var4 = (String)var2.field3157[--var2.field3158];
          if (!var4.equals(var0.field937)) {
             var0.field937 = var4;
             class814.method2932(var0, 1811665074);
          }
 
-         if (-1 == var0.field879 * -1309843523 && !var1.field1101) {
-            class281.method6690(-440872681 * var0.field867, (byte)-31);
+         if (-1 == var0.field879 && !var1.field1101) {
+            class281.method6690(var0.field867, (byte)-31);
          }
 
       } catch (RuntimeException var5) {

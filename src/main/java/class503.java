@@ -12,14 +12,14 @@ public class class503 {
 
    static final void method2581(class744 var0, int var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[1 + var0.field3156 * 681479919];
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
          class256 var4 = (class256)class730.field2823.method2942((long)var2);
-         if (var4 != null && var4.field8101 * -1617025021 == var3) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1;
+         if (var4 != null && var4.field8101 == var3) {
+            var0.field3161[++var0.field3156 - 1] = 1;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
+            var0.field3161[++var0.field3156 - 1] = 0;
          }
 
       } catch (RuntimeException var5) {
@@ -29,12 +29,12 @@ public class class503 {
 
    static final void method2582(class744 var0, int var1) {
       try {
-         var0.field3158 -= 1938723502;
-         String var2 = (String)var0.field3157[-203050393 * var0.field3158];
-         String var3 = (String)var0.field3157[1 + -203050393 * var0.field3158];
-         var0.field3156 -= -783761378;
-         int var4 = var0.field3161[var0.field3156 * 681479919];
-         int var5 = var0.field3161[var0.field3156 * 681479919 + 1];
+         var0.field3158 -= 2;
+         String var2 = (String)var0.field3157[var0.field3158];
+         String var3 = (String)var0.field3157[1 + var0.field3158];
+         var0.field3156 -= 2;
+         int var4 = var0.field3161[var0.field3156];
+         int var5 = var0.field3161[var0.field3156 + 1];
          if (var3 == null) {
             var3 = "";
          }
@@ -58,7 +58,7 @@ public class class503 {
 
    static final void method2583(class744 var0, int var1) {
       try {
-         class615.field8903.method5391(class615.field8903.field9135, var0.field3161[(var0.field3156 -= -391880689) * 681479919], -2044130238);
+         class615.field8903.method5391(class615.field8903.field9135, var0.field3161[--var0.field3156], -2044130238);
          class95.method523(656179282);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ej.aiu(" + ')');
@@ -67,7 +67,7 @@ public class class503 {
 
    static final void method2584(class744 var0, short var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)78);
          class131 var4 = class382.field1410[var2 >> 16];
          class752.method2642(var3, var4, var0, (short)909);
@@ -80,7 +80,7 @@ public class class503 {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3.field1009 * -261021353;
+         var0.field3161[++var0.field3156 - 1] = var3.field1009;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ej.pq(" + ')');
       }
@@ -88,8 +88,8 @@ public class class503 {
 
    static final void method2586(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var0.field3169.field9700[var2];
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = var0.field3169.field9700[var2];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ej.xa(" + ')');
       }
@@ -97,7 +97,7 @@ public class class503 {
 
    public static void method2587(boolean var0, short var1) {
       try {
-         if (1596783995 * class730.field2705 != 2 && 1596783995 * class730.field2705 != 3) {
+         if (class730.field2705 != 2 && class730.field2705 != 3) {
             if (!var0) {
                class304[] var2 = class949.field3325;
 
@@ -107,7 +107,7 @@ public class class503 {
                }
             }
 
-            class730.field2705 = 1973597030;
+            class730.field2705 = 2;
             class345.field210 = null;
             class665.field9597 = null;
             class730.field2706 = false;

@@ -92,7 +92,7 @@ public final class class861 {
 
    static void method5351(class744 var0, byte var1) {
       try {
-         var0.field3161[var0.field3156 * 681479919 - 1] = class735.field3009.method4224(var0.field3161[681479919 * var0.field3156 - 1], 245040087).method5325(class827.field9037, -1717639697) ? 1 : 0;
+         var0.field3161[var0.field3156 - 1] = class735.field3009.method4224(var0.field3161[var0.field3156 - 1], 245040087).method5325(class827.field9037, -1717639697) ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "pa.j(" + ')');
       }

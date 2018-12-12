@@ -1,7 +1,3 @@
-import java.lang.reflect.AccessibleObject;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-
 public class class93 implements class297 {
    Runnable field581;
    class955 field582;
@@ -14,22 +10,7 @@ public class class93 implements class297 {
       this.R(this.field583, var1);
    }
 
-   static void method509(int var0) {
-      try {
-         Class var1 = ClassLoader.class;
-         Field var2 = var1.getDeclaredField("nativeLibraries");
-         Class var3 = AccessibleObject.class;
-         Method var4 = var3.getDeclaredMethod("setAccessible", Boolean.TYPE);
-         var4.invoke(var2, Boolean.TRUE);
-      } catch (Throwable var5) {
-         ;
-      }
-
-   }
-
    native void i(long var1, long var3, int var5, int var6, int var7, int var8, int var9, int var10, int var11, boolean[][] var12);
-
-   native void bv(long var1, long var3, int var5, int var6, int var7, int var8, int var9, int var10, int var11, boolean[][] var12);
 
    native void ha(long var1, class848 var3, int var4, int var5);
 
@@ -89,36 +70,12 @@ public class class93 implements class297 {
 
    native void K(long var1, class848 var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10);
 
-   native void c(long var1, class848 var3, int var4, int var5);
-
-   native void m(long var1, class848 var3, int var4, int var5);
-
-   native void w(long var1, class848 var3, int var4, int var5);
-
-   native void j(long var1, boolean var3);
-
    void method517() {
       this.field581 = Thread.currentThread();
       this.method511();
    }
 
-   native void ak(long var1);
-
    native void wa(long var1, long var3, float[] var5, int[] var6, int var7);
-
-   native void ao(long var1, class848 var3, int[] var4, int[] var5, int[] var6, short[] var7, int var8);
-
-   native void ad(long var1, class848 var3, int[] var4, int[] var5, int[] var6, short[] var7, int var8);
-
-   native void av(long var1, class848 var3, int[] var4, int[] var5, int[] var6, short[] var7, int var8);
-
-   native void at(long var1, class848 var3, int[] var4, int[] var5, int[] var6, short[] var7, int var8);
-
-   native void ah(long var1, class848 var3, int[] var4, int[] var5, int[] var6, short[] var7, int var8);
-
-   native void bp(long var1, long var3, int var5, int var6, int var7, int var8, int var9, int var10, int var11, boolean[][] var12);
-
-   native void ap(long var1, class848 var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10);
 
    class93(class955 var1, int var2, int var3) {
       this.field582 = var1;
@@ -132,20 +89,10 @@ public class class93 implements class297 {
       this.ha(this.field583, var1, var2, var3);
    }
 
-   native void ab(long var1, long var3, long var5, int var7, int var8, int var9, boolean var10);
-
-   native void aj(long var1, long var3, long var5, int var7, int var8, int var9, boolean var10);
-
    boolean method518(class879 var1, int var2, int var3, class135 var4, boolean var5) {
       this.field586.method272(var4);
       return this.ya(this.field583, ((class171)var1).field5094, var2, var3, this.field586.field325, var5);
    }
-
-   native void au(long var1, long var3, float[] var5, int[] var6, int var7);
-
-   native void ar(long var1, long var3, float[] var5, int[] var6, int var7);
-
-   native void ac(long var1, long var3, float[] var5, int[] var6, int var7);
 
    native void J(long var1, long var3, int[] var5, float[] var6);
 
@@ -153,27 +100,9 @@ public class class93 implements class297 {
       this.P(this.field583, ((class171)var1).field5094, ((class171)var2).field5094, var3, var4, var5, var6);
    }
 
-   native void as(long var1, class848 var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10);
-
-   native void o(long var1, boolean var3);
-
-   native void bo(long var1, long var3, int[] var5, float[] var6);
-
-   native void bb(long var1, long var3, int[] var5, float[] var6);
-
-   native boolean bf(long var1, long var3, int var5, int var6, float[] var7, boolean var8);
-
-   native boolean bd(long var1, long var3, int var5, int var6, float[] var7, boolean var8);
-
    native void R(long var1, boolean var3);
 
    void method520(class848 var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
       this.K(this.field583, var1, var2, var3, var4, var5, var6, var7, var8);
    }
-
-   public void method6551(boolean var1) {
-      this.R(this.field583, var1);
-   }
-
-   native void bh(long var1, long var3, int var5, int var6, int var7, int var8, int var9, int var10, int var11, boolean[][] var12);
 }

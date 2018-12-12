@@ -30,19 +30,19 @@ public class class568 {
 
    static final void method547(class744 var0, int var1) {
       try {
-         var0.field3156 -= -783761378;
-         class800 var2 = class540.field3930.method2319(var0.field3161[681479919 * var0.field3156], 894186762);
-         int var3 = var0.field3161[681479919 * var0.field3156 + 1];
+         var0.field3156 -= 2;
+         class800 var2 = class540.field3930.method2319(var0.field3161[var0.field3156], 894186762);
+         int var3 = var0.field3161[var0.field3156 + 1];
          int var4 = -1;
 
-         for(int var5 = 0; var5 < -408056823 * var2.field4580; ++var5) {
+         for(int var5 = 0; var5 < var2.field4580; ++var5) {
             if (var3 == var2.field4576[var5]) {
                var4 = var2.field4578[var5];
                break;
             }
          }
 
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var4;
+         var0.field3161[++var0.field3156 - 1] = var4;
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "mk.tu(" + ')');
       }
@@ -53,7 +53,7 @@ public class class568 {
 
    static final void method549(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9135.method5225((byte)23);
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9135.method5225((byte)23);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "mk.ajm(" + ')');
       }
@@ -68,7 +68,7 @@ public class class568 {
             byte[] var3 = class526.field3664.method3285(0, var0, (byte)-64);
             var2 = new class526();
             if (var3 != null) {
-               var2.method2222(new class907(var3), var0, (byte)-27);
+               var2.method2222(new InputStream(var3), var0, (byte)-27);
             }
 
             class526.field3657.method2984(var2, (long)var0);

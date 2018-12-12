@@ -19,24 +19,24 @@ public class class209 implements Runnable {
                   throw new IOException(this.field7109.toString());
                } else {
                   int var6;
-                  if (825739053 * this.field7105 <= 517453779 * this.field7108) {
-                     var6 = this.field7105 * 825739053 + (75932039 * this.field7107 - this.field7108 * 517453779) - 1;
+                  if (this.field7105 <= this.field7108) {
+                     var6 = this.field7105 + (this.field7107 - this.field7108) - 1;
                   } else {
-                     var6 = 825739053 * this.field7105 - this.field7108 * 517453779 - 1;
+                     var6 = this.field7105 - this.field7108 - 1;
                   }
 
                   if (var6 < var3) {
                      throw new IOException("");
                   } else {
-                     if (this.field7108 * 517453779 + var3 <= 75932039 * this.field7107) {
-                        System.arraycopy(var1, var2, this.field7106, 517453779 * this.field7108, var3);
+                     if (this.field7108 + var3 <= this.field7107) {
+                        System.arraycopy(var1, var2, this.field7106, this.field7108, var3);
                      } else {
-                        int var7 = this.field7107 * 75932039 - this.field7108 * 517453779;
-                        System.arraycopy(var1, var2, this.field7106, this.field7108 * 517453779, var7);
+                        int var7 = this.field7107 - this.field7108;
+                        System.arraycopy(var1, var2, this.field7106, this.field7108, var7);
                         System.arraycopy(var1, var7 + var2, this.field7106, 0, var3 - var7);
                      }
 
-                     this.field7108 = (var3 + 517453779 * this.field7108) % (75932039 * this.field7107) * -255412133;
+                     this.field7108 = (var3 + this.field7108) % this.field7107;
                      this.notifyAll();
                   }
                }
@@ -108,10 +108,10 @@ public class class209 implements Runnable {
                      return;
                   }
 
-                  if (825739053 * this.field7105 <= 517453779 * this.field7108) {
-                     var2 = this.field7108 * 517453779 - 825739053 * this.field7105;
+                  if (this.field7105 <= this.field7108) {
+                     var2 = this.field7108 - this.field7105;
                   } else {
-                     var2 = this.field7108 * 517453779 + (75932039 * this.field7107 - 825739053 * this.field7105);
+                     var2 = this.field7108 + (this.field7107 - this.field7105);
                   }
 
                   if (var2 > 0) {
@@ -138,11 +138,11 @@ public class class209 implements Runnable {
             }
 
             try {
-               if (var2 + this.field7105 * 825739053 <= 75932039 * this.field7107) {
-                  this.field7104.write(this.field7106, this.field7105 * 825739053, var2);
+               if (var2 + this.field7105 <= this.field7107) {
+                  this.field7104.write(this.field7106, this.field7105, var2);
                } else {
-                  int var11 = 75932039 * this.field7107 - this.field7105 * 825739053;
-                  this.field7104.write(this.field7106, this.field7105 * 825739053, var11);
+                  int var11 = this.field7107 - this.field7105;
+                  this.field7104.write(this.field7106, this.field7105, var11);
                   this.field7104.write(this.field7106, 0, var2 - var11);
                }
             } catch (IOException var8) {
@@ -154,7 +154,7 @@ public class class209 implements Runnable {
             }
 
             synchronized(this) {
-               this.field7105 = (825739053 * this.field7105 + var2) % (this.field7107 * 75932039) * 1059266725;
+               this.field7105 = (this.field7105 + var2) % this.field7107;
             }
          } while(!this.method3768(-1331950055));
 
@@ -165,8 +165,8 @@ public class class209 implements Runnable {
 
    class209(OutputStream var1, int var2) {
       this.field7104 = var1;
-      this.field7107 = (var2 + 1) * 370496567;
-      this.field7106 = new byte[this.field7107 * 75932039];
+      this.field7107 = var2 + 1;
+      this.field7106 = new byte[this.field7107];
       this.field7103 = new Thread(this);
       this.field7103.setDaemon(true);
       this.field7103.start();
@@ -174,7 +174,7 @@ public class class209 implements Runnable {
 
    static final void method3771(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class923.field10295.field3385 * 696798311;
+         var0.field3161[++var0.field3156 - 1] = class923.local.field3385;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "nt.ue(" + ')');
       }
@@ -182,7 +182,7 @@ public class class209 implements Runnable {
 
    static final void method3772(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class747.method2613(var2, 2048910777);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "nt.ahi(" + ')');
@@ -191,7 +191,7 @@ public class class209 implements Runnable {
 
    static final void method3773(class744 var0, int var1) {
       try {
-         var0.field3152[var0.field3174[var0.field3176 * 1883543357]] = var0.field3168[(var0.field3162 -= -682569305) * 1685767703];
+         var0.field3152[var0.field3174[var0.field3176]] = var0.field3168[--var0.field3162];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "nt.bm(" + ')');
       }
@@ -229,11 +229,11 @@ public class class209 implements Runnable {
             var12 = 1 + var12 & 4095;
             int var18 = var5 - var9;
             int var19 = var6 - var10;
-            int var14 = var5 - 1487776559 * var3.field8179;
-            int var15 = var6 - 1415525851 * var3.field8180;
+            int var14 = var5 - var3.field8179;
+            int var15 = var6 - var3.field8180;
             if (var2.method415(1, var5, var6, var3, -16711936)) {
-               class56.field2316 = var5 * 1021042197;
-               class78.field1500 = -575994451 * var6;
+               class56.field2316 = var5;
+               class78.field1500 = var6;
                return true;
             }
 
@@ -303,8 +303,8 @@ public class class209 implements Runnable {
             }
          }
 
-         class56.field2316 = 1021042197 * var5;
-         class78.field1500 = -575994451 * var6;
+         class56.field2316 = var5;
+         class78.field1500 = var6;
          return false;
       } catch (RuntimeException var17) {
          throw class158.method3445(var17, "nt.f(" + ')');

@@ -35,7 +35,7 @@ public class class29 extends class568 {
    int field6550;
 
    void method3505(byte[] var1) {
-      class907 var2 = new class907(var1);
+      InputStream var2 = new InputStream(var1);
       this.field6518 = var2.method6420((byte)55);
       this.field6535 = var2.method6420((byte)18);
       this.field6520 = var2.method6420((byte)-10);

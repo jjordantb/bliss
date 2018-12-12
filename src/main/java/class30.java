@@ -15,16 +15,11 @@ public class class30 extends class9 {
 
    void method2999(int var1, int var2) {
       if (this.field5281) {
-         this.field4965.method3638(1);
-         this.field4965.method3639(this.field5274[var1 - 1]);
-         this.field4965.method3638(0);
+         super.field4965.method3638(1);
+         super.field4965.method3639(this.field5274[var1 - 1]);
+         super.field4965.method3638(0);
       }
 
-   }
-
-   void method3015(class203 var1, int var2) {
-      this.field4965.method3639(var1);
-      this.field4965.method3626(var2);
    }
 
    boolean method2997() {
@@ -34,24 +29,15 @@ public class class30 extends class9 {
    void method3001(boolean var1) {
       if (this.field5278 != null && var1) {
          if (!this.field5279) {
-            this.field4965.method3638(2);
-            this.field4965.method3639(this.field4965.field6827);
-            this.field4965.method3638(0);
+            super.field4965.method3638(2);
+            super.field4965.method3639(super.field4965.field6827);
+            super.field4965.method3638(0);
          }
 
          this.field5278.method3055('\u0000');
          this.field5281 = true;
       } else {
-         this.field4965.method3669(0, 34168, 770);
-      }
-
-   }
-
-   void method3011(int var1, int var2) {
-      if (this.field5281) {
-         this.field4965.method3638(1);
-         this.field4965.method3639(this.field5274[var1 - 1]);
-         this.field4965.method3638(0);
+         super.field4965.method3669(0, 34168, 770);
       }
 
    }
@@ -59,112 +45,25 @@ public class class30 extends class9 {
    void method3000() {
       if (this.field5281) {
          if (!this.field5279) {
-            this.field4965.method3638(2);
-            this.field4965.method3639((class203)null);
+            super.field4965.method3638(2);
+            super.field4965.method3639((class203)null);
          }
 
-         this.field4965.method3638(1);
-         this.field4965.method3639((class203)null);
-         this.field4965.method3638(0);
+         super.field4965.method3638(1);
+         super.field4965.method3639((class203)null);
+         super.field4965.method3638(0);
          this.field5278.method3055('\u0001');
          this.field5281 = false;
       } else {
-         this.field4965.method3669(0, 5890, 770);
+         super.field4965.method3669(0, 5890, 770);
       }
 
-      this.field4965.method3641(8448, 8448);
-   }
-
-   void method3002(boolean var1) {
-      if (this.field5278 != null && var1) {
-         if (!this.field5279) {
-            this.field4965.method3638(2);
-            this.field4965.method3639(this.field4965.field6827);
-            this.field4965.method3638(0);
-         }
-
-         this.field5278.method3055('\u0000');
-         this.field5281 = true;
-      } else {
-         this.field4965.method3669(0, 34168, 770);
-      }
-
+      super.field4965.method3641(8448, 8448);
    }
 
    void method2996(class203 var1, int var2) {
-      this.field4965.method3639(var1);
-      this.field4965.method3626(var2);
-   }
-
-   void method3010(class203 var1, int var2) {
-      this.field4965.method3639(var1);
-      this.field4965.method3626(var2);
-   }
-
-   void method3003(boolean var1) {
-      if (this.field5278 != null && var1) {
-         if (!this.field5279) {
-            this.field4965.method3638(2);
-            this.field4965.method3639(this.field4965.field6827);
-            this.field4965.method3638(0);
-         }
-
-         this.field5278.method3055('\u0000');
-         this.field5281 = true;
-      } else {
-         this.field4965.method3669(0, 34168, 770);
-      }
-
-   }
-
-   void method3004(boolean var1) {
-      this.field4965.method3641(8448, 7681);
-   }
-
-   void method3005(boolean var1) {
-      this.field4965.method3641(8448, 7681);
-   }
-
-   void method3006(boolean var1) {
-      this.field4965.method3641(8448, 7681);
-   }
-
-   void method3007() {
-      if (this.field5281) {
-         if (!this.field5279) {
-            this.field4965.method3638(2);
-            this.field4965.method3639((class203)null);
-         }
-
-         this.field4965.method3638(1);
-         this.field4965.method3639((class203)null);
-         this.field4965.method3638(0);
-         this.field5278.method3055('\u0001');
-         this.field5281 = false;
-      } else {
-         this.field4965.method3669(0, 5890, 770);
-      }
-
-      this.field4965.method3641(8448, 8448);
-   }
-
-   void method3008() {
-      if (this.field5281) {
-         if (!this.field5279) {
-            this.field4965.method3638(2);
-            this.field4965.method3639((class203)null);
-         }
-
-         this.field4965.method3638(1);
-         this.field4965.method3639((class203)null);
-         this.field4965.method3638(0);
-         this.field5278.method3055('\u0001');
-         this.field5281 = false;
-      } else {
-         this.field4965.method3669(0, 5890, 770);
-      }
-
-      this.field4965.method3641(8448, 8448);
+      super.field4965.method3639(var1);
+      super.field4965.method3626(var2);
    }
 
    class30(class13 var1) {
@@ -224,31 +123,22 @@ public class class30 extends class9 {
          }
 
          this.field5274 = new class169[3];
-         this.field5274[0] = new class169(this.field4965, class264.field8201, class482.field8399, 64, false, var4, class264.field8201);
-         this.field5274[1] = new class169(this.field4965, class264.field8201, class482.field8399, 64, false, var5, class264.field8201);
-         this.field5274[2] = new class169(this.field4965, class264.field8201, class482.field8399, 64, false, var3, class264.field8201);
+         this.field5274[0] = new class169(super.field4965, class264.field8201, class482.field8399, 64, false, var4, class264.field8201);
+         this.field5274[1] = new class169(super.field4965, class264.field8201, class482.field8399, 64, false, var5, class264.field8201);
+         this.field5274[2] = new class169(super.field4965, class264.field8201, class482.field8399, 64, false, var3, class264.field8201);
          this.method3253();
       }
 
    }
 
-   void method3009(int var1, int var2) {
-      if (this.field5281) {
-         this.field4965.method3638(1);
-         this.field4965.method3639(this.field5274[var1 - 1]);
-         this.field4965.method3638(0);
-      }
-
-   }
-
    void method3014(boolean var1) {
-      this.field4965.method3641(8448, 7681);
+      super.field4965.method3641(8448, 7681);
    }
 
    void method3253() {
-      this.field5278 = new class41(this.field4965, 2);
+      this.field5278 = new class41(super.field4965, 2);
       this.field5278.method3056(0);
-      this.field4965.method3638(1);
+      super.field4965.method3638(1);
       OpenGL.glTexGeni(8192, 9472, 34065);
       OpenGL.glTexGeni(8193, 9472, 34065);
       OpenGL.glTexGeni(8194, 9472, 34065);
@@ -260,23 +150,23 @@ public class class30 extends class9 {
       OpenGL.glRotatef(22.5F, 1.0F, 0.0F, 0.0F);
       OpenGL.glMatrixMode(5888);
       if (!this.field5279) {
-         this.field4965.method3641(7681, 8448);
-         this.field4965.method3642(0, 34168, 768);
-         this.field4965.method3638(2);
-         this.field4965.method3641(260, 7681);
-         this.field4965.method3642(0, 34168, 768);
-         this.field4965.method3642(1, 34168, 770);
-         this.field4965.method3669(0, 34167, 770);
+         super.field4965.method3641(7681, 8448);
+         super.field4965.method3642(0, 34168, 768);
+         super.field4965.method3638(2);
+         super.field4965.method3641(260, 7681);
+         super.field4965.method3642(0, 34168, 768);
+         super.field4965.method3642(1, 34168, 770);
+         super.field4965.method3669(0, 34167, 770);
       } else {
-         this.field4965.method3641(260, 7681);
-         this.field4965.method3642(0, 5890, 770);
-         this.field4965.method3669(0, 34167, 770);
+         super.field4965.method3641(260, 7681);
+         super.field4965.method3642(0, 5890, 770);
+         super.field4965.method3669(0, 34167, 770);
       }
 
-      this.field4965.method3638(0);
+      super.field4965.method3638(0);
       this.field5278.method3054();
       this.field5278.method3056(1);
-      this.field4965.method3638(1);
+      super.field4965.method3638(1);
       OpenGL.glDisable(3168);
       OpenGL.glDisable(3169);
       OpenGL.glDisable(3170);
@@ -284,51 +174,20 @@ public class class30 extends class9 {
       OpenGL.glLoadIdentity();
       OpenGL.glMatrixMode(5888);
       if (!this.field5279) {
-         this.field4965.method3641(8448, 8448);
-         this.field4965.method3642(0, 5890, 768);
-         this.field4965.method3638(2);
-         this.field4965.method3641(8448, 8448);
-         this.field4965.method3642(0, 5890, 768);
-         this.field4965.method3642(1, 34168, 768);
-         this.field4965.method3669(0, 5890, 770);
+         super.field4965.method3641(8448, 8448);
+         super.field4965.method3642(0, 5890, 768);
+         super.field4965.method3638(2);
+         super.field4965.method3641(8448, 8448);
+         super.field4965.method3642(0, 5890, 768);
+         super.field4965.method3642(1, 34168, 768);
+         super.field4965.method3669(0, 5890, 770);
       } else {
-         this.field4965.method3641(8448, 8448);
-         this.field4965.method3642(0, 5890, 768);
-         this.field4965.method3669(0, 5890, 770);
+         super.field4965.method3641(8448, 8448);
+         super.field4965.method3642(0, 5890, 768);
+         super.field4965.method3669(0, 5890, 770);
       }
 
-      this.field4965.method3638(0);
+      super.field4965.method3638(0);
       this.field5278.method3054();
-   }
-
-   void method3013(int var1, int var2) {
-      if (this.field5281) {
-         this.field4965.method3638(1);
-         this.field4965.method3639(this.field5274[var1 - 1]);
-         this.field4965.method3638(0);
-      }
-
-   }
-
-   void method3012(int var1, int var2) {
-      if (this.field5281) {
-         this.field4965.method3638(1);
-         this.field4965.method3639(this.field5274[var1 - 1]);
-         this.field4965.method3638(0);
-      }
-
-   }
-
-   void method2998(int var1, int var2) {
-      if (this.field5281) {
-         this.field4965.method3638(1);
-         this.field4965.method3639(this.field5274[var1 - 1]);
-         this.field4965.method3638(0);
-      }
-
-   }
-
-   boolean method3016() {
-      return true;
    }
 }

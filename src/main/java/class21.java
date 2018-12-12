@@ -15,27 +15,23 @@ public class class21 implements class331 {
       field5426 = new class21(7, -1, "", "", true, new class21[]{field5427, field5420, field5424, field5423, field5422});
    }
 
-   public int method91() {
-      return 1711922743 * this.field5428;
-   }
-
    class21(int var1, int var2, String var3, String var4, boolean var5, class21[] var6) {
-      this.field5421 = 1902085065 * var1;
-      this.field5428 = -2023606393 * var2;
+      this.field5421 = var1;
+      this.field5428 = var2;
       this.field5429 = var4;
    }
 
    public int method89(int var1) {
       try {
-         return 1711922743 * this.field5428;
+         return this.field5428;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "vg.f(" + ')');
       }
    }
 
    class21(int var1, int var2, String var3, String var4) {
-      this.field5421 = var1 * 1902085065;
-      this.field5428 = var2 * -2023606393;
+      this.field5421 = var1;
+      this.field5428 = var2;
       this.field5429 = var4;
    }
 
@@ -47,15 +43,11 @@ public class class21 implements class331 {
       }
    }
 
-   public int method90() {
-      return 1711922743 * this.field5428;
-   }
-
    static final void method3415(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3.field880 * -749038817;
+         var0.field3161[++var0.field3156 - 1] = var3.field880;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "vg.oh(" + ')');
       }

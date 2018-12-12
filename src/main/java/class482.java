@@ -12,20 +12,20 @@ public class class482 {
    public int field8406;
 
    class482(int var1, int var2) {
-      this.field8405 = var1 * 115261893;
-      this.field8406 = -2085880873 * var2;
+      this.field8405 = var1;
+      this.field8406 = var2;
    }
 
    static final void method4717(class744 var0, int var1) {
       try {
          String var2;
-         if (class923.field10295 != null && class923.field10295.field3379 != null) {
-            var2 = class923.field10295.method1998(false, (byte)-122);
+         if (class923.local != null && class923.local.field3379 != null) {
+            var2 = class923.local.method1998(false, (byte)-122);
          } else {
             var2 = "";
          }
 
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var2;
+         var0.field3157[++var0.field3158 - 1] = var2;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "dc.acq(" + ')');
       }
@@ -115,11 +115,11 @@ public class class482 {
             if (class382.field1410[var3] != null && class382.field1410[var3].field1103[var4] != null) {
                class564 var5 = class382.field1410[var3].field1103[var4];
                class357 var6;
-               if (var1 == -1 && var5.field869 * -1215239439 == 0) {
+               if (var1 == -1 && var5.field869 == 0) {
                   for(var6 = (class357)class602.field8647.method901(1766612795); var6 != null; var6 = (class357)class602.field8647.method906(49146)) {
-                     if (58 == 946432351 * var6.field1702 || 1007 == 946432351 * var6.field1702 || 946432351 * var6.field1702 == 25 || 946432351 * var6.field1702 == 57 || 30 == var6.field1702 * 946432351) {
-                        for(class564 var7 = class449.method3756(var6.field1703 * -502720623, (byte)-39); var7 != null; var7 = class317.method471(class382.field1410[var7.field867 * -440872681 >> 16], var7, -1653818376)) {
-                           if (-440872681 * var7.field867 == -440872681 * var5.field867) {
+                     if (58 == var6.field1702 || 1007 == var6.field1702 || var6.field1702 == 25 || var6.field1702 == 57 || 30 == var6.field1702) {
+                        for(class564 var7 = class449.method3756(var6.field1703, (byte)-39); var7 != null; var7 = class317.method471(class382.field1410[var7.field867 >> 16], var7, -1653818376)) {
+                           if (var7.field867 == var5.field867) {
                               return true;
                            }
                         }
@@ -127,7 +127,7 @@ public class class482 {
                   }
                } else {
                   for(var6 = (class357)class602.field8647.method901(1766612795); var6 != null; var6 = (class357)class602.field8647.method906(49146)) {
-                     if (-887503319 * var6.field1698 == var1 && -440872681 * var5.field867 == var6.field1703 * -502720623 && (946432351 * var6.field1702 == 58 || 946432351 * var6.field1702 == 1007 || 946432351 * var6.field1702 == 25 || 57 == var6.field1702 * 946432351 || 946432351 * var6.field1702 == 30)) {
+                     if (var6.field1698 == var1 && var5.field867 == var6.field1703 && (var6.field1702 == 58 || var6.field1702 == 1007 || var6.field1702 == 25 || 57 == var6.field1702 || var6.field1702 == 30)) {
                         return true;
                      }
                   }
@@ -145,9 +145,9 @@ public class class482 {
 
    static void method4720(int var0, short var1) {
       try {
-         class896.field9358 = var0 * -2076584633;
-         class740.field3206 = 433609607;
-         class740.field3201 = 789877945;
+         class896.field9358 = var0;
+         class740.field3206 = -1;
+         class740.field3201 = -1;
          class640.method6191(65536);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "dc.cj(" + ')');

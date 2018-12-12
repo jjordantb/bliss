@@ -70,12 +70,12 @@ public class class769 {
       class924.method6257(var4, var5, 2, (byte)2);
    }
 
-   public class160 method2256(int var1, byte var2) {
+   public Animation method2256(int var1, byte var2) {
       try {
          class1 var3 = this.field3694;
-         class160 var4;
+         Animation var4;
          synchronized(this.field3694) {
-            var4 = (class160)this.field3694.method2974((long)var1);
+            var4 = (Animation)this.field3694.method2974((long)var1);
          }
 
          if (var4 != null) {
@@ -87,11 +87,11 @@ public class class769 {
                var10 = this.field3691.method3285(class981.field3220.method1927(var1, 180156567), class981.field3220.method1925(var1, -1217474734), (byte)-6);
             }
 
-            var4 = new class160();
-            var4.field6655 = var1 * -523719415;
+            var4 = new Animation();
+            var4.id = var1;
             var4.field6654 = this;
             if (var10 != null) {
-               var4.method3563(new class907(var10), -795902444);
+               var4.method3563(new InputStream(var10), -795902444);
             }
 
             var4.method3560((byte)-46);
@@ -125,14 +125,14 @@ public class class769 {
 
    static final void method2258(class744 var0, int var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
-         int var3 = var0.field3161[1 + 681479919 * var0.field3156];
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
          class785 var4 = class452.field7216.method5148(var3, -1755093541);
          if (var4.method2380(1883696427)) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class85.field1121.method1566(var2).method2687(var3, var4.field3823, (short)26472);
+            var0.field3157[++var0.field3158 - 1] = class85.field1121.method1566(var2).method2687(var3, var4.field3823, (short)26472);
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class85.field1121.method1566(var2).method2683(var3, var4.field3822 * -388931549, -2143571113);
+            var0.field3161[++var0.field3156 - 1] = class85.field1121.method1566(var2).method2683(var3, var4.field3822, -2143571113);
          }
 
       } catch (RuntimeException var5) {
@@ -142,10 +142,10 @@ public class class769 {
 
    static final void method2259(class744 var0, int var1) {
       try {
-         var0.field3156 -= -1175642067;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
-         int var3 = var0.field3161[1 + var0.field3156 * 681479919];
-         int var4 = var0.field3161[var0.field3156 * 681479919 + 2];
+         var0.field3156 -= 3;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
+         int var4 = var0.field3161[var0.field3156 + 2];
          class740.method1920(10, var2 << 16 | var3, var4, "", -1433549098);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "qj.alu(" + ')');

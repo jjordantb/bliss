@@ -5,16 +5,16 @@ public class class800 extends class345 {
    public int field4579 = 0;
    public int field4580 = 0;
 
-   void method2881(class907 var1, int var2, byte var3) {
+   void method2881(InputStream var1, int var2, byte var3) {
       try {
          if (2 == var2) {
-            this.field4579 = var1.method6374() * -1816799395;
+            this.field4579 = var1.method6374();
          } else if (4 == var2) {
-            this.field4580 = var1.method6371() * 2106966585;
-            this.field4576 = new int[-408056823 * this.field4580];
-            this.field4578 = new int[-408056823 * this.field4580];
+            this.field4580 = var1.method6371();
+            this.field4576 = new int[this.field4580];
+            this.field4578 = new int[this.field4580];
 
-            for(int var4 = 0; var4 < this.field4580 * -408056823; ++var4) {
+            for(int var4 = 0; var4 < this.field4580; ++var4) {
                this.field4576[var4] = var1.method6374();
                this.field4578[var4] = var1.method6374();
             }
@@ -25,7 +25,7 @@ public class class800 extends class345 {
       }
    }
 
-   void method2882(class907 var1, byte var2) {
+   void method2882(InputStream var1, byte var2) {
       try {
          while(true) {
             int var3 = var1.method6371();

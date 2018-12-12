@@ -7,10 +7,10 @@ public class class881 {
    static int field10140;
    static int field10141 = 186;
    static boolean field10142 = false;
-   public static int field10143 = -988354658;
+   public static int field10143 = -2;
    static int field10144 = 176;
-   static int field10145 = -2035975497;
-   static long field10146 = 2742373017286080113L;
+   static int field10145 = -1;
+   static long field10146 = -1L;
    static int field10147 = 193;
    static int field10148 = 1;
    static int field10149 = 12;
@@ -24,15 +24,15 @@ public class class881 {
    static int field10157 = 100;
    static boolean field10158 = false;
    static int field10159 = 125;
-   public static int field10160 = 599892555;
+   public static int field10160 = -1;
    static int[] field10161;
    static int field10162 = 158;
    static int field10163 = 163;
-   public static int field10164 = -946395782;
+   public static int field10164 = -2;
    static int field10165 = 117;
-   public static int field10166 = -1908115170;
+   public static int field10166 = -2;
    static int field10167 = 203;
-   static int field10168 = -395862839;
+   static int field10168 = 1;
    static int field10169 = 137;
    static String field10170 = "";
    static String field10171 = "";
@@ -42,11 +42,11 @@ public class class881 {
    static int field10175 = 4;
    static int field10176 = 0;
    static class684 field10177;
-   public static int field10178 = 930150939;
+   public static int field10178 = -1;
    static int field10179 = 148;
    public static int field10180 = 0;
-   public static int field10181 = -1719895145;
-   public static int field10182 = -1200969765;
+   public static int field10181 = -1;
+   public static int field10182 = -1;
    static long field10183 = 0L;
    static boolean field10184 = false;
 
@@ -56,9 +56,9 @@ public class class881 {
 
    static final void method6168(class744 var0, int var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[1 + var0.field3156 * 681479919];
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
          class237 var4;
          if (var0.field3178) {
             var4 = var0.field3164;
@@ -66,7 +66,7 @@ public class class881 {
             var4 = var0.field3163;
          }
 
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3 != -1 && var4.method4649(var2, var3, -574024132) ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = var3 != -1 && var4.method4649(var2, var3, -574024132) ? 1 : 0;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "p.br(" + ')');
       }
@@ -74,7 +74,7 @@ public class class881 {
 
    static final void method6169(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)52);
          class131 var4 = class382.field1410[var2 >> 16];
          class75.method1118(var3, var4, false, 2, var0, -1533080700);
@@ -114,7 +114,7 @@ public class class881 {
 
                   if (var2 != null && class837.field9161.isShowing() && class619.field8869) {
                      var3.method198(var2, 1682820280);
-                     if (!var3.method197(725072729) && var3.method6667((byte)16) < -2110394505 * class759.field4331 && var3.method6680(-1530423246) < -1111710645 * class97.field614 && var3.method6667((byte)15) >= 0 && var3.method6680(-1205687296) >= 0) {
+                     if (!var3.method197(725072729) && var3.method6667((byte)16) < class759.field4331 && var3.method6680(-1530423246) < class97.field614 && var3.method6667((byte)15) >= 0 && var3.method6680(-1205687296) >= 0) {
                         int var4 = var3.method6666(-1372966703);
                         if (var3.method6666(-1372966703) == -1) {
                            class978.field3124.method3584(var3, 2114184639);

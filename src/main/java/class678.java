@@ -23,13 +23,13 @@ public class class678 extends class203 {
          var8 = var11;
       }
 
-      this.field7571.method3639(this);
+      super.field7571.method3639(this);
       OpenGL.glPixelStorei(3317, 1);
-      if (var7 && this.field7562 != 34037) {
-         method4291(var2, class13.method3657(this.field7567, this.field7568), var5, var6, var9, var8);
+      if (var7 && super.field7562 != 34037) {
+         method4291(var2, class13.method3657(super.field7567, super.field7568), var5, var6, var9, var8);
          this.method4293(true);
       } else {
-         OpenGL.glTexImage2Dub(this.field7562, 0, class13.method3657(this.field7567, this.field7568), this.field7457, this.field7458, 0, class13.method3611(var9), 5121, var8, 0);
+         OpenGL.glTexImage2Dub(super.field7562, 0, class13.method3657(super.field7567, super.field7568), this.field7457, this.field7458, 0, class13.method3611(var9), 5121, var8, 0);
          this.method4293(false);
       }
 
@@ -56,13 +56,13 @@ public class class678 extends class203 {
          var6 = var10;
       }
 
-      this.field7571.method3639(this);
-      if (this.field7562 != 34037 && var5 && var7 == 0 && var8 == 0) {
-         method4290(this.field7562, class13.method3657(this.field7567, this.field7568), this.field7457, this.field7458, 32993, this.field7571.field6873, var6);
+      super.field7571.method3639(this);
+      if (super.field7562 != 34037 && var5 && var7 == 0 && var8 == 0) {
+         method4290(super.field7562, class13.method3657(super.field7567, super.field7568), this.field7457, this.field7458, 32993, super.field7571.field6873, var6);
          this.method4293(true);
       } else {
          OpenGL.glPixelStorei(3314, var7);
-         OpenGL.glTexImage2Di(this.field7562, 0, class13.method3657(this.field7567, this.field7568), this.field7457, this.field7458, 0, 32993, this.field7571.field6873, var6, var8 * 4);
+         OpenGL.glTexImage2Di(super.field7562, 0, class13.method3657(super.field7567, super.field7568), this.field7457, this.field7458, 0, 32993, super.field7571.field6873, var6, var8 * 4);
          OpenGL.glPixelStorei(3314, 0);
          this.method4293(false);
       }
@@ -71,11 +71,11 @@ public class class678 extends class203 {
    }
 
    void method4211(int var1, int var2, int var3, int var4, int var5, int var6) {
-      class783 var7 = this.field7571.method4800((short)-5396);
+      class783 var7 = super.field7571.method4800((short)-5396);
       if (var7 != null) {
          int var8 = var7.method2493() - (var6 + var4);
-         this.field7571.method3639(this);
-         OpenGL.glCopyTexSubImage2D(this.field7562, 0, var1, this.field7458 - (var2 + var4), var5, var8, var3, var4);
+         super.field7571.method3639(this);
+         OpenGL.glCopyTexSubImage2D(super.field7562, 0, var1, this.field7458 - (var2 + var4), var5, var8, var3, var4);
          OpenGL.glFlush();
       }
 
@@ -85,12 +85,12 @@ public class class678 extends class203 {
       super(var1, var2, var3, var4, var5 * var6, var7);
       this.field7457 = var5;
       this.field7458 = var6;
-      this.field7571.method3639(this);
-      if (var7 && this.field7562 != 34037) {
-         method4294(var2, class13.method3657(this.field7567, this.field7568), var5, var6, var9, var8);
+      super.field7571.method3639(this);
+      if (var7 && super.field7562 != 34037) {
+         method4294(var2, class13.method3657(super.field7567, super.field7568), var5, var6, var9, var8);
          this.method4293(true);
       } else {
-         OpenGL.glTexImage2Df(this.field7562, 0, class13.method3657(this.field7567, this.field7568), this.field7457, this.field7458, 0, class13.method3611(var9), 5126, var8, 0);
+         OpenGL.glTexImage2Df(super.field7562, 0, class13.method3657(super.field7567, super.field7568), this.field7457, this.field7458, 0, class13.method3611(var9), 5126, var8, 0);
          this.method4293(false);
       }
 
@@ -98,10 +98,10 @@ public class class678 extends class203 {
    }
 
    void method4212(boolean var1, boolean var2) {
-      if (this.field7562 == 3553) {
-         this.field7571.method3639(this);
-         OpenGL.glTexParameteri(this.field7562, 10242, var1 ? 10497 : '脯');
-         OpenGL.glTexParameteri(this.field7562, 10243, var2 ? 10497 : '脯');
+      if (super.field7562 == 3553) {
+         super.field7571.method3639(this);
+         OpenGL.glTexParameteri(super.field7562, 10242, var1 ? 10497 : '脯');
+         OpenGL.glTexParameteri(super.field7562, 10243, var2 ? 10497 : '脯');
       }
 
    }
@@ -112,7 +112,7 @@ public class class678 extends class203 {
       }
 
       if (var9) {
-         int var10 = var6.field8190 * 845115459;
+         int var10 = var6.field8190;
          int var11 = var10 * var3;
          int var12 = var10 * var8;
          byte[] var13 = new byte[var11 * var4];
@@ -129,13 +129,13 @@ public class class678 extends class203 {
          var5 = var13;
       }
 
-      this.field7571.method3639(this);
+      super.field7571.method3639(this);
       OpenGL.glPixelStorei(3317, 1);
       if (var8 != var3) {
          OpenGL.glPixelStorei(3314, var8);
       }
 
-      OpenGL.glTexSubImage2Dub(this.field7562, 0, var1, this.field7458 - var2 - var4, var3, var4, class13.method3611(var6), 5121, var5, var7);
+      OpenGL.glTexSubImage2Dub(super.field7562, 0, var1, this.field7458 - var2 - var4, var3, var4, class13.method3611(var6), 5121, var5, var7);
       if (var8 != var3) {
          OpenGL.glPixelStorei(3314, 0);
       }
@@ -163,12 +163,12 @@ public class class678 extends class203 {
          var5 = var9;
       }
 
-      this.field7571.method3639(this);
+      super.field7571.method3639(this);
       if (var3 != var7) {
          OpenGL.glPixelStorei(3314, var7);
       }
 
-      OpenGL.glTexSubImage2Di(this.field7562, 0, var1, this.field7458 - var2 - var4, var3, var4, 32993, this.field7571.field6873, var5, var6);
+      OpenGL.glTexSubImage2Di(super.field7562, 0, var1, this.field7458 - var2 - var4, var3, var4, 32993, super.field7571.field6873, var5, var6);
       if (var3 != var7) {
          OpenGL.glPixelStorei(3314, 0);
       }
@@ -179,12 +179,12 @@ public class class678 extends class203 {
       super(var1, var2, class264.field8194, class482.field8399, var5 * var6, false);
       this.field7457 = var5;
       this.field7458 = var6;
-      this.field7571.method3639(this);
-      class783 var7 = this.field7571.method4800((short)-8855);
+      super.field7571.method3639(this);
+      class783 var7 = super.field7571.method4800((short)-8855);
       if (var7 != null) {
          int var8 = var7.method2493() - (var4 + var6);
-         int var9 = class13.method3657(this.field7567, this.field7568);
-         OpenGL.glCopyTexImage2D(this.field7562, 0, var9, var3, var8, var5, var6, 0);
+         int var9 = class13.method3657(super.field7567, super.field7568);
+         OpenGL.glCopyTexImage2D(super.field7562, 0, var9, var3, var8, var5, var6, 0);
       }
 
       this.method4289(true);
@@ -198,8 +198,8 @@ public class class678 extends class203 {
       super(var1, var2, var3, var4, var5 * var6, false);
       this.field7457 = var5;
       this.field7458 = var6;
-      this.field7571.method3639(this);
-      OpenGL.glTexImage2Dub(this.field7562, 0, class13.method3657(this.field7567, this.field7568), var5, var6, 0, class13.method3611(this.field7567), 5121, (byte[])null, 0);
+      super.field7571.method3639(this);
+      OpenGL.glTexImage2Dub(super.field7562, 0, class13.method3657(super.field7567, super.field7568), var5, var6, 0, class13.method3611(super.field7567), 5121, (byte[])null, 0);
       this.method4289(true);
    }
 

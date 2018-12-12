@@ -11,9 +11,9 @@ public class class528 {
    static final void method2241(class744 var0, byte var1) {
       try {
          if (class381.field1417.method1392(81, -841277867)) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1;
+            var0.field3161[++var0.field3156 - 1] = 1;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
+            var0.field3161[++var0.field3156 - 1] = 0;
          }
 
       } catch (RuntimeException var3) {
@@ -48,7 +48,7 @@ public class class528 {
 
    static final void method2243(class744 var0, int var1) {
       try {
-         class602.field8666 = var0.field3161[(var0.field3156 -= -391880689) * 681479919] * 985311877;
+         class602.field8666 = var0.field3161[--var0.field3156];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "lg.afn(" + ')');
       }
@@ -65,17 +65,17 @@ public class class528 {
             label81:
             for(int var5 = 0; var5 < var1.length; ++var5) {
                class125 var6 = var1[var5];
-               if (var6.field2326 * -1087459453 > 0 && -1087459453 * var6.field2326 < 24) {
+               if (var6.field2326 > 0 && var6.field2326 < 24) {
                   if (var0 == 0) {
                      throw new IllegalStateException();
                   }
-               } else if (var6.field2325 * 28445523 >= 800 && var6.field2327 * 262154323 >= 600) {
+               } else if (var6.field2325 >= 800 && var6.field2327 >= 600) {
                   if (var4 == 2) {
-                     if (var6.field2325 * 28445523 > 800) {
+                     if (var6.field2325 > 800) {
                         continue;
                      }
 
-                     if (var6.field2327 * 262154323 > 600) {
+                     if (var6.field2327 > 600) {
                         if (var0 == 0) {
                            throw new IllegalStateException();
                         }
@@ -83,11 +83,11 @@ public class class528 {
                      }
                   }
 
-                  if (1 != var4 || var6.field2325 * 28445523 <= 1024 && var6.field2327 * 262154323 <= 768) {
+                  if (1 != var4 || var6.field2325 <= 1024 && var6.field2327 <= 768) {
                      for(int var7 = 0; var7 < var3; ++var7) {
                         class125 var8 = var2[var7];
-                        if (var6.field2325 * 28445523 == 28445523 * var8.field2325 && 262154323 * var8.field2327 == 262154323 * var6.field2327) {
-                           if (-1087459453 * var6.field2326 > -1087459453 * var8.field2326) {
+                        if (var6.field2325 == var8.field2325 && var8.field2327 == var6.field2327) {
+                           if (var6.field2326 > var8.field2326) {
                               var2[var7] = var6;
                            }
                            continue label81;
@@ -106,7 +106,7 @@ public class class528 {
 
             for(int var11 = 0; var11 < class495.field8098.length; ++var11) {
                class125 var12 = class495.field8098[var11];
-               var10[var11] = 28445523 * var12.field2325 * 262154323 * var12.field2327;
+               var10[var11] = var12.field2325 * var12.field2327;
             }
 
             class564.method839(var10, class495.field8098, (byte)98);
@@ -137,8 +137,8 @@ public class class528 {
    static void method2246(int var0) {
       try {
          class95.field595 = 0;
-         class95.field601 = 1129029761;
-         class95.field593 = 1835291189;
+         class95.field601 = -1;
+         class95.field593 = -1;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "lg.f(" + ')');
       }

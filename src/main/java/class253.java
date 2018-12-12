@@ -8,23 +8,19 @@ public abstract class class253 {
 
    Socket method4477(int var1) throws IOException {
       try {
-         return new Socket(this.field7969, 98195689 * this.field7968);
+         return new Socket(this.field7969, this.field7968);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "tv.b(" + ')');
       }
    }
 
-   public abstract Socket method4478(int var1) throws IOException;
-
-   public abstract Socket method4479() throws IOException;
-
    static final void method4480(short var0) {
       try {
          class513 var1 = class730.field2692.field7768;
 
-         for(int var2 = 0; var2 < class730.field2789 * -976358333; ++var2) {
+         for(int var2 = 0; var2 < class730.field2789; ++var2) {
             int var3 = class730.field2687[var2];
-            class60 var4 = (class60)((class437)class730.field2677.method2942((long)var3)).field7515;
+            Npc var4 = (Npc)((class437)class730.field2677.method2942((long)var3)).field7515;
             int var5 = var1.method6371();
             if ((var5 & 2) != 0) {
                var5 += var1.method6371() << 8;
@@ -43,9 +39,9 @@ public abstract class class253 {
             }
 
             if ((var5 & 16) != 0) {
-               var4.field4054 = var1.method6403(1478539457) * 283914955;
-               if (65535 == var4.field4054 * 1433412323) {
-                  var4.field4054 = -283914955;
+               var4.field4054 = var1.method6403(1478539457);
+               if (65535 == var4.field4054) {
+                  var4.field4054 = -1;
                }
             }
 
@@ -54,13 +50,13 @@ public abstract class class253 {
                var4.field4072 = var1.method6399(-666954662);
                var4.field4073 = var1.method6398(-154305803);
                var4.field4094 = (byte)var1.method6395(-1014855659);
-               var4.field4069 = (class730.field2866 * 443738891 + var1.method6403(1478539457)) * 1828453179;
-               var4.field4070 = (class730.field2866 * 443738891 + var1.method6403(1478539457)) * -473408095;
+               var4.field4069 = class730.field2866 + var1.method6403(1478539457);
+               var4.field4070 = class730.field2866 + var1.method6403(1478539457);
             }
 
             if ((var5 & 128) != 0) {
-               var4.field1626 = var1.method6402(-1091754982) * 1312461425;
-               var4.field1627 = var1.method6403(1478539457) * 2139727009;
+               var4.field1626 = var1.method6402(-1091754982);
+               var4.field1627 = var1.method6403(1478539457);
             }
 
             int var7;
@@ -76,9 +72,9 @@ public abstract class class253 {
             }
 
             if ((var5 & 512) != 0) {
-               var4.field1631 = var1.method6401((byte)-68) * -312753929;
-               if (-1317338937 * var4.field1631 == 65535) {
-                  var4.field1631 = 312753929;
+               var4.field1631 = var1.method6401((byte)-68);
+               if (var4.field1631 == 65535) {
+                  var4.field1631 = -1;
                }
             }
 
@@ -132,7 +128,7 @@ public abstract class class253 {
 
                      var12 = var1.method6382(1723054621);
                      var13 = var1.method6395(-1014855659);
-                     var4.method2548(var11, var9, var19, var10, class730.field2866 * 443738891, var12, var13, (byte)6);
+                     var4.method2548(var11, var9, var19, var10, class730.field2866, var12, var13, (byte)6);
                   }
                }
             }
@@ -184,7 +180,7 @@ public abstract class class253 {
                      }
                   }
 
-                  var14 = (long)var3 | (long)((var4.field1629 += -230300471) * -156273287 - 1) << 32;
+                  var14 = (long)var3 | (long)(++var4.field1629 - 1) << 32;
                   var4.field1628 = new class692(var14, var20, var24, var22);
                }
             }
@@ -262,16 +258,16 @@ public abstract class class253 {
 
             if ((var5 & 1024) != 0) {
                var17 = var1.method6403(1478539457);
-               var4.field4052 = var1.method6371() * 918505277;
-               var4.field4060 = var1.method6397((byte)19) * -494980103;
+               var4.field4052 = var1.method6371();
+               var4.field4060 = var1.method6397((byte)19);
                var4.field4083 = (var17 & '耀') != 0;
-               var4.field4051 = (var17 & 32767) * -257621575;
-               var4.field4050 = var4.field4052 * 1195117671 + class730.field2866 * 1208636921 + -1132907677 * var4.field4051;
+               var4.field4051 = var17 & 32767;
+               var4.field4050 = (var4.field4052 * -1684503157 + class730.field2866 * -1684503157 + var4.field4051 * -1684503157) * -424347101;
             }
 
             if ((var5 & 1048576) != 0) {
                var4.field1634.method4031((byte)-105);
-               var17 = var1.field10375[(var1.field10376 += 116413311) * 385051775 - 1] & 255;
+               var17 = var1.field10375[++var1.field10376 - 1] & 255;
 
                for(var7 = 0; var7 < var17; ++var7) {
                   var19 = var1.method6374();
@@ -281,23 +277,23 @@ public abstract class class253 {
             }
 
             if ((var5 & 2048) != 0) {
-               var4.field4062 = var1.method6399(1984951178) * 1925713613;
-               var4.field4064 = var1.method6372(-12558881) * 516351707;
-               var4.field4063 = var1.method6398(736826018) * 1712047767;
-               var4.field4065 = var1.method6398(1643626542) * 2089924823;
-               var4.field4059 = (var1.method6401((byte)-54) + 443738891 * class730.field2866) * 996079737;
-               var4.field4067 = (var1.method6403(1478539457) + class730.field2866 * 443738891) * 1000906529;
-               var4.field4068 = var1.method6402(-1999232161) * 1386670945;
-               var4.field4062 += var4.field4085[0] * 1925713613;
-               var4.field4064 += var4.field4055[0] * 516351707;
-               var4.field4063 += var4.field4085[0] * 1712047767;
-               var4.field4065 += var4.field4055[0] * 2089924823;
-               var4.field4084 = -1013322787;
+               var4.field4062 = var1.method6399(1984951178);
+               var4.field4064 = var1.method6372(-12558881);
+               var4.field4063 = var1.method6398(736826018);
+               var4.field4065 = var1.method6398(1643626542);
+               var4.field4059 = var1.method6401((byte)-54) + class730.field2866;
+               var4.field4067 = var1.method6403(1478539457) + class730.field2866;
+               var4.field4068 = var1.method6402(-1999232161);
+               var4.field4062 += var4.field4085[0];
+               var4.field4064 += var4.field4055[0];
+               var4.field4063 += var4.field4085[0];
+               var4.field4065 += var4.field4055[0];
+               var4.field4084 = 1;
                var4.field4089 = 0;
             }
 
             if ((var5 & 4194304) != 0) {
-               var17 = var1.field10375[(var1.field10376 += 116413311) * 385051775 - 1] & 255;
+               var17 = var1.field10375[++var1.field10376 - 1] & 255;
 
                for(var7 = 0; var7 < var17; ++var7) {
                   var19 = var1.method6396((short)-28984);
@@ -327,13 +323,13 @@ public abstract class class253 {
 
             if ((var5 & 8388608) != 0) {
                var4.field1633 = var1.method6379(1858696307);
-               if ("".equals(var4.field1633) || var4.field1633.equals(var4.field1637.field9863)) {
-                  var4.field1633 = var4.field1637.field9863;
+               if ("".equals(var4.field1633) || var4.field1633.equals(var4.field1637.name)) {
+                  var4.field1633 = var4.field1637.name;
                }
             }
 
             if ((var5 & 131072) != 0) {
-               var17 = var1.field10375[(var1.field10376 += 116413311) * 385051775 - 1] & 255;
+               var17 = var1.field10375[++var1.field10376 - 1] & 255;
 
                for(var7 = 0; var7 < var17; ++var7) {
                   var19 = var1.method6402(1053667933);
@@ -383,15 +379,15 @@ public abstract class class253 {
                      }
                   }
 
-                  var14 = (long)var3 | (long)((var4.field1630 += 55499771) * -1842219213 - 1) << 32;
+                  var14 = (long)var3 | (long)(++var4.field1630 - 1) << 32;
                   new class692(var14, var20, var24, var22);
                }
             }
 
             if ((var5 & 262144) != 0) {
-               var4.field1636 = var1.method6401((byte)16) * 933118661;
-               if (var4.field1636 * 1817570317 == 65535) {
-                  var4.field1636 = var4.field1637.field9885 * 1520279523;
+               var4.field1636 = var1.method6401((byte)16);
+               if (var4.field1636 == 65535) {
+                  var4.field1636 = var4.field1637.field9885;
                }
             }
 
@@ -401,10 +397,10 @@ public abstract class class253 {
                }
 
                var4.method1248(class258.field7913.method12(var1.method6423(1235052657), 384117949), 1598792788);
-               var4.method2549(var4.field1637.field9923 * -2095128707, -2141370583);
-               var4.field4079 = -1186616623 * (var4.field1637.field9917 * -1927065533 << 3);
+               var4.method2549(var4.field1637.field9923, -2141370583);
+               var4.field4079 = var4.field1637.field9917 << 3;
                if (var4.field1637.method6112((byte)23)) {
-                  class160.method3565(var4.field3639, var4.field4085[0], var4.field4055[0], 0, (class50)null, var4, (class946)null, (byte)68);
+                  Animation.method3565(var4.field3639, var4.field4085[0], var4.field4055[0], 0, (ObjectDefinition)null, var4, (Player)null, (byte)68);
                }
             }
          }

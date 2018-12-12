@@ -193,7 +193,7 @@ public class class757 {
 
       for(class210 var4 = (class210)this.field4305.method1281(1419681613); var4 != null; var4 = (class210)this.field4305.method1283((byte)-84)) {
          class482 var5 = var4.method3852();
-         if (var5.field8406 * 685647847 > var3.field8406 * 685647847) {
+         if (var5.field8406 > var3.field8406) {
             var3 = var5;
          }
 

@@ -1,7 +1,7 @@
 public final class class559 {
    static short field542;
    volatile String field543;
-   public volatile int field544 = -842879005;
+   public volatile int field544 = -1;
    static boolean field545;
 
    class559(String var1) {
@@ -36,10 +36,10 @@ public final class class559 {
    static final void method476(class744 var0, int var1) {
       try {
          if (class823.field9045 != null) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1;
+            var0.field3161[++var0.field3156 - 1] = 1;
             var0.field3169 = class823.field9045;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
+            var0.field3161[++var0.field3156 - 1] = 0;
          }
 
       } catch (RuntimeException var3) {

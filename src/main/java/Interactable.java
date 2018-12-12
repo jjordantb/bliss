@@ -1,24 +1,16 @@
-public abstract class class963 extends class361 {
-   class963 field3637;
+public abstract class Interactable extends Entity {
+   Interactable field3637;
    public class545 field3638;
    public byte field3639;
    public byte field3640;
-   int field3641;
+   int height;
    public class211[] field3642;
-
-   abstract boolean method2156();
 
    abstract boolean method2157(class848 var1, int var2, int var3, byte var4);
 
-   abstract boolean method2158();
-
-   abstract boolean method2159(class848 var1, int var2, int var3);
-
-   abstract boolean method2160();
-
    abstract int method2161(class639[] var1, int var2);
 
-   abstract void method2162(class848 var1, class963 var2, int var3, int var4, int var5, boolean var6, int var7);
+   abstract void method2162(class848 var1, Interactable var2, int var3, int var4, int var5, boolean var6, int var7);
 
    int method2163(byte var1) {
       return 0;
@@ -27,8 +19,6 @@ public abstract class class963 extends class361 {
    abstract void method2164(class848 var1, int var2);
 
    public abstract class719 method2165(class848 var1, byte var2);
-
-   abstract boolean method2166(class848 var1);
 
    abstract boolean method2167(int var1);
 
@@ -57,63 +47,13 @@ public abstract class class963 extends class361 {
 
    abstract boolean method2171(class848 var1, byte var2);
 
-   abstract boolean method2172();
-
    abstract boolean method2173(int var1);
-
-   public abstract class719 method2174(class848 var1);
-
-   public abstract class719 method2175(class848 var1);
-
-   abstract boolean method2176();
-
-   abstract class192 method2177(class848 var1);
-
-   abstract void method2178(class848 var1);
-
-   abstract boolean method2179(class848 var1, int var2, int var3);
-
-   abstract void method2180(class848 var1);
-
-   abstract boolean method2181();
-
-   abstract void method2182(class848 var1, class963 var2, int var3, int var4, int var5, boolean var6);
 
    abstract boolean method2183(short var1);
 
-   abstract void method2184();
-
-   abstract void method2185();
-
-   public abstract int method2186();
-
-   public abstract int method2187();
-
-   public abstract int method2188();
-
-   abstract boolean method2189();
-
-   abstract boolean method2190();
-
-   class963(class545 var1) {
+   Interactable(class545 var1) {
       this.field3638 = var1;
    }
-
-   abstract boolean method2191();
-
-   abstract boolean method2192(class848 var1, int var2, int var3);
-
-   abstract boolean method2193();
-
-   abstract boolean method2194();
-
-   abstract void method2195(class848 var1, class963 var2, int var3, int var4, int var5, boolean var6);
-
-   abstract boolean method2196(class848 var1);
-
-   abstract int method2197(class639[] var1);
-
-   abstract boolean method2198(class848 var1);
 
    int method2199(int var1, int var2, class639[] var3, int var4) {
       try {
@@ -141,29 +81,19 @@ public abstract class class963 extends class361 {
       }
    }
 
-   abstract boolean method2200(class848 var1);
-
    abstract class192 method2201(class848 var1, int var2);
-
-   abstract boolean method2202();
-
-   abstract boolean method2203();
-
-   abstract boolean method2204();
 
    abstract void method2205(byte var1);
 
    abstract boolean method2206(byte var1);
 
-   abstract boolean method2207();
-
    static final void method2208(class564 var0, class131 var1, class744 var2, byte var3) {
       try {
-         int var4 = var2.field3161[(var2.field3156 -= -391880689) * 681479919] - 1;
+         int var4 = var2.field3161[--var2.field3156] - 1;
          if (var4 >= 0 && var4 <= 9) {
-            var0.method825(var4, (String)var2.field3157[(var2.field3158 -= 969361751) * -203050393], 1110385787);
+            var0.method825(var4, (String)var2.field3157[--var2.field3158], 1110385787);
          } else {
-            var2.field3158 -= 969361751;
+            --var2.field3158;
          }
 
       } catch (RuntimeException var5) {
@@ -173,7 +103,7 @@ public abstract class class963 extends class361 {
 
    static final void method2209(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-7);
          class131 var4 = class382.field1410[var2 >> 16];
          class153.method3389(var3, var4, var0, 1982682635);

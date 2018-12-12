@@ -997,7 +997,7 @@ public class class20 {
    public boolean field6426;
 
    class20(int var1, boolean var2) {
-      this.field6425 = 962168059 * var1;
+      this.field6425 = var1;
       this.field6426 = var2;
    }
 
@@ -1007,7 +1007,7 @@ public class class20 {
 
    static boolean method3418(int var0) {
       try {
-         return !class622.method5340(-1233866115 * class730.field2733, -509208806);
+         return !class622.method5340(class730.field2733, -509208806);
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "qi.a(" + ')');
       }
@@ -1015,17 +1015,17 @@ public class class20 {
 
    static final void method3419(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var0.field3169.field9703;
+         var0.field3161[++var0.field3156 - 1] = var0.field3169.field9703;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "qi.xi(" + ')');
       }
    }
 
-   public static class562 method3420(class907 var0, int var1) {
+   public static class562 method3420(InputStream var0, int var1) {
       try {
          class562 var2 = class278.method6626(var0, (short)-4682);
          int var3 = var0.method6404((byte)-117);
-         return new class635(-610589451 * var2.field824, var2.field823, var2.field826, -245579987 * var2.field825, -1426302101 * var2.field822, var3);
+         return new class635(var2.field824, var2.field823, var2.field826, var2.field825, var2.field822, var3);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "qi.p(" + ')');
       }

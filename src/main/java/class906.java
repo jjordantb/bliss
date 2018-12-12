@@ -71,9 +71,9 @@ public class class906 implements Iterator {
    public static void method6342(int var0) {
       try {
          for(class497 var1 = (class497)class602.field8649.method2706(1694693115); var1 != null; var1 = (class497)class602.field8649.method2707(283371396)) {
-            if (-628325139 * var1.field8120 > 1) {
+            if (var1.field8120 > 1) {
                var1.field8120 = 0;
-               class602.field8631.method2984(var1, ((class357)var1.field8121.field4317.field208).field1706 * 6619564980435866523L);
+               class602.field8631.method2984(var1, ((class357)var1.field8121.field4317.field208).field1706);
                var1.field8121.method2710(2069073381);
             }
          }
@@ -91,11 +91,11 @@ public class class906 implements Iterator {
 
    static final void method6343(class744 var0, int var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         var0.field3156 -= -783761378;
-         int var3 = var0.field3161[681479919 * var0.field3156];
-         int var4 = var0.field3161[681479919 * var0.field3156 + 1];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var2.indexOf(var3, var4);
+         String var2 = (String)var0.field3157[--var0.field3158];
+         var0.field3156 -= 2;
+         int var3 = var0.field3161[var0.field3156];
+         int var4 = var0.field3161[var0.field3156 + 1];
+         var0.field3161[++var0.field3156 - 1] = var2.indexOf(var3, var4);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "sl.aau(" + ')');
       }

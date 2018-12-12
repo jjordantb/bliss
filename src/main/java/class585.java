@@ -65,7 +65,7 @@ public class class585 {
                return;
             }
 
-            this.field355 = this.field347.method4447(var29) ? 64 : this.field347.field7949 * 1107560907;
+            this.field355 = this.field347.method4447(var29) ? 64 : this.field347.field7949 * -806628381 * 1107560907;
             this.field356 = this.field355 - 1;
             this.field358 = this.field347.method4462(var29);
             this.field359 = this.field347.method4460(var29);
@@ -2530,7 +2530,7 @@ public class class585 {
                return;
             }
 
-            this.field355 = this.field347.method4447(var29) ? 64 : this.field347.field7949 * 1107560907;
+            this.field355 = this.field347.method4447(var29) ? 64 : this.field347.field7949 * -806628381 * 1107560907;
             this.field356 = this.field355 - 1;
             this.field358 = this.field347.method4462(var29);
          }
@@ -2546,7 +2546,7 @@ public class class585 {
                return;
             }
 
-            this.field345 = this.field347.method4447(var31) ? 64 : this.field347.field7949 * 1107560907;
+            this.field345 = this.field347.method4447(var31) ? 64 : this.field347.field7949 * -806628381 * 1107560907;
             this.field344 = this.field345 - 1;
          }
 
@@ -2561,7 +2561,7 @@ public class class585 {
                return;
             }
 
-            this.field367 = this.field347.method4447(var33) ? 64 : this.field347.field7949 * 1107560907;
+            this.field367 = this.field347.method4447(var33) ? 64 : this.field347.field7949 * -806628381 * 1107560907;
             this.field368 = this.field367 - 1;
          }
 
@@ -3157,7 +3157,7 @@ public class class585 {
    class585(class257 var1, class258 var2) {
       this.field347 = var1;
       this.field340 = var2;
-      this.field349 = this.field347.field7918 * 692106883;
+      this.field349 = this.field347.field7918;
       this.field350 = this.field347.field7914;
       this.field351 = this.field347.field7920;
    }

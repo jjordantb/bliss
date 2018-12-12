@@ -117,8 +117,8 @@ public class class794 implements Runnable {
 
    static final void method465(class744 var0, int var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         String var3 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         String var2 = (String)var0.field3157[--var0.field3158];
+         String var3 = (String)var0.field3157[--var0.field3158];
          class701 var4 = class637.method5936(class643.field10005, class730.field2674.field7765, (byte)47);
          var4.field3364.method6362(class305.method372(var2, -250227687) + class305.method372(var3, -433489347), 16711935);
          var4.field3364.method6366(var2, 2110683902);
@@ -131,7 +131,7 @@ public class class794 implements Runnable {
 
    static final void method466(class744 var0, byte var1) {
       try {
-         class587.method165(var0.field3161[(var0.field3156 -= -391880689) * 681479919], -292908966);
+         class587.method165(var0.field3161[--var0.field3156], -292908966);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "kj.adc(" + ')');
       }
@@ -180,29 +180,29 @@ public class class794 implements Runnable {
                int var13;
                int var14;
                for(var11 = 0; var11 < var10.length / 2; ++var11) {
-                  if (-863531439 * class563.field1083 == 2) {
+                  if (class563.field1083 == 2) {
                      var12 = (int)class730.field2931 & 16383;
                   } else {
-                     var12 = class730.field2782 * 1227356013 + (int)class730.field2931 & 16383;
+                     var12 = class730.field2782 + (int)class730.field2931 & 16383;
                   }
 
                   var13 = class703.field3413[var12];
                   var14 = class703.field3404[var12];
-                  if (class563.field1083 * -863531439 != 2) {
-                     var13 = 256 * var13 / (class730.field2730 * 356727603 + 256);
-                     var14 = var14 * 256 / (256 + 356727603 * class730.field2730);
+                  if (class563.field1083 != 2) {
+                     var13 = 256 * var13 / (class730.field2730 + 256);
+                     var14 = var14 * 256 / (256 + class730.field2730);
                   }
 
-                  var10[var11 * 2] = ((var6 + 4 * var9.field3518[var11 * 2 + 1]) * var13 + (var5 + 4 * var9.field3518[var11 * 2]) * var14 >> 14) + var2.field881 * -2093041337 / 2 + var3;
-                  var10[var11 * 2 + 1] = var4 + var2.field887 * 457937409 / 2 - (var14 * (var9.field3518[1 + 2 * var11] * 4 + var6) - (4 * var9.field3518[2 * var11] + var5) * var13 >> 14);
+                  var10[var11 * 2] = ((var6 + 4 * var9.field3518[var11 * 2 + 1]) * var13 + (var5 + 4 * var9.field3518[var11 * 2]) * var14 >> 14) + var2.field881 / 2 + var3;
+                  var10[var11 * 2 + 1] = var4 + var2.field887 / 2 - (var14 * (var9.field3518[1 + 2 * var11] * 4 + var6) - (4 * var9.field3518[2 * var11] + var5) * var13 >> 14);
                }
 
                class118 var21 = var2.method826(var0, 973176237);
                if (var21 != null) {
-                  class421.method5753(var0, var10, var9.field3523 * -248291889, var21.field2155, var21.field2154);
+                  class421.method5753(var0, var10, var9.field3523, var21.field2155, var21.field2154);
                }
 
-               if (var9.field3521 * -972644285 > 0) {
+               if (var9.field3521 > 0) {
                   int var15;
                   int var16;
                   int var17;
@@ -224,7 +224,7 @@ public class class794 implements Runnable {
                         var16 = var17;
                      }
 
-                     var0.method4820(var13, var14, var15, var16, var9.field3529[var9.field3492[var12] & 255], 1, var1, var3, var4, var9.field3521 * -972644285, var9.field3514 * 2123190239, -176015499 * var9.field3503);
+                     var0.method4820(var13, var14, var15, var16, var9.field3529[var9.field3492[var12] & 255], 1, var1, var3, var4, var9.field3521, var9.field3514, var9.field3503);
                   }
 
                   var12 = var10[var10.length - 2];
@@ -244,7 +244,7 @@ public class class794 implements Runnable {
                      var15 = var16;
                   }
 
-                  var0.method4820(var12, var13, var14, var15, var9.field3529[var9.field3492[var9.field3492.length - 1] & 255], 1, var1, var3, var4, -972644285 * var9.field3521, 2123190239 * var9.field3514, var9.field3503 * -176015499);
+                  var0.method4820(var12, var13, var14, var15, var9.field3529[var9.field3492[var9.field3492.length - 1] & 255], 1, var1, var3, var4, var9.field3521, var9.field3514, var9.field3503);
                } else {
                   for(var12 = 0; var12 < var10.length / 2 - 1; ++var12) {
                      var0.method4845(var10[2 * var12], var10[1 + 2 * var12], var10[(var12 + 1) * 2], var10[1 + 2 * (1 + var12)], var9.field3529[var9.field3492[var12] & 255], 1, var1, var3, var4);
@@ -255,7 +255,7 @@ public class class794 implements Runnable {
             }
 
             class48 var20 = null;
-            if (-1 != var9.field3500 * 715019623) {
+            if (-1 != var9.field3500) {
                var20 = var9.method2064(var0, false, -98402151);
                if (var20 != null) {
                   class758.method2734(var2, var1, var3, var4, var5, var6, var20, (byte)-86);
@@ -270,17 +270,17 @@ public class class794 implements Runnable {
 
                class727 var22 = class202.field7587;
                class230 var23 = class295.field10474;
-               if (var9.field3498 * 1023000389 == 1) {
+               if (var9.field3498 == 1) {
                   var22 = class958.field3479;
                   var23 = class378.field1158;
                }
 
-               if (var9.field3498 * 1023000389 == 2) {
+               if (var9.field3498 == 2) {
                   var22 = class501.field3182;
                   var23 = class271.field10557;
                }
 
-               class399.method3532(var2, var1, var3, var4, var5, var6, var11, var9.field3507, var22, var23, -1836991893 * var9.field3496, 1768300509);
+               class399.method3532(var2, var1, var3, var4, var5, var6, var11, var9.field3507, var22, var23, var9.field3496, 1768300509);
             }
          }
 

@@ -1,7 +1,7 @@
 public class class665 extends class827 {
    public int field9595;
    public int field9596;
-   public static class907 field9597;
+   public static InputStream field9597;
    static int field9598;
    static int field9599;
 
@@ -15,16 +15,8 @@ public class class665 extends class827 {
 
    class665(class971 var1, class49 var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12) {
       super(var1, var2, var3, var4, var5, var6, var7, var8, var9);
-      this.field9596 = var11 * -1922246779;
-      this.field9595 = var12 * 957497283;
-   }
-
-   public class7 method6199() {
-      return class7.field4909;
-   }
-
-   public class7 method6198() {
-      return class7.field4909;
+      this.field9596 = var11;
+      this.field9595 = var12;
    }
 
    static int method5714(int var0, int var1, int var2) {

@@ -1,15 +1,7 @@
 public class class351 extends class312 {
-   public boolean method416(int var1, int var2, int var3, class262 var4) {
-      return -1331662251 * this.field476 == var2 && var3 == 1517720743 * this.field475;
-   }
-
-   public boolean method414(int var1, int var2, int var3, class262 var4) {
-      return -1331662251 * this.field476 == var2 && var3 == 1517720743 * this.field475;
-   }
-
    public boolean method415(int var1, int var2, int var3, class262 var4, int var5) {
       try {
-         return -1331662251 * this.field476 == var2 && var3 == 1517720743 * this.field475;
+         return super.field476 == var2 && var3 == super.field475;
       } catch (RuntimeException var7) {
          throw class158.method3445(var7, "acy.a(" + ')');
       }
@@ -17,7 +9,7 @@ public class class351 extends class312 {
 
    static final void method1225(class744 var0, byte var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         String var2 = (String)var0.field3157[--var0.field3158];
          class86.method949(var2, true, (short)5563);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acy.ww(" + ')');

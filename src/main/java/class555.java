@@ -4,57 +4,31 @@ public class class555 extends class304 {
 
    public void method2383(int var1) {
       try {
-         class730.field2709 = 938117879 * class730.field2866;
-         class730.field2718 = 1303928015 * class730.field2866 + 1252628863 * this.field472;
-         class152.field5415 = class730.field2662 * -1680550441;
-         class220.field7357 = 410053157 * class730.field2712;
-         class601.field9204 = class730.field2713 * -1645861677;
-         class157.field6558 = class730.field2701 * -933884753;
-         class730.field2662 = 563175129 * (392492523 * this.field473 >>> 24);
-         class730.field2712 = -1719011785 * (this.field473 * 392492523 >>> 16 & 255);
-         class730.field2713 = -1294785203 * (392492523 * this.field473 >>> 8 & 255);
-         class730.field2701 = -1656733051 * (392492523 * this.field473 & 255);
+         class730.field2709 = class730.field2866;
+         class730.field2718 = class730.field2866 + this.field472 * -230034171;
+         class152.field5415 = class730.field2662;
+         class220.field7357 = class730.field2712;
+         class601.field9204 = class730.field2713;
+         class157.field6558 = class730.field2701;
+         class730.field2662 = this.field473 >>> 24;
+         class730.field2712 = this.field473 >>> 16 & 255;
+         class730.field2713 = this.field473 >>> 8 & 255;
+         class730.field2701 = this.field473 & 255;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ya.f(" + ')');
       }
    }
 
-   class555(class907 var1) {
+   class555(InputStream var1) {
       super(var1);
-      this.field472 = var1.method6374() * -477707085;
-      this.field473 = var1.method6420((byte)-19) * -1164408125;
-   }
-
-   public void method2385() {
-      class730.field2709 = 938117879 * class730.field2866;
-      class730.field2718 = 1303928015 * class730.field2866 + 1252628863 * this.field472;
-      class152.field5415 = class730.field2662 * -1680550441;
-      class220.field7357 = 410053157 * class730.field2712;
-      class601.field9204 = class730.field2713 * -1645861677;
-      class157.field6558 = class730.field2701 * -933884753;
-      class730.field2662 = 563175129 * (392492523 * this.field473 >>> 24);
-      class730.field2712 = -1719011785 * (this.field473 * 392492523 >>> 16 & 255);
-      class730.field2713 = -1294785203 * (392492523 * this.field473 >>> 8 & 255);
-      class730.field2701 = -1656733051 * (392492523 * this.field473 & 255);
-   }
-
-   public void method2386() {
-      class730.field2709 = 938117879 * class730.field2866;
-      class730.field2718 = 1303928015 * class730.field2866 + 1252628863 * this.field472;
-      class152.field5415 = class730.field2662 * -1680550441;
-      class220.field7357 = 410053157 * class730.field2712;
-      class601.field9204 = class730.field2713 * -1645861677;
-      class157.field6558 = class730.field2701 * -933884753;
-      class730.field2662 = 563175129 * (392492523 * this.field473 >>> 24);
-      class730.field2712 = -1719011785 * (this.field473 * 392492523 >>> 16 & 255);
-      class730.field2713 = -1294785203 * (392492523 * this.field473 >>> 8 & 255);
-      class730.field2701 = -1656733051 * (392492523 * this.field473 & 255);
+      this.field472 = var1.method6374() * 60133325;
+      this.field473 = var1.method6420((byte)-19);
    }
 
    public static final int method412(class240 var0, byte[] var1, int var2, int var3, int var4, int var5, byte var6) {
       try {
          int var7 = 0;
-         class907 var8 = new class907(var1);
+         InputStream var8 = new InputStream(var1);
          int var9 = -1;
 
          label66:
@@ -85,8 +59,8 @@ public class class555 extends class304 {
                      int var17 = var2 + var15;
                      int var18 = var14 + var3;
                      if (var17 > 0 && var18 > 0 && var17 < var4 - 1 && var18 < var5 - 1) {
-                        class50 var19 = var0.method4713(var9);
-                        if (-1976050083 * class15.field6918.field6921 != var16 || class615.field8903.field9113.method971(-1915667162) != 0 || 1532834983 * var19.field2214 != 0 || -2144543407 * var19.field2212 == 1 || var19.field2242) {
+                        ObjectDefinition var19 = var0.method4713(var9);
+                        if (class15.field6918.field6921 != var16 || class615.field8903.field9113.method971(-1915667162) != 0 || var19.field2214 != 0 || var19.field2212 == 1 || var19.field2242) {
                            if (!var19.method1482(-1755524122)) {
                               ++var7;
                            }

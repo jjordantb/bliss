@@ -5,7 +5,7 @@ public class class754 {
 
    public class754(class469 var1, class423 var2, class180 var3) {
       this.field4206 = var3;
-      this.field4206.method3286(class981.field3247.field3271 * -1006924897, 236791533);
+      this.field4206.method3286(class981.field3247.field3271, 236791533);
    }
 
    public void method2656(byte var1) {
@@ -44,12 +44,12 @@ public class class754 {
             class180 var5 = this.field4206;
             byte[] var10;
             synchronized(this.field4206) {
-               var10 = this.field4206.method3285(-1006924897 * class981.field3247.field3271, var1, (byte)-70);
+               var10 = this.field4206.method3285(class981.field3247.field3271, var1, (byte)-70);
             }
 
             var4 = new class954();
             if (var10 != null) {
-               var4.method2088(new class907(var10), -420636240);
+               var4.method2088(new InputStream(var10), -420636240);
             }
 
             class1 var11 = this.field4205;
@@ -93,7 +93,7 @@ public class class754 {
 
    static final void method2662(class564 var0, class131 var1, class744 var2, byte var3) {
       try {
-         String var4 = (String)var2.field3157[(var2.field3158 -= 969361751) * -203050393];
+         String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -1825255771) != null) {
             var4 = var4.substring(0, var4.length() - 1);
          }

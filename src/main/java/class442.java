@@ -14,8 +14,6 @@ public abstract class class442 {
 
    abstract void method4359(int var1, int var2);
 
-   abstract void method4360();
-
    abstract void method4361(int var1);
 
    int method4362() {
@@ -33,19 +31,7 @@ public abstract class class442 {
    void method4365() {
    }
 
-   abstract boolean method4366();
-
-   abstract void method4367(int var1, int var2);
-
-   abstract void method4368(int var1, class806 var2, class801 var3, class893 var4, class801 var5);
-
-   abstract void method4369(int var1);
-
-   abstract void method4370(int var1);
-
    abstract void method4371(int var1, class806 var2, class801 var3, class893 var4, class801 var5);
-
-   abstract boolean method4372();
 
    class442(class325 var1) {
       this.field7760 = var1;

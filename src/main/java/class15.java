@@ -25,22 +25,14 @@ public class class15 implements class331 {
    public static class15 field6922 = new class15(0, 0);
    public int field6923;
 
-   public int method91() {
-      return -1976050083 * this.field6921;
-   }
-
    class15(int var1, int var2) {
-      this.field6921 = -1456740875 * var1;
-      this.field6923 = 341764099 * var2;
-   }
-
-   public int method90() {
-      return -1976050083 * this.field6921;
+      this.field6921 = var1;
+      this.field6923 = var2;
    }
 
    public int method89(int var1) {
       try {
-         return -1976050083 * this.field6921;
+         return this.field6921;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ro.f(" + ')');
       }
@@ -48,10 +40,10 @@ public class class15 implements class331 {
 
    static final void method3685(class744 var0, int var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         int var3 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         String var2 = (String)var0.field3157[--var0.field3158];
+         int var3 = var0.field3161[--var0.field3156];
          class896.method5588(var2, var3 == 1, 1059138382);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 367592105 * class198.field7051;
+         var0.field3161[++var0.field3156 - 1] = class198.field7051;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ro.abs(" + ')');
       }

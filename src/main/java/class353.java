@@ -80,15 +80,13 @@ public abstract class class353 {
       }
    }
 
-   abstract int method1365(byte[] var1) throws IOException;
-
    void method1366(byte var1) {
       try {
          for(class571 var2 = (class571)this.field1919.method2946(2015139315); var2 != null; var2 = (class571)this.field1919.method2945((byte)5)) {
             if (var2 instanceof class36) {
                class36 var3 = (class36)var2;
 
-               while((var3.field38 * -1312498565 <= 8 || this.method1378((short)30482) > (double)var3.method3333(-136313953)) && var3.field37.packetOut(this.field1912) == 1) {
+               while((var3.field38 <= 8 || this.method1378((short)30482) > (double)var3.method3333(-136313953)) && var3.field37.packetOut(this.field1912) == 1) {
                   var3.method22(this.field1912, -1226862921);
                }
             }
@@ -275,10 +273,6 @@ public abstract class class353 {
       }
    }
 
-   abstract int method1376(byte[] var1) throws IOException;
-
-   abstract int method1377(byte[] var1) throws IOException;
-
    public double method1378(short var1) {
       try {
          if (this.field1908 != null) {
@@ -345,7 +339,7 @@ public abstract class class353 {
                   this.method1366((byte)72);
                } else if (var2 != this.field1918) {
                   for(; var2.field37.packetOut(this.field1912) == 1; var2.method22(this.field1912, -1226862921)) {
-                     if (1 == var2.field38 * -1312498565 && var2 instanceof class36) {
+                     if (1 == var2.field38 && var2 instanceof class36) {
                         this.method1363(this.field1914, (byte)43);
                      }
                   }
@@ -381,7 +375,7 @@ public abstract class class353 {
 
    static final void method1380(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)10);
          class131 var4 = class382.field1410[var2 >> 16];
          class590.method1222(var3, var4, var0, 1808304001);
@@ -396,9 +390,9 @@ public abstract class class353 {
          int var6 = var2;
          int var7 = -var2;
          int var8 = -1;
-         int var9 = class972.method1776(var2 + var0, class964.field1416 * -1424479739, class964.field1413 * 1135094847, -1212608691);
-         int var10 = class972.method1776(var0 - var2, class964.field1416 * -1424479739, 1135094847 * class964.field1413, -1212608691);
-         class484.method4769(class964.field1412[var1], var10, var9, var3, 410046201);
+         int var9 = class972.method1776(var2 + var0, class381.field1416, class381.field1413, -1212608691);
+         int var10 = class972.method1776(var0 - var2, class381.field1416, class381.field1413, -1212608691);
+         class484.method4769(class381.field1412[var1], var10, var9, var3, 410046201);
 
          while(var6 > var5) {
             var8 += 2;
@@ -412,15 +406,15 @@ public abstract class class353 {
                var7 -= var6 << 1;
                var11 = var1 - var6;
                var12 = var1 + var6;
-               if (var12 >= 1155384281 * class964.field1414 && var11 <= class964.field1415 * -1062447355) {
-                  var13 = class972.method1776(var5 + var0, class964.field1416 * -1424479739, 1135094847 * class964.field1413, -1212608691);
-                  var14 = class972.method1776(var0 - var5, -1424479739 * class964.field1416, class964.field1413 * 1135094847, -1212608691);
-                  if (var12 <= class964.field1415 * -1062447355) {
-                     class484.method4769(class964.field1412[var12], var14, var13, var3, 483446032);
+               if (var12 >= class381.field1414 && var11 <= class381.field1415) {
+                  var13 = class972.method1776(var5 + var0, class381.field1416, class381.field1413, -1212608691);
+                  var14 = class972.method1776(var0 - var5, class381.field1416, class381.field1413, -1212608691);
+                  if (var12 <= class381.field1415) {
+                     class484.method4769(class381.field1412[var12], var14, var13, var3, 483446032);
                   }
 
-                  if (var11 >= 1155384281 * class964.field1414) {
-                     class484.method4769(class964.field1412[var11], var14, var13, var3, 694694186);
+                  if (var11 >= class381.field1414) {
+                     class484.method4769(class381.field1412[var11], var14, var13, var3, 694694186);
                   }
                }
             }
@@ -428,15 +422,15 @@ public abstract class class353 {
             ++var5;
             var11 = var1 - var5;
             var12 = var5 + var1;
-            if (var12 >= 1155384281 * class964.field1414 && var11 <= -1062447355 * class964.field1415) {
-               var13 = class972.method1776(var6 + var0, -1424479739 * class964.field1416, class964.field1413 * 1135094847, -1212608691);
-               var14 = class972.method1776(var0 - var6, class964.field1416 * -1424479739, 1135094847 * class964.field1413, -1212608691);
-               if (var12 <= class964.field1415 * -1062447355) {
-                  class484.method4769(class964.field1412[var12], var14, var13, var3, -698175360);
+            if (var12 >= class381.field1414 && var11 <= class381.field1415) {
+               var13 = class972.method1776(var6 + var0, class381.field1416, class381.field1413, -1212608691);
+               var14 = class972.method1776(var0 - var6, class381.field1416, class381.field1413, -1212608691);
+               if (var12 <= class381.field1415) {
+                  class484.method4769(class381.field1412[var12], var14, var13, var3, -698175360);
                }
 
-               if (var11 >= class964.field1414 * 1155384281) {
-                  class484.method4769(class964.field1412[var11], var14, var13, var3, -1368687138);
+               if (var11 >= class381.field1414) {
+                  class484.method4769(class381.field1412[var11], var14, var13, var3, -1368687138);
                }
             }
          }
@@ -460,28 +454,28 @@ public abstract class class353 {
    public static void method1383(byte var0) {
       try {
          if (class601.field9194) {
-            if (class601.field9195 * -64101949 < -1648308965 * class769.field3692) {
-               class601.field9195 = class769.field3692 * 1429182921;
+            if (class601.field9195 < class769.field3692) {
+               class601.field9195 = class769.field3692;
             }
 
             while(true) {
-               while(class601.field9195 * -64101949 < -499146007 * class886.field10135) {
-                  class471 var1 = class695.method3937(class601.field9195 * -64101949, (byte)-50);
-                  if (var1 != null && -1 == var1.field8238 * 512449113) {
+               while(class601.field9195 < class886.field10135) {
+                  class471 var1 = class695.method3937(class601.field9195, (byte)-50);
+                  if (var1 != null && -1 == var1.field8238) {
                      if (class601.field9202 == null) {
                         class601.field9202 = class730.field2696.method5472(var1.field8236, (byte)111);
                      }
 
-                     int var2 = class601.field9202.field544 * -747638219;
+                     int var2 = class601.field9202.field544;
                      if (var2 == -1) {
                         return;
                      }
 
-                     var1.field8238 = var2 * -718385687;
-                     class601.field9195 += 854136555;
+                     var1.field8238 = var2;
+                     ++class601.field9195;
                      class601.field9202 = null;
                   } else {
-                     class601.field9195 += 854136555;
+                     ++class601.field9195;
                   }
                }
 

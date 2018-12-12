@@ -5,12 +5,12 @@ public abstract class class621 {
 
    static void method5260(int var0, int var1, int var2, int var3, int var4, int var5, int var6, class497 var7, class727 var8, class230 var9, int var10, int var11, byte var12) {
       try {
-         if (var0 > var2 && var0 < var4 + var2 && var1 > var6 - 1110385787 * var9.field8230 - 1 && var1 < -1883958527 * var9.field8225 + var6) {
+         if (var0 > var2 && var0 < var4 + var2 && var1 > var6 - var9.field8230 - 1 && var1 < var9.field8225 + var6) {
             var10 = var11;
          }
 
          String var13 = class158.method3444(var7, (byte)-2);
-         var8.method1668(var13, 3 + var2, var6, var10, 0, class730.field2683, 1401020893 * class880.field10188, class602.field8668, class755.field4199, 65280);
+         var8.method1668(var13, 3 + var2, var6, var10, 0, class730.field2683, class880.field10188, class602.field8668, class755.field4199, 65280);
       } catch (RuntimeException var14) {
          throw class158.method3445(var14, "cr.au(" + ')');
       }
@@ -29,7 +29,7 @@ public abstract class class621 {
 
    static final void method5262(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-42);
          class131 var4 = class382.field1410[var2 >> 16];
          class625.method5829(var3, var4, var0, 1585899223);
@@ -42,7 +42,7 @@ public abstract class class621 {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3.field886 ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = var3.field886 ? 1 : 0;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "cr.og(" + ')');
       }

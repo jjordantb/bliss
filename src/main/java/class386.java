@@ -1,55 +1,30 @@
 import java.awt.Frame;
 
 final class class386 implements class415 {
-   public int method5657(int var1) {
-      class722 var2 = (class722)class949.field3321.method2942((long)var1);
-      return var2 == null ? class827.field9037.method5655(var1, (byte)84) : var2.field3631 * -774922497;
-   }
-
-   public int method5658(int var1) {
-      class722 var2 = (class722)class949.field3321.method2942((long)var1);
-      return var2 == null ? class827.field9037.method5655(var1, (byte)1) : var2.field3631 * -774922497;
-   }
-
    public int method5655(int var1, byte var2) {
       try {
          class722 var3 = (class722)class949.field3321.method2942((long)var1);
-         return var3 == null ? class827.field9037.method5655(var1, (byte)21) : var3.field3631 * -774922497;
+         return var3 == null ? class827.field9037.method5655(var1, (byte)21) : var3.field3631;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "du.d(" + ')');
       }
    }
 
-   public int method5654(int var1) {
-      class722 var2 = (class722)class949.field3321.method2942((long)var1);
-      return var2 == null ? class827.field9037.method5655(var1, (byte)101) : var2.field3631 * -774922497;
-   }
-
-   public int method5656(int var1) {
-      class722 var2 = (class722)class949.field3321.method2942((long)var1);
-      return var2 == null ? class827.field9037.method5655(var1, (byte)98) : var2.field3631 * -774922497;
-   }
-
    public int method5653(int var1, byte var2) {
       try {
          class722 var3 = (class722)class949.field3321.method2942(4294967296L | (long)var1);
-         return var3 == null ? class827.field9037.method5653(var1, (byte)36) : -774922497 * var3.field3631;
+         return var3 == null ? class827.field9037.method5653(var1, (byte)36) : var3.field3631;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "du.u(" + ')');
       }
    }
 
-   public int method5652(int var1) {
-      class722 var2 = (class722)class949.field3321.method2942(4294967296L | (long)var1);
-      return var2 == null ? class827.field9037.method5653(var1, (byte)43) : -774922497 * var2.field3631;
-   }
-
    static final void method1166(class744 var0, int var1) {
       try {
          if (class730.field2785 != null) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class431.method4256(class730.field2785, 864183945);
+            var0.field3157[++var0.field3158 - 1] = class431.method4256(class730.field2785, 864183945);
          } else {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
+            var0.field3157[++var0.field3158 - 1] = "";
          }
 
       } catch (RuntimeException var3) {
@@ -77,7 +52,7 @@ final class class386 implements class415 {
 
    public static void method1169(class284 var0, int var1) {
       try {
-         if (!class552.method457(class730.field2733 * -1233866115, (byte)-26)) {
+         if (!class552.method457(class730.field2733, (byte)-26)) {
             var0.method6670(1342402184);
          } else {
             class978.field3128.method3584(var0, 2143317873);
@@ -96,21 +71,21 @@ final class class386 implements class415 {
          class15 var7 = (class15)class367.method1565(class351.method1227(114624527), var4, (byte)2);
          class312 var11;
          if (class15.field6919 != var7 && class15.field6912 != var7 && class15.field6918 != var7) {
-            if (class26.method3482(-1976050083 * var7.field6921, (byte)28)) {
+            if (class26.method3482(var7.field6921, (byte)28)) {
                var11 = class391.method3417(var0, var1, 0, 0, var7, var5, 740164949);
             } else {
                var11 = class979.method1834(var0, var1, 0, 0, var7, var5, (byte)-22);
             }
          } else {
-            class50 var8 = class730.field2697.method5283(-1208362615).method4713(var6);
+            ObjectDefinition var8 = class730.field2697.method5283(-1208362615).method4713(var6);
             int var9;
             int var10;
             if (var5 != 0 && var5 != 2) {
-               var9 = -565161399 * var8.field2215;
-               var10 = var8.field2218 * -1125834887;
+               var9 = var8.field2215;
+               var10 = var8.field2218;
             } else {
-               var9 = -1125834887 * var8.field2218;
-               var10 = -565161399 * var8.field2215;
+               var9 = var8.field2218;
+               var10 = var8.field2215;
             }
 
             var11 = class391.method3417(var0, var1, var9, var10, class15.field6922, 0, 1300552038);

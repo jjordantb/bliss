@@ -64,8 +64,8 @@ public class class922 {
    }
 
    public static class922[] method6237(byte[] var0) {
-      class907 var1 = new class907(var0);
-      var1.field10376 = (var0.length - 2) * 116413311;
+      InputStream var1 = new InputStream(var0);
+      var1.field10376 = var0.length - 2;
       int var2 = var1.method6374();
       class922[] var3 = new class922[var2];
 
@@ -74,7 +74,7 @@ public class class922 {
          var3[var4] = new class922();
       }
 
-      var1.field10376 = (var0.length - 7 - var2 * 8) * 116413311;
+      var1.field10376 = var0.length - 7 - var2 * 8;
       var4 = var1.method6374();
       int var5 = var1.method6374();
       int var6 = (var1.method6371() & 255) + 1;
@@ -102,7 +102,7 @@ public class class922 {
          var8.field10270 = var5 - var8.field10273 - var8.field10268;
       }
 
-      var1.field10376 = (var0.length - 7 - var2 * 8 - (var6 - 1) * 3) * 116413311;
+      var1.field10376 = var0.length - 7 - var2 * 8 - (var6 - 1) * 3;
       int[] var17 = new int[var6];
 
       int var16;

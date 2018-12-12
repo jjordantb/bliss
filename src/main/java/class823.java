@@ -6,15 +6,15 @@ public class class823 {
    public class823(class469 var1, class423 var2, class180 var3) {
       new class1(64);
       this.field9044 = var3;
-      this.field9043 = this.field9044.method3286(-1006924897 * class981.field3231.field3271, -2127064505) * 809853823;
+      this.field9043 = this.field9044.method3286(class981.field3231.field3271, -2127064505);
    }
 
    static final void method5361(class744 var0, int var1) {
       try {
-         var0.field3156 -= -1175642067;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[1 + var0.field3156 * 681479919];
-         int var4 = var0.field3161[2 + var0.field3156 * 681479919];
+         var0.field3156 -= 3;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
+         int var4 = var0.field3161[2 + var0.field3156];
          class362.method1505(var0.field3159.field4095, var2 & '\uffff', var3, var4, var0.field3178, var0, 2022077336);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "uz.aoo(" + ')');
@@ -26,7 +26,7 @@ public class class823 {
          class513 var2 = class730.field2692.field7768;
 
          while(true) {
-            if (var2.method2644(-866602563 * class730.field2692.field7771, (byte)-70) < 15) {
+            if (var2.method2644(class730.field2692.field7771, (byte)-70) < 15) {
                if (var1 == 596994841) {
                   return;
                }
@@ -40,19 +40,19 @@ public class class823 {
 
             boolean var4 = false;
             class437 var5 = (class437)class730.field2677.method2942((long)var3);
-            class60 var6;
+            Npc var6;
             if (var5 == null) {
-               var6 = new class60(class730.field2697.method5317(-1611682495));
-               var6.field4028 = 1714292119 * var3;
+               var6 = new Npc(class730.field2697.method5317(-1611682495));
+               var6.field4028 = var3;
                var5 = new class437(var6);
                class730.field2677.method2947(var5, (long)var3);
-               class730.field2797[(class730.field2753 += -118843751) * 1962237353 - 1] = var5;
+               class730.field2797[++class730.field2753 - 1] = var5;
                var4 = true;
             }
 
-            var6 = (class60)var5.field7515;
-            class730.field2680[(class730.field2684 += -409937273) * -1230451913 - 1] = var3;
-            var6.field4039 = -3704423 * class730.field2688;
+            var6 = (Npc)var5.field7515;
+            class730.field2680[++class730.field2684 - 1] = var3;
+            var6.field4039 = class730.field2688;
             if (var6.field1637 != null && var6.field1637.method6112((byte)88)) {
                class153.method3396(var6, (byte)40);
             }
@@ -88,19 +88,19 @@ public class class823 {
             int var10 = var2.method2647(2);
             int var11 = var2.method2647(1);
             if (var11 == 1) {
-               class730.field2687[(class730.field2789 += -386992021) * -976358333 - 1] = var3;
+               class730.field2687[++class730.field2789 - 1] = var3;
             }
 
             int var12 = var2.method2647(1);
-            var6.method2549(-2095128707 * var6.field1637.field9923, -1253182390);
-            var6.field4079 = -1186616623 * (-1927065533 * var6.field1637.field9917 << 3);
+            var6.method2549(var6.field1637.field9923, -1253182390);
+            var6.field4079 = var6.field1637.field9917 << 3;
             if (var4) {
                var6.method2543(var7, true, -2079607043);
             }
 
-            var6.method1240(var10, var9 + class923.field10295.field4085[0], var8 + class923.field10295.field4055[0], 1 == var12, var6.method2550(), (byte)58);
+            var6.method1240(var10, var9 + class923.local.field4085[0], var8 + class923.local.field4055[0], 1 == var12, var6.method2550(), (byte)58);
             if (var6.field1637.method6112((byte)-9)) {
-               class160.method3565(var6.field3639, var6.field4085[0], var6.field4055[0], 0, (class50)null, var6, (class946)null, (byte)-66);
+               Animation.method3565(var6.field3639, var6.field4085[0], var6.field4055[0], 0, (ObjectDefinition)null, var6, (Player)null, (byte)-66);
             }
          }
 
@@ -112,7 +112,7 @@ public class class823 {
 
    static final void method5363(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class273.method6598((byte)-1);
+         var0.field3161[++var0.field3156 - 1] = class273.method6598((byte)-1);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "uz.acr(" + ')');
       }
@@ -131,7 +131,7 @@ public class class823 {
       try {
          class682 var3 = class370.method881(22, (long)var0);
          var3.method4340((byte)61);
-         var3.field7687 = (var1 ? 1 : 0) * 1274450087;
+         var3.field7687 = var1 ? 1 : 0;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "uz.ai(" + ')');
       }

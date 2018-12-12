@@ -8,10 +8,10 @@ public class class540 {
    static int field3917 = 0;
    static int field3918 = 4096;
    static int field3919 = 4096;
-   public static int field3920 = 184109511;
+   public static int field3920 = -1;
    public static boolean field3921 = false;
    public static int field3922 = 2;
-   public static int field3923 = -154813479;
+   public static int field3923 = -1;
    static int field3924 = 16384;
    public static class752 field3925;
    static int field3926 = 0;
@@ -37,7 +37,7 @@ public class class540 {
 
    static final void method2463(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-33);
          class131 var4 = class382.field1410[var2 >> 16];
          class611.method5157(var3, var4, var0, -617787103);
@@ -115,13 +115,13 @@ public class class540 {
    public static void method2466(int var0, int var1, int var2, int var3, int var4, int var5, String var6, int var7) {
       try {
          class281 var8 = new class281();
-         var8.field10638 = var0 * 1025727709;
-         var8.field10637 = 862924059 * var1;
-         var8.field10641 = var2 * -1389157181;
-         var8.field10640 = (var4 + class730.field2866 * 443738891) * -1019659005;
-         var8.field10639 = var3 * 274200991;
+         var8.field10638 = var0;
+         var8.field10637 = var1;
+         var8.field10641 = var2;
+         var8.field10640 = var4 + class730.field2866;
+         var8.field10639 = var3;
          var8.field10642 = var6;
-         var8.field10636 = var5 * 334332979;
+         var8.field10636 = var5;
          class730.field2631.method5209(var8, 1639821588);
       } catch (RuntimeException var9) {
          throw class158.method3445(var9, "mm.nv(" + ')');
@@ -130,8 +130,8 @@ public class class540 {
 
    static final void method2467(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3174[var0.field3176 * 1883543357];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class827.field9037.field9257[var2];
+         int var2 = var0.field3174[var0.field3176];
+         var0.field3161[++var0.field3156 - 1] = class827.field9037.field9257[var2];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "mm.c(" + ')');
       }

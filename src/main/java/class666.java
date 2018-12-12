@@ -14,18 +14,6 @@ public abstract class class666 implements class943 {
    static int field9621 = 34962;
    static int[] field9622 = new int[1];
 
-   public boolean method1981(int var1, int var2, long var3) {
-      this.method5733();
-      if (this.field9618 > 0) {
-         OpenGL.glBindBufferARB(this.field9616, this.field9618);
-         OpenGL.glBufferSubDataARBa(this.field9616, var1, var2, var3);
-      } else {
-         this.field9613.f.copy(this.field9613.f() + (long)var1, var3, var2);
-      }
-
-      return true;
-   }
-
    void method5733() {
       if (this.field9618 < 0) {
          if (this.field9615.field8611) {
@@ -122,35 +110,6 @@ public abstract class class666 implements class943 {
 
       this.field9617 = var1;
       return true;
-   }
-
-   public int method1978() {
-      return this.field9617;
-   }
-
-   public boolean method1975(int var1, int var2, long var3) {
-      this.method5733();
-      if (this.field9618 > 0) {
-         OpenGL.glBindBufferARB(this.field9616, this.field9618);
-         OpenGL.glBufferSubDataARBa(this.field9616, var1, var2, var3);
-      } else {
-         this.field9613.f.copy(this.field9613.f() + (long)var1, var3, var2);
-      }
-
-      return true;
-   }
-
-   public int method1979() {
-      return this.field9617;
-   }
-
-   public long method1982(int var1, int var2) {
-      OpenGL.glBindBufferARB(this.field9616, this.field9618);
-      return OpenGL.glMapBufferARB(this.field9616, 35001) + (long)var1;
-   }
-
-   public void method1980() {
-      OpenGL.glUnmapBufferARB(this.field9616);
    }
 
    void method5738() {

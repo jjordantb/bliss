@@ -1,12 +1,12 @@
 import java.util.LinkedList;
 
 public class class954 {
-   public int field3578 = 1895598080;
+   public int field3578 = 2048;
    public int field3579 = 0;
-   public int field3580 = 757188608;
+   public int field3580 = 2048;
    public int field3581 = 0;
 
-   void method2088(class907 var1, int var2) {
+   void method2088(InputStream var1, int var2) {
       try {
          while(true) {
             int var3 = var1.method6371();
@@ -21,16 +21,16 @@ public class class954 {
       }
    }
 
-   void method2089(class907 var1, int var2, byte var3) {
+   void method2089(InputStream var1, int var2, byte var3) {
       try {
          if (var2 == 1) {
-            this.field3581 = var1.method6371() * 248827265;
+            this.field3581 = var1.method6371();
          } else if (2 == var2) {
-            this.field3580 = var1.method6374() * 258319417;
+            this.field3580 = var1.method6374();
          } else if (3 == var2) {
-            this.field3578 = var1.method6374() * -819060847;
+            this.field3578 = var1.method6374();
          } else if (var2 == 4) {
-            this.field3579 = var1.method6367(1649788845) * -1244481247;
+            this.field3579 = var1.method6367(1649788845);
          }
 
       } catch (RuntimeException var5) {
@@ -44,7 +44,7 @@ public class class954 {
          class198.field7049 = 0;
          class198.field7046 = new LinkedList();
          class198.field7039 = new class737[1024];
-         class198.field7042 = new class726[1 + class948.field3284[1197525581 * class198.field7038]];
+         class198.field7042 = new class726[1 + class948.field3284[class198.field7038]];
          class198.field7043 = 0;
          class198.field7044 = 0;
          class143.method1176(var0, (byte)-107);

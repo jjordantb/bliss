@@ -13,7 +13,7 @@ public final class class962 {
    public Object method2120(Object var1, Object var2, byte var3) {
       try {
          synchronized(this) {
-            if (-7599200929196954985L * this.field3624 != -1L) {
+            if (this.field3624 != -1L) {
                this.method2124(-1215407622);
             }
 
@@ -25,7 +25,7 @@ public final class class962 {
                return var10;
             } else {
                class510 var6;
-               if (this.method2121((byte)3) && this.field3626.size() == 582284141 * this.field3622) {
+               if (this.method2121((byte)3) && this.field3626.size() == this.field3622) {
                   var6 = (class510)this.field3623.remove();
                   this.field3626.remove(var6.field4164);
                   this.field3621.remove(var6);
@@ -44,10 +44,10 @@ public final class class962 {
    }
 
    class962(long var1, int var3, class474 var4) {
-      this.field3624 = -611323927505636057L * var1;
-      this.field3622 = var3 * -1292104091;
+      this.field3624 = var1;
+      this.field3622 = var3;
       this.field3625 = var4;
-      if (this.field3622 * 582284141 == -1) {
+      if (this.field3622 == -1) {
          this.field3626 = new HashMap(64);
          this.field3621 = new class226(64);
          this.field3623 = null;
@@ -56,16 +56,16 @@ public final class class962 {
             throw new IllegalArgumentException("");
          }
 
-         this.field3626 = new HashMap(this.field3622 * 582284141);
-         this.field3621 = new class226(582284141 * this.field3622);
-         this.field3623 = new class226(582284141 * this.field3622);
+         this.field3626 = new HashMap(this.field3622);
+         this.field3621 = new class226(this.field3622);
+         this.field3623 = new class226(this.field3622);
       }
 
    }
 
    boolean method2121(byte var1) {
       try {
-         return this.field3622 * 582284141 != -1;
+         return this.field3622 != -1;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "kp.a(" + ')');
       }
@@ -74,7 +74,7 @@ public final class class962 {
    public Object method2122(Object var1, byte var2) {
       try {
          synchronized(this) {
-            if (-7599200929196954985L * this.field3624 != -1L) {
+            if (this.field3624 != -1L) {
                this.method2124(-379360900);
             }
 
@@ -107,14 +107,14 @@ public final class class962 {
             }
          }
 
-         var1.field4163 = System.currentTimeMillis() * 7489795633800790139L;
+         var1.field4163 = System.currentTimeMillis();
          if (this.method2121((byte)3)) {
-            switch(this.field3625.field8269 * -1142442207) {
+            switch(this.field3625.field8269) {
             case 0:
-               var1.field4161 = var1.field4163 * 9087373979742177181L;
+               var1.field4161 = var1.field4163;
                break;
             case 1:
-               var1.field4161 += 8711051982827645039L;
+               ++var1.field4161;
             }
 
             this.field3623.add(var1);
@@ -128,14 +128,14 @@ public final class class962 {
 
    void method2124(int var1) {
       try {
-         if (this.field3624 * -7599200929196954985L == -1L) {
+         if (this.field3624 == -1L) {
             throw new IllegalStateException("");
          } else {
-            long var2 = System.currentTimeMillis() - -7599200929196954985L * this.field3624;
+            long var2 = System.currentTimeMillis() - this.field3624;
 
             while(!this.field3621.isEmpty()) {
                class510 var4 = (class510)this.field3621.peek();
-               if (2922630875768299187L * var4.field4163 >= var2) {
+               if (var4.field4163 >= var2) {
                   break;
                }
 
@@ -170,7 +170,7 @@ public final class class962 {
    public Object method2126(Object var1, int var2) {
       try {
          synchronized(this) {
-            if (-1L != -7599200929196954985L * this.field3624) {
+            if (-1L != this.field3624) {
                this.method2124(-583861644);
             }
 
@@ -196,7 +196,7 @@ public final class class962 {
 
    static final void method2127(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -391880689;
+         --var0.field3156;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "kp.ab(" + ')');
       }
@@ -204,12 +204,12 @@ public final class class962 {
 
    static final void method2128(class744 var0, byte var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         String var2 = (String)var0.field3157[--var0.field3158];
          if (var2.startsWith(class341.method255(0, -278777595)) || var2.startsWith(class341.method255(1, -278777595))) {
             var2 = var2.substring(7);
          }
 
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class79.method1157(var2, -1316013258);
+         var0.field3161[++var0.field3156 - 1] = class79.method1157(var2, -1316013258);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "kp.wi(" + ')');
       }
@@ -218,7 +218,7 @@ public final class class962 {
    static final void method2129(class744 var0, byte var1) {
       try {
          class471 var2 = class458.method3832((byte)29);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var2 == null ? 0 : var2.field3476 * -877023375;
+         var0.field3161[++var0.field3156 - 1] = var2 == null ? 0 : var2.field3476 * -743493231 * -877023375;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "kp.alt(" + ')');
       }
@@ -226,8 +226,8 @@ public final class class962 {
 
    static final void method2130(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3174[var0.field3176 * 1883543357];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = ((class946)var0.field3159).field3402.method6446(var2, -1034906382);
+         int var2 = var0.field3174[var0.field3176];
+         var0.field3161[++var0.field3156 - 1] = ((Player)var0.field3159).field3402.method6446(var2, -1034906382);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "kp.ae(" + ')');
       }
@@ -237,9 +237,9 @@ public final class class962 {
       try {
          class682 var5 = class370.method881(10, (long)var0);
          var5.method4340((byte)101);
-         var5.field7687 = var1 * 1274450087;
-         var5.field7685 = var2 * 293101103;
-         var5.field7686 = -80288087 * var3;
+         var5.field7687 = var1;
+         var5.field7685 = var2;
+         var5.field7686 = var3;
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "kp.ab(" + ')');
       }

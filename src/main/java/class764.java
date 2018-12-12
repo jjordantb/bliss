@@ -35,7 +35,7 @@ public class class764 {
          if (var1 == null) {
             return false;
          } else {
-            return this.field4347 * 1606920449 == var1.field4347 * 1606920449 && this.field4343.equals(var1.field4343);
+            return this.field4347 == var1.field4347 && this.field4343.equals(var1.field4343);
          }
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "tk.b(" + ')');
@@ -60,16 +60,16 @@ public class class764 {
 
    static final void method2744(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         int var3 = class85.field1121.method1566(var2).field4238 * 785788887;
+         int var2 = var0.field3161[--var0.field3156];
+         int var3 = class85.field1121.method1566(var2).field4238;
 
-         for(int var4 = 0; var4 < class518.field4215.length; ++var4) {
-            if (class518.field4215[var4] == var2) {
-               var3 = class518.field4216[var4];
+         for(int var4 = 0; var4 < ItemDefinition.field4215.length; ++var4) {
+            if (ItemDefinition.field4215[var4] == var2) {
+               var3 = ItemDefinition.field4216[var4];
             }
          }
 
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3;
+         var0.field3161[++var0.field3156 - 1] = var3;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "tk.aad(" + ')');
       }
@@ -93,7 +93,7 @@ public class class764 {
 
    static void method2746(class744 var0, byte var1) {
       try {
-         var0.field3161[681479919 * var0.field3156 - 1] = class735.field3009.method4224(var0.field3161[var0.field3156 * 681479919 - 1], 245040087).field8988 * -1570899057;
+         var0.field3161[var0.field3156 - 1] = class735.field3009.method4224(var0.field3161[var0.field3156 - 1], 245040087).field8988;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "tk.b(" + ')');
       }
@@ -128,7 +128,7 @@ public class class764 {
                   ;
                }
 
-               URL var6 = new URL(class862.field8933.getCodeBase(), "clienterror.ws?c=" + 1879961195 * class862.field8934 + "&cs=" + class878.field9821 * -518231893 + "&u=" + (class862.field8932 != null ? class104.method146(class862.field8932, 1755268630) : "" + class862.field8931 * -6049538010378147713L) + "&v1=" + class104.method146(var4, 1908813810) + "&v2=" + class104.method146(var5, 1870225284) + "&e=" + var3);
+               URL var6 = new URL(class862.field8933.getCodeBase(), "clienterror.ws?c=" + class862.field8934 + "&cs=" + class878.field9821 + "&u=" + (class862.field8932 != null ? class104.method146(class862.field8932, 1755268630) : "" + class862.field8931) + "&v1=" + class104.method146(var4, 1908813810) + "&v2=" + class104.method146(var5, 1870225284) + "&e=" + var3);
                DataInputStream var7 = new DataInputStream(var6.openStream());
                var7.read();
                var7.close();

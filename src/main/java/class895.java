@@ -9,7 +9,7 @@ public class class895 {
    static int method5596(int var0) {
       try {
          byte var2;
-         if (1126040225 * class69.field1827 >= 96) {
+         if (class69.field1827 >= 96) {
             int var1 = class237.method4653((byte)12);
             if (var1 <= 101) {
                class115.method1276(228176307);

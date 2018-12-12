@@ -9,7 +9,7 @@ public final class class1 {
          if (var1 != null) {
             var1.method545(-1460969981);
             var1.method156(-2141988967);
-            this.field4951 += -1044171843 * var1.field1421;
+            this.field4951 += var1.field1421 * 1177262507;
          }
 
       } catch (RuntimeException var4) {
@@ -43,12 +43,12 @@ public final class class1 {
             if (var4 == null) {
                var3.method545(-1460969981);
                var3.method156(-300474257);
-               this.field4951 += var3.field1421 * -1044171843;
+               this.field4951 += var3.field1421 * 1177262507;
                return null;
             } else {
                if (var3.method1076(-1388215910)) {
-                  class840 var5 = new class840(var4, 1980662847 * var3.field1421);
-                  this.field4949.method2947(var5, var3.field641 * 7051297995265073167L);
+                  class840 var5 = new class840(var4, var3.field1421 * 1177262507);
+                  this.field4949.method2947(var5, var3.field641);
                   this.field4950.method2704(var5, (byte)-4);
                   var5.field209 = 0L;
                   var3.method545(-1460969981);
@@ -68,13 +68,13 @@ public final class class1 {
 
    public void method2975(Object var1, long var2, int var4, byte var5) {
       try {
-         if (var4 > this.field4952 * 2087531591) {
+         if (var4 > this.field4952) {
             throw new IllegalStateException();
          } else {
             this.method2983(var2);
-            this.field4951 -= -1846372093 * var4;
+            this.field4951 -= var4;
 
-            while(1177262507 * this.field4951 < 0) {
+            while(this.field4951 < 0) {
                class142 var6 = (class142)this.field4950.method2705(-2130209329);
                this.method2972(var6, -1092506029);
             }
@@ -96,11 +96,11 @@ public final class class1 {
                if (var3.method1075(1618549592) == null) {
                   var3.method545(-1460969981);
                   var3.method156(932803925);
-                  this.field4951 += -1044171843 * var3.field1421;
+                  this.field4951 += var3.field1421 * 1177262507;
                }
-            } else if ((var3.field209 += 1476940603538232441L) * -5533549728640346679L > (long)var1) {
-               class681 var4 = new class681(var3.method1075(1802409899), var3.field1421 * 1980662847);
-               this.field4949.method2947(var4, 7051297995265073167L * var3.field641);
+            } else if (++var3.field209 > (long)var1) {
+               class681 var4 = new class681(var3.method1075(1802409899), var3.field1421 * 1177262507);
+               this.field4949.method2947(var4, var3.field641);
                class599.method1287(var4, var3, -2008394772);
                var3.method545(-1460969981);
                var3.method156(357875821);
@@ -116,7 +116,7 @@ public final class class1 {
       try {
          this.field4950.method2710(1649887220);
          this.field4949.method2941((byte)-88);
-         this.field4951 = 1537477589 * this.field4952;
+         this.field4951 = this.field4952;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "on.d(" + ')');
       }
@@ -124,7 +124,7 @@ public final class class1 {
 
    public int method2978(int var1) {
       try {
-         return this.field4952 * 2087531591;
+         return this.field4952;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "on.u(" + ')');
       }
@@ -140,7 +140,7 @@ public final class class1 {
             if (var1.method1076(2031877244)) {
                var1.method545(-1460969981);
                var1.method156(784746714);
-               this.field4951 += -1044171843 * var1.field1421;
+               this.field4951 += var1.field1421 * 1177262507;
             }
          }
 
@@ -152,7 +152,7 @@ public final class class1 {
    public Object method2980(int var1) {
       try {
          class142 var4;
-         for(class142 var2 = (class142)this.field4949.method2946(2018189704); var2 != null; this.field4951 += -1044171843 * var4.field1421) {
+         for(class142 var2 = (class142)this.field4949.method2946(2018189704); var2 != null; this.field4951 += var4.field1421 * 1177262507) {
             Object var3 = var2.method1075(-709026193);
             if (var3 != null) {
                return var3;
@@ -173,7 +173,7 @@ public final class class1 {
    public Object method2981(int var1) {
       try {
          class142 var4;
-         for(class142 var2 = (class142)this.field4949.method2945((byte)37); var2 != null; this.field4951 += -1044171843 * var4.field1421) {
+         for(class142 var2 = (class142)this.field4949.method2945((byte)37); var2 != null; this.field4951 += var4.field1421 * 1177262507) {
             Object var3 = var2.method1075(110174403);
             if (var3 != null) {
                return var3;
@@ -193,7 +193,7 @@ public final class class1 {
 
    public int method2982(int var1) {
       try {
-         return this.field4951 * 1177262507;
+         return this.field4951;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "on.x(" + ')');
       }
@@ -218,8 +218,8 @@ public final class class1 {
 
    public class1(int var1, int var2) {
       this.field4950 = new class514();
-      this.field4952 = var1 * -1371130505;
-      this.field4951 = -1846372093 * var1;
+      this.field4952 = var1;
+      this.field4951 = var1;
 
       int var3;
       for(var3 = 1; var3 + var3 < var1 && var3 < var2; var3 += var3) {
@@ -231,7 +231,7 @@ public final class class1 {
 
    static final void method2985(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class615.field8903.method5391(class615.field8903.field9118, var2, 1144244334);
          class730.field2697.method5309(458039847);
          class95.method523(656179282);
@@ -274,8 +274,8 @@ public final class class1 {
 
    static final void method2988(class744 var0, int var1) {
       try {
-         int var2 = var0.field3174[var0.field3176 * 1883543357];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = ((class60)var0.field3159).field1634.method4032(var2, -966489489);
+         int var2 = var0.field3174[var0.field3176];
+         var0.field3161[++var0.field3156 - 1] = ((Npc)var0.field3159).field1634.method4032(var2, -966489489);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "on.ao(" + ')');
       }

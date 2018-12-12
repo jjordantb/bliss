@@ -6,13 +6,13 @@ public class class447 {
    int field7625;
    public int field7626;
 
-   void method4314(class907 var1, int var2, byte var3) {
+   void method4314(InputStream var1, int var2, byte var3) {
       try {
          if (var2 == 1) {
-            this.field7625 = var1.method6423(1235052657) * -1732871629;
+            this.field7625 = var1.method6423(1235052657);
          } else if (2 == var2) {
-            this.field7626 = var1.method6371() * -1845194875;
-            this.field7623 = var1.method6371() * -1430050043;
+            this.field7626 = var1.method6371();
+            this.field7623 = var1.method6371();
          }
 
       } catch (RuntimeException var5) {
@@ -20,7 +20,7 @@ public class class447 {
       }
    }
 
-   void method4315(class907 var1, int var2) {
+   void method4315(InputStream var1, int var2) {
       try {
          while(true) {
             int var3 = var1.method6371();
@@ -41,13 +41,13 @@ public class class447 {
 
    public synchronized class922 method4316(int var1) {
       try {
-         class922 var2 = (class922)this.field7624.field4641.method2974((long)(this.field7625 * 1338052859));
+         class922 var2 = (class922)this.field7624.field4641.method2974((long)this.field7625);
          if (var2 != null) {
             return var2;
          } else {
-            var2 = class922.method6242(this.field7624.field4640, 1338052859 * this.field7625, 0);
+            var2 = class922.method6242(this.field7624.field4640, this.field7625, 0);
             if (var2 != null) {
-               this.field7624.field4641.method2984(var2, (long)(1338052859 * this.field7625));
+               this.field7624.field4641.method2984(var2, (long)this.field7625);
             }
 
             return var2;
@@ -64,14 +64,14 @@ public class class447 {
          for(int var8 = 0; var8 < var7.length; ++var8) {
             class921 var9 = var7[var8];
             if (var9 != null) {
-               if (var9.field10287 * 958933333 != 2) {
+               if (var9.field10287 != 2) {
                   if (var6 != 996259282) {
                      break;
                   }
                } else {
-                  class971.method1790(var9.field10280 * -458864019, -1338192389 * var9.field10281, 1018128075 * var9.field10282, var9.field10283 * 143254950, -549885479);
-                  if (class730.field2873[0] > -1.0F && 443738891 * class730.field2866 % 20 < 10) {
-                     class48 var10 = class634.field9790[-92466201 * var9.field10279];
+                  class971.method1790(var9.field10280, var9.field10281, var9.field10282, var9.field10283 * 2, -549885479);
+                  if (class730.field2873[0] > -1.0F && class730.field2866 % 20 < 10) {
+                     class48 var10 = class634.field9790[var9.field10279];
                      int var11 = (int)((float)var0 + class730.field2873[0] - 12.0F);
                      int var12 = (int)((float)var1 + class730.field2873[1] - 28.0F);
                      var10.method3128(var11, var12);
@@ -90,11 +90,11 @@ public class class447 {
          int var5;
          if (var1 > var2) {
             for(var5 = var2; var5 < var1; ++var5) {
-               class216.field1412[var5][var0] = var3;
+               class381.field1412[var5][var0] = var3;
             }
          } else {
             for(var5 = var1; var5 < var2; ++var5) {
-               class216.field1412[var5][var0] = var3;
+               class381.field1412[var5][var0] = var3;
             }
          }
 

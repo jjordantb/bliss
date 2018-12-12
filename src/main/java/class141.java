@@ -7,15 +7,7 @@ final class class141 implements class768 {
       }
    }
 
-   public Object method2232(byte[] var1, class230 var2, boolean var3) {
-      return class593.field1623.method4936(var2, class922.method6237(var1), var3);
-   }
-
-   public Object method2234(byte[] var1, class230 var2, boolean var3) {
-      return class593.field1623.method4936(var2, class922.method6237(var1), var3);
-   }
-
-   static class398 method1092(class476 var0, byte var1) {
+   static class398 method1092(Animable var0, byte var1) {
       try {
          class398 var2;
          if (class398.field6584 == null) {
@@ -24,7 +16,7 @@ final class class141 implements class768 {
             var2 = class398.field6584;
             class398.field6584 = class398.field6584.field6586;
             var2.field6586 = null;
-            class398.field6587 -= -1998519535;
+            --class398.field6587;
          }
 
          var2.field6585 = var0;
@@ -38,18 +30,18 @@ final class class141 implements class768 {
       try {
          class228.field8216 = var0;
          class228.field8222 = var1;
-         class228.field8215 = var2 * 295365919;
-         class228.field8218 = -1224770727 * var3;
-         class228.field8217 = var4 * -1586864867;
-         class228.field8220 = 1104541761 * var5;
-         class370.field1097 = 1351228359 * var6;
-         class228.field8219 = 838462141 * var7;
-         class348.field221 = var8 * 339871807;
+         class228.field8215 = var2;
+         class228.field8218 = var3;
+         class228.field8217 = var4;
+         class228.field8220 = var5;
+         class370.field1097 = var6;
+         class228.field8219 = var7;
+         class348.field221 = var8;
          class417.field9582 = null;
          class968.field2552 = null;
          class5.field4945 = null;
-         class245.field8540 = var9 * 1589600979;
-         class228.field8213 = var10 * -674457001;
+         class245.field8540 = var9;
+         class228.field8213 = var10;
          class461.method3994(-1268692886);
          class534.field3722 = true;
       } catch (RuntimeException var13) {
@@ -57,7 +49,7 @@ final class class141 implements class768 {
       }
    }
 
-   static class197 method1094(class907 var0, int var1) {
+   static class197 method1094(InputStream var0, int var1) {
       try {
          int var2 = var0.method6371();
          int var3 = var0.method6371();
@@ -76,10 +68,10 @@ final class class141 implements class768 {
 
    static final void method1095(class744 var0, int var1) {
       try {
-         var0.field3156 -= -1175642067;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
-         int var3 = var0.field3161[681479919 * var0.field3156 + 1];
-         int var4 = var0.field3161[2 + 681479919 * var0.field3156];
+         var0.field3156 -= 3;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1];
+         int var4 = var0.field3161[2 + var0.field3156];
          class449.method3756(var2, (byte)83);
          class362.method1505(class382.field1410[var2 >>> 16], var2 & '\uffff', var3, var4, var0.field3178, var0, -782842809);
       } catch (RuntimeException var5) {

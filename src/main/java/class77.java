@@ -11,13 +11,9 @@ public class class77 implements class331 {
    int field1515;
    static class48 field1516;
 
-   public int method91() {
-      return 1575163887 * this.field1515;
-   }
-
    public class77 method1133(byte var1) {
       try {
-         switch(this.field1510 * 495490839) {
+         switch(this.field1510) {
          case 0:
             return field1508;
          case 1:
@@ -44,24 +40,20 @@ public class class77 implements class331 {
 
    public int method89(int var1) {
       try {
-         return 1575163887 * this.field1515;
+         return this.field1515;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "lj.f(" + ')');
       }
    }
 
-   public int method90() {
-      return 1575163887 * this.field1515;
-   }
-
    class77(int var1, int var2) {
-      this.field1510 = var1 * 699142311;
-      this.field1515 = var2 * 1812395791;
+      this.field1510 = var1;
+      this.field1515 = var2;
    }
 
    static final void method1134(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-68);
          class131 var4 = class382.field1410[var2 >> 16];
          class779.method2324(var3, var4, var0, 783841228);

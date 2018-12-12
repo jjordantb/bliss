@@ -33,7 +33,7 @@ public class class818 {
 
    static byte method2901(int var0, int var1, byte var2) {
       try {
-         if (-1976050083 * class15.field6903.field6921 != var0) {
+         if (class15.field6903.field6921 != var0) {
             return 0;
          } else {
             return (byte)((var1 & 1) == 0 ? 1 : 2);
@@ -45,13 +45,13 @@ public class class818 {
 
    static final void method2902(class564 var0, class131 var1, class744 var2, int var3) {
       try {
-         var0.field960 = var2.field3161[(var2.field3156 -= -391880689) * 681479919] * -978869921;
+         var0.field960 = var2.field3161[--var2.field3156];
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "de.jm(" + ')');
       }
    }
 
-   public static final void method2903(class963 var0, int var1, byte var2) {
+   public static final void method2903(Interactable var0, int var1, byte var2) {
       try {
          class133.method996(var0, var1, true, 229741614);
       } catch (RuntimeException var4) {
@@ -61,11 +61,11 @@ public class class818 {
 
    static final void method2904(class564 var0, class131 var1, class744 var2, int var3) {
       try {
-         var2.field3156 -= -1567522756;
-         var0.field1003 = 730470451 * var2.field3161[var2.field3156 * 681479919];
-         var0.field932 = var2.field3161[1 + var2.field3156 * 681479919] * 792598437;
-         var0.field933 = 1652793977 * var2.field3161[2 + 681479919 * var2.field3156];
-         var0.field922 = var2.field3161[681479919 * var2.field3156 + 3] * 1502440771;
+         var2.field3156 -= 4;
+         var0.field1003 = var2.field3161[var2.field3156];
+         var0.field932 = var2.field3161[1 + var2.field3156];
+         var0.field933 = var2.field3161[2 + var2.field3156];
+         var0.field922 = var2.field3161[var2.field3156 + 3];
          class814.method2932(var0, -540239013);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "de.ex(" + ')');

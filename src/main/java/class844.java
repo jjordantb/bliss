@@ -20,14 +20,14 @@ public class class844 {
             class180 var5 = this.field8680;
             byte[] var10;
             synchronized(this.field8680) {
-               var10 = this.field8680.method3285(-1006924897 * class981.field3252.field3271, var1, (byte)-50);
+               var10 = this.field8680.method3285(class981.field3252.field3271, var1, (byte)-50);
             }
 
             var4 = new class718();
-            var4.field3499 = var1 * -1314224517;
+            var4.field3499 = var1;
             var4.field3491 = this;
             if (var10 != null) {
-               var4.method2060(new class907(var10), 677294156);
+               var4.method2060(new InputStream(var10), 677294156);
             }
 
             var4.method2062(-2028802869);
@@ -103,12 +103,12 @@ public class class844 {
    public class844(class469 var1, class423 var2, class180 var3, class180 var4) {
       this.field8680 = var3;
       this.field8684 = var4;
-      this.field8680.method3286(-1006924897 * class981.field3252.field3271, -1187243048);
+      this.field8680.method3286(class981.field3252.field3271, -1187243048);
    }
 
    static final void method5096(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)40);
          class131 var4 = class382.field1410[var2 >> 16];
          class640.method6190(var3, var4, var0, (short)-26204);
@@ -130,7 +130,7 @@ public class class844 {
 
    static final void method5098(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class912.field10424.method5513((byte)-67);
+         var0.field3161[++var0.field3156 - 1] = class912.field10424.method5513((byte)-67);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "od.ux(" + ')');
       }
@@ -138,21 +138,21 @@ public class class844 {
 
    static final void method5099(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class896.field9358 * 1196508279 + class491.field7820;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1882038855 * class747.field4148 + class491.field7813;
+         var0.field3161[++var0.field3156 - 1] = class896.field9358 + class491.field7820;
+         var0.field3161[++var0.field3156 - 1] = class747.field4148 + class491.field7813;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "od.adq(" + ')');
       }
    }
 
-   static void method5100(class907 var0, int var1) {
+   static void method5100(InputStream var0, int var1) {
       try {
          while(true) {
             int var2 = var0.method6371();
             switch(var2) {
             case 0:
-               class949.field3328 = var0.method6374() * 1746642957;
-               class949.field3329 = var0.method6374() * -196096943;
+               class949.field3328 = var0.method6374();
+               class949.field3329 = var0.method6374();
                break;
             case 255:
                return;
@@ -166,8 +166,8 @@ public class class844 {
    static final void method5101(class744 var0, int var1) {
       try {
          var0.field3160 = new class24();
-         var0.field3160.field6482 = var0.field3161[(var0.field3156 -= -391880689) * 681479919] * -1496580327;
-         var0.field3160.field6483 = class906.field10363.method2713(-2034569943 * var0.field3160.field6482, (short)-31803);
+         var0.field3160.field6482 = var0.field3161[--var0.field3156];
+         var0.field3160.field6483 = class906.field10363.method2713(var0.field3160.field6482, (short)-31803);
          var0.field3160.field6484 = new int[var0.field3160.field6483.method6653((short)-407)];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "od.ace(" + ')');

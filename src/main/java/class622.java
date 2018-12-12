@@ -7,9 +7,9 @@ public class class622 {
 
    static final void method5336(class744 var0, int var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
-         int var3 = var0.field3161[var0.field3156 * 681479919 + 1];
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1];
          class237 var4 = var0.field3178 ? var0.field3164 : var0.field3163;
          class317.method470(var4.field8255, var2, var3, 1973544714);
       } catch (RuntimeException var5) {
@@ -19,7 +19,7 @@ public class class622 {
 
    static final void method5337(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class86.field1134.field3064 * 399637415 >= 512 && !class730.field2627 && !class730.field2643 ? 0 : 1;
+         var0.field3161[++var0.field3156 - 1] = class86.field1134.field3064 >= 512 && !class730.field2627 && !class730.field2643 ? 0 : 1;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "do.akp(" + ')');
       }
@@ -27,7 +27,7 @@ public class class622 {
 
    static final void method5338(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          if (-1 != var2) {
             class56.method1546(var2, (byte)48);
          }

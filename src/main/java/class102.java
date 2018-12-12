@@ -34,7 +34,7 @@ public class class102 extends class678 {
       super(var1, var2, var3, var4, var5, var6, var7, var8, true);
       this.field321 = var3;
       this.field320 = var4;
-      if (this.field7562 == 34037) {
+      if (super.field7562 == 34037) {
          this.field324 = (float)var4;
          this.field322 = (float)var3;
          this.field323 = false;
@@ -51,7 +51,7 @@ public class class102 extends class678 {
       super(var1, var2, var3, var4, var5, var6, var7, var8, var9, true);
       this.field321 = var5;
       this.field320 = var6;
-      if (this.field7562 == 34037) {
+      if (super.field7562 == 34037) {
          this.field324 = (float)var6;
          this.field322 = (float)var5;
          this.field323 = false;
@@ -68,7 +68,7 @@ public class class102 extends class678 {
       super(var1, var2, var3, var4, var5, var6);
       this.field321 = var5;
       this.field320 = var6;
-      if (this.field7562 == 34037) {
+      if (super.field7562 == 34037) {
          this.field324 = (float)var6;
          this.field322 = (float)var5;
          this.field323 = false;
@@ -143,7 +143,7 @@ public class class102 extends class678 {
       super(var1, var2, var3, var4, var5, var6);
       this.field321 = var5;
       this.field320 = var6;
-      if (this.field7562 == 34037) {
+      if (super.field7562 == 34037) {
          this.field324 = (float)var6;
          this.field322 = (float)var5;
          this.field323 = false;
@@ -154,9 +154,5 @@ public class class102 extends class678 {
       }
 
       this.field319 = false;
-   }
-
-   void method268(boolean var1) {
-      super.method4289(var1 && !this.field319);
    }
 }

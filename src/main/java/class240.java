@@ -28,7 +28,7 @@ public class class240 {
 
    public void method4708(int var1, int var2) {
       try {
-         this.field8392 = -570701637 * var1;
+         this.field8392 = var1;
          class1 var3 = this.field8389;
          synchronized(this.field8389) {
             this.field8389.method2977();
@@ -157,12 +157,12 @@ public class class240 {
 
    }
 
-   public class50 method4713(int var1) {
+   public ObjectDefinition method4713(int var1) {
       try {
          class1 var2 = this.field8388;
-         class50 var3;
+         ObjectDefinition var3;
          synchronized(this.field8388) {
-            var3 = (class50)this.field8388.method2974((long)var1);
+            var3 = (ObjectDefinition)this.field8388.method2974((long)var1);
          }
 
          if (var3 != null) {
@@ -174,12 +174,12 @@ public class class240 {
                var9 = this.field8385.method3285(class981.field3254.method1927(var1, -1875026798), class981.field3254.method1925(var1, -1955117131), (byte)-69);
             }
 
-            var3 = new class50();
-            var3.field2197 = var1 * -950871973;
+            var3 = new ObjectDefinition();
+            var3.field2197 = var1;
             var3.field2235 = this;
             var3.field2226 = (String[])this.field8393.clone();
             if (var9 != null) {
-               var3.method1493(new class907(var9), -1780393822);
+               var3.method1493(new InputStream(var9), -1780393822);
             }
 
             var3.method1488(-231037911);
@@ -211,7 +211,7 @@ public class class240 {
          int var6 = var2;
          int var7 = -var2;
          int var8 = -1;
-         class484.method4769(class964.field1412[var1], var0 - var2, var0 + var2, var3, 198591816);
+         class484.method4769(class381.field1412[var1], var0 - var2, var0 + var2, var3, 198591816);
 
          while(var6 > var5) {
             var8 += 2;
@@ -220,8 +220,8 @@ public class class240 {
             if (var7 >= 0) {
                --var6;
                var7 -= var6 << 1;
-               int[] var9 = class964.field1412[var6 + var1];
-               int[] var10 = class964.field1412[var1 - var6];
+               int[] var9 = class381.field1412[var6 + var1];
+               int[] var10 = class381.field1412[var1 - var6];
                int var11 = var5 + var0;
                int var12 = var0 - var5;
                class484.method4769(var9, var12, var11, var3, 1681024850);
@@ -230,8 +230,8 @@ public class class240 {
 
             int var14 = var6 + var0;
             int var15 = var0 - var6;
-            int[] var16 = class964.field1412[var1 + var5];
-            int[] var17 = class964.field1412[var1 - var5];
+            int[] var16 = class381.field1412[var1 + var5];
+            int[] var17 = class381.field1412[var1 - var5];
             class484.method4769(var16, var15, var14, var3, -143852292);
             class484.method4769(var17, var15, var14, var3, 358013733);
          }
@@ -243,7 +243,7 @@ public class class240 {
 
    static final void method4715(class744 var0, short var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-1);
          class131 var4 = class382.field1410[var2 >> 16];
          class713.method2076(var3, var4, var0, (byte)-45);

@@ -1,6 +1,6 @@
 import java.math.BigInteger;
 
-public class class907 extends class568 {
+public class InputStream extends class568 {
    public byte[] field10375;
    public int field10376;
    static int[] field10377 = new int[256];
@@ -46,11 +46,11 @@ public class class907 extends class568 {
 
    public void method6360(long var1) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)((int)(var1 >> 32));
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)((int)(var1 >> 24));
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)((int)(var1 >> 16));
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)((int)(var1 >> 8));
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)((int)var1);
+         this.field10375[++this.field10376 - 1] = (byte)((int)(var1 >> 32));
+         this.field10375[++this.field10376 - 1] = (byte)((int)(var1 >> 24));
+         this.field10375[++this.field10376 - 1] = (byte)((int)(var1 >> 16));
+         this.field10375[++this.field10376 - 1] = (byte)((int)(var1 >> 8));
+         this.field10375[++this.field10376 - 1] = (byte)((int)var1);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.r(" + ')');
       }
@@ -58,7 +58,7 @@ public class class907 extends class568 {
 
    public void method6361(int var1) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)var1;
+         this.field10375[++this.field10376 - 1] = (byte)var1;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.p(" + ')');
       }
@@ -66,8 +66,8 @@ public class class907 extends class568 {
 
    public void method6362(int var1, int var2) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 8);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)var1;
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 8);
+         this.field10375[++this.field10376 - 1] = (byte)var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.i(" + ')');
       }
@@ -75,8 +75,8 @@ public class class907 extends class568 {
 
    public void method6363(int var1, int var2) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)var1;
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 8);
+         this.field10375[++this.field10376 - 1] = (byte)var1;
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 8);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.k(" + ')');
       }
@@ -84,10 +84,10 @@ public class class907 extends class568 {
 
    public void method6364(int var1, int var2) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 24);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 16);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 8);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)var1;
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 24);
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 16);
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 8);
+         this.field10375[++this.field10376 - 1] = (byte)var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.u(" + ')');
       }
@@ -95,10 +95,10 @@ public class class907 extends class568 {
 
    public void method6365(int var1, int var2) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)var1;
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 8);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 16);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 24);
+         this.field10375[++this.field10376 - 1] = (byte)var1;
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 8);
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 16);
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 24);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.x(" + ')');
       }
@@ -110,8 +110,8 @@ public class class907 extends class568 {
          if (var3 >= 0) {
             throw new IllegalArgumentException("");
          } else {
-            this.field10376 += class861.method5350(var1, 0, var1.length(), this.field10375, 385051775 * this.field10376, (byte)41) * 116413311;
-            this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = 0;
+            this.field10376 += class861.method5350(var1, 0, var1.length(), this.field10375, this.field10376, (byte)41);
+            this.field10375[++this.field10376 - 1] = 0;
          }
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.z(" + ')');
@@ -120,8 +120,8 @@ public class class907 extends class568 {
 
    public int method6367(int var1) {
       try {
-         this.field10376 += 232826622;
-         int var2 = ((this.field10375[this.field10376 * 385051775 - 2] & 255) << 8) + (this.field10375[385051775 * this.field10376 - 1] & 255);
+         this.field10376 += 2;
+         int var2 = ((this.field10375[this.field10376 - 2] & 255) << 8) + (this.field10375[this.field10376 - 1] & 255);
          if (var2 > 32767) {
             var2 -= 65536;
          }
@@ -134,10 +134,10 @@ public class class907 extends class568 {
 
    public void method6368(int var1, byte var2) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 8);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)var1;
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 24);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 16);
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 8);
+         this.field10375[++this.field10376 - 1] = (byte)var1;
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 24);
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 16);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.ba(" + ')');
       }
@@ -145,8 +145,8 @@ public class class907 extends class568 {
 
    public void method6369(int var1, int var2) {
       try {
-         this.field10375[385051775 * this.field10376 - var1 - 2] = (byte)(var1 >> 8);
-         this.field10375[385051775 * this.field10376 - var1 - 1] = (byte)var1;
+         this.field10375[this.field10376 - var1 - 2] = (byte)(var1 >> 8);
+         this.field10375[this.field10376 - var1 - 1] = (byte)var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.j(" + ')');
       }
@@ -171,7 +171,7 @@ public class class907 extends class568 {
 
    public int method6371() {
       try {
-         return this.field10375[(this.field10376 += 116413311) * 385051775 - 1] & 255;
+         return this.field10375[++this.field10376 - 1] & 255;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "acx.aa(" + ')');
       }
@@ -179,7 +179,7 @@ public class class907 extends class568 {
 
    public byte method6372(int var1) {
       try {
-         return this.field10375[(this.field10376 += 116413311) * 385051775 - 1];
+         return this.field10375[++this.field10376 - 1];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.ak(" + ')');
       }
@@ -192,8 +192,8 @@ public class class907 extends class568 {
 
    public int method6374() {
       try {
-         this.field10376 += 232826622;
-         return (this.field10375[this.field10376 * 385051775 - 1] & 255) + ((this.field10375[this.field10376 * 385051775 - 2] & 255) << 8);
+         this.field10376 += 2;
+         return (this.field10375[this.field10376 - 1] & 255) + ((this.field10375[this.field10376 - 2] & 255) << 8);
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "acx.ae(" + ')');
       }
@@ -211,10 +211,10 @@ public class class907 extends class568 {
 
    public void method6376(int var1, int var2) {
       try {
-         this.field10375[385051775 * this.field10376 - var1 - 4] = (byte)(var1 >> 24);
-         this.field10375[this.field10376 * 385051775 - var1 - 3] = (byte)(var1 >> 16);
-         this.field10375[385051775 * this.field10376 - var1 - 2] = (byte)(var1 >> 8);
-         this.field10375[385051775 * this.field10376 - var1 - 1] = (byte)var1;
+         this.field10375[this.field10376 - var1 - 4] = (byte)(var1 >> 24);
+         this.field10375[this.field10376 - var1 - 3] = (byte)(var1 >> 16);
+         this.field10375[this.field10376 - var1 - 2] = (byte)(var1 >> 8);
+         this.field10375[this.field10376 - var1 - 1] = (byte)var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.w(" + ')');
       }
@@ -222,8 +222,8 @@ public class class907 extends class568 {
 
    public int method6377(int var1) {
       try {
-         this.field10376 += 465653244;
-         return ((this.field10375[this.field10376 * 385051775 - 1] & 255) << 24) + ((this.field10375[this.field10376 * 385051775 - 2] & 255) << 16) + ((this.field10375[this.field10376 * 385051775 - 3] & 255) << 8) + (this.field10375[385051775 * this.field10376 - 4] & 255);
+         this.field10376 += 4;
+         return ((this.field10375[this.field10376 - 1] & 255) << 24) + ((this.field10375[this.field10376 - 2] & 255) << 16) + ((this.field10375[this.field10376 - 3] & 255) << 8) + (this.field10375[this.field10376 - 4] & 255);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.ah(" + ')');
       }
@@ -241,13 +241,13 @@ public class class907 extends class568 {
 
    public String method6379(int var1) {
       try {
-         int var2 = 385051775 * this.field10376;
+         int var2 = this.field10376;
 
-         while(this.field10375[(this.field10376 += 116413311) * 385051775 - 1] != 0) {
+         while(this.field10375[++this.field10376 - 1] != 0) {
             ;
          }
 
-         int var3 = this.field10376 * 385051775 - var2 - 1;
+         int var3 = this.field10376 - var2 - 1;
          return var3 == 0 ? "" : class783.method2497(this.field10375, var2, var3, 964250329);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.af(" + ')');
@@ -259,7 +259,7 @@ public class class907 extends class568 {
          --var3;
          if (var3 >= 0 && var3 <= 7) {
             for(int var5 = var3 * 8; var5 >= 0; var5 -= 8) {
-               this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)((int)(var1 >> var5));
+               this.field10375[++this.field10376 - 1] = (byte)((int)(var1 >> var5));
             }
 
          } else {
@@ -273,7 +273,7 @@ public class class907 extends class568 {
    public void method6381(byte[] var1, int var2, int var3, int var4) {
       try {
          for(int var5 = var2; var5 < var2 + var3; ++var5) {
-            var1[var5] = this.field10375[(this.field10376 += 116413311) * 385051775 - 1];
+            var1[var5] = this.field10375[++this.field10376 - 1];
          }
 
       } catch (RuntimeException var6) {
@@ -283,7 +283,7 @@ public class class907 extends class568 {
 
    public int method6382(int var1) {
       try {
-         int var2 = this.field10375[this.field10376 * 385051775] & 255;
+         int var2 = this.field10375[this.field10376] & 255;
          return var2 < 128 ? this.method6371() : this.method6374() - '耀';
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.ay(" + ')');
@@ -308,7 +308,7 @@ public class class907 extends class568 {
 
    public int method6384(int var1) {
       try {
-         return this.field10375[this.field10376 * 385051775] < 0 ? this.method6420((byte)47) & Integer.MAX_VALUE : this.method6374();
+         return this.field10375[this.field10376] < 0 ? this.method6420((byte)47) & Integer.MAX_VALUE : this.method6374();
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.ag(" + ')');
       }
@@ -316,14 +316,14 @@ public class class907 extends class568 {
 
    public void method6385(long var1) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)((int)(var1 >> 56));
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)((int)(var1 >> 48));
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)((int)(var1 >> 40));
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)((int)(var1 >> 32));
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)((int)(var1 >> 24));
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)((int)(var1 >> 16));
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)((int)(var1 >> 8));
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)((int)var1);
+         this.field10375[++this.field10376 - 1] = (byte)((int)(var1 >> 56));
+         this.field10375[++this.field10376 - 1] = (byte)((int)(var1 >> 48));
+         this.field10375[++this.field10376 - 1] = (byte)((int)(var1 >> 40));
+         this.field10375[++this.field10376 - 1] = (byte)((int)(var1 >> 32));
+         this.field10375[++this.field10376 - 1] = (byte)((int)(var1 >> 24));
+         this.field10375[++this.field10376 - 1] = (byte)((int)(var1 >> 16));
+         this.field10375[++this.field10376 - 1] = (byte)((int)(var1 >> 8));
+         this.field10375[++this.field10376 - 1] = (byte)((int)var1);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.q(" + ')');
       }
@@ -331,10 +331,10 @@ public class class907 extends class568 {
 
    public int method6386(int var1) {
       try {
-         byte var2 = this.field10375[(this.field10376 += 116413311) * 385051775 - 1];
+         byte var2 = this.field10375[++this.field10376 - 1];
 
          int var3;
-         for(var3 = 0; var2 < 0; var2 = this.field10375[(this.field10376 += 116413311) * 385051775 - 1]) {
+         for(var3 = 0; var2 < 0; var2 = this.field10375[++this.field10376 - 1]) {
             var3 = (var3 | var2 & 127) << 7;
          }
 
@@ -346,7 +346,7 @@ public class class907 extends class568 {
 
    public void method6387(int[] var1, int var2) {
       try {
-         int var3 = 385051775 * this.field10376 / 8;
+         int var3 = this.field10376 / 8;
          this.field10376 = 0;
 
          for(int var4 = 0; var4 < var3; ++var4) {
@@ -360,7 +360,7 @@ public class class907 extends class568 {
                var7 -= var8;
             }
 
-            this.field10376 -= 931306488;
+            this.field10376 -= 8;
             this.method6364(var5, -429646008);
             this.method6364(var6, 96557392);
          }
@@ -372,8 +372,8 @@ public class class907 extends class568 {
 
    public void method6388(int[] var1, int var2, int var3, int var4) {
       try {
-         int var5 = 385051775 * this.field10376;
-         this.field10376 = var2 * 116413311;
+         int var5 = this.field10376;
+         this.field10376 = var2;
          int var6 = (var3 - var2) / 8;
 
          for(int var7 = 0; var7 < var6; ++var7) {
@@ -387,12 +387,12 @@ public class class907 extends class568 {
                var10 += var11;
             }
 
-            this.field10376 -= 931306488;
+            this.field10376 -= 8;
             this.method6364(var8, -1455722924);
             this.method6364(var9, -1798688670);
          }
 
-         this.field10376 = 116413311 * var5;
+         this.field10376 = var5;
       } catch (RuntimeException var13) {
          throw class158.method3445(var13, "acx.ac(" + ')');
       }
@@ -400,8 +400,8 @@ public class class907 extends class568 {
 
    public void method6389(int[] var1, int var2, int var3, int var4) {
       try {
-         int var5 = this.field10376 * 385051775;
-         this.field10376 = var2 * 116413311;
+         int var5 = this.field10376;
+         this.field10376 = var2;
          int var6 = (var3 - var2) / 8;
 
          for(int var7 = 0; var7 < var6; ++var7) {
@@ -415,12 +415,12 @@ public class class907 extends class568 {
                var10 -= var11;
             }
 
-            this.field10376 -= 931306488;
+            this.field10376 -= 8;
             this.method6364(var8, -1451619282);
             this.method6364(var9, -1662476613);
          }
 
-         this.field10376 = var5 * 116413311;
+         this.field10376 = var5;
       } catch (RuntimeException var13) {
          throw class158.method3445(var13, "acx.am(" + ')');
       }
@@ -428,8 +428,8 @@ public class class907 extends class568 {
 
    public int method6390(byte var1) {
       try {
-         this.field10376 += 349239933;
-         return (this.field10375[385051775 * this.field10376 - 1] & 255) + ((this.field10375[this.field10376 * 385051775 - 3] & 255) << 16) + ((this.field10375[385051775 * this.field10376 - 2] & 255) << 8);
+         this.field10376 += 3;
+         return (this.field10375[this.field10376 - 1] & 255) + ((this.field10375[this.field10376 - 3] & 255) << 16) + ((this.field10375[this.field10376 - 2] & 255) << 8);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.ad(" + ')');
       }
@@ -437,7 +437,7 @@ public class class907 extends class568 {
 
    public int method6391(int var1, int var2) {
       try {
-         int var3 = class182.method3306(this.field10375, var1, this.field10376 * 385051775, -1501053505);
+         int var3 = class182.method3306(this.field10375, var1, this.field10376, -1501053505);
          this.method6364(var3, 533083974);
          return var3;
       } catch (RuntimeException var4) {
@@ -447,8 +447,8 @@ public class class907 extends class568 {
 
    public boolean method6392(byte var1) {
       try {
-         this.field10376 -= 465653244;
-         int var2 = class182.method3306(this.field10375, 0, 385051775 * this.field10376, -395934040);
+         this.field10376 -= 4;
+         int var2 = class182.method3306(this.field10375, 0, this.field10376, -395934040);
          int var3 = this.method6420((byte)-63);
          return var3 == var2;
       } catch (RuntimeException var4) {
@@ -458,7 +458,7 @@ public class class907 extends class568 {
 
    public void method6393(int var1, int var2) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(128 + var1);
+         this.field10375[++this.field10376 - 1] = (byte)(128 + var1);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.by(" + ')');
       }
@@ -466,7 +466,7 @@ public class class907 extends class568 {
 
    public void method6394(int var1, int var2) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(0 - var1);
+         this.field10375[++this.field10376 - 1] = (byte)(0 - var1);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.bm(" + ')');
       }
@@ -474,7 +474,7 @@ public class class907 extends class568 {
 
    public int method6395(int var1) {
       try {
-         return this.field10375[(this.field10376 += 116413311) * 385051775 - 1] - 128 & 255;
+         return this.field10375[++this.field10376 - 1] - 128 & 255;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.bx(" + ')');
       }
@@ -482,7 +482,7 @@ public class class907 extends class568 {
 
    public int method6396(short var1) {
       try {
-         return 0 - this.field10375[(this.field10376 += 116413311) * 385051775 - 1] & 255;
+         return 0 - this.field10375[++this.field10376 - 1] & 255;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.bo(" + ')');
       }
@@ -490,7 +490,7 @@ public class class907 extends class568 {
 
    public int method6397(byte var1) {
       try {
-         return 128 - this.field10375[(this.field10376 += 116413311) * 385051775 - 1] & 255;
+         return 128 - this.field10375[++this.field10376 - 1] & 255;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.bb(" + ')');
       }
@@ -498,7 +498,7 @@ public class class907 extends class568 {
 
    public byte method6398(int var1) {
       try {
-         return (byte)(0 - this.field10375[(this.field10376 += 116413311) * 385051775 - 1]);
+         return (byte)(0 - this.field10375[++this.field10376 - 1]);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.bu(" + ')');
       }
@@ -506,7 +506,7 @@ public class class907 extends class568 {
 
    public byte method6399(int var1) {
       try {
-         return (byte)(128 - this.field10375[(this.field10376 += 116413311) * 385051775 - 1]);
+         return (byte)(128 - this.field10375[++this.field10376 - 1]);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.bw(" + ')');
       }
@@ -514,8 +514,8 @@ public class class907 extends class568 {
 
    public void method6400(int var1) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 + 128);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 8);
+         this.field10375[++this.field10376 - 1] = (byte)(var1 + 128);
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 8);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.bg(" + ')');
       }
@@ -523,8 +523,8 @@ public class class907 extends class568 {
 
    public int method6401(byte var1) {
       try {
-         this.field10376 += 232826622;
-         return (this.field10375[385051775 * this.field10376 - 2] & 255) + ((this.field10375[this.field10376 * 385051775 - 1] & 255) << 8);
+         this.field10376 += 2;
+         return (this.field10375[this.field10376 - 2] & 255) + ((this.field10375[this.field10376 - 1] & 255) << 8);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.bs(" + ')');
       }
@@ -532,8 +532,8 @@ public class class907 extends class568 {
 
    public int method6402(int var1) {
       try {
-         this.field10376 += 232826622;
-         return ((this.field10375[385051775 * this.field10376 - 2] & 255) << 8) + (this.field10375[this.field10376 * 385051775 - 1] - 128 & 255);
+         this.field10376 += 2;
+         return ((this.field10375[this.field10376 - 2] & 255) << 8) + (this.field10375[this.field10376 - 1] - 128 & 255);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.bp(" + ')');
       }
@@ -541,8 +541,8 @@ public class class907 extends class568 {
 
    public int method6403(int var1) {
       try {
-         this.field10376 += 232826622;
-         return ((this.field10375[385051775 * this.field10376 - 1] & 255) << 8) + (this.field10375[385051775 * this.field10376 - 2] - 128 & 255);
+         this.field10376 += 2;
+         return ((this.field10375[this.field10376 - 1] & 255) << 8) + (this.field10375[this.field10376 - 2] - 128 & 255);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.bv(" + ')');
       }
@@ -550,8 +550,8 @@ public class class907 extends class568 {
 
    public int method6404(byte var1) {
       try {
-         this.field10376 += 349239933;
-         int var2 = ((this.field10375[this.field10376 * 385051775 - 3] & 255) << 16) + ((this.field10375[this.field10376 * 385051775 - 2] & 255) << 8) + (this.field10375[385051775 * this.field10376 - 1] & 255);
+         this.field10376 += 3;
+         int var2 = ((this.field10375[this.field10376 - 3] & 255) << 16) + ((this.field10375[this.field10376 - 2] & 255) << 8) + (this.field10375[this.field10376 - 1] & 255);
          if (var2 > 8388607) {
             var2 -= 16777216;
          }
@@ -564,8 +564,8 @@ public class class907 extends class568 {
 
    public int method6405(byte var1) {
       try {
-         this.field10376 += 349239933;
-         return (this.field10375[385051775 * this.field10376 - 2] & 255) + ((this.field10375[this.field10376 * 385051775 - 3] & 255) << 16) + ((this.field10375[385051775 * this.field10376 - 1] & 255) << 8);
+         this.field10376 += 3;
+         return (this.field10375[this.field10376 - 2] & 255) + ((this.field10375[this.field10376 - 3] & 255) << 16) + ((this.field10375[this.field10376 - 1] & 255) << 8);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.bn(" + ')');
       }
@@ -573,10 +573,10 @@ public class class907 extends class568 {
 
    public void method6406(int var1, byte var2) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)var1;
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 8);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 16);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 24);
+         this.field10375[++this.field10376 - 1] = (byte)var1;
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 8);
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 16);
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 24);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.bi(" + ')');
       }
@@ -584,7 +584,7 @@ public class class907 extends class568 {
 
    public byte method6407(byte var1) {
       try {
-         return (byte)(this.field10375[(this.field10376 += 116413311) * 385051775 - 1] - 128);
+         return (byte)(this.field10375[++this.field10376 - 1] - 128);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.bl(" + ')');
       }
@@ -592,10 +592,10 @@ public class class907 extends class568 {
 
    public void method6408(int var1) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 16);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 24);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)var1;
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 8);
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 16);
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 24);
+         this.field10375[++this.field10376 - 1] = (byte)var1;
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 8);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.bt(" + ')');
       }
@@ -603,8 +603,8 @@ public class class907 extends class568 {
 
    public int method6409(int var1) {
       try {
-         this.field10376 += 465653244;
-         return ((this.field10375[this.field10376 * 385051775 - 3] & 255) << 8) + ((this.field10375[this.field10376 * 385051775 - 1] & 255) << 24) + ((this.field10375[this.field10376 * 385051775 - 2] & 255) << 16) + (this.field10375[this.field10376 * 385051775 - 4] & 255);
+         this.field10376 += 4;
+         return ((this.field10375[this.field10376 - 3] & 255) << 8) + ((this.field10375[this.field10376 - 1] & 255) << 24) + ((this.field10375[this.field10376 - 2] & 255) << 16) + (this.field10375[this.field10376 - 4] & 255);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.bj(" + ')');
       }
@@ -612,8 +612,8 @@ public class class907 extends class568 {
 
    public int method6410(byte var1) {
       try {
-         this.field10376 += 465653244;
-         return (this.field10375[385051775 * this.field10376 - 2] & 255) + ((this.field10375[this.field10376 * 385051775 - 1] & 255) << 8) + ((this.field10375[this.field10376 * 385051775 - 4] & 255) << 16) + ((this.field10375[385051775 * this.field10376 - 3] & 255) << 24);
+         this.field10376 += 4;
+         return (this.field10375[this.field10376 - 2] & 255) + ((this.field10375[this.field10376 - 1] & 255) << 8) + ((this.field10375[this.field10376 - 4] & 255) << 16) + ((this.field10375[this.field10376 - 3] & 255) << 24);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.bz(" + ')');
       }
@@ -621,9 +621,9 @@ public class class907 extends class568 {
 
    public void method6411(int var1, byte var2) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 16);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 8);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)var1;
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 16);
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 8);
+         this.field10375[++this.field10376 - 1] = (byte)var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.d(" + ')');
       }
@@ -631,7 +631,7 @@ public class class907 extends class568 {
 
    public void method6412(BigInteger var1, BigInteger var2, int var3) {
       try {
-         int var4 = this.field10376 * 385051775;
+         int var4 = this.field10376;
          this.field10376 = 0;
          byte[] var5 = new byte[var4];
          this.method6381(var5, 0, var4, -953523806);
@@ -646,26 +646,26 @@ public class class907 extends class568 {
       }
    }
 
-   public class907(int var1) {
+   public InputStream(int var1) {
       this.field10375 = class18.method3686(var1, (short)-31789);
       this.field10376 = 0;
    }
 
    public String method6413(int var1) {
       try {
-         byte var2 = this.field10375[(this.field10376 += 116413311) * 385051775 - 1];
+         byte var2 = this.field10375[++this.field10376 - 1];
          if (var2 != 0) {
             throw new IllegalStateException("");
          } else {
-            int var3 = this.field10376 * 385051775;
+            int var3 = this.field10376;
 
-            while(this.field10375[(this.field10376 += 116413311) * 385051775 - 1] != 0) {
+            while(this.field10375[++this.field10376 - 1] != 0) {
                if (var1 != 681479919) {
                   throw new IllegalStateException();
                }
             }
 
-            int var4 = this.field10376 * 385051775 - var3 - 1;
+            int var4 = this.field10376 - var3 - 1;
             return var4 == 0 ? "" : class783.method2497(this.field10375, var3, var4, -1673599026);
          }
       } catch (RuntimeException var5) {
@@ -675,8 +675,8 @@ public class class907 extends class568 {
 
    public int method6414(int var1) {
       try {
-         this.field10376 += 465653244;
-         return ((this.field10375[385051775 * this.field10376 - 1] & 255) << 16) + ((this.field10375[385051775 * this.field10376 - 2] & 255) << 24) + ((this.field10375[this.field10376 * 385051775 - 4] & 255) << 8) + (this.field10375[this.field10376 * 385051775 - 3] & 255);
+         this.field10376 += 4;
+         return ((this.field10375[this.field10376 - 1] & 255) << 16) + ((this.field10375[this.field10376 - 2] & 255) << 24) + ((this.field10375[this.field10376 - 4] & 255) << 8) + (this.field10375[this.field10376 - 3] & 255);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.br(" + ')');
       }
@@ -684,7 +684,7 @@ public class class907 extends class568 {
 
    public void method6415(int var1, byte var2) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(128 - var1);
+         this.field10375[++this.field10376 - 1] = (byte)(128 - var1);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.bc(" + ')');
       }
@@ -730,9 +730,9 @@ public class class907 extends class568 {
          if (var3 >= 0) {
             throw new IllegalArgumentException("");
          } else {
-            this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = 0;
-            this.field10376 += class861.method5350(var1, 0, var1.length(), this.field10375, 385051775 * this.field10376, (byte)102) * 116413311;
-            this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = 0;
+            this.field10375[++this.field10376 - 1] = 0;
+            this.field10376 += class861.method5350(var1, 0, var1.length(), this.field10375, this.field10376, (byte)102);
+            this.field10375[++this.field10376 - 1] = 0;
          }
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.c(" + ')');
@@ -741,8 +741,8 @@ public class class907 extends class568 {
 
    public void method6419(int var1) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 8);
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 + 128);
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 8);
+         this.field10375[++this.field10376 - 1] = (byte)(var1 + 128);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.bq(" + ')');
       }
@@ -750,8 +750,8 @@ public class class907 extends class568 {
 
    public int method6420(byte var1) {
       try {
-         this.field10376 += 465653244;
-         return ((this.field10375[385051775 * this.field10376 - 3] & 255) << 16) + ((this.field10375[385051775 * this.field10376 - 4] & 255) << 24) + ((this.field10375[this.field10376 * 385051775 - 2] & 255) << 8) + (this.field10375[385051775 * this.field10376 - 1] & 255);
+         this.field10376 += 4;
+         return ((this.field10375[this.field10376 - 3] & 255) << 16) + ((this.field10375[this.field10376 - 4] & 255) << 24) + ((this.field10375[this.field10376 - 2] & 255) << 8) + (this.field10375[this.field10376 - 1] & 255);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.at(" + ')');
       }
@@ -759,21 +759,21 @@ public class class907 extends class568 {
 
    public void method6421(int var1, int var2) {
       try {
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)var1;
-         this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = (byte)(var1 >> 8);
+         this.field10375[++this.field10376 - 1] = (byte)var1;
+         this.field10375[++this.field10376 - 1] = (byte)(var1 >> 8);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.bk(" + ')');
       }
    }
 
-   public class907(byte[] var1) {
+   public InputStream(byte[] var1) {
       this.field10375 = var1;
       this.field10376 = 0;
    }
 
    public int method6422(int var1) {
       try {
-         int var2 = this.field10375[385051775 * this.field10376] & 255;
+         int var2 = this.field10375[this.field10376] & 255;
          return var2 < 128 ? this.method6371() - 64 : this.method6374() - '쀀';
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.aj(" + ')');
@@ -782,7 +782,7 @@ public class class907 extends class568 {
 
    public int method6423(int var1) {
       try {
-         if (this.field10375[385051775 * this.field10376] < 0) {
+         if (this.field10375[this.field10376] < 0) {
             return this.method6420((byte)33) & Integer.MAX_VALUE;
          } else {
             int var2 = this.method6374();
@@ -801,7 +801,7 @@ public class class907 extends class568 {
 
             long var4;
             for(var4 = 0L; var3 >= 0; var3 -= 8) {
-               var4 |= ((long)this.field10375[(this.field10376 += 116413311) * 385051775 - 1] & 255L) << var3;
+               var4 |= ((long)this.field10375[++this.field10376 - 1] & 255L) << var3;
             }
 
             return var4;
@@ -816,7 +816,7 @@ public class class907 extends class568 {
    public void method6425(byte[] var1, int var2, int var3, short var4) {
       try {
          for(int var5 = var2; var5 < var3 + var2; ++var5) {
-            this.field10375[(this.field10376 += 116413311) * 385051775 - 1] = var1[var5];
+            this.field10375[++this.field10376 - 1] = var1[var5];
          }
 
       } catch (RuntimeException var6) {
@@ -826,7 +826,7 @@ public class class907 extends class568 {
 
    public void method6426(int var1, byte var2) {
       try {
-         this.field10375[this.field10376 * 385051775 - var1 - 1] = (byte)var1;
+         this.field10375[this.field10376 - var1 - 1] = (byte)var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.o(" + ')');
       }
@@ -846,8 +846,8 @@ public class class907 extends class568 {
 
    public int method6428(int var1) {
       try {
-         this.field10376 += 232826622;
-         int var2 = (this.field10375[this.field10376 * 385051775 - 2] & 255) + ((this.field10375[this.field10376 * 385051775 - 1] & 255) << 8);
+         this.field10376 += 2;
+         int var2 = (this.field10375[this.field10376 - 2] & 255) + ((this.field10375[this.field10376 - 1] & 255) << 8);
          if (var2 > 32767) {
             var2 -= 65536;
          }
@@ -860,8 +860,8 @@ public class class907 extends class568 {
 
    public String method6429(int var1) {
       try {
-         if (this.field10375[385051775 * this.field10376] == 0) {
-            this.field10376 += 116413311;
+         if (this.field10375[this.field10376] == 0) {
+            ++this.field10376;
             return null;
          } else {
             return this.method6379(541883117);
@@ -873,8 +873,8 @@ public class class907 extends class568 {
 
    static final void method6430(class744 var0, int var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var2.toLowerCase();
+         String var2 = (String)var0.field3157[--var0.field3158];
+         var0.field3157[++var0.field3158 - 1] = var2.toLowerCase();
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.zd(" + ')');
       }
@@ -882,10 +882,10 @@ public class class907 extends class568 {
 
    static final void method6431(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)28);
          class131 var4 = class382.field1410[var2 >> 16];
-         class160.method3568(var3, var4, var0, (byte)-121);
+         Animation.method3568(var3, var4, var0, (byte)-121);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "acx.dp(" + ')');
       }
@@ -893,7 +893,7 @@ public class class907 extends class568 {
 
    static final void method6432(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9115.method1097(-484902399) && class593.field1623.method4855() ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9115.method1097(-484902399) && class593.field1623.method4855() ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "acx.anb(" + ')');
       }
@@ -903,8 +903,8 @@ public class class907 extends class568 {
       try {
          class682 var4 = class370.method881(9, (long)var0);
          var4.method4340((byte)105);
-         var4.field7687 = 1274450087 * var1;
-         var4.field7685 = 293101103 * var2;
+         var4.field7687 = var1;
+         var4.field7685 = var2;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "acx.aw(" + ')');
       }
@@ -912,12 +912,12 @@ public class class907 extends class568 {
 
    static final void method6434(class744 var0, byte var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         int var3 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         String var2 = (String)var0.field3157[--var0.field3158];
+         int var3 = var0.field3161[--var0.field3156];
          if (-1 == var3) {
             throw new RuntimeException("");
          } else {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var2 + (char)var3;
+            var0.field3157[++var0.field3158 - 1] = var2 + (char)var3;
          }
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "acx.za(" + ')');

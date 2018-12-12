@@ -26,22 +26,4 @@ public class class315 extends class655 {
       super(var2);
       this.field493 = var1;
    }
-
-   public final int method5612(int var1) {
-      return this.field494[var1];
-   }
-
-   public final int method5618(int var1) {
-      return this.field494[var1];
-   }
-
-   public boolean method5611(int var1) {
-      if (this.field494 == null) {
-         this.field494 = new int[this.field493.method4054(-1467018991)];
-      }
-
-      class194 var2 = (class194)this.field493.method4095(var1, 1367202390);
-      this.field494[var1] = OpenGL.glGetUniformLocation(var2.field6979, this.method5616((byte)1));
-      return this.field494[var1] != -1;
-   }
 }

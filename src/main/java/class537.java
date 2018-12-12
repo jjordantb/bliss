@@ -10,46 +10,23 @@ public class class537 implements class195 {
    int field3749;
    static class180 field3750;
 
-   public boolean method3711(class195 var1) {
-      if (!(var1 instanceof class537)) {
-         return false;
-      } else {
-         class537 var2 = (class537)var1;
-         if (696186641 * var2.field3749 != 696186641 * this.field3749) {
-            return false;
-         } else if (this.field3744 * 1776279405 != 1776279405 * var2.field3744) {
-            return false;
-         } else if (this.field3745 * 793126543 != 793126543 * var2.field3745) {
-            return false;
-         } else if (-2052168577 * this.field3746 != var2.field3746 * -2052168577) {
-            return false;
-         } else if (-2128765879 * var2.field3748 != this.field3748 * -2128765879) {
-            return false;
-         } else if (-1527694577 * this.field3747 != var2.field3747 * -1527694577) {
-            return false;
-         } else {
-            return this.field3743 == var2.field3743;
-         }
-      }
-   }
-
    public boolean method3708(class195 var1) {
       try {
          if (!(var1 instanceof class537)) {
             return false;
          } else {
             class537 var2 = (class537)var1;
-            if (696186641 * var2.field3749 != 696186641 * this.field3749) {
+            if (var2.field3749 != this.field3749) {
                return false;
-            } else if (this.field3744 * 1776279405 != 1776279405 * var2.field3744) {
+            } else if (this.field3744 != var2.field3744) {
                return false;
-            } else if (this.field3745 * 793126543 != 793126543 * var2.field3745) {
+            } else if (this.field3745 != var2.field3745) {
                return false;
-            } else if (-2052168577 * this.field3746 != var2.field3746 * -2052168577) {
+            } else if (this.field3746 != var2.field3746) {
                return false;
-            } else if (-2128765879 * var2.field3748 != this.field3748 * -2128765879) {
+            } else if (var2.field3748 != this.field3748) {
                return false;
-            } else if (-1527694577 * this.field3747 != var2.field3747 * -1527694577) {
+            } else if (this.field3747 != var2.field3747) {
                return false;
             } else {
                return this.field3743 == var2.field3743;
@@ -62,88 +39,25 @@ public class class537 implements class195 {
 
    public long method3707() {
       try {
-         long[] var1 = class907.field10382;
+         long[] var1 = InputStream.field10382;
          long var2 = -1L;
-         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(696186641 * this.field3749)) & 255L)];
-         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(1776279405 * this.field3744 >> 8)) & 255L)];
-         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3744 * 1776279405)) & 255L)];
-         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(793126543 * this.field3745 >> 24)) & 255L)];
-         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(793126543 * this.field3745 >> 16)) & 255L)];
-         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(793126543 * this.field3745 >> 8)) & 255L)];
-         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(793126543 * this.field3745)) & 255L)];
-         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(-2052168577 * this.field3746)) & 255L)];
-         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(-2128765879 * this.field3748 >> 24)) & 255L)];
-         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3748 * -2128765879 >> 16)) & 255L)];
-         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(-2128765879 * this.field3748 >> 8)) & 255L)];
-         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3748 * -2128765879)) & 255L)];
-         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(-1527694577 * this.field3747)) & 255L)];
+         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)this.field3749) & 255L)];
+         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3744 >> 8)) & 255L)];
+         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)this.field3744) & 255L)];
+         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3745 >> 24)) & 255L)];
+         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3745 >> 16)) & 255L)];
+         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3745 >> 8)) & 255L)];
+         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)this.field3745) & 255L)];
+         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)this.field3746) & 255L)];
+         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3748 >> 24)) & 255L)];
+         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3748 >> 16)) & 255L)];
+         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3748 >> 8)) & 255L)];
+         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)this.field3748) & 255L)];
+         var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)this.field3747) & 255L)];
          var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3743 ? 1 : 0)) & 255L)];
          return var2;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "te.a(" + ')');
-      }
-   }
-
-   public long method3709() {
-      long[] var1 = class907.field10382;
-      long var2 = -1L;
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(696186641 * this.field3749)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(1776279405 * this.field3744 >> 8)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3744 * 1776279405)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(793126543 * this.field3745 >> 24)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(793126543 * this.field3745 >> 16)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(793126543 * this.field3745 >> 8)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(793126543 * this.field3745)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(-2052168577 * this.field3746)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(-2128765879 * this.field3748 >> 24)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3748 * -2128765879 >> 16)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(-2128765879 * this.field3748 >> 8)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3748 * -2128765879)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(-1527694577 * this.field3747)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3743 ? 1 : 0)) & 255L)];
-      return var2;
-   }
-
-   public long method3710() {
-      long[] var1 = class907.field10382;
-      long var2 = -1L;
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(696186641 * this.field3749)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(1776279405 * this.field3744 >> 8)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3744 * 1776279405)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(793126543 * this.field3745 >> 24)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(793126543 * this.field3745 >> 16)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(793126543 * this.field3745 >> 8)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(793126543 * this.field3745)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(-2052168577 * this.field3746)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(-2128765879 * this.field3748 >> 24)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3748 * -2128765879 >> 16)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(-2128765879 * this.field3748 >> 8)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3748 * -2128765879)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(-1527694577 * this.field3747)) & 255L)];
-      var2 = var2 >>> 8 ^ var1[(int)((var2 ^ (long)(this.field3743 ? 1 : 0)) & 255L)];
-      return var2;
-   }
-
-   public boolean method3712(class195 var1) {
-      if (!(var1 instanceof class537)) {
-         return false;
-      } else {
-         class537 var2 = (class537)var1;
-         if (696186641 * var2.field3749 != 696186641 * this.field3749) {
-            return false;
-         } else if (this.field3744 * 1776279405 != 1776279405 * var2.field3744) {
-            return false;
-         } else if (this.field3745 * 793126543 != 793126543 * var2.field3745) {
-            return false;
-         } else if (-2052168577 * this.field3746 != var2.field3746 * -2052168577) {
-            return false;
-         } else if (-2128765879 * var2.field3748 != this.field3748 * -2128765879) {
-            return false;
-         } else if (-1527694577 * this.field3747 != var2.field3747 * -1527694577) {
-            return false;
-         } else {
-            return this.field3743 == var2.field3743;
-         }
       }
    }
 
@@ -171,7 +85,7 @@ public class class537 implements class195 {
 
    static final void method2317(class564 var0, class131 var1, class744 var2, int var3) {
       try {
-         String var4 = (String)var2.field3157[(var2.field3158 -= 969361751) * -203050393];
+         String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -637719265) != null) {
             var4 = var4.substring(0, var4.length() - 1);
          }
@@ -185,7 +99,7 @@ public class class537 implements class195 {
 
    static final void method2318(class744 var0, short var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class507 var3 = class283.field10614.method3736(var2, (byte)24);
          if (var3.field3970 != null && var3.field3970.length > 0) {
             int var4 = 0;
@@ -198,9 +112,9 @@ public class class537 implements class195 {
                }
             }
 
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3.field3970[var4];
+            var0.field3161[++var0.field3156 - 1] = var3.field3970[var4];
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -809747019 * var3.field3969;
+            var0.field3161[++var0.field3156 - 1] = var3.field3969;
          }
 
       } catch (RuntimeException var7) {

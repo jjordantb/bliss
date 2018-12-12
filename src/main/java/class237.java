@@ -40,7 +40,7 @@ public class class237 {
 
    class564 method4650(int var1) {
       try {
-         return this.field8254.method889(this.field8255.field867 * -440872681, (short)10433);
+         return this.field8254.method889(this.field8255.field867, (short)10433);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "qd.a(" + ')');
       }
@@ -57,7 +57,7 @@ public class class237 {
 
    static final void method4652(class744 var0, short var1) {
       try {
-         class740.field3209 = var0.field3161[(var0.field3156 -= -391880689) * 681479919] == 1;
+         class740.field3209 = var0.field3161[--var0.field3156] == 1;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "qd.aez(" + ')');
       }
@@ -86,9 +86,9 @@ public class class237 {
 
    static final void method4654(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)54);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3.field987 * -1086526073;
+         var0.field3161[++var0.field3156 - 1] = var3.field987;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "qd.rb(" + ')');
       }
@@ -97,7 +97,7 @@ public class class237 {
    static void method4655(int var0, int var1, int var2, int var3, int var4, int var5) {
       try {
          for(int var6 = var2; var6 <= var3; ++var6) {
-            class484.method4769(class534.field1412[var6], var0, var1, var4, -1334363034);
+            class484.method4769(class381.field1412[var6], var0, var1, var4, -1334363034);
          }
 
       } catch (RuntimeException var7) {
@@ -107,7 +107,7 @@ public class class237 {
 
    static final void method4656(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)class730.field2738 >> 3;
+         var0.field3161[++var0.field3156 - 1] = (int)class730.field2738 >> 3;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "qd.agr(" + ')');
       }
@@ -115,10 +115,10 @@ public class class237 {
 
    static final void method4657(class357 var0, class744 var1, byte var2) {
       try {
-         var1.field3161[(var1.field3156 += -391880689) * 681479919 - 1] = class341.method253(var0, (byte)-65);
-         var1.field3157[(var1.field3158 += 969361751) * -203050393 - 1] = class221.method4037(var0, 533229453);
-         var1.field3157[(var1.field3158 += 969361751) * -203050393 - 1] = class154.method3491(var0, (byte)14);
-         var1.field3157[(var1.field3158 += 969361751) * -203050393 - 1] = class636.method5915(var0, -532801249);
+         var1.field3161[++var1.field3156 - 1] = class341.method253(var0, (byte)-65);
+         var1.field3157[++var1.field3158 - 1] = class221.method4037(var0, 533229453);
+         var1.field3157[++var1.field3158 - 1] = class154.method3491(var0, (byte)14);
+         var1.field3157[++var1.field3158 - 1] = class636.method5915(var0, -532801249);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "qd.v(" + ')');
       }
@@ -127,9 +127,9 @@ public class class237 {
    public static final void method4658(int var0, boolean var1, int var2, int var3) {
       try {
          if (var0 >= 8000 && var0 <= 48000) {
-            class752.field4179 = var0 * 1438282109;
+            class752.field4179 = var0;
             class752.field4167 = var1;
-            class752.field4168 = var2 * 2095551653;
+            class752.field4168 = var2;
          } else {
             throw new IllegalArgumentException();
          }

@@ -12,8 +12,8 @@ public class class701 extends class568 {
 
    public void method1972(int var1) {
       try {
-         if (field3368 * -848307417 < field3370.length) {
-            field3370[(field3368 += 265413783) * -848307417 - 1] = this;
+         if (field3368 < field3370.length) {
+            field3370[++field3368 - 1] = this;
          }
 
       } catch (RuntimeException var3) {
@@ -77,11 +77,11 @@ public class class701 extends class568 {
             }
          }
 
-         class730.field2922 = var7 * var3 / 334 * 1463025151;
-         class730.field2918 = var0 * 1925400255;
-         class730.field2728 = var1 * -249668627;
-         class730.field2645 = -2079606657 * (short)var2;
-         class730.field2921 = (short)var3 * -34894995;
+         class730.field2922 = var7 * var3 / 334;
+         class730.field2918 = var0;
+         class730.field2728 = var1;
+         class730.field2645 = (short)var2;
+         class730.field2921 = (short)var3;
       } catch (RuntimeException var11) {
          throw class158.method3445(var11, "abu.iy(" + ')');
       }

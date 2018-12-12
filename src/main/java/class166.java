@@ -30,15 +30,15 @@ public class class166 {
    static int[] method3683(class357 var0, byte var1) {
       try {
          int[] var2 = null;
-         if (class745.method2593(946432351 * var0.field1702, (short)300)) {
-            var2 = class85.field1121.method1566((int)(var0.field1701 * 2236412381003659263L)).field4285;
-         } else if (-1 != var0.field1700 * -149710173) {
-            var2 = class85.field1121.method1566(var0.field1700 * -149710173).field4285;
-         } else if (class717.method2030(946432351 * var0.field1702, -838004269)) {
-            class437 var3 = (class437)class730.field2677.method2942((long)((int)(2236412381003659263L * var0.field1701)));
+         if (class745.method2593(var0.field1702, (short)300)) {
+            var2 = class85.field1121.method1566((int)var0.field1701).field4285;
+         } else if (-1 != var0.field1700) {
+            var2 = class85.field1121.method1566(var0.field1700).field4285;
+         } else if (class717.method2030(var0.field1702, -838004269)) {
+            class437 var3 = (class437)class730.field2677.method2942((long)((int)var0.field1701));
             if (var3 != null) {
-               class60 var4 = (class60)var3.field7515;
-               class401 var5 = var4.field1637;
+               Npc var4 = (Npc)var3.field7515;
+               NpcDefinition var5 = var4.field1637;
                if (var5.field9924 != null) {
                   var5 = var5.method6110(class827.field9037, 2033982126);
                }
@@ -47,8 +47,8 @@ public class class166 {
                   var2 = var5.field9867;
                }
             }
-         } else if (class769.method2260(var0.field1702 * 946432351, (byte)-114)) {
-            class50 var7 = class730.field2697.method5283(150013546).method4713((int)(2236412381003659263L * var0.field1701 >>> 32 & 2147483647L));
+         } else if (class769.method2260(var0.field1702, (byte)-114)) {
+            ObjectDefinition var7 = class730.field2697.method5283(150013546).method4713((int)(var0.field1701 >>> 32 & 2147483647L));
             if (var7.field2198 != null) {
                var7 = var7.method1487(class827.field9037, 1956265286);
             }

@@ -67,20 +67,20 @@ public class class322 {
    public static void method815(int var0, int var1, byte var2) {
       try {
          int var3;
-         if (field831 * -1474554145 != var0) {
+         if (field831 != var0) {
             field838 = new int[var0];
 
             for(var3 = 0; var3 < var0; ++var3) {
                field838[var3] = (var3 << 12) / var0;
             }
 
-            field829 = -213871671 * (var0 - 1);
-            field831 = -350935777 * var0;
-            field833 = -742310304 * var0;
+            field829 = var0 - 1;
+            field831 = var0;
+            field833 = 32 * var0;
          }
 
-         if (461985445 * field832 != var1) {
-            if (-1474554145 * field831 != var1) {
+         if (field832 != var1) {
+            if (field831 != var1) {
                field836 = new int[var1];
 
                for(var3 = 0; var3 < var1; ++var3) {
@@ -90,8 +90,8 @@ public class class322 {
                field836 = field838;
             }
 
-            field834 = 380257689 * (var1 - 1);
-            field832 = var1 * -2088328915;
+            field834 = var1 - 1;
+            field832 = var1;
          }
 
       } catch (RuntimeException var4) {
@@ -116,13 +116,13 @@ public class class322 {
 
    static final void method817(class744 var0, byte var1) {
       try {
-         var0.field3158 -= 1938723502;
-         String var2 = (String)var0.field3157[-203050393 * var0.field3158];
-         String var3 = (String)var0.field3157[-203050393 * var0.field3158 + 1];
-         if (class923.field10295.field3388 != null && class923.field10295.field3388.field2447) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var3;
+         var0.field3158 -= 2;
+         String var2 = (String)var0.field3157[var0.field3158];
+         String var3 = (String)var0.field3157[var0.field3158 + 1];
+         if (class923.local.field3388 != null && class923.local.field3388.field2447) {
+            var0.field3157[++var0.field3158 - 1] = var3;
          } else {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var2;
+            var0.field3157[++var0.field3158 - 1] = var2;
          }
 
       } catch (RuntimeException var4) {

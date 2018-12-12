@@ -6,7 +6,7 @@ public class class12 {
    static Thread field6680;
 
    class12(int var1) {
-      this.field6679 = 1407148203 * var1;
+      this.field6679 = var1;
    }
 
    public static class245 method3570(byte var0) {

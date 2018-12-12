@@ -27,8 +27,8 @@ public class class935 {
 
    static final void method6305(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var0.field3169.field9714[var2];
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3157[++var0.field3158 - 1] = var0.field3169.field9714[var2];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "co.xk(" + ')');
       }
@@ -37,13 +37,13 @@ public class class935 {
    static final void method6306(class744 var0, int var1) {
       try {
          String var2;
-         if (class923.field10295 != null && class923.field10295.field3379 != null) {
-            var2 = class923.field10295.method1993(true, -1868785236);
+         if (class923.local != null && class923.local.field3379 != null) {
+            var2 = class923.local.method1993(true, -1868785236);
          } else {
             var2 = "";
          }
 
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var2;
+         var0.field3157[++var0.field3158 - 1] = var2;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "co.aca(" + ')');
       }
@@ -51,8 +51,8 @@ public class class935 {
 
    static final void method6307(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)(class469.method4016(var2, 251900723) / 60000L);
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = (int)(class469.method4016(var2, 251900723) / 60000L);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "co.ake(" + ')');
       }
@@ -60,9 +60,9 @@ public class class935 {
 
    static void method6308(int var0, int var1, int var2) {
       try {
-         if (-1909773881 * class602.field8643 == 1) {
+         if (class602.field8643 == 1) {
             class916.method6463(class469.field7328, var0, var1, (short)916);
-         } else if (2 == class602.field8643 * -1909773881) {
+         } else if (2 == class602.field8643) {
             class184.method3242(var0, var1, (byte)20);
          }
 
@@ -75,8 +75,8 @@ public class class935 {
 
    public static void method6309(int var0) {
       try {
-         if (class881.field10168 * -707576455 == 100) {
-            class881.field10168 = 928688093;
+         if (class881.field10168 == 100) {
+            class881.field10168 = 117;
          }
 
       } catch (RuntimeException var2) {
@@ -86,7 +86,7 @@ public class class935 {
 
    static boolean method6310(int var0) {
       try {
-         return class602.field8673 * -278777595 > 0;
+         return class602.field8673 > 0;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "co.o(" + ')');
       }

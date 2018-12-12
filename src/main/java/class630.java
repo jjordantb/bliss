@@ -5,8 +5,8 @@ public class class630 extends class568 {
    int field9805;
 
    class630(int var1, int var2) {
-      this.field9804 = -1100183665 * var1;
-      this.field9805 = -197779873 * var2;
+      this.field9804 = var1;
+      this.field9805 = var2;
    }
 
    public static void method5890(short var0) {
@@ -27,9 +27,9 @@ public class class630 extends class568 {
 
    static final void method5891(class744 var0, short var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-1);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3.field893 * 1867913305;
+         var0.field3161[++var0.field3156 - 1] = var3.field893;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "abl.rj(" + ')');
       }
@@ -68,7 +68,7 @@ public class class630 extends class568 {
          int var36 = (var3 - 1) * var27;
          int var37 = var30;
          int var38 = (var12 - 1) * var29;
-         int[] var39 = class465.field1412[var1];
+         int[] var39 = class381.field1412[var1];
          class484.method4769(var39, var0 - var2, var0 - var11, var5, 1244145704);
          class484.method4769(var39, var0 - var11, var11 + var0, var4, -1835753044);
          class484.method4769(var39, var11 + var0, var2 + var0, var5, 1505074315);
@@ -130,15 +130,15 @@ public class class630 extends class568 {
             if (var40) {
                int var45 = var10 + var0;
                int var46 = var0 - var10;
-               class484.method4769(class465.field1412[var41], var44, var46, var5, -1836919463);
-               class484.method4769(class465.field1412[var41], var46, var45, var4, -2035540755);
-               class484.method4769(class465.field1412[var41], var45, var43, var5, -981316535);
-               class484.method4769(class465.field1412[var42], var44, var46, var5, -235264647);
-               class484.method4769(class465.field1412[var42], var46, var45, var4, -955018458);
-               class484.method4769(class465.field1412[var42], var45, var43, var5, 614343007);
+               class484.method4769(class381.field1412[var41], var44, var46, var5, -1836919463);
+               class484.method4769(class381.field1412[var41], var46, var45, var4, -2035540755);
+               class484.method4769(class381.field1412[var41], var45, var43, var5, -981316535);
+               class484.method4769(class381.field1412[var42], var44, var46, var5, -235264647);
+               class484.method4769(class381.field1412[var42], var46, var45, var4, -955018458);
+               class484.method4769(class381.field1412[var42], var45, var43, var5, 614343007);
             } else {
-               class484.method4769(class465.field1412[var41], var44, var43, var5, 2012650318);
-               class484.method4769(class465.field1412[var42], var44, var43, var5, -1092242835);
+               class484.method4769(class381.field1412[var41], var44, var43, var5, 2012650318);
+               class484.method4769(class381.field1412[var42], var44, var43, var5, -1092242835);
             }
          }
 

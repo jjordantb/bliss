@@ -14,73 +14,6 @@ public class class839 implements class453 {
    Hashtable field9164 = new Hashtable();
    Hashtable field9165 = new Hashtable();
 
-   public int method5397(String var1) {
-      if (this.field9164.containsKey(var1)) {
-         return 100;
-      } else {
-         String var2 = class759.method2721(var1, 1546651930);
-         if (var2 == null) {
-            return -1;
-         } else {
-            String var3 = null;
-            if (var3 == null) {
-               var3 = this.field9163 + var2;
-               if (!this.field9162.method3270(var3, "", (byte)15)) {
-                  return -1;
-               }
-            }
-
-            if (!this.field9162.method3282(var3, -2138379227)) {
-               return this.field9162.method3275(var3, -896654552);
-            } else {
-               byte[] var4 = this.field9162.method3271(var3, "", 1164372929);
-               Object var5 = null;
-
-               File var6;
-               try {
-                  var6 = class299.method6554(var2, (byte)-1);
-               } catch (RuntimeException var11) {
-                  return -1;
-               }
-
-               if (var4 != null && var6 != null) {
-                  boolean var7 = true;
-                  byte[] var8 = class677.method4228(var6, -1944658057);
-                  if (var8 != null && var4.length == var8.length) {
-                     for(int var9 = 0; var9 < var8.length; ++var9) {
-                        if (var8[var9] != var4[var9]) {
-                           var7 = false;
-                           break;
-                        }
-                     }
-                  } else {
-                     var7 = false;
-                  }
-
-                  try {
-                     if (!var7) {
-                        try {
-                           FileOutputStream var13 = new FileOutputStream(var6);
-                           var13.write(var4, 0, var4.length);
-                           var13.close();
-                        } catch (IOException var10) {
-                           throw new RuntimeException();
-                        }
-                     }
-                  } catch (Throwable var12) {
-                     return -1;
-                  }
-
-                  this.method5399(var1, var6, 1006624802);
-                  return 100;
-               } else {
-                  return -1;
-               }
-            }
-         }
-      }
-   }
-
    public int method5398(String var1, int var2) {
       try {
          if (this.field9164.containsKey(var1)) {
@@ -300,84 +233,6 @@ public class class839 implements class453 {
       }
    }
 
-   public boolean method3927() {
-      Hashtable var1 = new Hashtable();
-      Enumeration var2 = this.field9165.keys();
-
-      while(var2.hasMoreElements()) {
-         String var3 = (String)var2.nextElement();
-         var1.put(var3, this.field9165.get(var3));
-      }
-
-      try {
-         Class var24 = AccessibleObject.class;
-         Class var4 = ClassLoader.class;
-         Field var5 = var4.getDeclaredField("nativeLibraries");
-         Method var6 = var24.getDeclaredMethod("setAccessible", Boolean.TYPE);
-         var6.invoke(var5, Boolean.TRUE);
-
-         try {
-            var2 = this.field9165.keys();
-
-            while(var2.hasMoreElements()) {
-               String var7 = (String)var2.nextElement();
-
-               try {
-                  File var8 = (File)this.field9164.get(var7);
-                  Class var9 = (Class)this.field9165.get(var7);
-                  Vector var10 = (Vector)var5.get(var9.getClassLoader());
-
-                  for(int var11 = 0; var11 < var10.size(); ++var11) {
-                     try {
-                        Object var12 = var10.elementAt(var11);
-                        Field var13 = var12.getClass().getDeclaredField("name");
-                        var6.invoke(var13, Boolean.TRUE);
-
-                        try {
-                           String var14 = (String)var13.get(var12);
-                           if (var14 != null && var14.equalsIgnoreCase(var8.getCanonicalPath())) {
-                              Field var15 = var12.getClass().getDeclaredField("handle");
-                              Method var16 = var12.getClass().getDeclaredMethod("finalize");
-                              var6.invoke(var15, Boolean.TRUE);
-                              var6.invoke(var16, Boolean.TRUE);
-
-                              try {
-                                 var16.invoke(var12);
-                                 var15.set(var12, new Integer(0));
-                                 var1.remove(var7);
-                              } catch (Throwable var18) {
-                                 ;
-                              }
-
-                              var6.invoke(var16, Boolean.FALSE);
-                              var6.invoke(var15, Boolean.FALSE);
-                           }
-                        } catch (Throwable var19) {
-                           ;
-                        }
-
-                        var6.invoke(var13, Boolean.FALSE);
-                     } catch (Throwable var20) {
-                        ;
-                     }
-                  }
-               } catch (Throwable var21) {
-                  ;
-               }
-            }
-         } catch (Throwable var22) {
-            ;
-         }
-
-         var6.invoke(var5, Boolean.FALSE);
-      } catch (Throwable var23) {
-         ;
-      }
-
-      this.field9165 = var1;
-      return this.field9165.isEmpty();
-   }
-
    public class839(class180 var1) {
       this.field9162 = var1;
       String var2 = "";
@@ -408,96 +263,6 @@ public class class839 implements class453 {
       this.field9163 = var2;
    }
 
-   public boolean method3931(String var1) {
-      return this.field9164.containsKey(var1);
-   }
-
-   public boolean method3934() {
-      Hashtable var1 = new Hashtable();
-      Enumeration var2 = this.field9165.keys();
-
-      while(var2.hasMoreElements()) {
-         String var3 = (String)var2.nextElement();
-         var1.put(var3, this.field9165.get(var3));
-      }
-
-      try {
-         Class var24 = AccessibleObject.class;
-         Class var4 = ClassLoader.class;
-         Field var5 = var4.getDeclaredField("nativeLibraries");
-         Method var6 = var24.getDeclaredMethod("setAccessible", Boolean.TYPE);
-         var6.invoke(var5, Boolean.TRUE);
-
-         try {
-            var2 = this.field9165.keys();
-
-            while(var2.hasMoreElements()) {
-               String var7 = (String)var2.nextElement();
-
-               try {
-                  File var8 = (File)this.field9164.get(var7);
-                  Class var9 = (Class)this.field9165.get(var7);
-                  Vector var10 = (Vector)var5.get(var9.getClassLoader());
-
-                  for(int var11 = 0; var11 < var10.size(); ++var11) {
-                     try {
-                        Object var12 = var10.elementAt(var11);
-                        Field var13 = var12.getClass().getDeclaredField("name");
-                        var6.invoke(var13, Boolean.TRUE);
-
-                        try {
-                           String var14 = (String)var13.get(var12);
-                           if (var14 != null && var14.equalsIgnoreCase(var8.getCanonicalPath())) {
-                              Field var15 = var12.getClass().getDeclaredField("handle");
-                              Method var16 = var12.getClass().getDeclaredMethod("finalize");
-                              var6.invoke(var15, Boolean.TRUE);
-                              var6.invoke(var16, Boolean.TRUE);
-
-                              try {
-                                 var16.invoke(var12);
-                                 var15.set(var12, new Integer(0));
-                                 var1.remove(var7);
-                              } catch (Throwable var18) {
-                                 ;
-                              }
-
-                              var6.invoke(var16, Boolean.FALSE);
-                              var6.invoke(var15, Boolean.FALSE);
-                           }
-                        } catch (Throwable var19) {
-                           ;
-                        }
-
-                        var6.invoke(var13, Boolean.FALSE);
-                     } catch (Throwable var20) {
-                        ;
-                     }
-                  }
-               } catch (Throwable var21) {
-                  ;
-               }
-            }
-         } catch (Throwable var22) {
-            ;
-         }
-
-         var6.invoke(var5, Boolean.FALSE);
-      } catch (Throwable var23) {
-         ;
-      }
-
-      this.field9165 = var1;
-      return this.field9165.isEmpty();
-   }
-
-   public boolean method3935(String var1) {
-      return this.method5400(var1, class134.class, 156464109);
-   }
-
-   public boolean method3932(String var1) {
-      return this.method5400(var1, class134.class, 783446283);
-   }
-
    public boolean method5401(String var1, int var2) {
       try {
          return this.field9165.containsKey(var1);
@@ -506,91 +271,13 @@ public class class839 implements class453 {
       }
    }
 
-   public boolean method3933() {
-      Hashtable var1 = new Hashtable();
-      Enumeration var2 = this.field9165.keys();
-
-      while(var2.hasMoreElements()) {
-         String var3 = (String)var2.nextElement();
-         var1.put(var3, this.field9165.get(var3));
-      }
-
-      try {
-         Class var24 = AccessibleObject.class;
-         Class var4 = ClassLoader.class;
-         Field var5 = var4.getDeclaredField("nativeLibraries");
-         Method var6 = var24.getDeclaredMethod("setAccessible", Boolean.TYPE);
-         var6.invoke(var5, Boolean.TRUE);
-
-         try {
-            var2 = this.field9165.keys();
-
-            while(var2.hasMoreElements()) {
-               String var7 = (String)var2.nextElement();
-
-               try {
-                  File var8 = (File)this.field9164.get(var7);
-                  Class var9 = (Class)this.field9165.get(var7);
-                  Vector var10 = (Vector)var5.get(var9.getClassLoader());
-
-                  for(int var11 = 0; var11 < var10.size(); ++var11) {
-                     try {
-                        Object var12 = var10.elementAt(var11);
-                        Field var13 = var12.getClass().getDeclaredField("name");
-                        var6.invoke(var13, Boolean.TRUE);
-
-                        try {
-                           String var14 = (String)var13.get(var12);
-                           if (var14 != null && var14.equalsIgnoreCase(var8.getCanonicalPath())) {
-                              Field var15 = var12.getClass().getDeclaredField("handle");
-                              Method var16 = var12.getClass().getDeclaredMethod("finalize");
-                              var6.invoke(var15, Boolean.TRUE);
-                              var6.invoke(var16, Boolean.TRUE);
-
-                              try {
-                                 var16.invoke(var12);
-                                 var15.set(var12, new Integer(0));
-                                 var1.remove(var7);
-                              } catch (Throwable var18) {
-                                 ;
-                              }
-
-                              var6.invoke(var16, Boolean.FALSE);
-                              var6.invoke(var15, Boolean.FALSE);
-                           }
-                        } catch (Throwable var19) {
-                           ;
-                        }
-
-                        var6.invoke(var13, Boolean.FALSE);
-                     } catch (Throwable var20) {
-                        ;
-                     }
-                  }
-               } catch (Throwable var21) {
-                  ;
-               }
-            }
-         } catch (Throwable var22) {
-            ;
-         }
-
-         var6.invoke(var5, Boolean.FALSE);
-      } catch (Throwable var23) {
-         ;
-      }
-
-      this.field9165 = var1;
-      return this.field9165.isEmpty();
-   }
-
    static final void method5402(class744 var0, int var1) {
       try {
-         var0.field3156 -= -1175642067;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[1 + var0.field3156 * 681479919];
-         int var4 = var0.field3161[var0.field3156 * 681479919 + 2];
-         String var5 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         var0.field3156 -= 3;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
+         int var4 = var0.field3161[var0.field3156 + 2];
+         String var5 = (String)var0.field3157[--var0.field3158];
          if (var3 == -1) {
             throw new RuntimeException();
          } else {
@@ -602,7 +289,7 @@ public class class839 implements class453 {
             } else {
                int[] var7 = var6.method5429(var5, (short)14661);
                if (var4 >= 0 && var7 != null && var7.length > var4) {
-                  var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var7[var4];
+                  var0.field3161[++var0.field3156 - 1] = var7[var4];
                } else {
                   throw new RuntimeException();
                }
@@ -615,7 +302,7 @@ public class class839 implements class453 {
 
    static final void method5403(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2650 == -1 ? 0 : class730.field2650 * 50 + 1;
+         var0.field3161[++var0.field3156 - 1] = class730.field2650 == -1 ? 0 : class730.field2650 * 50 + 1;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "mr.tm(" + ')');
       }
@@ -623,10 +310,10 @@ public class class839 implements class453 {
 
    static final void method5404(class744 var0, byte var1) {
       try {
-         class818.method2903(var0.field3159, var0.field3161[(var0.field3156 -= -391880689) * 681479919], (byte)14);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)class730.field2873[0];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)class730.field2873[1];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (int)class730.field2873[2];
+         class818.method2903(var0.field3159, var0.field3161[--var0.field3156], (byte)14);
+         var0.field3161[++var0.field3156 - 1] = (int)class730.field2873[0];
+         var0.field3161[++var0.field3156 - 1] = (int)class730.field2873[1];
+         var0.field3161[++var0.field3156 - 1] = (int)class730.field2873[2];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "mr.aov(" + ')');
       }
@@ -667,7 +354,7 @@ public class class839 implements class453 {
       try {
          class682 var3 = class370.method881(1, (long)var0);
          var3.method4340((byte)4);
-         var3.field7687 = var1 * 1274450087;
+         var3.field7687 = var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "mr.av(" + ')');
       }

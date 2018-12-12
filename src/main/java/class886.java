@@ -14,12 +14,12 @@ public class class886 {
 
    static final void method6165(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class256 var3 = (class256)class730.field2823.method2942((long)var2);
          if (var3 != null) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1;
+            var0.field3161[++var0.field3156 - 1] = 1;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
+            var0.field3161[++var0.field3156 - 1] = 0;
          }
 
       } catch (RuntimeException var4) {
@@ -75,8 +75,8 @@ public class class886 {
                   byte[] var8 = class91.field562.method3259(var0, var7, var1, -1925510913);
                   if (var8 != null) {
                      class564 var9 = var2.field1103[var7] = new class564();
-                     var9.field867 = (var7 + (var0 << 16)) * 533296807;
-                     var9.method820(new class907(var8), 1142190823);
+                     var9.field867 = var7 + (var0 << 16);
+                     var9.method820(new InputStream(var8), 1142190823);
                   }
                }
             }

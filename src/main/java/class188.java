@@ -4,7 +4,7 @@ public class class188 {
 
    static final void method3343(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-11);
          class131 var4 = class382.field1410[var2 >> 16];
          class827.method5356(var3, var4, var0, -61919931);
@@ -15,7 +15,7 @@ public class class188 {
 
    static final void method3344(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class881.field10181 * -576042023;
+         var0.field3161[++var0.field3156 - 1] = class881.field10181;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "os.aha(" + ')');
       }
@@ -23,7 +23,7 @@ public class class188 {
 
    static void method3345(class744 var0, int var1) {
       try {
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class735.field3009.method4224(var0.field3161[(var0.field3156 -= -391880689) * 681479919], 245040087).field9002;
+         var0.field3157[++var0.field3158 - 1] = class735.field3009.method4224(var0.field3161[--var0.field3156], 245040087).field9002;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "os.a(" + ')');
       }

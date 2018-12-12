@@ -18,35 +18,7 @@ public abstract class class284 extends class568 {
 
    public abstract void method6670(int var1);
 
-   public abstract int method6671();
-
-   public abstract long method6672();
-
-   public abstract int method6673();
-
-   public abstract int method6674();
-
-   public abstract void method6675();
-
-   public abstract long method6676();
-
-   public abstract int method6677();
-
-   public abstract long method6678();
-
-   public abstract long method6679();
-
    public abstract int method6680(int var1);
-
-   public abstract int method6681();
-
-   public abstract int method6682();
-
-   public abstract void method6683();
-
-   public abstract int method6684();
-
-   public abstract int method6685();
 
    static class909[] method6686(int var0) {
       try {

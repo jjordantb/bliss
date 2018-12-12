@@ -9,30 +9,13 @@ public class class313 extends class347 {
    int[][] field470;
    short[] field471 = new short[257];
 
-   void method402() {
-      if (this.field470 == null) {
-         this.field470 = new int[][]{new int[2], {4096, 4096}};
-      }
-
-      if (this.field470.length < 2) {
-         throw new RuntimeException();
-      } else {
-         if (2 == this.field469 * -1105883703) {
-            this.method406((byte)-127);
-         }
-
-         class322.method814((byte)-64);
-         this.method405(-1265044202);
-      }
-   }
-
    int[] method203(int var1, int var2) {
       try {
-         int[] var3 = this.field270.method3546(var1, 887884013);
-         if (this.field270.field6612) {
+         int[] var3 = super.field270.method3546(var1, 887884013);
+         if (super.field270.field6612) {
             int[] var4 = this.method201(0, var1, -1887337990);
 
-            for(int var5 = 0; var5 < -1474554145 * class322.field831; ++var5) {
+            for(int var5 = 0; var5 < class322.field831; ++var5) {
                int var6 = var4[var5] >> 4;
                if (var6 < 0) {
                   var6 = 0;
@@ -64,19 +47,6 @@ public class class313 extends class347 {
       }
    }
 
-   void method404(int var1, class907 var2) {
-      if (var1 == 0) {
-         this.field469 = var2.method6371() * 417209465;
-         this.field470 = new int[var2.method6371()][2];
-
-         for(int var3 = 0; var3 < this.field470.length; ++var3) {
-            this.field470[var3][0] = var2.method6374();
-            this.field470[var3][1] = var2.method6374();
-         }
-      }
-
-   }
-
    void method405(int var1) {
       try {
          int var2;
@@ -88,7 +58,7 @@ public class class313 extends class347 {
          int var8;
          int var9;
          int var10;
-         switch(this.field469 * -1105883703) {
+         switch(this.field469) {
          case 1:
             for(var2 = 0; var2 < 257; ++var2) {
                var3 = var2 << 4;
@@ -194,7 +164,7 @@ public class class313 extends class347 {
          if (this.field470.length < 2) {
             throw new RuntimeException();
          } else {
-            if (2 == this.field469 * -1105883703) {
+            if (2 == this.field469) {
                this.method406((byte)-127);
             }
 
@@ -206,10 +176,10 @@ public class class313 extends class347 {
       }
    }
 
-   void method209(int var1, class907 var2, byte var3) {
+   void method209(int var1, InputStream var2, byte var3) {
       try {
          if (var1 == 0) {
-            this.field469 = var2.method6371() * 417209465;
+            this.field469 = var2.method6371();
             this.field470 = new int[var2.method6371()][2];
 
             for(int var4 = 0; var4 < this.field470.length; ++var4) {
@@ -234,97 +204,6 @@ public class class313 extends class347 {
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "age.bd(" + ')');
       }
-   }
-
-   int[] method407(int var1) {
-      int[] var2 = this.field270.method3546(var1, 131024286);
-      if (this.field270.field6612) {
-         int[] var3 = this.method201(0, var1, -1887337990);
-
-         for(int var4 = 0; var4 < -1474554145 * class322.field831; ++var4) {
-            int var5 = var3[var4] >> 4;
-            if (var5 < 0) {
-               var5 = 0;
-            }
-
-            if (var5 > 256) {
-               var5 = 256;
-            }
-
-            var2[var4] = this.field471[var5];
-         }
-      }
-
-      return var2;
-   }
-
-   void method408() {
-      if (this.field470 == null) {
-         this.field470 = new int[][]{new int[2], {4096, 4096}};
-      }
-
-      if (this.field470.length < 2) {
-         throw new RuntimeException();
-      } else {
-         if (2 == this.field469 * -1105883703) {
-            this.method406((byte)-121);
-         }
-
-         class322.method814((byte)52);
-         this.method405(-1265044202);
-      }
-   }
-
-   void method409() {
-      if (this.field470 == null) {
-         this.field470 = new int[][]{new int[2], {4096, 4096}};
-      }
-
-      if (this.field470.length < 2) {
-         throw new RuntimeException();
-      } else {
-         if (2 == this.field469 * -1105883703) {
-            this.method406((byte)-99);
-         }
-
-         class322.method814((byte)58);
-         this.method405(-1265044202);
-      }
-   }
-
-   void method410(int var1, class907 var2) {
-      if (var1 == 0) {
-         this.field469 = var2.method6371() * 417209465;
-         this.field470 = new int[var2.method6371()][2];
-
-         for(int var3 = 0; var3 < this.field470.length; ++var3) {
-            this.field470[var3][0] = var2.method6374();
-            this.field470[var3][1] = var2.method6374();
-         }
-      }
-
-   }
-
-   int[] method411(int var1) {
-      int[] var2 = this.field270.method3546(var1, 997676462);
-      if (this.field270.field6612) {
-         int[] var3 = this.method201(0, var1, -1887337990);
-
-         for(int var4 = 0; var4 < -1474554145 * class322.field831; ++var4) {
-            int var5 = var3[var4] >> 4;
-            if (var5 < 0) {
-               var5 = 0;
-            }
-
-            if (var5 > 256) {
-               var5 = 256;
-            }
-
-            var2[var4] = this.field471[var5];
-         }
-      }
-
-      return var2;
    }
 
    public class313() {

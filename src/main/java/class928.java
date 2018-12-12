@@ -34,8 +34,8 @@ public class class928 {
    public int field10237;
 
    class928(int var1, int var2) {
-      this.field10237 = var1 * -1418823413;
-      this.field10206 = var2 * 1688575393;
+      this.field10237 = var1;
+      this.field10206 = var2;
    }
 
    public static final void method6200(String var0, int var1) {
@@ -77,7 +77,7 @@ public class class928 {
 
    static final void method6202(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-48);
          class131 var4 = class382.field1410[var2 >> 16];
          class572.method107(var3, var4, var0, (byte)-14);
@@ -99,9 +99,9 @@ public class class928 {
 
    static final void method6204(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-100);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3.field935 * 1508815983;
+         var0.field3161[++var0.field3156 - 1] = var3.field935;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "vs.rh(" + ')');
       }

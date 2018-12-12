@@ -122,8 +122,6 @@ public abstract class class293 {
 
    abstract void method6494();
 
-   abstract void method6495(int var1, int var2);
-
    abstract void method6496(int var1, int var2);
 
    void method6497() {
@@ -166,14 +164,6 @@ public abstract class class293 {
       int var6 = var4 < 4 ? var2 : (var4 != 12 && var4 != 14 ? var3 : var1);
       return ((var4 & 1) == 0 ? var5 : -var5) + ((var4 & 2) == 0 ? var6 : -var6);
    }
-
-   abstract void method6501();
-
-   abstract void method6502();
-
-   abstract void method6503(int var1, int var2);
-
-   abstract void method6504(int var1, int var2);
 
    class293(int var1, int var2, int var3, int var4, int var5) {
       this.field10442 = var1;

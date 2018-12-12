@@ -26,7 +26,7 @@ public class class247 {
             byte[] var9 = this.field8407.method3285(class981.field3224.method1927(var1, -1240874866), class981.field3224.method1925(var1, -2003896976), (byte)-65);
             var4 = new class833();
             if (var9 != null) {
-               var4.method5424(new class907(var9), 592135620);
+               var4.method5424(new InputStream(var9), 592135620);
             }
 
             class1 var5 = this.field8408;
@@ -54,11 +54,11 @@ public class class247 {
                class543.method2376(-1148794921);
             }
          } else {
-            class296.method6510((byte)(class730.field2758 * -1953789277 - 4 & 255), 1394791892);
+            class296.method6510((byte)(class730.field2758 - 4 & 255), 1394791892);
             class558.method481(2, (byte)0);
          }
 
-         class730.field2773 = class899.field9552 * 832032973;
+         class730.field2773 = class899.field9552;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "to.it(" + ')');
       }
@@ -66,10 +66,10 @@ public class class247 {
 
    static final void method4723(class744 var0, int var1) {
       try {
-         var0.field3156 -= -1175642067;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[1 + var0.field3156 * 681479919];
-         int var4 = var0.field3161[681479919 * var0.field3156 + 2];
+         var0.field3156 -= 3;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
+         int var4 = var0.field3161[var0.field3156 + 2];
          class740.method1920(3, var2 << 16 | var3, var4, "", 226105576);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "to.alf(" + ')');

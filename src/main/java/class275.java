@@ -11,10 +11,6 @@ public class class275 extends class806 {
    class430 field10598;
    int field10599;
 
-   public int method2483() {
-      return this.field10594;
-   }
-
    public int method2481() {
       return this.field10594;
    }
@@ -158,151 +154,6 @@ public class class275 extends class806 {
 
    }
 
-   boolean method2486() {
-      OpenGL.glBindFramebufferEXT(36160, this.field10591);
-
-      for(int var1 = 0; var1 < 4; ++var1) {
-         if ((this.field10597 & 1 << var1) != 0) {
-            this.method6621(var1);
-         }
-      }
-
-      if ((this.field10597 & 16) != 0) {
-         this.method6623();
-      }
-
-      this.field10597 = 0;
-      this.field10595.method3608();
-      return true;
-   }
-
-   public int method2492() {
-      return this.field10594;
-   }
-
-   public void method2837(int var1, class813 var2) {
-      int var3 = 1 << var1;
-      class430 var4 = (class430)var2;
-      if (var2 == null) {
-         this.field10596 &= ~var3;
-         this.field10592[var1] = null;
-         if (this.field10596 == 0) {
-            this.field10599 = 0;
-            this.field10594 = 0;
-         }
-      } else {
-         if ((this.field10596 | var3) != var3) {
-            if (this.field10594 != var4.method2343() || this.field10599 != var4.method2344()) {
-               throw new RuntimeException();
-            }
-         } else {
-            this.field10599 = var4.method2344();
-            this.field10594 = var4.method2343();
-            if (this == this.field10595.method4800((short)3587)) {
-               this.field10595.method3640();
-            }
-         }
-
-         this.field10596 |= var3;
-         this.field10592[var1] = var4;
-      }
-
-      if (this == this.field10595.method4800((short)8575)) {
-         this.method6621(var1);
-      } else {
-         this.field10597 |= var3;
-      }
-
-   }
-
-   public void method2838(int var1, class813 var2) {
-      int var3 = 1 << var1;
-      class430 var4 = (class430)var2;
-      if (var2 == null) {
-         this.field10596 &= ~var3;
-         this.field10592[var1] = null;
-         if (this.field10596 == 0) {
-            this.field10599 = 0;
-            this.field10594 = 0;
-         }
-      } else {
-         if ((this.field10596 | var3) != var3) {
-            if (this.field10594 != var4.method2343() || this.field10599 != var4.method2344()) {
-               throw new RuntimeException();
-            }
-         } else {
-            this.field10599 = var4.method2344();
-            this.field10594 = var4.method2343();
-            if (this == this.field10595.method4800((short)26777)) {
-               this.field10595.method3640();
-            }
-         }
-
-         this.field10596 |= var3;
-         this.field10592[var1] = var4;
-      }
-
-      if (this == this.field10595.method4800((short)-1151)) {
-         this.method6621(var1);
-      } else {
-         this.field10597 |= var3;
-      }
-
-   }
-
-   public void method2840(class893 var1) {
-      class430 var2 = (class430)var1;
-      if (var1 == null) {
-         this.field10596 &= -17;
-         this.field10598 = null;
-         if (this.field10596 == 0) {
-            this.field10599 = 0;
-            this.field10594 = 0;
-         }
-      } else {
-         if ((this.field10596 | 16) != 16) {
-            if (this.field10594 != var2.method2343() || this.field10599 != var2.method2344()) {
-               throw new RuntimeException();
-            }
-         } else {
-            this.field10599 = var2.method2344();
-            this.field10594 = var2.method2343();
-            if (this == this.field10595.method4800((short)-16571)) {
-               this.field10595.method3640();
-            }
-         }
-
-         this.field10596 |= 16;
-         this.field10598 = var2;
-      }
-
-      if (this == this.field10595.method4800((short)11041)) {
-         this.method6623();
-      } else {
-         this.field10597 |= 16;
-      }
-
-   }
-
-   public boolean method2833() {
-      int var1 = OpenGL.glCheckFramebufferStatusEXT(36160);
-      return var1 == 36053;
-   }
-
-   public boolean method2841() {
-      int var1 = OpenGL.glCheckFramebufferStatusEXT(36160);
-      return var1 == 36053;
-   }
-
-   public int method2491() {
-      return this.field10594;
-   }
-
-   boolean method2485() {
-      OpenGL.glBindFramebufferEXT(36160, 0);
-      return true;
-   }
-
    void method6623() {
       if (this.field10598 == null) {
          OpenGL.glFramebufferRenderbufferEXT(36160, 36096, 36161, 0);
@@ -312,37 +163,8 @@ public class class275 extends class806 {
 
    }
 
-   public void method2489() {
-      if (this.field10591 != 0) {
-         this.field10595.method3632(this.field10591);
-         this.field10591 = 0;
-      }
-
-   }
-
-   public int method2490() {
-      return this.field10594;
-   }
-
-   public void method2487() {
-      if (this.field10591 != 0) {
-         this.field10595.method3632(this.field10591);
-         this.field10591 = 0;
-      }
-
-   }
-
-   public boolean method2835() {
-      int var1 = OpenGL.glCheckFramebufferStatusEXT(36160);
-      return var1 == 36053;
-   }
-
    void method6624(int var1) {
       OpenGL.glDrawBuffer('賠' + var1);
-   }
-
-   public int method2480() {
-      return this.field10599;
    }
 
    class275(class13 var1) {

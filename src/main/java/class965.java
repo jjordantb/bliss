@@ -20,7 +20,7 @@ public final class class965 {
          class563 var8 = null;
 
          for(class563 var9 = (class563)class563.field1071.method901(1766612795); var9 != null; var9 = (class563)class563.field1071.method906(49146)) {
-            if (2108312995 * var9.field1070 == var0 && 634196087 * var9.field1069 == var1 && -2146829167 * var9.field1074 == var2 && var3 == -431456739 * var9.field1076) {
+            if (var9.field1070 == var0 && var9.field1069 == var1 && var9.field1074 == var2 && var3 == var9.field1076) {
                var8 = var9;
                break;
             }
@@ -28,10 +28,10 @@ public final class class965 {
 
          if (var8 == null) {
             var8 = new class563();
-            var8.field1070 = var0 * -196260341;
-            var8.field1076 = var3 * 1088435253;
-            var8.field1069 = 656787783 * var1;
-            var8.field1074 = var2 * 284247153;
+            var8.field1070 = var0;
+            var8.field1076 = var3;
+            var8.field1069 = var1;
+            var8.field1074 = var2;
             if (var1 >= 0 && var2 >= 0 && var1 < class730.field2697.method5271(-1908372692) && var2 < class730.field2697.method5272(629047644)) {
                class118.method1468(var8, -162957807);
             }
@@ -39,9 +39,9 @@ public final class class965 {
             class563.field1071.method897(var8, 1633204361);
          }
 
-         var8.field1075 = 240885009 * var4;
-         var8.field1072 = var5 * 998055383;
-         var8.field1068 = 1034640391 * var6;
+         var8.field1075 = var4;
+         var8.field1072 = var5;
+         var8.field1068 = var6;
          var8.field1078 = true;
          var8.field1079 = false;
       } catch (RuntimeException var10) {
@@ -51,8 +51,8 @@ public final class class965 {
 
    static final void method1717(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2902[var2].field10623 * 1383593425;
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class730.field2902[var2].field10623;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "rk.yf(" + ')');
       }
@@ -64,7 +64,7 @@ public final class class965 {
          for(var1 = (class563)class563.field1071.method901(1766612795); var1 != null; var1 = (class563)class563.field1071.method906(49146)) {
             if (!var1.field1079) {
                var1.field1078 = true;
-               if (634196087 * var1.field1069 >= 0 && var1.field1074 * -2146829167 >= 0 && 634196087 * var1.field1069 < class730.field2697.method5271(-1871526843) && var1.field1074 * -2146829167 < class730.field2697.method5272(-1895886966)) {
+               if (var1.field1069 >= 0 && var1.field1074 >= 0 && var1.field1069 < class730.field2697.method5271(-1871526843) && var1.field1074 < class730.field2697.method5272(-1895886966)) {
                   class118.method1468(var1, 147943234);
                }
             } else {

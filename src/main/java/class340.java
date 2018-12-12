@@ -28,8 +28,8 @@ public class class340 extends class568 {
          int var11 = var9 - 1;
          int var12 = var10 - 1;
          int var13 = var9 * var10;
-         int var14;
-         int var15 = var14 = 1 * var9;
+         int var14 = var9;
+         int var15 = var9;
 
          int var16;
          int var17;

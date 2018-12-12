@@ -11,7 +11,7 @@ public class class310 {
 
    static final void method455(class744 var0, byte var1) {
       try {
-         boolean var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919] == 1;
+         boolean var2 = var0.field3161[--var0.field3156] == 1;
          class615.field8903.method5391(class615.field8903.field9130, var2 ? 2 : 1, 437258176);
          class615.field8903.method5391(class615.field8903.field9131, var2 ? 2 : 1, -618485822);
          class247.method4722((short)-10564);

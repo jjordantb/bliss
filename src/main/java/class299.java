@@ -6,13 +6,13 @@ public class class299 {
       throw new Error();
    }
 
-   static void method6552(class907 var0, byte var1) {
+   static void method6552(InputStream var0, byte var1) {
       try {
-         if (var0.field10375.length - var0.field10376 * 385051775 >= 1) {
+         if (var0.field10375.length - var0.field10376 >= 1) {
             int var2 = var0.method6371();
-            if (var2 >= 0 && var2 <= 1 && var0.field10375.length - var0.field10376 * 385051775 >= 2) {
+            if (var2 >= 0 && var2 <= 1 && var0.field10375.length - var0.field10376 >= 2) {
                int var3 = var0.method6374();
-               if (var0.field10375.length - var0.field10376 * 385051775 >= var3 * 6) {
+               if (var0.field10375.length - var0.field10376 >= var3 * 6) {
                   for(int var4 = 0; var4 < var3; ++var4) {
                      int var5 = var0.method6374();
                      int var6 = var0.method6420((byte)13);
@@ -139,11 +139,11 @@ public class class299 {
             var14 = class703.field3404[var11] * var14 >> 14;
          }
 
-         class103.field205 = (var0 - var12) * 547882953;
-         class184.field5230 = 1078403147 * (var1 - var13);
-         class7.field4918 = (var2 - var14) * 309839105;
-         class730.field2737 = -648269561 * var3;
-         class232.field8266 = -1587695039 * var4;
+         class103.field205 = var0 - var12;
+         class184.field5230 = var1 - var13;
+         class7.field4918 = var2 - var14;
+         class730.field2737 = var3;
+         class232.field8266 = var4;
          class791.field446 = 0;
       } catch (RuntimeException var15) {
          throw class158.method3445(var15, "tw.je(" + ')');

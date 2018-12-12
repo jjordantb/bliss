@@ -8,24 +8,16 @@ public class class245 implements class331 {
    int field8539;
    static int field8540;
 
-   public int method91() {
-      return this.field8539 * -1057257489;
-   }
-
    public int method89(int var1) {
       try {
-         return this.field8539 * -1057257489;
+         return this.field8539;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "rs.f(" + ')');
       }
    }
 
-   public int method90() {
-      return this.field8539 * -1057257489;
-   }
-
    class245(int var1) {
-      this.field8539 = -928217329 * var1;
+      this.field8539 = var1;
    }
 
    static final void method4770(class744 var0, byte var1) {

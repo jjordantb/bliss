@@ -80,14 +80,14 @@ public class class19 implements Iterator {
 
    static final void method3368(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          if (class53.field2311) {
             class125[] var3 = class528.method2244((byte)18);
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 28445523 * var3[var2].field2325;
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 262154323 * var3[var2].field2327;
+            var0.field3161[++var0.field3156 - 1] = var3[var2].field2325;
+            var0.field3161[++var0.field3156 - 1] = var3[var2].field2327;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
+            var0.field3161[++var0.field3156 - 1] = 0;
+            var0.field3161[++var0.field3156 - 1] = 0;
          }
 
       } catch (RuntimeException var4) {
@@ -97,7 +97,7 @@ public class class19 implements Iterator {
 
    static final void method3369(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class14.field6693[var0.field3174[1883543357 * var0.field3176]];
+         var0.field3161[++var0.field3156 - 1] = class14.field6693[var0.field3174[var0.field3176]];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "sk.aq(" + ')');
       }

@@ -1,7 +1,7 @@
 public abstract class class23 {
    static final void method3426(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9115.method1098(-26344378);
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9115.method1098(-26344378);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ta.ajy(" + ')');
       }
@@ -9,7 +9,7 @@ public abstract class class23 {
 
    static final void method3427(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -407713023 * ((class60)var0.field3159).field1637.field9862;
+         var0.field3161[++var0.field3156 - 1] = ((Npc)var0.field3159).field1637.field9862;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ta.apx(" + ')');
       }

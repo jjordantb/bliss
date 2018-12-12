@@ -13,22 +13,22 @@ public class class371 {
 
    public static void method867(boolean var0, int var1) {
       try {
-         if (var0 && class740.field7793 != null) {
-            class791.field447 = 704948247 * class740.field7793.field16;
+         if (var0 && class491.field7793 != null) {
+            class791.field447 = class491.field7793.field16;
          } else {
-            class791.field447 = -678712477;
+            class791.field447 = -1;
          }
 
-         class740.field7793 = null;
+         class491.field7793 = null;
          class439.field7537 = null;
          class740.field3198 = 0;
          class147.field1520 = null;
          class740.method4398();
-         class740.field7811.method905((byte)1);
-         class740.field7810 = null;
+         class491.field7811.method905((byte)1);
+         class491.field7810 = null;
          class77.field1516 = null;
-         class740.field3206 = 433609607;
-         class740.field3201 = 789877945;
+         class740.field3206 = -1;
+         class740.field3201 = -1;
          class733.field2976 = null;
          class213.field7198 = null;
          class783.field3964 = null;
@@ -37,17 +37,17 @@ public class class371 {
          class878.field9820 = null;
          class76.field1466 = null;
          class569.field26 = null;
-         if (class740.field7826 != null) {
-            class740.field7826.method5093(46936435);
-            class740.field7826.method5094(128, 64, 41639270);
+         if (class491.field7826 != null) {
+            class491.field7826.method5093(46936435);
+            class491.field7826.method5094(128, 64, 41639270);
          }
 
-         if (class740.field7800 != null) {
-            class740.field7800.method2004(64, 64, -1144646938);
+         if (class491.field7800 != null) {
+            class491.field7800.method2004(64, 64, -1144646938);
          }
 
-         if (class740.field7795 != null) {
-            class740.field7795.method4709(256, (byte)50);
+         if (class491.field7795 != null) {
+            class491.field7795.method4709(256, (byte)50);
          }
 
          class905.field10369.method5456(64, (byte)42);

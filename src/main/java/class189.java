@@ -6,7 +6,7 @@ public class class189 {
    static synchronized void method3360(class297 var0, short var1) {
       try {
          if (!field5358) {
-            if (830010277 * field5359 > 0) {
+            if (field5359 > 0) {
                class437 var2 = new class437(var0);
                field5360.method897(var2, -259769992);
             } else {
@@ -37,7 +37,7 @@ public class class189 {
 
    static synchronized void method3362(int var0) {
       try {
-         field5359 += 1452325933;
+         ++field5359;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "cw.b(" + ')');
       }
@@ -45,8 +45,8 @@ public class class189 {
 
    static synchronized void method3363(int var0) {
       try {
-         field5359 -= 1452325933;
-         if (830010277 * field5359 == 0) {
+         --field5359;
+         if (field5359 == 0) {
             method3361((byte)3);
          }
 

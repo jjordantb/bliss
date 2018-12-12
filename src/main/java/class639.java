@@ -39,7 +39,7 @@ public class class639 extends class568 {
 
    public final int method5905(int var1) {
       try {
-         return this.field9814 * 2038595173;
+         return this.field9814;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "aao.i(" + ')');
       }
@@ -47,8 +47,8 @@ public class class639 extends class568 {
 
    class639(int var1, int var2, int var3, int var4, int var5, float var6) {
       this.field9812.method3292((float)var1, (float)var2, (float)var3);
-      this.field9811 = 465610783 * var4;
-      this.field9814 = var5 * -430898323;
+      this.field9811 = var4;
+      this.field9814 = var5;
       this.field9813 = var6;
    }
 
@@ -62,7 +62,7 @@ public class class639 extends class568 {
 
    public final int method5907(int var1) {
       try {
-         return this.field9811 * 333763551;
+         return this.field9811;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "aao.p(" + ')');
       }

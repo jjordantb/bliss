@@ -6,7 +6,7 @@ public class class163 extends class568 {
    int[] field6620 = new int[1];
    static int field6621;
 
-   final class879 method3553(class848 var1, int var2, class765 var3, int var4, boolean var5, class365 var6, byte var7) {
+   final class879 method3553(class848 var1, int var2, Animator var3, int var4, boolean var5, class365 var6, byte var7) {
       try {
          class879 var8 = null;
          int var9 = var2;
@@ -102,7 +102,7 @@ public class class163 extends class568 {
                var16 = var9 | 16384;
             }
 
-            var8 = var1.method4861(var29, var16, field6618 * 1310831989, 66, 850);
+            var8 = var1.method4861(var29, var16, field6618, 66, 850);
             if (var6 != null) {
                for(var20 = 0; var20 < 10; ++var20) {
                   for(var21 = 0; var21 < class365.field2440[var20].length; ++var21) {
@@ -133,7 +133,7 @@ public class class163 extends class568 {
 
    long method3554(int[] var1, int var2, int[] var3, boolean var4, int var5) {
       try {
-         long[] var6 = class907.field10382;
+         long[] var6 = InputStream.field10382;
          long var7 = -1L;
          var7 = var7 >>> 8 ^ var6[(int)((var7 ^ (long)(var2 >> 8)) & 255L)];
          var7 = var7 >>> 8 ^ var6[(int)((var7 ^ (long)var2) & 255L)];
@@ -159,9 +159,9 @@ public class class163 extends class568 {
       }
    }
 
-   static void method3555(class907 var0, int var1) {
+   static void method3555(InputStream var0, int var1) {
       try {
-         for(int var2 = 0; var2 < 1017276543 * class104.field170; ++var2) {
+         for(int var2 = 0; var2 < class104.field170; ++var2) {
             int var3 = var0.method6382(1723054621);
             int var4 = var0.method6374();
             if (var4 == 65535) {
@@ -169,7 +169,7 @@ public class class163 extends class568 {
             }
 
             if (class277.field10606[var3] != null) {
-               class277.field10606[var3].field3472 = var4 * 2083476291;
+               class277.field10606[var3].field3472 = var4;
             }
          }
 

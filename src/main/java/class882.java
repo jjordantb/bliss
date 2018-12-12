@@ -13,7 +13,7 @@ public class class882 {
 
    static final void method6192(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)40);
          class131 var4 = class382.field1410[var2 >> 16];
          class645.method6158(var3, var4, var0, -721593745);
@@ -24,7 +24,7 @@ public class class882 {
 
    static final void method6193(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)99);
          class131 var4 = class382.field1410[var2 >> 16];
          class75.method1118(var3, var4, true, 0, var0, 1313790889);
@@ -42,13 +42,13 @@ public class class882 {
       }
    }
 
-   public static class827 method6195(class907 var0, int var1) {
+   public static class827 method6195(InputStream var0, int var1) {
       try {
          class827 var2 = class932.method6291(var0, -2147461076);
          int var3 = var0.method6420((byte)-87);
          int var4 = var0.method6420((byte)4);
          int var5 = var0.method6423(1235052657);
-         return new class665(var2.field9028, var2.field9029, var2.field9033 * -39975161, var2.field9031 * 1886882435, var2.field9032 * -944287579, var2.field9036 * -1387457793, -684094775 * var2.field9034, 955568089 * var2.field9035, var2.field9030 * 782326281, var3, var4, var5);
+         return new class665(var2.field9028, var2.field9029, var2.field9033, var2.field9031, var2.field9032, var2.field9036, var2.field9034, var2.field9035, var2.field9030, var3, var4, var5);
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "mq.i(" + ')');
       }

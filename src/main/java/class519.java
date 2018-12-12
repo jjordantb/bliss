@@ -67,9 +67,9 @@ public class class519 {
 
    static final void method2668(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class912.field10424.method5508(1767596149) ? 1 : 0;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class912.field10424.method5517(1474356836) ? 1 : 0;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class912.field10424.method5510((byte)-46) ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = class912.field10424.method5508(1767596149) ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = class912.field10424.method5517(1474356836) ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = class912.field10424.method5510((byte)-46) ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "rj.vg(" + ')');
       }
@@ -95,21 +95,21 @@ public class class519 {
                   } else if (var0.equals("renderer")) {
                      class305 var4 = class593.field1623.method4795();
                      class213.method3810("Toolkit ID: " + class615.field8903.field9137.method3689(-481266690), 1038434697);
-                     class213.method3810("Vendor: " + var4.field398 * 267107087, 212944002);
+                     class213.method3810("Vendor: " + var4.field398, 212944002);
                      class213.method3810("Name: " + var4.field406, 723527437);
-                     class213.method3810("Version: " + var4.field405 * 1959468245, 1382813939);
+                     class213.method3810("Version: " + var4.field405, 1382813939);
                      class213.method3810("Device: " + var4.field401, 536857078);
-                     class213.method3810("Driver Version: " + var4.field407 * 703334160035735425L, 1218429557);
+                     class213.method3810("Driver Version: " + var4.field407, 1218429557);
                   } else if (var0.equals("heap")) {
-                     class213.method3810("Heap: " + class69.field1827 * 1126040225 + "MB", 170718628);
+                     class213.method3810("Heap: " + class69.field1827 + "MB", 170718628);
                   } else {
                      if (!var0.equalsIgnoreCase("getcamerapos")) {
                         break label289;
                      }
 
                      class389 var12 = class730.field2697.method5270(681479919);
-                     class213.method3810("Pos: " + class923.field10295.field3639 + "," + ((-1740717447 * class103.field205 >> 9) + var12.field1521 * -1760580017 >> 6) + "," + ((class7.field4918 * -299812095 >> 9) + 283514611 * var12.field1522 >> 6) + "," + (-1760580017 * var12.field1521 + (-1740717447 * class103.field205 >> 9) & 63) + "," + (var12.field1522 * 283514611 + (-299812095 * class7.field4918 >> 9) & 63) + " Height: " + (class679.method4271(class103.field205 * -1740717447, class7.field4918 * -299812095, class923.field10295.field3639, -1453034846) - class184.field5230 * 1449634147), 306448697);
-                     class213.method3810("Look: " + class923.field10295.field3639 + "," + (-1125224763 * class454.field7231 + var12.field1521 * -1760580017 >> 6) + "," + (283514611 * var12.field1522 + class764.field4349 * -1758389953 >> 6) + "," + (var12.field1521 * -1760580017 + -1125224763 * class454.field7231 & 63) + "," + (283514611 * var12.field1522 + -1758389953 * class764.field4349 & 63) + " Height: " + (class679.method4271(class454.field7231 * -1125224763, -1758389953 * class764.field4349, class923.field10295.field3639, -860898067) - 771695069 * class637.field9857), 1171744016);
+                     class213.method3810("Pos: " + class923.local.field3639 + "," + ((class103.field205 >> 9) + var12.field1521 >> 6) + "," + ((class7.field4918 >> 9) + var12.field1522 >> 6) + "," + (var12.field1521 + (class103.field205 >> 9) & 63) + "," + (var12.field1522 + (class7.field4918 >> 9) & 63) + " Height: " + (class679.method4271(class103.field205, class7.field4918, class923.local.field3639, -1453034846) - class184.field5230), 306448697);
+                     class213.method3810("Look: " + class923.local.field3639 + "," + (class454.field7231 + var12.field1521 >> 6) + "," + (var12.field1522 + class764.field4349 >> 6) + "," + (var12.field1521 + class454.field7231 & 63) + "," + (var12.field1522 + class764.field4349 & 63) + " Height: " + (class679.method4271(class454.field7231, class764.field4349, class923.local.field3639, -860898067) - class637.field9857), 1171744016);
                   }
                } else {
                   class213.method3810("commands - This command", 186560885);
@@ -126,7 +126,7 @@ public class class519 {
             return;
          }
 
-         if (class721.field3634 != class916.field10415 || 1806357379 * class730.field2790 >= 2) {
+         if (class721.field3634 != class916.field10415 || class730.field2790 >= 2) {
             try {
                if (var0.equalsIgnoreCase("wm1")) {
                   class739.method1795(1, -1, -1, false, 1791719030);
@@ -232,9 +232,9 @@ public class class519 {
                }
 
                if (var0.equalsIgnoreCase("clientdrop")) {
-                  if (class730.field2733 * -1233866115 == 0) {
+                  if (class730.field2733 == 0) {
                      class307.method387(554378996);
-                  } else if (17 == -1233866115 * class730.field2733) {
+                  } else if (17 == class730.field2733) {
                      class730.field2692.field7782 = true;
                   }
 
@@ -339,7 +339,7 @@ public class class519 {
                   class264.method4568(var6, 408166320);
                }
 
-               if (class730.field2733 * -1233866115 == 0) {
+               if (class730.field2733 == 0) {
                   class701 var14 = class637.method5936(class643.field9954, class730.field2692.field7765, (byte)6);
                   var14.field3364.method6361(var0.length() + 3);
                   var14.field3364.method6361(var1 ? 1 : 0);
@@ -353,7 +353,7 @@ public class class519 {
             }
          }
 
-         if (class730.field2733 * -1233866115 != 0) {
+         if (class730.field2733 != 0) {
             class213.method3810(class814.field4679.method2927(class321.field1066, -875414210) + var0, 276776266);
          }
 

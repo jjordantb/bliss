@@ -6,11 +6,11 @@ public class class752 {
    static int field4168;
    static int field4169 = 8;
    public static int field4170 = 256;
-   long field4171 = class27.method3468((byte)1) * -2662467539374708341L;
+   long field4171 = class27.method3468((byte)1);
    int[] field4172;
    boolean field4173 = false;
    class298 field4174;
-   int field4175 = -2056222048;
+   int field4175 = 32;
    int field4176;
    static class649 field4177;
    class298[] field4178 = new class298[8];
@@ -44,54 +44,54 @@ public class class752 {
             long var2 = class27.method3468((byte)1);
 
             try {
-               if (var2 > 6353619706144323107L * this.field4171 + 6000L) {
-                  this.field4171 = -2662467539374708341L * (var2 - 6000L);
+               if (var2 > this.field4171 + 6000L) {
+                  this.field4171 = var2 - 6000L;
                }
 
-               while(var2 > 6353619706144323107L * this.field4171 + 5000L) {
+               while(var2 > this.field4171 + 5000L) {
                   this.method2627(256, -518493991);
-                  this.field4171 += -2662467539374708341L * (long)(256000 / (field4179 * 1164070869));
+                  this.field4171 += (long)(256000 / field4179);
                   var2 = class27.method3468((byte)1);
                }
             } catch (Exception var8) {
-               this.field4171 = -2662467539374708341L * var2;
+               this.field4171 = var2;
             }
 
             if (this.field4172 != null) {
                try {
-                  if (0L != -2629227736231104439L * this.field4180) {
-                     if (var2 < this.field4180 * -2629227736231104439L) {
+                  if (0L != this.field4180) {
+                     if (var2 < this.field4180) {
                         return;
                      }
 
-                     this.method2630(this.field4166 * -1894797445, 816646714);
+                     this.method2630(this.field4166, 816646714);
                      this.field4180 = 0L;
                      this.field4185 = true;
                   }
 
                   int var4 = this.method2634(-2047791436);
-                  if (this.field4183 * -25238017 - var4 > 1581283719 * this.field4181) {
-                     this.field4181 = -2137785289 * (-25238017 * this.field4183 - var4);
+                  if (this.field4183 - var4 > this.field4181) {
+                     this.field4181 = this.field4183 - var4;
                   }
 
-                  int var5 = this.field4176 * 444653019 + this.field4191 * 1513728603;
+                  int var5 = this.field4176 + this.field4191;
                   if (var5 + 256 > 16384) {
                      var5 = 16128;
                   }
 
-                  if (var5 + 256 > -1894797445 * this.field4166) {
-                     this.field4166 += -480326656;
-                     if (-1894797445 * this.field4166 > 16384) {
-                        this.field4166 = 904708096;
+                  if (var5 + 256 > this.field4166) {
+                     this.field4166 += 1024;
+                     if (this.field4166 > 16384) {
+                        this.field4166 = 16384;
                      }
 
                      this.method2632(331463442);
-                     this.method2630(this.field4166 * -1894797445, 1013749816);
+                     this.method2630(this.field4166, 1013749816);
                      var4 = 0;
                      this.field4185 = true;
-                     if (var5 + 256 > this.field4166 * -1894797445) {
-                        var5 = -1894797445 * this.field4166 - 256;
-                        this.field4176 = -1422272941 * (var5 - this.field4191 * 1513728603);
+                     if (var5 + 256 > this.field4166) {
+                        var5 = this.field4166 - 256;
+                        this.field4176 = var5 - this.field4191;
                      }
                   }
 
@@ -101,28 +101,28 @@ public class class752 {
                      var4 += 256;
                   }
 
-                  if (var2 > this.field4184 * -9016197443635909135L) {
+                  if (var2 > this.field4184) {
                      if (!this.field4185) {
-                        if (this.field4181 * 1581283719 == 0 && -1912576967 * this.field4182 == 0) {
+                        if (this.field4181 == 0 && this.field4182 == 0) {
                            this.method2632(331463442);
-                           this.field4180 = (2000L + var2) * -3392636722701155847L;
+                           this.field4180 = 2000L + var2;
                            return;
                         }
 
-                        this.field4176 = Math.min(this.field4182 * -1912576967, 1581283719 * this.field4181) * -1422272941;
-                        this.field4182 = this.field4181 * -43955265;
+                        this.field4176 = Math.min(this.field4182, this.field4181);
+                        this.field4182 = this.field4181;
                      } else {
                         this.field4185 = false;
                      }
 
                      this.field4181 = 0;
-                     this.field4184 = 6449118444469183249L * (var2 + 2000L);
+                     this.field4184 = var2 + 2000L;
                   }
 
-                  this.field4183 = var4 * 1927092735;
+                  this.field4183 = var4;
                } catch (Exception var7) {
                   this.method2632(331463442);
-                  this.field4180 = (var2 + 2000L) * -3392636722701155847L;
+                  this.field4180 = var2 + 2000L;
                }
             }
          }
@@ -134,8 +134,8 @@ public class class752 {
 
    final void method2627(int var1, int var2) {
       try {
-         this.field4192 -= var1 * -1831995011;
-         if (-577697835 * this.field4192 < 0) {
+         this.field4192 -= var1;
+         if (this.field4192 < 0) {
             this.field4192 = 0;
          }
 
@@ -155,9 +155,9 @@ public class class752 {
       }
 
       class901.method6356(var1, 0, var3);
-      this.field4192 -= var2 * -1831995011;
-      if (this.field4174 != null && this.field4192 * -577697835 <= 0) {
-         this.field4192 += -1831995011 * (field4179 * 1164070869 >> 4);
+      this.field4192 -= var2;
+      if (this.field4174 != null && this.field4192 <= 0) {
+         this.field4192 += field4179 >> 4;
          class625.method5830(this.field4174, -1934060670);
          this.method2637(this.field4174, this.field4174.method6549(), (byte)-73);
          int var4 = 0;
@@ -203,7 +203,7 @@ public class class752 {
                               var12.field9042 += var13;
                            }
 
-                           if (var4 >= 1853708541 * this.field4175) {
+                           if (var4 >= this.field4175) {
                               break label104;
                            }
 
@@ -249,7 +249,7 @@ public class class752 {
          }
       }
 
-      if (-577697835 * this.field4192 < 0) {
+      if (this.field4192 < 0) {
          this.field4192 = 0;
       }
 
@@ -257,7 +257,7 @@ public class class752 {
          this.field4174.method6533(var1, 0, var2);
       }
 
-      this.field4171 = class27.method3468((byte)1) * -2662467539374708341L;
+      this.field4171 = class27.method3468((byte)1);
    }
 
    void method2629(Component var1, byte var2) throws Exception {
@@ -277,7 +277,7 @@ public class class752 {
 
    int method2634(int var1) throws Exception {
       try {
-         return -1894797445 * this.field4166;
+         return this.field4166;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "lu.s(" + ')');
       }
@@ -291,7 +291,7 @@ public class class752 {
             this.method2633((short)-24697);
          } catch (Exception var3) {
             this.method2632(331463442);
-            this.field4180 = (class27.method3468((byte)1) + 2000L) * -3392636722701155847L;
+            this.field4180 = class27.method3468((byte)1) + 2000L;
          }
 
       } catch (RuntimeException var4) {
@@ -370,7 +370,7 @@ public class class752 {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var3.field881 * -2093041337;
+         var0.field3161[++var0.field3156 - 1] = var3.field881;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "lu.oc(" + ')');
       }
@@ -378,17 +378,17 @@ public class class752 {
 
    static final void method2640(class564 var0, class744 var1, int var2) {
       try {
-         int var3 = var1.field3161[(var1.field3156 -= -391880689) * 681479919];
-         int var4 = var1.field3161[(var1.field3156 -= -391880689) * 681479919] - 1;
-         if (var0.field909 * 1548853569 != 6 && 2 != var0.field909 * 1548853569) {
+         int var3 = var1.field3161[--var1.field3156];
+         int var4 = var1.field3161[--var1.field3156] - 1;
+         if (var0.field909 != 6 && 2 != var0.field909) {
             throw new RuntimeException("");
          } else {
-            class401 var5 = class258.field7913.method12(var0.field876 * 572201537, 2035169508);
+            NpcDefinition var5 = class258.field7913.method12(var0.field876, 2035169508);
             if (var0.field1032 == null) {
-               var0.field1032 = new class692(var5, 1548853569 * var0.field909 == 6);
+               var0.field1032 = new class692(var5, var0.field909 == 6);
             }
 
-            var0.field1032.field7133 = class390.method3422(954429430) * 3177550440302969639L;
+            var0.field1032.field7133 = class390.method3422(954429430);
             if (var5.field9870 != null && var4 >= 0 && var4 < var5.field9870.length) {
                var0.field1032.field7132[var4] = (short)var3;
                class814.method2932(var0, -579030149);
@@ -403,7 +403,7 @@ public class class752 {
 
    static final void method2641(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9117.method5848(207850013) == 1 ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9117.method5848(207850013) == 1 ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "lu.ajo(" + ')');
       }
@@ -411,11 +411,11 @@ public class class752 {
 
    static final void method2642(class564 var0, class131 var1, class744 var2, short var3) {
       try {
-         var2.field3156 -= -783761378;
-         int var4 = var2.field3161[681479919 * var2.field3156];
-         int var5 = var2.field3161[var2.field3156 * 681479919 + 1];
+         var2.field3156 -= 2;
+         int var4 = var2.field3161[var2.field3156];
+         int var5 = var2.field3161[var2.field3156 + 1];
          class785 var6 = class452.field7216.method5148(var4, 493338480);
-         if (var6.field3822 * -388931549 != var5) {
+         if (var6.field3822 != var5) {
             var0.method835(var4, var5, 1223650775);
          } else {
             var0.method833(var4, 1279288503);
@@ -428,8 +428,8 @@ public class class752 {
 
    static final void method2643(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class50.method1498((char)var2, (short)160) ? 1 : 0;
+         int var2 = var0.field3161[--var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = ObjectDefinition.method1498((char)var2, (short)160) ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "lu.zq(" + ')');
       }

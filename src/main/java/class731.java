@@ -12,10 +12,6 @@ public class class731 implements class813, class893, class288 {
       return this.field2608;
    }
 
-   public void method6701(int var1) {
-      OpenGL.glFramebufferRenderbufferEXT(36160, var1, 36161, this.field2605);
-   }
-
    public void method6700(int var1) {
       OpenGL.glFramebufferRenderbufferEXT(36160, var1, 36161, this.field2605);
    }
@@ -29,67 +25,8 @@ public class class731 implements class813, class893, class288 {
 
    }
 
-   void method1751() {
-      if (this.field2605 > 0) {
-         this.field2609.method5074(this.field2605, this.field2608 * this.field2610 * this.field2607.field8406 * 685647847 * this.field2606.field8190 * 845115459);
-         this.field2605 = 0;
-      }
-
-   }
-
-   public void method6698(int var1) {
-      OpenGL.glFramebufferRenderbufferEXT(36160, var1, 36161, this.field2605);
-   }
-
-   public int method2345() {
-      return this.field2608;
-   }
-
-   public int method2346() {
-      return this.field2608;
-   }
-
-   public int method2347() {
-      return this.field2610;
-   }
-
-   public void method2754() {
-      if (this.field2605 > 0) {
-         int[] var1 = new int[]{this.field2605};
-         OpenGL.glDeleteRenderbuffersEXT(1, var1, 0);
-         this.field2605 = 0;
-      }
-
-   }
-
-   public void method2753() {
-      if (this.field2605 > 0) {
-         int[] var1 = new int[]{this.field2605};
-         OpenGL.glDeleteRenderbuffersEXT(1, var1, 0);
-         this.field2605 = 0;
-      }
-
-   }
-
-   public void method2756() {
-      if (this.field2605 > 0) {
-         int[] var1 = new int[]{this.field2605};
-         OpenGL.glDeleteRenderbuffersEXT(1, var1, 0);
-         this.field2605 = 0;
-      }
-
-   }
-
    public int method2344() {
       return this.field2610;
-   }
-
-   public void method6699(int var1) {
-      OpenGL.glFramebufferRenderbufferEXT(36160, var1, 36161, this.field2605);
-   }
-
-   public void method6697(int var1) {
-      OpenGL.glFramebufferRenderbufferEXT(36160, var1, 36161, this.field2605);
    }
 
    class731(class608 var1, class264 var2, class482 var3, int var4, int var5) {

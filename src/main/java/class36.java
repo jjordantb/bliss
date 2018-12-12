@@ -14,23 +14,23 @@ public class class36 extends class571 {
 
    void method23(OggPacket var1, int var2) {
       try {
-         if (this.field38 * -1312498565 <= 0 || "SUB".equals(this.field5336)) {
-            class907 var3 = new class907(var1.getData());
+         if (super.field38 <= 0 || "SUB".equals(this.field5336)) {
+            InputStream var3 = new InputStream(var1.getData());
             int var4 = var3.method6371();
-            if (-1312498565 * this.field38 <= 8) {
+            if (super.field38 <= 8) {
                if ((var4 | 128) == 0) {
                   throw new IllegalStateException();
                }
 
-               if (-1312498565 * this.field38 == 0) {
-                  var3.field10376 += -1617461143;
-                  this.field5333 = var3.method6377(1431459183) * 33758645;
-                  this.field5339 = var3.method6377(-150244186) * 1857578037;
-                  if (this.field5333 * -180836195 == 0 || this.field5339 * 2110967325 == 0) {
+               if (super.field38 == 0) {
+                  var3.field10376 += 23;
+                  this.field5333 = var3.method6377(1431459183);
+                  this.field5339 = var3.method6377(-150244186);
+                  if (this.field5333 == 0 || this.field5339 == 0) {
                      throw new IllegalStateException();
                   }
 
-                  class907 var5 = new class907(16);
+                  InputStream var5 = new InputStream(16);
                   var3.method6381(var5.field10375, 0, 16, -953523806);
                   this.field5335 = var5.method6379(-1838621769);
                   var5.field10376 = 0;
@@ -46,14 +46,14 @@ public class class36 extends class571 {
                      throw new IllegalStateException();
                   }
 
-                  this.field5337 = (float)(var6 * (long)(2110967325 * this.field5339)) / (float)(-180836195 * this.field5333);
-                  this.field5338 = (float)((var6 + var8) * (long)(this.field5339 * 2110967325)) / (float)(-180836195 * this.field5333);
+                  this.field5337 = (float)(var6 * (long)this.field5339) / (float)this.field5333;
+                  this.field5338 = (float)((var6 + var8) * (long)this.field5339) / (float)this.field5333;
                   int var12 = var3.method6377(-941704037);
-                  if (var12 < 0 || var12 > var3.field10375.length - 385051775 * var3.field10376) {
+                  if (var12 < 0 || var12 > var3.field10375.length - var3.field10376) {
                      throw new IllegalStateException();
                   }
 
-                  this.field5331 = class140.method1051(var3.field10375, var3.field10376 * 385051775, var12, -730069426);
+                  this.field5331 = class140.method1051(var3.field10375, var3.field10376, var12, -730069426);
                }
 
                if ((var4 | 128) != 0) {
@@ -97,165 +97,6 @@ public class class36 extends class571 {
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ajv.z(" + ')');
       }
-   }
-
-   void method28() {
-   }
-
-   void method26(OggPacket var1) {
-      if (this.field38 * -1312498565 <= 0 || "SUB".equals(this.field5336)) {
-         class907 var2 = new class907(var1.getData());
-         int var3 = var2.method6371();
-         if (-1312498565 * this.field38 <= 8) {
-            if ((var3 | 128) == 0) {
-               throw new IllegalStateException();
-            }
-
-            if (-1312498565 * this.field38 == 0) {
-               var2.field10376 += -1617461143;
-               this.field5333 = var2.method6377(-1960945614) * 33758645;
-               this.field5339 = var2.method6377(1105841706) * 1857578037;
-               if (this.field5333 * -180836195 == 0 || this.field5339 * 2110967325 == 0) {
-                  throw new IllegalStateException();
-               }
-
-               class907 var4 = new class907(16);
-               var2.method6381(var4.field10375, 0, 16, -953523806);
-               this.field5335 = var4.method6379(-2059271269);
-               var4.field10376 = 0;
-               var2.method6381(var4.field10375, 0, 16, -953523806);
-               this.field5336 = var4.method6379(254290400);
-            }
-         } else {
-            if (var3 == 0) {
-               long var5 = var2.method6417(1922871636);
-               long var7 = var2.method6417(1312894396);
-               long var9 = var2.method6417(718042704);
-               if (var5 < 0L || var7 < 0L || var9 < 0L || var9 > var5) {
-                  throw new IllegalStateException();
-               }
-
-               this.field5337 = (float)(var5 * (long)(2110967325 * this.field5339)) / (float)(-180836195 * this.field5333);
-               this.field5338 = (float)((var5 + var7) * (long)(this.field5339 * 2110967325)) / (float)(-180836195 * this.field5333);
-               int var11 = var2.method6377(1321488370);
-               if (var11 < 0 || var11 > var2.field10375.length - 385051775 * var2.field10376) {
-                  throw new IllegalStateException();
-               }
-
-               this.field5331 = class140.method1051(var2.field10375, var2.field10376 * 385051775, var11, -932621904);
-            }
-
-            if ((var3 | 128) != 0) {
-               return;
-            }
-         }
-      }
-
-   }
-
-   void method27(OggPacket var1) {
-      if (this.field38 * -1312498565 <= 0 || "SUB".equals(this.field5336)) {
-         class907 var2 = new class907(var1.getData());
-         int var3 = var2.method6371();
-         if (-1312498565 * this.field38 <= 8) {
-            if ((var3 | 128) == 0) {
-               throw new IllegalStateException();
-            }
-
-            if (-1312498565 * this.field38 == 0) {
-               var2.field10376 += -1617461143;
-               this.field5333 = var2.method6377(-1885777054) * 33758645;
-               this.field5339 = var2.method6377(-1908777764) * 1857578037;
-               if (this.field5333 * -180836195 == 0 || this.field5339 * 2110967325 == 0) {
-                  throw new IllegalStateException();
-               }
-
-               class907 var4 = new class907(16);
-               var2.method6381(var4.field10375, 0, 16, -953523806);
-               this.field5335 = var4.method6379(933165446);
-               var4.field10376 = 0;
-               var2.method6381(var4.field10375, 0, 16, -953523806);
-               this.field5336 = var4.method6379(-1680071522);
-            }
-         } else {
-            if (var3 == 0) {
-               long var5 = var2.method6417(1453589293);
-               long var7 = var2.method6417(216828969);
-               long var9 = var2.method6417(958666578);
-               if (var5 < 0L || var7 < 0L || var9 < 0L || var9 > var5) {
-                  throw new IllegalStateException();
-               }
-
-               this.field5337 = (float)(var5 * (long)(2110967325 * this.field5339)) / (float)(-180836195 * this.field5333);
-               this.field5338 = (float)((var5 + var7) * (long)(this.field5339 * 2110967325)) / (float)(-180836195 * this.field5333);
-               int var11 = var2.method6377(-1427296069);
-               if (var11 < 0 || var11 > var2.field10375.length - 385051775 * var2.field10376) {
-                  throw new IllegalStateException();
-               }
-
-               this.field5331 = class140.method1051(var2.field10375, var2.field10376 * 385051775, var11, -854138275);
-            }
-
-            if ((var3 | 128) != 0) {
-               return;
-            }
-         }
-      }
-
-   }
-
-   void method21() {
-   }
-
-   void method25(OggPacket var1) {
-      if (this.field38 * -1312498565 <= 0 || "SUB".equals(this.field5336)) {
-         class907 var2 = new class907(var1.getData());
-         int var3 = var2.method6371();
-         if (-1312498565 * this.field38 <= 8) {
-            if ((var3 | 128) == 0) {
-               throw new IllegalStateException();
-            }
-
-            if (-1312498565 * this.field38 == 0) {
-               var2.field10376 += -1617461143;
-               this.field5333 = var2.method6377(-1909623846) * 33758645;
-               this.field5339 = var2.method6377(1996267542) * 1857578037;
-               if (this.field5333 * -180836195 == 0 || this.field5339 * 2110967325 == 0) {
-                  throw new IllegalStateException();
-               }
-
-               class907 var4 = new class907(16);
-               var2.method6381(var4.field10375, 0, 16, -953523806);
-               this.field5335 = var4.method6379(-1904784161);
-               var4.field10376 = 0;
-               var2.method6381(var4.field10375, 0, 16, -953523806);
-               this.field5336 = var4.method6379(333136246);
-            }
-         } else {
-            if (var3 == 0) {
-               long var5 = var2.method6417(1871449900);
-               long var7 = var2.method6417(2001133775);
-               long var9 = var2.method6417(1245800446);
-               if (var5 < 0L || var7 < 0L || var9 < 0L || var9 > var5) {
-                  throw new IllegalStateException();
-               }
-
-               this.field5337 = (float)(var5 * (long)(2110967325 * this.field5339)) / (float)(-180836195 * this.field5333);
-               this.field5338 = (float)((var5 + var7) * (long)(this.field5339 * 2110967325)) / (float)(-180836195 * this.field5333);
-               int var11 = var2.method6377(1651625621);
-               if (var11 < 0 || var11 > var2.field10375.length - 385051775 * var2.field10376) {
-                  throw new IllegalStateException();
-               }
-
-               this.field5331 = class140.method1051(var2.field10375, var2.field10376 * 385051775, var11, 1348372434);
-            }
-
-            if ((var3 | 128) != 0) {
-               return;
-            }
-         }
-      }
-
    }
 
    void method24(int var1) {

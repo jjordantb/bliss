@@ -29,22 +29,6 @@ public class class82 implements class311 {
       this.field1106 = var2;
    }
 
-   public int method446() {
-      return this.field1107.method3282(this.field1106, -2133628727) ? 100 : this.field1107.method3275(this.field1106, -162075659);
-   }
-
-   public class972 method447() {
-      return class972.field2962;
-   }
-
-   public class972 method445() {
-      return class972.field2962;
-   }
-
-   public class972 method449() {
-      return class972.field2962;
-   }
-
    static class346 method915(int var0, byte var1) {
       try {
          class346 var2 = (class346)class966.field2520.method3070((long)var0);
@@ -72,14 +56,14 @@ public class class82 implements class311 {
 
    static final void method916(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class506 var3 = class395.method3397(var2, -500483592);
          String var4 = "";
          if (var3 != null && var3.field4124 != null) {
             var4 = var3.field4124;
          }
 
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var4;
+         var0.field3157[++var0.field3158 - 1] = var4;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "jc.acz(" + ')');
       }
@@ -96,21 +80,21 @@ public class class82 implements class311 {
    static String method918(int[] var0, byte var1) {
       try {
          StringBuilder var2 = new StringBuilder();
-         int var3 = -232961423 * class544.field3794;
+         int var3 = class544.field3794;
 
          for(int var4 = 0; var4 < var0.length; ++var4) {
             class865 var5 = class735.field3009.method4224(var0[var4], 245040087);
-            if (var5.field9005 * 347977109 == -1) {
+            if (var5.field9005 == -1) {
                if (var1 != 1) {
                   throw new IllegalStateException();
                }
             } else {
-               class48 var6 = (class48)class602.field8667.method2974((long)(347977109 * var5.field9005));
+               class48 var6 = (class48)class602.field8667.method2974((long)var5.field9005);
                if (var6 == null) {
-                  class922 var7 = class922.method6242(class562.field827, var5.field9005 * 347977109, 0);
+                  class922 var7 = class922.method6242(class562.field827, var5.field9005, 0);
                   if (var7 != null) {
                      var6 = class593.field1623.method4982(var7, true);
-                     class602.field8667.method2984(var6, (long)(var5.field9005 * 347977109));
+                     class602.field8667.method2984(var6, (long)var5.field9005);
                   }
                }
 
@@ -131,15 +115,15 @@ public class class82 implements class311 {
    public static void method919(boolean var0, boolean var1, short var2) {
       try {
          if (var0) {
-            class543.field3818 -= 1929855733;
-            if (class543.field3818 * -1320167075 == 0) {
+            --class543.field3818;
+            if (class543.field3818 == 0) {
                class543.field3817 = null;
             }
          }
 
          if (var1) {
-            class543.field3816 -= -1931699395;
-            if (726176789 * class543.field3816 == 0) {
+            --class543.field3816;
+            if (class543.field3816 == 0) {
                class134.field1398 = null;
             }
          }
@@ -171,7 +155,7 @@ public class class82 implements class311 {
          class730.field2697.method5308(-2101576654);
          class371.method867(false, 1336561252);
          class154.method3492(2, 207248326);
-         class540.field3920 = 184109511;
+         class540.field3920 = -1;
          class540.field3921 = false;
          class228.method4589(-1865838561);
          class897.method5624(true, -2090545066);
@@ -197,7 +181,7 @@ public class class82 implements class311 {
 
    static void method921(int var0, int var1) {
       try {
-         class163.field6618 = -747654435 * var0;
+         class163.field6618 = var0;
          class163.field6616.method2977();
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jc.s(" + ')');
@@ -206,7 +190,7 @@ public class class82 implements class311 {
 
    static final void method922(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class923.field10295.field4048.method5553((byte)0) >> 3;
+         var0.field3161[++var0.field3156 - 1] = class923.local.field4048.method5553((byte)0) >> 3;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jc.uc(" + ')');
       }

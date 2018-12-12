@@ -18,13 +18,13 @@ public class class591 {
             class180 var5 = this.field1573;
             byte[] var10;
             synchronized(this.field1573) {
-               var10 = this.field1573.method3285(-1006924897 * class981.field3262.field3271, var1, (byte)-66);
+               var10 = this.field1573.method3285(class981.field3262.field3271, var1, (byte)-66);
             }
 
             var4 = new class399();
             var4.field6569 = this;
             if (var10 != null) {
-               var4.method3519(new class907(var10), -1860141420);
+               var4.method3519(new InputStream(var10), -1860141420);
             }
 
             class1 var11 = this.field1576;
@@ -90,7 +90,7 @@ public class class591 {
    public class591(class469 var1, class423 var2, class180 var3, class180 var4) {
       this.field1574 = var4;
       this.field1573 = var3;
-      this.field1573.method3286(class981.field3262.field3271 * -1006924897, -790264977);
+      this.field1573.method3286(class981.field3262.field3271, -790264977);
    }
 
    static final void method1215(class744 var0, int var1) {
@@ -106,7 +106,7 @@ public class class591 {
 
    static final void method1216(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-22);
          class200.method4351(var3, var0, (byte)0);
       } catch (RuntimeException var4) {

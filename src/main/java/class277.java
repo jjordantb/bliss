@@ -28,12 +28,12 @@ public class class277 {
             class180 var5 = this.field10605;
             byte[] var10;
             synchronized(this.field10605) {
-               var10 = this.field10605.method3285(class981.field3228.field3271 * -1006924897, var1, (byte)-82);
+               var10 = this.field10605.method3285(class981.field3228.field3271, var1, (byte)-82);
             }
 
             var4 = new class176();
             if (var10 != null) {
-               var4.method3161(new class907(var10), (byte)-59);
+               var4.method3161(new InputStream(var10), (byte)-59);
             }
 
             class1 var11 = this.field10604;
@@ -61,7 +61,7 @@ public class class277 {
 
    public class277(class469 var1, class423 var2, class180 var3) {
       this.field10605 = var3;
-      this.field10605.method3286(class981.field3228.field3271 * -1006924897, -1961959383);
+      this.field10605.method3286(class981.field3228.field3271, -1961959383);
    }
 
    public void method6633(int var1, short var2) {
@@ -79,14 +79,14 @@ public class class277 {
       try {
          if (var1 != null) {
             int var4;
-            if (var1.field879 * -1309843523 != -1) {
-               class564 var3 = var0.method889(1573706803 * var1.field885, (short)26063);
+            if (var1.field879 != -1) {
+               class564 var3 = var0.method889(var1.field885, (short)26063);
                if (var3 != null) {
                   if (var3.field1018 == var3.field1017) {
                      var3.field1018 = new class564[var3.field1017.length];
                      var3.field1018[var3.field1018.length - 1] = var1;
-                     class901.method6351(var3.field1017, 0, var3.field1018, 0, -1309843523 * var1.field879);
-                     class901.method6351(var3.field1017, 1 + var1.field879 * -1309843523, var3.field1018, -1309843523 * var1.field879, var3.field1017.length - var1.field879 * -1309843523 - 1);
+                     class901.method6351(var3.field1017, 0, var3.field1018, 0, var1.field879);
+                     class901.method6351(var3.field1017, 1 + var1.field879, var3.field1018, var1.field879, var3.field1017.length - var1.field879 - 1);
                   } else {
                      var4 = 0;
 
@@ -127,13 +127,13 @@ public class class277 {
 
    static final void method6635(class744 var0, int var1) {
       try {
-         var0.field3156 -= -1567522756;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[681479919 * var0.field3156 + 1];
-         int var4 = var0.field3161[var0.field3156 * 681479919 + 2];
-         int var5 = var0.field3161[var0.field3156 * 681479919 + 3];
+         var0.field3156 -= 4;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1];
+         int var4 = var0.field3161[var0.field3156 + 2];
+         int var5 = var0.field3161[var0.field3156 + 3];
          class389 var6 = class730.field2697.method5270(681479919);
-         class526.method2227((var2 >> 14 & 16383) - var6.field1521 * -1760580017, (var2 & 16383) - 283514611 * var6.field1522, var3 << 2, var4, var5, (byte)72);
+         class526.method2227((var2 >> 14 & 16383) - var6.field1521, (var2 & 16383) - var6.field1522, var3 << 2, var4, var5, (byte)72);
       } catch (RuntimeException var7) {
          throw class158.method3445(var7, "fh.agc(" + ')');
       }

@@ -15,7 +15,7 @@ public class class724 extends class568 {
    Stream field2519;
 
    void method1705(int var1, int var2, int var3) {
-      this.field2517[var2 * this.field2511.field7226 * -506105871 + var1] |= 1 << var3;
+      this.field2517[var2 * this.field2511.field7226 + var1] |= 1 << var3;
    }
 
    void method1706(int var1, int var2, int var3, float var4) {
@@ -126,7 +126,7 @@ public class class724 extends class568 {
       this.field2516 = var2;
       this.field2513 = (float)var3;
       this.field2515 = var4;
-      this.field2517 = new int[this.field2511.field7226 * -506105871 * this.field2511.field7225 * -1148794921];
+      this.field2517 = new int[this.field2511.field7226 * this.field2511.field7225];
       this.field2518 = new class424(this.field2514, 5123, (byte[])null, 1);
    }
 
@@ -189,7 +189,7 @@ public class class724 extends class568 {
       }
 
       if (var3 > 0) {
-         this.field2518.method1190(5123, var4.field10375, var4.field10376 * 385051775);
+         this.field2518.method1190(5123, var4.field10375, var4.field10376);
          this.field2514.method3631(this.field2511.field10506, this.field2511.field10486, this.field2510, this.field2511.field10484);
          this.field2514.method3661(this.field2516, (this.field2511.field10490 & 7) != 0, (this.field2511.field10490 & 8) != 0);
          if (this.field2514.field6833) {

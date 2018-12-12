@@ -25,10 +25,6 @@ public abstract class class605 {
 
    public abstract void method5102(int var1);
 
-   public abstract void method5103(boolean var1);
-
-   public abstract void method5104(int var1);
-
    public abstract void method5105(class344 var1);
 
    public abstract void method5106(int var1);
@@ -54,27 +50,7 @@ public abstract class class605 {
 
    public abstract void method5109();
 
-   public abstract void method5110(class344 var1);
-
-   public abstract void method5111(class344 var1);
-
-   public abstract void method5112(boolean var1);
-
    public abstract void method5113(boolean var1);
-
-   public abstract void method5114(boolean var1);
-
-   public abstract void method5115(int var1);
-
-   public abstract void method5116(int var1);
-
-   public abstract void method5117(int var1);
-
-   public abstract void method5118();
-
-   public abstract void method5119(int var1);
-
-   public abstract void method5120(int var1);
 
    class605(class325 var1) {
       this.field8692 = var1;

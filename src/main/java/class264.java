@@ -13,14 +13,14 @@ public class class264 {
    public static class264 field8201 = new class264(7, 1);
 
    class264(int var1, int var2) {
-      this.field8200 = var1 * -57892181;
-      this.field8190 = var2 * -1192469397;
+      this.field8200 = var1;
+      this.field8190 = var2;
    }
 
    static final void method4565(class744 var0, int var1) {
       try {
-         var0.field3156 -= -783761378;
-         class890.method5559(class923.field10295, var0.field3161[var0.field3156 * 681479919], var0.field3161[681479919 * var0.field3156 + 1], -16777216);
+         var0.field3156 -= 2;
+         class890.method5559(class923.local, var0.field3161[var0.field3156], var0.field3161[var0.field3156 + 1], -16777216);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ce.sm(" + ')');
       }
@@ -28,7 +28,7 @@ public class class264 {
 
    static final void method4566(class744 var0, byte var1) {
       try {
-         class615.field8903.method5391(class615.field8903.field9135, var0.field3161[(var0.field3156 -= -391880689) * 681479919], -2054835114);
+         class615.field8903.method5391(class615.field8903.field9135, var0.field3161[--var0.field3156], -2054835114);
          class95.method523(656179282);
          class730.field2647 = false;
       } catch (RuntimeException var3) {
@@ -62,8 +62,8 @@ public class class264 {
 
                   class213.method3810("Pausing for " + var3 + " seconds...", 357563950);
                   class342.field289 = var0;
-                  class342.field284 = -1428832631 * (var2 + 1);
-                  class7.field4919 = (class27.method3468((byte)1) + (long)(var3 * 1000)) * 6717445677357895093L;
+                  class342.field284 = var2 + 1;
+                  class7.field4919 = class27.method3468((byte)1) + (long)(var3 * 1000);
                   break;
                }
 
@@ -72,7 +72,7 @@ public class class264 {
             }
          } else {
             class342.field281 = class342.field281 + var0[0];
-            class342.field279 += var0[0].length() * 1914783065;
+            class342.field279 += var0[0].length();
          }
 
       } catch (RuntimeException var6) {
@@ -82,13 +82,13 @@ public class class264 {
 
    static void method4569(int var0) {
       try {
-         if (-1217082313 * class342.field285 > 0) {
+         if (class342.field285 > 0) {
             int var1 = 0;
 
             for(int var2 = 0; var2 < class342.field287.length; ++var2) {
                if (class342.field287[var2].indexOf("--> ") != -1) {
                   ++var1;
-                  if (var1 == class342.field285 * -1217082313) {
+                  if (var1 == class342.field285) {
                      class342.field281 = class342.field287[var2].substring(class342.field287[var2].indexOf(62) + 2);
                      break;
                   }

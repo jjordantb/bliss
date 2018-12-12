@@ -48,7 +48,7 @@ public class class709 extends class571 {
 
    long method2012(byte var1) {
       try {
-         return this.field3437 * 7179368485346321301L;
+         return this.field3437;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ajq.z(" + ')');
       }
@@ -93,127 +93,13 @@ public class class709 extends class571 {
          } else if (!this.field3444 && this.field3443 != null) {
             return this.field3443;
          } else {
-            this.field3443 = var1.method2019(this.field3435.pixels, 0, 1264450863 * this.field3435.a, this.field3435.a * 1264450863, -1459424961 * this.field3435.f, false, 1108085908);
+            this.field3443 = var1.method2019(this.field3435.pixels, 0, this.field3435.a, this.field3435.a, this.field3435.f, false, 1108085908);
             this.field3444 = false;
             return this.field3443;
          }
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ajq.c(" + ')');
       }
-   }
-
-   void method26(OggPacket var1) {
-      int var2;
-      if (!this.field3438) {
-         var2 = this.field3430.decodeHeader(this.field3429, this.field3441, var1);
-         if (var2 == 0) {
-            this.field3438 = true;
-            if (this.field3429.frameWidth > 2048 || this.field3429.frameHeight > 1024) {
-               throw new IllegalStateException();
-            }
-
-            this.field3433 = new DecoderContext(this.field3429, this.field3430);
-            this.field3439 = new GranulePos();
-            this.field3435 = new Frame(this.field3429.frameWidth, this.field3429.frameHeight);
-            this.field3440 = this.field3433.getMaxPostProcessingLevel() * 295322609;
-            this.method2015(-2058603981 * this.field3436, (byte)77);
-         } else if (var2 < 0) {
-            throw new IllegalStateException("" + var2);
-         }
-      } else {
-         this.field3437 = class27.method3468((byte)1) * 4704549656485466045L;
-         var2 = this.field3433.decodePacketIn(var1, this.field3439);
-         if (var2 < 0) {
-            throw new IllegalStateException("" + var2);
-         }
-
-         this.field3433.granuleFrame(this.field3439);
-         this.field3434 = this.field3433.granuleTime(this.field3439);
-         if (this.field3442) {
-            boolean var3 = var1.isKeyFrame() == 1;
-            if (!var3) {
-               return;
-            }
-
-            this.field3442 = false;
-         }
-
-         if (!this.field3428 || var1.isKeyFrame() == 1) {
-            if (this.field3433.decodeFrame(this.field3435) != 0) {
-               throw new IllegalStateException("" + var2);
-            }
-
-            this.field3444 = true;
-         }
-      }
-
-   }
-
-   void method27(OggPacket var1) {
-      int var2;
-      if (!this.field3438) {
-         var2 = this.field3430.decodeHeader(this.field3429, this.field3441, var1);
-         if (var2 == 0) {
-            this.field3438 = true;
-            if (this.field3429.frameWidth > 2048 || this.field3429.frameHeight > 1024) {
-               throw new IllegalStateException();
-            }
-
-            this.field3433 = new DecoderContext(this.field3429, this.field3430);
-            this.field3439 = new GranulePos();
-            this.field3435 = new Frame(this.field3429.frameWidth, this.field3429.frameHeight);
-            this.field3440 = this.field3433.getMaxPostProcessingLevel() * 295322609;
-            this.method2015(-2058603981 * this.field3436, (byte)12);
-         } else if (var2 < 0) {
-            throw new IllegalStateException("" + var2);
-         }
-      } else {
-         this.field3437 = class27.method3468((byte)1) * 4704549656485466045L;
-         var2 = this.field3433.decodePacketIn(var1, this.field3439);
-         if (var2 < 0) {
-            throw new IllegalStateException("" + var2);
-         }
-
-         this.field3433.granuleFrame(this.field3439);
-         this.field3434 = this.field3433.granuleTime(this.field3439);
-         if (this.field3442) {
-            boolean var3 = var1.isKeyFrame() == 1;
-            if (!var3) {
-               return;
-            }
-
-            this.field3442 = false;
-         }
-
-         if (!this.field3428 || var1.isKeyFrame() == 1) {
-            if (this.field3433.decodeFrame(this.field3435) != 0) {
-               throw new IllegalStateException("" + var2);
-            }
-
-            this.field3444 = true;
-         }
-      }
-
-   }
-
-   void method21() {
-      if (this.field3435 != null) {
-         this.field3435.f();
-      }
-
-      if (this.field3433 != null) {
-         this.field3433.f();
-         this.field3433 = null;
-      }
-
-      if (this.field3439 != null) {
-         this.field3439.f();
-         this.field3439 = null;
-      }
-
-      this.field3429.f();
-      this.field3441.f();
-      this.field3430.f();
    }
 
    void method23(OggPacket var1, int var2) {
@@ -230,13 +116,13 @@ public class class709 extends class571 {
                this.field3433 = new DecoderContext(this.field3429, this.field3430);
                this.field3439 = new GranulePos();
                this.field3435 = new Frame(this.field3429.frameWidth, this.field3429.frameHeight);
-               this.field3440 = this.field3433.getMaxPostProcessingLevel() * 295322609;
-               this.method2015(-2058603981 * this.field3436, (byte)41);
+               this.field3440 = this.field3433.getMaxPostProcessingLevel();
+               this.method2015(this.field3436, (byte)41);
             } else if (var3 < 0) {
                throw new IllegalStateException("" + var3);
             }
          } else {
-            this.field3437 = class27.method3468((byte)1) * 4704549656485466045L;
+            this.field3437 = class27.method3468((byte)1);
             var3 = this.field3433.decodePacketIn(var1, this.field3439);
             if (var3 < 0) {
                throw new IllegalStateException("" + var3);
@@ -269,17 +155,17 @@ public class class709 extends class571 {
 
    void method2015(int var1, byte var2) {
       try {
-         this.field3436 = -703457029 * var1;
+         this.field3436 = var1;
          if (this.field3438) {
-            if (-2058603981 * this.field3436 > -42840815 * this.field3440) {
-               this.field3436 = this.field3440 * -679663701;
+            if (this.field3436 > this.field3440) {
+               this.field3436 = this.field3440;
             }
 
-            if (-2058603981 * this.field3436 < 0) {
+            if (this.field3436 < 0) {
                this.field3436 = 0;
             }
 
-            this.field3433.setPostProcessingLevel(-2058603981 * this.field3436);
+            this.field3433.setPostProcessingLevel(this.field3436);
          }
 
       } catch (RuntimeException var4) {
@@ -287,79 +173,12 @@ public class class709 extends class571 {
       }
    }
 
-   void method28() {
-      if (this.field3435 != null) {
-         this.field3435.f();
-      }
-
-      if (this.field3433 != null) {
-         this.field3433.f();
-         this.field3433 = null;
-      }
-
-      if (this.field3439 != null) {
-         this.field3439.f();
-         this.field3439 = null;
-      }
-
-      this.field3429.f();
-      this.field3441.f();
-      this.field3430.f();
-   }
-
-   void method25(OggPacket var1) {
-      int var2;
-      if (!this.field3438) {
-         var2 = this.field3430.decodeHeader(this.field3429, this.field3441, var1);
-         if (var2 == 0) {
-            this.field3438 = true;
-            if (this.field3429.frameWidth > 2048 || this.field3429.frameHeight > 1024) {
-               throw new IllegalStateException();
-            }
-
-            this.field3433 = new DecoderContext(this.field3429, this.field3430);
-            this.field3439 = new GranulePos();
-            this.field3435 = new Frame(this.field3429.frameWidth, this.field3429.frameHeight);
-            this.field3440 = this.field3433.getMaxPostProcessingLevel() * 295322609;
-            this.method2015(-2058603981 * this.field3436, (byte)95);
-         } else if (var2 < 0) {
-            throw new IllegalStateException("" + var2);
-         }
-      } else {
-         this.field3437 = class27.method3468((byte)1) * 4704549656485466045L;
-         var2 = this.field3433.decodePacketIn(var1, this.field3439);
-         if (var2 < 0) {
-            throw new IllegalStateException("" + var2);
-         }
-
-         this.field3433.granuleFrame(this.field3439);
-         this.field3434 = this.field3433.granuleTime(this.field3439);
-         if (this.field3442) {
-            boolean var3 = var1.isKeyFrame() == 1;
-            if (!var3) {
-               return;
-            }
-
-            this.field3442 = false;
-         }
-
-         if (!this.field3428 || var1.isKeyFrame() == 1) {
-            if (this.field3433.decodeFrame(this.field3435) != 0) {
-               throw new IllegalStateException("" + var2);
-            }
-
-            this.field3444 = true;
-         }
-      }
-
-   }
-
    public static boolean method2016(int var0, int var1) {
       try {
-         if (class949.field3332 * 296787703 != var0 || class122.field2373 == null) {
+         if (class949.field3332 != var0 || class122.field2373 == null) {
             class59.method1617(224664390);
             class122.field2373 = class622.field9008;
-            class949.field3332 = -1692564793 * var0;
+            class949.field3332 = var0;
          }
 
          int var4;
@@ -371,7 +190,7 @@ public class class709 extends class571 {
                return false;
             }
 
-            class907 var3 = new class907(var2);
+            InputStream var3 = new InputStream(var2);
             class844.method5100(var3, -2093041337);
             var4 = var3.method6371();
 

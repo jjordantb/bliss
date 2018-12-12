@@ -51,13 +51,13 @@ public class class193 {
             class180 var5 = this.field7021;
             byte[] var10;
             synchronized(this.field7021) {
-               var10 = this.field7021.method3285(-1006924897 * class981.field3248.field3271, var1, (byte)-42);
+               var10 = this.field7021.method3285(class981.field3248.field3271, var1, (byte)-42);
             }
 
             var4 = new class507();
             var4.field3983 = this;
             if (var10 != null) {
-               var4.method2507(new class907(var10), 162499609);
+               var4.method2507(new InputStream(var10), 162499609);
             }
 
             class1 var11 = this.field7018;
@@ -74,13 +74,13 @@ public class class193 {
 
    public class193(class469 var1, class423 var2, class180 var3, class385 var4) {
       this.field7021 = var3;
-      this.field7021.method3286(-1006924897 * class981.field3248.field3271, -994427694);
+      this.field7021.method3286(class981.field3248.field3271, -994427694);
       this.field7019 = var4;
    }
 
    static final void method3737(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var0.field3154.field1162 * 649879491;
+         var0.field3161[++var0.field3156 - 1] = var0.field3154.field1162;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "oo.xp(" + ')');
       }
@@ -88,7 +88,7 @@ public class class193 {
 
    static final void method3738(class744 var0, byte var1) {
       try {
-         class615.field8903.method5391(class615.field8903.field9149, var0.field3161[(var0.field3156 -= -391880689) * 681479919], 951880368);
+         class615.field8903.method5391(class615.field8903.field9149, var0.field3161[--var0.field3156], 951880368);
          class95.method523(656179282);
          class730.field2647 = false;
       } catch (RuntimeException var3) {
@@ -98,14 +98,14 @@ public class class193 {
 
    static final void method3739(class744 var0, short var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[1 + var0.field3156 * 681479919];
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
          if (class53.field2311) {
             class739.method1795(3, var2, var3, false, -1076746695);
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class296.field10468 != null ? 1 : 0;
+            var0.field3161[++var0.field3156 - 1] = class296.field10468 != null ? 1 : 0;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
+            var0.field3161[++var0.field3156 - 1] = 0;
          }
 
       } catch (RuntimeException var4) {

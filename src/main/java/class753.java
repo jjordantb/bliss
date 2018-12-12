@@ -29,14 +29,14 @@ public class class753 {
       return this.field4150 - this.field4158 >> 15;
    }
 
-   final void method2618(class907 var1) {
+   final void method2618(InputStream var1) {
       this.field4155 = var1.method6371();
       this.field4153 = var1.method6420((byte)10);
       this.field4154 = var1.method6420((byte)-71);
       this.method2619(var1);
    }
 
-   final void method2619(class907 var1) {
+   final void method2619(InputStream var1) {
       this.field4159 = var1.method6371();
       this.field4151 = new int[this.field4159];
       this.field4152 = new int[this.field4159];

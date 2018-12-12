@@ -77,7 +77,7 @@ public class class843 {
 
             var4 = new class490();
             if (var10 != null) {
-               var4.method4429(new class907(var10), 16711680);
+               var4.method4429(new InputStream(var10), 16711680);
             }
 
             class1 var11 = this.field9207;
@@ -94,9 +94,9 @@ public class class843 {
 
    static final void method5459(class744 var0, byte var1) {
       try {
-         var0.field3162 -= -1365138610;
-         if (var0.field3168[1685767703 * var0.field3162] <= var0.field3168[var0.field3162 * 1685767703 + 1]) {
-            var0.field3176 += 286750741 * var0.field3174[var0.field3176 * 1883543357];
+         var0.field3162 -= 2;
+         if (var0.field3168[var0.field3162] <= var0.field3168[var0.field3162 + 1]) {
+            var0.field3176 += var0.field3174[var0.field3176];
          }
 
       } catch (RuntimeException var3) {
@@ -106,7 +106,7 @@ public class class843 {
 
    static final void method5460(class744 var0, short var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-48);
          class131 var4 = class382.field1410[var2 >> 16];
          class131.method890(var3, var4, var0, (byte)39);
@@ -120,11 +120,11 @@ public class class843 {
          class684 var2 = class423.method5712((short)512);
          class701 var3 = class637.method5936(class643.field10016, var2.field7765, (byte)109);
          var3.field3364.method6361(0);
-         int var4 = var3.field3364.field10376 * 385051775;
+         int var4 = var3.field3364.field10376;
          var3.field3364.method6361(1);
-         var3.field3364.method6362(-2034569943 * var0.field3160.field6482, 16711935);
+         var3.field3364.method6362(var0.field3160.field6482, 16711935);
          var0.field3160.field6483.method6656(var3.field3364, var0.field3160.field6484, 373327263);
-         var3.field3364.method6426(var3.field3364.field10376 * 385051775 - var4, (byte)-102);
+         var3.field3364.method6426(var3.field3364.field10376 - var4, (byte)-102);
          var2.method4380(var3, (byte)-38);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "nb.ack(" + ')');
@@ -150,7 +150,7 @@ public class class843 {
 
    static final void method5463(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-74);
          class131 var4 = class382.field1410[var2 >> 16];
          class715.method2098(var3, var4, var0, (byte)-34);

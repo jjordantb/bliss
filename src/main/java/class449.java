@@ -48,7 +48,7 @@ public class class449 {
 
    static final void method3758(byte var0) {
       try {
-         class384.field1430 -= -1866863069;
+         --class384.field1430;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "c.f(" + ')');
       }
@@ -56,7 +56,7 @@ public class class449 {
 
    static final void method3759(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -1168328513 * class730.field2819;
+         var0.field3161[++var0.field3156 - 1] = class730.field2819;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "c.abh(" + ')');
       }
@@ -109,38 +109,38 @@ public class class449 {
 
    static final void method3762(int var0, byte var1) {
       try {
-         int var2 = class730.field2866 * 443738891 - class730.field2903 * -1656615113;
+         int var2 = class730.field2866 - class730.field2903;
          if (var2 >= 100) {
-            class563.field1083 = 1355934404;
-            class516.field4332 = -1001372047;
-            class495.field8099 = 178575833;
+            class563.field1083 = 4;
+            class516.field4332 = -1;
+            class495.field8099 = -1;
          } else {
             int var3 = (int)class730.field2738;
-            if (class730.field2745 * -523207831 >> 8 > var3) {
-               var3 = -523207831 * class730.field2745 >> 8;
+            if (class730.field2745 >> 8 > var3) {
+               var3 = class730.field2745 >> 8;
             }
 
             if (class730.field2665[4] && 128 + class730.field2907[4] > var3) {
                var3 = 128 + class730.field2907[4];
             }
 
-            int var4 = (int)class730.field2931 + -1419578297 * class730.field2725 & 16383;
-            class32 var5 = class923.field10295.method1511().field7637;
-            class299.method6557(1103750049 * class456.field7163, class679.method4271((int)var5.field5296, (int)var5.field5299, 1855729883 * class899.field9552, -1800819540) - 200, 1346160791 * class530.field3741, var3, var4, 600 + (var3 >> 3) * 3 << 2, var0, -1059521295);
+            int var4 = (int)class730.field2931 + class730.field2725 & 16383;
+            class32 var5 = class923.local.method1511().field7637;
+            class299.method6557(class456.field7163, class679.method4271((int)var5.field5296, (int)var5.field5299, class899.field9552, -1800819540) - 200, class530.field3741, var3, var4, 600 + (var3 >> 3) * 3 << 2, var0, -1059521295);
             float var6 = 1.0F - (float)((100 - var2) * (100 - var2) * (100 - var2)) / 1000000.0F;
-            class103.field205 = (int)((float)(class740.field3213 * -1806467999) + var6 * (float)(class103.field205 * -1740717447 - -1806467999 * class740.field3213)) * 547882953;
-            class184.field5230 = 1078403147 * (int)((float)(1449634147 * class184.field5230 - 2032233737 * class614.field8888) * var6 + (float)(class614.field8888 * 2032233737));
-            class7.field4918 = (int)(var6 * (float)(class7.field4918 * -299812095 - 1368015401 * class859.field8849) + (float)(1368015401 * class859.field8849)) * 309839105;
-            class730.field2737 = (int)((float)(-104436553 * class730.field2737 - class75.field1496 * 827399463) * var6 + (float)(class75.field1496 * 827399463)) * -648269561;
-            int var7 = class232.field8266 * -1847894591 - -883946017 * class163.field6621;
+            class103.field205 = (int)((float)class740.field3213 + var6 * (float)(class103.field205 - class740.field3213));
+            class184.field5230 = (int)((float)(class184.field5230 - class614.field8888) * var6 + (float)class614.field8888);
+            class7.field4918 = (int)(var6 * (float)(class7.field4918 - class859.field8849) + (float)class859.field8849);
+            class730.field2737 = (int)((float)(class730.field2737 - class75.field1496) * var6 + (float)class75.field1496);
+            int var7 = class232.field8266 - class163.field6621;
             if (var7 > 8192) {
                var7 -= 16384;
             } else if (var7 < -8192) {
                var7 += 16384;
             }
 
-            class232.field8266 = (int)((float)var7 * var6 + (float)(class163.field6621 * -883946017)) * -1587695039;
-            class232.field8266 = -1587695039 * (-1847894591 * class232.field8266 & 16383);
+            class232.field8266 = (int)((float)var7 * var6 + (float)class163.field6621);
+            class232.field8266 &= 16383;
          }
 
       } catch (RuntimeException var8) {
@@ -150,11 +150,11 @@ public class class449 {
 
    static final void method3763(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -1175642067;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
-         int var3 = var0.field3161[var0.field3156 * 681479919 + 1];
-         int var4 = var0.field3161[2 + 681479919 * var0.field3156];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var0.field3169.method5777(var2, var3, var4, 1489690746);
+         var0.field3156 -= 3;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1];
+         int var4 = var0.field3161[2 + var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = var0.field3169.method5777(var2, var3, var4, 1489690746);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "c.xr(" + ')');
       }
@@ -162,9 +162,9 @@ public class class449 {
 
    static final void method3764(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3174[var0.field3176 * 1883543357] >> 16;
-         int var3 = var0.field3174[1883543357 * var0.field3176] & '\uffff';
-         int var4 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3174[var0.field3176] >> 16;
+         int var3 = var0.field3174[var0.field3176] & '\uffff';
+         int var4 = var0.field3161[--var0.field3156];
          if (var4 >= 0 && var4 <= 5000) {
             var0.field3153[var2] = var4;
             byte var5 = -1;
@@ -189,7 +189,7 @@ public class class449 {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
          class131 var4 = var2.field8254;
-         class963.method2208(var3, var4, var0, (byte)-16);
+         Interactable.method2208(var3, var4, var0, (byte)-16);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "c.ih(" + ')');
       }

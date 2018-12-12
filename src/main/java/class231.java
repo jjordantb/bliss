@@ -1,7 +1,7 @@
 public class class231 {
    long field8272;
    int field8273;
-   class907 field8274 = new class907((byte[])null);
+   InputStream field8274 = new InputStream((byte[])null);
    int[] field8275;
    static int field8276 = 2;
    static int field8277 = 0;
@@ -16,7 +16,7 @@ public class class231 {
 
    void method4671(byte[] var1) {
       this.field8274.field10375 = var1;
-      this.field8274.field10376 = 1164133110;
+      this.field8274.field10376 = 10;
       int var2 = this.field8274.method6374();
       this.field8273 = this.field8274.method6374();
       this.field8284 = 500000;
@@ -24,11 +24,11 @@ public class class231 {
 
       int var3;
       int var5;
-      for(var3 = 0; var3 < var2; this.field8274.field10376 += var5 * 116413311) {
+      for(var3 = 0; var3 < var2; this.field8274.field10376 += var5) {
          int var4 = this.field8274.method6420((byte)54);
          var5 = this.field8274.method6420((byte)-51);
          if (var4 == 1297379947) {
-            this.field8280[var3] = this.field8274.field10376 * 385051775;
+            this.field8280[var3] = this.field8274.field10376;
             ++var3;
          }
       }
@@ -57,7 +57,7 @@ public class class231 {
    }
 
    void method4674(int var1) {
-      this.field8274.field10376 = this.field8275[var1] * 116413311;
+      this.field8274.field10376 = this.field8275[var1];
    }
 
    class231(byte[] var1) {
@@ -65,7 +65,7 @@ public class class231 {
    }
 
    void method4675() {
-      this.field8274.field10376 = -116413311;
+      this.field8274.field10376 = -1;
    }
 
    void method4676(int var1) {
@@ -79,12 +79,12 @@ public class class231 {
    }
 
    int method4678(int var1) {
-      byte var2 = this.field8274.field10375[this.field8274.field10376 * 385051775];
+      byte var2 = this.field8274.field10375[this.field8274.field10376];
       int var5;
       if (var2 < 0) {
          var5 = var2 & 255;
          this.field8278[var1] = var5;
-         this.field8274.field10376 += 116413311;
+         ++this.field8274.field10376;
       } else {
          var5 = this.field8278[var1];
       }
@@ -94,15 +94,15 @@ public class class231 {
       } else {
          int var3 = this.field8274.method6386(1692297361);
          if (var5 == 247 && var3 > 0) {
-            int var4 = this.field8274.field10375[this.field8274.field10376 * 385051775] & 255;
+            int var4 = this.field8274.field10375[this.field8274.field10376] & 255;
             if (var4 >= 241 && var4 <= 243 || var4 == 246 || var4 == 248 || var4 >= 250 && var4 <= 252 || var4 == 254) {
-               this.field8274.field10376 += 116413311;
+               ++this.field8274.field10376;
                this.field8278[var1] = var4;
                return this.method4679(var1, var4);
             }
          }
 
-         this.field8274.field10376 += var3 * 116413311;
+         this.field8274.field10376 += var3;
          return 0;
       }
    }
@@ -113,7 +113,7 @@ public class class231 {
          int var7 = this.field8274.method6371();
          var4 = this.field8274.method6386(1692297361);
          if (var7 == 47) {
-            this.field8274.field10376 += var4 * 116413311;
+            this.field8274.field10376 += var4;
             return 1;
          } else if (var7 == 81) {
             int var5 = this.field8274.method6390((byte)17);
@@ -121,10 +121,10 @@ public class class231 {
             int var6 = this.field8282[var1];
             this.field8272 += (long)var6 * (long)(this.field8284 - var5);
             this.field8284 = var5;
-            this.field8274.field10376 += var4 * 116413311;
+            this.field8274.field10376 += var4;
             return 2;
          } else {
-            this.field8274.field10376 += var4 * 116413311;
+            this.field8274.field10376 += var4;
             return 3;
          }
       } else {
@@ -174,7 +174,7 @@ public class class231 {
    }
 
    void method4683(int var1) {
-      this.field8275[var1] = this.field8274.field10376 * 385051775;
+      this.field8275[var1] = this.field8274.field10376;
    }
 
    boolean method4684() {
@@ -191,9 +191,9 @@ public class class231 {
       for(int var4 = 0; var4 < var3; ++var4) {
          this.field8282[var4] = 0;
          this.field8278[var4] = 0;
-         this.field8274.field10376 = this.field8280[var4] * 116413311;
+         this.field8274.field10376 = this.field8280[var4];
          this.method4676(var4);
-         this.field8275[var4] = this.field8274.field10376 * 385051775;
+         this.field8275[var4] = this.field8274.field10376;
       }
 
    }

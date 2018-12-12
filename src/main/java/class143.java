@@ -58,7 +58,7 @@ public class class143 {
 
    static final void method1174(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-23);
          class131 var4 = class382.field1410[var2 >> 16];
          class576.method67(var3, var4, var0, 970111404);
@@ -69,7 +69,7 @@ public class class143 {
 
    static final void method1175(class744 var0, int var1) {
       try {
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class629.method5806(-1872384633).toString();
+         var0.field3157[++var0.field3158 - 1] = class629.method5806(-1872384633).toString();
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "eo.agn(" + ')');
       }
@@ -87,7 +87,7 @@ public class class143 {
       try {
          class682 var3 = class370.method881(12, (long)var0);
          var3.method4340((byte)78);
-         var3.field7687 = 1274450087 * var1;
+         var3.field7687 = var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "eo.ay(" + ')');
       }

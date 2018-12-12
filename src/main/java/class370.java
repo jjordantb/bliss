@@ -16,10 +16,10 @@ public class class370 {
 
    static final void method877(class564 var0, class131 var1, class744 var2, byte var3) {
       try {
-         var0.field895 = var2.field3161[(var2.field3156 -= -391880689) * 681479919] * -695431873;
+         var0.field895 = var2.field3161[--var2.field3156];
          class814.method2932(var0, 230725327);
-         if (var0.field879 * -1309843523 == -1 && !var1.field1101) {
-            class392.method3382(-440872681 * var0.field867, (byte)-11);
+         if (var0.field879 == -1 && !var1.field1101) {
+            class392.method3382(var0.field867, (byte)-11);
          }
 
       } catch (RuntimeException var5) {
@@ -30,9 +30,9 @@ public class class370 {
    static final void method878(class744 var0, short var1) {
       try {
          if (class184.field5231 == null) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -1;
+            var0.field3161[++var0.field3156 - 1] = -1;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1790024195 * class184.field5231.field6679;
+            var0.field3161[++var0.field3156 - 1] = class184.field5231.field6679;
          }
 
       } catch (RuntimeException var3) {
@@ -42,7 +42,7 @@ public class class370 {
 
    static final void method879(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class323.method541(var2, -1700743284);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "r.aew(" + ')');
@@ -51,7 +51,7 @@ public class class370 {
 
    static final void method880(class564 var0, class131 var1, class744 var2, byte var3) {
       try {
-         String var4 = (String)var2.field3157[(var2.field3158 -= 969361751) * -203050393];
+         String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -1037591394) != null) {
             var4 = var4.substring(0, var4.length() - 1);
          }
@@ -68,7 +68,7 @@ public class class370 {
          class682 var3 = (class682)class682.field7698.method2942((long)var0 << 56 | var1);
          if (var3 == null) {
             var3 = new class682(var0, var1);
-            class682.field7698.method2947(var3, 7051297995265073167L * var3.field641);
+            class682.field7698.method2947(var3, var3.field641);
          }
 
          return var3;

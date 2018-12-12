@@ -30,39 +30,4 @@ public abstract class class40 implements class524 {
 
       this.field5087.method552(this);
    }
-
-   void method3059() {
-      if (this.field5084 != 0L) {
-         this.field5087.method6218(this.field5084);
-         this.field5084 = 0L;
-      }
-
-   }
-
-   public void method2756() {
-      if (this.field5084 != 0L) {
-         IUnknown.Release(this.field5084);
-         this.field5084 = 0L;
-      }
-
-      this.field5087.method552(this);
-   }
-
-   public void method2754() {
-      if (this.field5084 != 0L) {
-         IUnknown.Release(this.field5084);
-         this.field5084 = 0L;
-      }
-
-      this.field5087.method552(this);
-   }
-
-   public void method2753() {
-      if (this.field5084 != 0L) {
-         IUnknown.Release(this.field5084);
-         this.field5084 = 0L;
-      }
-
-      this.field5087.method552(this);
-   }
 }

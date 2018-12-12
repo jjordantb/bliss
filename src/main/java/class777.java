@@ -12,7 +12,7 @@ public class class777 {
    static float field3720 = 8.0F;
    static float field3721 = 32.703197F;
 
-   final void method2285(class907 var1, class753 var2) {
+   final void method2285(InputStream var1, class753 var2) {
       int var3 = var1.method6371();
       this.field3714[0] = var3 >> 4;
       this.field3714[1] = var3 & 15;

@@ -111,7 +111,7 @@ public class class494 {
       int var14;
       int var15;
       for(int var13 = 0; var13 < var9; ++var13) {
-         var14 = (var12 + var13) * var3.field7226 * -506105871 + var11;
+         var14 = (var12 + var13) * var3.field7226 + var11;
 
          for(var15 = 0; var15 < var9; ++var15) {
             short[] var16 = var3.field10517[var14++];
@@ -123,13 +123,13 @@ public class class494 {
 
       this.field7843 = var10;
       if (var10 > 0) {
-         class907 var19 = new class907(var10 * 2);
+         InputStream var19 = new InputStream(var10 * 2);
          short[] var17;
          int var18;
          int var20;
          if (this.field7838.field6830) {
             for(var14 = 0; var14 < var9; ++var14) {
-               var15 = (var12 + var14) * var3.field7226 * -506105871 + var11;
+               var15 = (var12 + var14) * var3.field7226 + var11;
 
                for(var20 = 0; var20 < var9; ++var20) {
                   var17 = var3.field10517[var15++];
@@ -142,7 +142,7 @@ public class class494 {
             }
          } else {
             for(var14 = 0; var14 < var9; ++var14) {
-               var15 = (var12 + var14) * var3.field7226 * -506105871 + var11;
+               var15 = (var12 + var14) * var3.field7226 + var11;
 
                for(var20 = 0; var20 < var9; ++var20) {
                   var17 = var3.field10517[var15++];
@@ -155,7 +155,7 @@ public class class494 {
             }
          }
 
-         this.field7844 = this.field7838.method3667(5123, var19.field10375, var19.field10376 * 385051775, false);
+         this.field7844 = this.field7838.method3667(5123, var19.field10375, var19.field10376, false);
          this.field7845 = new class424(this.field7838, 5123, (byte[])null, 1);
       } else {
          this.field7846 = null;

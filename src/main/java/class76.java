@@ -2,7 +2,7 @@ import java.util.Iterator;
 
 public class class76 {
    class373 field1459 = new class373();
-   long field1460 = -8735484037837793267L;
+   long field1460 = -1L;
    static int field1461 = 1;
    static int field1462 = 3;
    static int field1463 = 2;
@@ -10,10 +10,10 @@ public class class76 {
    static int field1465 = 4;
    static class219 field1466;
 
-   void method1107(class907 var1, byte var2) {
+   void method1107(InputStream var1, byte var2) {
       try {
-         this.field1464 = var1.method6375((short)9142) * 1517159550238851441L;
-         this.field1460 = var1.method6375((short)28083) * 8735484037837793267L;
+         this.field1464 = var1.method6375((short)9142);
+         this.field1460 = var1.method6375((short)28083);
 
          for(int var3 = var1.method6371(); var3 != 0; var3 = var1.method6371()) {
             Object var4;
@@ -42,12 +42,12 @@ public class class76 {
 
    public void method1108(class139 var1, byte var2) {
       try {
-         if (-6615773310558494831L * this.field1464 == var1.field641 * 7051297995265073167L && -3106107963843196613L * this.field1460 == var1.field1167 * -3244420319926665157L) {
+         if (this.field1464 == var1.field641 && this.field1460 == var1.field1167) {
             for(class697 var3 = (class697)this.field1459.method901(1766612795); var3 != null; var3 = (class697)this.field1459.method906(49146)) {
                var3.method3821(var1, -2022437727);
             }
 
-            var1.field1167 += 8816161044679006451L;
+            ++var1.field1167;
          } else {
             throw new RuntimeException("");
          }
@@ -56,13 +56,13 @@ public class class76 {
       }
    }
 
-   public class76(class907 var1) {
+   public class76(InputStream var1) {
       this.method1107(var1, (byte)2);
    }
 
    public static void method1109(class848 var0, long var1) {
       try {
-         class198.field7040 = 1740005197 * class198.field7045;
+         class198.field7040 = class198.field7045;
          class198.field7045 = 0;
          class27.method3468((byte)1);
          Iterator var3 = class198.field7046.iterator();
@@ -72,8 +72,8 @@ public class class76 {
             boolean var5 = var4.method1722(var0, var1);
             if (!var5) {
                var3.remove();
-               class198.field7042[class198.field7044 * -1264407527] = var4;
-               class198.field7044 = 2027155497 * (class198.field7044 * -1264407527 + 1 & class948.field3284[class198.field7038 * 1197525581]);
+               class198.field7042[class198.field7044] = var4;
+               class198.field7044 = class198.field7044 + 1 & class948.field3284[class198.field7038];
             }
          }
 
@@ -84,7 +84,7 @@ public class class76 {
 
    static final void method1110(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -2067054685 * class749.field4018;
+         var0.field3161[++var0.field3156 - 1] = class749.field4018;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ge.amo(" + ')');
       }
@@ -117,9 +117,9 @@ public class class76 {
    static void method1112(class356 var0, int var1) {
       try {
          var0.field1794 = null;
-         if (1585762285 * class356.field1796 < 20) {
+         if (class356.field1796 < 20) {
             class356.field1795.method5209(var0, -104859728);
-            class356.field1796 += 1704977893;
+            ++class356.field1796;
          }
 
       } catch (RuntimeException var3) {
@@ -129,7 +129,7 @@ public class class76 {
 
    static final void method1113(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9149.method2717(-2143087996);
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9149.method2717(-2143087996);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ge.akl(" + ')');
       }

@@ -41,8 +41,8 @@ public class class529 {
 
    static final void method2214(class744 var0, int var1) {
       try {
-         var0.field3158 -= 1938723502;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class822.method5367((String)var0.field3157[var0.field3158 * -203050393], (String)var0.field3157[-203050393 * var0.field3158 + 1], class321.field1066, -1813623072);
+         var0.field3158 -= 2;
+         var0.field3161[++var0.field3156 - 1] = class822.method5367((String)var0.field3157[var0.field3158], (String)var0.field3157[var0.field3158 + 1], class321.field1066, -1813623072);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "li.zz(" + ')');
       }
@@ -53,7 +53,7 @@ public class class529 {
          boolean var2 = false;
          if (class730.field2616) {
             try {
-               Object var3 = class662.field9729.method5800(new Object[]{class206.field7099 * 1914527151, 1 == class923.field10295.field3399, var0.field3161[(var0.field3156 -= -391880689) * 681479919]}, -1838433046);
+               Object var3 = class662.field9729.method5800(new Object[]{class206.field7099, 1 == class923.local.field3399, var0.field3161[--var0.field3156]}, -1838433046);
                if (var3 != null) {
                   var2 = ((Boolean)var3).booleanValue();
                }
@@ -62,7 +62,7 @@ public class class529 {
             }
          }
 
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var2 ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = var2 ? 1 : 0;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "li.ant(" + ')');
       }
@@ -106,10 +106,10 @@ public class class529 {
 
    static final void method2218(class744 var0, short var1) {
       try {
-         var0.field3156 -= -1175642067;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
-         int var3 = var0.field3161[var0.field3156 * 681479919 + 1];
-         int var4 = var0.field3161[681479919 * var0.field3156 + 2];
+         var0.field3156 -= 3;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1];
+         int var4 = var0.field3161[var0.field3156 + 2];
          class740.method1920(9, var2 << 16 | var3, var4, "", -529750443);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "li.alx(" + ')');
@@ -120,19 +120,19 @@ public class class529 {
       return 14;
    }
 
-   public static void method2220(class907 var0, int var1, byte var2) {
+   public static void method2220(InputStream var0, int var1, byte var2) {
       try {
          class149 var3 = new class149();
-         var3.field1529 = var0.method6371() * -468176359;
-         var3.field1533 = var0.method6420((byte)43) * -530104791;
-         var3.field1528 = new int[var3.field1529 * 719522345];
-         var3.field1527 = new int[var3.field1529 * 719522345];
-         var3.field1530 = new Field[719522345 * var3.field1529];
-         var3.field1526 = new int[var3.field1529 * 719522345];
-         var3.field1532 = new Method[719522345 * var3.field1529];
-         var3.field1531 = new byte[var3.field1529 * 719522345][][];
+         var3.field1529 = var0.method6371();
+         var3.field1533 = var0.method6420((byte)43);
+         var3.field1528 = new int[var3.field1529];
+         var3.field1527 = new int[var3.field1529];
+         var3.field1530 = new Field[var3.field1529];
+         var3.field1526 = new int[var3.field1529];
+         var3.field1532 = new Method[var3.field1529];
+         var3.field1531 = new byte[var3.field1529][][];
 
-         for(int var4 = 0; var4 < var3.field1529 * 719522345; ++var4) {
+         for(int var4 = 0; var4 < var3.field1529; ++var4) {
             try {
                int var5 = var0.method6371();
                String var6;

@@ -15,7 +15,7 @@ public class class78 {
 
    static final void method1124(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 443738891 * class730.field2866;
+         var0.field3161[++var0.field3156 - 1] = class730.field2866;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "gq.tx(" + ')');
       }
@@ -23,7 +23,7 @@ public class class78 {
 
    static class346 method1125(byte[] var0, byte var1) {
       try {
-         return new class346(new class907(var0));
+         return new class346(new InputStream(var0));
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "gq.p(" + ')');
       }
@@ -47,7 +47,7 @@ public class class78 {
 
    static final void method1127(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class237.method4653((byte)30);
+         var0.field3161[++var0.field3156 - 1] = class237.method4653((byte)30);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "gq.um(" + ')');
       }

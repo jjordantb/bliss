@@ -21,7 +21,7 @@ public class class152 {
 
             var3 = new class205();
             if (var4 != null) {
-               var3.method4308(new class907(var4), 754160666);
+               var3.method4308(new InputStream(var4), 754160666);
             }
 
             if (var1 >= 32768) {
@@ -62,7 +62,7 @@ public class class152 {
 
    static final void method3401(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)44);
          class131 var4 = class382.field1410[var2 >> 16];
          class625.method5823(var3, var4, var0, (byte)59);
@@ -73,7 +73,7 @@ public class class152 {
 
    static final void method3402(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-44);
          class131 var4 = class382.field1410[var2 >> 16];
          class562.method809(var3, var4, var0, (byte)-112);
@@ -84,12 +84,12 @@ public class class152 {
 
    static final void method3403(class744 var0, int var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         var0.field3156 -= -783761378;
-         int var3 = var0.field3161[var0.field3156 * 681479919];
-         int var4 = var0.field3161[1 + var0.field3156 * 681479919];
+         String var2 = (String)var0.field3157[--var0.field3158];
+         var0.field3156 -= 2;
+         int var3 = var0.field3161[var0.field3156];
+         int var4 = var0.field3161[1 + var0.field3156];
          class230 var5 = class398.method3539(class526.field3666, var4, 0, (byte)57);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var5.method4603(var2, var3, class324.field621, 1970071925);
+         var0.field3161[++var0.field3156 - 1] = var5.method4603(var2, var3, class324.field621, 1970071925);
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "ks.zf(" + ')');
       }
@@ -97,7 +97,7 @@ public class class152 {
 
    static int[] method3404(class701 var0, int var1) {
       try {
-         class907 var2 = new class907(518);
+         InputStream var2 = new InputStream(518);
          int[] var3 = new int[4];
 
          int var4;
@@ -117,7 +117,7 @@ public class class152 {
 
          var2.method6362((int)(Math.random() * 9.9999999E7D), 16711935);
          var2.method6412(class449.field7058, class449.field7062, 1970926718);
-         var0.field3364.method6425(var2.field10375, 0, 385051775 * var2.field10376, (short)-19107);
+         var0.field3364.method6425(var2.field10375, 0, var2.field10376, (short)-19107);
          return var3;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ks.s(" + ')');

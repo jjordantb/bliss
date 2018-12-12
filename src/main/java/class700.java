@@ -1,9 +1,4 @@
 final class class700 extends class856 {
-   void method5197() {
-      class540.field3915 = class540.field3928;
-      class540.field3928 = null;
-   }
-
    void method5196(int var1) {
       try {
          class540.field3915 = class540.field3928;
@@ -13,32 +8,22 @@ final class class700 extends class856 {
       }
    }
 
-   void method5195() {
-      class540.field3915 = class540.field3928;
-      class540.field3928 = null;
-   }
-
-   void method5198() {
-      class540.field3915 = class540.field3928;
-      class540.field3928 = null;
-   }
-
    public static final void method6329(int var0, int var1, int var2, int var3, int var4, boolean var5) {
       try {
-         class747.field4147 = var0 * 2140348215;
-         class124.field2411 = -2108764285 * var1;
-         class607.field8561 = var2 * 1219077157;
-         class83.field1100 = -346020243 * var3;
-         class75.field1495 = var4 * 1510337323;
-         if (var5 && class75.field1495 * 1534163843 >= 100) {
-            class103.field205 = -1222509056 * class747.field4147 + -1475884800;
-            class7.field4918 = 2009399552 + 1453086208 * class124.field2411;
-            class184.field5230 = (class679.method4271(-1740717447 * class103.field205, class7.field4918 * -299812095, 1855729883 * class899.field9552, -2087363822) - -1439836243 * class607.field8561) * 1078403147;
+         class747.field4147 = var0;
+         class124.field2411 = var1;
+         class607.field8561 = var2;
+         class83.field1100 = var3;
+         class75.field1495 = var4;
+         if (var5 && class75.field1495 >= 100) {
+            class103.field205 = class747.field4147 * 512 + 256;
+            class7.field4918 = 256 + class124.field2411 * 512;
+            class184.field5230 = class679.method4271(class103.field205, class7.field4918, class899.field9552, -2087363822) - class607.field8561;
          }
 
-         class563.field1083 = 2090692627;
-         class516.field4332 = -1001372047;
-         class495.field8099 = 178575833;
+         class563.field1083 = 3;
+         class516.field4332 = -1;
+         class495.field8099 = -1;
       } catch (RuntimeException var7) {
          throw class158.method3445(var7, "yz.hu(" + ')');
       }
@@ -79,7 +64,7 @@ final class class700 extends class856 {
 
                var1.method545(-1460969981);
                var1.method156(1430055356);
-            } while(0L == (var1.field209 * -5533549728640346679L & Long.MIN_VALUE));
+            } while(0L == (var1.field209 & Long.MIN_VALUE));
 
             return var1;
          }

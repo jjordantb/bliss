@@ -49,6 +49,4 @@ public abstract class class541 {
       OpenGL.glBufferDataARBub(var2, this.field3954, var3, 0, this.field3960 ? '裠' : '裤');
       this.field3959.field6799 += this.field3954;
    }
-
-   abstract void method2479();
 }

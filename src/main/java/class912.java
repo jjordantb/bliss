@@ -10,28 +10,20 @@ public class class912 implements class925 {
       }
    }
 
-   public class7 method6198() {
-      return class7.field4913;
-   }
-
-   public class7 method6199() {
-      return class7.field4913;
-   }
-
    class912(int var1) {
-      this.field10423 = var1 * -1617371261;
+      this.field10423 = var1;
    }
 
    static final void method6480(class564 var0, class131 var1, class744 var2, short var3) {
       try {
-         int var4 = var2.field3161[(var2.field3156 -= -391880689) * 681479919];
-         if (var0.field1014 * -324971993 != var4) {
-            var0.field1014 = 1025047959 * var4;
+         int var4 = var2.field3161[--var2.field3156];
+         if (var0.field1014 != var4) {
+            var0.field1014 = var4;
             class814.method2932(var0, -1283605613);
          }
 
-         if (-1 == var0.field879 * -1309843523 && !var1.field1101) {
-            class146.method1183(-440872681 * var0.field867, (byte)12);
+         if (-1 == var0.field879 && !var1.field1101) {
+            class146.method1183(var0.field867, (byte)12);
          }
 
       } catch (RuntimeException var5) {
@@ -78,13 +70,13 @@ public class class912 implements class925 {
 
    static void method6482(int var0) {
       try {
-         int[] var1 = new int[class85.field1121.field2328 * -888767613];
+         int[] var1 = new int[class85.field1121.field2328];
          int var2 = 0;
 
          int var3;
-         for(var3 = 0; var3 < -888767613 * class85.field1121.field2328; ++var3) {
-            class518 var4 = class85.field1121.method1569(var3, true);
-            if (1343198193 * var4.field4241 >= 0 || 1585491093 * var4.field4265 >= 0) {
+         for(var3 = 0; var3 < class85.field1121.field2328; ++var3) {
+            ItemDefinition var4 = class85.field1121.method1569(var3, true);
+            if (var4.field4241 >= 0 || var4.field4265 >= 0) {
                var1[var2++] = var3;
             }
          }
@@ -102,18 +94,18 @@ public class class912 implements class925 {
 
    static final void method6483(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-27);
          int var4 = -1;
          int var5 = -1;
          class118 var6 = var3.method826(class593.field1623, 1559428350);
          if (var6 != null) {
-            var4 = var6.field2152 * 1633695381;
-            var5 = -60174999 * var6.field2153;
+            var4 = var6.field2152;
+            var5 = var6.field2153;
          }
 
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var4;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var5;
+         var0.field3161[++var0.field3156 - 1] = var4;
+         var0.field3161[++var0.field3156 - 1] = var5;
       } catch (RuntimeException var7) {
          throw class158.method3445(var7, "gt.rm(" + ')');
       }

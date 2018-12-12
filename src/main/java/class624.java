@@ -4,11 +4,11 @@ public class class624 {
    int field9758;
    class380[] field9759 = new class380[10];
 
-   class624(class907 var1) {
+   class624(InputStream var1) {
       for(int var2 = 0; var2 < 10; ++var2) {
          int var3 = var1.method6371();
          if (var3 != 0) {
-            var1.field10376 -= 116413311;
+            --var1.field10376;
             this.field9759[var2] = new class380();
             this.field9759[var2].method1115(var1);
          }
@@ -94,6 +94,6 @@ public class class624 {
 
    public static class624 method5837(class180 var0, int var1, int var2) {
       byte[] var3 = var0.method3285(var1, var2, (byte)-90);
-      return var3 == null ? null : new class624(new class907(var3));
+      return var3 == null ? null : new class624(new InputStream(var3));
    }
 }

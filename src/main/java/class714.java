@@ -16,22 +16,6 @@ public abstract class class714 implements class659 {
    static int field3606 = 32879;
    static int[] field3607 = new int[1];
 
-   public void method5695() {
-      int var1 = this.field3605.method645();
-      int var2 = this.field3605.field8617[var1];
-      if (var2 != this.field3598) {
-         if (var2 != 0) {
-            OpenGL.glBindTexture(var2, 0);
-            OpenGL.glDisable(var2);
-         }
-
-         OpenGL.glEnable(this.field3598);
-         this.field3605.field8617[var1] = this.field3598;
-      }
-
-      OpenGL.glBindTexture(this.field3598, this.field3600);
-   }
-
    public void method5703() {
       int var1 = this.field3605.method645();
       int var2 = this.field3605.field8617[var1];
@@ -151,7 +135,7 @@ public abstract class class714 implements class659 {
       } else if (var3 > 0 && !class51.method1530(var3, 1992937673)) {
          throw new IllegalArgumentException("");
       } else {
-         int var5 = this.field3602.field8190 * 845115459;
+         int var5 = this.field3602.field8190;
          int var6 = 0;
          int var7 = var2 < var3 ? var2 : var3;
          int var8 = var2 >> 1;
@@ -210,80 +194,8 @@ public abstract class class714 implements class659 {
    }
 
    int method2106() {
-      int var1 = this.field3602.field8190 * 845115459 * this.field3603.field8406 * 685647847 * this.field3599;
+      int var1 = this.field3602.field8190 * this.field3603.field8406 * this.field3599;
       return this.field3594 ? var1 * 4 / 3 : var1;
-   }
-
-   public void method5697(class566 var1) {
-      if (this.field3601 != var1) {
-         this.field3601 = var1;
-         this.method2101();
-      }
-
-   }
-
-   public void method5696() {
-      if (this.field3600 > 0) {
-         this.field3605.method5073(this.field3600, this.method2106());
-         this.field3600 = 0;
-      }
-
-   }
-
-   public void method5701() {
-      if (this.field3600 > 0) {
-         this.field3605.method5073(this.field3600, this.method2106());
-         this.field3600 = 0;
-      }
-
-   }
-
-   public void method5699() {
-      int var1 = this.field3605.method645();
-      int var2 = this.field3605.field8617[var1];
-      if (var2 != this.field3598) {
-         if (var2 != 0) {
-            OpenGL.glBindTexture(var2, 0);
-            OpenGL.glDisable(var2);
-         }
-
-         OpenGL.glEnable(this.field3598);
-         this.field3605.field8617[var1] = this.field3598;
-      }
-
-      OpenGL.glBindTexture(this.field3598, this.field3600);
-   }
-
-   public void method5700() {
-      int var1 = this.field3605.method645();
-      int var2 = this.field3605.field8617[var1];
-      if (var2 != this.field3598) {
-         if (var2 != 0) {
-            OpenGL.glBindTexture(var2, 0);
-            OpenGL.glDisable(var2);
-         }
-
-         OpenGL.glEnable(this.field3598);
-         this.field3605.field8617[var1] = this.field3598;
-      }
-
-      OpenGL.glBindTexture(this.field3598, this.field3600);
-   }
-
-   public void method5702(class566 var1) {
-      if (this.field3601 != var1) {
-         this.field3601 = var1;
-         this.method2101();
-      }
-
-   }
-
-   public void method5698() {
-      if (this.field3600 > 0) {
-         this.field3605.method5073(this.field3600, this.method2106());
-         this.field3600 = 0;
-      }
-
    }
 
    public void method5693() {
@@ -300,7 +212,7 @@ public abstract class class714 implements class659 {
       } else if (var3 > 0 && !class51.method1530(var3, 1849521842)) {
          throw new IllegalArgumentException("");
       } else {
-         int var5 = this.field3602.field8190 * 845115459;
+         int var5 = this.field3602.field8190;
          int var6 = 0;
          int var7 = var2 < var3 ? var2 : var3;
          int var8 = var2 >> 1;
@@ -365,13 +277,5 @@ public abstract class class714 implements class659 {
       this.field3600 = field3607[0];
       this.method2101();
       this.method2105(0);
-   }
-
-   public void method5704(class566 var1) {
-      if (this.field3601 != var1) {
-         this.field3601 = var1;
-         this.method2101();
-      }
-
    }
 }

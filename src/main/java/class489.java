@@ -27,7 +27,7 @@ public class class489 {
             var8 = this.field8410.method611(class264.field8191, var2, var2, true, var9);
          } else {
             int[] var7;
-            if (var6.field9382 * -2138060883 != 2 && class355.method1414(var6.field9383, -2037069646)) {
+            if (var6.field9382 != 2 && class355.method1414(var6.field9383, -2037069646)) {
                var7 = this.field8409.method4622(var1, 0.7F, var2, var2, true, -470804931);
             } else {
                var7 = this.field8409.method4623(var1, 0.7F, var2, var2, false, (byte)2);

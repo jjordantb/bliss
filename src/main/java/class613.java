@@ -12,7 +12,7 @@ public class class613 {
          if (var1 >= 0 && var1 < this.field8891.length) {
             class310 var3 = this.field8891[var1];
             if (var3.field530 && var3.field531.length > 1) {
-               int var4 = this.field8893 * -644243797 == -1 ? 0 : 1;
+               int var4 = this.field8893 == -1 ? 0 : 1;
                Random var5 = new Random();
                class419[] var6 = new class419[var3.field531.length];
                System.arraycopy(var3.field531, 0, var6, 0, var6.length);
@@ -40,7 +40,7 @@ public class class613 {
       try {
          byte[] var3 = this.field8890.method3285(var1, 0, (byte)-111);
          class466 var4 = new class466();
-         var4.method4006(new class907(var3), -391228687);
+         var4.method4006(new InputStream(var3), -391228687);
          return var4;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "vo.f(" + ')');
@@ -49,11 +49,11 @@ public class class613 {
 
    public class613(class469 var1, class423 var2, class180 var3) {
       this.field8890 = var3;
-      class907 var4 = new class907(this.field8890.method3285(0, 0, (byte)-99));
+      InputStream var4 = new InputStream(this.field8890.method3285(0, 0, (byte)-99));
       int var5 = var4.field10375 != null && var4.field10375.length >= 1 ? var4.method6371() : -1;
       if (var5 < 4) {
          this.field8891 = new class310[0];
-         this.field8893 = -818506755;
+         this.field8893 = -1;
       } else {
          int var6 = var4.method6371();
          class7[] var7 = class310.method456(521246259);
@@ -65,7 +65,7 @@ public class class613 {
          } else {
             for(var9 = 0; var9 < var7.length; ++var9) {
                var10 = var4.method6371();
-               if (var10 != var7[var9].field4917 * -1509893635) {
+               if (var10 != var7[var9].field4917) {
                   var8 = false;
                   break;
                }
@@ -78,11 +78,11 @@ public class class613 {
             int var11;
             int var12;
             if (var5 > 2) {
-               this.field8893 = var4.method6367(1770899550) * 818506755;
+               this.field8893 = var4.method6367(1770899550);
                var11 = var4.method6390((byte)-39);
                var12 = var4.method6374();
             } else {
-               this.field8893 = -818506755;
+               this.field8893 = -1;
                var11 = 0;
                var12 = 0;
             }
@@ -99,9 +99,9 @@ public class class613 {
                int var19;
                int var20;
                int var21;
-               if (this.field8893 * -644243797 != -1) {
+               if (this.field8893 != -1) {
                   var17 = new class419[1 + var16];
-                  var17[0] = new class419(-644243797 * this.field8893, var11, var12);
+                  var17[0] = new class419(this.field8893, var11, var12);
 
                   for(var18 = 0; var18 < var16; ++var18) {
                      var19 = var4.method6374();
@@ -132,7 +132,7 @@ public class class613 {
             }
          } else {
             this.field8891 = new class310[0];
-            this.field8893 = -818506755;
+            this.field8893 = -1;
          }
       }
 
@@ -140,7 +140,7 @@ public class class613 {
 
    public boolean method5204(byte var1) {
       try {
-         return -1 != -644243797 * this.field8893;
+         return -1 != this.field8893;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "vo.p(" + ')');
       }
@@ -148,10 +148,10 @@ public class class613 {
 
    class310 method5205(int var1, int var2, int var3) {
       try {
-         if (-1 == this.field8893 * -644243797) {
+         if (-1 == this.field8893) {
             return new class310(false, new class419[0]);
          } else {
-            class419 var4 = new class419(this.field8893 * -644243797, var1, var2);
+            class419 var4 = new class419(this.field8893, var1, var2);
             return new class310(false, new class419[]{var4});
          }
       } catch (RuntimeException var5) {

@@ -60,7 +60,7 @@ public class class726 {
             while(var5.hasNext()) {
                var6 = (class363)var5.next();
 
-               for(int var7 = 0; var7 < var6.field2395.field1758 * 1095253617; ++var7) {
+               for(int var7 = 0; var7 < var6.field2395.field1758; ++var7) {
                   var6.method1624(var1, var2, 1, !this.field2537, (byte)63);
                }
             }
@@ -86,7 +86,7 @@ public class class726 {
 
       while(var1.hasNext()) {
          class713 var2 = (class713)var1.next();
-         if (var2.field3534.field9650 * -1955592777 == 1) {
+         if (var2.field3534.field9650 == 1) {
             var2.method545(-1460969981);
          }
       }
@@ -128,7 +128,7 @@ public class class726 {
             }
 
             if (!var3) {
-               if (var5.field2391 * -917784967 == 0) {
+               if (var5.field2391 * 679204695 == 0) {
                   var7.remove();
                   --this.field2536;
                } else {
@@ -178,7 +178,7 @@ public class class726 {
                --this.field2545;
                if (var4.method546(-629325116)) {
                   var4.method545(-1460969981);
-                  class198.field7048 -= 817588661;
+                  --class198.field7048;
                }
             }
          }
@@ -187,10 +187,10 @@ public class class726 {
             for(int var7 = 0; var7 < var1.length && var7 != 8 && this.field2545 != 8; ++var7) {
                if (!field2551[var7]) {
                   class713 var8 = null;
-                  if (var1[var7].method3493((byte)3).field9650 * -1955592777 == 1 && class198.field7048 * -1237648227 < 32) {
+                  if (var1[var7].method3493((byte)3).field9650 == 1 && class198.field7048 < 32) {
                      var8 = new class713(var1[var7], this);
-                     class198.field7047.method2947(var8, (long)(var1[var7].field6510 * 617796067));
-                     class198.field7048 += 817588661;
+                     class198.field7047.method2947(var8, (long)var1[var7].field6510);
+                     ++class198.field7048;
                   }
 
                   if (var8 == null) {
@@ -253,9 +253,9 @@ public class class726 {
    }
 
    public static class726 method1732(int var0, boolean var1) {
-      if (class198.field7044 * -1264407527 != class198.field7043 * 274948937) {
-         class726 var2 = class198.field7042[class198.field7043 * 274948937];
-         class198.field7043 = (class198.field7043 * 274948937 + 1 & class948.field3284[class198.field7038 * 1197525581]) * 172162809;
+      if (class198.field7044 != class198.field7043) {
+         class726 var2 = class198.field7042[class198.field7043];
+         class198.field7043 = class198.field7043 + 1 & class948.field3284[class198.field7038];
          var2.method1719(var0, var1);
          return var2;
       } else {

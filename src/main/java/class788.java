@@ -17,10 +17,10 @@ public class class788 {
 
    static final void method2395(class744 var0, int var1) {
       try {
-         class6 var2 = var0.field3177.field183[var0.field3174[1883543357 * var0.field3176]];
-         class722 var3 = (class722)var2.method2942((long)var0.field3161[(var0.field3156 -= -391880689) * 681479919]);
+         class6 var2 = var0.field3177.field183[var0.field3174[var0.field3176]];
+         class722 var3 = (class722)var2.method2942((long)var0.field3161[--var0.field3156]);
          if (var3 != null) {
-            var0.field3176 += -1065839893 * var3.field3631;
+            var0.field3176 += var3.field3631;
          }
 
       } catch (RuntimeException var4) {
@@ -30,8 +30,8 @@ public class class788 {
 
    static final void method2396(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3174[1883543357 * var0.field3176];
-         Long var3 = var0.field3169.method5791(-937307905 * class730.field2926.field7327 << 16 | var2, -2092321657);
+         int var2 = var0.field3174[var0.field3176];
+         Long var3 = var0.field3169.method5791(class730.field2926.field7327 << 16 | var2, -2092321657);
          long var4;
          if (var3 == null) {
             var4 = -1L;
@@ -39,7 +39,7 @@ public class class788 {
             var4 = var3.longValue();
          }
 
-         var0.field3168[(var0.field3162 += -682569305) * 1685767703 - 1] = var4;
+         var0.field3168[++var0.field3162 - 1] = var4;
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "iw.bn(" + ')');
       }
@@ -47,7 +47,7 @@ public class class788 {
 
    static final void method2397(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class615.field8903.field9152.method4766((byte)-7) == 1 ? 1 : 0;
+         var0.field3161[++var0.field3156 - 1] = class615.field8903.field9152.method4766((byte)-7) == 1 ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "iw.aji(" + ')');
       }
@@ -55,16 +55,16 @@ public class class788 {
 
    static final void method2398(class744 var0, int var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
-         int var3 = var0.field3161[1 + 681479919 * var0.field3156] - 1;
-         class518 var4 = class85.field1121.method1566(var2);
-         if (var3 == 690460599 * var4.field4254) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -1953923599 * var4.field4244;
-         } else if (var3 == var4.field4239 * 1689294225) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var4.field4245 * -1824861577;
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156] - 1;
+         ItemDefinition var4 = class85.field1121.method1566(var2);
+         if (var3 == var4.field4254) {
+            var0.field3161[++var0.field3156 - 1] = var4.field4244;
+         } else if (var3 == var4.field4239) {
+            var0.field3161[++var0.field3156 - 1] = var4.field4245;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -1;
+            var0.field3161[++var0.field3156 - 1] = -1;
          }
 
       } catch (RuntimeException var5) {

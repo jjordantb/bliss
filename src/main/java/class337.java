@@ -49,12 +49,12 @@ public class class337 {
             class180 var5 = this.field74;
             byte[] var10;
             synchronized(this.field74) {
-               var10 = this.field74.method3285(class981.field3225.field3271 * -1006924897, var1, (byte)-90);
+               var10 = this.field74.method3285(class981.field3225.field3271, var1, (byte)-90);
             }
 
             var4 = new class747();
             if (var10 != null) {
-               var4.method2609(new class907(var10), 1705012994);
+               var4.method2609(new InputStream(var10), 1705012994);
             }
 
             class1 var11 = this.field73;
@@ -72,7 +72,7 @@ public class class337 {
    public class337(class469 var1, class423 var2, class180 var3) {
       this.field74 = var3;
       if (this.field74 != null) {
-         this.field74.method3286(-1006924897 * class981.field3225.field3271, -279300149);
+         this.field74.method3286(class981.field3225.field3271, -279300149);
       }
 
    }
@@ -99,7 +99,7 @@ public class class337 {
          class563 var8 = null;
 
          for(class563 var9 = (class563)class563.field1081.method901(1766612795); var9 != null; var9 = (class563)class563.field1081.method906(49146)) {
-            if (var0 == 2108312995 * var9.field1070 && var1 == 634196087 * var9.field1069 && var2 == var9.field1074 * -2146829167 && -431456739 * var9.field1076 == var3) {
+            if (var0 == var9.field1070 && var1 == var9.field1069 && var2 == var9.field1074 && var9.field1076 == var3) {
                var8 = var9;
                break;
             }
@@ -107,15 +107,15 @@ public class class337 {
 
          if (var8 == null) {
             var8 = new class563();
-            var8.field1070 = var0 * -196260341;
-            var8.field1076 = var3 * 1088435253;
-            var8.field1069 = var1 * 656787783;
-            var8.field1074 = 284247153 * var2;
+            var8.field1070 = var0;
+            var8.field1076 = var3;
+            var8.field1069 = var1;
+            var8.field1074 = var2;
             class563.field1081.method897(var8, 1693481470);
          }
 
-         var8.field1075 = var4 * 240885009;
-         var8.field1072 = var5 * 998055383;
+         var8.field1075 = var4;
+         var8.field1072 = var5;
          var8.field1077 = var6;
          var8.field1078 = true;
          var8.field1079 = false;

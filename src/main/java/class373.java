@@ -340,10 +340,10 @@ public class class373 implements Iterable, Collection {
 
    static final void method912(class744 var0, byte var1) {
       try {
-         if (class730.field2914 * -1333485389 >= 5 && -1333485389 * class730.field2914 <= 9) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1;
+         if (class730.field2914 >= 5 && class730.field2914 <= 9) {
+            var0.field3161[++var0.field3156 - 1] = 1;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
+            var0.field3161[++var0.field3156 - 1] = 0;
          }
 
       } catch (RuntimeException var3) {
@@ -351,10 +351,10 @@ public class class373 implements Iterable, Collection {
       }
    }
 
-   public static void method913(int var0, int var1, int var2, class50 var3, int var4) {
+   public static void method913(int var0, int var1, int var2, ObjectDefinition var3, int var4) {
       try {
          for(class206 var5 = (class206)class206.field7064.method901(1766612795); var5 != null; var5 = (class206)class206.field7064.method906(49146)) {
-            if (var0 == -1926928785 * var5.field7067 && var5.field7068 * -1808325887 == var1 << 9 && var5.field7066 * 757346071 == var2 << 9 && var3.field2197 * 1181652947 == var5.field7078.field2197 * 1181652947) {
+            if (var0 == var5.field7067 && var5.field7068 == var1 << 9 && var5.field7066 == var2 << 9 && var3.field2197 == var5.field7078.field2197) {
                if (var5.field7090 != null) {
                   class56.field2321.method3875(var5.field7090);
                   var5.field7090 = null;

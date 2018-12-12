@@ -77,7 +77,7 @@ public class class243 {
 
                for(int var15 = var8; var15 < var9; ++var15) {
                   if (var15 - var2 >= -var3 && var15 - var2 <= var3) {
-                     int var16 = var15 * this.field8504.field7226 * -506105871 + var12;
+                     int var16 = var15 * this.field8504.field7226 + var12;
 
                      for(int var17 = var12; var17 < var13; ++var17) {
                         if (var17 - var1 >= -var3 && var17 - var1 <= var3 && var4[var17 - var1 + var3][var15 - var2 + var3]) {
@@ -215,12 +215,12 @@ public class class243 {
    class243(class13 var1, class291 var2) {
       this.field8506 = var1;
       this.field8504 = var2;
-      this.field8503 = 2 + (this.field8504.field7226 * -506105871 * this.field8504.field7227 * -1212653763 >> this.field8506.field6751);
-      this.field8501 = 2 + (this.field8504.field7225 * -1148794921 * this.field8504.field7227 * -1212653763 >> this.field8506.field6751);
+      this.field8503 = 2 + (this.field8504.field7226 * this.field8504.field7227 >> this.field8506.field6751);
+      this.field8501 = 2 + (this.field8504.field7225 * this.field8504.field7227 >> this.field8506.field6751);
       this.field8505 = new byte[this.field8503 * this.field8501];
-      this.field8508 = 7 + this.field8506.field6751 - this.field8504.field7228 * -2137349879;
-      this.field8502 = this.field8504.field7226 * -506105871 >> this.field8508;
-      this.field8507 = this.field8504.field7225 * -1148794921 >> this.field8508;
+      this.field8508 = 7 + this.field8506.field6751 - this.field8504.field7228;
+      this.field8502 = this.field8504.field7226 >> this.field8508;
+      this.field8507 = this.field8504.field7225 >> this.field8508;
    }
 
    static final void method4760(byte[] var0, byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7) {

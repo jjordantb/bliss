@@ -2,9 +2,9 @@ public class class871 {
    public static int field9806 = 0;
    static int field9807 = 1;
    public char field9808;
-   public int field9809 = -194719339;
+   public int field9809 = 1;
 
-   void method5896(class907 var1, int var2, int var3) {
+   void method5896(InputStream var1, int var2, int var3) {
       try {
          if (1 == var2) {
             this.field9808 = class954.method2092(var1.method6372(-12558881), 2112352543);
@@ -17,7 +17,7 @@ public class class871 {
       }
    }
 
-   void method5897(class907 var1, int var2) {
+   void method5897(InputStream var1, int var2) {
       try {
          while(true) {
             int var3 = var1.method6371();
@@ -36,9 +36,9 @@ public class class871 {
       }
    }
 
-   static final void method5898(class746 var0, byte var1) {
+   static final void method5898(Actor var0, byte var1) {
       try {
-         class765 var2 = var0.field4041;
+         Animator var2 = var0.passiveAnimator;
          if (var2.method2775((byte)-67) && var2.method2778(1, 1987990558) && var2.method2788(-1549707079)) {
             if (var0.field4058) {
                var2.method2797(var0.method2554(-646688457).method2504(-2063556157), false, true, (byte)71);
@@ -49,19 +49,19 @@ public class class871 {
          }
 
          for(int var3 = 0; var3 < var0.field4040.length; ++var3) {
-            if (-1 != -967533709 * var0.field4040[var3].field10341) {
-               class765 var4 = var0.field4040[var3].field10340;
+            if (-1 != var0.field4040[var3].field10341) {
+               Animator var4 = var0.field4040[var3].field10340;
                if (var4.method2782(-65534)) {
-                  class745 var5 = class635.field9823.method1053(var0.field4040[var3].field10341 * -967533709, -2105534401);
-                  class160 var6 = var4.method2776(301840356);
+                  class745 var5 = class635.field9823.method1053(var0.field4040[var3].field10341, -2105534401);
+                  Animation var6 = var4.method2776(301840356);
                   if (var5.field4117) {
-                     if (3 == var6.field6666 * 62820525) {
-                        if (1888275831 * var0.field4089 > 0 && var0.field4059 * -412225079 <= class730.field2866 * 443738891 && 1450943713 * var0.field4067 < 443738891 * class730.field2866) {
+                     if (3 == var6.field6666) {
+                        if (var0.field4089 > 0 && var0.field4059 <= class730.field2866 && var0.field4067 < class730.field2866) {
                            var4.method2777(-1, -1544973787);
-                           var0.field4040[var3].field10341 = -1313669563;
+                           var0.field4040[var3].field10341 = -1;
                            continue;
                         }
-                     } else if (1 == var6.field6666 * 62820525 && var0.field4089 * 1888275831 > 0 && -412225079 * var0.field4059 <= 443738891 * class730.field2866 && 1450943713 * var0.field4067 < 443738891 * class730.field2866) {
+                     } else if (1 == var6.field6666 && var0.field4089 > 0 && var0.field4059 <= class730.field2866 && var0.field4067 < class730.field2866) {
                         if (var1 <= 0) {
                            throw new IllegalStateException();
                         }
@@ -72,23 +72,23 @@ public class class871 {
 
                if (var4.method2778(1, 2118435651) && var4.method2788(-618238980)) {
                   var4.method2777(-1, -1633965272);
-                  var0.field4040[var3].field10341 = -1313669563;
+                  var0.field4040[var3].field10341 = -1;
                }
             }
          }
 
-         class765 var8 = var0.field4042;
+         Animator var8 = var0.activeAnimator;
          if (var8.method2775((byte)-111)) {
             label94: {
-               class160 var9 = var8.method2776(-239895480);
-               if (var9.field6666 * 62820525 == 3) {
-                  if (1888275831 * var0.field4089 > 0 && var0.field4059 * -412225079 <= class730.field2866 * 443738891 && var0.field4067 * 1450943713 < 443738891 * class730.field2866) {
+               Animation var9 = var8.method2776(-239895480);
+               if (var9.field6666 == 3) {
+                  if (var0.field4089 > 0 && var0.field4059 <= class730.field2866 && var0.field4067 < class730.field2866) {
                      var0.field4057 = null;
                      var8.method2777(-1, -1775890638);
                      break label94;
                   }
-               } else if (var9.field6666 * 62820525 == 1) {
-                  if (1888275831 * var0.field4089 > 0 && var0.field4059 * -412225079 <= 443738891 * class730.field2866 && var0.field4067 * 1450943713 < 443738891 * class730.field2866) {
+               } else if (var9.field6666 == 1) {
+                  if (var0.field4089 > 0 && var0.field4059 <= class730.field2866 && var0.field4067 < class730.field2866) {
                      var8.method2784(1, -1445580533);
                      break label94;
                   }
@@ -109,8 +109,8 @@ public class class871 {
                if (var1 <= 0) {
                   break;
                }
-            } else if (var11.field4392 * -623360337 > 0) {
-               var11.field4392 -= -731066289;
+            } else if (var11.field4392 > 0) {
+               --var11.field4392;
             } else if (var11.method2778(1, 1635339259) && var11.method2788(-1916061004)) {
                var0.field4076[var10] = null;
             }
@@ -143,7 +143,7 @@ public class class871 {
       try {
          if (class730.field2825 != null) {
             class516.method2727((byte)-48);
-         } else if (2084404473 * class881.field10145 != -1) {
+         } else if (class881.field10145 != -1) {
             class647.method5489(1290556720);
          } else {
             class22.method3438(class881.field10170, class881.field10171, (short)5737);

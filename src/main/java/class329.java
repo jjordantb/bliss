@@ -10,12 +10,12 @@ public class class329 {
    class423 field35;
    String[] field36;
 
-   public class401 method12(int var1, int var2) {
+   public NpcDefinition method12(int var1, int var2) {
       try {
          class1 var3 = this.field29;
-         class401 var4;
+         NpcDefinition var4;
          synchronized(this.field29) {
-            var4 = (class401)this.field29.method2974((long)var1);
+            var4 = (NpcDefinition)this.field29.method2974((long)var1);
          }
 
          if (var4 != null) {
@@ -27,12 +27,12 @@ public class class329 {
                var10 = this.field30.method3285(class981.field3221.method1927(var1, -790155853), class981.field3221.method1925(var1, -576275965), (byte)-76);
             }
 
-            var4 = new class401();
-            var4.field9862 = -1840892671 * var1;
+            var4 = new NpcDefinition();
+            var4.field9862 = var1;
             var4.field9861 = this;
             var4.field9878 = (String[])this.field36.clone();
             if (var10 != null) {
-               var4.method6105(new class907(var10), -975728899);
+               var4.method6105(new InputStream(var10), -975728899);
             }
 
             var4.method6113(1323410423);
@@ -62,7 +62,7 @@ public class class329 {
 
    public void method14(int var1, int var2) {
       try {
-         this.field33 = var1 * -1576689997;
+         this.field33 = var1;
          class1 var3 = this.field27;
          synchronized(this.field27) {
             this.field27.method2977();
@@ -186,7 +186,7 @@ public class class329 {
 
    static final void method20(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-51);
          class131 var4 = class382.field1410[var2 >> 16];
          class818.method2902(var3, var4, var0, 1226850164);

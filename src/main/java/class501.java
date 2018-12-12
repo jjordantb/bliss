@@ -16,8 +16,8 @@ public class class501 {
          } else if (var2 > 256) {
             throw new class947();
          } else {
-            String var3 = new String(this.field3180, this.field3181 * -999234057, var2);
-            this.field3181 += var2 * -786863161;
+            String var3 = new String(this.field3180, this.field3181, var2);
+            this.field3181 += var2;
             return var3;
          }
       } catch (RuntimeException var4) {
@@ -30,7 +30,7 @@ public class class501 {
          short var2 = 0;
 
          for(int var3 = 0; var3 < 2; ++var3) {
-            var2 = (short)(var2 | (this.field3180[(this.field3181 += -786863161) * -999234057 - 1] & 255) << var3 * 8);
+            var2 = (short)(var2 | (this.field3180[++this.field3181 - 1] & 255) << var3 * 8);
          }
 
          return var2;

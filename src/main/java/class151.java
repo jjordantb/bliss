@@ -1,5 +1,5 @@
 public class class151 {
-   int field5365 = -811445531;
+   int field5365 = -1;
    class495 field5366;
    class495 field5367;
    String field5368;
@@ -16,7 +16,7 @@ public class class151 {
          if (this.field5366 == class495.field8094) {
             var4 = var1.method1906(656081273);
             this.field5367 = class240.method4716(-12226797)[var4];
-            this.field5365 = var1.method1906(1114947725) * 811445531;
+            this.field5365 = var1.method1906(1114947725);
          }
 
          this.field5368 = var1.method1905(1509343502);
@@ -53,7 +53,7 @@ public class class151 {
 
    static final void method3372(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-7);
          class131 var4 = class382.field1410[var2 >> 16];
          class510.method2622(var3, var4, var0, (byte)-113);

@@ -2,13 +2,13 @@ public class class392 extends class568 {
    public int field5393;
    public int field5394;
    public int field5395;
-   public int field5396 = 745065385;
+   public int field5396 = -1;
    public int field5397;
    public int field5398;
    public boolean field5399 = false;
 
    class392(int var1) {
-      this.field5396 = -745065385 * var1;
+      this.field5396 = var1;
    }
 
    public static void method3382(int var0, byte var1) {
@@ -31,10 +31,10 @@ public class class392 extends class568 {
 
    static final void method3384(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
-         int var3 = var0.field3161[1 + var0.field3156 * 681479919];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class859.method5179(var2, var3, false, -880312954);
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class859.method5179(var2, var3, false, -880312954);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "act.tl(" + ')');
       }

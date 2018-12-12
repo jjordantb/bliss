@@ -40,7 +40,7 @@ public class class335 {
       }
    }
 
-   public static class827 method39(class907 var0, byte var1) {
+   public static class827 method39(InputStream var0, byte var1) {
       try {
          class827 var2 = class932.method6291(var0, -2082890426);
          int var3 = var0.method6423(1235052657);
@@ -49,32 +49,32 @@ public class class335 {
          int var6 = var0.method6423(1235052657);
          int var7 = var0.method6423(1235052657);
          int var8 = var0.method6423(1235052657);
-         return new class710(var2.field9028, var2.field9029, -39975161 * var2.field9033, var2.field9031 * 1886882435, var2.field9032 * -944287579, var2.field9036 * -1387457793, -684094775 * var2.field9034, var2.field9035 * 955568089, var2.field9030 * 782326281, var3, var4, var5, var6, var7, var8);
+         return new class710(var2.field9028, var2.field9029, var2.field9033, var2.field9031, var2.field9032, var2.field9036, var2.field9034, var2.field9035, var2.field9030, var3, var4, var5, var6, var7, var8);
       } catch (RuntimeException var9) {
          throw class158.method3445(var9, "lb.i(" + ')');
       }
    }
 
-   static final int method40(class746 var0, int var1) {
+   static final int method40(Actor var0, int var1) {
       try {
-         if (907865649 * var0.field4079 == 0) {
+         if (var0.field4079 == 0) {
             return 0;
          } else {
             int var5;
             class32 var9;
-            if (var0.field4054 * 1433412323 != -1) {
+            if (var0.field4054 != -1) {
                Object var2 = null;
-               if (var0.field4054 * 1433412323 < 32768) {
-                  class437 var3 = (class437)class730.field2677.method2942((long)(1433412323 * var0.field4054));
+               if (var0.field4054 < 32768) {
+                  class437 var3 = (class437)class730.field2677.method2942((long)var0.field4054);
                   if (var3 != null) {
-                     var2 = (class746)var3.field7515;
+                     var2 = (Actor)var3.field7515;
                   }
-               } else if (var0.field4054 * 1433412323 >= 32768) {
-                  var2 = class730.field2786[1433412323 * var0.field4054 - '耀'];
+               } else if (var0.field4054 >= 32768) {
+                  var2 = class730.loaded[var0.field4054 - '耀'];
                }
 
                if (var2 != null) {
-                  var9 = class32.method3296(var0.method1511().field7637, ((class746)var2).method1511().field7637);
+                  var9 = class32.method3296(var0.method1511().field7637, ((Actor)var2).method1511().field7637);
                   int var4 = (int)var9.field5296;
                   var5 = (int)var9.field5299;
                   if (var4 != 0 || var5 != 0) {
@@ -83,24 +83,24 @@ public class class335 {
                }
             }
 
-            if (var0 instanceof class946) {
-               class946 var8 = (class946)var0;
-               if (-1 != var8.field3400 * 1208589843 && (var8.field4084 * 2050671733 == 0 || -1531994851 * var8.field4088 > 0)) {
-                  var8.method2542(1208589843 * var8.field3400, (byte)1);
-                  var8.field3400 = 1530078181;
+            if (var0 instanceof Player) {
+               Player var8 = (Player)var0;
+               if (-1 != var8.field3400 && (var8.field4084 == 0 || var8.field4088 > 0)) {
+                  var8.method2542(var8.field3400, (byte)1);
+                  var8.field3400 = -1;
                }
-            } else if (var0 instanceof class60) {
-               class60 var10 = (class60)var0;
-               if (-1 != var10.field1626 * 579792529 && (var10.field4084 * 2050671733 == 0 || -1531994851 * var10.field4088 > 0)) {
+            } else if (var0 instanceof Npc) {
+               Npc var10 = (Npc)var0;
+               if (-1 != var10.field1626 && (var10.field4084 == 0 || var10.field4088 > 0)) {
                   var9 = var10.method1511().field7637;
                   class389 var11 = class730.field2697.method5270(681479919);
-                  var5 = (int)var9.field5296 - (var10.field1626 * -1896967936 - 263081728 * var11.field1521 - 263081728 * var11.field1521);
-                  int var6 = (int)var9.field5299 - (893346048 * var10.field1627 - var11.field1522 * -434703616 - var11.field1522 * -434703616);
+                  var5 = (int)var9.field5296 - (var10.field1626 * 256 - var11.field1521 * 256 - var11.field1521 * 256);
+                  int var6 = (int)var9.field5299 - (var10.field1627 * 256 - var11.field1522 * 256 - var11.field1522 * 256);
                   if (var5 != 0 || var6 != 0) {
                      var10.method2542((int)(Math.atan2((double)var5, (double)var6) * 2607.5945876176133D) & 16383, (byte)1);
                   }
 
-                  var10.field1626 = -1312461425;
+                  var10.field1626 = -1;
                }
             }
 
@@ -116,7 +116,7 @@ public class class335 {
          class439.field7537.method905((byte)1);
          if (!class740.field3209) {
             for(class392 var5 = (class392)var1.method901(1766612795); var5 != null; var5 = (class392)var1.method906(49146)) {
-               class718 var6 = class740.field7826.method5091(-530122905 * var5.field5396, -1838109089);
+               class718 var6 = class491.field7826.method5091(var5.field5396, -1838109089);
                if (class517.method2719(var6, 1541069402)) {
                   boolean var7 = class890.method5560(var0, var5, var6, var2, var3, -1417215477);
                   if (var7) {
@@ -133,7 +133,7 @@ public class class335 {
 
    static final void method42(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class621.field8926 * -1972322437;
+         var0.field3161[++var0.field3156 - 1] = class621.field8926;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "lb.amk(" + ')');
       }

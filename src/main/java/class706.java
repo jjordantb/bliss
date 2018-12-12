@@ -13,7 +13,7 @@ public class class706 extends class568 {
 
    static final void method1934(class744 var0, int var1) {
       try {
-         var0.field3151[var0.field3174[var0.field3176 * 1883543357]] = var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         var0.field3151[var0.field3174[var0.field3176]] = var0.field3157[--var0.field3158];
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "abm.af(" + ')');
       }
@@ -21,7 +21,7 @@ public class class706 extends class568 {
 
    public static final void method1935(byte var0) {
       try {
-         if (1 != -707576455 * class881.field10168) {
+         if (1 != class881.field10168) {
             class881.field10177.method4374((byte)40);
             class725.method1748(-20644488);
             class978.method1845(1976641602);

@@ -13,7 +13,7 @@ public class class644 {
 
    static final void method6164(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-112);
          class317.method469(var3, var0, -2096631087);
       } catch (RuntimeException var4) {

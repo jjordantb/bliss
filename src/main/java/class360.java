@@ -42,15 +42,6 @@ public abstract class class360 extends class48 {
       this.field2161 = var3;
    }
 
-   public void method3139(int[] var1) {
-      var1[0] = this.field2162;
-      var1[1] = this.field2172;
-      var1[2] = this.field2169;
-      var1[3] = this.field2165;
-   }
-
-   public abstract void method3157(int var1, int var2, int var3, int var4, int var5);
-
    public int method3106() {
       return this.field2182;
    }
@@ -65,79 +56,7 @@ public abstract class class360 extends class48 {
 
    public abstract void method3114(int var1, int var2, int var3, int var4, int var5);
 
-   void method3140(float var1, float var2, float var3, float var4, float var5, float var6, int var7, int var8, int var9, int var10) {
-      if (this.field2178.method4444()) {
-         throw new IllegalStateException();
-      } else {
-         if (this.method1470(var1, var2, var3, var4, var5, var6)) {
-            field2186 = var8;
-            if (var7 != 1) {
-               field2187 = var8 >>> 24;
-               field2188 = 256 - field2187;
-               if (var7 == 0) {
-                  field2181 = (var8 & 16711680) >> 16;
-                  field2190 = (var8 & '\uff00') >> 8;
-                  field2191 = var8 & 255;
-               } else if (var7 == 2) {
-                  field2164 = var8 >>> 24;
-                  field2193 = 256 - field2164;
-                  int var11 = (var8 & 16711935) * field2193 & -16711936;
-                  int var12 = (var8 & '\uff00') * field2193 & 16711680;
-                  field2194 = (var11 | var12) >>> 8;
-               }
-            }
-
-            if (var7 == 1) {
-               if (var9 == 0) {
-                  this.method1471(1, 0);
-               } else if (var9 == 1) {
-                  this.method1471(1, 1);
-               } else if (var9 == 2) {
-                  this.method1471(1, 2);
-               }
-            } else if (var7 == 0) {
-               if (var9 == 0) {
-                  this.method1471(0, 0);
-               } else if (var9 == 1) {
-                  this.method1471(0, 1);
-               } else if (var9 == 2) {
-                  this.method1471(0, 2);
-               }
-            } else if (var7 == 3) {
-               if (var9 == 0) {
-                  this.method1471(3, 0);
-               } else if (var9 == 1) {
-                  this.method1471(3, 1);
-               } else if (var9 == 2) {
-                  this.method1471(3, 2);
-               }
-            } else if (var7 == 2) {
-               if (var9 == 0) {
-                  this.method1471(2, 0);
-               } else if (var9 == 1) {
-                  this.method1471(2, 1);
-               } else if (var9 == 2) {
-                  this.method1471(2, 2);
-               }
-            }
-         }
-
-      }
-   }
-
    abstract void method3118(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8);
-
-   void method3154(float var1, float var2, float var3, float var4, float var5, float var6, int var7, class23 var8, int var9, int var10) {
-      if (this.field2178.method4444()) {
-         throw new IllegalStateException();
-      } else {
-         if (this.method1470(var1, var2, var3, var4, var5, var6)) {
-            class924 var11 = (class924)var8;
-            this.method1472(var11.field10289, var11.field10288, field2170 - var9, -var10 - (field2173 - field2166));
-         }
-
-      }
-   }
 
    abstract void method1469(boolean var1, boolean var2, boolean var3, int var4, int var5, float var6, int var7, int var8, int var9, int var10, int var11, int var12, boolean var13);
 
@@ -223,20 +142,20 @@ public abstract class class360 extends class48 {
          var14 = var10;
       }
 
-      if (var11 < (float)(this.field2178.field7921 * -912871679)) {
-         var11 = (float)(this.field2178.field7921 * -912871679);
+      if (var11 < (float)this.field2178.field7921) {
+         var11 = (float)this.field2178.field7921;
       }
 
-      if (var12 > (float)(this.field2178.field7938 * -1416794725)) {
-         var12 = (float)(this.field2178.field7938 * -1416794725);
+      if (var12 > (float)this.field2178.field7938) {
+         var12 = (float)this.field2178.field7938;
       }
 
-      if (var13 < (float)(this.field2178.field7923 * -1278653805)) {
-         var13 = (float)(this.field2178.field7923 * -1278653805);
+      if (var13 < (float)this.field2178.field7923) {
+         var13 = (float)this.field2178.field7923;
       }
 
-      if (var14 > (float)(this.field2178.field7924 * 63686679)) {
-         var14 = (float)(this.field2178.field7924 * 63686679);
+      if (var14 > (float)this.field2178.field7924) {
+         var14 = (float)this.field2178.field7924;
       }
 
       var12 = var11 - var12;
@@ -247,7 +166,7 @@ public abstract class class360 extends class48 {
          if (var14 >= 0.0F) {
             return false;
          } else {
-            field2192 = this.field2178.field7918 * 692106883;
+            field2192 = this.field2178.field7918;
             field2175 = (int)((float)((int)var13 * field2192) + var11);
             var15 = (var3 - var1) * (var6 - var2) - (var4 - var2) * (var5 - var1);
             var16 = (var5 - var1) * (var4 - var2) - (var6 - var2) * (var3 - var1);
@@ -332,95 +251,7 @@ public abstract class class360 extends class48 {
 
    abstract void method1471(int var1, int var2);
 
-   public int method3151() {
-      return this.field2161;
-   }
-
    abstract void method1472(int[] var1, int[] var2, int var3, int var4);
-
-   public abstract void method3126(int var1, int var2, int var3, int var4, int var5);
-
-   public abstract void method3132(int var1, int var2, int var3, int var4, int var5);
-
-   void method3149(float var1, float var2, float var3, float var4, float var5, float var6, int var7, int var8, int var9, int var10) {
-      if (this.field2178.method4444()) {
-         throw new IllegalStateException();
-      } else {
-         if (this.method1470(var1, var2, var3, var4, var5, var6)) {
-            field2186 = var8;
-            if (var7 != 1) {
-               field2187 = var8 >>> 24;
-               field2188 = 256 - field2187;
-               if (var7 == 0) {
-                  field2181 = (var8 & 16711680) >> 16;
-                  field2190 = (var8 & '\uff00') >> 8;
-                  field2191 = var8 & 255;
-               } else if (var7 == 2) {
-                  field2164 = var8 >>> 24;
-                  field2193 = 256 - field2164;
-                  int var11 = (var8 & 16711935) * field2193 & -16711936;
-                  int var12 = (var8 & '\uff00') * field2193 & 16711680;
-                  field2194 = (var11 | var12) >>> 8;
-               }
-            }
-
-            if (var7 == 1) {
-               if (var9 == 0) {
-                  this.method1471(1, 0);
-               } else if (var9 == 1) {
-                  this.method1471(1, 1);
-               } else if (var9 == 2) {
-                  this.method1471(1, 2);
-               }
-            } else if (var7 == 0) {
-               if (var9 == 0) {
-                  this.method1471(0, 0);
-               } else if (var9 == 1) {
-                  this.method1471(0, 1);
-               } else if (var9 == 2) {
-                  this.method1471(0, 2);
-               }
-            } else if (var7 == 3) {
-               if (var9 == 0) {
-                  this.method1471(3, 0);
-               } else if (var9 == 1) {
-                  this.method1471(3, 1);
-               } else if (var9 == 2) {
-                  this.method1471(3, 2);
-               }
-            } else if (var7 == 2) {
-               if (var9 == 0) {
-                  this.method1471(2, 0);
-               } else if (var9 == 1) {
-                  this.method1471(2, 1);
-               } else if (var9 == 2) {
-                  this.method1471(2, 2);
-               }
-            }
-         }
-
-      }
-   }
-
-   public abstract void method3131(int var1, int var2, int var3, int var4, int var5);
-
-   public abstract void method3133(int var1, int var2, class23 var3, int var4, int var5);
-
-   abstract void method3134(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8);
-
-   void method3153(float var1, float var2, float var3, float var4, float var5, float var6, int var7, class23 var8, int var9, int var10) {
-      if (this.field2178.method4444()) {
-         throw new IllegalStateException();
-      } else {
-         if (this.method1470(var1, var2, var3, var4, var5, var6)) {
-            class924 var11 = (class924)var8;
-            this.method1472(var11.field10289, var11.field10288, field2170 - var9, -var10 - (field2173 - field2166));
-         }
-
-      }
-   }
-
-   abstract void method1473(boolean var1, boolean var2, boolean var3, int var4, int var5, float var6, int var7, int var8, int var9, int var10, int var11, int var12, boolean var13);
 
    public void method3104(int var1, int var2, int var3, int var4) {
       this.field2162 = var1;
@@ -429,295 +260,12 @@ public abstract class class360 extends class48 {
       this.field2165 = var4;
    }
 
-   public void method3160(int[] var1) {
-      var1[0] = this.field2162;
-      var1[1] = this.field2172;
-      var1[2] = this.field2169;
-      var1[3] = this.field2165;
-   }
-
-   abstract void method1474(int[] var1, int[] var2, int var3, int var4);
-
-   abstract void method1475(int[] var1, int[] var2, int var3, int var4);
-
-   abstract void method1476(int[] var1, int[] var2, int var3, int var4);
-
-   public void method3138(int var1, int var2, int var3, int var4) {
-      this.field2162 = var1;
-      this.field2172 = var2;
-      this.field2169 = var3;
-      this.field2165 = var4;
-   }
-
-   public void method3123(int[] var1) {
-      var1[0] = this.field2162;
-      var1[1] = this.field2172;
-      var1[2] = this.field2169;
-      var1[3] = this.field2165;
-   }
-
    public void method3105(int[] var1) {
       var1[0] = this.field2162;
       var1[1] = this.field2172;
       var1[2] = this.field2169;
       var1[3] = this.field2165;
    }
-
-   abstract void method3135(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8);
-
-   public int method3113() {
-      return this.field2182;
-   }
-
-   public int method3141() {
-      return this.field2182;
-   }
-
-   public int method5595() {
-      return this.field2162 + this.field2182 + this.field2169;
-   }
-
-   public int method3136() {
-      return this.field2172 + this.field2161 + this.field2165;
-   }
-
-   public void method3143(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
-      if (this.field2178.method4444()) {
-         throw new IllegalStateException();
-      } else {
-         if (this.field2189 == null) {
-            this.field2189 = new int[4];
-         }
-
-         this.field2178.method4830(this.field2189);
-         this.field2178.method4829(this.field2178.field7921 * -912871679, this.field2178.field7923 * -1278653805, var1 + var3, var2 + var4);
-         int var8 = this.method5594();
-         int var9 = this.method3109();
-         int var10 = (var3 + var8 - 1) / var8;
-         int var11 = (var4 + var9 - 1) / var9;
-
-         for(int var12 = 0; var12 < var11; ++var12) {
-            int var13 = var12 * var9;
-
-            for(int var14 = 0; var14 < var10; ++var14) {
-               this.method3114(var1 + var14 * var8, var2 + var13, var5, var6, var7);
-            }
-         }
-
-         this.field2178.method4986(this.field2189[0], this.field2189[1], this.field2189[2], this.field2189[3]);
-      }
-   }
-
-   public void method3144(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
-      if (this.field2178.method4444()) {
-         throw new IllegalStateException();
-      } else {
-         if (this.field2189 == null) {
-            this.field2189 = new int[4];
-         }
-
-         this.field2178.method4830(this.field2189);
-         this.field2178.method4829(this.field2178.field7921 * -912871679, this.field2178.field7923 * -1278653805, var1 + var3, var2 + var4);
-         int var8 = this.method5594();
-         int var9 = this.method3109();
-         int var10 = (var3 + var8 - 1) / var8;
-         int var11 = (var4 + var9 - 1) / var9;
-
-         for(int var12 = 0; var12 < var11; ++var12) {
-            int var13 = var12 * var9;
-
-            for(int var14 = 0; var14 < var10; ++var14) {
-               this.method3114(var1 + var14 * var8, var2 + var13, var5, var6, var7);
-            }
-         }
-
-         this.field2178.method4986(this.field2189[0], this.field2189[1], this.field2189[2], this.field2189[3]);
-      }
-   }
-
-   void method3159(float var1, float var2, float var3, float var4, float var5, float var6, int var7, int var8, int var9, int var10) {
-      if (this.field2178.method4444()) {
-         throw new IllegalStateException();
-      } else {
-         if (this.method1470(var1, var2, var3, var4, var5, var6)) {
-            field2186 = var8;
-            if (var7 != 1) {
-               field2187 = var8 >>> 24;
-               field2188 = 256 - field2187;
-               if (var7 == 0) {
-                  field2181 = (var8 & 16711680) >> 16;
-                  field2190 = (var8 & '\uff00') >> 8;
-                  field2191 = var8 & 255;
-               } else if (var7 == 2) {
-                  field2164 = var8 >>> 24;
-                  field2193 = 256 - field2164;
-                  int var11 = (var8 & 16711935) * field2193 & -16711936;
-                  int var12 = (var8 & '\uff00') * field2193 & 16711680;
-                  field2194 = (var11 | var12) >>> 8;
-               }
-            }
-
-            if (var7 == 1) {
-               if (var9 == 0) {
-                  this.method1471(1, 0);
-               } else if (var9 == 1) {
-                  this.method1471(1, 1);
-               } else if (var9 == 2) {
-                  this.method1471(1, 2);
-               }
-            } else if (var7 == 0) {
-               if (var9 == 0) {
-                  this.method1471(0, 0);
-               } else if (var9 == 1) {
-                  this.method1471(0, 1);
-               } else if (var9 == 2) {
-                  this.method1471(0, 2);
-               }
-            } else if (var7 == 3) {
-               if (var9 == 0) {
-                  this.method1471(3, 0);
-               } else if (var9 == 1) {
-                  this.method1471(3, 1);
-               } else if (var9 == 2) {
-                  this.method1471(3, 2);
-               }
-            } else if (var7 == 2) {
-               if (var9 == 0) {
-                  this.method1471(2, 0);
-               } else if (var9 == 1) {
-                  this.method1471(2, 1);
-               } else if (var9 == 2) {
-                  this.method1471(2, 2);
-               }
-            }
-         }
-
-      }
-   }
-
-   void method3112(float var1, float var2, float var3, float var4, float var5, float var6, int var7, int var8, int var9, int var10) {
-      if (this.field2178.method4444()) {
-         throw new IllegalStateException();
-      } else {
-         if (this.method1470(var1, var2, var3, var4, var5, var6)) {
-            field2186 = var8;
-            if (var7 != 1) {
-               field2187 = var8 >>> 24;
-               field2188 = 256 - field2187;
-               if (var7 == 0) {
-                  field2181 = (var8 & 16711680) >> 16;
-                  field2190 = (var8 & '\uff00') >> 8;
-                  field2191 = var8 & 255;
-               } else if (var7 == 2) {
-                  field2164 = var8 >>> 24;
-                  field2193 = 256 - field2164;
-                  int var11 = (var8 & 16711935) * field2193 & -16711936;
-                  int var12 = (var8 & '\uff00') * field2193 & 16711680;
-                  field2194 = (var11 | var12) >>> 8;
-               }
-            }
-
-            if (var7 == 1) {
-               if (var9 == 0) {
-                  this.method1471(1, 0);
-               } else if (var9 == 1) {
-                  this.method1471(1, 1);
-               } else if (var9 == 2) {
-                  this.method1471(1, 2);
-               }
-            } else if (var7 == 0) {
-               if (var9 == 0) {
-                  this.method1471(0, 0);
-               } else if (var9 == 1) {
-                  this.method1471(0, 1);
-               } else if (var9 == 2) {
-                  this.method1471(0, 2);
-               }
-            } else if (var7 == 3) {
-               if (var9 == 0) {
-                  this.method1471(3, 0);
-               } else if (var9 == 1) {
-                  this.method1471(3, 1);
-               } else if (var9 == 2) {
-                  this.method1471(3, 2);
-               }
-            } else if (var7 == 2) {
-               if (var9 == 0) {
-                  this.method1471(2, 0);
-               } else if (var9 == 1) {
-                  this.method1471(2, 1);
-               } else if (var9 == 2) {
-                  this.method1471(2, 2);
-               }
-            }
-         }
-
-      }
-   }
-
-   void method3146(float var1, float var2, float var3, float var4, float var5, float var6, int var7, int var8, int var9, int var10) {
-      if (this.field2178.method4444()) {
-         throw new IllegalStateException();
-      } else {
-         if (this.method1470(var1, var2, var3, var4, var5, var6)) {
-            field2186 = var8;
-            if (var7 != 1) {
-               field2187 = var8 >>> 24;
-               field2188 = 256 - field2187;
-               if (var7 == 0) {
-                  field2181 = (var8 & 16711680) >> 16;
-                  field2190 = (var8 & '\uff00') >> 8;
-                  field2191 = var8 & 255;
-               } else if (var7 == 2) {
-                  field2164 = var8 >>> 24;
-                  field2193 = 256 - field2164;
-                  int var11 = (var8 & 16711935) * field2193 & -16711936;
-                  int var12 = (var8 & '\uff00') * field2193 & 16711680;
-                  field2194 = (var11 | var12) >>> 8;
-               }
-            }
-
-            if (var7 == 1) {
-               if (var9 == 0) {
-                  this.method1471(1, 0);
-               } else if (var9 == 1) {
-                  this.method1471(1, 1);
-               } else if (var9 == 2) {
-                  this.method1471(1, 2);
-               }
-            } else if (var7 == 0) {
-               if (var9 == 0) {
-                  this.method1471(0, 0);
-               } else if (var9 == 1) {
-                  this.method1471(0, 1);
-               } else if (var9 == 2) {
-                  this.method1471(0, 2);
-               }
-            } else if (var7 == 3) {
-               if (var9 == 0) {
-                  this.method1471(3, 0);
-               } else if (var9 == 1) {
-                  this.method1471(3, 1);
-               } else if (var9 == 2) {
-                  this.method1471(3, 2);
-               }
-            } else if (var7 == 2) {
-               if (var9 == 0) {
-                  this.method1471(2, 0);
-               } else if (var9 == 1) {
-                  this.method1471(2, 1);
-               } else if (var9 == 2) {
-                  this.method1471(2, 2);
-               }
-            }
-         }
-
-      }
-   }
-
-   abstract void method1477(int var1, int var2);
-
-   abstract void method1478(int var1, int var2);
 
    void method3127(float var1, float var2, float var3, float var4, float var5, float var6, int var7, class23 var8, int var9, int var10) {
       if (this.field2178.method4444()) {
@@ -731,75 +279,7 @@ public abstract class class360 extends class48 {
       }
    }
 
-   void method3147(float var1, float var2, float var3, float var4, float var5, float var6, int var7, int var8, int var9, int var10) {
-      if (this.field2178.method4444()) {
-         throw new IllegalStateException();
-      } else {
-         if (this.method1470(var1, var2, var3, var4, var5, var6)) {
-            field2186 = var8;
-            if (var7 != 1) {
-               field2187 = var8 >>> 24;
-               field2188 = 256 - field2187;
-               if (var7 == 0) {
-                  field2181 = (var8 & 16711680) >> 16;
-                  field2190 = (var8 & '\uff00') >> 8;
-                  field2191 = var8 & 255;
-               } else if (var7 == 2) {
-                  field2164 = var8 >>> 24;
-                  field2193 = 256 - field2164;
-                  int var11 = (var8 & 16711935) * field2193 & -16711936;
-                  int var12 = (var8 & '\uff00') * field2193 & 16711680;
-                  field2194 = (var11 | var12) >>> 8;
-               }
-            }
-
-            if (var7 == 1) {
-               if (var9 == 0) {
-                  this.method1471(1, 0);
-               } else if (var9 == 1) {
-                  this.method1471(1, 1);
-               } else if (var9 == 2) {
-                  this.method1471(1, 2);
-               }
-            } else if (var7 == 0) {
-               if (var9 == 0) {
-                  this.method1471(0, 0);
-               } else if (var9 == 1) {
-                  this.method1471(0, 1);
-               } else if (var9 == 2) {
-                  this.method1471(0, 2);
-               }
-            } else if (var7 == 3) {
-               if (var9 == 0) {
-                  this.method1471(3, 0);
-               } else if (var9 == 1) {
-                  this.method1471(3, 1);
-               } else if (var9 == 2) {
-                  this.method1471(3, 2);
-               }
-            } else if (var7 == 2) {
-               if (var9 == 0) {
-                  this.method1471(2, 0);
-               } else if (var9 == 1) {
-                  this.method1471(2, 1);
-               } else if (var9 == 2) {
-                  this.method1471(2, 2);
-               }
-            }
-         }
-
-      }
-   }
-
-   public int method3150() {
-      return this.field2161;
-   }
-
    public abstract void method3137(int var1, int var2, class23 var3, int var4, int var5);
-
-   public int method3152() {
-      return this.field2161;
-   }
 
    public void method3145(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
       if (this.field2178.method4444()) {
@@ -810,7 +290,7 @@ public abstract class class360 extends class48 {
          }
 
          this.field2178.method4830(this.field2189);
-         this.field2178.method4829(this.field2178.field7921 * -912871679, this.field2178.field7923 * -1278653805, var1 + var3, var2 + var4);
+         this.field2178.method4829(this.field2178.field7921, this.field2178.field7923, var1 + var3, var2 + var4);
          int var8 = this.method5594();
          int var9 = this.method3109();
          int var10 = (var3 + var8 - 1) / var8;
@@ -830,17 +310,5 @@ public abstract class class360 extends class48 {
 
    public int method5594() {
       return this.field2162 + this.field2182 + this.field2169;
-   }
-
-   void method3155(float var1, float var2, float var3, float var4, float var5, float var6, int var7, class23 var8, int var9, int var10) {
-      if (this.field2178.method4444()) {
-         throw new IllegalStateException();
-      } else {
-         if (this.method1470(var1, var2, var3, var4, var5, var6)) {
-            class924 var11 = (class924)var8;
-            this.method1472(var11.field10289, var11.field10288, field2170 - var9, -var10 - (field2173 - field2166));
-         }
-
-      }
    }
 }

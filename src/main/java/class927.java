@@ -53,10 +53,6 @@ public class class927 extends class325 {
       return (this.field10258.LI & '\uffff') >= 257;
    }
 
-   void method700() {
-      IDirect3DDevice.f(this.field10241, 14, this.field721 && this.field681);
-   }
-
    class927(int var1, int var2, long var3, long var5, B var7, Z var8, class478 var9, class180 var10, int var11) {
       super(var9, var10, var11, 0);
       this.field10249 = new long[this.field10263];
@@ -71,20 +67,20 @@ public class class927 extends class325 {
          this.field10247 = D3DLIGHT.Create();
          this.field10261 = D3DLIGHT.Create();
          this.field10257 = D3DLIGHT.Create();
-         this.field791 = this.field10258.II;
-         this.field792 = this.field10258.CI > 0 ? this.field10258.CI : 8;
+         super.field791 = this.field10258.II;
+         super.field792 = this.field10258.CI > 0 ? this.field10258.CI : 8;
          this.field10259 = (this.field10258.N & 2) == 0;
-         this.field809 = (this.field10258.N & 8192) != 0;
+         super.field809 = (this.field10258.N & 8192) != 0;
          this.field10251 = (this.field10258.N & 65536) != 0;
          this.field10240 = (this.field10258.N & 16384) != 0;
-         this.field793 = true;
-         this.field794 = this.field785 > 0 || IDirect3D.CheckDeviceMultiSampleType(this.field10246, this.field10238, this.field10265, this.field10242.C, true, 2) == 0;
-         this.field10256 = new boolean[this.field791];
-         this.field10250 = new boolean[this.field791];
-         this.field10239 = new boolean[this.field791];
-         this.field10253 = new class566[this.field791];
-         this.field10252 = new boolean[this.field791];
-         this.field10260 = new int[this.field791];
+         super.field793 = true;
+         super.field794 = super.field785 > 0 || IDirect3D.CheckDeviceMultiSampleType(this.field10246, this.field10238, this.field10265, this.field10242.C, true, 2) == 0;
+         this.field10256 = new boolean[super.field791];
+         this.field10250 = new boolean[super.field791];
+         this.field10239 = new boolean[super.field791];
+         this.field10253 = new class566[super.field791];
+         this.field10252 = new boolean[super.field791];
+         this.field10260 = new int[super.field791];
          class135 var12 = new class135();
          var12.method1019(1.0F, -1.0F, 0.5F);
          var12.method1018(0.0F, 0.0F, 0.5F);
@@ -103,18 +99,12 @@ public class class927 extends class325 {
          class583 var2 = (class583)var1;
          class319 var3 = var2.field318;
          var3.method482();
-         if (var3 == this.field8574) {
+         if (var3 == super.field8574) {
             var3.method485();
          }
       }
 
       super.method566();
-   }
-
-   public void method778(class344 var1, class344 var2, class344 var3) {
-      IDirect3DDevice.SetTransform(this.field10241, 256, var1.field325);
-      IDirect3DDevice.SetTransform(this.field10241, 2, var2.field325);
-      IDirect3DDevice.SetTransform(this.field10241, 3, var3.field325);
    }
 
    boolean method6205() {
@@ -139,7 +129,7 @@ public class class927 extends class325 {
          this.method565();
          this.field10242.I = 0;
          this.field10242.Z = 0;
-         if (method6217(this.field10238, this.field10265, this.field10246, this.field785, this.field10242)) {
+         if (method6217(this.field10238, this.field10265, this.field10246, super.field785, this.field10242)) {
             var2 = IDirect3DDevice.Reset(this.field10241, this.field10242);
             if (S.f(var2)) {
                this.method566();
@@ -154,27 +144,10 @@ public class class927 extends class325 {
       return false;
    }
 
-   void method707() {
-      if (this.field658) {
-         IDirect3DDevice.f(this.field10241, 137, this.field708 && !this.field726);
-      }
-
-   }
-
    public class305 method4795() {
       I var1 = new I();
       IDirect3D.GetAdapterIdentifier(this.field10246, this.field10238, 0, var1);
       return new class305(var1.D, "Direct3D", 9, var1.Z, var1.B);
-   }
-
-   void method6206() {
-      for(class568 var1 = this.field10245.method1281(2038971195); var1 != null; var1 = this.field10245.method1283((byte)3)) {
-         class583 var2 = (class583)var1;
-         class319 var3 = var2.field318;
-         var3.method484();
-      }
-
-      super.method565();
    }
 
    public void method4909() {
@@ -222,10 +195,6 @@ public class class927 extends class325 {
 
    }
 
-   class801 method733(int var1, int var2, boolean var3, int[] var4, int var5, int var6) {
-      return new class641(this, var1, var2, var3, var4, var5, var6);
-   }
-
    public float method574() {
       return -0.5F;
    }
@@ -235,41 +204,12 @@ public class class927 extends class325 {
    }
 
    void method602() {
-      if (this.field658) {
-         float var1 = this.field725 ? this.field808 : 0.0F;
-         float var2 = this.field725 ? -this.field737 : 0.0F;
-         D3DLIGHT.SetDiffuse(this.field10247, var1 * this.field806, var1 * this.field733, var1 * this.field734, 0.0F);
-         D3DLIGHT.SetDiffuse(this.field10261, var2 * this.field806, var2 * this.field733, var2 * this.field734, 0.0F);
+      if (super.field658) {
+         float var1 = super.field725 ? super.field808 : 0.0F;
+         float var2 = super.field725 ? -super.field737 : 0.0F;
+         D3DLIGHT.SetDiffuse(this.field10247, var1 * super.field806, var1 * super.field733, var1 * super.field734, 0.0F);
+         D3DLIGHT.SetDiffuse(this.field10261, var2 * super.field806, var2 * super.field733, var2 * super.field734, 0.0F);
          this.field10248 = false;
-      }
-
-   }
-
-   void method4900() {
-      super.method4846();
-      if (this.field10247 != 0L) {
-         D3DLIGHT.Destroy(this.field10247);
-         this.field10247 = 0L;
-      }
-
-      if (this.field10261 != 0L) {
-         D3DLIGHT.Destroy(this.field10261);
-         this.field10261 = 0L;
-      }
-
-      if (this.field10257 != 0L) {
-         D3DLIGHT.Destroy(this.field10257);
-         this.field10257 = 0L;
-      }
-
-      if (this.field10241 != 0L) {
-         IDirect3DDevice.Destroy(this.field10241);
-         this.field10241 = 0L;
-      }
-
-      if (this.field10246 != 0L) {
-         IUnknown.Release(this.field10246);
-         this.field10246 = 0L;
       }
 
    }
@@ -294,8 +234,8 @@ public class class927 extends class325 {
 
    void method606() {
       int var1;
-      for(var1 = 0; var1 < this.field740; ++var1) {
-         class639 var2 = this.field730[var1];
+      for(var1 = 0; var1 < super.field740; ++var1) {
+         class639 var2 = super.field730[var1];
          int var3 = var1 + 2;
          int var4 = var2.method5905(-1167524098);
          float var5 = var2.method5908(608404512) / 255.0F;
@@ -307,7 +247,7 @@ public class class927 extends class325 {
          IDirect3DDevice.LightEnable(this.field10241, var3, true);
       }
 
-      while(var1 < this.field739) {
+      while(var1 < super.field739) {
          IDirect3DDevice.LightEnable(this.field10241, var1 + 2, false);
          ++var1;
       }
@@ -320,9 +260,9 @@ public class class927 extends class325 {
       long var8 = IDirect3DDevice.CreateRenderTarget(this.field10241, var3, var4, 21, 0, 0, true);
       if (S.f(IDirect3DDevice.StretchRect(this.field10241, var6, var1, var2, var3, var4, var8, 0, 0, var3, var4, 1))) {
          var5 = new int[var3 * var4];
-         IDirect3DSurface.Download(var8, 0, 0, var3, var4, var3 * 4, 16, this.field661);
-         this.field660.clear();
-         this.field660.asIntBuffer().get(var5);
+         IDirect3DSurface.Download(var8, 0, 0, var3, var4, var3 * 4, 16, super.field661);
+         super.field660.clear();
+         super.field660.asIntBuffer().get(var5);
       }
 
       IUnknown.Release(var6);
@@ -333,35 +273,23 @@ public class class927 extends class325 {
    public void method5046() {
    }
 
-   void method765(boolean var1) {
-      IDirect3DDevice.f(this.field10241, 161, var1);
-   }
-
    public void method4831(int var1, int var2) {
       IDirect3DDevice.Clear(this.field10241, var1, var2, 1.0F, 0);
    }
 
    void method584() {
-      if (this.field8574 != null) {
-         IDirect3DDevice.SetViewport(this.field10241, this.field719 + this.field783, this.field720 + this.field716, this.field717, this.field683, this.field779, this.field702);
+      if (super.field8574 != null) {
+         IDirect3DDevice.SetViewport(this.field10241, super.field719 + super.field783, super.field720 + super.field716, super.field717, super.field683, super.field779, super.field702);
       }
 
    }
 
    void method585() {
-      IDirect3DDevice.SetScissorRect(this.field10241, this.field719 + this.field709, this.field720 + this.field707, this.field678, this.field685);
+      IDirect3DDevice.SetScissorRect(this.field10241, super.field719 + super.field709, super.field720 + super.field707, super.field678, super.field685);
    }
 
    void method586() {
-      IDirect3DDevice.f(this.field10241, 174, this.field698);
-   }
-
-   class801 method662(class264 var1, int var2, int var3, boolean var4, float[] var5, int var6, int var7) {
-      return new class641(this, var1, var2, var3, var4, var5, var6, var7);
-   }
-
-   void method759() {
-      IDirect3DDevice.f(this.field10241, 15, this.field753);
+      IDirect3DDevice.f(this.field10241, 174, super.field698);
    }
 
    public void method559(class344 var1, class344 var2, class344 var3) {
@@ -370,54 +298,21 @@ public class class927 extends class325 {
       IDirect3DDevice.SetTransform(this.field10241, 3, var3.field325);
    }
 
-   final class525 method667(boolean var1) {
-      return new class434(this, var1);
-   }
-
    void method599() {
-      IDirect3DDevice.f(this.field10241, 7, this.field723);
+      IDirect3DDevice.f(this.field10241, 7, super.field723);
    }
 
    void method600() {
-      if (this.field658) {
-         IDirect3DDevice.f(this.field10241, 137, this.field708 && !this.field726);
+      if (super.field658) {
+         IDirect3DDevice.f(this.field10241, 137, super.field708 && !super.field726);
       }
 
    }
 
    void method670() {
-      if (this.field658) {
-         D3DLIGHT.SetAmbient(this.field10247, this.field806 * this.field735, this.field733 * this.field735, this.field734 * this.field735, 0.0F);
+      if (super.field658) {
+         D3DLIGHT.SetAmbient(this.field10247, super.field806 * super.field735, super.field733 * super.field735, super.field734 * super.field735, 0.0F);
          this.field10248 = false;
-      }
-
-   }
-
-   void method4822() {
-      super.method4846();
-      if (this.field10247 != 0L) {
-         D3DLIGHT.Destroy(this.field10247);
-         this.field10247 = 0L;
-      }
-
-      if (this.field10261 != 0L) {
-         D3DLIGHT.Destroy(this.field10261);
-         this.field10261 = 0L;
-      }
-
-      if (this.field10257 != 0L) {
-         D3DLIGHT.Destroy(this.field10257);
-         this.field10257 = 0L;
-      }
-
-      if (this.field10241 != 0L) {
-         IDirect3DDevice.Destroy(this.field10241);
-         this.field10241 = 0L;
-      }
-
-      if (this.field10246 != 0L) {
-         IUnknown.Release(this.field10246);
-         this.field10246 = 0L;
       }
 
    }
@@ -432,7 +327,7 @@ public class class927 extends class325 {
    }
 
    void method579() {
-      if (this.field658 && !this.field10248) {
+      if (super.field658 && !this.field10248) {
          IDirect3DDevice.LightEnable(this.field10241, 0, false);
          IDirect3DDevice.LightEnable(this.field10241, 1, false);
          IDirect3DDevice.SetLight(this.field10241, 0, this.field10247);
@@ -442,10 +337,6 @@ public class class927 extends class325 {
          this.field10248 = true;
       }
 
-   }
-
-   class332 method603(class264 var1, int var2, int var3, int var4, boolean var5, byte[] var6) {
-      return new class565(this, var1, var2, var3, var4, var5, var6);
    }
 
    boolean method607(class264 var1, class482 var2) {
@@ -466,14 +357,6 @@ public class class927 extends class325 {
       return new class641(this, var1, var2, var3, var4, var5, var6);
    }
 
-   void method754() {
-      if (this.field658) {
-         int var1 = this.field10239[this.field769] ? method6227(this.field738[this.field769]) : 1;
-         IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, 1, var1);
-      }
-
-   }
-
    class801 method712(class264 var1, int var2, int var3, boolean var4, float[] var5, int var6, int var7) {
       return new class641(this, var1, var2, var3, var4, var5, var6, var7);
    }
@@ -487,34 +370,10 @@ public class class927 extends class325 {
       IDirect3DDevice.SetVertexShader(this.field10241, var1);
    }
 
-   final void method744(int var1, class557 var2, boolean var3) {
-      if (this.field658) {
-         int var4 = 0;
-         byte var5;
-         switch(var1) {
-         case 1:
-            var5 = 6;
-            break;
-         case 2:
-            var5 = 27;
-            break;
-         default:
-            var5 = 5;
-         }
-
-         if (var3) {
-            var4 |= 16;
-         }
-
-         IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, var5, method6213(var2) | var4);
-      }
-
-   }
-
    final void method6210(class40 var1) {
-      IDirect3DDevice.SetTexture(this.field10241, this.field769, var1.method3058());
-      if (this.field658 && !this.field10239[this.field769]) {
-         this.field10239[this.field769] = true;
+      IDirect3DDevice.SetTexture(this.field10241, super.field769, var1.method3058());
+      if (super.field658 && !this.field10239[super.field769]) {
+         this.field10239[super.field769] = true;
          this.method703();
          this.method631();
       }
@@ -604,30 +463,30 @@ public class class927 extends class325 {
    }
 
    void method681() {
-      if (this.field658) {
-         D3DLIGHT.SetDirection(this.field10247, -this.field727[0], -this.field727[1], -this.field727[2]);
-         D3DLIGHT.SetDirection(this.field10261, -this.field692[0], -this.field692[1], -this.field692[2]);
+      if (super.field658) {
+         D3DLIGHT.SetDirection(this.field10247, -super.field727[0], -super.field727[1], -super.field727[2]);
+         D3DLIGHT.SetDirection(this.field10261, -super.field692[0], -super.field692[1], -super.field692[2]);
          this.field10248 = false;
       }
 
    }
 
    void method745() {
-      if (this.field10243 == 0L && this.field749[this.field769] != class90.field551) {
-         if (this.field749[this.field769] == class90.field550) {
-            IDirect3DDevice.SetTransform(this.field10241, 16 + this.field769, this.field748[this.field769].method293(this.field10262));
+      if (this.field10243 == 0L && super.field749[super.field769] != class90.field551) {
+         if (super.field749[super.field769] == class90.field550) {
+            IDirect3DDevice.SetTransform(this.field10241, 16 + super.field769, super.field748[super.field769].method293(this.field10262));
          } else {
-            IDirect3DDevice.SetTransform(this.field10241, 16 + this.field769, this.field748[this.field769].method300(this.field10262));
+            IDirect3DDevice.SetTransform(this.field10241, 16 + super.field769, super.field748[super.field769].method300(this.field10262));
          }
 
-         int var1 = method6214(this.field749[this.field769]);
-         if (var1 != this.field10260[this.field769]) {
-            IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, 24, var1);
-            this.field10260[this.field769] = var1;
+         int var1 = method6214(super.field749[super.field769]);
+         if (var1 != this.field10260[super.field769]) {
+            IDirect3DDevice.SetTextureStageState(this.field10241, super.field769, 24, var1);
+            this.field10260[super.field769] = var1;
          }
       } else {
-         IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, 24, 0);
-         this.field10260[this.field769] = 0;
+         IDirect3DDevice.SetTextureStageState(this.field10241, super.field769, 24, 0);
+         this.field10260[super.field769] = 0;
       }
 
    }
@@ -640,15 +499,15 @@ public class class927 extends class325 {
    }
 
    void method703() {
-      if (this.field658) {
-         int var1 = this.field10239[this.field769] ? method6227(this.field751[this.field769]) : 1;
-         IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, 4, var1);
+      if (super.field658) {
+         int var1 = this.field10239[super.field769] ? method6227(super.field751[super.field769]) : 1;
+         IDirect3DDevice.SetTextureStageState(this.field10241, super.field769, 4, var1);
       }
 
    }
 
    final void method686(int var1, class557 var2, boolean var3, boolean var4) {
-      if (this.field658) {
+      if (super.field658) {
          int var5 = 0;
          byte var6;
          switch(var1) {
@@ -670,13 +529,13 @@ public class class927 extends class325 {
             var5 |= 16;
          }
 
-         IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, var6, method6213(var2) | var5);
+         IDirect3DDevice.SetTextureStageState(this.field10241, super.field769, var6, method6213(var2) | var5);
       }
 
    }
 
    final void method623(int var1, class557 var2, boolean var3) {
-      if (this.field658) {
+      if (super.field658) {
          int var4 = 0;
          byte var5;
          switch(var1) {
@@ -694,24 +553,24 @@ public class class927 extends class325 {
             var4 |= 16;
          }
 
-         IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, var5, method6213(var2) | var4);
+         IDirect3DDevice.SetTextureStageState(this.field10241, super.field769, var5, method6213(var2) | var4);
       }
 
    }
 
    final void method628() {
-      if (this.field658) {
-         IDirect3DDevice.SetRenderState(this.field10241, 60, this.field718);
+      if (super.field658) {
+         IDirect3DDevice.SetRenderState(this.field10241, 60, super.field718);
       }
 
    }
 
    static final int method6212(class264 var0, class482 var1) {
-      switch(var1.field8405 * -1857088243) {
+      switch(var1.field8405) {
       case 1:
-         switch(var0.field8200 * -976336893) {
+         switch(var0.field8200) {
          case 0:
-            return A.y * 285928237;
+            return A.y;
          case 1:
             return 50;
          case 2:
@@ -727,7 +586,7 @@ public class class927 extends class325 {
          case 7:
             return 28;
          case 8:
-            return A.z * 368340649;
+            return A.z;
          case 9:
             return 21;
          }
@@ -786,11 +645,11 @@ public class class927 extends class325 {
    }
 
    void method634() {
-      IDirect3DDevice.f(this.field10241, 15, this.field753);
+      IDirect3DDevice.f(this.field10241, 15, super.field753);
    }
 
    void method635() {
-      switch(this.field712.field2151) {
+      switch(super.field712.field2151) {
       case 0:
          IDirect3DDevice.SetRenderState(this.field10241, 19, 5);
          IDirect3DDevice.SetRenderState(this.field10241, 20, 6);
@@ -808,7 +667,7 @@ public class class927 extends class325 {
          IDirect3DDevice.SetRenderState(this.field10241, 20, 1);
       }
 
-      switch(this.field810) {
+      switch(super.field810) {
       case 0:
          IDirect3DDevice.SetRenderState(this.field10241, 207, 1);
          IDirect3DDevice.SetRenderState(this.field10241, 208, 1);
@@ -825,27 +684,27 @@ public class class927 extends class325 {
    }
 
    void method564() {
-      IDirect3DDevice.f(this.field10241, 27, this.field689);
+      IDirect3DDevice.f(this.field10241, 27, super.field689);
    }
 
    void method638() {
-      if (this.field658) {
-         IDirect3DDevice.f(this.field10241, 28, this.field775 && this.field722 && this.field677 >= 0);
+      if (super.field658) {
+         IDirect3DDevice.f(this.field10241, 28, super.field775 && super.field722 && super.field677 >= 0);
       }
 
    }
 
    void method637() {
-      this.field780 = this.field752 - (float)this.field778;
-      this.field736 = this.field780 - (float)this.field677;
-      if (this.field736 < this.field705) {
-         this.field736 = this.field705;
+      super.field780 = super.field752 - (float)super.field778;
+      super.field736 = super.field780 - (float)super.field677;
+      if (super.field736 < super.field705) {
+         super.field736 = super.field705;
       }
 
-      if (this.field658) {
-         IDirect3DDevice.a(this.field10241, 36, this.field736);
-         IDirect3DDevice.a(this.field10241, 37, this.field780);
-         IDirect3DDevice.SetRenderState(this.field10241, 34, this.field776);
+      if (super.field658) {
+         IDirect3DDevice.a(this.field10241, 36, super.field736);
+         IDirect3DDevice.a(this.field10241, 37, super.field780);
+         IDirect3DDevice.SetRenderState(this.field10241, 34, super.field776);
       }
 
    }
@@ -916,24 +775,24 @@ public class class927 extends class325 {
 
    void method4797(int var1, int var2) throws class937 {
       IDirect3DDevice.EndScene(this.field10241);
-      int var3 = this.field8594.method2516();
+      int var3 = super.field8594.method2516();
       if (S.a(var3)) {
          if (var3 != -2005530520) {
             if (++this.field10244 > 50) {
                throw new class937();
             }
          } else {
-            this.field8594.method2488();
+            super.field8594.method2488();
             this.method6205();
-            ((class468)this.field8594).method482();
+            ((class468)super.field8594).method482();
          }
       } else {
          this.field10244 = 0;
       }
 
       IDirect3DDevice.BeginScene(this.field10241);
-      if (this.field8581 != null) {
-         this.field8581.method4627(1832776927);
+      if (super.field8581 != null) {
+         super.field8581.method4627(1832776927);
       }
 
    }
@@ -946,10 +805,6 @@ public class class927 extends class325 {
       } else {
          throw new IllegalArgumentException("");
       }
-   }
-
-   public class893 method5034(int var1, int var2) {
-      return new class136(this, class482.field8401, var1, var2);
    }
 
    void method653(int var1) {
@@ -1015,518 +870,27 @@ public class class927 extends class325 {
    }
 
    void method631() {
-      if (this.field658) {
-         int var1 = this.field10239[this.field769] ? method6227(this.field738[this.field769]) : 1;
-         IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, 1, var1);
+      if (super.field658) {
+         int var1 = this.field10239[super.field769] ? method6227(super.field738[super.field769]) : 1;
+         IDirect3DDevice.SetTextureStageState(this.field10241, super.field769, 1, var1);
       }
 
-   }
-
-   public class305 method4892() {
-      I var1 = new I();
-      IDirect3D.GetAdapterIdentifier(this.field10246, this.field10238, 0, var1);
-      return new class305(var1.D, "Direct3D", 9, var1.Z, var1.B);
-   }
-
-   static class848 method6219(Canvas var0, class478 var1, class180 var2, Integer var3) {
-      class927 var4 = null;
-
-      try {
-         byte var5 = 0;
-         byte var6 = 1;
-         long var7 = IDirect3D.Direct3DCreate();
-         Z var9 = new Z();
-         IDirect3D.GetDeviceCaps(var7, var5, var6, var9);
-         if ((var9.E & 16777216) == 0) {
-            throw new RuntimeException("");
-         } else if (var9.II < 2) {
-            throw new RuntimeException("");
-         } else if ((var9.w & 2) == 0) {
-            throw new RuntimeException("");
-         } else if ((var9.w & 8) == 0) {
-            throw new RuntimeException("");
-         } else if ((var9.w & 64) == 0) {
-            throw new RuntimeException("");
-         } else if ((var9.w & 512) == 0) {
-            throw new RuntimeException("");
-         } else if ((var9.w & 33554432) == 0) {
-            throw new RuntimeException("");
-         } else if ((var9.H & var9.K & 16) == 0) {
-            throw new RuntimeException("");
-         } else if ((var9.H & var9.K & 32) == 0) {
-            throw new RuntimeException("");
-         } else if ((var9.H & var9.K & 2) == 0) {
-            throw new RuntimeException("");
-         } else if (var9.CI > 0 && var9.CI < 2) {
-            throw new RuntimeException("");
-         } else if (var9.EI < 5) {
-            throw new RuntimeException("");
-         } else {
-            B var10 = new B(var0);
-            var10.A = true;
-            var10.E = true;
-            var10.I = var0.getWidth();
-            var10.Z = var0.getHeight();
-            var10.B = 1;
-            var10.L = Integer.MIN_VALUE;
-            if (!method6217(var5, var6, var7, var3.intValue(), var10)) {
-               throw new RuntimeException("");
-            } else {
-               int var11 = 0;
-               if ((var9.S & 1048576) != 0) {
-                  var11 |= 16;
-               }
-
-               long var12 = 0L;
-
-               try {
-                  var12 = IDirect3D.CreateDeviceContext(var7, var5, var6, var0, var11 | 64, var10);
-               } catch (u var16) {
-                  var12 = IDirect3D.CreateDeviceContext(var7, var5, var6, var0, var11 & -1048577 | 32, var10);
-               }
-
-               var4 = new class927(var5, var6, var7, var12, var10, var9, var1, var2, var3.intValue());
-               if (!var4.field8595.containsKey(var0)) {
-                  class977.method1815(var0, (short)20418);
-                  var4.method5017(var0, new class468(var4, var0, var0.getWidth(), var0.getHeight(), true), (byte)-30);
-               }
-
-               var4.method4816(var0, (byte)-26);
-               var4.method561();
-               return var4;
-            }
-         }
-      } catch (RuntimeException var17) {
-         if (var4 != null) {
-            var4.method4846();
-         }
-
-         throw var17;
-      }
-   }
-
-   void method4894(int var1, int var2) throws class937 {
-      IDirect3DDevice.EndScene(this.field10241);
-      int var3 = this.field8594.method2516();
-      if (S.a(var3)) {
-         if (var3 != -2005530520) {
-            if (++this.field10244 > 50) {
-               throw new class937();
-            }
-         } else {
-            this.field8594.method2488();
-            this.method6205();
-            ((class468)this.field8594).method482();
-         }
-      } else {
-         this.field10244 = 0;
-      }
-
-      IDirect3DDevice.BeginScene(this.field10241);
-      if (this.field8581 != null) {
-         this.field8581.method4627(-50250813);
-      }
-
-   }
-
-   void method4895(int var1, int var2) throws class937 {
-      IDirect3DDevice.EndScene(this.field10241);
-      int var3 = this.field8594.method2516();
-      if (S.a(var3)) {
-         if (var3 != -2005530520) {
-            if (++this.field10244 > 50) {
-               throw new class937();
-            }
-         } else {
-            this.field8594.method2488();
-            this.method6205();
-            ((class468)this.field8594).method482();
-         }
-      } else {
-         this.field10244 = 0;
-      }
-
-      IDirect3DDevice.BeginScene(this.field10241);
-      if (this.field8581 != null) {
-         this.field8581.method4627(275079271);
-      }
-
-   }
-
-   public void method4896() {
-      long var1 = IDirect3DDevice.CreateEventQuery(this.field10241);
-      if (S.f(IDirect3DEventQuery.Issue(var1))) {
-         while(true) {
-            int var3 = IDirect3DEventQuery.IsSignaled(var1);
-            if (var3 != 1) {
-               break;
-            }
-
-            Thread.yield();
-         }
-      }
-
-      IUnknown.Release(var1);
-   }
-
-   public void method4897() {
-      long var1 = IDirect3DDevice.CreateEventQuery(this.field10241);
-      if (S.f(IDirect3DEventQuery.Issue(var1))) {
-         while(true) {
-            int var3 = IDirect3DEventQuery.IsSignaled(var1);
-            if (var3 != 1) {
-               break;
-            }
-
-            Thread.yield();
-         }
-      }
-
-      IUnknown.Release(var1);
-   }
-
-   final class525 method767(boolean var1) {
-      return new class434(this, var1);
-   }
-
-   void method5007() {
-      super.method4846();
-      if (this.field10247 != 0L) {
-         D3DLIGHT.Destroy(this.field10247);
-         this.field10247 = 0L;
-      }
-
-      if (this.field10261 != 0L) {
-         D3DLIGHT.Destroy(this.field10261);
-         this.field10261 = 0L;
-      }
-
-      if (this.field10257 != 0L) {
-         D3DLIGHT.Destroy(this.field10257);
-         this.field10257 = 0L;
-      }
-
-      if (this.field10241 != 0L) {
-         IDirect3DDevice.Destroy(this.field10241);
-         this.field10241 = 0L;
-      }
-
-      if (this.field10246 != 0L) {
-         IUnknown.Release(this.field10246);
-         this.field10246 = 0L;
-      }
-
-   }
-
-   void method6220() {
-      for(class568 var1 = this.field10245.method1281(1899920069); var1 != null; var1 = this.field10245.method1283((byte)-58)) {
-         class583 var2 = (class583)var1;
-         class319 var3 = var2.field318;
-         var3.method482();
-         if (var3 == this.field8574) {
-            var3.method485();
-         }
-      }
-
-      super.method566();
-   }
-
-   void method740() {
-      if (this.field8574 != null) {
-         IDirect3DDevice.SetViewport(this.field10241, this.field719 + this.field783, this.field720 + this.field716, this.field717, this.field683, this.field779, this.field702);
-      }
-
-   }
-
-   public final synchronized void method5044(int var1) {
-      for(int var2 = 0; var2 < this.field10264; ++var2) {
-         IUnknown.Release(this.field10249[var2]);
-      }
-
-      this.field10264 = 0;
-      super.method4801(var1);
-   }
-
-   public void method4825(boolean var1) {
-   }
-
-   public void method4920(boolean var1) {
-   }
-
-   class749 method4974(Canvas var1, int var2, int var3) {
-      return new class468(this, var1, var2, var3, false);
-   }
-
-   public int[] method4813(int var1, int var2, int var3, int var4) {
-      int[] var5 = null;
-      long var6 = IDirect3DDevice.GetRenderTarget(this.field10241, 0);
-      long var8 = IDirect3DDevice.CreateRenderTarget(this.field10241, var3, var4, 21, 0, 0, true);
-      if (S.f(IDirect3DDevice.StretchRect(this.field10241, var6, var1, var2, var3, var4, var8, 0, 0, var3, var4, 1))) {
-         var5 = new int[var3 * var4];
-         IDirect3DSurface.Download(var8, 0, 0, var3, var4, var3 * 4, 16, this.field661);
-         this.field660.clear();
-         this.field660.asIntBuffer().get(var5);
-      }
-
-      IUnknown.Release(var6);
-      IUnknown.Release(var8);
-      return var5;
-   }
-
-   public int[] method4918(int var1, int var2, int var3, int var4) {
-      int[] var5 = null;
-      long var6 = IDirect3DDevice.GetRenderTarget(this.field10241, 0);
-      long var8 = IDirect3DDevice.CreateRenderTarget(this.field10241, var3, var4, 21, 0, 0, true);
-      if (S.f(IDirect3DDevice.StretchRect(this.field10241, var6, var1, var2, var3, var4, var8, 0, 0, var3, var4, 1))) {
-         var5 = new int[var3 * var4];
-         IDirect3DSurface.Download(var8, 0, 0, var3, var4, var3 * 4, 16, this.field661);
-         this.field660.clear();
-         this.field660.asIntBuffer().get(var5);
-      }
-
-      IUnknown.Release(var6);
-      IUnknown.Release(var8);
-      return var5;
-   }
-
-   public void method4914() {
-   }
-
-   public void method4935(int var1, int var2) {
-      IDirect3DDevice.Clear(this.field10241, var1, var2, 1.0F, 0);
-   }
-
-   public void method5023(int var1, int var2) {
-      IDirect3DDevice.Clear(this.field10241, var1, var2, 1.0F, 0);
-   }
-
-   public void method4937(int var1, int var2) {
-      IDirect3DDevice.Clear(this.field10241, var1, var2, 1.0F, 0);
-   }
-
-   public void method4938(int var1, int var2) {
-      IDirect3DDevice.Clear(this.field10241, var1, var2, 1.0F, 0);
-   }
-
-   public class621 method4794(class621 var1, class621 var2, float var3, class621 var4) {
-      return var3 < 0.5F ? var1 : var2;
-   }
-
-   public boolean method682() {
-      return (this.field10258.LI & '\uffff') >= 257;
-   }
-
-   public class806 method5004() {
-      return new class225(this);
-   }
-
-   void method6221() {
-      super.finalize();
-   }
-
-   public boolean method644() {
-      return (this.field10258.HI & '\uffff') >= 257;
    }
 
    public class806 method4942() {
       return new class225(this);
    }
 
-   public boolean method683() {
-      return (this.field10258.LI & '\uffff') >= 257;
-   }
-
    void method669() {
-      IDirect3DDevice.f(this.field10241, 14, this.field721 && this.field681);
+      IDirect3DDevice.f(this.field10241, 14, super.field721 && super.field681);
    }
 
    public boolean method554() {
       return (this.field10258.HI & '\uffff') >= 257;
    }
 
-   void method6222() {
-      for(int var1 = 0; var1 < this.field791; ++var1) {
-         IDirect3DDevice.SetSamplerState(this.field10241, var1, 7, 2);
-         IDirect3DDevice.SetSamplerState(this.field10241, var1, 6, 2);
-         IDirect3DDevice.SetSamplerState(this.field10241, var1, 5, 2);
-         IDirect3DDevice.SetSamplerState(this.field10241, var1, 1, 1);
-         IDirect3DDevice.SetSamplerState(this.field10241, var1, 2, 1);
-         this.field10253[var1] = class566.field624;
-         boolean[] var2 = this.field10256;
-         this.field10250[var1] = true;
-         var2[var1] = true;
-         this.field10252[var1] = false;
-         this.field10260[var1] = 0;
-      }
-
-      IDirect3DDevice.SetTextureStageState(this.field10241, 0, 6, 1);
-      IDirect3DDevice.SetRenderState(this.field10241, 9, 2);
-      IDirect3DDevice.SetRenderState(this.field10241, 23, 4);
-      IDirect3DDevice.SetRenderState(this.field10241, 25, 5);
-      IDirect3DDevice.SetRenderState(this.field10241, 24, 0);
-      IDirect3DDevice.SetRenderState(this.field10241, 22, 2);
-      IDirect3DDevice.SetRenderState(this.field10241, 147, 1);
-      IDirect3DDevice.SetRenderState(this.field10241, 145, 1);
-      IDirect3DDevice.a(this.field10241, 38, 0.95F);
-      IDirect3DDevice.SetRenderState(this.field10241, 35, 3);
-      IDirect3DDevice.a(this.field10241, 154, 1.0F);
-      D3DLIGHT.SetType(this.field10247, 3);
-      D3DLIGHT.SetType(this.field10261, 3);
-      D3DLIGHT.SetType(this.field10257, 1);
-      IDirect3DDevice.SetRenderState(this.field10241, 206, 1);
-      this.field10248 = false;
-      super.method722();
-   }
-
-   void method6223() {
-      for(class568 var1 = this.field10245.method1281(2106468652); var1 != null; var1 = this.field10245.method1283((byte)-100)) {
-         class583 var2 = (class583)var1;
-         class319 var3 = var2.field318;
-         var3.method484();
-      }
-
-      super.method565();
-   }
-
-   class92 method706(class39[] var1) {
-      return new class116(this, var1);
-   }
-
-   void method6224() {
-      for(class568 var1 = this.field10245.method1281(2053650484); var1 != null; var1 = this.field10245.method1283((byte)-111)) {
-         class583 var2 = (class583)var1;
-         class319 var3 = var2.field318;
-         var3.method484();
-      }
-
-      super.method565();
-   }
-
-   void method688() {
-      IDirect3DDevice.f(this.field10241, 174, this.field698);
-   }
-
-   void method6225() {
-      for(class568 var1 = this.field10245.method1281(1978045823); var1 != null; var1 = this.field10245.method1283((byte)-62)) {
-         class583 var2 = (class583)var1;
-         class319 var3 = var2.field318;
-         var3.method482();
-         if (var3 == this.field8574) {
-            var3.method485();
-         }
-      }
-
-      super.method566();
-   }
-
-   void method6226() {
-      for(class568 var1 = this.field10245.method1281(2005791940); var1 != null; var1 = this.field10245.method1283((byte)-120)) {
-         class583 var2 = (class583)var1;
-         class319 var3 = var2.field318;
-         var3.method482();
-         if (var3 == this.field8574) {
-            var3.method485();
-         }
-      }
-
-      super.method566();
-   }
-
-   public float method693() {
-      return -0.5F;
-   }
-
-   public float method694() {
-      return -0.5F;
-   }
-
-   public float method695() {
-      return -0.5F;
-   }
-
-   void method756() {
-      if (this.field658) {
-         int var1 = this.field10239[this.field769] ? method6227(this.field751[this.field769]) : 1;
-         IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, 4, var1);
-      }
-
-   }
-
-   void method562() {
-      IDirect3DDevice.SetScissorRect(this.field10241, this.field719 + this.field709, this.field720 + this.field707, this.field678, this.field685);
-   }
-
-   void method699() {
-      IDirect3DDevice.f(this.field10241, 174, this.field698);
-   }
-
    protected void finalize() {
       super.finalize();
-   }
-
-   void method701() {
-      IDirect3DDevice.f(this.field10241, 174, this.field698);
-   }
-
-   public void method704(class344 var1) {
-      var1.method271(this.field10255);
-   }
-
-   public void method705(class344 var1) {
-      var1.method271(this.field10255);
-   }
-
-   void method710() {
-      IDirect3DDevice.f(this.field10241, 7, this.field723);
-   }
-
-   public final void method621(class427 var1, int var2, int var3, int var4, int var5) {
-      if (this.field10254 != null) {
-         this.field10254.method3249();
-      }
-
-      IDirect3DDevice.DrawIndexedPrimitive(this.field10241, method6233(var1), 0, var2, var3, var4, var5);
-   }
-
-   void method713() {
-      IDirect3DDevice.f(this.field10241, 14, this.field721 && this.field681);
-   }
-
-   void method671() {
-      if (this.field658) {
-         IDirect3DDevice.f(this.field10241, 28, this.field775 && this.field722 && this.field677 >= 0);
-      }
-
-   }
-
-   void method715() {
-      if (this.field658) {
-         D3DLIGHT.SetAmbient(this.field10247, this.field806 * this.field735, this.field733 * this.field735, this.field734 * this.field735, 0.0F);
-         this.field10248 = false;
-      }
-
-   }
-
-   void method691() {
-      if (this.field658) {
-         D3DLIGHT.SetAmbient(this.field10247, this.field806 * this.field735, this.field733 * this.field735, this.field734 * this.field735, 0.0F);
-         this.field10248 = false;
-      }
-
-   }
-
-   void method696() {
-      if (this.field658) {
-         D3DLIGHT.SetAmbient(this.field10247, this.field806 * this.field735, this.field733 * this.field735, this.field734 * this.field735, 0.0F);
-         this.field10248 = false;
-      }
-
-   }
-
-   public class305 method4893() {
-      I var1 = new I();
-      IDirect3D.GetAdapterIdentifier(this.field10246, this.field10238, 0, var1);
-      return new class305(var1.D, "Direct3D", 9, var1.Z, var1.B);
    }
 
    static final int method6227(class584 var0) {
@@ -1546,159 +910,6 @@ public class class927 extends class325 {
       }
    }
 
-   void method664() {
-      if (this.field658) {
-         D3DLIGHT.SetDirection(this.field10247, -this.field727[0], -this.field727[1], -this.field727[2]);
-         D3DLIGHT.SetDirection(this.field10261, -this.field692[0], -this.field692[1], -this.field692[2]);
-         this.field10248 = false;
-      }
-
-   }
-
-   void method668(class920 var1) {
-      IDirect3DDevice.SetIndices(this.field10241, ((class94)var1).field568);
-   }
-
-   void method718() {
-      if (this.field658) {
-         D3DLIGHT.SetDirection(this.field10247, -this.field727[0], -this.field727[1], -this.field727[2]);
-         D3DLIGHT.SetDirection(this.field10261, -this.field692[0], -this.field692[1], -this.field692[2]);
-         this.field10248 = false;
-      }
-
-   }
-
-   void method601() {
-      if (this.field658) {
-         D3DLIGHT.SetDirection(this.field10247, -this.field727[0], -this.field727[1], -this.field727[2]);
-         D3DLIGHT.SetDirection(this.field10261, -this.field692[0], -this.field692[1], -this.field692[2]);
-         this.field10248 = false;
-      }
-
-   }
-
-   void method719() {
-      if (this.field658 && !this.field10248) {
-         IDirect3DDevice.LightEnable(this.field10241, 0, false);
-         IDirect3DDevice.LightEnable(this.field10241, 1, false);
-         IDirect3DDevice.SetLight(this.field10241, 0, this.field10247);
-         IDirect3DDevice.SetLight(this.field10241, 1, this.field10261);
-         IDirect3DDevice.LightEnable(this.field10241, 0, true);
-         IDirect3DDevice.LightEnable(this.field10241, 1, true);
-         this.field10248 = true;
-      }
-
-   }
-
-   void method746() {
-      this.method602();
-      this.method579();
-   }
-
-   void method659() {
-      int var1;
-      for(var1 = 0; var1 < this.field740; ++var1) {
-         class639 var2 = this.field730[var1];
-         int var3 = var1 + 2;
-         int var4 = var2.method5905(-1228810857);
-         float var5 = var2.method5908(608404512) / 255.0F;
-         D3DLIGHT.SetPosition(this.field10257, (float)var2.method5902(823958259), (float)var2.method5901(-1567954297), (float)var2.method5904((byte)5));
-         D3DLIGHT.SetDiffuse(this.field10257, (float)(var4 >> 16 & 255) * var5, (float)(var4 >> 8 & 255) * var5, (float)(var4 & 255) * var5, 0.0F);
-         D3DLIGHT.SetAttenuation(this.field10257, 0.0F, 0.0F, 1.0F / (float)(var2.method5907(-62352346) * var2.method5907(-235041618)));
-         D3DLIGHT.SetRange(this.field10257, (float)var2.method5907(-970124596));
-         IDirect3DDevice.SetLight(this.field10241, var3, this.field10257);
-         IDirect3DDevice.LightEnable(this.field10241, var3, true);
-      }
-
-      while(var1 < this.field739) {
-         IDirect3DDevice.LightEnable(this.field10241, var1 + 2, false);
-         ++var1;
-      }
-
-   }
-
-   void method4899() {
-      super.method4846();
-      if (this.field10247 != 0L) {
-         D3DLIGHT.Destroy(this.field10247);
-         this.field10247 = 0L;
-      }
-
-      if (this.field10261 != 0L) {
-         D3DLIGHT.Destroy(this.field10261);
-         this.field10261 = 0L;
-      }
-
-      if (this.field10257 != 0L) {
-         D3DLIGHT.Destroy(this.field10257);
-         this.field10257 = 0L;
-      }
-
-      if (this.field10241 != 0L) {
-         IDirect3DDevice.Destroy(this.field10241);
-         this.field10241 = 0L;
-      }
-
-      if (this.field10246 != 0L) {
-         IUnknown.Release(this.field10246);
-         this.field10246 = 0L;
-      }
-
-   }
-
-   boolean method721(class264 var1, class482 var2) {
-      C var3 = new C();
-      return S.f(IDirect3D.GetAdapterDisplayMode(this.field10246, this.field10238, var3)) && S.f(IDirect3D.CheckDeviceFormat(this.field10246, this.field10238, this.field10265, var3.B, 0, 3, method6212(var1, var2)));
-   }
-
-   boolean method569(class264 var1, class482 var2) {
-      C var3 = new C();
-      return S.f(IDirect3D.GetAdapterDisplayMode(this.field10246, this.field10238, var3)) && S.f(IDirect3D.CheckDeviceFormat(this.field10246, this.field10238, this.field10265, var3.B, 0, 4, method6212(var1, var2)));
-   }
-
-   boolean method724(class264 var1, class482 var2) {
-      C var3 = new C();
-      return S.f(IDirect3D.GetAdapterDisplayMode(this.field10246, this.field10238, var3)) && S.f(IDirect3D.CheckDeviceFormat(this.field10246, this.field10238, this.field10265, var3.B, 0, 4, method6212(var1, var2)));
-   }
-
-   boolean method723(class264 var1, class482 var2) {
-      C var3 = new C();
-      return S.f(IDirect3D.GetAdapterDisplayMode(this.field10246, this.field10238, var3)) && S.f(IDirect3D.CheckDeviceFormat(this.field10246, this.field10238, this.field10265, var3.B, 0, 4, method6212(var1, var2)));
-   }
-
-   boolean method725(class264 var1, class482 var2) {
-      C var3 = new C();
-      return S.f(IDirect3D.GetAdapterDisplayMode(this.field10246, this.field10238, var3)) && S.f(IDirect3D.CheckDeviceFormat(this.field10246, this.field10238, this.field10265, var3.B, 0, 4, method6212(var1, var2)));
-   }
-
-   class801 method692(class264 var1, class482 var2, int var3, int var4) {
-      return new class641(this, var1, var2, var3, var4);
-   }
-
-   class801 method727(class264 var1, int var2, int var3, boolean var4, byte[] var5, int var6, int var7) {
-      return new class641(this, var1, var2, var3, var4, var5, var6, var7);
-   }
-
-   class801 method629(class264 var1, int var2, int var3, boolean var4, byte[] var5, int var6, int var7) {
-      return new class641(this, var1, var2, var3, var4, var5, var6, var7);
-   }
-
-   class801 method774(class264 var1, int var2, int var3, boolean var4, byte[] var5, int var6, int var7) {
-      return new class641(this, var1, var2, var3, var4, var5, var6, var7);
-   }
-
-   class801 method729(class264 var1, int var2, int var3, boolean var4, float[] var5, int var6, int var7) {
-      return new class641(this, var1, var2, var3, var4, var5, var6, var7);
-   }
-
-   class801 method730(class264 var1, int var2, int var3, boolean var4, float[] var5, int var6, int var7) {
-      return new class641(this, var1, var2, var3, var4, var5, var6, var7);
-   }
-
-   class801 method731(class264 var1, int var2, int var3, boolean var4, float[] var5, int var6, int var7) {
-      return new class641(this, var1, var2, var3, var4, var5, var6, var7);
-   }
-
    void method565() {
       for(class568 var1 = this.field10245.method1281(1665102883); var1 != null; var1 = this.field10245.method1283((byte)-18)) {
          class583 var2 = (class583)var1;
@@ -1709,192 +920,22 @@ public class class927 extends class325 {
       super.method565();
    }
 
-   public final void method772(class427 var1, int var2, int var3) {
-      if (this.field10254 != null) {
-         this.field10254.method3249();
-      }
-
-      IDirect3DDevice.DrawPrimitive(this.field10241, method6233(var1), var2, var3);
-   }
-
    final void method6228(class641 var1) {
       this.method6210(var1);
-      if (this.field10256[this.field769] != var1.field10191) {
-         IDirect3DDevice.SetSamplerState(this.field10241, this.field769, 1, var1.field10191 ? 1 : 3);
-         this.field10256[this.field769] = var1.field10191;
+      if (this.field10256[super.field769] != var1.field10191) {
+         IDirect3DDevice.SetSamplerState(this.field10241, super.field769, 1, var1.field10191 ? 1 : 3);
+         this.field10256[super.field769] = var1.field10191;
       }
 
-      if (this.field10250[this.field769] != var1.field10192) {
-         IDirect3DDevice.SetSamplerState(this.field10241, this.field769, 2, var1.field10192 ? 1 : 3);
-         this.field10250[this.field769] = var1.field10192;
+      if (this.field10250[super.field769] != var1.field10192) {
+         IDirect3DDevice.SetSamplerState(this.field10241, super.field769, 2, var1.field10192 ? 1 : 3);
+         this.field10250[super.field769] = var1.field10192;
       }
 
-   }
-
-   void method751() {
-   }
-
-   public class223 method784(String var1) {
-      byte[] var2 = this.method6215(var1);
-      if (var2 == null) {
-         return null;
-      } else {
-         class222 var3 = this.method558(var2);
-         return new class132(this, var3);
-      }
-   }
-
-   public boolean method684() {
-      return (this.field10258.LI & '\uffff') >= 257;
-   }
-
-   class332 method737(class264 var1, int var2, int var3, int var4, boolean var5, byte[] var6) {
-      return new class565(this, var1, var2, var3, var4, var5, var6);
-   }
-
-   class33 method738(class264 var1, class482 var2, int var3, int var4) {
-      return new class694(this, var1, var2, var3, var4);
-   }
-
-   void method716() {
-      if (this.field658) {
-         float var1 = this.field725 ? this.field808 : 0.0F;
-         float var2 = this.field725 ? -this.field737 : 0.0F;
-         D3DLIGHT.SetDiffuse(this.field10247, var1 * this.field806, var1 * this.field733, var1 * this.field734, 0.0F);
-         D3DLIGHT.SetDiffuse(this.field10261, var2 * this.field806, var2 * this.field733, var2 * this.field734, 0.0F);
-         this.field10248 = false;
-      }
-
-   }
-
-   class33 method672(class264 var1, class482 var2, int var3, int var4) {
-      return new class694(this, var1, var2, var3, var4);
-   }
-
-   public void method739() {
-      if (this.field10239[this.field769]) {
-         this.field10239[this.field769] = false;
-         IDirect3DDevice.SetTexture(this.field10241, this.field769, 0L);
-         this.method703();
-         this.method631();
-      }
-
-   }
-
-   final void method741(int var1, class557 var2, boolean var3, boolean var4) {
-      if (this.field658) {
-         int var5 = 0;
-         byte var6;
-         switch(var1) {
-         case 1:
-            var6 = 3;
-            break;
-         case 2:
-            var6 = 26;
-            break;
-         default:
-            var6 = 2;
-         }
-
-         if (var3) {
-            var5 |= 32;
-         }
-
-         if (var4) {
-            var5 |= 16;
-         }
-
-         IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, var6, method6213(var2) | var5);
-      }
-
-   }
-
-   final void method578(int var1, class557 var2, boolean var3, boolean var4) {
-      if (this.field658) {
-         int var5 = 0;
-         byte var6;
-         switch(var1) {
-         case 1:
-            var6 = 3;
-            break;
-         case 2:
-            var6 = 26;
-            break;
-         default:
-            var6 = 2;
-         }
-
-         if (var3) {
-            var5 |= 32;
-         }
-
-         if (var4) {
-            var5 |= 16;
-         }
-
-         IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, var6, method6213(var2) | var5);
-      }
-
-   }
-
-   void method717() {
-      if (this.field658) {
-         D3DLIGHT.SetDirection(this.field10247, -this.field727[0], -this.field727[1], -this.field727[2]);
-         D3DLIGHT.SetDirection(this.field10261, -this.field692[0], -this.field692[1], -this.field692[2]);
-         this.field10248 = false;
-      }
-
-   }
-
-   final void method747() {
-      if (this.field658) {
-         IDirect3DDevice.SetRenderState(this.field10241, 60, this.field718);
-      }
-
-   }
-
-   final void method748() {
-      if (this.field658) {
-         IDirect3DDevice.SetRenderState(this.field10241, 60, this.field718);
-      }
-
-   }
-
-   void method749() {
-      if (this.field10243 == 0L && this.field749[this.field769] != class90.field551) {
-         if (this.field749[this.field769] == class90.field550) {
-            IDirect3DDevice.SetTransform(this.field10241, 16 + this.field769, this.field748[this.field769].method293(this.field10262));
-         } else {
-            IDirect3DDevice.SetTransform(this.field10241, 16 + this.field769, this.field748[this.field769].method300(this.field10262));
-         }
-
-         int var1 = method6214(this.field749[this.field769]);
-         if (var1 != this.field10260[this.field769]) {
-            IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, 24, var1);
-            this.field10260[this.field769] = var1;
-         }
-      } else {
-         IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, 24, 0);
-         this.field10260[this.field769] = 0;
-      }
-
-   }
-
-   void method750() {
-   }
-
-   public class223 method782(String var1) {
-      byte[] var2 = this.method6215(var1);
-      if (var2 == null) {
-         return null;
-      } else {
-         class222 var3 = this.method558(var2);
-         return new class132(this, var3);
-      }
    }
 
    void method722() {
-      for(int var1 = 0; var1 < this.field791; ++var1) {
+      for(int var1 = 0; var1 < super.field791; ++var1) {
          IDirect3DDevice.SetSamplerState(this.field10241, var1, 7, 2);
          IDirect3DDevice.SetSamplerState(this.field10241, var1, 6, 2);
          IDirect3DDevice.SetSamplerState(this.field10241, var1, 5, 2);
@@ -1927,320 +968,25 @@ public class class927 extends class325 {
       super.method722();
    }
 
-   void method753() {
-      if (this.field658) {
-         int var1 = this.field10239[this.field769] ? method6227(this.field738[this.field769]) : 1;
-         IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, 1, var1);
-      }
-
-   }
-
    public void method4891(boolean var1) {
-   }
-
-   void method755() {
-      if (this.field658) {
-         int var1 = this.field10239[this.field769] ? method6227(this.field751[this.field769]) : 1;
-         IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, 4, var1);
-      }
-
-   }
-
-   void method687() {
-      if (this.field658) {
-         int var1 = this.field10239[this.field769] ? method6227(this.field751[this.field769]) : 1;
-         IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, 4, var1);
-      }
-
-   }
-
-   final void method743(int var1, class557 var2, boolean var3) {
-      if (this.field658) {
-         int var4 = 0;
-         byte var5;
-         switch(var1) {
-         case 1:
-            var5 = 6;
-            break;
-         case 2:
-            var5 = 27;
-            break;
-         default:
-            var5 = 5;
-         }
-
-         if (var3) {
-            var4 |= 16;
-         }
-
-         IDirect3DDevice.SetTextureStageState(this.field10241, this.field769, var5, method6213(var2) | var4);
-      }
-
-   }
-
-   void method592(int var1) {
-      IDirect3DDevice.SetRenderState(this.field10241, 168, var1);
-   }
-
-   void method758(int var1) {
-      IDirect3DDevice.SetRenderState(this.field10241, 168, var1);
-   }
-
-   void method757(int var1) {
-      IDirect3DDevice.SetRenderState(this.field10241, 168, var1);
-   }
-
-   void method728() {
-      IDirect3DDevice.f(this.field10241, 15, this.field753);
-   }
-
-   void method760() {
-      IDirect3DDevice.f(this.field10241, 15, this.field753);
-   }
-
-   void method761() {
-      switch(this.field712.field2151) {
-      case 0:
-         IDirect3DDevice.SetRenderState(this.field10241, 19, 5);
-         IDirect3DDevice.SetRenderState(this.field10241, 20, 6);
-         break;
-      case 1:
-         IDirect3DDevice.SetRenderState(this.field10241, 19, 2);
-         IDirect3DDevice.SetRenderState(this.field10241, 20, 2);
-         break;
-      case 2:
-         IDirect3DDevice.SetRenderState(this.field10241, 19, 9);
-         IDirect3DDevice.SetRenderState(this.field10241, 20, 2);
-         break;
-      case 3:
-         IDirect3DDevice.SetRenderState(this.field10241, 19, 2);
-         IDirect3DDevice.SetRenderState(this.field10241, 20, 1);
-      }
-
-      switch(this.field810) {
-      case 0:
-         IDirect3DDevice.SetRenderState(this.field10241, 207, 1);
-         IDirect3DDevice.SetRenderState(this.field10241, 208, 1);
-         break;
-      case 1:
-         IDirect3DDevice.SetRenderState(this.field10241, 207, 2);
-         IDirect3DDevice.SetRenderState(this.field10241, 208, 1);
-         break;
-      case 2:
-         IDirect3DDevice.SetRenderState(this.field10241, 207, 2);
-         IDirect3DDevice.SetRenderState(this.field10241, 208, 2);
-      }
-
-   }
-
-   void method677() {
-      this.field780 = this.field752 - (float)this.field778;
-      this.field736 = this.field780 - (float)this.field677;
-      if (this.field736 < this.field705) {
-         this.field736 = this.field705;
-      }
-
-      if (this.field658) {
-         IDirect3DDevice.a(this.field10241, 36, this.field736);
-         IDirect3DDevice.a(this.field10241, 37, this.field780);
-         IDirect3DDevice.SetRenderState(this.field10241, 34, this.field776);
-      }
-
-   }
-
-   void method689() {
-      if (this.field658) {
-         IDirect3DDevice.f(this.field10241, 28, this.field775 && this.field722 && this.field677 >= 0);
-      }
-
-   }
-
-   void method763() {
-      if (this.field658) {
-         IDirect3DDevice.f(this.field10241, 28, this.field775 && this.field722 && this.field677 >= 0);
-      }
-
-   }
-
-   class891 method735(int var1, boolean var2, int[][] var3) {
-      return new class561(this, var1, var2, var3);
-   }
-
-   void method764(boolean var1) {
-      IDirect3DDevice.f(this.field10241, 161, var1);
-   }
-
-   void method752() {
-   }
-
-   final class920 method766(boolean var1) {
-      return new class94(this, class482.field8400, var1);
-   }
-
-   final class525 method768(boolean var1) {
-      return new class434(this, var1);
-   }
-
-   class92 method769(class39[] var1) {
-      return new class116(this, var1);
    }
 
    class332 method675(class264 var1, int var2, int var3, int var4, boolean var5, byte[] var6) {
       return new class565(this, var1, var2, var3, var4, var5, var6);
    }
 
-   class92 method660(class39[] var1) {
-      return new class116(this, var1);
-   }
-
-   void method770(class920 var1) {
-      IDirect3DDevice.SetIndices(this.field10241, ((class94)var1).field568);
-   }
-
-   void method771(class920 var1) {
-      IDirect3DDevice.SetIndices(this.field10241, ((class94)var1).field568);
-   }
-
-   boolean method720(class264 var1, class482 var2) {
-      C var3 = new C();
-      return S.f(IDirect3D.GetAdapterDisplayMode(this.field10246, this.field10238, var3)) && S.f(IDirect3D.CheckDeviceFormat(this.field10246, this.field10238, this.field10265, var3.B, 0, 3, method6212(var1, var2)));
-   }
-
-   public class621 method5008(class621 var1, class621 var2, float var3, class621 var4) {
-      return var3 < 0.5F ? var1 : var2;
-   }
-
-   public final void method773(class427 var1, int var2, int var3) {
-      if (this.field10254 != null) {
-         this.field10254.method3249();
-      }
-
-      IDirect3DDevice.DrawPrimitive(this.field10241, method6233(var1), var2, var3);
-   }
-
-   public final void method613(class427 var1, int var2, int var3, int var4, int var5) {
-      if (this.field10254 != null) {
-         this.field10254.method3249();
-      }
-
-      IDirect3DDevice.DrawIndexedPrimitive(this.field10241, method6233(var1), 0, var2, var3, var4, var5);
-   }
-
-   public final void method708(class427 var1, int var2, int var3, int var4, int var5) {
-      if (this.field10254 != null) {
-         this.field10254.method3249();
-      }
-
-      IDirect3DDevice.DrawIndexedPrimitive(this.field10241, method6233(var1), 0, var2, var3, var4, var5);
-   }
-
-   boolean method665(class264 var1, class482 var2) {
-      C var3 = new C();
-      return S.f(IDirect3D.GetAdapterDisplayMode(this.field10246, this.field10238, var3)) && S.f(IDirect3D.CheckDeviceFormat(this.field10246, this.field10238, this.field10265, var3.B, 0, 4, method6212(var1, var2)));
-   }
-
-   class801 method732(int var1, int var2, boolean var3, int[] var4, int var5, int var6) {
-      return new class641(this, var1, var2, var3, var4, var5, var6);
-   }
-
-   void method777(int var1) {
-      int var2 = (var1 & 2) != 0 ? 2 : 3;
-      IDirect3DDevice.SetRenderState(this.field10241, 8, var2);
-   }
-
-   static class848 method6229(Canvas var0, class478 var1, class180 var2, Integer var3) {
-      class927 var4 = null;
-
-      try {
-         byte var5 = 0;
-         byte var6 = 1;
-         long var7 = IDirect3D.Direct3DCreate();
-         Z var9 = new Z();
-         IDirect3D.GetDeviceCaps(var7, var5, var6, var9);
-         if ((var9.E & 16777216) == 0) {
-            throw new RuntimeException("");
-         } else if (var9.II < 2) {
-            throw new RuntimeException("");
-         } else if ((var9.w & 2) == 0) {
-            throw new RuntimeException("");
-         } else if ((var9.w & 8) == 0) {
-            throw new RuntimeException("");
-         } else if ((var9.w & 64) == 0) {
-            throw new RuntimeException("");
-         } else if ((var9.w & 512) == 0) {
-            throw new RuntimeException("");
-         } else if ((var9.w & 33554432) == 0) {
-            throw new RuntimeException("");
-         } else if ((var9.H & var9.K & 16) == 0) {
-            throw new RuntimeException("");
-         } else if ((var9.H & var9.K & 32) == 0) {
-            throw new RuntimeException("");
-         } else if ((var9.H & var9.K & 2) == 0) {
-            throw new RuntimeException("");
-         } else if (var9.CI > 0 && var9.CI < 2) {
-            throw new RuntimeException("");
-         } else if (var9.EI < 5) {
-            throw new RuntimeException("");
-         } else {
-            B var10 = new B(var0);
-            var10.A = true;
-            var10.E = true;
-            var10.I = var0.getWidth();
-            var10.Z = var0.getHeight();
-            var10.B = 1;
-            var10.L = Integer.MIN_VALUE;
-            if (!method6217(var5, var6, var7, var3.intValue(), var10)) {
-               throw new RuntimeException("");
-            } else {
-               int var11 = 0;
-               if ((var9.S & 1048576) != 0) {
-                  var11 |= 16;
-               }
-
-               long var12 = 0L;
-
-               try {
-                  var12 = IDirect3D.CreateDeviceContext(var7, var5, var6, var0, var11 | 64, var10);
-               } catch (u var16) {
-                  var12 = IDirect3D.CreateDeviceContext(var7, var5, var6, var0, var11 & -1048577 | 32, var10);
-               }
-
-               var4 = new class927(var5, var6, var7, var12, var10, var9, var1, var2, var3.intValue());
-               if (!var4.field8595.containsKey(var0)) {
-                  class977.method1815(var0, (short)4620);
-                  var4.method5017(var0, new class468(var4, var0, var0.getWidth(), var0.getHeight(), true), (byte)-2);
-               }
-
-               var4.method4816(var0, (byte)-94);
-               var4.method561();
-               return var4;
-            }
-         }
-      } catch (RuntimeException var17) {
-         if (var4 != null) {
-            var4.method4846();
-         }
-
-         throw var17;
-      }
-   }
-
    final void method6230(class565 var1) {
       this.method6210(var1);
-      if (!this.field10256[this.field769]) {
-         IDirect3DDevice.SetSamplerState(this.field10241, this.field769, 1, 1);
-         this.field10256[this.field769] = true;
+      if (!this.field10256[super.field769]) {
+         IDirect3DDevice.SetSamplerState(this.field10241, super.field769, 1, 1);
+         this.field10256[super.field769] = true;
       }
 
-      if (!this.field10250[this.field769]) {
-         IDirect3DDevice.SetSamplerState(this.field10241, this.field769, 2, 1);
-         this.field10250[this.field769] = true;
+      if (!this.field10250[super.field769]) {
+         IDirect3DDevice.SetSamplerState(this.field10241, super.field769, 2, 1);
+         this.field10250[super.field769] = true;
       }
 
-   }
-
-   class891 method734(int var1, boolean var2, int[][] var3) {
-      return new class561(this, var1, var2, var3);
    }
 
    void method6231(class319 var1) {
@@ -2251,30 +997,14 @@ public class class927 extends class325 {
 
    }
 
-   public final void method775(class427 var1, int var2, int var3, int var4, int var5) {
-      if (this.field10254 != null) {
-         this.field10254.method3249();
-      }
-
-      IDirect3DDevice.DrawIndexedPrimitive(this.field10241, method6233(var1), 0, var2, var3, var4, var5);
-   }
-
-   class33 method650(class264 var1, class482 var2, int var3, int var4) {
-      return new class694(this, var1, var2, var3, var4);
-   }
-
-   void method654() {
-      IDirect3DDevice.f(this.field10241, 27, this.field689);
-   }
-
    public void method594(class344 var1) {
       var1.method271(this.field10255);
    }
 
    public void method618() {
-      if (this.field10239[this.field769]) {
-         this.field10239[this.field769] = false;
-         IDirect3DDevice.SetTexture(this.field10241, this.field769, 0L);
+      if (this.field10239[super.field769]) {
+         this.field10239[super.field769] = false;
+         IDirect3DDevice.SetTexture(this.field10241, super.field769, 0L);
          this.method703();
          this.method631();
       }
@@ -2283,50 +1013,6 @@ public class class927 extends class325 {
 
    public class893 method5058(int var1, int var2) {
       return new class136(this, class482.field8401, var1, var2);
-   }
-
-   void method711() {
-      IDirect3DDevice.f(this.field10241, 14, this.field721 && this.field681);
-   }
-
-   public void method572(class92 var1) {
-      class116 var2 = (class116)var1;
-      IDirect3DDevice.SetVertexDeclaration(this.field10241, var2.field1893);
-   }
-
-   public void method780(int var1, class525 var2) {
-      class434 var3 = (class434)var2;
-      IDirect3DDevice.SetStreamSource(this.field10241, var1, var3.field7423, 0, var3.method4159());
-   }
-
-   public class223 method781(String var1) {
-      byte[] var2 = this.method6215(var1);
-      if (var2 == null) {
-         return null;
-      } else {
-         class222 var3 = this.method558(var2);
-         return new class132(this, var3);
-      }
-   }
-
-   public void method779(class344 var1, class344 var2, class344 var3) {
-      IDirect3DDevice.SetTransform(this.field10241, 256, var1.field325);
-      IDirect3DDevice.SetTransform(this.field10241, 2, var2.field325);
-      IDirect3DDevice.SetTransform(this.field10241, 3, var3.field325);
-   }
-
-   public class223 method783(String var1) {
-      byte[] var2 = this.method6215(var1);
-      if (var2 == null) {
-         return null;
-      } else {
-         class222 var3 = this.method558(var2);
-         return new class132(this, var3);
-      }
-   }
-
-   public float method655() {
-      return -0.5F;
    }
 
    final void method6232(long var1) {
@@ -2350,9 +1036,5 @@ public class class927 extends class325 {
       default:
          throw new IllegalArgumentException("");
       }
-   }
-
-   public boolean method685() {
-      return (this.field10258.LI & '\uffff') >= 257;
    }
 }

@@ -1,7 +1,7 @@
 public class class711 extends class345 {
    class6 field3446;
 
-   void method2021(class907 var1, int var2) {
+   void method2021(InputStream var1, int var2) {
       try {
          while(true) {
             int var3 = var1.method6371();
@@ -22,14 +22,14 @@ public class class711 extends class345 {
             return var2;
          } else {
             class722 var4 = (class722)this.field3446.method2942((long)var1);
-            return var4 == null ? var2 : var4.field3631 * -774922497;
+            return var4 == null ? var2 : var4.field3631;
          }
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "aim.b(" + ')');
       }
    }
 
-   void method2023(class907 var1, int var2, int var3) {
+   void method2023(InputStream var1, int var2, int var3) {
       try {
          if (var2 == 249) {
             int var4 = var1.method6371();
@@ -71,7 +71,7 @@ public class class711 extends class345 {
       }
    }
 
-   public static void method2025(class746 var0, int[] var1, int[] var2, int[] var3, int var4) {
+   public static void method2025(Actor var0, int[] var1, int[] var2, int[] var3, int var4) {
       try {
          for(int var5 = 0; var5 < var1.length; ++var5) {
             int var6 = var1[var5];
@@ -83,8 +83,8 @@ public class class711 extends class345 {
                   if (-1 == var6) {
                      var0.field4076[var9] = null;
                   } else {
-                     class160 var10 = class936.field10313.method2256(var6, (byte)-80);
-                     int var11 = var10.field6668 * -1117238071;
+                     Animation var10 = class936.field10313.method2256(var6, (byte)-80);
+                     int var11 = var10.field6668;
                      class761 var12 = var0.field4076[var9];
                      if (var12 != null && var12.method2775((byte)-110)) {
                         if (var6 == var12.method2779(1502559146)) {
@@ -93,11 +93,11 @@ public class class711 extends class345 {
                               var12 = null;
                            } else if (var11 == 1) {
                               var12.method2790(83585082);
-                              var12.field4392 = -731066289 * var8;
+                              var12.field4392 = var8;
                            } else if (2 == var11) {
                               var12.method2798(1476401100);
                            }
-                        } else if (-1445588039 * var10.field6662 >= var12.method2776(595695662).field6662 * -1445588039) {
+                        } else if (var10.field6662 >= var12.method2776(595695662).field6662) {
                            var0.field4076[var9] = null;
                            var12 = null;
                         }
@@ -106,7 +106,7 @@ public class class711 extends class345 {
                      if (var12 == null || !var12.method2775((byte)-3)) {
                         var12 = var0.field4076[var9] = new class761(var0);
                         var12.method2777(var6, -1608832147);
-                        var12.field4392 = -731066289 * var8;
+                        var12.field4392 = var8;
                      }
                   }
                }
@@ -122,9 +122,9 @@ public class class711 extends class345 {
 
    static final void method2026(class744 var0, int var1) {
       try {
-         String var2 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
-         int var3 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var2 + class665.method5715(var3, true, (byte)8);
+         String var2 = (String)var0.field3157[--var0.field3158];
+         int var3 = var0.field3161[--var0.field3156];
+         var0.field3157[++var0.field3158 - 1] = var2 + class665.method5715(var3, true, (byte)8);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "aim.zy(" + ')');
       }

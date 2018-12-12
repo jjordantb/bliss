@@ -265,17 +265,11 @@ public abstract class class325 extends class848 {
       this.method4831(3, 0);
    }
 
-   abstract void method562();
-
    class911 method563(int var1) {
       return this.field759[var1];
    }
 
    abstract void method564();
-
-   public final void method4799(int var1, int var2, int var3, int var4) {
-      this.field765.method6608(var1, var2, var3, var4);
-   }
 
    void method565() {
       this.field765.method6606();
@@ -362,8 +356,6 @@ public abstract class class325 extends class848 {
       this.field781 = this.method663(new class39[]{new class39(class61.field1601)});
    }
 
-   abstract boolean method569(class264 var1, class482 var2);
-
    boolean method570(float var1, float var2, float var3, float var4, float var5, float var6) {
       this.field660.clear();
       this.field660.putFloat(var1);
@@ -431,8 +423,6 @@ public abstract class class325 extends class848 {
    public final boolean method4807() {
       return true;
    }
-
-   public abstract void method572(class92 var1);
 
    public final boolean method5028() {
       return true;
@@ -531,10 +521,6 @@ public abstract class class325 extends class848 {
 
    }
 
-   public final class344 method4981() {
-      return this.field690;
-   }
-
    public final int method4802() {
       return this.field668 + this.field667 + this.field762;
    }
@@ -580,8 +566,6 @@ public abstract class class325 extends class848 {
       return new class404(this, var4, var5, var1, var2, var3);
    }
 
-   abstract void method578(int var1, class557 var2, boolean var3, boolean var4);
-
    public final class23 method4857(int var1, int var2, int[] var3, int[] var4) {
       return class121.method1622(this, var1, var2, var3, var4);
    }
@@ -590,13 +574,6 @@ public abstract class class325 extends class848 {
    }
 
    abstract void method579();
-
-   public final void method5026(int var1, int var2, float var3, int var4, int var5, float var6, int var7, int var8, float var9, int var10, int var11, int var12, int var13) {
-   }
-
-   public final class454 method4978(int var1, int var2, int[][] var3, int[][] var4, int var5, int var6, int var7) {
-      return new class894(this, var6, var7, var1, var2, var3, var4, var5);
-   }
 
    public final class454 method4864(int var1, int var2, int[][] var3, int[][] var4, int var5, int var6, int var7) {
       return new class894(this, var6, var7, var1, var2, var3, var4, var5);
@@ -614,24 +591,6 @@ public abstract class class325 extends class848 {
       return new class450(this, var1, var2, var3, var4, var5, var6);
    }
 
-   public final void method4823(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
-      var1 = (int)((float)var1 + 1.0F);
-      var2 = (int)((float)var2 + 1.0F);
-      var3 = (int)((float)var3 + 1.0F);
-      var4 = (int)((float)var4 + 1.0F);
-      float var8 = (float)(var3 - var1);
-      float var9 = (float)(var4 - var2);
-      float var10 = 1.0F / (float)Math.sqrt((double)(var8 * var8 + var9 * var9));
-      var8 *= var10;
-      var9 *= var10;
-      var1 = (int)((float)var1 - var8);
-      var2 = (int)((float)var2 - var9);
-      float var11 = -var9;
-      var11 *= 0.5F * (float)var6;
-      float var12 = var8 * 0.5F * (float)var6;
-      this.field764.method3124((float)var1 - var11, (float)var2 - var12, (float)var3 - var11, (float)var4 - var12, (float)var1 + var11, (float)var2 + var12, 0, var5, var7);
-   }
-
    public final class891 method580() {
       return this.field728 != null ? this.field728.method2898() : null;
    }
@@ -639,8 +598,8 @@ public abstract class class325 extends class848 {
    public void method4824() {
       this.field742 = 0;
       this.field801 = 0;
-      this.field713 = this.field8574.method2481();
-      this.field714 = this.field8574.method2493();
+      this.field713 = super.field8574.method2481();
+      this.field714 = super.field8574.method2493();
       this.method581();
    }
 
@@ -655,8 +614,8 @@ public abstract class class325 extends class848 {
       } else {
          this.field783 = 0;
          this.field716 = 0;
-         this.field717 = this.field8574.method2481();
-         this.field683 = this.field8574.method2493();
+         this.field717 = super.field8574.method2481();
+         this.field683 = super.field8574.method2493();
          this.field779 = 0.0F;
          this.field702 = 1.0F;
       }
@@ -666,10 +625,6 @@ public abstract class class325 extends class848 {
       this.field700 = (float)this.field714 / 2.0F;
       this.field697 = (float)this.field742 + this.field773;
       this.field699 = (float)this.field801 + this.field700;
-   }
-
-   public final class48 method5064(int[] var1, int var2, int var3, int var4, int var5, boolean var6) {
-      return new class404(this, var4, var5, var1, var2, var3);
    }
 
    public void method582(class524 var1) {
@@ -740,14 +695,8 @@ public abstract class class325 extends class848 {
       this.method576();
    }
 
-   abstract void method592(int var1);
-
    final class344 method593() {
       return this.field695;
-   }
-
-   public final class879 method4973(class25 var1, int var2, int var3, int var4, int var5) {
-      return new class412(this, var1, var2, var4, var5, var3);
    }
 
    public abstract void method594(class344 var1);
@@ -802,10 +751,6 @@ public abstract class class325 extends class848 {
       return new class875(this, var1, var2, var3);
    }
 
-   public class135 method5041() {
-      return this.field672;
-   }
-
    public final void method4869(boolean var1) {
       this.field721 = var1;
       this.method669();
@@ -820,58 +765,7 @@ public abstract class class325 extends class848 {
 
    }
 
-   public final void method4930(int var1, int var2, int var3, int var4) {
-      int var5;
-      int var6;
-      if (this.field8574 != null) {
-         var5 = this.field8574.method2481();
-         var6 = this.field8574.method2493();
-      } else {
-         var6 = 0;
-         var5 = 0;
-      }
-
-      var1 = var1 >= 0 ? var1 : 0;
-      var3 = var3 <= var5 ? var3 : var5;
-      var2 = var2 >= 0 ? var2 : 0;
-      var4 = var4 <= var6 ? var4 : var6;
-      boolean var7 = false;
-      if (this.field709 < var1) {
-         this.field709 = var1;
-         var7 = true;
-      }
-
-      if (this.field678 > var3) {
-         this.field678 = var3;
-         var7 = true;
-      }
-
-      if (this.field707 < var2) {
-         this.field707 = var2;
-         var7 = true;
-      }
-
-      if (this.field685 > var4) {
-         this.field685 = var4;
-         var7 = true;
-      }
-
-      if (var7) {
-         if (!this.field698) {
-            this.field698 = true;
-            this.method586();
-         }
-
-         this.method585();
-      }
-
-   }
-
    abstract void method599();
-
-   public final int method4977(int var1, int var2) {
-      return var1 & var2 ^ var2;
-   }
 
    public void method4890(float var1, float var2, float var3, float[] var4) {
       float var5 = this.field649.field325[15] + this.field649.field325[3] * var1 + this.field649.field325[7] * var2 + this.field649.field325[11] * var3;
@@ -881,19 +775,6 @@ public abstract class class325 extends class848 {
       var4[0] = this.field697 + this.field773 * var6 / var5;
       var4[1] = this.field699 + this.field700 * var7 / var5;
       var4[2] = var8;
-   }
-
-   public final void method4989(class135 var1) {
-      this.field672 = var1;
-      this.field674.method272(this.field672);
-      this.field673.method1024(var1);
-      this.field673.method1012();
-      this.field675.method272(this.field673);
-      this.method762();
-      if (this.field706 == class941.field10351) {
-         this.method590();
-      }
-
    }
 
    public int method4848(int var1, int var2, int var3, int var4, int var5, int var6) {
@@ -938,9 +819,9 @@ public abstract class class325 extends class848 {
    public final void method4829(int var1, int var2, int var3, int var4) {
       int var5;
       int var6;
-      if (this.field8574 != null) {
-         var5 = this.field8574.method2481();
-         var6 = this.field8574.method2493();
+      if (super.field8574 != null) {
+         var5 = super.field8574.method2481();
+         var6 = super.field8574.method2493();
       } else {
          var6 = 0;
          var5 = 0;
@@ -1051,24 +932,7 @@ public abstract class class325 extends class848 {
 
    abstract void method600();
 
-   abstract void method601();
-
    abstract void method602();
-
-   public final void method4992(class135 var1) {
-      this.field672 = var1;
-      this.field674.method272(this.field672);
-      this.field673.method1024(var1);
-      this.field673.method1012();
-      this.field675.method272(this.field673);
-      this.method762();
-      if (this.field706 == class941.field10351) {
-         this.method590();
-      }
-
-   }
-
-   abstract class332 method603(class264 var1, int var2, int var3, int var4, boolean var5, byte[] var6);
 
    abstract void method604();
 
@@ -1101,22 +965,7 @@ public abstract class class325 extends class848 {
 
    abstract class801 method612(class264 var1, class482 var2, int var3, int var4);
 
-   public abstract void method613(class427 var1, int var2, int var3, int var4, int var5);
-
    abstract class801 method614(int var1, int var2, boolean var3, int[] var4, int var5, int var6);
-
-   public final boolean method5010() {
-      if (this.field768[1] != null && !this.field768[1].method4364()) {
-         boolean var1 = this.field765.method6602(this.field768[1]);
-         if (var1) {
-            this.field795.method4726();
-         }
-
-         return var1;
-      } else {
-         return false;
-      }
-   }
 
    abstract class33 method615(class264 var1, class482 var2, int var3, int var4);
 
@@ -1187,26 +1036,11 @@ public abstract class class325 extends class848 {
 
    }
 
-   public final void method4923(int[] var1) {
-      var1[0] = this.field709;
-      var1[1] = this.field707;
-      var1[2] = this.field678;
-      var1[3] = this.field685;
-   }
-
-   public abstract void method621(class427 var1, int var2, int var3, int var4, int var5);
-
    public final void method622(int var1, class557 var2) {
       this.method623(var1, var2, false);
    }
 
    abstract void method623(int var1, class557 var2, boolean var3);
-
-   public final void method5021(int var1, class919 var2) {
-      this.field772 = var1;
-      this.field657 = var2;
-      this.field770 = true;
-   }
 
    public final class344 method624() {
       return this.field748[this.field769];
@@ -1232,8 +1066,6 @@ public abstract class class325 extends class848 {
 
    abstract void method628();
 
-   abstract class801 method629(class264 var1, int var2, int var3, boolean var4, byte[] var5, int var6, int var7);
-
    abstract void method630();
 
    abstract void method631();
@@ -1244,20 +1076,6 @@ public abstract class class325 extends class848 {
 
    class919 method632() {
       return this.field657;
-   }
-
-   public final void method5053(int var1, int var2, int var3) {
-      if (this.field776 != var1 || this.field677 != var2 || this.field778 != var3) {
-         this.field776 = var1;
-         this.field677 = var2;
-         this.field778 = var3;
-         this.method636();
-         this.method638();
-      }
-
-   }
-
-   public final void method4941(int var1, int var2, int var3, int var4, int var5, int var6, byte[] var7, int var8, int var9) {
    }
 
    public final void method4888() {
@@ -1312,12 +1130,6 @@ public abstract class class325 extends class848 {
 
    abstract void method635();
 
-   public final void method5022(int var1, class919 var2) {
-      this.field772 = var1;
-      this.field657 = var2;
-      this.field770 = true;
-   }
-
    public final void method4874(int var1, int var2, int var3) {
       if (this.field776 != var1 || this.field677 != var2 || this.field778 != var3) {
          this.field776 = var1;
@@ -1347,50 +1159,9 @@ public abstract class class325 extends class848 {
 
    abstract class525 method641(boolean var1);
 
-   public int method4955(int var1, int var2, int var3, int var4, int var5, int var6) {
-      int var7 = 0;
-      float var8 = this.field649.field325[14] + this.field649.field325[2] * (float)var1 + this.field649.field325[6] * (float)var2 + this.field649.field325[10] * (float)var3;
-      float var9 = this.field649.field325[14] + this.field649.field325[2] * (float)var4 + this.field649.field325[6] * (float)var5 + this.field649.field325[10] * (float)var6;
-      float var10 = this.field649.field325[15] + this.field649.field325[3] * (float)var1 + this.field649.field325[7] * (float)var2 + this.field649.field325[11] * (float)var3;
-      float var11 = this.field649.field325[15] + this.field649.field325[3] * (float)var4 + this.field649.field325[7] * (float)var5 + this.field649.field325[11] * (float)var6;
-      if (var8 < -var10 && var9 < -var11) {
-         var7 |= 16;
-      } else if (var8 > var10 && var9 > var11) {
-         var7 |= 32;
-      }
-
-      float var12 = this.field649.field325[12] + this.field649.field325[0] * (float)var1 + this.field649.field325[4] * (float)var2 + this.field649.field325[8] * (float)var3;
-      float var13 = this.field649.field325[12] + this.field649.field325[0] * (float)var4 + this.field649.field325[4] * (float)var5 + this.field649.field325[8] * (float)var6;
-      if (var12 < -var10 && var13 < -var11) {
-         var7 |= 1;
-      }
-
-      if (var12 > var10 && var13 > var11) {
-         var7 |= 2;
-      }
-
-      float var14 = this.field649.field325[13] + this.field649.field325[1] * (float)var1 + this.field649.field325[5] * (float)var2 + this.field649.field325[9] * (float)var3;
-      float var15 = this.field649.field325[13] + this.field649.field325[1] * (float)var4 + this.field649.field325[5] * (float)var5 + this.field649.field325[9] * (float)var6;
-      if (var14 < -var10 && var15 < -var11) {
-         var7 |= 4;
-      }
-
-      if (var14 > var10 && var15 > var11) {
-         var7 |= 8;
-      }
-
-      return var7;
-   }
-
    public abstract void method642(int var1, class525 var2);
 
    abstract void method643(class920 var1);
-
-   public final boolean method4985() {
-      return true;
-   }
-
-   public abstract boolean method644();
 
    public final void method4838(int var1, int var2, int var3, int var4, int var5, int var6) {
       this.method4934(var1, var2, var1 + var3, var2, var5, var6);
@@ -1549,8 +1320,6 @@ public abstract class class325 extends class848 {
       this.method657(var1, 0, var2);
    }
 
-   abstract class33 method650(class264 var1, class482 var2, int var3, int var4);
-
    public abstract void method651(class427 var1, int var2, int var3, int var4, int var5);
 
    final void method652() {
@@ -1566,294 +1335,6 @@ public abstract class class325 extends class848 {
    }
 
    abstract void method653(int var1);
-
-   public final void method5011() {
-      if (this.field768[1] != null && this.field768[1].method4364()) {
-         this.field765.method6605(this.field768[1]);
-         this.field795.method4726();
-      }
-
-   }
-
-   void method4822() {
-      if (!this.field788) {
-         this.method565();
-         this.field795.method4726();
-
-         for(class568 var1 = this.field666.method1281(1818783198); var1 != null; var1 = this.field666.method1283((byte)-95)) {
-            ((class820)var1).method2995();
-         }
-
-         class82.method919(false, true, (short)10441);
-
-         int var2;
-         for(var2 = 0; var2 < this.field759.length; ++var2) {
-            if (this.field759[var2] != null) {
-               this.field759[var2].method6465();
-               this.field759[var2] = null;
-            }
-         }
-
-         for(var2 = 0; var2 < this.field768.length; ++var2) {
-            if (this.field768[var2] != null) {
-               this.field768[var2].method4365();
-               this.field768[var2] = null;
-            }
-         }
-
-         this.method553();
-         this.method4801(0);
-         this.field788 = true;
-      }
-
-   }
-
-   void method5007() {
-      if (!this.field788) {
-         this.method565();
-         this.field795.method4726();
-
-         for(class568 var1 = this.field666.method1281(1588081095); var1 != null; var1 = this.field666.method1283((byte)-118)) {
-            ((class820)var1).method2995();
-         }
-
-         class82.method919(false, true, (short)26847);
-
-         int var2;
-         for(var2 = 0; var2 < this.field759.length; ++var2) {
-            if (this.field759[var2] != null) {
-               this.field759[var2].method6465();
-               this.field759[var2] = null;
-            }
-         }
-
-         for(var2 = 0; var2 < this.field768.length; ++var2) {
-            if (this.field768[var2] != null) {
-               this.field768[var2].method4365();
-               this.field768[var2] = null;
-            }
-         }
-
-         this.method553();
-         this.method4801(0);
-         this.field788 = true;
-      }
-
-   }
-
-   void method4899() {
-      if (!this.field788) {
-         this.method565();
-         this.field795.method4726();
-
-         for(class568 var1 = this.field666.method1281(1339705525); var1 != null; var1 = this.field666.method1283((byte)-26)) {
-            ((class820)var1).method2995();
-         }
-
-         class82.method919(false, true, (short)-26086);
-
-         int var2;
-         for(var2 = 0; var2 < this.field759.length; ++var2) {
-            if (this.field759[var2] != null) {
-               this.field759[var2].method6465();
-               this.field759[var2] = null;
-            }
-         }
-
-         for(var2 = 0; var2 < this.field768.length; ++var2) {
-            if (this.field768[var2] != null) {
-               this.field768[var2].method4365();
-               this.field768[var2] = null;
-            }
-         }
-
-         this.method553();
-         this.method4801(0);
-         this.field788 = true;
-      }
-
-   }
-
-   void method4900() {
-      if (!this.field788) {
-         this.method565();
-         this.field795.method4726();
-
-         for(class568 var1 = this.field666.method1281(1472040998); var1 != null; var1 = this.field666.method1283((byte)1)) {
-            ((class820)var1).method2995();
-         }
-
-         class82.method919(false, true, (short)-28220);
-
-         int var2;
-         for(var2 = 0; var2 < this.field759.length; ++var2) {
-            if (this.field759[var2] != null) {
-               this.field759[var2].method6465();
-               this.field759[var2] = null;
-            }
-         }
-
-         for(var2 = 0; var2 < this.field768.length; ++var2) {
-            if (this.field768[var2] != null) {
-               this.field768[var2].method4365();
-               this.field768[var2] = null;
-            }
-         }
-
-         this.method553();
-         this.method4801(0);
-         this.field788 = true;
-      }
-
-   }
-
-   public void method5044(int var1) {
-      if (this.field795 != null) {
-         this.field795.method4725();
-      }
-
-      this.field786 = var1 & Integer.MAX_VALUE;
-   }
-
-   public final int method4902() {
-      return this.field668 + this.field667 + this.field762;
-   }
-
-   abstract void method654();
-
-   public final boolean method4904() {
-      return true;
-   }
-
-   public final boolean method4905() {
-      return true;
-   }
-
-   public final boolean method4906() {
-      return true;
-   }
-
-   public final boolean method4907() {
-      return true;
-   }
-
-   public final boolean method4915() {
-      return true;
-   }
-
-   public final boolean method4803() {
-      return true;
-   }
-
-   public final boolean method4910() {
-      return this.field794;
-   }
-
-   public final boolean method4911() {
-      return this.field794;
-   }
-
-   public final boolean method4912() {
-      return true;
-   }
-
-   public final void method4901(int var1, class23 var2, int var3, int var4) {
-      this.method4869(false);
-      this.field724.method3127(0.0F, 0.0F, (float)this.method4800((short)-12362).method2481(), 0.0F, 0.0F, (float)this.method4800((short)24584).method2493(), 0, var2, var3, var4);
-      this.method4869(true);
-   }
-
-   public final boolean method5050() {
-      return false;
-   }
-
-   public abstract float method655();
-
-   public final void method4999(boolean var1) {
-      this.field721 = var1;
-      this.method669();
-   }
-
-   public final void method4926(int var1, int var2, int var3, int var4, int var5, int var6, class23 var7, int var8, int var9) {
-   }
-
-   public void method4871(float var1, float var2) {
-      this.field703 = var1;
-      this.field704 = var2;
-      this.method581();
-   }
-
-   public void method5040(float var1, float var2) {
-      this.field703 = var1;
-      this.field704 = var2;
-      this.method581();
-   }
-
-   public void method4924(float var1, float var2) {
-      this.field703 = var1;
-      this.field704 = var2;
-      this.method581();
-   }
-
-   public final void method4925() {
-      if (this.field8574 != null) {
-         this.field707 = 0;
-         this.field709 = 0;
-         this.field678 = this.field8574.method2481();
-         this.field685 = this.field8574.method2493();
-      } else {
-         this.field685 = 0;
-         this.field678 = 0;
-         this.field707 = 0;
-         this.field709 = 0;
-      }
-
-      if (this.field698) {
-         this.field698 = false;
-         this.method586();
-      }
-
-   }
-
-   public final void method4806() {
-      if (this.field8574 != null) {
-         this.field707 = 0;
-         this.field709 = 0;
-         this.field678 = this.field8574.method2481();
-         this.field685 = this.field8574.method2493();
-      } else {
-         this.field685 = 0;
-         this.field678 = 0;
-         this.field707 = 0;
-         this.field709 = 0;
-      }
-
-      if (this.field698) {
-         this.field698 = false;
-         this.method586();
-      }
-
-   }
-
-   public final void method4927() {
-      if (this.field8574 != null) {
-         this.field707 = 0;
-         this.field709 = 0;
-         this.field678 = this.field8574.method2481();
-         this.field685 = this.field8574.method2493();
-      } else {
-         this.field685 = 0;
-         this.field678 = 0;
-         this.field707 = 0;
-         this.field709 = 0;
-      }
-
-      if (this.field698) {
-         this.field698 = false;
-         this.method586();
-      }
-
-   }
 
    public final boolean method4804() {
       return true;
@@ -1876,38 +1357,6 @@ public abstract class class325 extends class848 {
 
    public abstract void method657(class427 var1, int var2, int var3);
 
-   public final void method4933(int[] var1) {
-      var1[0] = this.field709;
-      var1[1] = this.field707;
-      var1[2] = this.field678;
-      var1[3] = this.field685;
-   }
-
-   public final void method4805(int[] var1) {
-      var1[0] = this.field709;
-      var1[1] = this.field707;
-      var1[2] = this.field678;
-      var1[3] = this.field685;
-   }
-
-   public final void method4939(int var1, int var2, int var3, int var4, int var5, int var6) {
-      this.method4934(var1, var2, var1 + var3, var2, var5, var6);
-      this.method4934(var1, var2 + var4, var1 + var3, var2 + var4, var5, var6);
-      this.method4934(var1, var2, var1, var2 + var4, var5, var6);
-      this.method4934(var1 + var3, var2, var1 + var3, var2 + var4, var5, var6);
-   }
-
-   public final void method4940(int var1, int var2, int var3, int var4, int var5, int var6) {
-      if (this.field721) {
-         this.method4869(false);
-         this.field764.method3117(var1, var2, var3, var4, 0, var5, var6);
-         this.method4869(true);
-      } else {
-         this.field764.method3117(var1, var2, var3, var4, 0, var5, var6);
-      }
-
-   }
-
    final void method658(boolean var1) {
       if (var1 != this.field681) {
          this.field681 = var1;
@@ -1915,25 +1364,6 @@ public abstract class class325 extends class848 {
          this.field755 &= -16;
       }
 
-   }
-
-   abstract void method659();
-
-   final void method4943(int var1, int var2, int var3, int var4, int var5) {
-   }
-
-   abstract class92 method660(class39[] var1);
-
-   public final void method4945(int var1, int var2, int var3, int var4, int var5) {
-      this.method4934(var1, var2, var1 + var3, var2, var4, var5);
-   }
-
-   public final void method4946(int var1, int var2, int var3, int var4, int var5) {
-      this.method4934(var1, var2, var1 + var3, var2, var4, var5);
-   }
-
-   public final void method4947(int var1, int var2, int var3, int var4, int var5) {
-      this.method4934(var1, var2, var1, var2 + var3, var4, var5);
    }
 
    final void method661() {
@@ -1958,9 +1388,9 @@ public abstract class class325 extends class848 {
 
       int var1;
       int var2;
-      if (this.field8574 != null) {
-         var2 = this.field8574.method2481();
-         var1 = this.field8574.method2493();
+      if (super.field8574 != null) {
+         var2 = super.field8574.method2481();
+         var1 = super.field8574.method2493();
       } else {
          var1 = 0;
          var2 = 0;
@@ -1980,164 +1410,15 @@ public abstract class class325 extends class848 {
       this.method566();
    }
 
-   public void method4921() {
-      this.field742 = 0;
-      this.field801 = 0;
-      this.field713 = this.field8574.method2481();
-      this.field714 = this.field8574.method2493();
-      this.method581();
-   }
-
-   abstract class801 method662(class264 var1, int var2, int var3, boolean var4, float[] var5, int var6, int var7);
-
-   public final void method4952(int var1, int var2, int var3, int var4, int var5, int var6, class23 var7, int var8, int var9) {
-   }
-
-   public final void method4953(int var1, int var2, int var3, int var4, int var5, int var6, class23 var7, int var8, int var9) {
-   }
-
    abstract class92 method663(class39[] var1);
 
-   public int method4956(int var1, int var2, int var3, int var4, int var5, int var6) {
-      int var7 = 0;
-      float var8 = this.field649.field325[14] + this.field649.field325[2] * (float)var1 + this.field649.field325[6] * (float)var2 + this.field649.field325[10] * (float)var3;
-      float var9 = this.field649.field325[14] + this.field649.field325[2] * (float)var4 + this.field649.field325[6] * (float)var5 + this.field649.field325[10] * (float)var6;
-      float var10 = this.field649.field325[15] + this.field649.field325[3] * (float)var1 + this.field649.field325[7] * (float)var2 + this.field649.field325[11] * (float)var3;
-      float var11 = this.field649.field325[15] + this.field649.field325[3] * (float)var4 + this.field649.field325[7] * (float)var5 + this.field649.field325[11] * (float)var6;
-      if (var8 < -var10 && var9 < -var11) {
-         var7 |= 16;
-      } else if (var8 > var10 && var9 > var11) {
-         var7 |= 32;
-      }
-
-      float var12 = this.field649.field325[12] + this.field649.field325[0] * (float)var1 + this.field649.field325[4] * (float)var2 + this.field649.field325[8] * (float)var3;
-      float var13 = this.field649.field325[12] + this.field649.field325[0] * (float)var4 + this.field649.field325[4] * (float)var5 + this.field649.field325[8] * (float)var6;
-      if (var12 < -var10 && var13 < -var11) {
-         var7 |= 1;
-      }
-
-      if (var12 > var10 && var13 > var11) {
-         var7 |= 2;
-      }
-
-      float var14 = this.field649.field325[13] + this.field649.field325[1] * (float)var1 + this.field649.field325[5] * (float)var2 + this.field649.field325[9] * (float)var3;
-      float var15 = this.field649.field325[13] + this.field649.field325[1] * (float)var4 + this.field649.field325[5] * (float)var5 + this.field649.field325[9] * (float)var6;
-      if (var14 < -var10 && var15 < -var11) {
-         var7 |= 4;
-      }
-
-      if (var14 > var10 && var15 > var11) {
-         var7 |= 8;
-      }
-
-      return var7;
-   }
-
-   public int method4995(int var1, int var2, int var3, int var4, int var5, int var6) {
-      int var7 = 0;
-      float var8 = this.field649.field325[14] + this.field649.field325[2] * (float)var1 + this.field649.field325[6] * (float)var2 + this.field649.field325[10] * (float)var3;
-      float var9 = this.field649.field325[14] + this.field649.field325[2] * (float)var4 + this.field649.field325[6] * (float)var5 + this.field649.field325[10] * (float)var6;
-      float var10 = this.field649.field325[15] + this.field649.field325[3] * (float)var1 + this.field649.field325[7] * (float)var2 + this.field649.field325[11] * (float)var3;
-      float var11 = this.field649.field325[15] + this.field649.field325[3] * (float)var4 + this.field649.field325[7] * (float)var5 + this.field649.field325[11] * (float)var6;
-      if (var8 < -var10 && var9 < -var11) {
-         var7 |= 16;
-      } else if (var8 > var10 && var9 > var11) {
-         var7 |= 32;
-      }
-
-      float var12 = this.field649.field325[12] + this.field649.field325[0] * (float)var1 + this.field649.field325[4] * (float)var2 + this.field649.field325[8] * (float)var3;
-      float var13 = this.field649.field325[12] + this.field649.field325[0] * (float)var4 + this.field649.field325[4] * (float)var5 + this.field649.field325[8] * (float)var6;
-      if (var12 < -var10 && var13 < -var11) {
-         var7 |= 1;
-      }
-
-      if (var12 > var10 && var13 > var11) {
-         var7 |= 2;
-      }
-
-      float var14 = this.field649.field325[13] + this.field649.field325[1] * (float)var1 + this.field649.field325[5] * (float)var2 + this.field649.field325[9] * (float)var3;
-      float var15 = this.field649.field325[13] + this.field649.field325[1] * (float)var4 + this.field649.field325[5] * (float)var5 + this.field649.field325[9] * (float)var6;
-      if (var14 < -var10 && var15 < -var11) {
-         var7 |= 4;
-      }
-
-      if (var14 > var10 && var15 > var11) {
-         var7 |= 8;
-      }
-
-      return var7;
-   }
-
-   public final class792 method4958(int var1) {
-      class820 var2 = new class820(var1);
-      this.field666.method1282(var2, -68959905);
-      return var2;
-   }
-
    final void method4841(int var1, int var2, int var3, int var4, int var5) {
-   }
-
-   public final int method4975(int var1, int var2) {
-      return var1 & var2 ^ var2;
-   }
-
-   public final class48 method4962(int[] var1, int var2, int var3, int var4, int var5, boolean var6) {
-      return new class404(this, var4, var5, var1, var2, var3);
-   }
-
-   abstract void method664();
-
-   abstract boolean method665(class264 var1, class482 var2);
-
-   public final void method5061(class621 var1) {
-      this.field728 = (class816)var1;
-   }
-
-   public final class48 method4964(int var1, int var2, int var3, int var4, boolean var5) {
-      class404 var6 = new class404(this, var3, var4, var5, false);
-      var6.method3158(0, 0, var3, var4, var1, var2);
-      return var6;
-   }
-
-   public final class23 method4965(int var1, int var2, int[] var3, int[] var4) {
-      return class121.method1622(this, var1, var2, var3, var4);
-   }
-
-   public final class23 method4966(int var1, int var2, int[] var3, int[] var4) {
-      return class121.method1622(this, var1, var2, var3, var4);
-   }
-
-   public final void method4987(int var1, class23 var2, int var3, int var4) {
-      this.method4869(false);
-      this.field724.method3127(0.0F, 0.0F, (float)this.method4800((short)4277).method2481(), 0.0F, 0.0F, (float)this.method4800((short)16580).method2493(), 0, var2, var3, var4);
-      this.method4869(true);
    }
 
    public void method4826(float var1, float var2) {
       this.field703 = var1;
       this.field704 = var2;
       this.method581();
-   }
-
-   public final void method4969(int var1, class23 var2, int var3, int var4) {
-      this.method4869(false);
-      this.field724.method3127(0.0F, 0.0F, (float)this.method4800((short)2515).method2481(), 0.0F, 0.0F, (float)this.method4800((short)2414).method2493(), 0, var2, var3, var4);
-      this.method4869(true);
-   }
-
-   public final class727 method4970(class230 var1, class922[] var2, boolean var3) {
-      return new class875(this, var1, var2, var3);
-   }
-
-   public final class727 method4971(class230 var1, class922[] var2, boolean var3) {
-      return new class875(this, var1, var2, var3);
-   }
-
-   public final void method4972(int var1) {
-   }
-
-   public final int method4983(int var1, int var2) {
-      return var1 & var2 ^ var2;
    }
 
    final void method666() {
@@ -2181,76 +1462,16 @@ public abstract class class325 extends class848 {
       return this.field672;
    }
 
-   public final class454 method4979(int var1, int var2, int[][] var3, int[][] var4, int var5, int var6, int var7) {
-      return new class894(this, var6, var7, var1, var2, var3, var4, var5);
-   }
-
-   abstract class525 method667(boolean var1);
-
-   public final class344 method4917() {
-      return this.field807;
-   }
-
-   public final class135 method5055() {
-      return this.field694;
-   }
-
-   abstract void method668(class920 var1);
-
-   public final class135 method4828() {
-      return this.field694;
-   }
-
-   public final void method4808(int var1, class639[] var2) {
-      for(int var3 = 0; var3 < var1; ++var3) {
-         this.field730[var3] = var2[var3];
-      }
-
-      this.field740 = var1;
-      if (this.field706 == class941.field10351) {
-         this.method605();
-      }
-
-   }
-
-   public final void method4988(class874 var1) {
-      this.field789.method1102(this, var1);
-   }
-
    abstract void method669();
 
-   public final void method4990(class135 var1) {
-      this.field672 = var1;
-      this.field674.method272(this.field672);
-      this.field673.method1024(var1);
-      this.field673.method1012();
-      this.field675.method272(this.field673);
-      this.method762();
-      if (this.field706 == class941.field10351) {
-         this.method590();
-      }
-
-   }
-
    abstract void method670();
-
-   public final void method4994(class344 var1) {
-      this.field690.method269(var1);
-      this.method762();
-      if (this.field706 == class941.field10351) {
-         this.method573();
-      }
-
-   }
-
-   abstract void method671();
 
    public final void method4986(int var1, int var2, int var3, int var4) {
       int var5;
       int var6;
-      if (this.field8574 != null) {
-         var5 = this.field8574.method2481();
-         var6 = this.field8574.method2493();
+      if (super.field8574 != null) {
+         var5 = super.field8574.method2481();
+         var6 = super.field8574.method2493();
       } else {
          var6 = 0;
          var5 = 0;
@@ -2273,171 +1494,6 @@ public abstract class class325 extends class848 {
 
    }
 
-   public final void method4898(float var1) {
-      if (this.field735 != var1) {
-         this.field735 = var1;
-         this.method670();
-         this.method579();
-      }
-
-   }
-
-   public final void method4998(int var1) {
-      for(this.field757 = 0; var1 > 1; var1 >>= 1) {
-         ++this.field757;
-      }
-
-      this.field741 = 1 << this.field757;
-   }
-
-   public final void method4842(int var1, int var2, int var3) {
-      if (this.field776 != var1 || this.field677 != var2 || this.field778 != var3) {
-         this.field776 = var1;
-         this.field677 = var2;
-         this.field778 = var3;
-         this.method636();
-         this.method638();
-      }
-
-   }
-
-   public final void method4948(int var1, int var2, int var3, int var4, int var5) {
-      this.method4934(var1, var2, var1, var2 + var3, var4, var5);
-   }
-
-   public final void method5001(int var1, int var2, int var3) {
-      if (this.field776 != var1 || this.field677 != var2 || this.field778 != var3) {
-         this.field776 = var1;
-         this.field677 = var2;
-         this.field778 = var3;
-         this.method636();
-         this.method638();
-      }
-
-   }
-
-   public final void method5002(int var1, int var2, int var3) {
-      if (this.field776 != var1 || this.field677 != var2 || this.field778 != var3) {
-         this.field776 = var1;
-         this.field677 = var2;
-         this.field778 = var3;
-         this.method636();
-         this.method638();
-      }
-
-   }
-
-   public final void method4991(class135 var1) {
-      this.field672 = var1;
-      this.field674.method272(this.field672);
-      this.field673.method1024(var1);
-      this.field673.method1012();
-      this.field675.method272(this.field673);
-      this.method762();
-      if (this.field706 == class941.field10351) {
-         this.method590();
-      }
-
-   }
-
-   public final void method5056(boolean var1) {
-   }
-
-   public final class621 method5006(int var1, int var2, int var3, int var4, int var5, int var6) {
-      return new class450(this, var1, var2, var3, var4, var5, var6);
-   }
-
-   public final class621 method5052(int var1, int var2, int var3, int var4, int var5, int var6) {
-      return new class450(this, var1, var2, var3, var4, var5, var6);
-   }
-
-   abstract class33 method672(class264 var1, class482 var2, int var3, int var4);
-
-   public final class48 method4957(class922 var1, boolean var2) {
-      class48 var9;
-      if (var1.field10269 != 0 && var1.field10273 != 0) {
-         int[] var3 = new int[var1.field10269 * var1.field10273];
-         int var4 = 0;
-         int var5 = 0;
-         int var6;
-         int var7;
-         if (var1.field10276 != null) {
-            for(var6 = 0; var6 < var1.field10273; ++var6) {
-               for(var7 = 0; var7 < var1.field10269; ++var7) {
-                  var3[var5++] = var1.field10276[var4] << 24 | var1.field10274[var1.field10275[var4] & 255];
-                  ++var4;
-               }
-            }
-         } else {
-            for(var6 = 0; var6 < var1.field10273; ++var6) {
-               for(var7 = 0; var7 < var1.field10269; ++var7) {
-                  int var8 = var1.field10274[var1.field10275[var4++] & 255];
-                  var3[var5++] = var8 != 0 ? -16777216 | var8 : 0;
-               }
-            }
-         }
-
-         var9 = this.method4854(var3, 0, var1.field10269, var1.field10269, var1.field10273, 2021033350);
-      } else {
-         var9 = this.method4854(new int[1], 0, 1, 1, 1, 739975791);
-      }
-
-      var9.method3104(var1.field10272, var1.field10268, var1.field10271, var1.field10270);
-      return var9;
-   }
-
-   public final int method4903() {
-      return this.field668 + this.field667 + this.field762;
-   }
-
-   public final class48 method4963(class922 var1, boolean var2) {
-      class48 var9;
-      if (var1.field10269 != 0 && var1.field10273 != 0) {
-         int[] var3 = new int[var1.field10269 * var1.field10273];
-         int var4 = 0;
-         int var5 = 0;
-         int var6;
-         int var7;
-         if (var1.field10276 != null) {
-            for(var6 = 0; var6 < var1.field10273; ++var6) {
-               for(var7 = 0; var7 < var1.field10269; ++var7) {
-                  var3[var5++] = var1.field10276[var4] << 24 | var1.field10274[var1.field10275[var4] & 255];
-                  ++var4;
-               }
-            }
-         } else {
-            for(var6 = 0; var6 < var1.field10273; ++var6) {
-               for(var7 = 0; var7 < var1.field10269; ++var7) {
-                  int var8 = var1.field10274[var1.field10275[var4++] & 255];
-                  var3[var5++] = var8 != 0 ? -16777216 | var8 : 0;
-               }
-            }
-         }
-
-         var9 = this.method4854(var3, 0, var1.field10269, var1.field10269, var1.field10273, -1575984249);
-      } else {
-         var9 = this.method4854(new int[1], 0, 1, 1, 1, 250272340);
-      }
-
-      var9.method3104(var1.field10272, var1.field10268, var1.field10271, var1.field10270);
-      return var9;
-   }
-
-   public final boolean method4976() {
-      return this.field768[1] != null && this.field768[1].method4364();
-   }
-
-   public final boolean method5014() {
-      return this.field768[1] != null && this.field768[1].method4364();
-   }
-
-   public final boolean method5015() {
-      return this.field768[1] != null && this.field768[1].method4364();
-   }
-
-   public final void method5003(boolean var1) {
-   }
-
    public void method673(int var1) {
       if (var1 != this.field718) {
          this.field718 = var1;
@@ -2450,36 +1506,8 @@ public abstract class class325 extends class848 {
 
    abstract class332 method675(class264 var1, int var2, int var3, int var4, boolean var5, byte[] var6);
 
-   public final void method4929(int var1, class919 var2) {
-      if (!this.field770) {
-         throw new RuntimeException("");
-      } else {
-         this.field772 = var1;
-         this.field657 = var2;
-         if (this.field771) {
-            this.field759[3].method6469();
-            this.field759[3].method6476();
-         }
-
-      }
-   }
-
-   public final void method5024() {
-      this.field770 = false;
-   }
-
-   public final boolean method5012() {
-      return this.field768[1] != null && this.field768[1].method4364();
-   }
-
    public final boolean method4916() {
       return true;
-   }
-
-   public final void method5027(int var1, int var2, float var3, int var4, int var5, float var6, int var7, int var8, float var9, int var10, int var11, int var12, int var13) {
-   }
-
-   public final void method5005(int var1, int var2, float var3, int var4, int var5, float var6, int var7, int var8, float var9, int var10, int var11, int var12, int var13) {
    }
 
    public final void method4850(class792 var1) {
@@ -2495,76 +1523,6 @@ public abstract class class325 extends class848 {
 
    }
 
-   public void method4884(float var1, float var2, float var3, float[] var4) {
-      float var5 = this.field649.field325[14] + this.field649.field325[2] * var1 + this.field649.field325[6] * var2 + this.field649.field325[10] * var3;
-      float var6 = this.field649.field325[15] + this.field649.field325[3] * var1 + this.field649.field325[7] * var2 + this.field649.field325[11] * var3;
-      if (var5 >= -var6 && var5 <= var6) {
-         float var7 = this.field649.field325[12] + this.field649.field325[0] * var1 + this.field649.field325[4] * var2 + this.field649.field325[8] * var3;
-         if (var7 >= -var6 && var7 <= var6) {
-            float var8 = this.field649.field325[13] + this.field649.field325[1] * var1 + this.field649.field325[5] * var2 + this.field649.field325[9] * var3;
-            if (var8 >= -var6 && var8 <= var6) {
-               float var9 = this.field674.field325[14] + this.field674.field325[2] * var1 + this.field674.field325[6] * var2 + this.field674.field325[10] * var3;
-               var4[0] = this.field697 + this.field773 * var7 / var6;
-               var4[1] = this.field699 + this.field700 * var8 / var6;
-               var4[2] = var9;
-            } else {
-               var4[2] = Float.NaN;
-               var4[1] = Float.NaN;
-               var4[0] = Float.NaN;
-            }
-         } else {
-            var4[2] = Float.NaN;
-            var4[1] = Float.NaN;
-            var4[0] = Float.NaN;
-         }
-      } else {
-         var4[2] = Float.NaN;
-         var4[1] = Float.NaN;
-         var4[0] = Float.NaN;
-      }
-
-   }
-
-   public void method5033(float var1, float var2, float var3, float[] var4) {
-      float var5 = this.field649.field325[14] + this.field649.field325[2] * var1 + this.field649.field325[6] * var2 + this.field649.field325[10] * var3;
-      float var6 = this.field649.field325[15] + this.field649.field325[3] * var1 + this.field649.field325[7] * var2 + this.field649.field325[11] * var3;
-      if (var5 >= -var6 && var5 <= var6) {
-         float var7 = this.field649.field325[12] + this.field649.field325[0] * var1 + this.field649.field325[4] * var2 + this.field649.field325[8] * var3;
-         if (var7 >= -var6 && var7 <= var6) {
-            float var8 = this.field649.field325[13] + this.field649.field325[1] * var1 + this.field649.field325[5] * var2 + this.field649.field325[9] * var3;
-            if (var8 >= -var6 && var8 <= var6) {
-               float var9 = this.field674.field325[14] + this.field674.field325[2] * var1 + this.field674.field325[6] * var2 + this.field674.field325[10] * var3;
-               var4[0] = this.field697 + this.field773 * var7 / var6;
-               var4[1] = this.field699 + this.field700 * var8 / var6;
-               var4[2] = var9;
-            } else {
-               var4[2] = Float.NaN;
-               var4[1] = Float.NaN;
-               var4[0] = Float.NaN;
-            }
-         } else {
-            var4[2] = Float.NaN;
-            var4[1] = Float.NaN;
-            var4[0] = Float.NaN;
-         }
-      } else {
-         var4[2] = Float.NaN;
-         var4[1] = Float.NaN;
-         var4[0] = Float.NaN;
-      }
-
-   }
-
-   public final boolean method5035() {
-      return this.field768[1] != null;
-   }
-
-   public final void method5036(int var1, int var2, int var3, int var4, int var5, int var6) {
-      this.method4811(var1, var2, var3, var4, var5, 1, var6);
-   }
-
-   abstract void method677();
-
    final void method678() {
       this.field686 = false;
       if (this.field706 == class941.field10350) {
@@ -2572,26 +1530,6 @@ public abstract class class325 extends class848 {
          this.method573();
       }
 
-   }
-
-   public final int method5039(int var1, int var2) {
-      return var1 | var2;
-   }
-
-   public void method4932(int var1, int var2, int var3, int var4) {
-      this.field742 = var1;
-      this.field801 = var2;
-      this.field713 = var3;
-      this.field714 = var4;
-      this.method581();
-   }
-
-   public final void method5025() {
-      this.field770 = false;
-   }
-
-   public final class344 method5042() {
-      return this.field690;
    }
 
    final void method679() {
@@ -2614,37 +1552,11 @@ public abstract class class325 extends class848 {
       this.field798.method1977(0, this.field660.position(), this.field661);
    }
 
-   public final void method5062(int var1, int var2, int var3, int var4, int var5, int var6, byte[] var7, int var8, int var9) {
-   }
-
-   public final class621 method4919(int var1, int var2, int var3, int var4, int var5, int var6) {
-      return new class450(this, var1, var2, var3, var4, var5, var6);
-   }
-
    public static boolean method680() {
       return class933.method6286(-1541888660).method3930("jaclib", 377960072);
    }
 
    abstract void method681();
-
-   public final int method4847(int var1, int var2) {
-      return var1 & var2 ^ var2;
-   }
-
-   final void method5016(float var1, float var2, float var3, float var4, float var5, float var6) {
-      class57.field2349 = var1;
-      class57.field2351 = var2;
-      class57.field2350 = var3;
-      class57.field2353 = var6;
-   }
-
-   public abstract boolean method682();
-
-   public abstract boolean method683();
-
-   public abstract boolean method684();
-
-   public abstract boolean method685();
 
    public final int method4836(int var1, int var2) {
       return var1 & var2 ^ var2;
@@ -2652,26 +1564,12 @@ public abstract class class325 extends class848 {
 
    abstract void method686(int var1, class557 var2, boolean var3, boolean var4);
 
-   abstract void method687();
-
-   public final void method5020() {
-      this.field765.method6604();
-   }
-
-   abstract void method688();
-
-   public final boolean method4913() {
-      return true;
-   }
-
-   abstract void method689();
-
    public final void method4827() {
-      if (this.field8574 != null) {
+      if (super.field8574 != null) {
          this.field707 = 0;
          this.field709 = 0;
-         this.field678 = this.field8574.method2481();
-         this.field685 = this.field8574.method2493();
+         this.field678 = super.field8574.method2481();
+         this.field685 = super.field8574.method2493();
       } else {
          this.field685 = 0;
          this.field678 = 0;
@@ -2688,64 +1586,6 @@ public abstract class class325 extends class848 {
 
    class344 method690() {
       return this.field671;
-   }
-
-   abstract void method691();
-
-   abstract class801 method692(class264 var1, class482 var2, int var3, int var4);
-
-   public abstract float method693();
-
-   public abstract float method694();
-
-   public final void method4959(class792 var1) {
-      this.field665 = ((class820)var1).field4964;
-   }
-
-   public abstract float method695();
-
-   abstract void method696();
-
-   public final void method4997(int var1, float var2, float var3, float var4, float var5, float var6) {
-      boolean var7 = this.field731 != var1;
-      if (var7 || this.field808 != var2 || this.field737 != var3) {
-         this.field731 = var1;
-         this.field808 = var2;
-         this.field737 = var3;
-         if (var7) {
-            this.field806 = (float)(this.field731 & 16711680) / 1.671168E7F;
-            this.field733 = (float)(this.field731 & '\uff00') / 65280.0F;
-            this.field734 = (float)(this.field731 & 255) / 255.0F;
-            this.method670();
-         }
-
-         this.method602();
-      }
-
-      if (this.field729[0] != var4 || this.field729[1] != var5 || this.field729[2] != var6) {
-         this.field729[0] = var4;
-         this.field729[1] = var5;
-         this.field729[2] = var6;
-         this.field784[0] = -var4;
-         this.field784[1] = -var5;
-         this.field784[2] = -var6;
-         float var8 = (float)(1.0D / Math.sqrt((double)(var4 * var4 + var5 * var5 + var6 * var6)));
-         this.field727[0] = var4 * var8;
-         this.field727[1] = var5 * var8;
-         this.field727[2] = var6 * var8;
-         this.field692[0] = -this.field727[0];
-         this.field692[1] = -this.field727[1];
-         this.field692[2] = -this.field727[2];
-         this.method681();
-         this.field743 = (int)(var4 * 256.0F / var5);
-         this.field761 = (int)(var6 * 256.0F / var5);
-      }
-
-      this.method579();
-   }
-
-   public final void method5019() {
-      this.field765.method6604();
    }
 
    final boolean method697() {
@@ -2768,60 +1608,13 @@ public abstract class class325 extends class848 {
       }
    }
 
-   public final boolean method4967() {
-      return true;
-   }
-
-   public final void method4859(boolean var1) {
-      this.field721 = var1;
-      this.method669();
-   }
-
-   public final class135 method4821() {
-      return this.field694;
-   }
-
-   public final void method4951(int var1, int var2, int var3, int var4) {
-      int var5;
-      int var6;
-      if (this.field8574 != null) {
-         var5 = this.field8574.method2481();
-         var6 = this.field8574.method2493();
-      } else {
-         var6 = 0;
-         var5 = 0;
-      }
-
-      if (var1 <= 0 && var3 >= var5 - 1 && var2 <= 0 && var4 >= var6 - 1) {
-         this.method4827();
-      } else {
-         this.field709 = var1 >= 0 ? var1 : 0;
-         this.field678 = var3 <= var5 ? var3 : var5;
-         this.field707 = var2 >= 0 ? var2 : 0;
-         this.field685 = var4 <= var6 ? var4 : var6;
-         if (!this.field698) {
-            this.field698 = true;
-            this.method586();
-         }
-
-         this.method585();
-      }
-
-   }
-
-   abstract void method699();
-
-   abstract void method700();
-
-   abstract void method701();
-
    final void method702() {
       if (!this.field686) {
          int var1;
          int var2;
-         if (this.field8574 != null) {
-            var1 = this.field8574.method2481();
-            var2 = this.field8574.method2493();
+         if (super.field8574 != null) {
+            var1 = super.field8574.method2481();
+            var2 = super.field8574.method2493();
          } else {
             var2 = 0;
             var1 = 0;
@@ -2843,55 +1636,6 @@ public abstract class class325 extends class848 {
 
    abstract void method703();
 
-   public void method4954(int var1, int var2, int var3, int var4, int var5, int var6, class23 var7, int var8, int var9, int var10, int var11, int var12) {
-   }
-
-   final void method4944(int var1, int var2, int var3, int var4, int var5) {
-   }
-
-   public abstract void method704(class344 var1);
-
-   public abstract void method705(class344 var1);
-
-   public final void method5037(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
-      var1 = (int)((float)var1 + 1.0F);
-      var2 = (int)((float)var2 + 1.0F);
-      var3 = (int)((float)var3 + 1.0F);
-      var4 = (int)((float)var4 + 1.0F);
-      float var8 = (float)(var3 - var1);
-      float var9 = (float)(var4 - var2);
-      float var10 = 1.0F / (float)Math.sqrt((double)(var8 * var8 + var9 * var9));
-      var8 *= var10;
-      var9 *= var10;
-      var1 = (int)((float)var1 - var8);
-      var2 = (int)((float)var2 - var9);
-      float var11 = -var9;
-      var11 *= 0.5F * (float)var6;
-      float var12 = var8 * 0.5F * (float)var6;
-      this.field764.method3124((float)var1 - var11, (float)var2 - var12, (float)var3 - var11, (float)var4 - var12, (float)var1 + var11, (float)var2 + var12, 0, var5, var7);
-   }
-
-   abstract class92 method706(class39[] var1);
-
-   public final void method4993(class344 var1) {
-      this.field690.method269(var1);
-      this.method762();
-      if (this.field706 == class941.field10351) {
-         this.method573();
-      }
-
-   }
-
-   public void method5031(float var1, float var2, float var3, float[] var4) {
-      float var5 = this.field649.field325[15] + this.field649.field325[3] * var1 + this.field649.field325[7] * var2 + this.field649.field325[11] * var3;
-      float var6 = this.field649.field325[12] + this.field649.field325[0] * var1 + this.field649.field325[4] * var2 + this.field649.field325[8] * var3;
-      float var7 = this.field649.field325[13] + this.field649.field325[1] * var1 + this.field649.field325[5] * var2 + this.field649.field325[9] * var3;
-      float var8 = this.field674.field325[14] + this.field674.field325[2] * var1 + this.field674.field325[6] * var2 + this.field674.field325[10] * var3;
-      var4[0] = this.field697 + this.field773 * var6 / var5;
-      var4[1] = this.field699 + this.field700 * var7 / var5;
-      var4[2] = var8;
-   }
-
    public final void method4984(int var1, int var2, int var3, int var4, int var5, int var6) {
       if (this.field721) {
          this.method4869(false);
@@ -2911,18 +1655,10 @@ public abstract class class325 extends class848 {
       this.method581();
    }
 
-   abstract void method707();
-
    public final class48 method4856(int var1, int var2, int var3, int var4, boolean var5) {
       class404 var6 = new class404(this, var3, var4, var5, false);
       var6.method3158(0, 0, var3, var4, var1, var2);
       return var6;
-   }
-
-   public abstract void method708(class427 var1, int var2, int var3, int var4, int var5);
-
-   public final class454 method4922(int var1, int var2, int[][] var3, int[][] var4, int var5, int var6, int var7) {
-      return new class894(this, var6, var7, var1, var2, var3, var4, var5);
    }
 
    final void method709() {
@@ -2952,43 +1688,9 @@ public abstract class class325 extends class848 {
       this.method584();
    }
 
-   abstract void method710();
-
-   abstract void method711();
-
    abstract class801 method712(class264 var1, int var2, int var3, boolean var4, float[] var5, int var6, int var7);
 
-   abstract void method713();
-
-   public void method5030(float var1, float var2, float var3, float[] var4) {
-      float var5 = this.field649.field325[15] + this.field649.field325[3] * var1 + this.field649.field325[7] * var2 + this.field649.field325[11] * var3;
-      float var6 = this.field649.field325[12] + this.field649.field325[0] * var1 + this.field649.field325[4] * var2 + this.field649.field325[8] * var3;
-      float var7 = this.field649.field325[13] + this.field649.field325[1] * var1 + this.field649.field325[5] * var2 + this.field649.field325[9] * var3;
-      float var8 = this.field674.field325[14] + this.field674.field325[2] * var1 + this.field674.field325[6] * var2 + this.field674.field325[10] * var3;
-      var4[0] = this.field697 + this.field773 * var6 / var5;
-      var4[1] = this.field699 + this.field700 * var7 / var5;
-      var4[2] = var8;
-   }
-
    public abstract void method714(class92 var1);
-
-   public void method5029(float var1, float var2, float var3, float[] var4) {
-      float var5 = this.field649.field325[15] + this.field649.field325[3] * var1 + this.field649.field325[7] * var2 + this.field649.field325[11] * var3;
-      float var6 = this.field649.field325[12] + this.field649.field325[0] * var1 + this.field649.field325[4] * var2 + this.field649.field325[8] * var3;
-      float var7 = this.field649.field325[13] + this.field649.field325[1] * var1 + this.field649.field325[5] * var2 + this.field649.field325[9] * var3;
-      float var8 = this.field674.field325[14] + this.field674.field325[2] * var1 + this.field674.field325[6] * var2 + this.field674.field325[10] * var3;
-      var4[0] = this.field697 + this.field773 * var6 / var5;
-      var4[1] = this.field699 + this.field700 * var7 / var5;
-      var4[2] = var8;
-   }
-
-   abstract void method715();
-
-   abstract void method716();
-
-   abstract void method717();
-
-   abstract void method718();
 
    class325(class478 var1, class180 var2, int var3, int var4) {
       super(var1);
@@ -3069,8 +1771,8 @@ public abstract class class325 extends class848 {
          this.field785 = var3;
          this.field790 = var4;
          class771.method2300(false, true, -162450455);
-         if (this.field8581 != null) {
-            this.field795 = new class489(this, this.field8581);
+         if (super.field8581 != null) {
+            this.field795 = new class489(this, super.field8581);
          } else {
             this.field795 = null;
          }
@@ -3105,16 +1807,6 @@ public abstract class class325 extends class848 {
       this.method4850(this.method4849(131072));
    }
 
-   abstract void method719();
-
-   public final class48 method4961(int[] var1, int var2, int var3, int var4, int var5, boolean var6) {
-      return new class404(this, var4, var5, var1, var2, var3);
-   }
-
-   public final void method5045() {
-      this.field765.method6604();
-   }
-
    public final void method4811(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
       var1 = (int)((float)var1 + 1.0F);
       var2 = (int)((float)var2 + 1.0F);
@@ -3133,20 +1825,10 @@ public abstract class class325 extends class848 {
       this.field764.method3124((float)var1 - var11, (float)var2 - var12, (float)var3 - var11, (float)var4 - var12, (float)var1 + var11, (float)var2 + var12, 0, var5, var7);
    }
 
-   abstract boolean method720(class264 var1, class482 var2);
-
-   abstract boolean method721(class264 var1, class482 var2);
-
    void method722() {
       this.method551(7);
       this.method709();
    }
-
-   abstract boolean method723(class264 var1, class482 var2);
-
-   abstract boolean method724(class264 var1, class482 var2);
-
-   abstract boolean method725(class264 var1, class482 var2);
 
    public final void method726() {
       if (this.field755 != 2) {
@@ -3160,27 +1842,9 @@ public abstract class class325 extends class848 {
 
    }
 
-   abstract class801 method727(class264 var1, int var2, int var3, boolean var4, byte[] var5, int var6, int var7);
-
-   abstract void method728();
-
-   abstract class801 method729(class264 var1, int var2, int var3, boolean var4, float[] var5, int var6, int var7);
-
-   abstract class801 method730(class264 var1, int var2, int var3, boolean var4, float[] var5, int var6, int var7);
-
-   abstract class801 method731(class264 var1, int var2, int var3, boolean var4, float[] var5, int var6, int var7);
-
    public final boolean method4810() {
       return true;
    }
-
-   abstract class801 method732(int var1, int var2, boolean var3, int[] var4, int var5, int var6);
-
-   abstract class801 method733(int var1, int var2, boolean var3, int[] var4, int var5, int var6);
-
-   abstract class891 method734(int var1, boolean var2, int[][] var3);
-
-   abstract class891 method735(int var1, boolean var2, int[][] var3);
 
    class135 method736() {
       if (this.field706 == class941.field10351) {
@@ -3197,166 +1861,9 @@ public abstract class class325 extends class848 {
       }
    }
 
-   abstract class332 method737(class264 var1, int var2, int var3, int var4, boolean var5, byte[] var6);
-
-   abstract class33 method738(class264 var1, class482 var2, int var3, int var4);
-
-   public abstract void method739();
-
-   abstract void method740();
-
-   abstract void method741(int var1, class557 var2, boolean var3, boolean var4);
-
    public abstract boolean method742();
 
-   public final void method4949(int var1, int var2, int var3, int var4, int var5) {
-      this.method4934(var1, var2, var1, var2 + var3, var4, var5);
-   }
-
-   public final class621 method5057(int var1, int var2, int var3, int var4, int var5, int var6) {
-      return new class450(this, var1, var2, var3, var4, var5, var6);
-   }
-
-   abstract void method743(int var1, class557 var2, boolean var3);
-
-   abstract void method744(int var1, class557 var2, boolean var3);
-
    abstract void method745();
-
-   public final void method5000(float var1) {
-      if (this.field735 != var1) {
-         this.field735 = var1;
-         this.method670();
-         this.method579();
-      }
-
-   }
-
-   abstract void method746();
-
-   abstract void method747();
-
-   abstract void method748();
-
-   abstract void method749();
-
-   abstract void method750();
-
-   abstract void method751();
-
-   abstract void method752();
-
-   abstract void method753();
-
-   abstract void method754();
-
-   abstract void method755();
-
-   public void method4862(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
-      float var10 = (float)var3 - (float)var1;
-      float var11 = (float)var4 - (float)var2;
-      if (var10 == 0.0F && var11 == 0.0F) {
-         var10 = 1.0F;
-      } else {
-         float var12 = (float)(1.0D / Math.sqrt((double)(var10 * var10 + var11 * var11)));
-         var10 *= var12;
-         var11 *= var12;
-      }
-
-      this.method596();
-      class911 var23 = this.field759[13];
-      var23.method6466();
-      var23.method6468(var5);
-      this.method633(var6);
-      var23.method6471();
-      this.method639(false);
-      var9 %= var8 + var7;
-      float var13 = var10 * (float)var7;
-      float var14 = var11 * (float)var7;
-      float var15 = 0.0F;
-      float var16 = 0.0F;
-      float var17 = var13;
-      float var18 = var14;
-      if (var9 > var7) {
-         var15 = var10 * (float)(var7 + var8 - var9);
-         var16 = var11 * (float)(var7 + var8 - var9);
-      } else {
-         var17 = var10 * (float)(var7 - var9);
-         var18 = var11 * (float)(var7 - var9);
-      }
-
-      float var19 = (float)var1 + var15;
-      float var20 = (float)var2 + var16;
-      float var21 = var10 * (float)var8;
-      float var22 = var11 * (float)var8;
-
-      while(true) {
-         if (var3 > var1) {
-            if (var19 > (float)var3) {
-               break;
-            }
-
-            if (var19 + var17 > (float)var3) {
-               var17 = (float)var3 - var19;
-            }
-         } else {
-            if (var19 < (float)var3) {
-               break;
-            }
-
-            if (var19 + var17 < (float)var3) {
-               var17 = (float)var3 - var19;
-            }
-         }
-
-         if (var4 > var2) {
-            if (var20 > (float)var4) {
-               break;
-            }
-
-            if (var20 + var18 > (float)var4) {
-               var18 = (float)var4 - var20;
-            }
-         } else {
-            if (var20 < (float)var4) {
-               break;
-            }
-
-            if (var20 + var18 < (float)var4) {
-               var18 = (float)var4 - var20;
-            }
-         }
-
-         if (!this.method570(var19, var20, 0.0F, var19 + var17, var20 + var18, 0.0F)) {
-            return;
-         }
-
-         this.method647();
-         var19 += var21 + var17;
-         var20 += var22 + var18;
-         var17 = var13;
-         var18 = var14;
-      }
-
-      this.method639(true);
-      var23.method6467();
-   }
-
-   abstract void method756();
-
-   public final int method5047() {
-      return this.field792 - 2;
-   }
-
-   abstract void method757(int var1);
-
-   abstract void method758(int var1);
-
-   abstract void method759();
-
-   abstract void method760();
-
-   abstract void method761();
 
    final void method762() {
       this.field649.method269(this.field674);
@@ -3377,112 +1884,11 @@ public abstract class class325 extends class848 {
       this.field770 = true;
    }
 
-   public final class454 method4980(int var1, int var2, int[][] var3, int[][] var4, int var5, int var6, int var7) {
-      return new class894(this, var6, var7, var1, var2, var3, var4, var5);
-   }
-
-   abstract void method763();
-
    public final void method4880(int var1, class23 var2, int var3, int var4) {
       this.method4869(false);
       this.field724.method3127(0.0F, 0.0F, (float)this.method4800((short)-25673).method2481(), 0.0F, 0.0F, (float)this.method4800((short)20678).method2493(), 0, var2, var3, var4);
       this.method4869(true);
    }
-
-   abstract void method764(boolean var1);
-
-   abstract void method765(boolean var1);
-
-   abstract class920 method766(boolean var1);
-
-   abstract class525 method767(boolean var1);
-
-   abstract class525 method768(boolean var1);
-
-   abstract class92 method769(class39[] var1);
-
-   public final void method4928(int var1, int var2, int var3, int var4) {
-      int var5;
-      int var6;
-      if (this.field8574 != null) {
-         var5 = this.field8574.method2481();
-         var6 = this.field8574.method2493();
-      } else {
-         var6 = 0;
-         var5 = 0;
-      }
-
-      if (var1 <= 0 && var3 >= var5 - 1 && var2 <= 0 && var4 >= var6 - 1) {
-         this.method4827();
-      } else {
-         this.field709 = var1 >= 0 ? var1 : 0;
-         this.field678 = var3 <= var5 ? var3 : var5;
-         this.field707 = var2 >= 0 ? var2 : 0;
-         this.field685 = var4 <= var6 ? var4 : var6;
-         if (!this.field698) {
-            this.field698 = true;
-            this.method586();
-         }
-
-         this.method585();
-      }
-
-   }
-
-   abstract void method770(class920 var1);
-
-   abstract void method771(class920 var1);
-
-   public final void method4931(int var1, int var2, int var3, int var4) {
-      int var5;
-      int var6;
-      if (this.field8574 != null) {
-         var5 = this.field8574.method2481();
-         var6 = this.field8574.method2493();
-      } else {
-         var6 = 0;
-         var5 = 0;
-      }
-
-      var1 = var1 >= 0 ? var1 : 0;
-      var3 = var3 <= var5 ? var3 : var5;
-      var2 = var2 >= 0 ? var2 : 0;
-      var4 = var4 <= var6 ? var4 : var6;
-      boolean var7 = false;
-      if (this.field709 < var1) {
-         this.field709 = var1;
-         var7 = true;
-      }
-
-      if (this.field678 > var3) {
-         this.field678 = var3;
-         var7 = true;
-      }
-
-      if (this.field707 < var2) {
-         this.field707 = var2;
-         var7 = true;
-      }
-
-      if (this.field685 > var4) {
-         this.field685 = var4;
-         var7 = true;
-      }
-
-      if (var7) {
-         if (!this.field698) {
-            this.field698 = true;
-            this.method586();
-         }
-
-         this.method585();
-      }
-
-   }
-
-   public abstract void method772(class427 var1, int var2, int var3);
-
-   public abstract void method773(class427 var1, int var2, int var3);
 
    public final void method4950(class621 var1) {
       this.field728 = (class816)var1;
@@ -3492,31 +1898,7 @@ public abstract class class325 extends class848 {
       return new class412(this, var1, var2, var4, var5, var3);
    }
 
-   abstract class801 method774(class264 var1, int var2, int var3, boolean var4, byte[] var5, int var6, int var7);
-
-   public abstract void method775(class427 var1, int var2, int var3, int var4, int var5);
-
    public final I method776(int var1, boolean var2) {
       return this.field665.f(var1, var2);
    }
-
-   abstract void method777(int var1);
-
-   public abstract void method778(class344 var1, class344 var2, class344 var3);
-
-   public abstract void method779(class344 var1, class344 var2, class344 var3);
-
-   public final class48 method4960(int var1, int var2, boolean var3, boolean var4) {
-      return new class404(this, var1, var2, var3, var4);
-   }
-
-   public abstract void method780(int var1, class525 var2);
-
-   public abstract class223 method781(String var1);
-
-   public abstract class223 method782(String var1);
-
-   public abstract class223 method783(String var1);
-
-   public abstract class223 method784(String var1);
 }

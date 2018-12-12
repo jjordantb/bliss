@@ -5,7 +5,7 @@ public class class978 {
    static int field3123 = 0;
    static class550 field3124 = new class550();
    static boolean field3125 = true;
-   static long field3126 = 7881601697932874601L;
+   static long field3126 = -1L;
    static Queue field3127 = new LinkedList();
    static class771 field3128 = new class771();
    public static String[] field3129;
@@ -18,7 +18,7 @@ public class class978 {
       try {
          var2.field3156 = 0;
          var2.field3158 = 0;
-         var2.field3176 = -286750741;
+         var2.field3176 = -1;
          var2.field3177 = var0;
          var2.field3175 = var2.field3177.field173;
          var2.field3174 = var2.field3177.field174;
@@ -30,23 +30,23 @@ public class class978 {
                class384.field1425 = 0;
 
                while(true) {
-                  class384.field1425 += -138185287;
-                  if (-560594807 * class384.field1425 > var1) {
+                  ++class384.field1425;
+                  if (class384.field1425 > var1) {
                      throw new RuntimeException("");
                   }
 
-                  var4 = var2.field3175[(var2.field3176 += 286750741) * 1883543357];
+                  var4 = var2.field3175[++var2.field3176];
                   if (class384.field1427 && (class384.field1428 == null || var2.field3177.field171 != null && var2.field3177.field171.indexOf(class384.field1428) != -1)) {
                      System.out.println(var2.field3177.field171 + ": " + var4);
                   }
 
-                  if (var2.field3174[1883543357 * var2.field3176] == 1) {
+                  if (var2.field3174[var2.field3176] == 1) {
                      var2.field3178 = true;
                   } else {
                      var2.field3178 = false;
                   }
 
-                  if (class20.field5444 == var4 && var2.field3167 * -932179775 == 0) {
+                  if (class20.field5444 == var4 && var2.field3167 == 0) {
                      class449.method3758((byte)116);
                      break;
                   }
@@ -55,13 +55,13 @@ public class class978 {
                }
             } catch (Exception var8) {
                StringBuilder var6 = new StringBuilder(30);
-               var6.append("").append(7051297995265073167L * var2.field3177.field641).append(" ");
+               var6.append("").append(var2.field3177.field641).append(" ");
 
-               for(int var7 = var2.field3167 * -932179775 - 1; var7 >= 0; --var7) {
-                  var6.append("").append(7051297995265073167L * var2.field3166[var7].field2143.field641).append(" ");
+               for(int var7 = var2.field3167 - 1; var7 >= 0; --var7) {
+                  var6.append("").append(var2.field3166[var7].field2143.field641).append(" ");
                }
 
-               var6.append("").append(-2008816077 * var4.field6425);
+               var6.append("").append(var4.field6425);
                class764.method2747(var6.toString(), var8, (short)-1126);
                class449.method3758((byte)46);
             }
@@ -77,7 +77,7 @@ public class class978 {
 
    static final void method1843(class744 var0, byte var1) {
       try {
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = ((class946)var0.field3159).method1993(true, -1660599936);
+         var0.field3157[++var0.field3158 - 1] = ((Player)var0.field3159).method1993(true, -1660599936);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "px.aom(" + ')');
       }
@@ -148,14 +148,14 @@ public class class978 {
 
    static void method1845(int var0) {
       try {
-         if (class980.method1915(class730.field2733 * -1233866115, -1337586273)) {
+         if (class980.method1915(class730.field2733, -1337586273)) {
             if (class730.field2674.method4377(537308016) == null) {
                class967.method1750(4, 1378010016);
             } else {
                class967.method1750(14, 310060879);
             }
-         } else if (-1233866115 * class730.field2733 != 4 && class730.field2733 * -1233866115 != 3) {
-            if (class730.field2733 * -1233866115 == 6) {
+         } else if (class730.field2733 != 4 && class730.field2733 != 3) {
+            if (class730.field2733 == 6) {
                class967.method1750(19, 1046566062);
             }
          } else {
@@ -169,11 +169,11 @@ public class class978 {
 
    static final void method1846(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         if (class730.field2785 != null && var2 < -1801543887 * class556.field503) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class776.field3731[var2].field8114;
+         int var2 = var0.field3161[--var0.field3156];
+         if (class730.field2785 != null && var2 < class556.field503) {
+            var0.field3157[++var0.field3158 - 1] = class776.field3731[var2].field8114;
          } else {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
+            var0.field3157[++var0.field3158 - 1] = "";
          }
 
       } catch (RuntimeException var3) {

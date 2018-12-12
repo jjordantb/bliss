@@ -5,12 +5,10 @@ public abstract class class571 extends class568 {
    OggStreamState field37;
    int field38;
 
-   abstract void method21();
-
    void method22(OggPacket var1, int var2) {
       try {
          this.method23(var1, -441826665);
-         this.field38 += 1765581491;
+         ++this.field38;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "abi.a(" + ')');
       }
@@ -20,17 +18,9 @@ public abstract class class571 extends class568 {
 
    abstract void method24(int var1);
 
-   abstract void method25(OggPacket var1);
-
-   abstract void method26(OggPacket var1);
-
-   abstract void method27(OggPacket var1);
-
    class571(OggStreamState var1) {
       this.field37 = var1;
    }
-
-   abstract void method28();
 
    public static void method29(class180 var0, class180 var1, class180 var2, class180 var3, int var4) {
       try {

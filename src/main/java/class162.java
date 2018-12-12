@@ -17,29 +17,21 @@ public class class162 implements class331 {
    public static int field6603;
 
    class162(int var1) {
-      this.field6602 = var1 * -548304903;
+      this.field6602 = var1;
    }
 
    public int method89(int var1) {
       try {
-         return 1997834825 * this.field6602;
+         return this.field6602;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "rd.f(" + ')');
       }
    }
 
-   public int method90() {
-      return 1997834825 * this.field6602;
-   }
-
-   public int method91() {
-      return 1997834825 * this.field6602;
-   }
-
    static void method3542(class744 var0, int var1) {
       try {
-         class865 var2 = class735.field3009.method4224(var0.field3161[(var0.field3156 -= -391880689) * 681479919], 245040087);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var2.field8996 == null ? 0 : var2.field8996.length;
+         class865 var2 = class735.field3009.method4224(var0.field3161[--var0.field3156], 245040087);
+         var0.field3161[++var0.field3156 - 1] = var2.field8996 == null ? 0 : var2.field8996.length;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "rd.t(" + ')');
       }

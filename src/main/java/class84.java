@@ -3,7 +3,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 public class class84 implements Runnable {
-   volatile long field1122 = -887263504067647559L;
+   volatile long field1122 = -1L;
    InetAddress field1123;
    String field1124;
    volatile boolean field1125 = true;
@@ -13,7 +13,7 @@ public class class84 implements Runnable {
       try {
          this.field1124 = var1;
          this.field1123 = null;
-         this.field1122 = -887263504067647559L;
+         this.field1122 = -1L;
          if (this.field1124 != null) {
             try {
                this.field1123 = InetAddress.getByName(this.field1124);
@@ -51,7 +51,7 @@ public class class84 implements Runnable {
          if (this.field1123 != null) {
             try {
                byte[] var2 = this.field1123.getAddress();
-               this.field1122 = (long)Ping.a(var2[0], var2[1], var2[2], var2[3], 10000L) * 887263504067647559L;
+               this.field1122 = (long)Ping.a(var2[0], var2[1], var2[2], var2[3], 10000L);
             } catch (Throwable var3) {
                ;
             }
@@ -65,7 +65,7 @@ public class class84 implements Runnable {
 
    long method937(int var1) {
       try {
-         return this.field1122 * -8472299103493205641L;
+         return this.field1122;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "f.f(" + ')');
       }
@@ -74,11 +74,11 @@ public class class84 implements Runnable {
    public static void method938(int var0, byte var1) {
       try {
          if (class878.method5922((byte)71)) {
-            if (2084404473 * class881.field10145 != var0) {
-               class881.field10146 = 2742373017286080113L;
+            if (class881.field10145 != var0) {
+               class881.field10146 = -1L;
             }
 
-            class881.field10145 = var0 * 2035975497;
+            class881.field10145 = var0;
             class967.method1750(3, 1633403726);
          }
 
@@ -89,9 +89,9 @@ public class class84 implements Runnable {
 
    static void method939(byte var0) {
       try {
-         class881.field10140 = -1058684408;
+         class881.field10140 = 136;
          class881.field10177 = class730.field2674;
-         class521.method2751(-1L == 122690138525332847L * class881.field10146, true, "", "", class881.field10146 * 122690138525332847L);
+         class521.method2751(-1L == class881.field10146, true, "", "", class881.field10146);
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "f.g(" + ')');
       }
@@ -170,25 +170,25 @@ public class class84 implements Runnable {
 
    static final void method941(class744 var0, int var1) {
       try {
-         var0.field3156 -= -1175642067;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
-         int var3 = var0.field3161[var0.field3156 * 681479919 + 1];
-         int var4 = var0.field3161[var0.field3156 * 681479919 + 2];
+         var0.field3156 -= 3;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1];
+         int var4 = var0.field3161[var0.field3156 + 2];
          class740.method1920(6, var2 << 16 | var3, var4, "", -759655050);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "f.alw(" + ')');
       }
    }
 
-   static final void method942(class746 var0, int var1) {
+   static final void method942(Actor var0, int var1) {
       try {
-         int var2 = var0.field4059 * -412225079 - class730.field2866 * 443738891;
-         int var3 = var0.field4062 * -719582720 + var0.method2550() * 256;
-         int var4 = var0.field4064 * 1363846656 + var0.method2550() * 256;
+         int var2 = var0.field4059 - class730.field2866;
+         int var3 = var0.field4062 * 512 + var0.method2550() * 256;
+         int var4 = var0.field4064 * 512 + var0.method2550() * 256;
          class32 var5 = var0.method1511().field7637;
          var0.method1515((float)((var3 - (int)var5.field5296) / var2 + (int)var5.field5296), (float)((int)var5.field5300), (float)((int)var5.field5299 + (var4 - (int)var5.field5299) / var2));
          var0.field4088 = 0;
-         var0.method2542(var0.field4068 * -251594591, (byte)1);
+         var0.method2542(var0.field4068, (byte)1);
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "f.he(" + ')');
       }

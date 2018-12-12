@@ -12,11 +12,11 @@ public class class976 {
 
    static final void method1821(class744 var0, int var1) {
       try {
-         class564 var2 = class449.method3756(var0.field3161[(var0.field3156 -= -391880689) * 681479919], (byte)-49);
-         if (-1232467723 * var2.field1005 != -1) {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -66163287 * var2.field1006;
+         class564 var2 = class449.method3756(var0.field3161[--var0.field3156], (byte)-49);
+         if (var2.field1005 != -1) {
+            var0.field3161[++var0.field3156 - 1] = var2.field1006;
          } else {
-            var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 0;
+            var0.field3161[++var0.field3156 - 1] = 0;
          }
 
       } catch (RuntimeException var3) {
@@ -26,9 +26,9 @@ public class class976 {
 
    static final void method1822(class744 var0, byte var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[1 + var0.field3156 * 681479919];
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
          var0.field3160.field6484[var2] = var3;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "mb.adb(" + ')');

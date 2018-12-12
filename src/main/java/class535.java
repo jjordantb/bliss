@@ -6,8 +6,6 @@ public abstract class class535 {
    protected int field3708;
    static class48[] field3709;
 
-   abstract void method2271(int var1);
-
    abstract int method2272(int var1);
 
    abstract int method2273(int var1, int var2);
@@ -25,23 +23,19 @@ public abstract class class535 {
 
    abstract void method2275(int var1, int var2);
 
-   abstract int method2276();
-
    class535(class838 var1) {
       this.field3704 = var1;
-      this.field3708 = this.method2272(-1613011239) * 1886334997;
+      this.field3708 = this.method2272(-1613011239);
    }
 
    class535(int var1, class838 var2) {
-      this.field3708 = var1 * 1886334997;
+      this.field3708 = var1;
       this.field3704 = var2;
    }
 
-   abstract int method2277(int var1);
-
    public static void method2278(byte var0) {
       try {
-         for(int var1 = 0; var1 < -991384187 * class540.field3926; ++var1) {
+         for(int var1 = 0; var1 < class540.field3926; ++var1) {
             class45 var2 = class540.field3927[var1];
             if (var2.field5110 == 3) {
                class385.method1180(var2, (short)22686);
@@ -130,8 +124,8 @@ public abstract class class535 {
 
    static void method2281(class744 var0, int var1) {
       try {
-         var0.field3161[var0.field3156 * 681479919 - 2] = class735.field3009.method4224(var0.field3161[var0.field3156 * 681479919 - 2], 245040087).method5330(class827.field9037, var0.field3161[681479919 * var0.field3156 - 1], -1119994003) ? 1 : 0;
-         var0.field3156 -= -391880689;
+         var0.field3161[var0.field3156 - 2] = class735.field3009.method4224(var0.field3161[var0.field3156 - 2], 245040087).method5330(class827.field9037, var0.field3161[var0.field3156 - 1], -1119994003) ? 1 : 0;
+         --var0.field3156;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "rm.v(" + ')');
       }
@@ -141,7 +135,7 @@ public abstract class class535 {
       try {
          if (Character.isISOControl(var0)) {
             return false;
-         } else if (class50.method1498(var0, (short)160)) {
+         } else if (ObjectDefinition.method1498(var0, (short)160)) {
             return true;
          } else {
             char[] var2 = class259.field7966;

@@ -7,12 +7,12 @@ public class class378 extends class535 {
 
    public void method969(int var1) {
       try {
-         if (this.field3704.method5392((byte)-7) != class469.field7324) {
-            this.field3708 = 1886334997;
+         if (super.field3704.method5392((byte)-7) != class469.field7324) {
+            super.field3708 = 1;
          }
 
-         if (-1598873795 * this.field3708 != 0 && 1 != this.field3708 * -1598873795) {
-            this.field3708 = this.method2272(-993111338) * 1886334997;
+         if (super.field3708 != 0 && 1 != super.field3708) {
+            super.field3708 = this.method2272(-993111338);
          }
 
       } catch (RuntimeException var3) {
@@ -24,13 +24,9 @@ public class class378 extends class535 {
       super(var1);
    }
 
-   public int method2277(int var1) {
-      return this.field3704.method5392((byte)-16) == class469.field7324 ? 1 : 3;
-   }
-
    public boolean method970(byte var1) {
       try {
-         return this.field3704.method5392((byte)-10) == class469.field7324;
+         return super.field3704.method5392((byte)-10) == class469.field7324;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "adc.z(" + ')');
       }
@@ -38,7 +34,7 @@ public class class378 extends class535 {
 
    public int method2273(int var1, int var2) {
       try {
-         return this.field3704.method5392((byte)-75) == class469.field7324 ? 1 : 3;
+         return super.field3704.method5392((byte)-75) == class469.field7324 ? 1 : 3;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "adc.f(" + ')');
       }
@@ -52,25 +48,17 @@ public class class378 extends class535 {
       super(var1, var2);
    }
 
-   int method2276() {
-      return 1;
-   }
-
    public int method971(int var1) {
       try {
-         return this.field3708 * -1598873795;
+         return super.field3708;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "adc.y(" + ')');
       }
    }
 
-   void method2271(int var1) {
-      this.field3708 = 1886334997 * var1;
-   }
-
    void method2275(int var1, int var2) {
       try {
-         this.field3708 = 1886334997 * var1;
+         super.field3708 = var1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "adc.p(" + ')');
       }
@@ -79,8 +67,8 @@ public class class378 extends class535 {
    static final void method972(class744 var0, int var1) {
       try {
          int var2 = class230.method4606(-1206667424);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = (class182.field5317 = class615.field8903.field9137.method3689(-460463412) * 1970440745) * -1111444967;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var2;
+         var0.field3161[++var0.field3156 - 1] = class182.field5317 = class615.field8903.field9137.method3689(-460463412);
+         var0.field3161[++var0.field3156 - 1] = var2;
          class730.field2697.method5309(1422757720);
          class95.method523(656179282);
          class730.field2647 = false;

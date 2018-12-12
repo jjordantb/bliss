@@ -62,14 +62,14 @@ public class class380 {
       }
    }
 
-   final void method1115(class907 var1) {
+   final void method1115(InputStream var1) {
       this.field1486 = new class753();
       this.field1486.method2618(var1);
       this.field1468 = new class753();
       this.field1468.method2618(var1);
       int var2 = var1.method6371();
       if (var2 != 0) {
-         var1.field10376 -= 116413311;
+         --var1.field10376;
          this.field1469 = new class753();
          this.field1469.method2618(var1);
          this.field1470 = new class753();
@@ -78,7 +78,7 @@ public class class380 {
 
       var2 = var1.method6371();
       if (var2 != 0) {
-         var1.field10376 -= 116413311;
+         --var1.field10376;
          this.field1471 = new class753();
          this.field1471.method2618(var1);
          this.field1472 = new class753();
@@ -87,7 +87,7 @@ public class class380 {
 
       var2 = var1.method6371();
       if (var2 != 0) {
-         var1.field10376 -= 116413311;
+         --var1.field10376;
          this.field1488 = new class753();
          this.field1488.method2618(var1);
          this.field1474 = new class753();

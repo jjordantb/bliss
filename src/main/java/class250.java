@@ -3,18 +3,18 @@ public abstract class class250 extends class304 {
    int field7785;
    int field7786;
 
-   class250(class907 var1) {
+   class250(InputStream var1) {
       super(var1);
-      this.field7786 = var1.method6374() * -752019511;
-      this.field7785 = var1.method6374() * -1262871307;
-      this.field7784 = var1.method6371() * 1089946905;
+      this.field7786 = var1.method6374();
+      this.field7785 = var1.method6374();
+      this.field7784 = var1.method6371();
    }
 
    boolean method2387(int var1) {
       try {
-         class745 var2 = class635.field9823.method1053(720810617 * this.field7786, -2111155708);
+         class745 var2 = class635.field9823.method1053(this.field7786, -2111155708);
          boolean var3 = var2.method2592((byte)51);
-         class160 var4 = class936.field10313.method2256(1505778629 * var2.field4107, (byte)13);
+         Animation var4 = class936.field10313.method2256(var2.field4107, (byte)13);
          var3 &= var4.method3561(1053460676);
          return var3;
       } catch (RuntimeException var5) {
@@ -22,17 +22,9 @@ public abstract class class250 extends class304 {
       }
    }
 
-   boolean method4386() {
-      class745 var1 = class635.field9823.method1053(720810617 * this.field7786, -1729093071);
-      boolean var2 = var1.method2592((byte)82);
-      class160 var3 = class936.field10313.method2256(1505778629 * var1.field4107, (byte)-7);
-      var2 &= var3.method3561(2049469908);
-      return var2;
-   }
-
    static final void method4387(class564 var0, class131 var1, class744 var2, int var3) {
       try {
-         var0.field905 = var2.field3161[(var2.field3156 -= -391880689) * 681479919] == 1;
+         var0.field905 = var2.field3161[--var2.field3156] == 1;
          class814.method2932(var0, 564764353);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ym.fo(" + ')');
@@ -41,9 +33,9 @@ public abstract class class250 extends class304 {
 
    public static void method4388(int var0) {
       try {
-         if (class791.field447 * 1100796341 != -1) {
-            class295.method6520(class791.field447 * 1100796341, -1, -1, false, 225660373);
-            class791.field447 = -678712477;
+         if (class791.field447 != -1) {
+            class295.method6520(class791.field447, -1, -1, false, 225660373);
+            class791.field447 = -1;
          }
 
       } catch (RuntimeException var2) {
@@ -53,8 +45,8 @@ public abstract class class250 extends class304 {
 
    static final void method4389(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         String var3 = (String)var0.field3157[(var0.field3158 -= 969361751) * -203050393];
+         int var2 = var0.field3161[--var0.field3156];
+         String var3 = (String)var0.field3157[--var0.field3158];
          if (-1 == var2) {
             throw new RuntimeException();
          } else {
@@ -68,7 +60,7 @@ public abstract class class250 extends class304 {
                   var6 = var5.length;
                }
 
-               var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var6;
+               var0.field3161[++var0.field3156 - 1] = var6;
             }
          }
       } catch (RuntimeException var7) {
@@ -89,9 +81,9 @@ public abstract class class250 extends class304 {
 
    static final void method4391(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-23);
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 840270937 * var3.field1031;
+         var0.field3161[++var0.field3156 - 1] = var3.field1031;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ym.rc(" + ')');
       }
@@ -99,7 +91,7 @@ public abstract class class250 extends class304 {
 
    static final void method4392(class744 var0, int var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = -1102843797 * var0.field3169.field9712;
+         var0.field3161[++var0.field3156 - 1] = var0.field3169.field9712;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ym.xg(" + ')');
       }

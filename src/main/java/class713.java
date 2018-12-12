@@ -11,11 +11,11 @@ public class class713 extends class568 {
 
    void method2075(int var1) {
       try {
-         this.field3536 = 2086576921 * this.field3538.field6508;
-         this.field3537 = this.field3538.field6512 * 587912369;
-         this.field3539 = this.field3538.field6513 * -247287593;
+         this.field3536 = this.field3538.field6508;
+         this.field3537 = this.field3538.field6512;
+         this.field3539 = this.field3538.field6513;
          if (this.field3538.field6514 != null) {
-            this.field3538.field6514.method294((float)(1776313545 * this.field3534.field9643), (float)(-739294135 * this.field3534.field9644), (float)(this.field3534.field9645 * -1849369705), field3541);
+            this.field3538.field6514.method294((float)this.field3534.field9643, (float)this.field3534.field9644, (float)this.field3534.field9645, field3541);
          }
 
          this.field3535 = field3541[0];
@@ -33,7 +33,7 @@ public class class713 extends class568 {
 
    static final void method2076(class564 var0, class131 var1, class744 var2, byte var3) {
       try {
-         var0.field948 = var2.field3161[(var2.field3156 -= -391880689) * 681479919] * 728904583;
+         var0.field948 = var2.field3161[--var2.field3156];
          class814.method2932(var0, 1196529132);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "acf.dx(" + ')');

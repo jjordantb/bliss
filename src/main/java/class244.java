@@ -12,16 +12,16 @@ public final class class244 {
       class967 var5 = field8548;
       synchronized(field8548) {
          field8548.field2565 = var2;
-         field8548.field2572 = var4 * 497351807;
+         field8548.field2572 = var4;
          field8548.field2579 = var0;
          field8548.field2575 = 0;
-         field8548.field2576 = var1 * 329554717;
+         field8548.field2576 = var1;
          field8548.field2581 = 0;
          field8548.field2580 = 0;
          field8548.field2573 = 0;
          field8548.field2577 = 0;
          method4774(field8548);
-         var1 -= field8548.field2576 * 66256693;
+         var1 -= field8548.field2576;
          field8548.field2565 = null;
          field8548.field2579 = null;
          return var1;
@@ -30,15 +30,15 @@ public final class class244 {
 
    static void method4773(class967 var0) {
       byte var1 = var0.field2599;
-      int var2 = var0.field2600 * -966285967;
-      int var3 = var0.field2584 * 849607515;
-      int var4 = var0.field2571 * 1013527997;
+      int var2 = var0.field2600;
+      int var3 = var0.field2584;
+      int var4 = var0.field2571;
       int[] var5 = class967.field2589;
-      int var6 = var0.field2585 * 1501792989;
+      int var6 = var0.field2585;
       byte[] var7 = var0.field2579;
-      int var8 = var0.field2575 * -1701270189;
-      int var9 = var0.field2576 * 66256693;
-      int var11 = var0.field2603 * -69219207 + 1;
+      int var8 = var0.field2575;
+      int var9 = var0.field2576;
+      int var11 = var0.field2603 + 1;
 
       label59:
       while(true) {
@@ -134,18 +134,18 @@ public final class class244 {
          break;
       }
 
-      int var13 = var0.field2577 * 1847985911;
-      var0.field2577 += (var9 - var9) * 834706119;
-      int var10000 = var0.field2577;
+      int var13 = var0.field2577;
+      var0.field2577 += var9 - var9;
+      int var10000 = var0.field2577 * 834706119;
       var0.field2599 = var1;
-      var0.field2600 = var2 * 1622047633;
-      var0.field2584 = var3 * 1402191059;
-      var0.field2571 = var4 * -84955755;
+      var0.field2600 = var2;
+      var0.field2584 = var3;
+      var0.field2571 = var4;
       class967.field2589 = var5;
-      var0.field2585 = var6 * -1642553995;
+      var0.field2585 = var6;
       var0.field2579 = var7;
-      var0.field2575 = var8 * -1038344485;
-      var0.field2576 = var9 * 329554717;
+      var0.field2575 = var8;
+      var0.field2576 = var9;
    }
 
    static void method4774(class967 var0) {
@@ -196,11 +196,11 @@ public final class class244 {
          var24 = method4777(var0);
          var0.field2583 = 0;
          byte var25 = method4775(var0);
-         var0.field2583 = (var0.field2583 * -1963861893 << 8 | var25 & 255) * -1428404557;
+         var0.field2583 = var0.field2583 << 8 | var25 & 255;
          var25 = method4775(var0);
-         var0.field2583 = (var0.field2583 * -1963861893 << 8 | var25 & 255) * -1428404557;
+         var0.field2583 = var0.field2583 << 8 | var25 & 255;
          var25 = method4775(var0);
-         var0.field2583 = (var0.field2583 * -1963861893 << 8 | var25 & 255) * -1428404557;
+         var0.field2583 = var0.field2583 << 8 | var25 & 255;
 
          int var26;
          for(var26 = 0; var26 < 16; ++var26) {
@@ -229,7 +229,7 @@ public final class class244 {
          }
 
          method4776(var0);
-         var26 = var0.field2590 * -2130856323 + 2;
+         var26 = var0.field2590 + 2;
          var27 = method4778(3, var0);
          int var28 = method4778(15, var0);
 
@@ -309,7 +309,7 @@ public final class class244 {
             var0.field2595[var30] = var31;
          }
 
-         var30 = var0.field2590 * -2130856323 + 1;
+         var30 = var0.field2590 + 1;
          var47 = -1;
          byte var49 = 0;
 
@@ -438,7 +438,7 @@ public final class class244 {
 
                   do {
                      if (var38 == 0) {
-                        var39 += 1 * var40;
+                        var39 += var40;
                      } else if (var38 == 1) {
                         var39 += 2 * var40;
                      }
@@ -493,15 +493,15 @@ public final class class244 {
                ++var0.field2588[var25 & 255];
             }
 
-            var0.field2585 = (class967.field2589[var0.field2583 * -1963861893] >> 8) * -1642553995;
+            var0.field2585 = class967.field2589[var0.field2583] >> 8;
             var0.field2584 = 0;
-            var0.field2585 = class967.field2589[var0.field2585 * 1501792989] * -1642553995;
-            var0.field2571 = (byte)(var0.field2585 * 1501792989 & 255) * -84955755;
-            var0.field2585 = (var0.field2585 * 1501792989 >> 8) * -1642553995;
-            var0.field2584 += 1402191059;
-            var0.field2603 = var34 * -555426359;
+            var0.field2585 = class967.field2589[var0.field2585];
+            var0.field2571 = (byte)(var0.field2585 & 255);
+            var0.field2585 >>= 8;
+            ++var0.field2584;
+            var0.field2603 = var34;
             method4773(var0);
-            if (var0.field2584 * 849607515 == var0.field2603 * -69219207 + 1 && var0.field2600 * -966285967 == 0) {
+            if (var0.field2584 == var0.field2603 + 1 && var0.field2600 == 0) {
                var23 = true;
                break;
             }
@@ -522,8 +522,8 @@ public final class class244 {
 
       for(int var1 = 0; var1 < 256; ++var1) {
          if (var0.field2602[var1]) {
-            var0.field2593[var0.field2590 * -2130856323] = (byte)var1;
-            var0.field2590 += -603327787;
+            var0.field2593[var0.field2590] = (byte)var1;
+            ++var0.field2590;
          }
       }
 
@@ -538,16 +538,16 @@ public final class class244 {
    }
 
    static int method4778(int var0, class967 var1) {
-      while(var1.field2581 * 1660824337 < var0) {
-         var1.field2580 = (var1.field2580 * -1710803227 << 8 | var1.field2565[var1.field2572 * -1070677121] & 255) * 1040750317;
-         var1.field2581 += 1409363848;
-         var1.field2572 += 497351807;
+      while(var1.field2581 < var0) {
+         var1.field2580 = var1.field2580 << 8 | var1.field2565[var1.field2572] & 255;
+         var1.field2581 += 8;
+         ++var1.field2572;
          var1.field2573 += -1183153807;
          int var10000 = var1.field2573;
       }
 
-      int var2 = var1.field2580 * -1710803227 >> var1.field2581 * 1660824337 - var0 & (1 << var0) - 1;
-      var1.field2581 -= var0 * -360700431;
+      int var2 = var1.field2580 >> var1.field2581 - var0 & (1 << var0) - 1;
+      var1.field2581 -= var0;
       return var2;
    }
 

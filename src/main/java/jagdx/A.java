@@ -14,8 +14,8 @@ public class A {
    public static int q = 102;
    public static int n = 113;
    public static int s = 116;
-   public static int z = a('D', 'X', 'T', '1') * 686167449;
-   public static int y = a('D', 'X', 'T', '5') * 2074320037;
+   public static int z = a('D', 'X', 'T', '1');
+   public static int y = a('D', 'X', 'T', '5');
 
    private A() throws Throwable {
       throw new Error();

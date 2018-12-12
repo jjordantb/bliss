@@ -11,11 +11,11 @@ public class class305 {
    public long field407;
 
    public class305(int var1, String var2, int var3, String var4, long var5) {
-      this.field398 = var1 * -665725969;
+      this.field398 = var1;
       this.field406 = var2;
-      this.field405 = -364036995 * var3;
+      this.field405 = var3;
       this.field401 = var4;
-      this.field407 = var5 * -6963750442385516415L;
+      this.field407 = var5;
    }
 
    public static int method371(int var0, int var1, int var2) {
@@ -42,18 +42,18 @@ public class class305 {
          if (class602.field8644 == null) {
             return false;
          } else {
-            if (class602.field8644.field1702 * 946432351 >= 2000) {
-               class602.field8644.field1702 -= -853837264;
+            if (class602.field8644.field1702 >= 2000) {
+               class602.field8644.field1702 -= 2000;
             }
 
-            return 1007 == 946432351 * class602.field8644.field1702;
+            return 1007 == class602.field8644.field1702;
          }
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "ci.x(" + ')');
       }
    }
 
-   public static class809 method374(class907 var0, int var1) {
+   public static class809 method374(InputStream var0, int var1) {
       try {
          int var2 = var0.method6371();
          class971 var3 = class812.method2915((byte)12)[var0.method6371()];

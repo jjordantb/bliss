@@ -384,10 +384,10 @@ public class class680 {
          }
       }
 
-      if (this.field7548.field10376 * 385051775 != 0) {
-         this.field7544.method4536(24, this.field7548.field10375, this.field7548.field10376 * 385051775);
+      if (this.field7548.field10376 != 0) {
+         this.field7544.method4536(24, this.field7548.field10375, this.field7548.field10376);
          var1.method3631(this.field7546, (class847)null, this.field7540, this.field7545);
-         var1.method3668(7, 0, this.field7548.field10376 * 385051775 / 24);
+         var1.method3668(7, 0, this.field7548.field10376 / 24);
       }
 
    }

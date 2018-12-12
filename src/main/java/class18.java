@@ -11,17 +11,17 @@ public class class18 {
    public static synchronized byte[] method3686(int var0, short var1) {
       try {
          byte[] var5;
-         if (100 == var0 && field6929 * 355907107 > 0) {
-            var5 = field6931[(field6929 -= -996497013) * 355907107];
-            field6931[field6929 * 355907107] = null;
+         if (100 == var0 && field6929 > 0) {
+            var5 = field6931[--field6929];
+            field6931[field6929] = null;
             return var5;
-         } else if (var0 == 5000 && 1904890379 * field6927 > 0) {
-            var5 = field6926[(field6927 -= -1583470173) * 1904890379];
-            field6926[1904890379 * field6927] = null;
+         } else if (var0 == 5000 && field6927 > 0) {
+            var5 = field6926[--field6927];
+            field6926[field6927] = null;
             return var5;
-         } else if (var0 == 30000 && field6928 * -1426745913 > 0) {
-            var5 = field6932[(field6928 -= 1975229431) * -1426745913];
-            field6932[field6928 * -1426745913] = null;
+         } else if (var0 == 30000 && field6928 > 0) {
+            var5 = field6932[--field6928];
+            field6932[field6928] = null;
             return var5;
          } else {
             if (class681.field7538 != null) {

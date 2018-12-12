@@ -292,7 +292,7 @@ public class class835 extends class347 {
       }
    }
 
-   void method209(int var1, class907 var2, byte var3) {
+   void method209(int var1, InputStream var2, byte var3) {
       try {
          if (var1 == 0) {
             int var4 = var2.method6371();
@@ -315,130 +315,20 @@ public class class835 extends class347 {
       }
    }
 
-   void method5442() {
-      if (this.field9191 == null) {
-         this.method5440(1, -112292785);
-      }
-
-      this.method5441((short)20837);
-   }
-
-   void method5443() {
-      if (this.field9191 == null) {
-         this.method5440(1, 10351702);
-      }
-
-      this.method5441((short)29849);
-   }
-
-   void method5444(int var1, class907 var2) {
-      if (var1 == 0) {
-         int var3 = var2.method6371();
-         if (var3 == 0) {
-            this.field9191 = new int[var2.method6371()][4];
-
-            for(int var4 = 0; var4 < this.field9191.length; ++var4) {
-               this.field9191[var4][0] = var2.method6374();
-               this.field9191[var4][1] = var2.method6371() << 4;
-               this.field9191[var4][2] = var2.method6371() << 4;
-               this.field9191[var4][3] = var2.method6371() << 4;
-            }
-         } else {
-            this.method5440(var3, 1188552239);
-         }
-      }
-
-   }
-
-   void method5445(int var1, class907 var2) {
-      if (var1 == 0) {
-         int var3 = var2.method6371();
-         if (var3 == 0) {
-            this.field9191 = new int[var2.method6371()][4];
-
-            for(int var4 = 0; var4 < this.field9191.length; ++var4) {
-               this.field9191[var4][0] = var2.method6374();
-               this.field9191[var4][1] = var2.method6371() << 4;
-               this.field9191[var4][2] = var2.method6371() << 4;
-               this.field9191[var4][3] = var2.method6371() << 4;
-            }
-         } else {
-            this.method5440(var3, -1310770801);
-         }
-      }
-
-   }
-
-   int[][] method5446(int var1) {
-      int[][] var2 = this.field266.method162(var1, (byte)40);
-      if (this.field266.field211) {
-         int[] var3 = this.method201(0, var1, -1887337990);
-         int[] var4 = var2[0];
-         int[] var5 = var2[1];
-         int[] var6 = var2[2];
-
-         for(int var7 = 0; var7 < -1474554145 * class322.field831; ++var7) {
-            int var8 = var3[var7] >> 4;
-            if (var8 < 0) {
-               var8 = 0;
-            }
-
-            if (var8 > 256) {
-               var8 = 256;
-            }
-
-            var8 = this.field9186[var8];
-            var4[var7] = (var8 & 16711680) >> 12;
-            var5[var7] = (var8 & '\uff00') >> 4;
-            var6[var7] = (var8 & 255) << 4;
-         }
-      }
-
-      return var2;
-   }
-
-   int[][] method5447(int var1) {
-      int[][] var2 = this.field266.method162(var1, (byte)83);
-      if (this.field266.field211) {
-         int[] var3 = this.method201(0, var1, -1887337990);
-         int[] var4 = var2[0];
-         int[] var5 = var2[1];
-         int[] var6 = var2[2];
-
-         for(int var7 = 0; var7 < -1474554145 * class322.field831; ++var7) {
-            int var8 = var3[var7] >> 4;
-            if (var8 < 0) {
-               var8 = 0;
-            }
-
-            if (var8 > 256) {
-               var8 = 256;
-            }
-
-            var8 = this.field9186[var8];
-            var4[var7] = (var8 & 16711680) >> 12;
-            var5[var7] = (var8 & '\uff00') >> 4;
-            var6[var7] = (var8 & 255) << 4;
-         }
-      }
-
-      return var2;
-   }
-
    public class835() {
       super(1, false);
    }
 
    int[][] method204(int var1, byte var2) {
       try {
-         int[][] var3 = this.field266.method162(var1, (byte)109);
-         if (this.field266.field211) {
+         int[][] var3 = super.field266.method162(var1, (byte)109);
+         if (super.field266.field211) {
             int[] var4 = this.method201(0, var1, -1887337990);
             int[] var5 = var3[0];
             int[] var6 = var3[1];
             int[] var7 = var3[2];
 
-            for(int var8 = 0; var8 < -1474554145 * class322.field831; ++var8) {
+            for(int var8 = 0; var8 < class322.field831; ++var8) {
                int var9 = var4[var8] >> 4;
                if (var9 < 0) {
                   var9 = 0;
@@ -461,20 +351,12 @@ public class class835 extends class347 {
       }
    }
 
-   void method5448() {
-      if (this.field9191 == null) {
-         this.method5440(1, 1248712713);
-      }
-
-      this.method5441((short)13149);
-   }
-
    static final void method5449(class744 var0, int var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[var0.field3156 * 681479919];
-         int var3 = var0.field3161[681479919 * var0.field3156 + 1];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = var2 / var3;
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[var0.field3156 + 1];
+         var0.field3161[++var0.field3156 - 1] = var2 / var3;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ahj.yw(" + ')');
       }

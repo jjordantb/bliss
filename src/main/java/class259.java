@@ -12,7 +12,7 @@ public class class259 {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1004185785 * var3.field917;
+         var0.field3161[++var0.field3156 - 1] = var3.field917;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "vd.pw(" + ')');
       }

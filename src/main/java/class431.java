@@ -65,11 +65,11 @@ public class class431 {
    }
 
    class431(int var1, class814 var2, class814 var3, int var4, int var5, boolean var6, boolean var7) {
-      this.field7500 = var1 * -1323079015;
+      this.field7500 = var1;
       this.field7501 = var2;
       this.field7495 = var3;
-      this.field7503 = var4 * -931220425;
-      this.field7504 = var5 * 774291301;
+      this.field7503 = var4;
+      this.field7504 = var5;
       this.field7505 = var6;
       this.field7502 = var7;
    }
@@ -87,10 +87,10 @@ public class class431 {
 
    static final void method4253(class744 var0, int var1) {
       try {
-         var0.field3156 -= -783761378;
-         int var2 = var0.field3161[681479919 * var0.field3156];
-         int var3 = var0.field3161[1 + 681479919 * var0.field3156];
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class563.method861(var2, var3, true, false, 1482071907);
+         var0.field3156 -= 2;
+         int var2 = var0.field3161[var0.field3156];
+         int var3 = var0.field3161[1 + var0.field3156];
+         var0.field3161[++var0.field3156 - 1] = class563.method861(var2, var3, true, false, 1482071907);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "jp.ub(" + ')');
       }
@@ -98,7 +98,7 @@ public class class431 {
 
    static final void method4254(int var0, int var1, int var2, int var3, byte var4) {
       try {
-         for(int var5 = 0; var5 < class730.field2667 * -112139815; ++var5) {
+         for(int var5 = 0; var5 < class730.field2667; ++var5) {
             Rectangle var6 = class730.field2884[var5];
             if (var6.x + var6.width > var0 && var6.x < var0 + var2 && var6.height + var6.y > var1 && var6.y < var3 + var1) {
                class730.field2882[var5] = true;
@@ -112,11 +112,11 @@ public class class431 {
 
    static final void method4255(class744 var0, int var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
-         if (class730.field2924 * 1131012101 == 2 && var2 < -1054937867 * class730.field2923) {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class730.field2929[var2];
+         int var2 = var0.field3161[--var0.field3156];
+         if (class730.field2924 == 2 && var2 < class730.field2923) {
+            var0.field3157[++var0.field3158 - 1] = class730.field2929[var2];
          } else {
-            var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = "";
+            var0.field3157[++var0.field3158 - 1] = "";
          }
 
       } catch (RuntimeException var3) {

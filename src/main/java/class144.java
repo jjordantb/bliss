@@ -5,62 +5,17 @@ public class class144 extends class347 {
    boolean field1537 = true;
    boolean field1538 = true;
 
-   int[] method1160(int var1) {
-      int[] var2 = this.field270.method3546(var1, 1012167629);
-      if (this.field270.field6612) {
-         int[] var3 = this.method201(0, this.field1538 ? -289063255 * class322.field834 - var1 : var1, -1887337990);
-         if (this.field1537) {
-            for(int var4 = 0; var4 < class322.field831 * -1474554145; ++var4) {
-               var2[var4] = var3[-901777799 * class322.field829 - var4];
-            }
-         } else {
-            class901.method6355(var3, 0, var2, 0, -1474554145 * class322.field831);
-         }
-      }
-
-      return var2;
-   }
-
-   int[][] method1161(int var1) {
-      int[][] var2 = this.field266.method162(var1, (byte)107);
-      if (this.field266.field211) {
-         int[][] var3 = this.method206(0, this.field1538 ? class322.field834 * -289063255 - var1 : var1, (byte)8);
-         int[] var4 = var3[0];
-         int[] var5 = var3[1];
-         int[] var6 = var3[2];
-         int[] var7 = var2[0];
-         int[] var8 = var2[1];
-         int[] var9 = var2[2];
-         int var10;
-         if (this.field1537) {
-            for(var10 = 0; var10 < -1474554145 * class322.field831; ++var10) {
-               var7[var10] = var4[class322.field829 * -901777799 - var10];
-               var8[var10] = var5[-901777799 * class322.field829 - var10];
-               var9[var10] = var6[class322.field829 * -901777799 - var10];
-            }
-         } else {
-            for(var10 = 0; var10 < class322.field831 * -1474554145; ++var10) {
-               var7[var10] = var4[var10];
-               var8[var10] = var5[var10];
-               var9[var10] = var6[var10];
-            }
-         }
-      }
-
-      return var2;
-   }
-
    int[] method203(int var1, int var2) {
       try {
-         int[] var3 = this.field270.method3546(var1, 1850560302);
-         if (this.field270.field6612) {
-            int[] var4 = this.method201(0, this.field1538 ? -289063255 * class322.field834 - var1 : var1, -1887337990);
+         int[] var3 = super.field270.method3546(var1, 1850560302);
+         if (super.field270.field6612) {
+            int[] var4 = this.method201(0, this.field1538 ? class322.field834 - var1 : var1, -1887337990);
             if (this.field1537) {
-               for(int var5 = 0; var5 < class322.field831 * -1474554145; ++var5) {
-                  var3[var5] = var4[-901777799 * class322.field829 - var5];
+               for(int var5 = 0; var5 < class322.field831; ++var5) {
+                  var3[var5] = var4[class322.field829 - var5];
                }
             } else {
-               class901.method6355(var4, 0, var3, 0, -1474554145 * class322.field831);
+               class901.method6355(var4, 0, var3, 0, class322.field831);
             }
          }
 
@@ -70,37 +25,7 @@ public class class144 extends class347 {
       }
    }
 
-   void method1162(int var1, class907 var2) {
-      switch(var1) {
-      case 0:
-         this.field1537 = var2.method6371() == 1;
-         break;
-      case 1:
-         this.field1538 = var2.method6371() == 1;
-         break;
-      case 2:
-         this.field268 = var2.method6371() == 1;
-      }
-
-   }
-
-   int[] method1163(int var1) {
-      int[] var2 = this.field270.method3546(var1, 293659249);
-      if (this.field270.field6612) {
-         int[] var3 = this.method201(0, this.field1538 ? -289063255 * class322.field834 - var1 : var1, -1887337990);
-         if (this.field1537) {
-            for(int var4 = 0; var4 < class322.field831 * -1474554145; ++var4) {
-               var2[var4] = var3[-901777799 * class322.field829 - var4];
-            }
-         } else {
-            class901.method6355(var3, 0, var2, 0, -1474554145 * class322.field831);
-         }
-      }
-
-      return var2;
-   }
-
-   void method209(int var1, class907 var2, byte var3) {
+   void method209(int var1, InputStream var2, byte var3) {
       try {
          switch(var1) {
          case 0:
@@ -110,7 +35,7 @@ public class class144 extends class347 {
             this.field1538 = var2.method6371() == 1;
             break;
          case 2:
-            this.field268 = var2.method6371() == 1;
+            super.field268 = var2.method6371() == 1;
          }
 
       } catch (RuntimeException var5) {
@@ -118,25 +43,11 @@ public class class144 extends class347 {
       }
    }
 
-   void method1164(int var1, class907 var2) {
-      switch(var1) {
-      case 0:
-         this.field1537 = var2.method6371() == 1;
-         break;
-      case 1:
-         this.field1538 = var2.method6371() == 1;
-         break;
-      case 2:
-         this.field268 = var2.method6371() == 1;
-      }
-
-   }
-
    int[][] method204(int var1, byte var2) {
       try {
-         int[][] var3 = this.field266.method162(var1, (byte)91);
-         if (this.field266.field211) {
-            int[][] var4 = this.method206(0, this.field1538 ? class322.field834 * -289063255 - var1 : var1, (byte)8);
+         int[][] var3 = super.field266.method162(var1, (byte)91);
+         if (super.field266.field211) {
+            int[][] var4 = this.method206(0, this.field1538 ? class322.field834 - var1 : var1, (byte)8);
             int[] var5 = var4[0];
             int[] var6 = var4[1];
             int[] var7 = var4[2];
@@ -145,13 +56,13 @@ public class class144 extends class347 {
             int[] var10 = var3[2];
             int var11;
             if (this.field1537) {
-               for(var11 = 0; var11 < -1474554145 * class322.field831; ++var11) {
-                  var8[var11] = var5[class322.field829 * -901777799 - var11];
-                  var9[var11] = var6[-901777799 * class322.field829 - var11];
-                  var10[var11] = var7[class322.field829 * -901777799 - var11];
+               for(var11 = 0; var11 < class322.field831; ++var11) {
+                  var8[var11] = var5[class322.field829 - var11];
+                  var9[var11] = var6[class322.field829 - var11];
+                  var10[var11] = var7[class322.field829 - var11];
                }
             } else {
-               for(var11 = 0; var11 < class322.field831 * -1474554145; ++var11) {
+               for(var11 = 0; var11 < class322.field831; ++var11) {
                   var8[var11] = var5[var11];
                   var9[var11] = var6[var11];
                   var10[var11] = var7[var11];
@@ -163,35 +74,6 @@ public class class144 extends class347 {
       } catch (RuntimeException var12) {
          throw class158.method3445(var12, "agw.k(" + ')');
       }
-   }
-
-   int[][] method1165(int var1) {
-      int[][] var2 = this.field266.method162(var1, (byte)112);
-      if (this.field266.field211) {
-         int[][] var3 = this.method206(0, this.field1538 ? class322.field834 * -289063255 - var1 : var1, (byte)8);
-         int[] var4 = var3[0];
-         int[] var5 = var3[1];
-         int[] var6 = var3[2];
-         int[] var7 = var2[0];
-         int[] var8 = var2[1];
-         int[] var9 = var2[2];
-         int var10;
-         if (this.field1537) {
-            for(var10 = 0; var10 < -1474554145 * class322.field831; ++var10) {
-               var7[var10] = var4[class322.field829 * -901777799 - var10];
-               var8[var10] = var5[-901777799 * class322.field829 - var10];
-               var9[var10] = var6[class322.field829 * -901777799 - var10];
-            }
-         } else {
-            for(var10 = 0; var10 < class322.field831 * -1474554145; ++var10) {
-               var7[var10] = var4[var10];
-               var8[var10] = var5[var10];
-               var9[var10] = var6[var10];
-            }
-         }
-      }
-
-      return var2;
    }
 
    public class144() {

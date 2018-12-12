@@ -12,7 +12,7 @@ public class class575 implements Runnable {
 
    int method113(int var1) {
       try {
-         return -514341095 * this.field145;
+         return this.field145;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jf.a(" + ')');
       }
@@ -28,7 +28,7 @@ public class class575 implements Runnable {
 
    synchronized boolean method115(int var1) {
       try {
-         return this.field142.method6318(this.field144 * 6015775630087136145L);
+         return this.field142.method6318(this.field144);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jf.b(" + ')');
       }
@@ -38,7 +38,7 @@ public class class575 implements Runnable {
       try {
          this.field143 = this.field142;
          this.field142 = var1;
-         this.field144 = class27.method3468((byte)1) * -5051392830202741391L;
+         this.field144 = class27.method3468((byte)1);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "jf.p(" + ')');
       }
@@ -54,7 +54,7 @@ public class class575 implements Runnable {
 
    public int method118(int var1) {
       try {
-         return -1457416349 * this.field148;
+         return this.field148;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jf.d(" + ')');
       }
@@ -70,7 +70,7 @@ public class class575 implements Runnable {
 
    public long method120(int var1) {
       try {
-         return 3605481893406255809L * this.field146;
+         return this.field146;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jf.x(" + ')');
       }
@@ -81,11 +81,11 @@ public class class575 implements Runnable {
          if (this.field141 == null) {
             return 0;
          } else {
-            int var2 = -861845079 * this.field141.field7500;
-            if (this.field141.field7502 && -1457416349 * this.field148 < -1620354451 * this.field141.field7504) {
-               return 1 + this.field148 * -1457416349;
+            int var2 = this.field141.field7500;
+            if (this.field141.field7502 && this.field148 < this.field141.field7504) {
+               return 1 + this.field148;
             } else if (var2 >= 0 && var2 < class657.field9543.length - 1) {
-               return this.field148 * -1457416349 == 360399239 * this.field141.field7503 ? -1620354451 * this.field141.field7504 : 360399239 * this.field141.field7503;
+               return this.field148 == this.field141.field7503 ? this.field141.field7504 : this.field141.field7503;
             } else {
                return 100;
             }
@@ -109,19 +109,19 @@ public class class575 implements Runnable {
             long var1 = class27.method3468((byte)1);
             synchronized(this) {
                try {
-                  this.field145 += -1941002967;
+                  ++this.field145;
                   if (this.field142 instanceof class650) {
                      this.field142.method6325(this.field149, 2139338781);
                   } else {
                      long var4 = class27.method3468((byte)1);
-                     if (class593.field1623 != null && this.field143 != null && this.field143.method6316(73548607) != 0 && 6015775630087136145L * this.field144 >= var4 - (long)this.field143.method6316(-462627527)) {
-                        int var6 = (int)((var4 - 6015775630087136145L * this.field144) * 255L / (long)this.field143.method6316(-362403732));
+                     if (class593.field1623 != null && this.field143 != null && this.field143.method6316(73548607) != 0 && this.field144 >= var4 - (long)this.field143.method6316(-462627527)) {
+                        int var6 = (int)((var4 - this.field144) * 255L / (long)this.field143.method6316(-362403732));
                         int var7 = 255 - var6;
                         var6 = var6 << 24 | 16777215;
                         var7 = var7 << 24 | 16777215;
                         class646.method5504((byte)-69);
                         class593.field1623.method4831(1, 0);
-                        class48 var8 = class593.field1623.method4873(-2110394505 * class759.field4331, -1111710645 * class97.field614, true, -34894995);
+                        class48 var8 = class593.field1623.method4873(class759.field4331, class97.field614, true, -34894995);
                         class806 var9 = class593.field1623.method4942();
                         var9.method2839(0, var8.method3110());
                         class593.field1623.method5009(var9, (byte)28);
@@ -161,7 +161,7 @@ public class class575 implements Runnable {
                   }
 
                   this.field149 = false;
-                  if (class593.field1623 != null && !(this.field142 instanceof class650) && this.field141.field7500 * -861845079 < -861845079 * class431.field7497.field7500) {
+                  if (class593.field1623 != null && !(this.field142 instanceof class650) && this.field141.field7500 < class431.field7497.field7500) {
                      class791.method398((byte)-100);
                   }
                } catch (Exception var16) {
@@ -183,9 +183,9 @@ public class class575 implements Runnable {
 
    synchronized void method123(long var1, String var3, int var4, class431 var5, int var6) {
       try {
-         this.field146 = 1707169404099388737L * var1;
+         this.field146 = var1;
          this.field147 = var3;
-         this.field148 = var4 * -1376476597;
+         this.field148 = var4;
          this.field141 = var5;
       } catch (RuntimeException var8) {
          throw class158.method3445(var8, "jf.i(" + ')');
@@ -207,7 +207,7 @@ public class class575 implements Runnable {
                var11.method3458(2);
             }
 
-            var9 = var0.method4861(var11, var10, -203714349 * class253.field7970, 64, 768);
+            var9 = var0.method4861(var11, var10, class253.field7970, 64, 768);
             class921.field10285.method2984(var9, var7);
          }
 
@@ -253,7 +253,7 @@ public class class575 implements Runnable {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
          class564 var3 = var2.field8255;
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = 1508815983 * var3.field935;
+         var0.field3161[++var0.field3156 - 1] = var3.field935;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "jf.pe(" + ')');
       }
@@ -270,9 +270,9 @@ public class class575 implements Runnable {
 
    static final void method128(class744 var0, byte var1) {
       try {
-         int var2 = var0.field3161[(var0.field3156 -= -391880689) * 681479919];
+         int var2 = var0.field3161[--var0.field3156];
          class564 var3 = class449.method3756(var2, (byte)-71);
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var3.field937;
+         var0.field3157[++var0.field3158 - 1] = var3.field937;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "jf.rk(" + ')');
       }

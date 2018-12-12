@@ -30,12 +30,12 @@ public class class735 implements Runnable {
                      return;
                   }
 
-                  if (this.field3008 * -352230015 == 0) {
-                     var2 = 1913311441 * this.field3002 - -884053309 * this.field3006 - 1;
-                  } else if (-352230015 * this.field3008 <= this.field3006 * -884053309) {
-                     var2 = this.field3002 * 1913311441 - this.field3006 * -884053309;
+                  if (this.field3008 == 0) {
+                     var2 = this.field3002 - this.field3006 - 1;
+                  } else if (this.field3008 <= this.field3006) {
+                     var2 = this.field3002 - this.field3006;
                   } else {
-                     var2 = this.field3008 * -352230015 - -884053309 * this.field3006 - 1;
+                     var2 = this.field3008 - this.field3006 - 1;
                   }
 
                   if (var2 > 0) {
@@ -52,7 +52,7 @@ public class class735 implements Runnable {
 
             int var1;
             try {
-               var1 = this.field3003.read(this.field3005, -884053309 * this.field3006, var2);
+               var1 = this.field3003.read(this.field3005, this.field3006, var2);
                if (-1 == var1) {
                   throw new EOFException();
                }
@@ -65,7 +65,7 @@ public class class735 implements Runnable {
             }
 
             synchronized(this) {
-               this.field3006 = -157936149 * ((-884053309 * this.field3006 + var1) % (1913311441 * this.field3002));
+               this.field3006 = (this.field3006 + var1) % this.field3002;
             }
          }
       } catch (RuntimeException var10) {
@@ -75,13 +75,13 @@ public class class735 implements Runnable {
 
    boolean method1799(int var1, int var2) throws IOException {
       try {
-         if (var1 > 0 && var1 < this.field3002 * 1913311441) {
+         if (var1 > 0 && var1 < this.field3002) {
             synchronized(this) {
                int var4;
-               if (this.field3008 * -352230015 <= -884053309 * this.field3006) {
-                  var4 = -884053309 * this.field3006 - -352230015 * this.field3008;
+               if (this.field3008 <= this.field3006) {
+                  var4 = this.field3006 - this.field3008;
                } else {
-                  var4 = this.field3002 * 1913311441 - -352230015 * this.field3008 + this.field3006 * -884053309;
+                  var4 = this.field3002 - this.field3008 + this.field3006;
                }
 
                boolean var5;
@@ -110,10 +110,10 @@ public class class735 implements Runnable {
       try {
          synchronized(this) {
             int var3;
-            if (this.field3008 * -352230015 <= -884053309 * this.field3006) {
-               var3 = -884053309 * this.field3006 - -352230015 * this.field3008;
+            if (this.field3008 <= this.field3006) {
+               var3 = this.field3006 - this.field3008;
             } else {
-               var3 = this.field3006 * -884053309 + (1913311441 * this.field3002 - this.field3008 * -352230015);
+               var3 = this.field3006 + (this.field3002 - this.field3008);
             }
 
             if (this.field3004 != null) {
@@ -154,10 +154,10 @@ public class class735 implements Runnable {
          if (var3 >= 0 && var2 >= 0 && var2 + var3 <= var1.length) {
             synchronized(this) {
                int var6;
-               if (-352230015 * this.field3008 <= this.field3006 * -884053309) {
-                  var6 = -884053309 * this.field3006 - -352230015 * this.field3008;
+               if (this.field3008 <= this.field3006) {
+                  var6 = this.field3006 - this.field3008;
                } else {
-                  var6 = this.field3002 * 1913311441 - this.field3008 * -352230015 + -884053309 * this.field3006;
+                  var6 = this.field3002 - this.field3008 + this.field3006;
                }
 
                if (var3 > var6) {
@@ -167,15 +167,15 @@ public class class735 implements Runnable {
                if (var3 == 0 && this.field3004 != null) {
                   throw new IOException(this.field3004.toString());
                } else {
-                  if (this.field3008 * -352230015 + var3 <= this.field3002 * 1913311441) {
-                     System.arraycopy(this.field3005, -352230015 * this.field3008, var1, var2, var3);
+                  if (this.field3008 + var3 <= this.field3002) {
+                     System.arraycopy(this.field3005, this.field3008, var1, var2, var3);
                   } else {
-                     int var7 = 1913311441 * this.field3002 - -352230015 * this.field3008;
-                     System.arraycopy(this.field3005, -352230015 * this.field3008, var1, var2, var7);
+                     int var7 = this.field3002 - this.field3008;
+                     System.arraycopy(this.field3005, this.field3008, var1, var2, var7);
                      System.arraycopy(this.field3005, 0, var1, var2 + var7, var3 - var7);
                   }
 
-                  this.field3008 = -1445143935 * ((-352230015 * this.field3008 + var3) % (this.field3002 * 1913311441));
+                  this.field3008 = (this.field3008 + var3) % this.field3002;
                   this.notifyAll();
                   return var3;
                }
@@ -190,8 +190,8 @@ public class class735 implements Runnable {
 
    class735(InputStream var1, int var2) {
       this.field3003 = var1;
-      this.field3002 = (var2 + 1) * 1422886961;
-      this.field3005 = new byte[this.field3002 * 1913311441];
+      this.field3002 = var2 + 1;
+      this.field3005 = new byte[this.field3002];
       this.field3007 = new Thread(this);
       this.field3007.setDaemon(true);
       this.field3007.start();

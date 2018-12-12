@@ -14,7 +14,7 @@ public class class7 {
    static long field4919;
 
    class7(int var1) {
-      this.field4917 = 17615701 * var1;
+      this.field4917 = var1;
    }
 
    public static String method2939(byte[] var0, int var1) {

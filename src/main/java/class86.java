@@ -9,7 +9,7 @@ public class class86 implements class893 {
 
    public int method2344() {
       try {
-         return 1671547161 * this.field1132;
+         return this.field1132;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "am.f(" + ')');
       }
@@ -17,37 +17,16 @@ public class class86 implements class893 {
 
    public int method2343() {
       try {
-         return this.field1131 * 1026825677;
+         return this.field1131;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "am.a(" + ')');
       }
    }
 
-   public int method2346() {
-      return this.field1131 * 1026825677;
-   }
-
-   public int method2345() {
-      return this.field1131 * 1026825677;
-   }
-
-   public void method2754() {
-   }
-
-   public int method2347() {
-      return 1671547161 * this.field1132;
-   }
-
-   public void method2756() {
-   }
-
    class86(int var1, int var2) {
-      this.field1131 = var1 * -1635379451;
-      this.field1132 = var2 * 2106032937;
-      this.field1133 = new float[this.field1132 * 1671547161 * 1026825677 * this.field1131];
-   }
-
-   public void method2753() {
+      this.field1131 = var1;
+      this.field1132 = var2;
+      this.field1133 = new float[this.field1132 * this.field1131];
    }
 
    static void method943(class848 var0, int var1, int var2, class564 var3, int var4) {
@@ -60,7 +39,7 @@ public class class86 implements class893 {
             class771.method2300(false, true, -162450455);
             int var9 = class134.field1398[var8];
             class82.method919(false, true, (short)10143);
-            var0.method4984(var1, ((63 - var7) * var3.field887 * 457937409 >> 6) + var2, -2093041337 * var3.field881, 1 + (var3.field887 * 457937409 >> 6), var9, 0);
+            var0.method4984(var1, ((63 - var7) * var3.field887 >> 6) + var2, var3.field881, 1 + (var3.field887 >> 6), var9, 0);
          }
 
       } catch (RuntimeException var10) {
@@ -83,11 +62,11 @@ public class class86 implements class893 {
          class684 var2 = class423.method5712((short)512);
          class701 var3 = class637.method5936(class643.field10016, var2.field7765, (byte)21);
          var3.field3364.method6361(0);
-         int var4 = var3.field3364.field10376 * 385051775;
+         int var4 = var3.field3364.field10376;
          var3.field3364.method6361(3);
-         var3.field3364.method6362(var0.field3160.field6482 * -2034569943, 16711935);
+         var3.field3364.method6362(var0.field3160.field6482, 16711935);
          var0.field3160.field6483.method6656(var3.field3364, var0.field3160.field6484, 1205733536);
-         var3.field3364.method6426(var3.field3364.field10376 * 385051775 - var4, (byte)-42);
+         var3.field3364.method6426(var3.field3364.field10376 - var4, (byte)-42);
          var2.method4380(var3, (byte)-84);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "am.adu(" + ')');
@@ -105,7 +84,7 @@ public class class86 implements class893 {
             var2 = "";
          }
 
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = var2;
+         var0.field3157[++var0.field3158 - 1] = var2;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "am.amr(" + ')');
       }
@@ -124,14 +103,14 @@ public class class86 implements class893 {
 
    static final void method948(class564 var0, class131 var1, class744 var2, byte var3) {
       try {
-         int var4 = var2.field3161[(var2.field3156 -= -391880689) * 681479919];
-         if (var4 != 1411971043 * var0.field900) {
-            var0.field900 = 1986266571 * var4;
+         int var4 = var2.field3161[--var2.field3156];
+         if (var4 != var0.field900) {
+            var0.field900 = var4;
             class814.method2932(var0, -668406254);
          }
 
-         if (var0.field879 * -1309843523 == -1 && !var1.field1101) {
-            class191.method3724(-440872681 * var0.field867, 1038434674);
+         if (var0.field879 == -1 && !var1.field1101) {
+            class191.method3724(var0.field867, 1038434674);
          }
 
       } catch (RuntimeException var5) {
@@ -142,7 +121,7 @@ public class class86 implements class893 {
    public static final void method949(String var0, boolean var1, short var2) {
       try {
          if (var0 != null) {
-            if (class730.field2934 * -548972447 >= 100) {
+            if (class730.field2934 >= 100) {
                class727.method1683(4, class814.field4798.method2927(class321.field1066, -875414210), (byte)-66);
             } else {
                String var3 = class526.method2229(var0, 150647374);
@@ -150,7 +129,7 @@ public class class86 implements class893 {
                   int var4;
                   String var5;
                   String var6;
-                  for(var4 = 0; var4 < -548972447 * class730.field2934; ++var4) {
+                  for(var4 = 0; var4 < class730.field2934; ++var4) {
                      var5 = class526.method2229(class730.field2841[var4], 1138876802);
                      if (var5 != null && var5.equals(var3)) {
                         class727.method1683(4, var0 + class814.field4799.method2927(class321.field1066, -875414210), (byte)-117);
@@ -166,7 +145,7 @@ public class class86 implements class893 {
                      }
                   }
 
-                  for(var4 = 0; var4 < class730.field2923 * -1054937867; ++var4) {
+                  for(var4 = 0; var4 < class730.field2923; ++var4) {
                      var5 = class526.method2229(class730.field2685[var4], -916859931);
                      if (var5 != null && var5.equals(var3)) {
                         class727.method1683(4, class814.field4805.method2927(class321.field1066, -875414210) + var0 + class814.field4806.method2927(class321.field1066, -875414210), (byte)-7);
@@ -182,7 +161,7 @@ public class class86 implements class893 {
                      }
                   }
 
-                  if (class526.method2229(class923.field10295.field3374, 675816100).equals(var3)) {
+                  if (class526.method2229(class923.local.field3374, 675816100).equals(var3)) {
                      class727.method1683(4, class814.field4711.method2927(class321.field1066, -875414210), (byte)-86);
                   } else {
                      class684 var8 = class423.method5712((short)512);
@@ -214,9 +193,9 @@ public class class86 implements class893 {
 
    static final void method951(class744 var0, byte var1) {
       try {
-         var0.field3161[(var0.field3156 += -391880689) * 681479919 - 1] = class730.field2817 ? 1 : 0;
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class730.field2735 == null ? "" : class730.field2735;
-         var0.field3157[(var0.field3158 += 969361751) * -203050393 - 1] = class730.field2820 == null ? "" : class730.field2820;
+         var0.field3161[++var0.field3156 - 1] = class730.field2817 ? 1 : 0;
+         var0.field3157[++var0.field3158 - 1] = class730.field2735 == null ? "" : class730.field2735;
+         var0.field3157[++var0.field3158 - 1] = class730.field2820 == null ? "" : class730.field2820;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "am.vt(" + ')');
       }
