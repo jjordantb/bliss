@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="BlissWString">
+  <library name="BlissStrings">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/BlissWString.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/BlissStrings.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
