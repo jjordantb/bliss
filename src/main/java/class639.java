@@ -1,4 +1,4 @@
-public class class639 extends class568 {
+public class class639 extends Node {
    static int[] field9810;
    int field9811;
    public class32 field9812 = new class32();

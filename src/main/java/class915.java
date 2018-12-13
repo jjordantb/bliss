@@ -55,10 +55,10 @@ public class class915 extends class697 {
             if (!class602.field8645) {
                if (class422.field9604.field2975) {
                   if (class348.field220 != null) {
-                     return class348.field220.field1699;
+                     return class348.field220.regionY;
                   }
                } else if (class713.field3542 != null) {
-                  return class713.field3542.field1699;
+                  return class713.field3542.regionY;
                }
             } else {
                class230 var1 = class600.method5467(-2091565600);
@@ -67,7 +67,7 @@ public class class915 extends class697 {
                int var4;
                int var5;
                int var6;
-               class357 var7;
+               MenuItem var7;
                if (!class602.field8638) {
                   if (var2 > class622.field9006 && var2 < class809.field4595 + class622.field9006) {
                      var4 = -1;
@@ -90,9 +90,9 @@ public class class915 extends class697 {
                         var5 = 0;
                         class19 var9 = new class19(class602.field8647);
 
-                        for(var7 = (class357)var9.method3367(446818813); var7 != null; var7 = (class357)var9.next()) {
+                        for(var7 = (MenuItem)var9.method3367(446818813); var7 != null; var7 = (MenuItem)var9.next()) {
                            if (var5++ == var4) {
-                              return var7.field1699;
+                              return var7.regionY;
                            }
                         }
                      }
@@ -122,7 +122,7 @@ public class class915 extends class697 {
 
                         for(class497 var11 = (class497)var10.method6341((short)21512); var11 != null; var11 = (class497)var10.next()) {
                            if (var5++ == var4) {
-                              return ((class357)var11.field8121.field4317.field208).field1699;
+                              return ((MenuItem)var11.field8121.field4317.field208).regionY;
                            }
                         }
                      }
@@ -147,9 +147,9 @@ public class class915 extends class697 {
                         var5 = 0;
                         var10 = new class906(class602.field8639.field8121);
 
-                        for(var7 = (class357)var10.method6341((short)3172); var7 != null; var7 = (class357)var10.next()) {
+                        for(var7 = (MenuItem)var10.method6341((short)3172); var7 != null; var7 = (MenuItem)var10.next()) {
                            if (var5++ == var4) {
-                              return var7.field1699;
+                              return var7.regionY;
                            }
                         }
                      }

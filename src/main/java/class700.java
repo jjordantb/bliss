@@ -29,7 +29,7 @@ final class class700 extends class856 {
       }
    }
 
-   public static void method6330(class568 var0, class568 var1, int var2) {
+   public static void method6330(Node var0, Node var1, int var2) {
       try {
          if (var0.field642 != null) {
             var0.method545(-1460969981);
@@ -58,7 +58,7 @@ final class class700 extends class856 {
                   return null;
                }
 
-               if (var1.method4339(1111075384) > class27.method3468((byte)1)) {
+               if (var1.method4339(1111075384) > class27.resetTimer((byte)1)) {
                   return null;
                }
 

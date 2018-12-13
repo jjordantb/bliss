@@ -53,11 +53,11 @@ public class class502 {
 
    static void method1899(int var0, boolean var1, byte var2) {
       try {
-         class163 var3 = class213.method3812(var0, var1, 1122460657);
+         ItemNode var3 = class213.method3812(var0, var1, 1122460657);
          if (var3 != null) {
-            for(int var4 = 0; var4 < var3.field6619.length; ++var4) {
-               var3.field6619[var4] = -1;
-               var3.field6620[var4] = 0;
+            for(int var4 = 0; var4 < var3.itemIds.length; ++var4) {
+               var3.itemIds[var4] = -1;
+               var3.itemStackSizes[var4] = 0;
             }
          }
 

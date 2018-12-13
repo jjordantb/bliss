@@ -40,8 +40,8 @@ public class class622 {
    static final void method5339(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class382.method1058(var3, var4, var0, -2146430395);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "do.cp(" + ')');
@@ -56,7 +56,7 @@ public class class622 {
       }
    }
 
-   static String method5341(class564 var0, int var1) {
+   static String method5341(Widget var0, int var1) {
       try {
          if (class730.method1761(var0).method1742((byte)-122) == 0) {
             return null;

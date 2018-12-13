@@ -70,15 +70,15 @@ public class class374 implements class925 {
    static final void method1004(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class593.method1231(var3, var4, var0, -919451749);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "fw.ej(" + ')');
       }
    }
 
-   static final void method1005(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method1005(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          int[] var5 = class960.method2212(var4, var2, -1732377635);
@@ -97,8 +97,8 @@ public class class374 implements class925 {
    static final void method1006(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class572.method107(var3, var4, var0, (byte)-89);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "fw.op(" + ')');
@@ -107,7 +107,7 @@ public class class374 implements class925 {
 
    static boolean method1007(class848 var0, int var1, int var2) {
       try {
-         class27.method3468((byte)1);
+         class27.resetTimer((byte)1);
          if (!var0.method4865(2085922748)) {
             return false;
          } else {

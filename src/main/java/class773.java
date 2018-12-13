@@ -45,7 +45,7 @@ public class class773 extends class535 {
       }
    }
 
-   static final void method2313(class564 var0, class744 var1, int var2) {
+   static final void method2313(Widget var0, class744 var1, int var2) {
       try {
          if (var1.field3171 >= 10) {
             throw new RuntimeException();

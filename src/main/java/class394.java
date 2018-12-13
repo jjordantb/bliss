@@ -94,7 +94,7 @@ public class class394 {
       }
    }
 
-   static final void method3410(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method3410(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var2.field3156 -= 4;
          var0.field876 = var2.field3161[var2.field3156];
@@ -111,7 +111,7 @@ public class class394 {
             var0.field938 = false;
          }
 
-         if (-1 == var0.field879 && !var1.field1101) {
+         if (-1 == var0.field879 && !var1.closed) {
             class535.method2284(var0.field867, 1592451280);
          }
 
@@ -136,9 +136,9 @@ public class class394 {
    static final void method3412(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-76);
-         class131 var4 = class382.field1410[var2 >>> 16];
-         class564 var5 = class317.method471(var4, var3, -635605619);
+         Widget var3 = class449.method3756(var2, (byte)-76);
+         WidgetContainer var4 = class382.widgetContainers[var2 >>> 16];
+         Widget var5 = class317.method471(var4, var3, -635605619);
          var0.field3161[++var0.field3156 - 1] = var5 == null ? -1 : -440872681 * var5.field867 * 533296807;
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "nf.rt(" + ')');

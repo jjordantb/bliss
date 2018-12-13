@@ -37,7 +37,7 @@ public class class691 implements class821 {
 
    static final void method3781(class744 var0, int var1) {
       try {
-         var0.field3161[++var0.field3156 - 1] = class718.method2071(class27.method3468((byte)1));
+         var0.field3161[++var0.field3156 - 1] = class718.method2071(class27.resetTimer((byte)1));
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "hn.akx(" + ')');
       }

@@ -73,7 +73,7 @@ final class class141 implements class768 {
          int var3 = var0.field3161[var0.field3156 + 1];
          int var4 = var0.field3161[2 + var0.field3156];
          class449.method3756(var2, (byte)83);
-         class362.method1505(class382.field1410[var2 >>> 16], var2 & '\uffff', var3, var4, var0.field3178, var0, -782842809);
+         class362.method1505(class382.widgetContainers[var2 >>> 16], var2 & '\uffff', var3, var4, var0.field3178, var0, -782842809);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "k.ba(" + ')');
       }

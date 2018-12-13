@@ -317,7 +317,7 @@ public class class645 {
       }
    }
 
-   static final void method6158(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method6158(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var2.field3156 -= 6;
          var0.field1022 = var2.field3161[var2.field3156];
@@ -327,7 +327,7 @@ public class class645 {
          var0.field917 = var2.field3161[var2.field3156 + 4];
          var0.field1009 = var2.field3161[5 + var2.field3156];
          class814.method2932(var0, -212905305);
-         if (var0.field879 == -1 && !var1.field1101) {
+         if (var0.field879 == -1 && !var1.closed) {
             class466.method4009(var0.field867, 1280161457);
             class917.method6455(var0.field867, 1365886574);
          }

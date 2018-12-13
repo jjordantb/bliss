@@ -105,7 +105,7 @@ public abstract class class341 {
       }
    }
 
-   static final void method250(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method250(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var0.field906 = var2.field3161[--var2.field3156] == 1;
          class814.method2932(var0, -270865215);
@@ -117,8 +117,8 @@ public abstract class class341 {
    static final void method251(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)36);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)36);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class384.method1082(var3, var4, var0, (byte)16);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ki.gz(" + ')');
@@ -140,14 +140,14 @@ public abstract class class341 {
       }
    }
 
-   public static int method253(class357 var0, byte var1) {
+   public static int method253(MenuItem var0, byte var1) {
       try {
          if (class602.field8645) {
             return 6;
          } else if (var0 == null) {
             return 0;
          } else {
-            int var2 = var0.field1702;
+            int var2 = var0.opcode;
             if (class140.method1049(var2, 1867074090)) {
                return 1;
             } else if (class745.method2593(var2, (short)300)) {
@@ -382,8 +382,8 @@ public abstract class class341 {
 
    static void method263(int var0) {
       try {
-         for(class357 var1 = (class357)class602.field8647.method901(1766612795); var1 != null; var1 = (class357)class602.field8647.method906(49146)) {
-            if (class140.method1049(var1.field1702, 1804726647)) {
+         for(MenuItem var1 = (MenuItem)class602.field8647.method901(1766612795); var1 != null; var1 = (MenuItem)class602.field8647.method906(49146)) {
+            if (class140.method1049(var1.opcode, 1804726647)) {
                class56.method1550(var1, (byte)5);
             }
          }

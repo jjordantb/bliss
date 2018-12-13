@@ -213,7 +213,7 @@ public class class171 extends class879 implements class297 {
       class606 var16;
       for(var15 = 0; var15 < var12; ++var15) {
          var16 = var3.field6481[var15];
-         class526 var17 = class568.method550(var16.field8570, -67897652);
+         class526 var17 = Node.method550(var16.field8570, -67897652);
          var13[var14++] = var16.field8569;
          var13[var14++] = var17.field3663;
          var13[var14++] = var17.field3661;

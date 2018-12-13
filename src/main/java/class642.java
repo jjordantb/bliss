@@ -2,7 +2,7 @@ import jaclib.memory.Stream;
 import jaclib.memory.heap.I;
 import java.nio.ByteBuffer;
 
-public class class642 extends class568 {
+public class class642 extends Node {
    int field10072 = 0;
    class894 field10073;
    int field10074;

@@ -1,11 +1,11 @@
-public class class202 extends class568 {
+public class class202 extends Node {
    public String field7576;
    int field7577;
-   public class564 field7578;
+   public Widget field7578;
    public int field7579;
    public int field7580;
    public int field7581;
-   public class564 field7582;
+   public Widget field7582;
    public Object[] field7583;
    public int field7584;
    public int field7585;

@@ -14,8 +14,8 @@ final class class455 implements class648 {
    static final void method3816(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-40);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-40);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class333.method111(var3, var4, var0, 280747696);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ex.ip(" + ')');
@@ -61,8 +61,8 @@ final class class455 implements class648 {
    static final void method3818(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class341.method250(var3, var4, var0, 1246330568);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ex.fd(" + ')');

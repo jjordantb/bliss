@@ -328,11 +328,11 @@ public class class397 extends class676 implements class265 {
          int var2 = var0.field3161[var0.field3156];
          boolean var3 = var0.field3161[var0.field3156 + 1] == 1;
          if (class740.field3210 != null) {
-            class568 var4 = class740.field3210.method2942((long)var2);
+            Node var4 = class740.field3210.method2942((long)var2);
             if (var4 != null && !var3) {
                var4.method545(-1460969981);
             } else if (var4 == null && var3) {
-               var4 = new class568();
+               var4 = new Node();
                class740.field3210.method2947(var4, (long)var2);
             }
          }

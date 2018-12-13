@@ -26,51 +26,51 @@ public class class362 implements class70 {
       }
    }
 
-   static void method1505(class131 var0, int var1, int var2, int var3, boolean var4, class744 var5, int var6) {
+   static void method1505(WidgetContainer var0, int var1, int var2, int var3, boolean var4, class744 var5, int var6) {
       try {
          if (var2 == 0) {
             throw new RuntimeException();
          } else {
-            class564 var7 = var0.field1103[var1];
-            if (var7.field1017 == null) {
-               var7.field1017 = new class564[var3 + 1];
-               var7.field1018 = var7.field1017;
+            Widget var7 = var0.widgetsCopy[var1];
+            if (var7.children1 == null) {
+               var7.children1 = new Widget[var3 + 1];
+               var7.children2 = var7.children1;
             }
 
-            if (var7.field1017.length <= var3) {
-               class564[] var8;
-               if (var7.field1018 == var7.field1017) {
-                  var8 = new class564[1 + var3];
+            if (var7.children1.length <= var3) {
+               Widget[] var8;
+               if (var7.children2 == var7.children1) {
+                  var8 = new Widget[1 + var3];
 
-                  for(int var9 = 0; var9 < var7.field1017.length; ++var9) {
-                     var8[var9] = var7.field1017[var9];
+                  for(int var9 = 0; var9 < var7.children1.length; ++var9) {
+                     var8[var9] = var7.children1[var9];
                   }
 
-                  var7.field1017 = var7.field1018 = var8;
+                  var7.children1 = var7.children2 = var8;
                } else {
-                  var8 = new class564[1 + var3];
-                  class564[] var13 = new class564[1 + var3];
+                  var8 = new Widget[1 + var3];
+                  Widget[] var13 = new Widget[1 + var3];
 
-                  for(int var10 = 0; var10 < var7.field1017.length; ++var10) {
-                     var8[var10] = var7.field1017[var10];
-                     var13[var10] = var7.field1018[var10];
+                  for(int var10 = 0; var10 < var7.children1.length; ++var10) {
+                     var8[var10] = var7.children1[var10];
+                     var13[var10] = var7.children2[var10];
                   }
 
-                  var7.field1017 = var8;
-                  var7.field1018 = var13;
+                  var7.children1 = var8;
+                  var7.children2 = var13;
                }
             }
 
-            if (var3 > 0 && var7.field1017[var3 - 1] == null) {
+            if (var3 > 0 && var7.children1[var3 - 1] == null) {
                throw new RuntimeException("" + (var3 - 1));
             } else {
-               class564 var12 = new class564();
+               Widget var12 = new Widget();
                var12.field869 = var2;
                var12.field885 = var12.field867 = var7.field867;
                var12.field879 = var3;
-               var7.field1017[var3] = var12;
-               if (var7.field1018 != var7.field1017) {
-                  var7.field1018[var3] = var12;
+               var7.children1[var3] = var12;
+               if (var7.children2 != var7.children1) {
+                  var7.children2[var3] = var12;
                }
 
                class237 var14;
@@ -90,7 +90,7 @@ public class class362 implements class70 {
       }
    }
 
-   static final void method1506(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method1506(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -883564772) != null) {

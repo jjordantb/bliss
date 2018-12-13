@@ -1,4 +1,4 @@
-public class class508 extends class568 {
+public class class508 extends Node {
    static class769 field3965;
    public class373 field3966 = new class373();
    static class272 field3967;
@@ -19,8 +19,8 @@ public class class508 extends class568 {
    static final void method2499(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class979.method1837(var3, var4, var0, (byte)-5);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "aad.jo(" + ')');
@@ -30,8 +30,8 @@ public class class508 extends class568 {
    static final void method2500(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-113);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-113);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class849.method4784(var3, var4, var0, 131231409);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "aad.ij(" + ')');

@@ -187,8 +187,8 @@ public class class932 {
             class602.field8672.method905((byte)1);
 
             int var3;
-            for(class357 var2 = (class357)class602.field8647.method901(1766612795); var2 != null; var2 = (class357)class602.field8647.method906(49146)) {
-               var3 = var2.field1702;
+            for(MenuItem var2 = (MenuItem)class602.field8647.method901(1766612795); var2 != null; var2 = (MenuItem)class602.field8647.method906(49146)) {
+               var3 = var2.opcode;
                if (var3 < 1000) {
                   var2.method545(-1460969981);
                   if (59 != var3 && var3 != 2 && 8 != var3 && var3 != 17 && var3 != 15 && 16 != var3 && var3 != 58) {
@@ -207,14 +207,14 @@ public class class932 {
                class348.field220 = null;
             } else {
                if (class118.method1458((byte)41) && class602.field8673 > 2) {
-                  class713.field3542 = (class357)class602.field8647.field1104.field642.field642;
+                  class713.field3542 = (MenuItem)class602.field8647.field1104.field642.field642;
                } else {
-                  class713.field3542 = (class357)class602.field8647.field1104.field642;
+                  class713.field3542 = (MenuItem)class602.field8647.field1104.field642;
                }
 
-               class602.field8644 = (class357)class602.field8647.field1104.field642;
+               class602.field8644 = (MenuItem)class602.field8647.field1104.field642;
                if (class602.field8673 > 2) {
-                  class348.field220 = (class357)class602.field8644.field642;
+                  class348.field220 = (MenuItem)class602.field8644.field642;
                } else {
                   class348.field220 = null;
                }
@@ -236,7 +236,7 @@ public class class932 {
                int var7;
                if (class71.method1090(class422.field9604.field2969, var12, (byte)-119)) {
                   int var5;
-                  class357 var8;
+                  MenuItem var8;
                   class906 var15;
                   if (class602.field8639 != null && var3 >= class514.field4319 && var3 <= class514.field4319 + class965.field2535 && var4 >= class936.field10310 && var4 <= class936.field10310 + class382.field1411) {
                      var5 = -1;
@@ -259,9 +259,9 @@ public class class932 {
                         var6 = 0;
                         var15 = new class906(class602.field8639.field8121);
 
-                        for(var8 = (class357)var15.method6341((short)15399); var8 != null; var8 = (class357)var15.next()) {
+                        for(var8 = (MenuItem)var15.method6341((short)15399); var8 != null; var8 = (MenuItem)var15.next()) {
                            if (var5 == var6) {
-                              class916.method6463(var8, var3, var4, (short)916);
+                              class916.processAction(var8, var3, var4, (short)916);
                               break;
                            }
 
@@ -292,9 +292,9 @@ public class class932 {
                            var6 = 0;
                            class19 var13 = new class19(class602.field8647);
 
-                           for(var8 = (class357)var13.method3367(1073452729); var8 != null; var8 = (class357)var13.next()) {
+                           for(var8 = (MenuItem)var13.method3367(1073452729); var8 != null; var8 = (MenuItem)var13.next()) {
                               if (var6 == var5) {
-                                 class916.method6463(var8, var3, var4, (short)916);
+                                 class916.processAction(var8, var3, var4, (short)916);
                                  break;
                               }
 
@@ -328,7 +328,7 @@ public class class932 {
 
                            for(class497 var16 = (class497)var15.method6341((short)6300); var16 != null; var16 = (class497)var15.next()) {
                               if (var6 == var5) {
-                                 class916.method6463((class357)var16.field8121.field4317.field208, var3, var4, (short)916);
+                                 class916.processAction((MenuItem)var16.field8121.field4317.field208, var3, var4, (short)916);
                                  class979.method1835(2025307040);
                                  break;
                               }
@@ -411,7 +411,7 @@ public class class932 {
                   }
                } else if (var19) {
                   if (class348.field220 != null) {
-                     class916.method6463(class348.field220, var3, var4, (short)916);
+                     class916.processAction(class348.field220, var3, var4, (short)916);
                   }
                } else if (var14) {
                   if (class713.field3542 == null) {
@@ -424,7 +424,7 @@ public class class932 {
                         class602.field8643 = 1;
                         class469.field7328 = class713.field3542;
                      } else {
-                        class916.method6463(class713.field3542, var3, var4, (short)916);
+                        class916.processAction(class713.field3542, var3, var4, (short)916);
                      }
                   }
                }
@@ -441,10 +441,10 @@ public class class932 {
       }
    }
 
-   public static void method6294(class564[] var0, int var1) {
+   public static void method6294(Widget[] var0, int var1) {
       try {
          for(int var2 = 0; var2 < var0.length; ++var2) {
-            class564 var3 = var0[var2];
+            Widget var3 = var0[var2];
             if (var3.field982 != null) {
                class202 var4 = new class202();
                var4.field7578 = var3;
@@ -473,7 +473,7 @@ public class class932 {
       }
    }
 
-   static final void method6296(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method6296(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          int var4 = var2.field3161[--var2.field3156];
          int var5 = var2.field3161[--var2.field3156];
@@ -489,7 +489,7 @@ public class class932 {
    static final void method6297(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field887;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "cg.ow(" + ')');
@@ -499,7 +499,7 @@ public class class932 {
    static final void method6298(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field885;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "cg.oi(" + ')');
@@ -536,8 +536,8 @@ public class class932 {
    static final void method6301(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class537.method2317(var3, var4, var0, -735997058);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "cg.lp(" + ')');

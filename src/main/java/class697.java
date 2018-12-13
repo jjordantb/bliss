@@ -1,4 +1,4 @@
-public abstract class class697 extends class568 {
+public abstract class class697 extends Node {
    abstract void method3820(InputStream var1, int var2);
 
    abstract void method3821(class139 var1, int var2);

@@ -2,7 +2,7 @@ public class class147 {
    int[] field1517;
    byte[] field1518;
    int[] field1519;
-   public static class564 field1520;
+   public static Widget field1520;
 
    public class147(byte[] var1) {
       int var2 = var1.length;
@@ -316,8 +316,8 @@ public class class147 {
    static final void method1139(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-77);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-77);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class852.method5144(var3, var4, var0, -1171777109);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ep.eo(" + ')');
@@ -327,8 +327,8 @@ public class class147 {
    static final void method1140(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-77);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-77);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class679.method4270(var3, var4, var0, 268393846);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ep.ll(" + ')');
@@ -338,7 +338,7 @@ public class class147 {
    static final void method1141(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-61);
+         Widget var3 = class449.method3756(var2, (byte)-61);
          var0.field3161[++var0.field3156 - 1] = var3.field892;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ep.re(" + ')');
@@ -388,7 +388,7 @@ public class class147 {
 
          class730.field2823.method2947(var1, (long)var0);
          class342.method223(var1.field8101, var2, 888891171);
-         class564 var6 = class449.method3756(var0, (byte)49);
+         Widget var6 = class449.method3756(var0, (byte)49);
          if (var6 != null) {
             class814.method2932(var6, -702811353);
          }
@@ -400,7 +400,7 @@ public class class147 {
 
          class341.method263(-662741241);
          if (var6 != null) {
-            class948.method1938(class382.field1410[var6.field867 >>> 16], var6, !var3, 112223880);
+            class948.method1938(class382.widgetContainers[var6.field867 >>> 16], var6, !var3, 112223880);
          }
 
          if (!var3) {

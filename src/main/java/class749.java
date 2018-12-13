@@ -10,8 +10,8 @@ public abstract class class749 extends class783 {
    static final void method2524(class744 var0, short var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)56);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)56);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class969.method1694(var3, var4, var0, (short)19287);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "wk.fr(" + ')');
@@ -48,7 +48,7 @@ public abstract class class749 extends class783 {
             ;
          }
 
-         class730.field2874 = class27.method3468((byte)1);
+         class730.field2874 = class27.resetTimer((byte)1);
          class730.field2717 = false;
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "wk.gr(" + ')');
@@ -58,8 +58,8 @@ public abstract class class749 extends class783 {
    static final void method2526(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class221.method4036(var3, var4, var0, (short)255);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "wk.en(" + ')');

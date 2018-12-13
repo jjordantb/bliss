@@ -1,7 +1,7 @@
 public class class263 extends class304 {
    int field8130;
    int field8131;
-   static class564 field8132;
+   static Widget field8132;
 
    class263(InputStream var1) {
       super(var1);

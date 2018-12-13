@@ -435,7 +435,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
          this.method1313((byte)1);
          field1832 = class881.method6173(-978847778);
 
-         while(0L == field1836 || class27.method3468((byte)1) < field1836) {
+         while(0L == field1836 || class27.resetTimer((byte)1) < field1836) {
             class845.field8630 = field1832.method3977(field1824);
 
             for(int var7 = 0; var7 < class845.field8630; ++var7) {
@@ -453,7 +453,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
 
    void method1310(int var1) {
       try {
-         long var2 = class27.method3468((byte)1);
+         long var2 = class27.resetTimer((byte)1);
          long var4 = field1826[class111.field1907];
          field1826[class111.field1907] = var2;
          class111.field1907 = class111.field1907 + 1 & 31;
@@ -507,7 +507,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
       try {
          if (!field1837) {
             field1811 = true;
-            if (class27.method3468((byte)1) - field1831 > 1000L) {
+            if (class27.resetTimer((byte)1) - field1831 > 1000L) {
                Rectangle var2 = var1.getClipBounds();
                if (var2 == null || var2.width >= class919.field10433 && var2.height >= field1812) {
                   field1818 = true;
@@ -567,7 +567,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
 
    void method1314(byte var1) {
       try {
-         long var2 = class27.method3468((byte)1);
+         long var2 = class27.resetTimer((byte)1);
          long var4 = field1819[class596.field2141];
          field1819[class596.field2141] = var2;
          class596.field2141 = 1 + class596.field2141 & 31;
@@ -615,7 +615,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
    public void method3945() {
       try {
          if (!field1837) {
-            field1836 = class27.method3468((byte)1);
+            field1836 = class27.resetTimer((byte)1);
             class764.method2745(5000L);
             this.method1326(false, (byte)120);
          }
@@ -712,7 +712,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
          class837.field9161.setFocusTraversalKeysEnabled(false);
          field1811 = true;
          field1818 = false;
-         field1831 = class27.method3468((byte)1);
+         field1831 = class27.resetTimer((byte)1);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "mc.h(" + ')');
       }
@@ -889,15 +889,15 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
    static final void method1336(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class492.method4395(var3, var4, var0, (byte)-29);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "mc.eq(" + ')');
       }
    }
 
-   static final void method1337(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method1337(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var0.field903 = var2.field3161[--var2.field3156];
          class814.method2932(var0, 510093055);
@@ -909,7 +909,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
    static final void method1338(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field892;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "mc.pz(" + ')');

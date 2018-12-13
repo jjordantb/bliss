@@ -490,9 +490,9 @@ public class class470 extends IcmpService {
             }
 
             class730.field2822 = -1;
-            class730.field2823 = new class6(8);
+            class730.field2823 = new NodeTable(8);
             class515.method2693((short)255);
-            class730.field2822 = class6.field4931.field9522;
+            class730.field2822 = NodeTable.field4931.field9522;
             class161.method3551(false, (byte)8);
             class881.method6172(-1204145082);
             class228.method4586(class730.field2822, (int[])null, 188692666);

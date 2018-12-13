@@ -201,7 +201,7 @@ public class class715 extends class732 implements class265 {
       }
    }
 
-   static final void method2098(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method2098(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var0.method832(333321190);
       } catch (RuntimeException var5) {

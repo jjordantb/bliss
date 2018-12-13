@@ -1,4 +1,4 @@
-public abstract class class792 extends class568 {
+public abstract class class792 extends Node {
    public static class180 field510;
 
    static final void method439(class744 var0, int var1) {

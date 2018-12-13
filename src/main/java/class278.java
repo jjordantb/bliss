@@ -63,7 +63,7 @@ public class class278 {
    static final void method6627(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)76);
+         Widget var3 = class449.method3756(var2, (byte)76);
          var0.field3161[++var0.field3156 - 1] = var3.field887;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "df.qn(" + ')');

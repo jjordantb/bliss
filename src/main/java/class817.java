@@ -90,7 +90,7 @@ public class class817 extends class888 implements MouseListener, MouseMotionList
 
    void method2908(int var1, int var2, int var3, int var4, int var5) {
       try {
-         class358 var6 = class317.method473(var1, var2, var3, class27.method3468((byte)1), var4, -1798824718);
+         class358 var6 = class317.method473(var1, var2, var3, class27.resetTimer((byte)1), var4, -1798824718);
          this.field4626.method897(var6, 534328737);
       } catch (RuntimeException var7) {
          throw class158.method3445(var7, "aci.ai(" + ')');

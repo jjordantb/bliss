@@ -32,7 +32,7 @@ public class class896 extends class304 {
       }
    }
 
-   static final void method5589(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method5589(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var2.field3156 -= 4;
          var0.field1008 = var2.field3161[var2.field3156];

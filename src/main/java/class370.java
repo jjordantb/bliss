@@ -14,11 +14,11 @@ public class class370 {
       }
    }
 
-   static final void method877(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method877(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var0.field895 = var2.field3161[--var2.field3156];
          class814.method2932(var0, 230725327);
-         if (var0.field879 == -1 && !var1.field1101) {
+         if (var0.field879 == -1 && !var1.closed) {
             class392.method3382(var0.field867, (byte)-11);
          }
 
@@ -49,7 +49,7 @@ public class class370 {
       }
    }
 
-   static final void method880(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method880(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -1037591394) != null) {

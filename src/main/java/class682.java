@@ -13,7 +13,7 @@ public class class682 extends class345 {
    static int field7695 = 8;
    static int field7696 = 10;
    static int field7697 = 1;
-   static class6 field7698 = new class6(16);
+   static NodeTable field7698 = new NodeTable(16);
    static int field7699 = 12;
    static int field7700 = 13;
    static int field7701 = 14;
@@ -34,7 +34,7 @@ public class class682 extends class345 {
 
    void method4336(int var1) {
       try {
-         super.field209 = super.field209 & Long.MIN_VALUE | class27.method3468((byte)1) + 500L;
+         super.field209 = super.field209 & Long.MIN_VALUE | class27.resetTimer((byte)1) + 500L;
          field7684.method2704(this, (byte)-90);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ais.bf(" + ')');

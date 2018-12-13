@@ -79,15 +79,15 @@ public class class140 implements Runnable {
    static final void method1044(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class461.method3992(var3, var4, var0, (byte)12);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "j.fl(" + ')');
       }
    }
 
-   static final void method1045(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method1045(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var0.field997 = var2.field3161[--var2.field3156];
       } catch (RuntimeException var5) {
@@ -98,7 +98,7 @@ public class class140 implements Runnable {
    static final void method1046(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          class232.method4661(var3, var0, 171697285);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "j.qa(" + ')');

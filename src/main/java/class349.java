@@ -1,4 +1,4 @@
-public class class349 extends class568 {
+public class class349 extends Node {
    byte[] field1564;
    int[] field1565;
 

@@ -1,4 +1,4 @@
-public class class276 extends class568 {
+public class class276 extends Node {
    int field10589;
    int field10590;
 
@@ -14,7 +14,7 @@ public class class276 extends class568 {
             int var4 = 0;
 
             int var6;
-            for(class357 var5 = (class357)var0.field8121.method2706(2119881606); var5 != null; var5 = (class357)var0.field8121.method2707(-758930912)) {
+            for(MenuItem var5 = (MenuItem)var0.field8121.method2706(2119881606); var5 != null; var5 = (MenuItem)var0.field8121.method2707(-758930912)) {
                var6 = class631.method5861(var5, var3, 692106883);
                if (var6 > var4) {
                   var4 = var6;
@@ -209,7 +209,7 @@ public class class276 extends class568 {
       }
    }
 
-   static final void method6620(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method6620(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -1593702044) != null) {

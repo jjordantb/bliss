@@ -34,7 +34,7 @@ public class class894 extends class454 {
    byte[][] field9493;
    float[][] field9494;
    float[][] field9495;
-   class568[] field9496;
+   Node[] field9496;
    class539 field9497;
    static int[] field9498 = new int[1];
    static int[] field9499 = new int[1];
@@ -75,7 +75,7 @@ public class class894 extends class454 {
 
          long var18 = (long)var11.field10427 << 48 | (long)var11.field10425 << 42 | (long)var11.field10426 << 28 | (long)(var17 << 14) | (long)var16;
 
-         class568 var20;
+         Node var20;
          for(var20 = this.field9497.method2331(var18); var20 != null; var20 = this.field9497.method2332(-1979022775)) {
             class642 var21 = (class642)var20;
             if (var21.field10074 == var16 && var21.field10084 == (float)var17 && var21.field10076.method6484(var11, (byte)61)) {
@@ -383,7 +383,7 @@ public class class894 extends class454 {
             }
          }
 
-         class568[] var67 = new class568[this.field9497.method2334(1332224628)];
+         Node[] var67 = new Node[this.field9497.method2334(1332224628)];
          this.field9497.method2333(var67, 2094257346);
 
          for(var3 = 0; var3 < var67.length; ++var3) {
@@ -533,7 +533,7 @@ public class class894 extends class454 {
                         }
                      }
 
-                     class568 var88 = null;
+                     Node var88 = null;
                      if ((var40 & this.field9469 - 1) == 0 && (var41 & this.field9469 - 1) == 0) {
                         var88 = var10.method2331(var47);
                      }
@@ -733,7 +733,7 @@ public class class894 extends class454 {
             }
          }
 
-         this.field9496 = new class568[var12];
+         this.field9496 = new Node[var12];
          long[] var73 = new long[var12];
 
          for(int var71 = 0; var71 < var12; ++var71) {

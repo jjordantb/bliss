@@ -1,4 +1,4 @@
-public class class713 extends class568 {
+public class class713 extends Node {
    class660 field3534;
    float field3535;
    int field3536;
@@ -7,7 +7,7 @@ public class class713 extends class568 {
    int field3539;
    float field3540;
    static float[] field3541 = new float[3];
-   static class357 field3542;
+   static MenuItem field3542;
 
    void method2075(int var1) {
       try {
@@ -31,7 +31,7 @@ public class class713 extends class568 {
       this.method2075(-1046035099);
    }
 
-   static final void method2076(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method2076(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var0.field948 = var2.field3161[--var2.field3156];
          class814.method2932(var0, 1196529132);

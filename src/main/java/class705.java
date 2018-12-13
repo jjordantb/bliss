@@ -1,4 +1,4 @@
-public class class705 extends class568 {
+public class class705 extends Node {
    int field3292;
    int field3293;
    class656 field3294;

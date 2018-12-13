@@ -1,4 +1,4 @@
-public class class345 extends class568 {
+public class class345 extends Node {
    public class345 field207;
    public class345 field208;
    public long field209;

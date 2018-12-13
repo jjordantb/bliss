@@ -52,10 +52,10 @@ public class class426 extends class749 implements class297 {
 
    void method4122(Exception var1) {
       if (!field7403) {
-         field7399 = class27.method3468((byte)1);
+         field7399 = class27.resetTimer((byte)1);
          field7403 = true;
       } else {
-         if (class27.method3468((byte)1) - field7399 >= 30000L) {
+         if (class27.resetTimer((byte)1) - field7399 >= 30000L) {
             throw new RuntimeException(var1.getMessage());
          }
 

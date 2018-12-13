@@ -31,8 +31,8 @@ public class class969 {
    static final void method1691(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)58);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)58);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class232.method4660(var3, var4, var0, 1344346794);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "pr.gl(" + ')');
@@ -77,7 +77,7 @@ public class class969 {
       }
    }
 
-   static final void method1694(class564 var0, class131 var1, class744 var2, short var3) {
+   static final void method1694(Widget var0, WidgetContainer var1, class744 var2, short var3) {
       try {
          var0.field907 = var2.field3161[--var2.field3156] == 1;
          class814.method2932(var0, -275285651);
@@ -89,8 +89,8 @@ public class class969 {
    static final void method1695(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-91);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-91);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class610.method5138(var3, var4, var0, (byte)-121);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "pr.hd(" + ')');

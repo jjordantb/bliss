@@ -47,8 +47,8 @@ public class class167 {
    static final void method3695(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class866.method5840(var3, var4, var0, 1592585834);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "nr.kz(" + ')');
@@ -149,8 +149,8 @@ public class class167 {
                throw new RuntimeException("");
             }
          } else {
-            class564 var3 = var2.method4650(-2049654672);
-            var3.field1017[var2.field8255.field879] = null;
+            Widget var3 = var2.method4650(-2049654672);
+            var3.children1[var2.field8255.field879] = null;
             class814.method2932(var3, 575626440);
          }
       } catch (RuntimeException var4) {

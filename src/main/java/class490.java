@@ -53,7 +53,7 @@ public class class490 {
       }
    }
 
-   static final void method4432(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method4432(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -68836416) != null) {
@@ -87,7 +87,7 @@ public class class490 {
             }
 
             class601.field9198 = false;
-            class191.field7004 = class27.method3468((byte)1);
+            class191.field7004 = class27.resetTimer((byte)1);
             field7865 = null;
          }
 
@@ -149,7 +149,7 @@ public class class490 {
 
    static void method4437(int var0) {
       try {
-         class602.field8633 = new class357(class814.field4808.method2927(class321.field1066, -875414210), "", class730.field2919, 1006, -1, 0L, 0, 0, true, false, 0L, true);
+         class602.field8633 = new MenuItem(class814.field4808.method2927(class321.field1066, -875414210), "", class730.field2919, 1006, -1, 0L, 0, 0, true, false, 0L, true);
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "nq.k(" + ')');
       }

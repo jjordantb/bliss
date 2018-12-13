@@ -110,7 +110,7 @@ public class class423 implements class331 {
       }
    }
 
-   static final void method5710(class564 var0, class744 var1, int var2) {
+   static final void method5710(Widget var0, class744 var1, int var2) {
       try {
          if (class730.method1761(var0).method1737((byte)-12) && class730.field2633 == null) {
             class118.method1463(var0.field867, var0.field879, 1723723267);
@@ -145,8 +145,8 @@ public class class423 implements class331 {
    static final void method5713(class848 var0, class478 var1, byte var2) {
       try {
          if (class491.field7793 != null) {
-            class27.method3468((byte)1);
-            class27.method3468((byte)1);
+            class27.resetTimer((byte)1);
+            class27.resetTimer((byte)1);
             if (class740.field3198 < 10) {
                if (!class491.field7823.method3282(class491.field7793.field13, -2140139718)) {
                   class740.field3198 = class792.field510.method3275(class491.field7793.field13, -1210672889) / 10;

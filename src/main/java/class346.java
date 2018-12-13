@@ -11,7 +11,7 @@ public class class346 extends class345 {
    public int field180;
    public Object[] field181;
    public int field182;
-   public class6[] field183;
+   public NodeTable[] field183;
 
    int method148(InputStream var1, int var2) {
       try {
@@ -28,11 +28,11 @@ public class class346 extends class345 {
          this.field182 = var1.method6374();
          int var6 = var1.method6371();
          if (var6 > 0) {
-            this.field183 = new class6[var6];
+            this.field183 = new NodeTable[var6];
 
             for(int var7 = 0; var7 < var6; ++var7) {
                int var8 = var1.method6374();
-               class6 var9 = new class6(class18.method3687(var8, (byte)16));
+               NodeTable var9 = new NodeTable(class18.method3687(var8, (byte)16));
                this.field183[var7] = var9;
 
                while(var8-- > 0) {

@@ -197,10 +197,10 @@ public class class735 implements Runnable {
       this.field3007.start();
    }
 
-   static final void method1803(int var0, class6 var1, int var2) {
+   static final void method1803(int var0, NodeTable var1, int var2) {
       try {
          if (-1 != var0 && var1.method2942((long)var0) == null) {
-            var1.method2947(new class568(), (long)var0);
+            var1.method2947(new Node(), (long)var0);
          }
 
       } catch (RuntimeException var4) {

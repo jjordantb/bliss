@@ -1743,18 +1743,18 @@ public class class545 {
    static final void method2456(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field895;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "nu.pc(" + ')');
       }
    }
 
-   static class564 method2457(class564 var0, byte var1) {
+   static Widget method2457(Widget var0, byte var1) {
       try {
-         class564 var2 = class730.method1768(var0);
+         Widget var2 = class730.method1768(var0);
          if (var2 == null) {
-            var2 = var0.field958;
+            var2 = var0.parent;
          }
 
          return var2;

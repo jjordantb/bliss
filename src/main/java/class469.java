@@ -7,7 +7,7 @@ public class class469 {
    static class469 field7325 = new class469("game5", "Game 5", 4);
    public String field7326;
    public int field7327;
-   static class357 field7328;
+   static MenuItem field7328;
    static int field7329;
 
    class469(String var1, String var2, int var3) {
@@ -76,7 +76,7 @@ public class class469 {
       }
    }
 
-   static void method4019(class564 var0, int var1) {
+   static void method4019(Widget var0, int var1) {
       try {
          if (5 == var0.field869 && -1 != var0.field1005) {
             class657.method5659(class593.field1623, var0, -1423422969);
@@ -87,10 +87,10 @@ public class class469 {
       }
    }
 
-   static final void method4020(class564[] var0, int var1, byte var2) {
+   static final void method4020(Widget[] var0, int var1, byte var2) {
       try {
          for(int var3 = 0; var3 < var0.length; ++var3) {
-            class564 var4 = var0[var3];
+            Widget var4 = var0[var3];
             if (var4 != null && var1 == var4.field885) {
                if (class730.method1762(var4)) {
                   if (var2 != 1) {
@@ -99,8 +99,8 @@ public class class469 {
                } else {
                   if (var4.field869 == 0) {
                      method4020(var0, var4.field867, (byte)1);
-                     if (var4.field1018 != null) {
-                        method4020(var4.field1018, var4.field867, (byte)1);
+                     if (var4.children2 != null) {
+                        method4020(var4.children2, var4.field867, (byte)1);
                      }
 
                      class256 var5 = (class256)class730.field2823.method2942((long)var4.field867);
@@ -203,7 +203,7 @@ public class class469 {
          }
 
          class730.field2822 = -1;
-         class730.field2823 = new class6(8);
+         class730.field2823 = new NodeTable(8);
          class515.method2693((short)255);
          class730.field2633 = null;
 

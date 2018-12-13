@@ -1,4 +1,4 @@
-public class class437 extends class568 {
+public class class437 extends Node {
    public Object field7515;
 
    public class437(Object var1) {

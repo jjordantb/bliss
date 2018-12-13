@@ -29,7 +29,7 @@ public class class86 implements class893 {
       this.field1133 = new float[this.field1132 * this.field1131];
    }
 
-   static void method943(class848 var0, int var1, int var2, class564 var3, int var4) {
+   static void method943(class848 var0, int var1, int var2, Widget var3, int var4) {
       try {
          byte var5 = 63;
          byte var6 = 7;
@@ -50,7 +50,7 @@ public class class86 implements class893 {
    static final void method944(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          class587.method166(var3, var0, (byte)24);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "am.qz(" + ')');
@@ -101,7 +101,7 @@ public class class86 implements class893 {
       }
    }
 
-   static final void method948(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method948(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          int var4 = var2.field3161[--var2.field3156];
          if (var4 != var0.field900) {
@@ -109,7 +109,7 @@ public class class86 implements class893 {
             class814.method2932(var0, -668406254);
          }
 
-         if (var0.field879 == -1 && !var1.field1101) {
+         if (var0.field879 == -1 && !var1.closed) {
             class191.method3724(var0.field867, 1038434674);
          }
 
@@ -183,8 +183,8 @@ public class class86 implements class893 {
    static final void method950(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class905.method6346(var3, var4, var0, -653692022);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "am.nz(" + ')');

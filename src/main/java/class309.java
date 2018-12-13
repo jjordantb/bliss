@@ -370,7 +370,7 @@ public class class309 {
    static final void method362(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          class200.method4351(var3, var0, (byte)0);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ck.qo(" + ')');
@@ -399,7 +399,7 @@ public class class309 {
       }
    }
 
-   static final void method365(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method365(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var2.field3156 -= 3;
          int var4 = var2.field3161[var2.field3156];
@@ -408,7 +408,7 @@ public class class309 {
          if (var4 >= 0 && var4 < 5) {
             var0.method836(var4, var5, var6, -162772929);
             class814.method2932(var0, -882757286);
-            if (var0.field879 == -1 && !var1.field1101) {
+            if (var0.field879 == -1 && !var1.closed) {
                class539.method2341(var0.field867, var4, 227307662);
             }
          }

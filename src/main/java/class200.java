@@ -61,12 +61,12 @@ public class class200 {
       }
    }
 
-   static final void method4351(class564 var0, class744 var1, byte var2) {
+   static final void method4351(Widget var0, class744 var1, byte var2) {
       try {
          class230 var3 = var0.method823(class785.field3827, class730.field2681, (byte)88);
          int var4 = var1.field3161[--var1.field3156];
          int var5 = var1.field3161[--var1.field3156];
-         int var6 = var3.method4602(var0.field937, var0.field881, var0.field916, var5, var4, class324.field621, (byte)-62);
+         int var6 = var3.method4602(var0.text, var0.field881, var0.field916, var5, var4, class324.field621, (byte)-62);
          var1.field3161[++var1.field3156 - 1] = var6;
       } catch (RuntimeException var7) {
          throw class158.method3445(var7, "en.qg(" + ')');

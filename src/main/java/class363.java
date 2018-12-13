@@ -278,8 +278,8 @@ public class class363 {
    static final void method1626(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-62);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-62);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class643.method6122(var3, var4, var0, (byte)-2);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "og.ji(" + ')');
@@ -289,7 +289,7 @@ public class class363 {
    static final void method1627(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-5);
+         Widget var3 = class449.method3756(var2, (byte)-5);
          var0.field3161[++var0.field3156 - 1] = var3.field885;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "og.ra(" + ')');
@@ -364,7 +364,7 @@ public class class363 {
    static final void method1631(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)22);
+         Widget var3 = class449.method3756(var2, (byte)22);
          class232.method4661(var3, var0, 2145679752);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "og.qd(" + ')');

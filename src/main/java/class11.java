@@ -43,7 +43,7 @@ public class class11 {
          if (class657.field9543 == null) {
             class657.field9543 = class431.method4251(-664645155);
             class776.field3728 = class657.field9543[0];
-            class657.field9542 = class27.method3468((byte)1);
+            class657.field9542 = class27.resetTimer((byte)1);
          }
 
          if (class302.field3768 == null) {
@@ -72,7 +72,7 @@ public class class11 {
 
             class657.field9548 = var1.field7504;
             if (class776.field3728.field7502 || var1.field7502) {
-               class657.field9542 = class27.method3468((byte)1);
+               class657.field9542 = class27.resetTimer((byte)1);
             }
          }
 

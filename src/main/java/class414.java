@@ -50,23 +50,23 @@ public class class414 {
    public boolean field9398;
    public static int field9399 = 11;
 
-   static void method5597(class131 var0, class564 var1, byte var2) {
+   static void method5597(WidgetContainer var0, Widget var1, byte var2) {
       try {
          if (var1 != null) {
             int var4;
             if (-1 != var1.field879) {
-               class564 var3 = var0.field1103[var1.field885 & '\uffff'];
+               Widget var3 = var0.widgetsCopy[var1.field885 & '\uffff'];
                if (var3 != null) {
-                  if (var3.field1018 == var3.field1017) {
-                     var3.field1018 = new class564[var3.field1017.length];
-                     var3.field1018[0] = var1;
-                     class901.method6351(var3.field1017, 0, var3.field1018, 1, var1.field879);
-                     class901.method6351(var3.field1017, 1 + var1.field879, var3.field1018, 1 + var1.field879, var3.field1017.length - var1.field879 - 1);
+                  if (var3.children2 == var3.children1) {
+                     var3.children2 = new Widget[var3.children1.length];
+                     var3.children2[0] = var1;
+                     class901.method6351(var3.children1, 0, var3.children2, 1, var1.field879);
+                     class901.method6351(var3.children1, 1 + var1.field879, var3.children2, 1 + var1.field879, var3.children1.length - var1.field879 - 1);
                   } else {
                      var4 = 0;
 
-                     class564[] var5;
-                     for(var5 = var3.field1018; var4 < var5.length; ++var4) {
+                     Widget[] var5;
+                     for(var5 = var3.children2; var4 < var5.length; ++var4) {
                         if (var1 == var5[var4]) {
                            if (var2 >= 0) {
                               throw new IllegalStateException();
@@ -82,7 +82,7 @@ public class class414 {
                   }
                }
             } else {
-               class564[] var7 = var0.method888((byte)-3);
+               Widget[] var7 = var0.method888((byte)-3);
 
                for(var4 = 0; var4 < var7.length && var7[var4] != var1; ++var4) {
                   ;

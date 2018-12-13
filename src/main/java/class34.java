@@ -112,8 +112,8 @@ public class class34 extends class347 {
    static final void method3325(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-15);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-15);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class740.method1919(var3, var4, var0, (byte)31);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "agd.de(" + ')');

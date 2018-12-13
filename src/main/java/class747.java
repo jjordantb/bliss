@@ -78,7 +78,7 @@ public class class747 {
 
    static final void method2614(class744 var0, int var1) {
       try {
-         var0.field3161[++var0.field3156 - 1] = (int)(class27.method3468((byte)1) / 60000L);
+         var0.field3161[++var0.field3156 - 1] = (int)(class27.resetTimer((byte)1) / 60000L);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "pq.akn(" + ')');
       }

@@ -22,7 +22,7 @@ public final class class71 {
    static final void method1085(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field900;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ha.pb(" + ')');
@@ -69,18 +69,18 @@ public final class class71 {
       }
    }
 
-   static final void method1088(class564[] var0, int var1, byte var2) {
+   static final void method1088(Widget[] var0, int var1, byte var2) {
       try {
          for(int var3 = 0; var3 < var0.length; ++var3) {
-            class564 var4 = var0[var3];
+            Widget var4 = var0[var3];
             if (var4 == null) {
                if (var2 <= 1) {
                   break;
                }
             } else {
                if (var4.field869 == 0) {
-                  if (var4.field1018 != null) {
-                     method1088(var4.field1018, var1, (byte)26);
+                  if (var4.children2 != null) {
+                     method1088(var4.children2, var1, (byte)26);
                   }
 
                   class256 var5 = (class256)class730.field2823.method2942((long)var4.field867);
@@ -99,8 +99,8 @@ public final class class71 {
 
                if (1 == var1 && var4.field975 != null) {
                   if (var4.field879 >= 0) {
-                     class564 var8 = class449.method3756(var4.field867, (byte)-12);
-                     if (var8 == null || var8.field1017 == null || var4.field879 >= var8.field1017.length || var8.field1017[var4.field879] != var4) {
+                     Widget var8 = class449.method3756(var4.field867, (byte)-12);
+                     if (var8 == null || var8.children1 == null || var4.field879 >= var8.children1.length || var8.children1[var4.field879] != var4) {
                         continue;
                      }
                   }
@@ -122,7 +122,7 @@ public final class class71 {
       try {
          int var2 = var0.field3161[--var0.field3156];
          if (-1 != var2) {
-            class131.method892(var2, 2038530463);
+            WidgetContainer.method892(var2, 2038530463);
          }
 
       } catch (RuntimeException var3) {

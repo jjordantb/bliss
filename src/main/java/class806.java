@@ -12,7 +12,7 @@ public abstract class class806 extends class783 {
          if (class382.method1061((byte)1) != class99.field625) {
             try {
                String var1 = class833.field9178.getParameter(class440.field7670.field7683);
-               int var2 = (int)(class27.method3468((byte)1) / 86400000L) - 11745;
+               int var2 = (int)(class27.resetTimer((byte)1) / 86400000L) - 11745;
                String var3 = "usrdob=" + var2 + "; version=1; path=/; domain=" + var1;
                class872.method5893(class833.field9178, "document.cookie=\"" + var3 + "\"", -1921482054);
             } catch (Throwable var4) {

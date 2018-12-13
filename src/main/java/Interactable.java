@@ -87,7 +87,7 @@ public abstract class Interactable extends Entity {
 
    abstract boolean method2206(byte var1);
 
-   static final void method2208(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method2208(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          int var4 = var2.field3161[--var2.field3156] - 1;
          if (var4 >= 0 && var4 <= 9) {
@@ -104,8 +104,8 @@ public abstract class Interactable extends Entity {
    static final void method2209(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-7);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-7);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class153.method3389(var3, var4, var0, 1982682635);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "adp.fx(" + ')');

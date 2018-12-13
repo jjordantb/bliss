@@ -1705,7 +1705,7 @@ public class class175 {
       this.field5008 = new byte[this.field4997][1 + this.field4998][this.field4999 + 1];
    }
 
-   static final void method3050(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method3050(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var0.field955 = (String)var2.field3157[--var2.field3158];
       } catch (RuntimeException var5) {
@@ -2005,7 +2005,7 @@ public class class175 {
                   }
                }
 
-               for(var95 = 0; var95 < class6.field4931.field9523; ++var95) {
+               for(var95 = 0; var95 < NodeTable.field4931.field9523; ++var95) {
                   int var106 = ((Actor)var13).field4044[var95];
                   var102 = ((Actor)var13).field4066[var95];
                   class399 var112 = null;
@@ -2051,8 +2051,8 @@ public class class175 {
                         var22 = ((Actor)var13).method2170((byte)64) / 2;
                         class213.method3815((Interactable)var13, var22, -1043067647);
                         if (class730.field2873[0] > -1.0F) {
-                           class730.field2873[0] += (float)class6.field4931.field9524[var95];
-                           class730.field2873[1] += (float)class6.field4931.field9525[var95];
+                           class730.field2873[0] += (float) NodeTable.field4931.field9524[var95];
+                           class730.field2873[1] += (float) NodeTable.field4931.field9525[var95];
                            Object var23 = null;
                            Object var24 = null;
                            Object var25 = null;

@@ -94,7 +94,7 @@ public final class class873 {
                }
             }
          } else {
-            class536.method2328(class382.field1410[var0].method887((byte)-87), -1, var1, var2, var3, var4, var5, var6, var7, var7 < 0, (byte)0);
+            class536.method2328(class382.widgetContainers[var0].method887((byte)-87), -1, var1, var2, var3, var4, var5, var6, var7, var7 < 0, (byte)0);
          }
 
       } catch (RuntimeException var10) {

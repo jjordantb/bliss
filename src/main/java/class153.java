@@ -64,7 +64,7 @@ public class class153 {
       }
    }
 
-   static final void method3389(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method3389(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var2.field3156 -= 2;
          var0.field918 = var2.field3161[var2.field3156];

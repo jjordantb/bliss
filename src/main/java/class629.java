@@ -57,9 +57,9 @@ public class class629 {
       }
    }
 
-   static final void method5808(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method5808(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
-         var0.field920 = null;
+         var0.actions = null;
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "aw.jx(" + ')');
       }

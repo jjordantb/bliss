@@ -4,7 +4,7 @@ public final class class170 {
    class345 field5099 = new class345();
    int field5100;
    int field5101;
-   class6 field5102;
+   NodeTable field5102;
    class514 field5103 = new class514();
    public static class180 field5104;
 
@@ -30,7 +30,7 @@ public final class class170 {
          ;
       }
 
-      this.field5102 = new class6(var2);
+      this.field5102 = new NodeTable(var2);
    }
 
    public void method3071(int var1) {
@@ -69,7 +69,7 @@ public final class class170 {
    static final void method3073(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-49);
+         Widget var3 = class449.method3756(var2, (byte)-49);
          var0.field3161[++var0.field3156 - 1] = class730.method1761(var3).method1742((byte)14);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ot.sr(" + ')');
@@ -87,8 +87,8 @@ public final class class170 {
    static final void method3075(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)9);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)9);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class274.method6596(var3, var4, var0, (byte)88);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ot.dt(" + ')');
@@ -213,7 +213,7 @@ public final class class170 {
    static final void method3077(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-46);
+         Widget var3 = class449.method3756(var2, (byte)-46);
          class773.method2313(var3, var0, 1480483039);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ot.qs(" + ')');

@@ -45,7 +45,7 @@ public class class870 implements class54 {
                var4 = 1.0F - var3 / (float)class540.field3915.field1926;
             }
 
-            class564.method846((int)(256.0F * var4), 497351807);
+            Widget.method846((int)(256.0F * var4), 497351807);
          }
 
       } catch (RuntimeException var5) {
@@ -64,8 +64,8 @@ public class class870 implements class54 {
    static final void method5885(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class553.method453(var3, var4, var0, (short)11583);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "fs.gh(" + ')');
@@ -75,8 +75,8 @@ public class class870 implements class54 {
    static final void method5886(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class75.method1118(var3, var4, false, 0, var0, 317795036);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "fs.hg(" + ')');
@@ -86,8 +86,8 @@ public class class870 implements class54 {
    static final void method5887(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class569.method11(var3, var4, var0, -16777216);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "fs.kc(" + ')');

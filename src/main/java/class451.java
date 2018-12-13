@@ -111,7 +111,7 @@ public class class451 extends class298 {
 
    }
 
-   void method3874(class568 var1, class80 var2) {
+   void method3874(Node var1, class80 var2) {
       while(var1 != this.field7218.field1710 && ((class80)var1).field1091 <= var2.field1091) {
          var1 = var1.field640;
       }
@@ -131,7 +131,7 @@ public class class451 extends class298 {
    void method3876(class80 var1) {
       var1.method545(-1460969981);
       var1.method870();
-      class568 var2 = this.field7218.field1710.field640;
+      Node var2 = this.field7218.field1710.field640;
       if (var2 == this.field7218.field1710) {
          this.field7219 = -1;
       } else {

@@ -1,18 +1,18 @@
 public class class602 {
    static class1 field8631 = new class1(30);
    static int field8632 = 410;
-   static class357 field8633;
+   static MenuItem field8633;
    static int field8634 = 16;
    static int field8635 = 0;
    static int field8636 = 31;
-   static class6 field8637 = new class6(16);
+   static NodeTable field8637 = new NodeTable(16);
    static boolean field8638 = false;
    static class497 field8639 = null;
    static int field8640 = 0;
    static int field8641 = 1;
    static float[] field8642 = new float[4];
    static int field8643 = 0;
-   static class357 field8644;
+   static MenuItem field8644;
    public static boolean field8645 = false;
    public static int field8646 = 0;
    static class373 field8647 = new class373();
@@ -21,7 +21,7 @@ public class class602 {
    static int field8650 = 3;
    public static int field8651;
    static int field8652 = 31;
-   static class564 field8653 = null;
+   static Widget field8653 = null;
    static int field8654 = -1;
    static int field8655 = 2;
    static int field8656 = -1;
@@ -52,7 +52,7 @@ public class class602 {
       throw new Error();
    }
 
-   static final void method5085(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method5085(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -1382665661) != null) {

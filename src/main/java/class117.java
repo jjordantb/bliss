@@ -110,9 +110,9 @@ public class class117 {
    static final void method1343(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
-         class564 var5 = class317.method471(var4, var3, -1926129754);
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
+         Widget var5 = class317.method471(var4, var3, -1926129754);
          var0.field3161[++var0.field3156 - 1] = var5 == null ? -1 : var5.field867 * 533296807 * -440872681;
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "io.oq(" + ')');

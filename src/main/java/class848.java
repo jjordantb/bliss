@@ -496,7 +496,7 @@ public abstract class class848 {
       }
    }
 
-   static void method5066(int var0, int var1, int var2, int var3, int var4, int var5, int var6, class357 var7, class727 var8, class230 var9, int var10, int var11, int var12) {
+   static void method5066(int var0, int var1, int var2, int var3, int var4, int var5, int var6, MenuItem var7, class727 var8, class230 var9, int var10, int var11, int var12) {
       try {
          if (var0 > var2 && var0 < var2 + var4 && var1 > var6 - var9.field8230 - 1 && var1 < var6 + var9.field8225 && var7.field1704) {
             var10 = var11;
@@ -521,8 +521,8 @@ public abstract class class848 {
    static final void method5067(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)22);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)22);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class758.method2738(var3, var4, var0, -2057554129);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ra.kw(" + ')');
@@ -563,7 +563,7 @@ public abstract class class848 {
       }
    }
 
-   static void method5069(class848 var0, class564 var1, int var2, int var3, byte var4) {
+   static void method5069(class848 var0, Widget var1, int var2, int var3, byte var4) {
       try {
          class118 var5 = var1.method826(var0, 1502538903);
          if (var5 != null) {

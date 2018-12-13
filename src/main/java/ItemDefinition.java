@@ -70,7 +70,7 @@ public class ItemDefinition {
    public int field4281;
    int field4282 = -1;
    public int field4283 = 0;
-   class6 field4284;
+   NodeTable field4284;
    public int[] field4285;
    public int field4286 = 0;
    int field4287 = -1;
@@ -871,7 +871,7 @@ public class ItemDefinition {
                var4 = var1.method6371();
                if (this.field4284 == null) {
                   var5 = class18.method3687(var4, (byte)16);
-                  this.field4284 = new class6(var5);
+                  this.field4284 = new NodeTable(var5);
                }
 
                for(var5 = 0; var5 < var4; ++var5) {
@@ -884,7 +884,7 @@ public class ItemDefinition {
                      var8 = new class722(var1.method6420((byte)69));
                   }
 
-                  this.field4284.method2947((class568)var8, (long)var7);
+                  this.field4284.method2947((Node)var8, (long)var7);
                }
             }
          }
@@ -1133,7 +1133,7 @@ public class ItemDefinition {
 
    public static int method2689(int var0, int var1, int var2) {
       try {
-         if (class6.field4931.field9526 == -1) {
+         if (NodeTable.field4931.field9526 == -1) {
             return 1;
          } else {
             if (var0 != class615.field8903.field9137.method3689(-2106508116)) {
@@ -1147,8 +1147,8 @@ public class ItemDefinition {
             try {
                Dimension var3 = class837.field9161.getSize();
                class971.method1789(class814.field4663.method2927(class321.field1066, -875414210), true, class593.field1623, class958.field3479, class378.field1158, (byte)5);
-               class25 var4 = class25.method3454(class389.field1524, class6.field4931.field9526, 0);
-               long var5 = class27.method3468((byte)1);
+               class25 var4 = class25.method3454(class389.field1524, NodeTable.field4931.field9526, 0);
+               long var5 = class27.resetTimer((byte)1);
                class593.field1623.method4827();
                class730.field2853.method1016(0.0F, 256.0F, 0.0F);
                class593.field1623.method4867(class730.field2853);
@@ -1169,7 +1169,7 @@ public class ItemDefinition {
                         class730.field2950.method1016((float)((int)(512.0F * ((float)var12 - (float)var11 / 2.0F))), 0.0F, (float)((1 + var11) * 512));
                         var8.method5965(class730.field2950, (class211)null, 0);
                         ++var9;
-                        if (class27.method3468((byte)1) - var5 >= (long)var1) {
+                        if (class27.resetTimer((byte)1) - var5 >= (long)var1) {
                            if (var2 >= 1017103058) {
                               throw new IllegalStateException();
                            }
@@ -1180,7 +1180,7 @@ public class ItemDefinition {
                }
 
                class593.field1623.method4909();
-               long var13 = (long)(var9 * 1000) / (class27.method3468((byte)1) - var5);
+               long var13 = (long)(var9 * 1000) / (class27.resetTimer((byte)1) - var5);
                class593.field1623.method4831(3, 0);
                var15 = (int)var13;
             } catch (Throwable var16) {

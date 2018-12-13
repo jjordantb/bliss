@@ -45,7 +45,7 @@ public class class590 {
       }
    }
 
-   static void method1220(class564 var0, class564 var1, int var2) {
+   static void method1220(Widget var0, Widget var1, int var2) {
       try {
          class701 var3 = class637.method5936(class643.field10006, class730.field2692.field7765, (byte)44);
          var3.field3364.method6400(var1.field1005);
@@ -68,7 +68,7 @@ public class class590 {
       }
    }
 
-   static final void method1222(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method1222(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -393614280) != null) {
@@ -82,12 +82,12 @@ public class class590 {
       }
    }
 
-   static String method1223(class564 var0, int var1, byte var2) {
+   static String method1223(Widget var0, int var1, byte var2) {
       try {
          if (!class730.method1761(var0).method1743(var1, (byte)-47) && var0.field989 == null) {
             return null;
-         } else if (var0.field920 != null && var0.field920.length > var1 && var0.field920[var1] != null && var0.field920[var1].trim().length() != 0) {
-            return var0.field920[var1];
+         } else if (var0.actions != null && var0.actions.length > var1 && var0.actions[var1] != null && var0.actions[var1].trim().length() != 0) {
+            return var0.actions[var1];
          } else {
             return class730.field2828 ? "Hidden-" + var1 : null;
          }

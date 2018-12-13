@@ -17,7 +17,7 @@ public class class788 {
 
    static final void method2395(class744 var0, int var1) {
       try {
-         class6 var2 = var0.field3177.field183[var0.field3174[var0.field3176]];
+         NodeTable var2 = var0.field3177.field183[var0.field3174[var0.field3176]];
          class722 var3 = (class722)var2.method2942((long)var0.field3161[--var0.field3156]);
          if (var3 != null) {
             var0.field3176 += var3.field3631;

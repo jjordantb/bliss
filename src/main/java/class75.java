@@ -17,12 +17,12 @@ public class class75 {
       }
    }
 
-   static final void method1118(class564 var0, class131 var1, boolean var2, int var3, class744 var4, int var5) {
+   static final void method1118(Widget var0, WidgetContainer var1, boolean var2, int var3, class744 var4, int var5) {
       try {
          var4.field3156 -= 2;
          int var6 = var4.field3161[var4.field3156];
          int var7 = var4.field3161[var4.field3156 + 1];
-         if (-1 == var0.field879 && !var1.field1101) {
+         if (-1 == var0.field879 && !var1.closed) {
             class284.method6687(var0.field867, 1388671560);
             class466.method4009(var0.field867, 106150101);
             class917.method6455(var0.field867, 2057190103);
@@ -59,8 +59,8 @@ public class class75 {
    static final void method1119(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-54);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-54);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class394.method3410(var3, var4, var0, -1611318497);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "av.iu(" + ')');

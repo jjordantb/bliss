@@ -14,7 +14,7 @@ public class class912 implements class925 {
       this.field10423 = var1;
    }
 
-   static final void method6480(class564 var0, class131 var1, class744 var2, short var3) {
+   static final void method6480(Widget var0, WidgetContainer var1, class744 var2, short var3) {
       try {
          int var4 = var2.field3161[--var2.field3156];
          if (var0.field1014 != var4) {
@@ -22,7 +22,7 @@ public class class912 implements class925 {
             class814.method2932(var0, -1283605613);
          }
 
-         if (-1 == var0.field879 && !var1.field1101) {
+         if (-1 == var0.field879 && !var1.closed) {
             class146.method1183(var0.field867, (byte)12);
          }
 
@@ -95,7 +95,7 @@ public class class912 implements class925 {
    static final void method6483(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-27);
+         Widget var3 = class449.method3756(var2, (byte)-27);
          int var4 = -1;
          int var5 = -1;
          class118 var6 = var3.method826(class593.field1623, 1559428350);

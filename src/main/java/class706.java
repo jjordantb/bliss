@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.io.StringReader;
 import java.io.StringWriter;
 
-public class class706 extends class568 {
+public class class706 extends Node {
    public byte[] field3275;
 
    public class706(byte[] var1) {

@@ -451,7 +451,7 @@ public class Npc extends Actor {
 
    public boolean method2557(byte var1) {
       try {
-         return class6.field4931.field9532;
+         return NodeTable.field4931.field9532;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ake.by(" + ')');
       }
@@ -467,7 +467,7 @@ public class Npc extends Actor {
 
    public void method1245(String var1, int var2, int var3, int var4) {
       try {
-         int var5 = class854.method5151((byte)6) * class6.field4931.field9527;
+         int var5 = class854.method5151((byte)6) * NodeTable.field4931.field9527;
          this.method2558(var1, var2, var3, var5, (byte)-1);
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "ake.gd(" + ')');

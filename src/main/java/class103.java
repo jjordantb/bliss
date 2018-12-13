@@ -55,7 +55,7 @@ public class class103 {
       }
    }
 
-   static void method154(class564 var0, int var1, int var2, int var3) {
+   static void method154(Widget var0, int var1, int var2, int var3) {
       try {
          class118 var4 = var0.method826(class593.field1623, 1629882987);
          if (var4 != null) {
@@ -78,7 +78,7 @@ public class class103 {
    static final void method155(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-5);
+         Widget var3 = class449.method3756(var2, (byte)-5);
          var0.field3161[++var0.field3156 - 1] = var3.field886 ? 1 : 0;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "pg.rf(" + ')');

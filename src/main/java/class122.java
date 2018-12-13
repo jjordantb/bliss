@@ -22,15 +22,15 @@ public final class class122 {
    static final void method1602(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class370.method877(var3, var4, var0, (byte)-2);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "eu.dq(" + ')');
       }
    }
 
-   static final void method1603(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method1603(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -1678737693) != null) {
@@ -113,8 +113,8 @@ public final class class122 {
    static final void method1609(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class232.method4660(var3, var4, var0, 852607331);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "eu.gq(" + ')');

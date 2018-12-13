@@ -114,13 +114,13 @@ public class class118 {
       }
    }
 
-   static void method1465(class564[] var0, class564 var1, boolean var2, short var3) {
+   static void method1465(Widget[] var0, Widget var1, boolean var2, short var3) {
       try {
          int var4 = var1.field893 != 0 ? 1867913305 * var1.field893 * -1609060375 : -2093041337 * var1.field881 * -614915977;
          int var5 = var1.field894 != 0 ? var1.field894 * -1638942269 * 2053897963 : 457937409 * var1.field887 * -67604991;
          class381.method1066(var0, var1.field867, var4, var5, var2, (short)17804);
-         if (var1.field1018 != null) {
-            class381.method1066(var1.field1018, var1.field867, var4, var5, var2, (short)-9832);
+         if (var1.children2 != null) {
+            class381.method1066(var1.children2, var1.field867, var4, var5, var2, (short)-9832);
          }
 
          class256 var6 = (class256)class730.field2823.method2942((long)var1.field867);
@@ -157,8 +157,8 @@ public class class118 {
    static final void method1466(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class172.method3030(var3, var4, var0, -125767294);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "et.nl(" + ')');
@@ -170,10 +170,10 @@ public class class118 {
          var0.field3156 -= 2;
          int var2 = var0.field3161[var0.field3156];
          int var3 = var0.field3161[var0.field3156 + 1];
-         if (class382.field1410[var2] == null) {
+         if (class382.widgetContainers[var2] == null) {
             var0.field3157[++var0.field3158 - 1] = "";
          } else {
-            String var4 = class382.field1410[var2].field1103[var3].field984;
+            String var4 = class382.widgetContainers[var2].widgetsCopy[var3].field984;
             if (var4 == null) {
                var0.field3157[++var0.field3158 - 1] = "";
             } else {

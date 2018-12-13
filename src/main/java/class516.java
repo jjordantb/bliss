@@ -7,14 +7,14 @@ public final class class516 {
 
    static final void method2725(class744 var0, byte var1) {
       try {
-         class564 var2 = class449.method3756(var0.field3161[--var0.field3156], (byte)-64);
-         if (var2.field1017 == null) {
+         Widget var2 = class449.method3756(var0.field3161[--var0.field3156], (byte)-64);
+         if (var2.children1 == null) {
             var0.field3161[++var0.field3156 - 1] = 0;
          } else {
-            int var3 = var2.field1017.length;
+            int var3 = var2.children1.length;
 
-            for(int var4 = 0; var4 < var2.field1017.length; ++var4) {
-               if (var2.field1017[var4] == null) {
+            for(int var4 = 0; var4 < var2.children1.length; ++var4) {
+               if (var2.children1[var4] == null) {
                   var3 = var4;
                   break;
                }
@@ -61,8 +61,8 @@ public final class class516 {
    static final void method2728(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)84);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)84);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class964.method2134(var3, var4, var0, -750827082);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ri.ne(" + ')');
@@ -81,7 +81,7 @@ public final class class516 {
 
    static void method2730(byte var0) {
       try {
-         class163.field6617.method2941((byte)-68);
+         ItemNode.itemNodeTable.method2941((byte)-68);
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "ri.r(" + ')');
       }

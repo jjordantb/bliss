@@ -104,7 +104,7 @@ public class class631 extends class576 {
       }
    }
 
-   static int method5861(class357 var0, class230 var1, int var2) {
+   static int method5861(MenuItem var0, class230 var1, int var2) {
       try {
          String var3 = class342.method217(var0, 2106133220);
          int[] var4 = class166.method3683(var0, (byte)-16);

@@ -12,8 +12,8 @@ public class class740 extends class491 {
    static int field3207 = -1;
    static class19 field3208 = new class19(new class373());
    public static boolean field3209 = false;
-   public static class6 field3210 = new class6(8);
-   public static class6 field3211 = new class6(8);
+   public static NodeTable field3210 = new NodeTable(8);
+   public static NodeTable field3211 = new NodeTable(8);
    static String[] field3212 = new String[5];
    static int field3213;
    public static boolean field3214 = true;
@@ -22,12 +22,12 @@ public class class740 extends class491 {
       throw new Error();
    }
 
-   static final void method1919(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method1919(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var0.field909 = 1;
          var0.field876 = var2.field3161[--var2.field3156];
          class814.method2932(var0, 648135865);
-         if (var0.field879 == -1 && !var1.field1101) {
+         if (var0.field879 == -1 && !var1.closed) {
             class535.method2284(var0.field867, 1575385059);
          }
 
@@ -38,7 +38,7 @@ public class class740 extends class491 {
 
    public static void method1920(int var0, int var1, int var2, String var3, int var4) {
       try {
-         class564 var5 = class554.method427(var1, var2, -156511736);
+         Widget var5 = class554.method427(var1, var2, -156511736);
          if (var5 != null) {
             if (var5.field989 != null) {
                class202 var6 = new class202();

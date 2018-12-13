@@ -566,7 +566,7 @@ public class Player extends Actor {
 
    public void method1997(String var1, int var2, int var3, int var4) {
       try {
-         this.method2558(var1, var2, var3, class854.method5151((byte)6) * class6.field4931.field9528, (byte)-79);
+         this.method2558(var1, var2, var3, class854.method5151((byte)6) * NodeTable.field4931.field9528, (byte)-79);
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "akm.gz(" + ')');
       }
@@ -594,7 +594,7 @@ public class Player extends Actor {
 
    public boolean method2557(byte var1) {
       try {
-         return class6.field4931.field9534;
+         return NodeTable.field4931.field9534;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "akm.by(" + ')');
       }

@@ -388,7 +388,7 @@ public class class849 implements class478 {
             class535.method2281(var1, 2109866215);
             break;
          case 52:
-            class568.method547(var1, 2042171286);
+            Node.method547(var1, 2042171286);
             break;
          case 53:
             class759.method2722(var1, 1533652292);
@@ -619,7 +619,7 @@ public class class849 implements class478 {
             class51.method1526(var1, -2131789274);
             break;
          case 129:
-            class564.method843(var1, (short)-13358);
+            Widget.method843(var1, (short)-13358);
             break;
          case 130:
             class153.method3395(var1, -373892482);
@@ -1354,7 +1354,7 @@ public class class849 implements class478 {
             class405.method5479(var1, -2073212206);
             break;
          case 374:
-            class568.method548(var1, 16711680);
+            Node.method548(var1, 16711680);
             break;
          case 375:
             class437.method4265(var1, (byte)0);
@@ -1447,7 +1447,7 @@ public class class849 implements class478 {
             class660.method5749(var1, -1921461819);
             break;
          case 405:
-            class564.method842(var1, 1496269925);
+            Widget.method842(var1, 1496269925);
             break;
          case 406:
             class507.method2508(var1, (short)-27108);
@@ -1654,7 +1654,7 @@ public class class849 implements class478 {
             class374.method1002(var1, (byte)9);
             break;
          case 474:
-            class564.method844(var1, -1301901080);
+            Widget.method844(var1, -1301901080);
             break;
          case 475:
             class622.method5337(var1, -1655827378);
@@ -1966,7 +1966,7 @@ public class class849 implements class478 {
             class228.method4590(var1, -1477453650);
             break;
          case 578:
-            class131.method895(var1, 200632723);
+            WidgetContainer.method895(var1, 200632723);
             break;
          case 579:
             class807.method2831(var1, (byte)32);
@@ -2104,7 +2104,7 @@ public class class849 implements class478 {
             class321.method851(var1, -46636878);
             break;
          case 624:
-            class568.method549(var1, (byte)3);
+            Node.method549(var1, (byte)3);
             break;
          case 625:
             class744.method1901(var1, (byte)1);
@@ -2275,7 +2275,7 @@ public class class849 implements class478 {
             class515.method2692(var1, (short)9216);
             break;
          case 681:
-            class131.method894(var1, 251729607);
+            WidgetContainer.method894(var1, 251729607);
             break;
          case 682:
             class226.method4027(var1, (byte)-77);
@@ -3019,13 +3019,13 @@ public class class849 implements class478 {
             class969.method1695(var1, (byte)-123);
             break;
          case 929:
-            class564.method841(var1, (short)-3148);
+            Widget.method841(var1, (short)-3148);
             break;
          case 930:
             class389.method1155(var1, 1971452733);
             break;
          case 931:
-            class131.method891(var1, (byte)105);
+            WidgetContainer.method891(var1, (byte)105);
             break;
          case 932:
             class617.method5170(var1, -766567275);
@@ -3073,7 +3073,7 @@ public class class849 implements class478 {
             class490.method4438(var1, -199910593);
             break;
          case 947:
-            class564.method840(var1, 2069476162);
+            Widget.method840(var1, 2069476162);
             break;
          case 948:
             class263.method4515(var1, 253995269);
@@ -3222,11 +3222,11 @@ public class class849 implements class478 {
       }
    }
 
-   static final void method4784(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method4784(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var0.field909 = 5;
          var0.field876 = var2.field3161[--var2.field3156];
-         if (-1 == var0.field879 && !var1.field1101) {
+         if (-1 == var0.field879 && !var1.closed) {
             class535.method2284(var0.field867, 1872852053);
          }
 
@@ -3238,8 +3238,8 @@ public class class849 implements class478 {
    static final void method4785(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class611.method5157(var3, var4, var0, -1389112437);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "kk.nb(" + ')');

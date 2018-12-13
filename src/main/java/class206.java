@@ -1,4 +1,4 @@
-public class class206 extends class568 {
+public class class206 extends Node {
    class29 field7063;
    static class373 field7064 = new class373();
    int field7065;
@@ -19,7 +19,7 @@ public class class206 extends class568 {
    boolean field7080;
    static int field7081 = 3;
    int field7082 = 0;
-   static class6 field7083 = new class6(16);
+   static NodeTable field7083 = new NodeTable(16);
    int field7084;
    static int field7085 = 0;
    int field7086;

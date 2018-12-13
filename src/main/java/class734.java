@@ -1,7 +1,7 @@
 import jaclib.hardware_info.HardwareInfo;
 import java.util.HashMap;
 
-public class class734 extends class568 {
+public class class734 extends Node {
    int field3020;
    static int field3021 = 3;
    static int field3022 = 4;

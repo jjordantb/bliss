@@ -39,8 +39,8 @@ public class class264 {
    static final void method4567(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class362.method1506(var3, var4, var0, (byte)-16);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ce.no(" + ')');
@@ -63,7 +63,7 @@ public class class264 {
                   class213.method3810("Pausing for " + var3 + " seconds...", 357563950);
                   class342.field289 = var0;
                   class342.field284 = var2 + 1;
-                  class7.field4919 = class27.method3468((byte)1) + (long)(var3 * 1000);
+                  class7.field4919 = class27.resetTimer((byte)1) + (long)(var3 * 1000);
                   break;
                }
 

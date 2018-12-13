@@ -7,7 +7,7 @@ public class class569 {
       throw new Error();
    }
 
-   static final void method10(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method10(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var0.field924 = var2.field3161[--var2.field3156] == 1;
          class814.method2932(var0, 242919800);
@@ -16,7 +16,7 @@ public class class569 {
       }
    }
 
-   static final void method11(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method11(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var2.field3156 -= 2;
          byte var4 = 10;

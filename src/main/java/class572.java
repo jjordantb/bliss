@@ -1163,7 +1163,7 @@ public class class572 extends class175 {
       this.field122 = var8;
    }
 
-   static final void method107(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method107(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          int[] var5 = class960.method2212(var4, var2, -247465484);
@@ -1212,7 +1212,7 @@ public class class572 extends class175 {
    static final void method109(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field909 == 1 ? var3.field876 * -1825442367 * 572201537 : -1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "aaa.pn(" + ')');

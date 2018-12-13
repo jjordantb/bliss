@@ -1545,7 +1545,7 @@ public class class623 {
 
                this.field8974.method2444(-1802988635);
                if (this.field8955) {
-                  class27.method3468((byte)1);
+                  class27.resetTimer((byte)1);
 
                   while(!class593.field1623.method4865(2085922748)) {
                      this.method5300(1, (byte)-1);
@@ -1558,7 +1558,7 @@ public class class623 {
                   this.method5310(var21, (byte)-125);
                   class625.field9752.method460(var21, -1651604);
                   var19 = true;
-                  class27.method3468((byte)1);
+                  class27.resetTimer((byte)1);
                   Object var20 = class730.field2642;
                   synchronized(class730.field2642) {
                      class730.field2698 = true;
@@ -1644,7 +1644,7 @@ public class class623 {
 
                class250.method4388(55767460);
                if (this.field8945) {
-                  class213.method3810(Long.toString(class27.method3468((byte)1) - this.field8982), 180430926);
+                  class213.method3810(Long.toString(class27.resetTimer((byte)1) - this.field8982), 180430926);
                   this.field8945 = false;
                }
 
@@ -1694,15 +1694,15 @@ public class class623 {
    static final void method5318(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-54);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-54);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class640.method6189(var3, var4, var0, -1146943352);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "lt.ea(" + ')');
       }
    }
 
-   static final void method5319(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method5319(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          int[] var5 = class960.method2212(var4, var2, -1881953326);

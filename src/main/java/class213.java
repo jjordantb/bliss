@@ -151,7 +151,7 @@ public class class213 implements Runnable {
             class534.method2290(-219758847);
          }
 
-         class730.field2739.setTime(new Date(class27.method3468((byte)1)));
+         class730.field2739.setTime(new Date(class27.resetTimer((byte)1)));
          int var2 = class730.field2739.get(11);
          int var3 = class730.field2739.get(12);
          int var4 = class730.field2739.get(13);
@@ -203,10 +203,10 @@ public class class213 implements Runnable {
       }
    }
 
-   static class163 method3812(int var0, boolean var1, int var2) {
+   static ItemNode method3812(int var0, boolean var1, int var2) {
       try {
          long var3 = (long)(var0 | (var1 ? Integer.MIN_VALUE : 0));
-         return (class163)class163.field6617.method2942(var3);
+         return (ItemNode) ItemNode.itemNodeTable.method2942(var3);
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "kr.k(" + ')');
       }
@@ -215,8 +215,8 @@ public class class213 implements Runnable {
    static final void method3813(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class754.method2662(var3, var4, var0, (byte)20);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "kr.le(" + ')');

@@ -1,11 +1,12 @@
 import java.util.Iterator;
 
-public final class class6 implements Iterable {
-   class568[] field4923;
-   class568 field4924;
+public final class NodeTable implements Iterable { // class 792
+
+   Node[] field4923;
+   Node field4924;
    long field4925;
    int field4926;
-   class568 field4927;
+   Node field4927;
    int field4928 = 0;
    static int field4929;
    public static class969 field4930;
@@ -14,10 +15,10 @@ public final class class6 implements Iterable {
    public void method2941(byte var1) {
       try {
          for(int var2 = 0; var2 < this.field4926; ++var2) {
-            class568 var3 = this.field4923[var2];
+            Node var3 = this.field4923[var2];
 
             while(true) {
-               class568 var4 = var3.field640;
+               Node var4 = var3.field640;
                if (var3 == var4) {
                   break;
                }
@@ -33,14 +34,14 @@ public final class class6 implements Iterable {
       }
    }
 
-   public class568 method2942(long var1) {
+   public Node method2942(long var1) {
       try {
          this.field4925 = var1;
-         class568 var3 = this.field4923[(int)(var1 & (long)(this.field4926 - 1))];
+         Node var3 = this.field4923[(int)(var1 & (long)(this.field4926 - 1))];
 
          for(this.field4924 = var3.field640; this.field4924 != var3; this.field4924 = this.field4924.field640) {
             if (this.field4924.field641 == var1) {
-               class568 var4 = this.field4924;
+               Node var4 = this.field4924;
                this.field4924 = this.field4924.field640;
                return var4;
             }
@@ -53,14 +54,14 @@ public final class class6 implements Iterable {
       }
    }
 
-   public class568 method2943(int var1) {
+   public Node method2943(int var1) {
       try {
          if (this.field4924 == null) {
             return null;
          } else {
-            for(class568 var2 = this.field4923[(int)(this.field4925 & (long)(this.field4926 - 1))]; this.field4924 != var2; this.field4924 = this.field4924.field640) {
+            for(Node var2 = this.field4923[(int)(this.field4925 & (long)(this.field4926 - 1))]; this.field4924 != var2; this.field4924 = this.field4924.field640) {
                if (this.field4925 == this.field4924.field641) {
-                  class568 var3 = this.field4924;
+                  Node var3 = this.field4924;
                   this.field4924 = this.field4924.field640;
                   return var3;
                }
@@ -79,9 +80,9 @@ public final class class6 implements Iterable {
          int var2 = 0;
 
          for(int var3 = 0; var3 < this.field4926; ++var3) {
-            class568 var4 = this.field4923[var3];
+            Node var4 = this.field4923[var3];
 
-            for(class568 var5 = var4.field640; var4 != var5; var5 = var5.field640) {
+            for(Node var5 = var4.field640; var4 != var5; var5 = var5.field640) {
                ++var2;
             }
          }
@@ -92,9 +93,9 @@ public final class class6 implements Iterable {
       }
    }
 
-   public class568 method2945(byte var1) {
+   public Node method2945(byte var1) {
       try {
-         class568 var2;
+         Node var2;
          if (this.field4928 > 0 && this.field4927 != this.field4923[this.field4928 - 1]) {
             var2 = this.field4927;
             this.field4927 = var2.field640;
@@ -123,7 +124,7 @@ public final class class6 implements Iterable {
       }
    }
 
-   public class568 method2946(int var1) {
+   public Node method2946(int var1) {
       try {
          this.field4928 = 0;
          return this.method2945((byte)67);
@@ -132,13 +133,13 @@ public final class class6 implements Iterable {
       }
    }
 
-   public void method2947(class568 var1, long var2) {
+   public void method2947(Node var1, long var2) {
       try {
          if (var1.field642 != null) {
             var1.method545(-1460969981);
          }
 
-         class568 var4 = this.field4923[(int)(var2 & (long)(this.field4926 - 1))];
+         Node var4 = this.field4923[(int)(var2 & (long)(this.field4926 - 1))];
          var1.field642 = var4.field642;
          var1.field640 = var4;
          var1.field642.field640 = var1;
@@ -149,12 +150,12 @@ public final class class6 implements Iterable {
       }
    }
 
-   public class6(int var1) {
+   public NodeTable(int var1) {
       this.field4926 = var1;
-      this.field4923 = new class568[var1];
+      this.field4923 = new Node[var1];
 
       for(int var2 = 0; var2 < var1; ++var2) {
-         class568 var3 = this.field4923[var2] = new class568();
+         Node var3 = this.field4923[var2] = new Node();
          var3.field640 = var3;
          var3.field642 = var3;
       }

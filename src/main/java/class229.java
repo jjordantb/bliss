@@ -109,10 +109,10 @@ public class class229 implements class311 {
 
    public static void method4584(int var0, byte var1) {
       try {
-         class564.field860.method2976(var0, -450593639);
-         class564.field863.method2976(var0, -631173514);
-         class564.field861.method2976(var0, -826447089);
-         class564.field1021.method2976(var0, -1629354763);
+         Widget.field860.method2976(var0, -450593639);
+         Widget.field863.method2976(var0, -631173514);
+         Widget.field861.method2976(var0, -826447089);
+         Widget.field1021.method2976(var0, -1629354763);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jz.e(" + ')');
       }

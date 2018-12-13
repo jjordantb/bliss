@@ -33,7 +33,7 @@ public class class407 extends class304 {
    static final void method5535(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-30);
+         Widget var3 = class449.method3756(var2, (byte)-30);
          class587.method166(var3, var0, (byte)24);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "xq.qw(" + ')');
@@ -68,38 +68,40 @@ public class class407 extends class304 {
       }
    }
 
-   static void method5539(int var0, int var1, int var2, int var3, boolean var4, int var5) {
-      boolean var14 = false;
-
+   static void createItemNode(int containerId, int index, int id, int stackSize, boolean var4, int var5) { //method5539
+       if (containerId == 93) {
+           Inventory.inventoryIds[index] = id;
+           Inventory.inventoryStacks[index] = stackSize;
+       }
       try {
-         long var6 = (long)(var0 | (var4 ? Integer.MIN_VALUE : 0));
-         class163 var8 = (class163)class163.field6617.method2942(var6);
+         long var6 = (long)(containerId | (var4 ? Integer.MIN_VALUE : 0));
+         ItemNode var8 = (ItemNode) ItemNode.itemNodeTable.method2942(var6);
          if (var8 == null) {
-            var8 = new class163();
-            class163.field6617.method2947(var8, var6);
+            var8 = new ItemNode();
+            ItemNode.itemNodeTable.method2947(var8, var6);
          }
 
-         if (var8.field6619.length <= var1) {
-            int[] var9 = new int[var1 + 1];
-            int[] var10 = new int[var1 + 1];
+         if (var8.itemIds.length <= index) {
+            int[] var9 = new int[index + 1];
+            int[] var10 = new int[index + 1];
 
             int var11;
-            for(var11 = 0; var11 < var8.field6619.length; ++var11) {
-               var9[var11] = var8.field6619[var11];
-               var10[var11] = var8.field6620[var11];
+            for(var11 = 0; var11 < var8.itemIds.length; ++var11) {
+               var9[var11] = var8.itemIds[var11];
+               var10[var11] = var8.itemStackSizes[var11];
             }
 
-            for(var11 = var8.field6619.length; var11 < var1; ++var11) {
+            for(var11 = var8.itemIds.length; var11 < index; ++var11) {
                var9[var11] = -1;
                var10[var11] = 0;
             }
 
-            var8.field6619 = var9;
-            var8.field6620 = var10;
+            var8.itemIds = var9;
+            var8.itemStackSizes = var10;
          }
 
-         var8.field6619[var1] = var2;
-         var8.field6620[var1] = var3;
+         var8.itemIds[index] = id;
+         var8.itemStackSizes[index] = stackSize;
       } catch (RuntimeException var13) {
          throw class158.method3445(var13, "xq.d(" + ')');
       }
@@ -110,7 +112,7 @@ public class class407 extends class304 {
          if (class730.field2733 == 14 && !class673.method4261((byte)9)) {
             if (class601.field9198) {
                var0.field3161[++var0.field3156 - 1] = 0;
-            } else if (class191.field7004 > class27.method3468((byte)1) - 1000L) {
+            } else if (class191.field7004 > class27.resetTimer((byte)1) - 1000L) {
                var0.field3161[++var0.field3156 - 1] = 1;
             } else {
                class601.field9198 = true;

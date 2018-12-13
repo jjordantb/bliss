@@ -25,17 +25,17 @@ public class class948 {
    static final void method1937(class744 var0, short var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class370.method880(var3, var4, var0, (byte)7);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "cq.oz(" + ')');
       }
    }
 
-   public static void method1938(class131 var0, class564 var1, boolean var2, int var3) {
+   public static void method1938(WidgetContainer var0, Widget var1, boolean var2, int var3) {
       try {
-         class118.method1465(var0.field1103, var1, var2, (short)-2046);
+         class118.method1465(var0.widgetsCopy, var1, var2, (short)-2046);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "cq.kh(" + ')');
       }

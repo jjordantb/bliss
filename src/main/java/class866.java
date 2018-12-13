@@ -80,7 +80,7 @@ public class class866 {
       }
    }
 
-   static final void method5840(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method5840(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -1912889290) != null) {

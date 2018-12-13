@@ -21,7 +21,7 @@ public class Animation {
    public int[] field6672;
    public int field6673 = -1;
    public int[] field6674;
-   class6 field6675;
+   NodeTable field6675;
 
    public String method3558(int var1, String var2, int var3) {
       try {
@@ -143,7 +143,7 @@ public class Animation {
                   var4 = var1.method6371();
                   if (this.field6675 == null) {
                      var5 = class18.method3687(var4, (byte)16);
-                     this.field6675 = new class6(var5);
+                     this.field6675 = new NodeTable(var5);
                   }
 
                   for(var5 = 0; var5 < var4; ++var5) {
@@ -156,7 +156,7 @@ public class Animation {
                         var8 = new class722(var1.method6420((byte)14));
                      }
 
-                     this.field6675.method2947((class568)var8, (long)var7);
+                     this.field6675.method2947((Node)var8, (long)var7);
                   }
                }
             }
@@ -334,8 +334,8 @@ public class Animation {
    static final void method3566(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)95);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)95);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class553.method453(var3, var4, var0, (short)28140);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "qe.gu(" + ')');
@@ -378,7 +378,7 @@ public class Animation {
       }
    }
 
-   static final void method3568(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method3568(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var0.field896 = var2.field3161[--var2.field3156] == 1;
          class814.method2932(var0, 2128713505);

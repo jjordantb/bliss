@@ -1,6 +1,6 @@
 public final class class917 {
    int field10407;
-   class6 field10408;
+   NodeTable field10408;
 
    public void method6444(byte var1) {
       try {
@@ -45,7 +45,7 @@ public final class class917 {
    public void method6447(int var1, int var2, byte var3) {
       try {
          if (this.field10408 == null) {
-            this.field10408 = new class6(this.field10407);
+            this.field10408 = new NodeTable(this.field10407);
          }
 
          class722 var4 = (class722)this.field10408.method2942((long)var1);

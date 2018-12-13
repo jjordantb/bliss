@@ -19,17 +19,17 @@ public class class449 {
       throw new Error();
    }
 
-   public static class564 method3756(int var0, byte var1) {
+   public static Widget method3756(int var0, byte var1) {
       try {
          int var2 = var0 >> 16;
-         if (class382.field1410[var2] == null || class382.field1410[var2].method889(var0, (short)3713) == null) {
+         if (class382.widgetContainers[var2] == null || class382.widgetContainers[var2].method889(var0, (short)3713) == null) {
             boolean var3 = class215.method3835(var2, (int[])null, -957339129);
             if (!var3) {
                return null;
             }
          }
 
-         return class382.field1410[var2].method889(var0, (short)19883);
+         return class382.widgetContainers[var2].method889(var0, (short)19883);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "c.f(" + ')');
       }
@@ -132,14 +132,14 @@ public class class449 {
             class184.field5230 = (int)((float)(class184.field5230 - class614.field8888) * var6 + (float)class614.field8888);
             class7.field4918 = (int)(var6 * (float)(class7.field4918 - class859.field8849) + (float)class859.field8849);
             class730.field2737 = (int)((float)(class730.field2737 - class75.field1496) * var6 + (float)class75.field1496);
-            int var7 = class232.field8266 - class163.field6621;
+            int var7 = class232.field8266 - ItemNode.field6621;
             if (var7 > 8192) {
                var7 -= 16384;
             } else if (var7 < -8192) {
                var7 += 16384;
             }
 
-            class232.field8266 = (int)((float)var7 * var6 + (float)class163.field6621);
+            class232.field8266 = (int)((float)var7 * var6 + (float) ItemNode.field6621);
             class232.field8266 &= 16383;
          }
 
@@ -187,8 +187,8 @@ public class class449 {
    static final void method3765(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          Interactable.method2208(var3, var4, var0, (byte)-16);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "c.ih(" + ')');

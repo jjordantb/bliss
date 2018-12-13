@@ -115,15 +115,15 @@ public class class643 {
    static final void method6118(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)0);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)0);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class593.method1231(var3, var4, var0, -1722505013);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ij.ei(" + ')');
       }
    }
 
-   static final void method6119(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method6119(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -699082754) != null) {
@@ -153,7 +153,7 @@ public class class643 {
       }
    }
 
-   static final void method6122(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method6122(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var0.field964 = var2.field3161[--var2.field3156];
       } catch (RuntimeException var5) {

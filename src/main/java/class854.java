@@ -25,19 +25,19 @@ public class class854 extends class304 {
          if (var1) {
             return 0;
          } else {
-            class163 var3 = class213.method3812(var0, var1, 547680225);
+            ItemNode var3 = class213.method3812(var0, var1, 547680225);
             if (var3 == null) {
                return class540.field3930.method2319(var0, 211542342).field4579;
             } else {
                int var4 = 0;
 
-               for(int var5 = 0; var5 < var3.field6619.length; ++var5) {
-                  if (-1 == var3.field6619[var5]) {
+               for(int var5 = 0; var5 < var3.itemIds.length; ++var5) {
+                  if (-1 == var3.itemIds[var5]) {
                      ++var4;
                   }
                }
 
-               var4 += class540.field3930.method2319(var0, 138660103).field4579 - var3.field6619.length;
+               var4 += class540.field3930.method2319(var0, 138660103).field4579 - var3.itemIds.length;
                return var4;
             }
          }

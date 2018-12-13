@@ -3,7 +3,7 @@ public class class771 extends class14 {
 
    boolean method3583(int var1) {
       try {
-         return this.method2299((short)10071) != null || super.field6690 < class27.method3468((byte)1) - 2000L;
+         return this.method2299((short)10071) != null || super.field6690 < class27.resetTimer((byte)1) - 2000L;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "adi.u(" + ')');
       }

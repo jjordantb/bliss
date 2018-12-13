@@ -7,8 +7,8 @@ public class class51 {
    static final void method1525(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class122.method1603(var3, var4, var0, -443341169);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "u.kn(" + ')');
@@ -18,8 +18,8 @@ public class class51 {
    static final void method1526(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class472.method4612(var3, var4, var0, 760062987);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "u.of(" + ')');
@@ -109,9 +109,9 @@ public class class51 {
       }
    }
 
-   static final void method1532(class564 var0, byte var1) {
+   static final void method1532(Widget var0, byte var1) {
       try {
-         if (class564.field846 == var0.field870) {
+         if (Widget.field846 == var0.field870) {
             if (class923.local.field3374 == null) {
                var0.field876 = 0;
                var0.field865 = 0;
@@ -151,14 +151,14 @@ public class class51 {
    static final void method1534(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-3);
+         Widget var3 = class449.method3756(var2, (byte)-3);
          var0.field3161[++var0.field3156 - 1] = var3.field909 == 1 ? 572201537 * var3.field876 * -1825442367 : -1;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "u.rd(" + ')');
       }
    }
 
-   static final void method1535(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method1535(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          int var4 = var2.field3161[--var2.field3156];
          var0.field899 = var4 == 1;

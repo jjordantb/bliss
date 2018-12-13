@@ -23,7 +23,7 @@ public class class488 implements class951 {
                class629.method5807(var2, -255751616);
             }
 
-            class163.method3555(var2, 1138164692);
+            ItemNode.method3555(var2, 1138164692);
             return true;
          }
       } catch (RuntimeException var5) {
@@ -102,7 +102,7 @@ public class class488 implements class951 {
          class190.method3732(-2137735375);
          class454.field7230 = null;
          class547.field412 = 0L;
-         class131.method896(2030440577);
+         WidgetContainer.method896(2030440577);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "rv.ae(" + ')');
       }

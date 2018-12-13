@@ -1,7 +1,7 @@
 import java.util.zip.CRC32;
 
 public class class702 extends class721 {
-   class6 field3334 = new class6(16);
+   NodeTable field3334 = new NodeTable(16);
    class341 field3335;
    byte[] field3336;
    int field3337;
@@ -46,14 +46,14 @@ public class class702 extends class721 {
    void method2142(int var1, short var2) {
       try {
          if (this.field3342 != null) {
-            class568 var3;
+            Node var3;
             for(var3 = this.field3354.method901(1766612795); var3 != null; var3 = this.field3354.method906(49146)) {
                if (var3.field641 == (long)var1) {
                   return;
                }
             }
 
-            var3 = new class568();
+            var3 = new Node();
             var3.field641 = (long)var1;
             this.field3354.method897(var3, -68518310);
          }
@@ -108,7 +108,7 @@ public class class702 extends class721 {
                var4 = this.field3335.method225(this.field3337, var1, (byte)2, false, 67458398);
             }
 
-            this.field3334.method2947((class568)var4, (long)var1);
+            this.field3334.method2947((Node)var4, (long)var1);
          }
 
          if (((class959)var4).field3464) {
@@ -242,7 +242,7 @@ public class class702 extends class721 {
    void method1959(byte var1) {
       try {
          if (this.field3349 != null && this.method2136(2079218396) != null) {
-            for(class568 var2 = this.field3354.method901(1766612795); var2 != null; var2 = this.field3354.method906(49146)) {
+            for(Node var2 = this.field3354.method901(1766612795); var2 != null; var2 = this.field3354.method906(49146)) {
                int var3 = (int)var2.field641;
                if (var3 >= 0 && var3 < this.field3343.field7259 && this.field3343.field7263[var3] != 0) {
                   if (this.field3347[var3] == 0) {
@@ -275,7 +275,7 @@ public class class702 extends class721 {
             }
 
             boolean var2;
-            class568 var3;
+            Node var3;
             int var4;
             if (this.field3351) {
                var2 = true;
@@ -307,7 +307,7 @@ public class class702 extends class721 {
                      }
 
                      if (this.field3347[this.field3350] == 0) {
-                        var3 = new class568();
+                        var3 = new Node();
                         var3.field641 = (long)this.field3350;
                         this.field3349.method897(var3, 2047339116);
                         var2 = false;
@@ -351,7 +351,7 @@ public class class702 extends class721 {
                      }
 
                      if (1 != this.field3347[this.field3350]) {
-                        var3 = new class568();
+                        var3 = new Node();
                         var3.field641 = (long)this.field3350;
                         this.field3349.method897(var3, 120115319);
                         var2 = false;
@@ -370,7 +370,7 @@ public class class702 extends class721 {
             }
          }
 
-         if (this.field3355 && class27.method3468((byte)1) >= this.field3356) {
+         if (this.field3355 && class27.resetTimer((byte)1) >= this.field3356) {
             for(class959 var6 = (class959)this.field3334.method2946(1614241493); var6 != null; var6 = (class959)this.field3334.method2945((byte)-12)) {
                if (var6.field3464) {
                   if (var1 == -1065641321) {
@@ -387,7 +387,7 @@ public class class702 extends class721 {
                }
             }
 
-            this.field3356 = class27.method3468((byte)1) + 1000L;
+            this.field3356 = class27.resetTimer((byte)1) + 1000L;
          }
 
       } catch (RuntimeException var5) {
@@ -433,7 +433,7 @@ public class class702 extends class721 {
          } else if (!this.field3351) {
             return this.field3343.field7265;
          } else {
-            class568 var2 = this.field3349.method901(1766612795);
+            Node var2 = this.field3349.method901(1766612795);
             return var2 == null ? 0 : (int)var2.field641;
          }
       } catch (RuntimeException var3) {
@@ -564,7 +564,7 @@ public class class702 extends class721 {
 
    static void method1967(int var0, byte var1) {
       try {
-         for(class568 var2 = class730.field2878.method2946(2109381941); var2 != null; var2 = class730.field2878.method2945((byte)-58)) {
+         for(Node var2 = class730.field2878.method2946(2109381941); var2 != null; var2 = class730.field2878.method2945((byte)-58)) {
             if ((long)var0 == (var2.field641 >> 48 & 65535L)) {
                var2.method545(-1460969981);
             }

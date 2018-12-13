@@ -338,7 +338,7 @@ public class class544 {
       this.field3786 = var8;
    }
 
-   static final void method2364(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method2364(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var0.field1031 = var2.field3161[--var2.field3156];
          class814.method2932(var0, 2056943984);
@@ -350,8 +350,8 @@ public class class544 {
    static final void method2365(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class932.method6296(var3, var4, var0, 1469378212);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "lm.jw(" + ')');
@@ -361,7 +361,7 @@ public class class544 {
    static final void method2366(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          class773.method2313(var3, var0, 1480483039);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "lm.qk(" + ')');

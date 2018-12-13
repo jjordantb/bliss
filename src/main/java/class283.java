@@ -138,8 +138,8 @@ public final class class283 {
    static final void method6642(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class576.method67(var3, var4, var0, 1780401940);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "dv.gb(" + ')');
@@ -149,8 +149,8 @@ public final class class283 {
    static final void method6643(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class75.method1118(var3, var4, true, 0, var0, 338177533);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "dv.hn(" + ')');
@@ -171,7 +171,7 @@ public final class class283 {
 
    static final void method6645(class744 var0, int var1) {
       try {
-         class564.method845((Interactable)var0.field3150, var0, -778688640);
+         Widget.method845((Interactable)var0.field3150, var0, -778688640);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "dv.apd(" + ')');
       }

@@ -39,7 +39,7 @@ public class class133 extends class304 {
    static final void method997(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)76);
+         Widget var3 = class449.method3756(var2, (byte)76);
          class752.method2640(var3, var0, -767212097);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "yt.qe(" + ')');

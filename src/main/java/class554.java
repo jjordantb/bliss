@@ -121,7 +121,7 @@ public class class554 implements Runnable {
 
                if (class730.field2817 && !var1) {
                   class785 var11 = class354.field2139 != -1 ? class452.field7216.method5148(class354.field2139, 1875400558) : null;
-                  if ((class568.field645 & 2) != 0 && (var11 == null || var3.method6109(class354.field2139, var11.field3822, (byte)47) != var11.field3822)) {
+                  if ((Node.field645 & 2) != 0 && (var11 == null || var3.method6109(class354.field2139, var11.field3822, (byte)47) != var11.field3822)) {
                      class984.method1875(class730.field2820, class730.field2735 + " " + class822.field9048 + " " + class56.method1545(16776960, -2021390481) + var4, class175.field5075, 8, -1, (long)var0.field4028, 0, 0, true, false, (long)var0.field4028, false, -1507413924);
                   }
                }
@@ -273,13 +273,13 @@ public class class554 implements Runnable {
       }
    }
 
-   public static class564 method427(int var0, int var1, int var2) {
+   public static Widget method427(int var0, int var1, int var2) {
       try {
-         class564 var3 = class449.method3756(var0, (byte)-11);
+         Widget var3 = class449.method3756(var0, (byte)-11);
          if (-1 == var1) {
             return var3;
          } else {
-            return var3 != null && var3.field1017 != null && var1 < var3.field1017.length ? var3.field1017[var1] : null;
+            return var3 != null && var3.children1 != null && var1 < var3.children1.length ? var3.children1[var1] : null;
          }
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "fr.p(" + ')');
@@ -307,7 +307,7 @@ public class class554 implements Runnable {
       try {
          if (var0 != -1 && !class866.field9767[var0]) {
             class91.field562.method3267(var0, -692047844);
-            class382.field1410[var0] = null;
+            class382.widgetContainers[var0] = null;
          }
 
       } catch (RuntimeException var3) {

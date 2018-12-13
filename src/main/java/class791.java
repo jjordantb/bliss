@@ -76,7 +76,7 @@ public class class791 implements class940 {
 
    public boolean method6318(long var1) {
       try {
-         return class27.method3468((byte)1) >= var1 + (long)this.field442;
+         return class27.resetTimer((byte)1) >= var1 + (long)this.field442;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "jr.x(" + ')');
       }

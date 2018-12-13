@@ -1,10 +1,10 @@
 public class class599 {
-   public class568 field1710 = new class568();
-   class568 field1711;
+   public Node field1710 = new Node();
+   Node field1711;
 
-   public class568 method1278(int var1) {
+   public Node method1278(int var1) {
       try {
-         class568 var2 = this.field1710.field642;
+         Node var2 = this.field1710.field642;
          if (var2 == this.field1710) {
             this.field1711 = null;
             return null;
@@ -17,7 +17,7 @@ public class class599 {
       }
    }
 
-   public void method1279(class568 var1, int var2) {
+   public void method1279(Node var1, int var2) {
       try {
          if (var1.field642 != null) {
             var1.method545(-1460969981);
@@ -32,9 +32,9 @@ public class class599 {
       }
    }
 
-   public class568 method1280(byte var1) {
+   public Node method1280(byte var1) {
       try {
-         class568 var2 = this.field1711;
+         Node var2 = this.field1711;
          if (this.field1710 == var2) {
             this.field1711 = null;
             return null;
@@ -47,9 +47,9 @@ public class class599 {
       }
    }
 
-   public class568 method1281(int var1) {
+   public Node method1281(int var1) {
       try {
-         class568 var2 = this.field1710.field640;
+         Node var2 = this.field1710.field640;
          if (var2 == this.field1710) {
             this.field1711 = null;
             return null;
@@ -62,7 +62,7 @@ public class class599 {
       }
    }
 
-   public void method1282(class568 var1, int var2) {
+   public void method1282(Node var1, int var2) {
       try {
          if (var1.field642 != null) {
             var1.method545(-1460969981);
@@ -77,9 +77,9 @@ public class class599 {
       }
    }
 
-   public class568 method1283(byte var1) {
+   public Node method1283(byte var1) {
       try {
-         class568 var2 = this.field1711;
+         Node var2 = this.field1711;
          if (var2 == this.field1710) {
             this.field1711 = null;
             return null;
@@ -100,9 +100,9 @@ public class class599 {
       }
    }
 
-   public class568 method1285(int var1) {
+   public Node method1285(int var1) {
       try {
-         class568 var2 = this.field1710.field640;
+         Node var2 = this.field1710.field640;
          if (this.field1710 == var2) {
             return null;
          } else {
@@ -117,7 +117,7 @@ public class class599 {
    public void method1286(int var1) {
       try {
          while(true) {
-            class568 var2 = this.field1710.field640;
+            Node var2 = this.field1710.field640;
             if (this.field1710 == var2) {
                if (var1 < -824427525) {
                   this.field1711 = null;

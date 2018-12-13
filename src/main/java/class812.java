@@ -158,7 +158,7 @@ public class class812 {
       }
    }
 
-   static final void method2916(class564 var0, class744 var1, int var2) {
+   static final void method2916(Widget var0, class744 var1, int var2) {
       try {
          int var3 = var1.field3161[--var1.field3156];
          int var4 = var1.field3161[--var1.field3156] - 1;

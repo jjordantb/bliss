@@ -27,11 +27,11 @@ public class class859 extends class304 {
 
    public static int method5179(int var0, int var1, boolean var2, int var3) {
       try {
-         class163 var4 = class213.method3812(var0, var2, -147362451);
+         ItemNode var4 = class213.method3812(var0, var2, -147362451);
          if (var4 == null) {
             return 0;
          } else {
-            return var1 >= 0 && var1 < var4.field6620.length ? var4.field6620[var1] : 0;
+            return var1 >= 0 && var1 < var4.itemStackSizes.length ? var4.itemStackSizes[var1] : 0;
          }
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "xc.f(" + ')');

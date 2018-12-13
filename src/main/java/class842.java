@@ -26,14 +26,14 @@ public class class842 extends class304 {
 
    public static void method5468(String var0, int var1) {
       try {
-         if (class730.field2817 && (class568.field645 & 24) != 0) {
+         if (class730.field2817 && (Node.field645 & 24) != 0) {
             boolean var2 = false;
             int var3 = class498.field8102;
             int[] var4 = class498.field8108;
 
             for(int var5 = 0; var5 < var3; ++var5) {
                Player var6 = class730.loaded[var4[var5]];
-               if (var6.field3374 != null && var6.field3374.equalsIgnoreCase(var0) && (var6 == class923.local && (class568.field645 & 16) != 0 || (class568.field645 & 8) != 0)) {
+               if (var6.field3374 != null && var6.field3374.equalsIgnoreCase(var0) && (var6 == class923.local && (Node.field645 & 16) != 0 || (Node.field645 & 8) != 0)) {
                   class701 var7 = class637.method5936(class643.field10035, class730.field2692.field7765, (byte)25);
                   var7.field3364.method6362(class730.field2888, 16711935);
                   var7.field3364.method6362(var4[var5], 16711935);

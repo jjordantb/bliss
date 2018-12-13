@@ -10,7 +10,7 @@ final class class317 implements class832 {
       }
    }
 
-   static final void method469(class564 var0, class744 var1, int var2) {
+   static final void method469(Widget var0, class744 var1, int var2) {
       try {
          int var3 = var1.field3161[--var1.field3156];
          int var4 = var1.field3161[--var1.field3156] - 1;
@@ -35,7 +35,7 @@ final class class317 implements class832 {
       }
    }
 
-   public static final void method470(class564 var0, int var1, int var2, int var3) {
+   public static final void method470(Widget var0, int var1, int var2, int var3) {
       try {
          if (class730.field2832 == null && !class602.field8645 && var0 != null && class519.method2667(var0, 1470456512)) {
             class730.field2832 = var0;
@@ -51,12 +51,12 @@ final class class317 implements class832 {
       }
    }
 
-   public static final class564 method471(class131 var0, class564 var1, int var2) {
+   public static final Widget method471(WidgetContainer var0, Widget var1, int var2) {
       try {
          if (-1 != var1.field885) {
             return var0.method889(var1.field885, (short)8481);
          } else {
-            if (!var0.field1101) {
+            if (!var0.closed) {
                int var3 = var1.field867 >>> 16;
                class521 var4 = new class521(class730.field2823);
 

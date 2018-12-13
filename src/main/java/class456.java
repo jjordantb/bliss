@@ -104,7 +104,7 @@ public class class456 {
       }
    }
 
-   static final void method3792(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method3792(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var0.field953 = (String)var2.field3157[--var2.field3158];
       } catch (RuntimeException var5) {
@@ -116,7 +116,7 @@ public class class456 {
       try {
          int var2 = var0.field3161[--var0.field3156];
          if (class740.field3211 != null) {
-            class568 var3 = class740.field3211.method2942((long)var2);
+            Node var3 = class740.field3211.method2942((long)var2);
             var0.field3161[++var0.field3156 - 1] = var3 != null ? 1 : 0;
          } else {
             var0.field3161[++var0.field3156 - 1] = 0;
@@ -152,8 +152,8 @@ public class class456 {
    static final void method3795(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class250.method4387(var3, var4, var0, -535116520);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "da.fv(" + ')');

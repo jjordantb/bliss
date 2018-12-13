@@ -1,4 +1,4 @@
-public class class129 extends class568 {
+public class class129 extends Node {
    public short field1084;
 
    public class129(short var1) {

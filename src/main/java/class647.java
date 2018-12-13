@@ -27,18 +27,18 @@ public class class647 implements class331 {
       this.field9230 = var1;
    }
 
-   static void method5482(class357 var0, int var1) {
+   static void method5482(MenuItem var0, int var1) {
       try {
          if (var0 != null) {
             class602.field8647.method897(var0, 2096333345);
             ++class602.field8673;
             Object var2 = null;
             class497 var5;
-            if (!var0.field1708 && !"".equals(var0.field1697)) {
+            if (!var0.field1708 && !"".equals(var0.name)) {
                long var3 = var0.field1706;
 
                for(var5 = (class497)class602.field8637.method2942(var3); var5 != null; var5 = (class497)class602.field8637.method2943(-1492262664)) {
-                  if (var5.field8122.equals(var0.field1697)) {
+                  if (var5.field8122.equals(var0.name)) {
                      if (var1 <= 1583252452) {
                         throw new IllegalStateException();
                      }
@@ -48,19 +48,19 @@ public class class647 implements class331 {
 
                if (var5 == null) {
                   var5 = (class497)class602.field8631.method2974(var3);
-                  if (var5 != null && !var5.field8122.equals(var0.field1697)) {
+                  if (var5 != null && !var5.field8122.equals(var0.name)) {
                      var5 = null;
                   }
 
                   if (var5 == null) {
-                     var5 = new class497(var0.field1697);
+                     var5 = new class497(var0.name);
                   }
 
                   class602.field8637.method2947(var5, var3);
                   ++class602.field8646;
                }
             } else {
-               var5 = new class497(var0.field1697);
+               var5 = new class497(var0.name);
                ++class602.field8646;
             }
 
@@ -110,10 +110,10 @@ public class class647 implements class331 {
 
    public static void method5486(int var0) {
       try {
-         class564.field860.method2979();
-         class564.field863.method2979();
-         class564.field861.method2979();
-         class564.field1021.method2979();
+         Widget.field860.method2979();
+         Widget.field863.method2979();
+         Widget.field861.method2979();
+         Widget.field1021.method2979();
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "ls.c(" + ')');
       }
@@ -153,8 +153,8 @@ public class class647 implements class331 {
    static final void method5490(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-41);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-41);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class416.method5647(var3, var4, var0, -1887827595);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ls.lx(" + ')');

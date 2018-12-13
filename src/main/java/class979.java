@@ -39,8 +39,8 @@ public class class979 {
    static final void method1830(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class176.method3168(var3, var4, var0, 1051610527);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "if.np(" + ')');
@@ -50,8 +50,8 @@ public class class979 {
    static final void method1831(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)83);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)83);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class472.method4612(var3, var4, var0, -389689371);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "if.oa(" + ')');
@@ -106,14 +106,14 @@ public class class979 {
    static final void method1836(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field891;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "if.pd(" + ')');
       }
    }
 
-   static final void method1837(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method1837(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var0.field957 = var2.field3161[--var2.field3156];
       } catch (RuntimeException var5) {

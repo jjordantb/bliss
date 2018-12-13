@@ -79,7 +79,7 @@ public class class120 {
             }
 
             ((class106)var4).method168(var1, 804752437);
-            this.field2277.method897((class568)var4, 843424958);
+            this.field2277.method897((Node)var4, 843424958);
          }
 
       } catch (RuntimeException var5) {
@@ -107,8 +107,8 @@ public class class120 {
    static final void method1503(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class625.method5823(var3, var4, var0, (byte)125);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "gn.jz(" + ')');
@@ -121,7 +121,7 @@ public class class120 {
          int var2 = var0.field3161[var0.field3156];
          int var3 = var0.field3161[var0.field3156 + 1];
          int var4 = var0.field3161[var0.field3156 + 2];
-         class564 var5 = class554.method427(var2 << 16 | var3, var4, -156511736);
+         Widget var5 = class554.method427(var2 << 16 | var3, var4, -156511736);
          class422.method5724((byte)4);
          class725 var6 = class730.method1761(var5);
          class900.method6347(var5, var6.method1742((byte)-10), var6.field2557, 1387537939);

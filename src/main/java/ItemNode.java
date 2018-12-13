@@ -1,9 +1,10 @@
-public class class163 extends class568 {
+public class ItemNode extends Node {
+
    static class1 field6616 = new class1(10);
-   static class6 field6617 = new class6(32);
+   static NodeTable itemNodeTable = new NodeTable(32);
    static int field6618;
-   int[] field6619 = new int[]{-1};
-   int[] field6620 = new int[1];
+   int[] itemIds = new int[]{-1};
+   int[] itemStackSizes = new int[1];
    static int field6621;
 
    final class879 method3553(class848 var1, int var2, Animator var3, int var4, boolean var5, class365 var6, byte var7) {
@@ -15,14 +16,14 @@ public class class163 extends class568 {
             var10 = class283.field10614.method3736(var4, (byte)89);
          }
 
-         int[] var11 = this.field6619;
+         int[] var11 = this.itemIds;
          if (var10 != null && var10.field3990 != null) {
             var11 = new int[var10.field3990.length];
 
             for(int var12 = 0; var12 < var10.field3990.length; ++var12) {
                int var13 = var10.field3990[var12];
-               if (var13 >= 0 && var13 < this.field6619.length) {
-                  var11[var12] = this.field6619[var13];
+               if (var13 >= 0 && var13 < this.itemIds.length) {
+                  var11[var12] = this.itemIds[var13];
                } else {
                   var11[var12] = -1;
                }

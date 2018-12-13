@@ -418,9 +418,9 @@ public class Animator {
 
    }
 
-   public static void method2801(class131 var0, class564 var1, int var2) {
+   public static void method2801(WidgetContainer var0, Widget var1, int var2) {
       try {
-         class564 var3 = class317.method471(var0, var1, -499945373);
+         Widget var3 = class317.method471(var0, var1, -499945373);
          int var4;
          int var5;
          if (var3 == null) {

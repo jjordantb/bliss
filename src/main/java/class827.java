@@ -29,8 +29,8 @@ public class class827 implements class925 {
    static final void method5355(boolean var0, class744 var1, int var2) {
       try {
          int var3 = var1.field3161[--var1.field3156];
-         class564 var4 = class449.method3756(var3, (byte)53);
-         class131 var5 = class382.field1410[var3 >> 16];
+         Widget var4 = class449.method3756(var3, (byte)53);
+         WidgetContainer var5 = class382.widgetContainers[var3 >> 16];
          if (var0) {
             class277.method6634(var5, var4, -1270501871);
          } else {
@@ -42,11 +42,11 @@ public class class827 implements class925 {
       }
    }
 
-   static final void method5356(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method5356(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var0.field908 = var2.field3161[--var2.field3156] == 1;
          class814.method2932(var0, 100999784);
-         if (-1 == var0.field879 && !var1.field1101) {
+         if (-1 == var0.field879 && !var1.closed) {
             class392.method3383(var0.field867, -285766228);
          }
 

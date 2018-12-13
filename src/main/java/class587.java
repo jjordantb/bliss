@@ -147,11 +147,11 @@ public class class587 {
       }
    }
 
-   static final void method166(class564 var0, class744 var1, byte var2) {
+   static final void method166(Widget var0, class744 var1, byte var2) {
       try {
          class230 var3 = var0.method823(class785.field3827, class730.field2681, (byte)-46);
          int var4 = var1.field3161[--var1.field3156];
-         Point var5 = var3.method4604(var0.field937, var0.field881, var0.field916, var4, class324.field621, 946663112);
+         Point var5 = var3.method4604(var0.text, var0.field881, var0.field916, var4, class324.field621, 946663112);
          var1.field3161[++var1.field3156 - 1] = var5.x * 2113899933;
          var1.field3161[++var1.field3156 - 1] = var5.y * -1537929791;
       } catch (RuntimeException var6) {

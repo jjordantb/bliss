@@ -1,4 +1,4 @@
-public class class68 extends class568 {
+public class class68 extends Node {
    class639 field1874;
    class291 field1875;
    int field1876;
@@ -53,7 +53,7 @@ public class class68 extends class568 {
       int var11 = this.field1875.method3887(var9, var10, -1731289320);
       if ((var5 & 127) == 0 || (var6 & 127) == 0) {
          var7 = ((long)var10 & 65535L) << 16 | (long)var9 & 65535L;
-         class568 var12 = this.field1892.method2331(var7);
+         Node var12 = this.field1892.method2331(var7);
          if (var12 != null) {
             this.method1347(((class129)var12).field1084);
             return;

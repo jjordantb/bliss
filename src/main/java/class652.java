@@ -1,4 +1,4 @@
-public class class652 extends class568 {
+public class class652 extends Node {
    public static int field9449 = 3;
    public static int field9450 = 1;
    int field9451;

@@ -135,9 +135,9 @@ public class class495 {
 
    static final void method4481(class744 var0, byte var1) {
       try {
-         class564 var2 = class449.method3756(var0.field3161[--var0.field3156], (byte)-124);
-         var2.field1017 = null;
-         var2.field1018 = null;
+         Widget var2 = class449.method3756(var0.field3161[--var0.field3156], (byte)-124);
+         var2.children1 = null;
+         var2.children2 = null;
          class814.method2932(var2, -1793194156);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "eb.bj(" + ')');

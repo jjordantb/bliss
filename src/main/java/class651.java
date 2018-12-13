@@ -1,6 +1,6 @@
 import java.nio.ByteBuffer;
 
-public class class651 extends class568 {
+public class class651 extends Node {
    class639 field9502;
    class894 field9503;
    float[][] field9504;
@@ -24,7 +24,7 @@ public class class651 extends class568 {
       int var13 = this.field9503.method3887(var11, var12, -1829757752);
       if ((var5 & 127) == 0 || (var6 & 127) == 0) {
          var9 = ((long)var12 & 65535L) << 16 | (long)var11 & 65535L;
-         class568 var14 = this.field9506.method2331(var9);
+         Node var14 = this.field9506.method2331(var9);
          if (var14 != null) {
             var7.putShort(((class129)var14).field1084);
             return;

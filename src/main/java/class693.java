@@ -22,7 +22,7 @@ public class class693 {
 
    static final void method3878(class744 var0, int var1) {
       try {
-         var0.field3161[++var0.field3156 - 1] = class568.field643;
+         var0.field3161[++var0.field3156 - 1] = Node.field643;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "it.aml(" + ')');
       }

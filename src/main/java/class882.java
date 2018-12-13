@@ -14,8 +14,8 @@ public class class882 {
    static final void method6192(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)40);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)40);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class645.method6158(var3, var4, var0, -721593745);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "mq.ee(" + ')');
@@ -25,8 +25,8 @@ public class class882 {
    static final void method6193(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)99);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)99);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class75.method1118(var3, var4, true, 0, var0, 1313790889);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "mq.hj(" + ')');

@@ -53,11 +53,11 @@ public class class154 {
 
    static final void method3488(int var0) {
       try {
-         class323.field630 = null;
+         class323.widgets = null;
          class873.method5870(class730.field2822, 0, 0, class759.field4331, class97.field614, 0, 0, -1, 421170136);
-         if (class323.field630 != null) {
-            class536.method2328(class323.field630, -1412584499, 0, 0, class759.field4331, class97.field614, class82.field1111, class6.field4929, class263.field8132 == class730.field2693 ? -1 : class730.field2693.field1028 * 1339690151 * 91937559, true, (byte)0);
-            class323.field630 = null;
+         if (class323.widgets != null) {
+            class536.method2328(class323.widgets, -1412584499, 0, 0, class759.field4331, class97.field614, class82.field1111, NodeTable.field4929, class263.field8132 == class730.field2693 ? -1 : class730.field2693.field1028 * 1339690151 * 91937559, true, (byte)0);
+            class323.widgets = null;
          }
 
       } catch (RuntimeException var2) {
@@ -68,8 +68,8 @@ public class class154 {
    static final void method3489(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-19);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-19);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class456.method3792(var3, var4, var0, (byte)-113);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ef.jj(" + ')');
@@ -84,10 +84,10 @@ public class class154 {
       }
    }
 
-   public static String method3491(class357 var0, byte var1) {
+   public static String method3491(MenuItem var0, byte var1) {
       try {
          if (!class602.field8645 && var0 != null) {
-            return (var0.field1697 == null || var0.field1697.length() == 0) && var0.field1709 != null && var0.field1709.length() > 0 ? var0.field1709 : var0.field1697;
+            return (var0.name == null || var0.name.length() == 0) && var0.field1709 != null && var0.field1709.length() > 0 ? var0.field1709 : var0.name;
          } else {
             return "";
          }

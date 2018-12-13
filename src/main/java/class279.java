@@ -84,7 +84,7 @@ public class class279 {
       try {
          int var2 = var0.field3161[--var0.field3156];
          if (class740.field3210 != null) {
-            class568 var3 = class740.field3210.method2942((long)var2);
+            Node var3 = class740.field3210.method2942((long)var2);
             var0.field3161[++var0.field3156 - 1] = var3 != null ? 1 : 0;
          } else {
             var0.field3161[++var0.field3156 - 1] = 0;
@@ -128,11 +128,11 @@ public class class279 {
    static final void method6616(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-20);
+         Widget var3 = class449.method3756(var2, (byte)-20);
          int var4 = var0.field3161[--var0.field3156];
          --var4;
-         if (var3.field920 != null && var4 < var3.field920.length && var3.field920[var4] != null) {
-            var0.field3157[++var0.field3158 - 1] = var3.field920[var4];
+         if (var3.actions != null && var4 < var3.actions.length && var3.actions[var4] != null) {
+            var0.field3157[++var0.field3158 - 1] = var3.actions[var4];
          } else {
             var0.field3157[++var0.field3158 - 1] = "";
          }

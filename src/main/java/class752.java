@@ -6,7 +6,7 @@ public class class752 {
    static int field4168;
    static int field4169 = 8;
    public static int field4170 = 256;
-   long field4171 = class27.method3468((byte)1);
+   long field4171 = class27.resetTimer((byte)1);
    int[] field4172;
    boolean field4173 = false;
    class298 field4174;
@@ -41,7 +41,7 @@ public class class752 {
    public final synchronized void method2626(int var1) {
       try {
          if (!this.field4173) {
-            long var2 = class27.method3468((byte)1);
+            long var2 = class27.resetTimer((byte)1);
 
             try {
                if (var2 > this.field4171 + 6000L) {
@@ -51,7 +51,7 @@ public class class752 {
                while(var2 > this.field4171 + 5000L) {
                   this.method2627(256, -518493991);
                   this.field4171 += (long)(256000 / field4179);
-                  var2 = class27.method3468((byte)1);
+                  var2 = class27.resetTimer((byte)1);
                }
             } catch (Exception var8) {
                this.field4171 = var2;
@@ -257,7 +257,7 @@ public class class752 {
          this.field4174.method6533(var1, 0, var2);
       }
 
-      this.field4171 = class27.method3468((byte)1);
+      this.field4171 = class27.resetTimer((byte)1);
    }
 
    void method2629(Component var1, byte var2) throws Exception {
@@ -291,7 +291,7 @@ public class class752 {
             this.method2633((short)-24697);
          } catch (Exception var3) {
             this.method2632(331463442);
-            this.field4180 = class27.method3468((byte)1) + 2000L;
+            this.field4180 = class27.resetTimer((byte)1) + 2000L;
          }
 
       } catch (RuntimeException var4) {
@@ -369,14 +369,14 @@ public class class752 {
    static final void method2639(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field881;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "lu.oc(" + ')');
       }
    }
 
-   static final void method2640(class564 var0, class744 var1, int var2) {
+   static final void method2640(Widget var0, class744 var1, int var2) {
       try {
          int var3 = var1.field3161[--var1.field3156];
          int var4 = var1.field3161[--var1.field3156] - 1;
@@ -409,7 +409,7 @@ public class class752 {
       }
    }
 
-   static final void method2642(class564 var0, class131 var1, class744 var2, short var3) {
+   static final void method2642(Widget var0, WidgetContainer var1, class744 var2, short var3) {
       try {
          var2.field3156 -= 2;
          int var4 = var2.field3161[var2.field3156];

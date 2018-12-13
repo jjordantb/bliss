@@ -43,8 +43,8 @@ public class class197 implements class70 {
    static final void method3714(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)23);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)23);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class544.method2364(var3, var4, var0, 2094067145);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "oj.di(" + ')');
@@ -54,8 +54,8 @@ public class class197 implements class70 {
    static final void method3715(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)69);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)69);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class932.method6296(var3, var4, var0, 230712598);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "oj.jc(" + ')');
@@ -79,8 +79,8 @@ public class class197 implements class70 {
    static final void method3717(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class964.method2134(var3, var4, var0, 2138038025);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "oj.ns(" + ')');

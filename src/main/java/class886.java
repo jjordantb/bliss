@@ -48,33 +48,33 @@ public class class886 {
       }
    }
 
-   public static class131 method6167(int var0, int[] var1, class131 var2, boolean var3, byte var4) {
+   public static WidgetContainer method6167(int var0, int[] var1, WidgetContainer var2, boolean var3, byte var4) {
       try {
          if (!class91.field562.method3261(var0, 2091513640)) {
             return null;
          } else {
             int var5 = class91.field562.method3286(var0, -1254954272);
-            class564[] var6;
+            Widget[] var6;
             if (var5 == 0) {
-               var6 = new class564[0];
+               var6 = new Widget[0];
             } else if (var2 == null) {
-               var6 = new class564[var5];
+               var6 = new Widget[var5];
             } else {
-               var6 = var2.field1103;
+               var6 = var2.widgetsCopy;
             }
 
             if (var2 == null) {
-               var2 = new class131(var3, var6);
+               var2 = new WidgetContainer(var3, var6);
             } else {
-               var2.field1103 = var6;
-               var2.field1101 = var3;
+               var2.widgetsCopy = var6;
+               var2.closed = var3;
             }
 
             for(int var7 = 0; var7 < var5; ++var7) {
-               if (var2.field1103[var7] == null) {
+               if (var2.widgetsCopy[var7] == null) {
                   byte[] var8 = class91.field562.method3259(var0, var7, var1, -1925510913);
                   if (var8 != null) {
-                     class564 var9 = var2.field1103[var7] = new class564();
+                     Widget var9 = var2.widgetsCopy[var7] = new Widget();
                      var9.field867 = var7 + (var0 << 16);
                      var9.method820(new InputStream(var8), 1142190823);
                   }

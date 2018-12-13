@@ -178,12 +178,13 @@ public class class916 implements class331 {
       }
    }
 
-   static void method6463(class357 var0, int var1, int var2, short var3) {
+   static void processAction(MenuItem var0, int var1, int var2, short var3) {
       try {
+          System.out.println(var0);
          if (var0 != null && class602.field8647.field1104 != var0) {
-            int var4 = var0.field1698;
+            int var4 = var0.regionX;
             int var5 = var0.field1703;
-            int var6 = var0.field1702;
+            int var6 = var0.opcode;
             int var7 = (int)var0.field1701;
             long var8 = var0.field1701;
             if (var6 >= 2000) {
@@ -281,7 +282,7 @@ public class class916 implements class331 {
             }
 
             if (var6 == 57 || var6 == 1007) {
-               class740.method1920(var7, var5, var4, var0.field1697, 400950689);
+               class740.method1920(var7, var5, var4, var0.name, 400950689);
             }
 
             if (1008 == var6 || 1009 == var6 || var6 == 1010 || 1011 == var6 || var6 == 1012) {
@@ -411,7 +412,7 @@ public class class916 implements class331 {
             }
 
             if (58 == var6) {
-               class564 var33 = class554.method427(var5, var4, -156511736);
+               Widget var33 = class554.method427(var5, var4, -156511736);
                if (var33 != null) {
                   class533.method2264(var33, 1371871585);
                }
@@ -571,7 +572,7 @@ public class class916 implements class331 {
             }
 
             if (25 == var6) {
-               class564 var41 = class554.method427(var5, var4, -156511736);
+               Widget var41 = class554.method427(var5, var4, -156511736);
                if (var41 != null) {
                   class422.method5724((byte)4);
                   class725 var48 = class730.method1761(var41);

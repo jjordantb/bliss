@@ -379,7 +379,7 @@ public class class13 extends class848 {
    }
 
    void method4846() {
-      for(class568 var1 = this.field6754.method1281(1327944912); var1 != null; var1 = this.field6754.method1283((byte)-104)) {
+      for(Node var1 = this.field6754.method1281(1327944912); var1 != null; var1 = this.field6754.method1283((byte)-104)) {
          ((class292)var1).method6524();
       }
 
@@ -1629,7 +1629,7 @@ public class class13 extends class848 {
          OpenGL.glDeleteLists((int)var3.field641, var3.field3631);
       }
 
-      class568 var5;
+      Node var5;
       while(!this.field6763.method1284((byte)76)) {
          var5 = this.field6763.method1285(1672075374);
          OpenGL.glDeleteProgramARB((int)var5.field641);
@@ -1646,9 +1646,9 @@ public class class13 extends class848 {
       }
 
       this.field6739.method4512();
-      if (this.method4802() > 100663296 && class27.method3468((byte)1) > this.field6765 + 60000L) {
+      if (this.method4802() > 100663296 && class27.resetTimer((byte)1) > this.field6765 + 60000L) {
          System.gc();
-         this.field6765 = class27.method3468((byte)1);
+         this.field6765 = class27.resetTimer((byte)1);
       }
 
       this.field6749 = var1;

@@ -1,53 +1,54 @@
-public class class131 {
-   public boolean field1101;
-   class564[] field1102;
-   public class564[] field1103;
+public class WidgetContainer {
 
-   public class564[] method887(byte var1) {
+   public boolean closed;
+   Widget[] widgets;
+   public Widget[] widgetsCopy;
+
+   public Widget[] method887(byte var1) {
       try {
-         return this.field1102 == null ? this.field1103 : this.field1102;
+         return this.widgets == null ? this.widgetsCopy : this.widgets;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ev.a(" + ')');
       }
    }
 
-   public class564[] method888(byte var1) {
+   public Widget[] method888(byte var1) {
       try {
-         if (this.field1102 == null) {
-            int var2 = this.field1103.length;
-            this.field1102 = new class564[var2];
-            System.arraycopy(this.field1103, 0, this.field1102, 0, this.field1103.length);
+         if (this.widgets == null) {
+            int var2 = this.widgetsCopy.length;
+            this.widgets = new Widget[var2];
+            System.arraycopy(this.widgetsCopy, 0, this.widgets, 0, this.widgetsCopy.length);
          }
 
-         return this.field1102;
+         return this.widgets;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ev.f(" + ')');
       }
    }
 
-   public class564 method889(int var1, short var2) {
+   public Widget method889(int var1, short var2) {
       try {
-         if (this.field1103[0].field867 >>> 16 != var1 >>> 16) {
+         if (this.widgetsCopy[0].field867 >>> 16 != var1 >>> 16) {
             throw new IllegalArgumentException();
          } else {
-            return this.field1103[var1 & '\uffff'];
+            return this.widgetsCopy[var1 & '\uffff'];
          }
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ev.b(" + ')');
       }
    }
 
-   class131(boolean var1, class564[] var2) {
-      this.field1103 = var2;
-      this.field1101 = var1;
+   WidgetContainer(boolean var1, Widget[] var2) {
+      this.widgetsCopy = var2;
+      this.closed = var1;
    }
 
-   static final void method890(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method890(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var0.field909 = 5;
          var0.field876 = class730.field2623;
          var0.field865 = 0;
-         if (-1 == var0.field879 && !var1.field1101) {
+         if (-1 == var0.field879 && !var1.closed) {
             class535.method2284(var0.field867, 1429753437);
          }
 
@@ -101,8 +102,8 @@ public class class131 {
    static final void method894(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)0);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)0);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class370.method877(var3, var4, var0, (byte)-31);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ev.dl(" + ')');

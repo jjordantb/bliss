@@ -52,6 +52,7 @@ public class class696 {
       return this.field7236 ? this.field7238 != null : this.field7235 != null;
    }
 
+   // W2S?
    public boolean method3924() {
       if (!this.field7233.field809) {
          return false;

@@ -4,7 +4,7 @@ import java.awt.Graphics;
 import java.awt.Insets;
 
 public class class646 implements class415 {
-   class6 field9250 = new class6(128);
+   NodeTable field9250 = new NodeTable(128);
    static long field9251 = 4611686018427387903L;
    static long field9252 = 4611686018427387904L;
    static int[] field9253 = new int[32];
@@ -61,7 +61,7 @@ public class class646 implements class415 {
             this.field9257[var2] = 0;
          }
 
-         this.field9250 = new class6(128);
+         this.field9250 = new NodeTable(128);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "g.f(" + ')');
       }
@@ -72,9 +72,9 @@ public class class646 implements class415 {
          this.field9257[var1] = var2;
          class852 var4 = (class852)this.field9250.method2942((long)var1);
          if (var4 != null) {
-            var4.field8727 = class27.method3468((byte)1) + 500L;
+            var4.field8727 = class27.resetTimer((byte)1) + 500L;
          } else {
-            var4 = new class852(class27.method3468((byte)1) + 500L);
+            var4 = new class852(class27.resetTimer((byte)1) + 500L);
             this.field9250.method2947(var4, (long)var1);
          }
 
@@ -89,7 +89,7 @@ public class class646 implements class415 {
          class852 var4 = (class852)this.field9250.method2942((long)var1);
          if (var4 != null) {
             if (4611686018427387905L != var4.field8727) {
-               var4.field8727 = class27.method3468((byte)1) + 500L | 4611686018427387904L;
+               var4.field8727 = class27.resetTimer((byte)1) + 500L | 4611686018427387904L;
             }
          } else {
             var4 = new class852(4611686018427387905L);
@@ -134,7 +134,7 @@ public class class646 implements class415 {
 
    int method5497(boolean var1, int var2) {
       try {
-         long var3 = class27.method3468((byte)1);
+         long var3 = class27.resetTimer((byte)1);
 
          for(class852 var5 = (class852)(var1 ? this.field9250.method2946(1646690306) : this.field9250.method2945((byte)18)); var5 != null; var5 = (class852)this.field9250.method2945((byte)-66)) {
             if ((var5.field8727 & 4611686018427387903L) < var3) {
@@ -158,8 +158,8 @@ public class class646 implements class415 {
    static final void method5498(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-44);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-44);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class534.method2293(var3, var4, var0, 2065875065);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "g.hc(" + ')');
@@ -169,8 +169,8 @@ public class class646 implements class415 {
    static final void method5499(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)31);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)31);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class957.method2100(var3, var4, var0, 805534141);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "g.ko(" + ')');
@@ -268,19 +268,19 @@ public class class646 implements class415 {
    static final void method5505(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)62);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)62);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class984.method1885(var3, var4, var0, (byte)84);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "g.cc(" + ')');
       }
    }
 
-   static final void method5506(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method5506(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var0.field1009 = var2.field3161[--var2.field3156];
          class814.method2932(var0, 2100669842);
-         if (-1 == var0.field879 && !var1.field1101) {
+         if (-1 == var0.field879 && !var1.closed) {
             class466.method4009(var0.field867, -1977969421);
          }
 

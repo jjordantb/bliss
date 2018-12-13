@@ -97,7 +97,7 @@ public class class16 {
                class881.method6172(-1387034810);
             } else {
                if (class458.field7204 == null) {
-                  Canvas var4 = new Canvas();
+                  MyCanvas var4 = new MyCanvas();
                   var4.setSize(36, 32);
                   class458.field7204 = class317.method474(0, var4, class962.field3627, class776.field3729, 0, -753690122);
                   class458.field7203 = class458.field7204.method4936(class398.method3539(class526.field3666, class295.field10470, 0, (byte)78), class922.method6248(class562.field827, class295.field10470, 0), true);

@@ -32,7 +32,7 @@ public class class76 {
             }
 
             ((class697)var4).method3820(var1, 1753656698);
-            this.field1459.method897((class568)var4, 120722253);
+            this.field1459.method897((Node)var4, 120722253);
          }
 
       } catch (RuntimeException var5) {
@@ -64,7 +64,7 @@ public class class76 {
       try {
          class198.field7040 = class198.field7045;
          class198.field7045 = 0;
-         class27.method3468((byte)1);
+         class27.resetTimer((byte)1);
          Iterator var3 = class198.field7046.iterator();
 
          while(var3.hasNext()) {

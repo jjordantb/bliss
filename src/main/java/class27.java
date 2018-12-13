@@ -34,7 +34,7 @@ public class class27 {
       }
    }
 
-   public static final synchronized long method3468(byte var0) {
+   public static final synchronized long resetTimer(byte var0) {
       try {
          long var1 = System.currentTimeMillis();
          if (var1 < class323.field629) {

@@ -112,13 +112,13 @@ public class class482 {
          } else {
             int var3 = var0 >> 16;
             int var4 = var0 & '\uffff';
-            if (class382.field1410[var3] != null && class382.field1410[var3].field1103[var4] != null) {
-               class564 var5 = class382.field1410[var3].field1103[var4];
-               class357 var6;
+            if (class382.widgetContainers[var3] != null && class382.widgetContainers[var3].widgetsCopy[var4] != null) {
+               Widget var5 = class382.widgetContainers[var3].widgetsCopy[var4];
+               MenuItem var6;
                if (var1 == -1 && var5.field869 == 0) {
-                  for(var6 = (class357)class602.field8647.method901(1766612795); var6 != null; var6 = (class357)class602.field8647.method906(49146)) {
-                     if (58 == var6.field1702 || 1007 == var6.field1702 || var6.field1702 == 25 || var6.field1702 == 57 || 30 == var6.field1702) {
-                        for(class564 var7 = class449.method3756(var6.field1703, (byte)-39); var7 != null; var7 = class317.method471(class382.field1410[var7.field867 >> 16], var7, -1653818376)) {
+                  for(var6 = (MenuItem)class602.field8647.method901(1766612795); var6 != null; var6 = (MenuItem)class602.field8647.method906(49146)) {
+                     if (58 == var6.opcode || 1007 == var6.opcode || var6.opcode == 25 || var6.opcode == 57 || 30 == var6.opcode) {
+                        for(Widget var7 = class449.method3756(var6.field1703, (byte)-39); var7 != null; var7 = class317.method471(class382.widgetContainers[var7.field867 >> 16], var7, -1653818376)) {
                            if (var7.field867 == var5.field867) {
                               return true;
                            }
@@ -126,8 +126,8 @@ public class class482 {
                      }
                   }
                } else {
-                  for(var6 = (class357)class602.field8647.method901(1766612795); var6 != null; var6 = (class357)class602.field8647.method906(49146)) {
-                     if (var6.field1698 == var1 && var5.field867 == var6.field1703 && (var6.field1702 == 58 || var6.field1702 == 1007 || var6.field1702 == 25 || 57 == var6.field1702 || var6.field1702 == 30)) {
+                  for(var6 = (MenuItem)class602.field8647.method901(1766612795); var6 != null; var6 = (MenuItem)class602.field8647.method906(49146)) {
+                     if (var6.regionX == var1 && var5.field867 == var6.field1703 && (var6.opcode == 58 || var6.opcode == 1007 || var6.opcode == 25 || 57 == var6.opcode || var6.opcode == 30)) {
                         return true;
                      }
                   }

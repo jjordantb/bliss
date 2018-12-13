@@ -25,8 +25,8 @@ public class class679 {
    static final void method4266(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)2);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)2);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class569.method11(var3, var4, var0, -16777216);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ow.kf(" + ')');
@@ -36,8 +36,8 @@ public class class679 {
    static final void method4267(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class649.method5545(var3, var4, var0, 896700904);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ow.ey(" + ')');
@@ -68,7 +68,7 @@ public class class679 {
    static final void method4269(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          int var4 = -1;
          int var5 = -1;
          class118 var6 = var3.method826(class593.field1623, 193353438);
@@ -84,7 +84,7 @@ public class class679 {
       }
    }
 
-   static final void method4270(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method4270(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          int[] var5 = class960.method2212(var4, var2, -1668247696);
@@ -126,7 +126,7 @@ public class class679 {
    static final void method4272(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)0);
+         Widget var3 = class449.method3756(var2, (byte)0);
          var0.field3161[++var0.field3156 - 1] = var3.field973;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ow.rg(" + ')');

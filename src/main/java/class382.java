@@ -5,7 +5,7 @@ public class class382 {
    class1 field1407 = new class1(60);
    int field1408;
    protected static class549 field1409;
-   public static class131[] field1410;
+   public static WidgetContainer[] widgetContainers;
    static int field1411;
 
    public void method1052(int var1) {
@@ -115,15 +115,15 @@ public class class382 {
    static final void method1057(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class562.method809(var3, var4, var0, (byte)-85);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "qc.ly(" + ')');
       }
    }
 
-   static final void method1058(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method1058(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var0.field890 = var2.field3161[--var2.field3156] == 1;
       } catch (RuntimeException var5) {

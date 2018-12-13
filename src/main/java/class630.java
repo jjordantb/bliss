@@ -1,6 +1,6 @@
 import java.util.Iterator;
 
-public class class630 extends class568 {
+public class class630 extends Node {
    int field9804;
    int field9805;
 
@@ -11,7 +11,7 @@ public class class630 extends class568 {
 
    public static void method5890(short var0) {
       try {
-         class198.field7047 = new class6(8);
+         class198.field7047 = new NodeTable(8);
          class198.field7048 = 0;
          Iterator var1 = class198.field7046.iterator();
 
@@ -28,7 +28,7 @@ public class class630 extends class568 {
    static final void method5891(class744 var0, short var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-1);
+         Widget var3 = class449.method3756(var2, (byte)-1);
          var0.field3161[++var0.field3156 - 1] = var3.field893;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "abl.rj(" + ')');

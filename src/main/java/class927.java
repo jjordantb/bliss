@@ -95,7 +95,7 @@ public class class927 extends class325 {
    }
 
    void method566() {
-      for(class568 var1 = this.field10245.method1281(1904772578); var1 != null; var1 = this.field10245.method1283((byte)-5)) {
+      for(Node var1 = this.field10245.method1281(1904772578); var1 != null; var1 = this.field10245.method1283((byte)-5)) {
          class583 var2 = (class583)var1;
          class319 var3 = var2.field318;
          var3.method482();
@@ -215,7 +215,7 @@ public class class927 extends class325 {
    }
 
    class583 method6207(class319 var1) {
-      for(class568 var2 = this.field10245.method1281(1679619359); var2 != null; var2 = this.field10245.method1283((byte)-106)) {
+      for(Node var2 = this.field10245.method1281(1679619359); var2 != null; var2 = this.field10245.method1283((byte)-106)) {
          class583 var3 = (class583)var2;
          if (var3.field318 == var1) {
             return var3;
@@ -911,7 +911,7 @@ public class class927 extends class325 {
    }
 
    void method565() {
-      for(class568 var1 = this.field10245.method1281(1665102883); var1 != null; var1 = this.field10245.method1283((byte)-18)) {
+      for(Node var1 = this.field10245.method1281(1665102883); var1 != null; var1 = this.field10245.method1283((byte)-18)) {
          class583 var2 = (class583)var1;
          class319 var3 = var2.field318;
          var3.method484();

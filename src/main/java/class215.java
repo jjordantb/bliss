@@ -33,8 +33,8 @@ public class class215 {
          if (class866.field9767[var0]) {
             return true;
          } else {
-            class382.field1410[var0] = class886.method6167(var0, var1, class382.field1410[var0], false, (byte)3);
-            if (class382.field1410[var0] == null) {
+            class382.widgetContainers[var0] = class886.method6167(var0, var1, class382.widgetContainers[var0], false, (byte)3);
+            if (class382.widgetContainers[var0] == null) {
                return false;
             } else {
                class866.field9767[var0] = true;

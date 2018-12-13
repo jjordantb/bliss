@@ -30,8 +30,8 @@ public abstract class class621 {
    static final void method5262(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-42);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-42);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class625.method5829(var3, var4, var0, 1585899223);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "cr.go(" + ')');
@@ -41,7 +41,7 @@ public abstract class class621 {
    static final void method5263(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field886 ? 1 : 0;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "cr.og(" + ')');
@@ -136,7 +136,7 @@ public abstract class class621 {
 
    static final void method5265(class744 var0, int var1) {
       try {
-         class564.method845(var0.field3159, var0, -908974507);
+         Widget.method845(var0.field3159, var0, -908974507);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "cr.apr(" + ')');
       }

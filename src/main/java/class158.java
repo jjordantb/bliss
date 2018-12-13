@@ -25,7 +25,7 @@ public class class158 {
       }
    }
 
-   static void method3441(int var0, int var1, class564 var2, class23 var3, int var4, int var5, int var6) {
+   static void method3441(int var0, int var1, Widget var2, class23 var3, int var4, int var5, int var6) {
       try {
          int var7 = class498.field8102;
          int[] var8 = class498.field8108;

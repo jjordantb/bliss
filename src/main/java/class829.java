@@ -1,4 +1,4 @@
-public class class829 extends class568 {
+public class class829 extends Node {
    int field9040;
    String field9041;
 

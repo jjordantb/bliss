@@ -116,8 +116,8 @@ public class class429 extends class752 {
    static final void method4147(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-36);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-36);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class649.method5545(var3, var4, var0, -1432183738);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "aas.eb(" + ')');

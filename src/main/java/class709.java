@@ -122,7 +122,7 @@ public class class709 extends class571 {
                throw new IllegalStateException("" + var3);
             }
          } else {
-            this.field3437 = class27.method3468((byte)1);
+            this.field3437 = class27.resetTimer((byte)1);
             var3 = this.field3433.decodePacketIn(var1, this.field3439);
             if (var3 < 0) {
                throw new IllegalStateException("" + var3);

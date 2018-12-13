@@ -38,12 +38,12 @@ public class class738 implements class832 {
          int var3 = class912.field10424.method5524((byte)-10);
          int var4 = class912.field10424.method5513((byte)38);
          int var5;
-         class357 var6;
+         MenuItem var6;
          int var7;
          if (!class602.field8638) {
             var5 = 0;
 
-            for(var6 = (class357)class602.field8647.method901(1766612795); var6 != null; var6 = (class357)class602.field8647.method906(49146)) {
+            for(var6 = (MenuItem)class602.field8647.method901(1766612795); var6 != null; var6 = (MenuItem)class602.field8647.method906(49146)) {
                var7 = 31 + class281.field10643 + class602.field8634 * (class602.field8673 - 1 - var5);
                class848.method5066(var3, var4, class622.field9006, class281.field10643, class809.field4595, class873.field9785, var7, var6, class501.field3182, class271.field10557, -1, -256, 247690373);
                ++var5;
@@ -54,7 +54,7 @@ public class class738 implements class832 {
             for(class497 var9 = (class497)class602.field8649.method2706(198728515); var9 != null; var9 = (class497)class602.field8649.method2707(30142288)) {
                var7 = class281.field10643 + 31 + var5 * class602.field8634;
                if (1 == var9.field8120) {
-                  class848.method5066(var3, var4, class622.field9006, class281.field10643, class809.field4595, class873.field9785, var7, (class357)var9.field8121.field4317.field208, class501.field3182, class271.field10557, -1, -256, 1821923505);
+                  class848.method5066(var3, var4, class622.field9006, class281.field10643, class809.field4595, class873.field9785, var7, (MenuItem)var9.field8121.field4317.field208, class501.field3182, class271.field10557, -1, -256, 1821923505);
                } else {
                   class621.method5260(var3, var4, class622.field9006, class281.field10643, class809.field4595, class873.field9785, var7, var9, class501.field3182, class271.field10557, -1, -256, (byte)-19);
                }
@@ -67,7 +67,7 @@ public class class738 implements class832 {
                class501.field3182.method1678(class602.field8639.field8122, class514.field4319 + 3, class936.field10310 + 14, var2, -1, -2064340267);
                var5 = 0;
 
-               for(var6 = (class357)class602.field8639.field8121.method2706(-783790871); var6 != null; var6 = (class357)class602.field8639.field8121.method2707(505275870)) {
+               for(var6 = (MenuItem)class602.field8639.field8121.method2706(-783790871); var6 != null; var6 = (MenuItem)class602.field8639.field8121.method2707(505275870)) {
                   var7 = var5 * class602.field8634 + class936.field10310 + 31;
                   class848.method5066(var3, var4, class514.field4319, class936.field10310, class965.field2535, class382.field1411, var7, var6, class501.field3182, class271.field10557, -1, -256, 916241136);
                   ++var5;

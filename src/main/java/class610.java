@@ -44,12 +44,12 @@ final class class610 implements Runnable {
       }
    }
 
-   static final void method5138(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method5138(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var0.field909 = 2;
          var0.field1032 = null;
          var0.field876 = var2.field3161[--var2.field3156];
-         if (var0.field879 == -1 && !var1.field1101) {
+         if (var0.field879 == -1 && !var1.closed) {
             class535.method2284(var0.field867, 2026838544);
          }
 
@@ -81,7 +81,7 @@ final class class610 implements Runnable {
    static final void method5140(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field1022;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "qg.pl(" + ')');
@@ -107,7 +107,7 @@ final class class610 implements Runnable {
    static final void method5142(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-21);
+         Widget var3 = class449.method3756(var2, (byte)-21);
          var0.field3161[++var0.field3156 - 1] = var3.field891;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "qg.rn(" + ')');

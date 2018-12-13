@@ -3504,7 +3504,7 @@ public class class412 extends class879 {
             for(var19 = 0; var19 < var2.field6481.length; ++var19) {
                class606 var20 = var2.field6481[var19];
                if (var12 == var20.field8569) {
-                  class526 var21 = class568.method550(var20.field8570, 1266955447);
+                  class526 var21 = Node.method550(var20.field8570, 1266955447);
                   if (var21.field3665) {
                      var18 = true;
                   }
@@ -3576,7 +3576,7 @@ public class class412 extends class879 {
 
          for(var12 = 0; var12 < this.field9330; ++var12) {
             class606 var70 = var2.field6481[var12];
-            class526 var73 = class568.method550(var70.field8570, 1209275845);
+            class526 var73 = Node.method550(var70.field8570, 1209275845);
             var72 = -1;
 
             for(var74 = 0; var74 < this.field9295; ++var74) {

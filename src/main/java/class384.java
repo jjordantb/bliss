@@ -25,11 +25,11 @@ public final class class384 {
       }
    }
 
-   static final void method1082(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method1082(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var0.field936 = var2.field3161[--var2.field3156] == 1;
          class814.method2932(var0, 37472514);
-         if (-1 == var0.field879 && !var1.field1101) {
+         if (-1 == var0.field879 && !var1.closed) {
             class823.method5364(var0.field867, 473698218);
          }
 

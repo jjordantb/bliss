@@ -20,7 +20,7 @@ public class class291 extends class454 {
    int[][][] field10498;
    int[][][] field10499;
    int[][][] field10500;
-   class568[] field10501;
+   Node[] field10501;
    class13 field10502;
    class599 field10503 = new class599();
    int[][][] field10504;
@@ -56,7 +56,7 @@ public class class291 extends class454 {
             }
          }
 
-         this.field10501 = new class568[this.field10516.method2334(1429819619)];
+         this.field10501 = new Node[this.field10516.method2334(1429819619)];
          this.field10516.method2333(this.field10501, 2105233647);
 
          for(var2 = 0; var2 < this.field10501.length; ++var2) {
@@ -204,7 +204,7 @@ public class class291 extends class454 {
                         }
                      }
 
-                     class568 var85 = null;
+                     Node var85 = null;
                      if ((var37 & this.field10488 - 1) == 0 && (var38 & this.field10488 - 1) == 0) {
                         var85 = var7.method2331(var44);
                      }
@@ -501,7 +501,7 @@ public class class291 extends class454 {
             this.field10502.method3642(0, 34166, 770);
             this.field10502.method3669(0, 34167, 770);
 
-            for(class568 var21 = this.field10503.method1281(1797943581); var21 != null; var21 = this.field10503.method1283((byte)-37)) {
+            for(Node var21 = this.field10503.method1281(1797943581); var21 != null; var21 = this.field10503.method1283((byte)-37)) {
                class68 var19 = (class68)var21;
                var19.method1348(var1, var2, var3, var4);
             }
@@ -729,7 +729,7 @@ public class class291 extends class454 {
 
          long var18 = (long)var11.field10427 << 48 | (long)var11.field10425 << 42 | (long)var11.field10426 << 28 | (long)(var17 << 14) | (long)var16;
 
-         class568 var20;
+         Node var20;
          for(var20 = this.field10516.method2331(var18); var20 != null; var20 = this.field10516.method2332(-1829773748)) {
             class724 var21 = (class724)var20;
             if (var21.field2516 == var16 && var21.field2513 == (float)var17 && var21.field2515.method6484(var11, (byte)-48)) {

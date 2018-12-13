@@ -223,7 +223,7 @@ public class class364 extends class727 {
 
    static final void method1612(int var0) {
       try {
-         class131.method896(1674101672);
+         WidgetContainer.method896(1674101672);
          class730.field2697.method5308(-2068923271);
 
          int var1;

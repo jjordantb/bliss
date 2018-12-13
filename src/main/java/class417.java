@@ -86,7 +86,7 @@ public class class417 extends class138 {
          for(class497 var1 = (class497)class602.field8649.method2706(-431286975); var1 != null; var1 = (class497)class602.field8649.method2707(-2120194897)) {
             if (var1.field8120 > 1) {
                var1.field8120 = 0;
-               class602.field8631.method2984(var1, ((class357)var1.field8121.field4317.field208).field1706);
+               class602.field8631.method2984(var1, ((MenuItem)var1.field8121.field4317.field208).field1706);
                var1.field8121.method2710(2132471610);
             }
          }

@@ -266,7 +266,7 @@ public class class814 {
       }
    }
 
-   public static void method2932(class564 var0, int var1) {
+   public static void method2932(Widget var0, int var1) {
       try {
          if (class730.field2814 == var0.field858) {
             class730.field2882[var0.field1028] = true;

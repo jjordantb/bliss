@@ -137,7 +137,7 @@ public class class874 {
       }
    }
 
-   static int method5857(class564 var0, int var1, int var2) {
+   static int method5857(Widget var0, int var1, int var2) {
       try {
          if (!class730.method1761(var0).method1743(var1, (byte)-58) && var0.field989 == null) {
             return -1;

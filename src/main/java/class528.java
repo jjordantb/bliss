@@ -109,7 +109,7 @@ public class class528 {
                var10[var11] = var12.field2325 * var12.field2327;
             }
 
-            class564.method839(var10, class495.field8098, (byte)98);
+            Widget.method839(var10, class495.field8098, (byte)98);
          }
 
          return class495.field8098;

@@ -50,7 +50,7 @@ public abstract class class461 {
    static final void method3991(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          if (var3.field953 == null) {
             var0.field3157[++var0.field3158 - 1] = "";
          } else {
@@ -62,7 +62,7 @@ public abstract class class461 {
       }
    }
 
-   static final void method3992(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method3992(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var2.field3156 -= 2;
          var0.field893 = var2.field3161[var2.field3156];
@@ -80,7 +80,7 @@ public abstract class class461 {
    static final void method3993(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          class812.method2916(var3, var0, 761620533);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "mv.qf(" + ')');

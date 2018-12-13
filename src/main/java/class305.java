@@ -42,11 +42,11 @@ public class class305 {
          if (class602.field8644 == null) {
             return false;
          } else {
-            if (class602.field8644.field1702 >= 2000) {
-               class602.field8644.field1702 -= 2000;
+            if (class602.field8644.opcode >= 2000) {
+               class602.field8644.opcode -= 2000;
             }
 
-            return 1007 == class602.field8644.field1702;
+            return 1007 == class602.field8644.opcode;
          }
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "ci.x(" + ')');

@@ -1,6 +1,6 @@
 public class class146 extends class717 {
    short field1549;
-   int field1550 = (int)(class27.method3468((byte)1) / 1000L);
+   int field1550 = (int)(class27.resetTimer((byte)1) / 1000L);
    String field1551;
 
    class146(String var1, int var2) {

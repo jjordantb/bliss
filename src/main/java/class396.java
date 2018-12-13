@@ -45,7 +45,7 @@ public class class396 {
    static final void method3496(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)16);
+         Widget var3 = class449.method3756(var2, (byte)16);
          class423.method5710(var3, var0, 1803760029);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "ct.cs(" + ')');
@@ -76,7 +76,7 @@ public class class396 {
       }
    }
 
-   static final void method3500(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method3500(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -1567676113) != null) {
@@ -121,7 +121,7 @@ public class class396 {
             var6.field229 = var1;
             var6.field252 = var2;
             var6.field253 = var3;
-            var6.field249 = class27.method3468((byte)1);
+            var6.field249 = class27.resetTimer((byte)1);
             return var6;
          }
       } catch (RuntimeException var9) {
@@ -132,8 +132,8 @@ public class class396 {
    static final void method3504(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)31);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)31);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class75.method1118(var3, var4, true, 2, var0, -1869405446);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ct.hb(" + ')');

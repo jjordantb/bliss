@@ -16,7 +16,7 @@ public abstract class class353 {
    boolean field1916;
    boolean field1917;
    class709 field1918;
-   class6 field1919;
+   NodeTable field1919;
    class36 field1920;
    boolean field1921;
    boolean field1922;
@@ -104,7 +104,7 @@ public abstract class class353 {
             return !this.field1918.method2013(-1737998296) || this.method1378((short)7060) > this.field1918.method2011(-2077117247);
          } else {
             double var2 = (double)this.field1918.method2010(-1240396603);
-            return 0.0D == var2 || (double)class27.method3468((byte)1) >= (double)this.field1918.method2012((byte)0) + 1000.0D / var2;
+            return 0.0D == var2 || (double)class27.resetTimer((byte)1) >= (double)this.field1918.method2012((byte)0) + 1000.0D / var2;
          }
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "mu.k(" + ')');
@@ -246,7 +246,7 @@ public abstract class class353 {
                      }
                   }
 
-                  this.field1919.method2947((class568)var4, (long)var2);
+                  this.field1919.method2947((Node)var4, (long)var2);
                   return (class571)var4;
                }
             }
@@ -369,15 +369,15 @@ public abstract class class353 {
          this.field1913 = new OggSyncState();
          this.field1911 = new OggPage();
          this.field1912 = new OggPacket();
-         this.field1919 = new class6(8);
+         this.field1919 = new NodeTable(8);
       }
    }
 
    static final void method1380(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)10);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)10);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class590.method1222(var3, var4, var0, 1808304001);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "mu.la(" + ')');
@@ -443,8 +443,8 @@ public abstract class class353 {
    static final void method1382(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class91.method495(var3, var4, var0, 1489338850);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "mu.dh(" + ')');

@@ -11,7 +11,7 @@ public class class865 {
    int[] field8992;
    public int[] field8993;
    public int[][] field8994;
-   class6 field8995;
+   NodeTable field8995;
    public int[] field8996;
    int[] field8997;
    int[][] field8998;
@@ -133,7 +133,7 @@ public class class865 {
                var4 = var1.method6371();
                if (this.field8995 == null) {
                   var5 = class18.method3687(var4, (byte)16);
-                  this.field8995 = new class6(var5);
+                  this.field8995 = new NodeTable(var5);
                }
 
                for(var5 = 0; var5 < var4; ++var5) {
@@ -146,7 +146,7 @@ public class class865 {
                      var8 = new class722(var1.method6420((byte)-24));
                   }
 
-                  this.field8995.method2947((class568)var8, (long)var7);
+                  this.field8995.method2947((Node)var8, (long)var7);
                }
             }
          }
@@ -361,7 +361,7 @@ public class class865 {
    public static void method5335(int var0, int var1) {
       try {
          class75.field1494 = var0;
-         class564.field863.method2977();
+         Widget.field863.method2977();
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "pi.v(" + ')');
       }

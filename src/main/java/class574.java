@@ -62,8 +62,8 @@ public class class574 implements class54 {
    static final void method130(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-105);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-105);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class754.method2662(var3, var4, var0, (byte)46);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "fc.lf(" + ')');
@@ -198,9 +198,9 @@ public class class574 implements class54 {
                      var11.field3364.method6362(class454.field7230.field544, 16711935);
                      class730.field2692.method4380(var11, (byte)-33);
                      class454.field7230 = null;
-                     class547.field412 = class27.method3468((byte)1) + 30000L;
+                     class547.field412 = class27.resetTimer((byte)1) + 30000L;
                   }
-               } else if (class27.method3468((byte)1) >= class547.field412) {
+               } else if (class27.resetTimer((byte)1) >= class547.field412) {
                   class454.field7230 = class730.field2696.method5472(class601.field9203.field4343, (byte)25);
                }
 
@@ -282,7 +282,7 @@ public class class574 implements class54 {
                      if (class730.field2705 == 3) {
                         class420.method5796(921260863);
                         class977.method1811(1729319705);
-                     } else if (class6.field4930.field2495.method1040(var12, class730.field2669, class730.field2668, class381.field1417, -490402318)) {
+                     } else if (NodeTable.field4930.field2495.method1040(var12, class730.field2669, class730.field2668, class381.field1417, -490402318)) {
                         class503.method2587(false, (short)-10206);
                      } else {
                         if (class730.field2705 == 1 && class709.method2016(class730.field2852, -275734557)) {
@@ -364,7 +364,7 @@ public class class574 implements class54 {
                      class730.field2920 = false;
                      class730.field2837 = false;
                      class147.field1520 = null;
-                     class804.method2824((class564)null, -1, -1, -6089367);
+                     class804.method2824((Widget)null, -1, -1, -6089367);
                      if (!class730.field2817) {
                         class730.field2919 = -1;
                      }
@@ -381,8 +381,8 @@ public class class574 implements class54 {
 
                      while(true) {
                         class202 var14;
-                        class564 var18;
-                        class564 var19;
+                        Widget var18;
+                        Widget var19;
                         do {
                            var14 = (class202)class730.field2641.method898(2107909159);
                            if (var14 == null) {
@@ -424,12 +424,12 @@ public class class574 implements class54 {
                                                    ++class730.field2771[var2];
                                                 }
 
-                                                if (class730.field2717 && class730.field2874 < class27.method3468((byte)1) - 60000L) {
+                                                if (class730.field2717 && class730.field2874 < class27.resetTimer((byte)1) - 60000L) {
                                                    class749.method2525(1315881016);
                                                 }
 
                                                 for(class146 var22 = (class146)class730.field2933.method5207(-16777216); var22 != null; var22 = (class146)class730.field2933.method5211(-1081988620)) {
-                                                   if ((long)var22.field1550 < class27.method3468((byte)1) / 1000L - 5L) {
+                                                   if ((long)var22.field1550 < class27.resetTimer((byte)1) / 1000L - 5L) {
                                                       if (var22.field1549 > 0) {
                                                          class702.method1969(5, 0, "", "", "", var22.field1551 + class814.field4775.method2927(class321.field1066, -875414210), 818502865);
                                                       }
@@ -535,11 +535,11 @@ public class class574 implements class54 {
                                              var18 = var14.field7578;
                                              if (var18.field879 >= 0) {
                                                 var19 = class449.method3756(var18.field885, (byte)36);
-                                                if (var19 == null || var19.field1017 == null || var18.field879 >= var19.field1017.length) {
+                                                if (var19 == null || var19.children1 == null || var18.field879 >= var19.children1.length) {
                                                    continue;
                                                 }
 
-                                                if (var19.field1017[var18.field879] != var18) {
+                                                if (var19.children1[var18.field879] != var18) {
                                                    if (var0 <= 4) {
                                                       throw new IllegalStateException();
                                                    }
@@ -558,7 +558,7 @@ public class class574 implements class54 {
                                     }
 
                                     var19 = class449.method3756(var18.field885, (byte)80);
-                                 } while(var19 == null || var19.field1017 == null || var18.field879 >= var19.field1017.length || var19.field1017[var18.field879] != var18);
+                                 } while(var19 == null || var19.children1 == null || var18.field879 >= var19.children1.length || var19.children1[var18.field879] != var18);
 
                                  class408.method5470(var14, (byte)64);
                               }
@@ -570,7 +570,7 @@ public class class574 implements class54 {
                            }
 
                            var19 = class449.method3756(var18.field885, (byte)54);
-                        } while(var19 == null || var19.field1017 == null || var18.field879 >= var19.field1017.length || var19.field1017[var18.field879] != var18);
+                        } while(var19 == null || var19.children1 == null || var18.field879 >= var19.children1.length || var19.children1[var18.field879] != var18);
 
                         class408.method5470(var14, (byte)9);
                      }

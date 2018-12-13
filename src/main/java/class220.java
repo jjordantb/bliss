@@ -51,8 +51,8 @@ public class class220 {
    static final void method4042(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)70);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)70);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class75.method1118(var3, var4, false, 1, var0, 233594133);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ek.he(" + ')');

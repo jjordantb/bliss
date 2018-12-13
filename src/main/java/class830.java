@@ -29,8 +29,8 @@ public class class830 implements class311 {
    static final void method5371(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-35);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-35);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class896.method5589(var3, var4, var0, 2138455691);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "jl.ia(" + ')');
@@ -40,8 +40,8 @@ public class class830 implements class311 {
    static final void method5372(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)14);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)14);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class537.method2317(var3, var4, var0, 1442704062);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "jl.lw(" + ')');
@@ -151,8 +151,8 @@ public class class830 implements class311 {
    static final void method5376(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class86.method948(var3, var4, var0, (byte)24);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "jl.du(" + ')');

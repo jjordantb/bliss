@@ -1,6 +1,7 @@
 import java.util.BitSet;
 
-public class class139 extends class568 {
+public class class139 extends Node {
+
    boolean field1159;
    boolean field1160 = true;
    public byte field1161;

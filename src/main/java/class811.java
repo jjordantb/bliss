@@ -72,7 +72,7 @@ public class class811 {
    static final void method2922(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field1031;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "dw.pt(" + ')');
@@ -90,7 +90,7 @@ public class class811 {
    static final void method2924(int var0, int var1, int var2, boolean var3, int var4) {
       try {
          if (class215.method3835(var0, (int[])null, -1346924535)) {
-            class381.method1066(class382.field1410[var0].field1103, -1, var1, var2, var3, (short)-10580);
+            class381.method1066(class382.widgetContainers[var0].widgetsCopy, -1, var1, var2, var3, (short)-10580);
          }
 
       } catch (RuntimeException var6) {
@@ -111,8 +111,8 @@ public class class811 {
    static final void method2926(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class75.method1118(var3, var4, true, 1, var0, 390526000);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "dw.ha(" + ')');

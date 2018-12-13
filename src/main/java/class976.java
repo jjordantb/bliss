@@ -12,7 +12,7 @@ public class class976 {
 
    static final void method1821(class744 var0, int var1) {
       try {
-         class564 var2 = class449.method3756(var0.field3161[--var0.field3156], (byte)-49);
+         Widget var2 = class449.method3756(var0.field3161[--var0.field3156], (byte)-49);
          if (var2.field1005 != -1) {
             var0.field3161[++var0.field3156 - 1] = var2.field1006;
          } else {

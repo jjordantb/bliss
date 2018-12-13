@@ -1,13 +1,11 @@
-import java.awt.Canvas;
-
 public class class237 {
-   class131 field8254;
-   class564 field8255;
+   WidgetContainer field8254;
+   Widget field8255;
 
-   boolean method4648(class131 var1, int var2, int var3, int var4) {
+   boolean method4648(WidgetContainer var1, int var2, int var3, int var4) {
       try {
          if (var1 != null) {
-            class564 var5 = var1.method889(var2, (short)15753);
+            Widget var5 = var1.method889(var2, (short)15753);
             if (var5 != null) {
                this.field8254 = var1;
                this.field8255 = var5;
@@ -24,9 +22,9 @@ public class class237 {
 
    boolean method4649(int var1, int var2, int var3) {
       try {
-         class564 var4 = class554.method427(var1, var2, -156511736);
+         Widget var4 = class554.method427(var1, var2, -156511736);
          if (var4 != null) {
-            this.field8254 = class382.field1410[var1 >> 16];
+            this.field8254 = class382.widgetContainers[var1 >> 16];
             this.field8255 = var4;
             return true;
          } else {
@@ -38,7 +36,7 @@ public class class237 {
       }
    }
 
-   class564 method4650(int var1) {
+   Widget method4650(int var1) {
       try {
          return this.field8254.method889(this.field8255.field867, (short)10433);
       } catch (RuntimeException var3) {
@@ -65,17 +63,17 @@ public class class237 {
 
    public static int method4653(byte var0) {
       try {
-         Canvas var1 = new Canvas();
+         MyCanvas var1 = new MyCanvas();
          var1.setSize(100, 100);
          class848 var2 = class317.method474(0, var1, (class478)null, (class180)null, 0, -1071815074);
-         long var3 = class27.method3468((byte)1);
+         long var3 = class27.resetTimer((byte)1);
 
          int var5;
          for(var5 = 0; var5 < 10000; ++var5) {
             var2.method4840(5, 10, 100.0F, 75, 50, 100.0F, 15, 90, 100.0F, -65536, -65536, -65536, 1);
          }
 
-         var5 = (int)(class27.method3468((byte)1) - var3);
+         var5 = (int)(class27.resetTimer((byte)1) - var3);
          var2.method4833(0, 0, 100, 100, -16777216, (byte)7);
          var2.method4996(1538379056);
          return var5;
@@ -87,7 +85,7 @@ public class class237 {
    static final void method4654(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)54);
+         Widget var3 = class449.method3756(var2, (byte)54);
          var0.field3161[++var0.field3156 - 1] = var3.field987;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "qd.rb(" + ')');
@@ -113,7 +111,7 @@ public class class237 {
       }
    }
 
-   static final void method4657(class357 var0, class744 var1, byte var2) {
+   static final void method4657(MenuItem var0, class744 var1, byte var2) {
       try {
          var1.field3161[++var1.field3156 - 1] = class341.method253(var0, (byte)-65);
          var1.field3157[++var1.field3158 - 1] = class221.method4037(var0, 533229453);

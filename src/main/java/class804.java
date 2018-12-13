@@ -20,7 +20,7 @@ public class class804 extends class304 {
       this.field4410 = var1.method6371();
    }
 
-   static void method2824(class564 var0, int var1, int var2, int var3) {
+   static void method2824(Widget var0, int var1, int var2, int var3) {
       try {
          class602.field8653 = var0;
          class602.field8654 = var1;

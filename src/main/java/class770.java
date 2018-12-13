@@ -1,7 +1,7 @@
 public abstract class class770 extends class345 {
    public static class812 field3733;
 
-   public static class357 method2302(int var0) {
+   public static MenuItem method2302(int var0) {
       try {
          return class348.field220;
       } catch (RuntimeException var2) {
@@ -12,8 +12,8 @@ public abstract class class770 extends class345 {
    static final void method2303(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-49);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-49);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class374.method1005(var3, var4, var0, -866344405);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "na.mr(" + ')');
@@ -38,7 +38,7 @@ public abstract class class770 extends class345 {
          class614.field8888 = class184.field5230;
          class859.field8849 = class7.field4918;
          class75.field1496 = class730.field2737;
-         class163.field6621 = class232.field8266;
+         ItemNode.field6621 = class232.field8266;
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "na.hb(" + ')');
       }

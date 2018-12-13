@@ -21,8 +21,8 @@ public class class63 {
    static final void method1252(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class849.method4784(var3, var4, var0, -159729779);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ig.ix(" + ')');

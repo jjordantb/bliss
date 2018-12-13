@@ -42,7 +42,7 @@ public final class class510 implements Comparable {
       }
    }
 
-   static final void method2622(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method2622(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -209664788) != null) {
@@ -59,8 +59,8 @@ public final class class510 implements Comparable {
    static final void method2623(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)52);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)52);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class122.method1603(var3, var4, var0, -1603621953);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "kx.km(" + ')');

@@ -14,7 +14,7 @@ public class class929 extends class304 {
    static final void method6262(int var0, int var1, int var2) {
       try {
          if (class215.method3835(var0, (int[])null, -1864950961)) {
-            class71.method1088(class382.field1410[var0].field1103, var1, (byte)65);
+            class71.method1088(class382.widgetContainers[var0].widgetsCopy, var1, (byte)65);
          }
 
       } catch (RuntimeException var4) {
@@ -22,7 +22,7 @@ public class class929 extends class304 {
       }
    }
 
-   static void method6263(class564 var0, int var1, int var2, boolean var3, byte var4) {
+   static void method6263(Widget var0, int var1, int var2, boolean var3, byte var4) {
       try {
          int var5 = var0.field881;
          int var6 = var0.field887;
@@ -65,7 +65,7 @@ public class class929 extends class304 {
             }
          }
 
-         if (var0.field870 == class564.field994) {
+         if (var0.field870 == Widget.field994) {
             class730.field2800 = var0;
          }
 

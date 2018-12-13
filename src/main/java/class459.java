@@ -1,4 +1,4 @@
-public class class459 extends class568 {
+public class class459 extends Node {
    public int field7268;
    public int field7269;
    public int field7270;
@@ -32,7 +32,7 @@ public class class459 extends class568 {
 
    static final void method3966(class744 var0, int var1) {
       try {
-         class564 var2 = class449.method3756(var0.field3161[--var0.field3156], (byte)45);
+         Widget var2 = class449.method3756(var0.field3161[--var0.field3156], (byte)45);
          var0.field3161[++var0.field3156 - 1] = var2.field1005;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "aak.rz(" + ')');

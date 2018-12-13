@@ -78,8 +78,8 @@ public class class928 {
    static final void method6202(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-48);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-48);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class572.method107(var3, var4, var0, (byte)-14);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "vs.om(" + ')');
@@ -100,7 +100,7 @@ public class class928 {
    static final void method6204(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-100);
+         Widget var3 = class449.method3756(var2, (byte)-100);
          var0.field3161[++var0.field3156 - 1] = var3.field935;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "vs.rh(" + ')');

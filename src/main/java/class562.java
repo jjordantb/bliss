@@ -25,7 +25,7 @@ public class class562 implements class925 {
       this.field822 = var5;
    }
 
-   static final void method809(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method809(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -172692776) != null) {
@@ -42,7 +42,7 @@ public class class562 implements class925 {
    static final void method810(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)76);
+         Widget var3 = class449.method3756(var2, (byte)76);
          var0.field3161[++var0.field3156 - 1] = var3.field895;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "gl.rv(" + ')');

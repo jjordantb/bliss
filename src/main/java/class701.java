@@ -1,6 +1,6 @@
 import java.awt.Frame;
 
-public class class701 extends class568 {
+public class class701 extends Node {
    public class513 field3364;
    int field3365;
    static int field3366;

@@ -398,7 +398,7 @@ public class class55 {
                            } else if (class807.field4449 == var0.field7770) {
                               var45 = var3.method6403(1478539457);
                               class958.method2057(1731780028);
-                              class131.method892(var45, 8113847);
+                              WidgetContainer.method892(var45, 8113847);
                               var0.field7770 = null;
                               return true;
                            } else if (var0.field7770 == class807.field4489) {
@@ -947,7 +947,7 @@ public class class55 {
                                                    if (class807.field4455 == var0.field7770) {
                                                       var55 = new class513(var0.field7771);
                                                       System.arraycopy(var0.field7768.field10375, var0.field7768.field10376, var55.field10375, 0, var0.field7771);
-                                                      class131.method896(1536628978);
+                                                      WidgetContainer.method896(1536628978);
                                                       if (class615.field8903.field9146.method3999((byte)-123) == 1) {
                                                          class625.field9752.method464(new class406(class335.field45, var55), 1122139565);
                                                       } else {
@@ -1023,7 +1023,7 @@ public class class55 {
                                                                var10 = var3.method6414(-228125522);
                                                             }
 
-                                                            class407.method5539(var45, var54, var60 - 1, var10, var59, 1471693915);
+                                                            class407.createItemNode(var45, var54, var60 - 1, var10, var59, 1471693915);
                                                          }
 
                                                          var54 = var3.method6374();
@@ -1536,7 +1536,7 @@ public class class55 {
                                                                      class730.field2823.method2947(var119, (long)var5);
                                                                   }
 
-                                                                  class564 var79 = class449.method3756(var45, (byte)-52);
+                                                                  Widget var79 = class449.method3756(var45, (byte)-52);
                                                                   if (var79 != null) {
                                                                      class814.method2932(var79, 1086965599);
                                                                   }
@@ -1544,7 +1544,7 @@ public class class55 {
                                                                   var79 = class449.method3756(var5, (byte)51);
                                                                   if (var79 != null) {
                                                                      class814.method2932(var79, -904794130);
-                                                                     class948.method1938(class382.field1410[var79.field867 >>> 16], var79, true, 112223880);
+                                                                     class948.method1938(class382.widgetContainers[var79.field867 >>> 16], var79, true, 112223880);
                                                                   }
 
                                                                   if (class730.field2822 != -1) {
@@ -1609,7 +1609,7 @@ public class class55 {
                                                                   var45 = var3.method6374();
                                                                   var5 = var3.method6371();
 
-                                                                  for(var59 = (var5 & 1) == 1; var3.field10376 < var0.field7771; class407.method5539(var45, var51, var54 - 1, var60, var59, -540593777)) {
+                                                                  for(var59 = (var5 & 1) == 1; var3.field10376 < var0.field7771; class407.createItemNode(var45, var51, var54 - 1, var60, var59, -540593777)) {
                                                                      var51 = var3.method6382(1723054621);
                                                                      var54 = var3.method6374();
                                                                      var60 = 0;
@@ -1700,7 +1700,7 @@ public class class55 {
                                                                      var85 <<= 2;
                                                                      var11 <<= 2;
                                                                      var50 <<= 2;
-                                                                     class6.method2948(var45, var5, var60, var20, var85, var11, var22, var39, var51, var17, var91, var15, var54, var50, var92, 2141342802);
+                                                                     NodeTable.method2948(var45, var5, var60, var20, var85, var11, var22, var39, var51, var17, var91, var15, var54, var50, var92, 2141342802);
                                                                   }
 
                                                                   var0.field7770 = null;
@@ -2066,11 +2066,11 @@ public class class55 {
                                                                      var5 = var3.method6374();
                                                                      var50 = var3.method6374();
                                                                      class958.method2057(1555900413);
-                                                                     if (class382.field1410[var45] != null) {
+                                                                     if (class382.widgetContainers[var45] != null) {
                                                                         for(var51 = var5; var51 < var50; ++var51) {
                                                                            var54 = var3.method6390((byte)-1);
-                                                                           if (var51 < class382.field1410[var45].field1103.length && class382.field1410[var45].field1103[var51] != null) {
-                                                                              class382.field1410[var45].field1103[var51].field866 = var54;
+                                                                           if (var51 < class382.widgetContainers[var45].widgetsCopy.length && class382.widgetContainers[var45].widgetsCopy[var51] != null) {
+                                                                              class382.widgetContainers[var45].widgetsCopy[var51].field866 = var54;
                                                                            }
                                                                         }
                                                                      }
@@ -2303,7 +2303,7 @@ public class class55 {
                                                                   } else if (var0.field7770 == class807.field4558) {
                                                                      var55 = new class513(var0.field7771);
                                                                      System.arraycopy(var0.field7768.field10375, var0.field7768.field10376, var55.field10375, 0, var0.field7771);
-                                                                     class131.method896(1849823335);
+                                                                     WidgetContainer.method896(1849823335);
                                                                      if (class615.field8903.field9146.method3999((byte)-70) == 1) {
                                                                         class625.field9752.method464(new class406(class335.field52, var55), 1563574437);
                                                                      } else {

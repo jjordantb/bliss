@@ -168,7 +168,7 @@ public class class794 implements Runnable {
       }
    }
 
-   static void method468(class848 var0, class23 var1, class564 var2, int var3, int var4, int var5, int var6, int var7, byte var8) {
+   static void method468(class848 var0, class23 var1, Widget var2, int var3, int var4, int var5, int var6, int var7, byte var8) {
       try {
          class718 var9 = class333.field139.method5091(var7, -405562208);
          if (var9 != null && var9.field3495 && var9.method2063(class827.field9037, 1844230404)) {

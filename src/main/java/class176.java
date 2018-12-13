@@ -128,7 +128,7 @@ public class class176 {
       }
    }
 
-   static final void method3168(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method3168(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -255285486) != null) {
@@ -378,21 +378,21 @@ public class class176 {
             }
 
             class295.method6514(class966.field2521.method3264(class590.field1580.field1585, (byte)90), 745625463);
-            class6.field4931 = new class416(class966.field2521);
-            class365.field2440 = class6.field4931.field9530;
-            class629.field9737 = class6.field4931.field9535;
-            if (-1 != class6.field4931.field9536 && -1 != class6.field4931.field9537) {
-               class730.field2775 = class6.field4931.field9536;
-               class730.field2784 = class6.field4931.field9537;
+            NodeTable.field4931 = new class416(class966.field2521);
+            class365.field2440 = NodeTable.field4931.field9530;
+            class629.field9737 = NodeTable.field4931.field9535;
+            if (-1 != NodeTable.field4931.field9536 && -1 != NodeTable.field4931.field9537) {
+               class730.field2775 = NodeTable.field4931.field9536;
+               class730.field2784 = NodeTable.field4931.field9537;
             }
 
             class413.field9412 = new class385(class966.field2521);
             class422.field9604 = new class733(class966.field2521);
-            class6.field4930 = new class969(class966.field2521);
+            NodeTable.field4930 = new class969(class966.field2521);
          }
 
          if (class431.field7489 == class776.field3728) {
-            if (class6.field4931.field9526 != -1 && !class389.field1524.method3260(class6.field4931.field9526, 0, -1803759646)) {
+            if (NodeTable.field4931.field9526 != -1 && !class389.field1524.method3260(NodeTable.field4931.field9526, 0, -1803759646)) {
                return 99;
             }
 
@@ -480,14 +480,14 @@ public class class176 {
          }
 
          if (class431.field7496 == class776.field3728) {
-            if (!class215.method3835(class6.field4931.field9533, (int[])null, -2054647884)) {
+            if (!class215.method3835(NodeTable.field4931.field9533, (int[])null, -2054647884)) {
                return 0;
             }
 
             var9 = true;
 
-            for(var2 = 0; var2 < class382.field1410[class6.field4931.field9533].field1103.length; ++var2) {
-               class564 var11 = class382.field1410[class6.field4931.field9533].field1103[var2];
+            for(var2 = 0; var2 < class382.widgetContainers[NodeTable.field4931.field9533].widgetsCopy.length; ++var2) {
+               Widget var11 = class382.widgetContainers[NodeTable.field4931.field9533].widgetsCopy[var2];
                if (var11.field869 == 5 && -1 != var11.field900 && !class562.field827.method3260(var11.field900, 0, -1154476799)) {
                   var9 = false;
                }

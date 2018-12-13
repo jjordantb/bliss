@@ -294,7 +294,7 @@ public class class0 extends Animable implements class265 {
    static void method2992(class848 var0, int var1) {
       try {
          if (class923.local.field3639 != class95.field596 && class730.field2697.method5317(-1611682495) != null) {
-            class27.method3468((byte)1);
+            class27.resetTimer((byte)1);
             if (class374.method1007(var0, class923.local.field3639, 1177065502)) {
                class95.field596 = class923.local.field3639;
             }

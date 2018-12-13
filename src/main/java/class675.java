@@ -416,8 +416,8 @@ public final class class675 {
    static final void method4167(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-43);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-43);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class296.method6509(var3, var4, var0, -2030984421);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ns.mi(" + ')');

@@ -2,8 +2,8 @@ import java.util.Iterator;
 
 public class class19 implements Iterator {
    class373 field5361;
-   class568 field5362;
-   class568 field5363 = null;
+   Node field5362;
+   Node field5363 = null;
    static int field5364;
 
    public void method3365(class373 var1, int var2) {
@@ -25,10 +25,10 @@ public class class19 implements Iterator {
       }
    }
 
-   public class568 method3367(int var1) {
+   public Node method3367(int var1) {
       try {
          this.method3366(1114782715);
-         return (class568)this.next();
+         return (Node)this.next();
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "sk.x(" + ')');
       }
@@ -63,7 +63,7 @@ public class class19 implements Iterator {
 
    public Object next() {
       try {
-         class568 var1 = this.field5362;
+         Node var1 = this.field5362;
          if (this.field5361.field1104 == var1) {
             var1 = null;
             this.field5362 = null;

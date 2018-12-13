@@ -29,7 +29,7 @@ public class class757 {
             this.field4310 = var3;
             this.field4303 = var4;
 
-            for(class568 var5 = this.field4305.method1281(1528300499); var5 != this.field4305.field1710; var5 = var5.field640) {
+            for(Node var5 = this.field4305.method1281(1528300499); var5 != this.field4305.field1710; var5 = var5.field640) {
                ((class210)var5).method3848(this.field4310, this.field4303);
             }
 
@@ -177,7 +177,7 @@ public class class757 {
       this.field4302 = null;
       this.field4311 = null;
       if (!this.field4305.method1284((byte)106)) {
-         for(class568 var1 = this.field4305.method1281(1803490493); var1 != this.field4305.field1710; var1 = var1.field640) {
+         for(Node var1 = this.field4305.method1281(1803490493); var1 != this.field4305.field1710; var1 = var1.field640) {
             ((class210)var1).method3847();
          }
       }

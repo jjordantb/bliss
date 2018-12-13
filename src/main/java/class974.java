@@ -81,13 +81,13 @@ public class class974 extends class304 {
          int var10 = class912.field10424.method5524((byte)-89);
          int var11 = class912.field10424.method5513((byte)17);
          int var12;
-         class357 var13;
+         MenuItem var13;
          int var14;
          class497 var17;
          if (!class602.field8638) {
             var12 = 0;
 
-            for(var13 = (class357)class602.field8647.method901(1766612795); var13 != null; var13 = (class357)class602.field8647.method906(49146)) {
+            for(var13 = (MenuItem)class602.field8647.method901(1766612795); var13 != null; var13 = (MenuItem)class602.field8647.method906(49146)) {
                var14 = 1 + var8.field8230 + var6 + var3 + (class602.field8673 - 1 - var12) * class602.field8634;
                if (var10 > class622.field9006 && var10 < class809.field4595 + class622.field9006 && var11 > var14 - var8.field8230 - 1 && var11 < var14 + var8.field8225 && var13.field1704) {
                   var0.method4984(class622.field9006, var14 - var8.field8230, class809.field4595, class602.field8634, var9 << 24 | class166.field6895, 1);
@@ -100,7 +100,7 @@ public class class974 extends class304 {
 
             for(var17 = (class497)class602.field8649.method2706(324606134); var17 != null; var17 = (class497)class602.field8649.method2707(2083970273)) {
                var14 = var12 * class602.field8634 + var8.field8230 + var6 + var3 + 1;
-               if (var10 > class622.field9006 && var10 < class809.field4595 + class622.field9006 && var11 > var14 - var8.field8230 - 1 && var11 < var14 + var8.field8225 && (var17.field8120 > 1 || ((class357)var17.field8121.field4317.field208).field1704)) {
+               if (var10 > class622.field9006 && var10 < class809.field4595 + class622.field9006 && var11 > var14 - var8.field8230 - 1 && var11 < var14 + var8.field8225 && (var17.field8120 > 1 || ((MenuItem)var17.field8121.field4317.field208).field1704)) {
                   var0.method4984(class622.field9006, var14 - var8.field8230, class809.field4595, class602.field8634, var9 << 24 | class166.field6895, 1);
                }
 
@@ -111,7 +111,7 @@ public class class974 extends class304 {
                class888.method5530(var0, class514.field4319, class936.field10310, class965.field2535, class382.field1411, var6, var7, var8, class602.field8639.field8122, -1919103988);
                var12 = 0;
 
-               for(var13 = (class357)class602.field8639.field8121.method2706(473884533); var13 != null; var13 = (class357)class602.field8639.field8121.method2707(1876214432)) {
+               for(var13 = (MenuItem)class602.field8639.field8121.method2706(473884533); var13 != null; var13 = (MenuItem)class602.field8639.field8121.method2707(1876214432)) {
                   var14 = 1 + class936.field10310 + var6 + var8.field8230 + class602.field8634 * var12;
                   if (var10 > class514.field4319 && var10 < class514.field4319 + class965.field2535 && var11 > var14 - var8.field8230 - 1 && var11 < var14 + var8.field8225 && var13.field1704) {
                      var0.method4984(class514.field4319, var14 - var8.field8230, class965.field2535, class602.field8634, var9 << 24 | class166.field6895, 1);
@@ -128,7 +128,7 @@ public class class974 extends class304 {
          if (!class602.field8638) {
             var12 = 0;
 
-            for(var13 = (class357)class602.field8647.method901(1766612795); var13 != null; var13 = (class357)class602.field8647.method906(49146)) {
+            for(var13 = (MenuItem)class602.field8647.method901(1766612795); var13 != null; var13 = (MenuItem)class602.field8647.method906(49146)) {
                var14 = var8.field8230 + var6 + var3 + 1 + (class602.field8673 - 1 - var12) * class602.field8634;
                class848.method5066(var10, var11, var2, var3, var4, var5, var14, var13, var7, var8, class958.field3480 | -16777216, class350.field1644 | -16777216, 549127677);
                ++var12;
@@ -139,7 +139,7 @@ public class class974 extends class304 {
             for(var17 = (class497)class602.field8649.method2706(-476899641); var17 != null; var17 = (class497)class602.field8649.method2707(81519453)) {
                var14 = class602.field8634 * var12 + 1 + var6 + class281.field10643 + var8.field8230;
                if (var17.field8120 == 1) {
-                  class848.method5066(var10, var11, class622.field9006, class281.field10643, class809.field4595, class873.field9785, var14, (class357)var17.field8121.field4317.field208, var7, var8, class958.field3480 | -16777216, class350.field1644 | -16777216, 579895839);
+                  class848.method5066(var10, var11, class622.field9006, class281.field10643, class809.field4595, class873.field9785, var14, (MenuItem)var17.field8121.field4317.field208, var7, var8, class958.field3480 | -16777216, class350.field1644 | -16777216, 579895839);
                } else {
                   class621.method5260(var10, var11, class622.field9006, class281.field10643, class809.field4595, class873.field9785, var14, var17, var7, var8, class958.field3480 | -16777216, class350.field1644 | -16777216, (byte)-36);
                }
@@ -150,7 +150,7 @@ public class class974 extends class304 {
             if (class602.field8639 != null) {
                var12 = 0;
 
-               for(var13 = (class357)class602.field8639.field8121.method2706(45096692); var13 != null; var13 = (class357)class602.field8639.field8121.method2707(1092020370)) {
+               for(var13 = (MenuItem)class602.field8639.field8121.method2706(45096692); var13 != null; var13 = (MenuItem)class602.field8639.field8121.method2707(1092020370)) {
                   var14 = var12 * class602.field8634 + 1 + var8.field8230 + class936.field10310 + var6;
                   class848.method5066(var10, var11, class514.field4319, class936.field10310, class965.field2535, class382.field1411, var14, var13, var7, var8, class958.field3480 | -16777216, class350.field1644 | -16777216, -316918375);
                   ++var12;
@@ -165,7 +165,7 @@ public class class974 extends class304 {
 
    static final void method1785(class744 var0, byte var1) {
       try {
-         class564.method845(var0.field3170, var0, -1596344570);
+         Widget.method845(var0.field3170, var0, -1596344570);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "xx.aph(" + ')');
       }

@@ -307,7 +307,7 @@ public final class class673 {
                         var37 <<= 2;
                         var16 <<= 2;
                         var20 <<= 2;
-                        class6.method2948(var14, var12, var13, var9, var37, var16, var4, var5, var10, var11, var17, var18, var19, var20, var27, 618819500);
+                        NodeTable.method2948(var14, var12, var13, var9, var37, var16, var4, var5, var10, var11, var17, var18, var19, var20, var27, 618819500);
                      }
                   } else if (class307.field431 == var0) {
                      var3 = var2.method6371();

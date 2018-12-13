@@ -1,4 +1,4 @@
-public abstract class class284 extends class568 {
+public abstract class class284 extends Node {
    static int field10628 = 3;
    public static int field10629 = 0;
    static int field10630 = 1;

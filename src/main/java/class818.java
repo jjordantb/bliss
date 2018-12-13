@@ -43,7 +43,7 @@ public class class818 {
       }
    }
 
-   static final void method2902(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method2902(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var0.field960 = var2.field3161[--var2.field3156];
       } catch (RuntimeException var5) {
@@ -59,7 +59,7 @@ public class class818 {
       }
    }
 
-   static final void method2904(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method2904(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var2.field3156 -= 4;
          var0.field1003 = var2.field3161[var2.field3156];

@@ -53,7 +53,7 @@ public class class611 extends class535 {
       }
    }
 
-   static void method5155(class848 var0, int var1, int var2, class564 var3, class23 var4, int var5, int var6, int var7) {
+   static void method5155(class848 var0, int var1, int var2, Widget var3, class23 var4, int var5, int var6, int var7) {
       try {
          for(int var8 = 0; var8 < class730.field2684; ++var8) {
             class437 var9 = (class437)class730.field2677.method2942((long)class730.field2680[var8]);
@@ -103,7 +103,7 @@ public class class611 extends class535 {
       }
    }
 
-   static final void method5157(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method5157(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -2000354906) != null) {

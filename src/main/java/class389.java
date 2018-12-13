@@ -36,7 +36,7 @@ public class class389 {
    static final void method1147(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-13);
+         Widget var3 = class449.method3756(var2, (byte)-13);
          var0.field3161[++var0.field3156 - 1] = var3.field880;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "of.qq(" + ')');
@@ -46,7 +46,7 @@ public class class389 {
    static final void method1148(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-35);
+         Widget var3 = class449.method3756(var2, (byte)-35);
          var0.field3161[++var0.field3156 - 1] = var3.field948;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "of.rl(" + ')');
@@ -299,7 +299,7 @@ public class class389 {
       }
    }
 
-   static void method1152(int var0, int var1, class564 var2, int var3) {
+   static void method1152(int var0, int var1, Widget var2, int var3) {
       try {
          int var4 = var2.field881 + var0;
          int var5 = 15 + var1;

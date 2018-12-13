@@ -36,7 +36,7 @@ public class class766 extends class304 {
    static final void method2758(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field915;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "yc.pj(" + ')');
@@ -65,7 +65,7 @@ public class class766 extends class304 {
    static final void method2760(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-74);
+         Widget var3 = class449.method3756(var2, (byte)-74);
          var0.field3161[++var0.field3156 - 1] = var3.field1022;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "yc.rp(" + ')');

@@ -1,4 +1,4 @@
-public abstract class class347 extends class568 {
+public abstract class class347 extends Node {
    class347[] field257;
    protected static int field258 = 4096;
    protected static int field259 = 8192;

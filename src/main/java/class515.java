@@ -19,7 +19,7 @@ public class class515 {
 
    public static void method2693(short var0) {
       try {
-         class382.field1410 = new class131[class91.field562.method3266(949346193)];
+         class382.widgetContainers = new WidgetContainer[class91.field562.method3266(949346193)];
          class866.field9767 = new boolean[class91.field562.method3266(1513726492)];
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "ql.m(" + ')');
@@ -98,7 +98,7 @@ public class class515 {
       }
    }
 
-   static void method2695(class564 var0, class118 var1, int var2, int var3, int var4, int var5, int var6, long var7) {
+   static void method2695(Widget var0, class118 var1, int var2, int var3, int var4, int var5, int var6, long var7) {
       try {
          int var9 = var5 * var5 + var4 * var4;
          if ((long)var9 <= var7) {

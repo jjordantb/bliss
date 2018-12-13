@@ -82,8 +82,8 @@ public class class422 {
    static final void method5720(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class969.method1694(var3, var4, var0, (short)14954);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "fv.fz(" + ')');
@@ -124,7 +124,7 @@ public class class422 {
    public static void method5724(byte var0) {
       try {
          if (class730.field2817) {
-            class564 var1 = class554.method427(class543.field3820, class730.field2818, -156511736);
+            Widget var1 = class554.method427(class543.field3820, class730.field2818, -156511736);
             if (var1 != null && var1.field845 != null) {
                class202 var2 = new class202();
                var2.field7578 = var1;

@@ -34,7 +34,7 @@ public class NpcDefinition {
    int field9892 = 0;
    byte field9893;
    public byte field9894;
-   class6 field9895;
+   NodeTable field9895;
    int field9896 = 128;
    public int field9897;
    int field9898 = -1;
@@ -823,7 +823,7 @@ public class NpcDefinition {
                   var4 = var1.method6371();
                   if (this.field9895 == null) {
                      var5 = class18.method3687(var4, (byte)16);
-                     this.field9895 = new class6(var5);
+                     this.field9895 = new NodeTable(var5);
                   }
 
                   for(var5 = 0; var5 < var4; ++var5) {
@@ -836,7 +836,7 @@ public class NpcDefinition {
                         var8 = new class722(var1.method6420((byte)-18));
                      }
 
-                     this.field9895.method2947((class568)var8, (long)var11);
+                     this.field9895.method2947((Node)var8, (long)var11);
                   }
                }
             } else {

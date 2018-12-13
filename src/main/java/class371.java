@@ -3,7 +3,7 @@ import java.net.Socket;
 public class class371 {
    static class488 field1086 = new class488();
    static int field1087 = 4096;
-   static class6 field1088 = new class6(4);
+   static NodeTable field1088 = new NodeTable(4);
    static Socket field1089;
    public static class48 field1090;
 

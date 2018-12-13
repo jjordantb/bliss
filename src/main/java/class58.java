@@ -103,7 +103,7 @@ public class class58 {
             if (var4.field4284 != null) {
                boolean var14 = false;
 
-               for(class568 var7 = var4.field4284.method2946(1739772889); var7 != null; var7 = var4.field4284.method2945((byte)-94)) {
+               for(Node var7 = var4.field4284.method2946(1739772889); var7 != null; var7 = var4.field4284.method2945((byte)-94)) {
                   class785 var8 = this.field2330.method5148((int)var7.field641, -1474104007);
                   if (var8.field3824) {
                      var7.method545(-1460969981);

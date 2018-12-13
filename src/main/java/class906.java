@@ -73,7 +73,7 @@ public class class906 implements Iterator {
          for(class497 var1 = (class497)class602.field8649.method2706(1694693115); var1 != null; var1 = (class497)class602.field8649.method2707(283371396)) {
             if (var1.field8120 > 1) {
                var1.field8120 = 0;
-               class602.field8631.method2984(var1, ((class357)var1.field8121.field4317.field208).field1706);
+               class602.field8631.method2984(var1, ((MenuItem)var1.field8121.field4317.field208).field1706);
                var1.field8121.method2710(2069073381);
             }
          }

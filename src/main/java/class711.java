@@ -1,5 +1,5 @@
 public class class711 extends class345 {
-   class6 field3446;
+   NodeTable field3446;
 
    void method2021(InputStream var1, int var2) {
       try {
@@ -36,7 +36,7 @@ public class class711 extends class345 {
             int var5;
             if (this.field3446 == null) {
                var5 = class18.method3687(var4, (byte)16);
-               this.field3446 = new class6(var5);
+               this.field3446 = new NodeTable(var5);
             }
 
             for(var5 = 0; var5 < var4; ++var5) {
@@ -49,7 +49,7 @@ public class class711 extends class345 {
                   var8 = new class722(var1.method6420((byte)-72));
                }
 
-               this.field3446.method2947((class568)var8, (long)var7);
+               this.field3446.method2947((Node)var8, (long)var7);
             }
          }
 

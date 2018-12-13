@@ -41,7 +41,7 @@ public final class class56 {
    static final void method1547(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          class423.method5710(var3, var0, 378164107);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "lv.cx(" + ')');
@@ -82,7 +82,7 @@ public final class class56 {
       }
    }
 
-   static void method1550(class357 var0, byte var1) {
+   static void method1550(MenuItem var0, byte var1) {
       try {
          if (!class602.field8645) {
             var0.method545(-1460969981);
@@ -91,7 +91,7 @@ public final class class56 {
                long var2 = var0.field1706;
 
                class497 var4;
-               for(var4 = (class497)class602.field8637.method2942(var2); var4 != null && !var4.field8122.equals(var0.field1697); var4 = (class497)class602.field8637.method2943(-1565779381)) {
+               for(var4 = (class497)class602.field8637.method2942(var2); var4 != null && !var4.field8122.equals(var0.name); var4 = (class497)class602.field8637.method2943(-1565779381)) {
                   ;
                }
 
@@ -100,10 +100,10 @@ public final class class56 {
                }
             } else {
                for(class497 var5 = (class497)class602.field8649.method2706(-1184499761); var5 != null; var5 = (class497)class602.field8649.method2707(79001809)) {
-                  if (var5.field8122.equals(var0.field1697)) {
+                  if (var5.field8122.equals(var0.name)) {
                      boolean var6 = false;
 
-                     for(class357 var8 = (class357)var5.field8121.method2706(-611796752); var8 != null; var8 = (class357)var5.field8121.method2707(241315594)) {
+                     for(MenuItem var8 = (MenuItem)var5.field8121.method2706(-611796752); var8 != null; var8 = (MenuItem)var5.field8121.method2707(241315594)) {
                         if (var8 == var0) {
                            if (var5.method4502(var0, -948596623)) {
                               class456.method3794(var5, -1144026748);

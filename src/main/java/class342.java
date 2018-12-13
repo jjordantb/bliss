@@ -21,12 +21,12 @@ public class class342 {
       throw new Error();
    }
 
-   static String method217(class357 var0, int var1) {
+   static String method217(MenuItem var0, int var1) {
       try {
          if (var0.field1709 != null && var0.field1709.length() != 0) {
-            return var0.field1697 != null && var0.field1697.length() > 0 ? var0.field1707 + class814.field4790.method2927(class321.field1066, -875414210) + var0.field1697 + class814.field4790.method2927(class321.field1066, -875414210) + var0.field1709 : var0.field1707 + class814.field4790.method2927(class321.field1066, -875414210) + var0.field1709;
+            return var0.name != null && var0.name.length() > 0 ? var0.action + class814.field4790.method2927(class321.field1066, -875414210) + var0.name + class814.field4790.method2927(class321.field1066, -875414210) + var0.field1709 : var0.action + class814.field4790.method2927(class321.field1066, -875414210) + var0.field1709;
          } else {
-            return var0.field1697 != null && var0.field1697.length() > 0 ? var0.field1707 + class814.field4790.method2927(class321.field1066, -875414210) + var0.field1697 : var0.field1707;
+            return var0.name != null && var0.name.length() > 0 ? var0.action + class814.field4790.method2927(class321.field1066, -875414210) + var0.name : var0.action;
          }
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ai.bf(" + ')');
@@ -62,10 +62,10 @@ public class class342 {
 
    public static void method221(int var0) {
       try {
-         class564.field860.method2977();
-         class564.field863.method2977();
-         class564.field861.method2977();
-         class564.field1021.method2977();
+         Widget.field860.method2977();
+         Widget.field863.method2977();
+         Widget.field861.method2977();
+         Widget.field1021.method2977();
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "ai.g(" + ')');
       }
@@ -88,10 +88,10 @@ public class class342 {
    static final void method223(int var0, int[] var1, int var2) {
       try {
          if (class215.method3835(var0, var1, -1347754722)) {
-            class564[] var3 = class382.field1410[var0].field1103;
+            Widget[] var3 = class382.widgetContainers[var0].widgetsCopy;
 
             for(int var4 = 0; var4 < var3.length; ++var4) {
-               class564 var5 = var3[var4];
+               Widget var5 = var3[var4];
                if (var5 != null && var5.field877 != null) {
                   var5.field877.method2790(-341211018);
                }

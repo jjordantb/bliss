@@ -38,7 +38,7 @@ public abstract class class138 {
             int var21;
             int var22;
             int var54;
-            if (class730.field2697.method5317(-1611682495) != null && (!class730.field2817 || (class568.field645 & 64) != 0)) {
+            if (class730.field2697.method5317(-1611682495) != null && (!class730.field2817 || (Node.field645 & 64) != 0)) {
                int var8 = -1;
                var9 = -1;
                float var10 = (float)var6 * 2.0F / (float)class602.field8658 - 1.0F;
@@ -66,8 +66,8 @@ public abstract class class138 {
                }
 
                if (-1 != var8 && -1 != var9) {
-                  if (class730.field2817 && (class568.field645 & 64) != 0) {
-                     class564 var43 = class554.method427(class543.field3820, class730.field2818, -156511736);
+                  if (class730.field2817 && (Node.field645 & 64) != 0) {
+                     Widget var43 = class554.method427(class543.field3820, class730.field2818, -156511736);
                      if (var43 != null) {
                         class984.method1875(class730.field2820, " " + class822.field9048 + " ", class175.field5075, 59, -1, 0L, var8, var9, true, false, (long)(var8 << 32 | var9), true, -1555484950);
                      } else {
@@ -262,7 +262,7 @@ public abstract class class138 {
 
                            if (class730.field2817 && var35.field7022.field3639 == class923.local.field3639) {
                               class785 var67 = class354.field2139 != -1 ? class452.field7216.method5148(class354.field2139, 1640464070) : null;
-                              if ((class568.field645 & 1) != 0 && (var67 == null || var63.method2683(class354.field2139, var67.field3822, -2028636758) != var67.field3822)) {
+                              if ((Node.field645 & 1) != 0 && (var67 == null || var63.method2683(class354.field2139, var67.field3822, -2028636758) != var67.field3822)) {
                                  class984.method1875(class730.field2820, class730.field2735 + " " + class822.field9048 + " " + class56.method1545(var61, -1803338083) + var63.name, class175.field5075, 17, -1, (long)var55.field5319, var38, var39, true, false, (long)var21, false, -1282887596);
                               }
                            }
@@ -330,8 +330,8 @@ public abstract class class138 {
                      } else {
                         if (class730.field2817 && var35.field7022.field3639 == class923.local.field3639) {
                            class785 var52 = class354.field2139 != -1 ? class452.field7216.method5148(class354.field2139, -616098570) : null;
-                           if ((class568.field645 & 4) != 0 && (var52 == null || var50.method1486(class354.field2139, var52.field3822, (byte)2) != var52.field3822)) {
-                              class984.method1875(class730.field2820, class730.field2735 + " " + class822.field9048 + " " + class56.method1545(65535, -1704073338) + var50.name, class175.field5075, 2, -1, class131.method893(var46, var38, var39, 2139321433), var38, var39, true, false, (long)var46.hashCode(), false, -978621849);
+                           if ((Node.field645 & 4) != 0 && (var52 == null || var50.method1486(class354.field2139, var52.field3822, (byte)2) != var52.field3822)) {
+                              class984.method1875(class730.field2820, class730.field2735 + " " + class822.field9048 + " " + class56.method1545(65535, -1704073338) + var50.name, class175.field5075, 2, -1, WidgetContainer.method893(var46, var38, var39, 2139321433), var38, var39, true, false, (long)var46.hashCode(), false, -978621849);
                            }
                         }
 
@@ -374,7 +374,7 @@ public abstract class class138 {
                                        var54 = var50.field2196;
                                     }
 
-                                    class984.method1875(var53[var21], class56.method1545(65535, -1882925758) + var50.name, var54, var57, -1, class131.method893(var46, var38, var39, 2141756436), var38, var39, true, false, (long)var46.hashCode(), false, -1317659949);
+                                    class984.method1875(var53[var21], class56.method1545(65535, -1882925758) + var50.name, var54, var57, -1, WidgetContainer.method893(var46, var38, var39, 2141756436), var38, var39, true, false, (long)var46.hashCode(), false, -1317659949);
                                  }
                               }
                            }

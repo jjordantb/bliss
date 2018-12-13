@@ -59,8 +59,8 @@ public class class606 {
    static final void method4788(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)26);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)26);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class623.method5319(var3, var4, var0, (byte)-11);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "dk.mw(" + ')');
@@ -90,7 +90,7 @@ public class class606 {
    static final void method4791(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field935;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "dk.pp(" + ')');
@@ -99,9 +99,9 @@ public class class606 {
 
    static final void method4792(class744 var0, int var1) {
       try {
-         class564 var2 = var0.field3159.field4095.method889(var0.field3161[--var0.field3156], (short)13294);
-         var2.field1017 = null;
-         var2.field1018 = null;
+         Widget var2 = var0.field3159.field4095.method889(var0.field3161[--var0.field3156], (short)13294);
+         var2.children1 = null;
+         var2.children2 = null;
          class814.method2932(var2, -1361442228);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "dk.apv(" + ')');

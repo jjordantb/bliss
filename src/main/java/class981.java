@@ -112,7 +112,7 @@ public class class981 {
 
    static void method1929(byte var0) {
       try {
-         class163.field6616.method2977();
+         ItemNode.field6616.method2977();
       } catch (RuntimeException var2) {
          throw class158.method3445(var2, "ew.z(" + ')');
       }

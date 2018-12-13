@@ -26,66 +26,82 @@ public class Deobfuscator {
     public static void main(String[] args) throws IOException {
 
 
-        final FileInputStream fileInputStream = new FileInputStream(new File("C:\\Users\\Parametric\\Desktop\\BlissScapeClient.jar"));
+        final FileInputStream fileInputStream = new FileInputStream(new File("C:\\Users\\Parametric\\Desktop\\Test.jar"));
         final Map<String, ClassNode> nodeMap = load(fileInputStream);
 
         for (ClassNode classNode : nodeMap.values()) {
-            for (MethodNode methodNode : classNode.methods) {
-                final ListIterator<AbstractInsnNode> listIterator = methodNode.instructions.iterator();
-                while (listIterator.hasNext()) {
-                    AbstractInsnNode cur = listIterator.next();
-                    if (cur instanceof MethodInsnNode && ((MethodInsnNode) cur).owner.equals("I/I") && ((MethodInsnNode) cur).name.equals("I")
-                            && ((MethodInsnNode) cur).desc.equals("(I)Ljava/lang/String;")) {
-                        int op = 0;
-                        if ((cur.getPrevious().getOpcode() == Opcodes.SIPUSH || cur.getPrevious().getOpcode() == Opcodes.BIPUSH)) {
-                            cur = listIterator.previous().getPrevious(); // get the sipush
-                            op = ((IntInsnNode) cur).operand;
-                        } else if (cur.getPrevious().getOpcode() == Opcodes.ICONST_M1){
-                            cur = listIterator.previous().getPrevious(); // get the sipush
-                            op = -1;
-                        } else if (cur.getPrevious().getOpcode() == Opcodes.ICONST_0) {
-                            cur = listIterator.previous().getPrevious(); // get the sipush
-                            op = 0;
-                        } else if (cur.getPrevious().getOpcode() == Opcodes.ICONST_1) {
-                            cur = listIterator.previous().getPrevious(); // get the sipush
-                            op = 1;
-                        } else if (cur.getPrevious().getOpcode() == Opcodes.ICONST_2) {
-                            cur = listIterator.previous().getPrevious(); // get the sipush
-                            op = 2;
-                        } else if (cur.getPrevious().getOpcode() == Opcodes.ICONST_3) {
-                            cur = listIterator.previous().getPrevious(); // get the sipush
-                            op = 3;
-                        } else if (cur.getPrevious().getOpcode() == Opcodes.ICONST_4) {
-                            cur = listIterator.previous().getPrevious(); // get the sipush
-                            op = 4;
-                        } else if (cur.getPrevious().getOpcode() == Opcodes.ICONST_5) {
-                            cur = listIterator.previous().getPrevious(); // get the sipush
-                            op = 5;
+            int intArrcnt = 0;
+            if (classNode.superName.equals("class568")) {
+                for (FieldNode fieldNode : classNode.fields) {
+                    if ((fieldNode.access & Opcodes.ACC_STATIC) == 0) {
+                        if (fieldNode.desc.equals("[I")) {
+                            intArrcnt++;
                         }
-                        String val = I.I(op);
-                        listIterator.previous();
-                        listIterator.remove();
-                        listIterator.next();
-                        listIterator.remove();
-                        listIterator.add(new LdcInsnNode(val));
                     }
+                }
+                if (intArrcnt == 2) {
+                    System.out.println(classNode.name);
                 }
             }
         }
 
-        final HashMap<String, ClassNode> newNodes = new HashMap<>();
-//        final Map<String, Map<String, String>> fieldMappings = generateFieldMappings(nodeMap);
-        final Remapper classRemapper = new SimpleRemapper(generateClassMappings(nodeMap));
-
-        for (ClassNode classNode : nodeMap.values()) {
-            ClassNode copy = new ClassNode();
-            RemappingClassAdapter adapter = new RemappingClassAdapter(copy, classRemapper);
-            classNode.accept(adapter);
-
-            newNodes.put(copy.name, copy);
-        }
-
-        dumpJar(newNodes, "C:\\Users\\Parametric\\Desktop\\BlissStrings.jar");
+//        for (ClassNode classNode : nodeMap.values()) {
+//            for (MethodNode methodNode : classNode.methods) {
+//                final ListIterator<AbstractInsnNode> listIterator = methodNode.instructions.iterator();
+//                while (listIterator.hasNext()) {
+//                    AbstractInsnNode cur = listIterator.next();
+//                    if (cur instanceof MethodInsnNode && ((MethodInsnNode) cur).owner.equals("I/I") && ((MethodInsnNode) cur).name.equals("I")
+//                            && ((MethodInsnNode) cur).desc.equals("(I)Ljava/lang/String;")) {
+//                        int op = 0;
+//                        if ((cur.getPrevious().getOpcode() == Opcodes.SIPUSH || cur.getPrevious().getOpcode() == Opcodes.BIPUSH)) {
+//                            cur = listIterator.previous().getPrevious(); // get the sipush
+//                            op = ((IntInsnNode) cur).operand;
+//                        } else if (cur.getPrevious().getOpcode() == Opcodes.ICONST_M1){
+//                            cur = listIterator.previous().getPrevious(); // get the sipush
+//                            op = -1;
+//                        } else if (cur.getPrevious().getOpcode() == Opcodes.ICONST_0) {
+//                            cur = listIterator.previous().getPrevious(); // get the sipush
+//                            op = 0;
+//                        } else if (cur.getPrevious().getOpcode() == Opcodes.ICONST_1) {
+//                            cur = listIterator.previous().getPrevious(); // get the sipush
+//                            op = 1;
+//                        } else if (cur.getPrevious().getOpcode() == Opcodes.ICONST_2) {
+//                            cur = listIterator.previous().getPrevious(); // get the sipush
+//                            op = 2;
+//                        } else if (cur.getPrevious().getOpcode() == Opcodes.ICONST_3) {
+//                            cur = listIterator.previous().getPrevious(); // get the sipush
+//                            op = 3;
+//                        } else if (cur.getPrevious().getOpcode() == Opcodes.ICONST_4) {
+//                            cur = listIterator.previous().getPrevious(); // get the sipush
+//                            op = 4;
+//                        } else if (cur.getPrevious().getOpcode() == Opcodes.ICONST_5) {
+//                            cur = listIterator.previous().getPrevious(); // get the sipush
+//                            op = 5;
+//                        }
+//                        String val = I.I(op);
+//                        listIterator.previous();
+//                        listIterator.remove();
+//                        listIterator.next();
+//                        listIterator.remove();
+//                        listIterator.add(new LdcInsnNode(val));
+//                    }
+//                }
+//            }
+//        }
+//
+//        final HashMap<String, ClassNode> newNodes = new HashMap<>();
+////        final Map<String, Map<String, String>> fieldMappings = generateFieldMappings(nodeMap);
+//        final Remapper classRemapper = new SimpleRemapper(generateClassMappings(nodeMap));
+//
+//        for (ClassNode classNode : nodeMap.values()) {
+//            ClassNode copy = new ClassNode();
+//            RemappingClassAdapter adapter = new RemappingClassAdapter(copy, classRemapper);
+//            classNode.accept(adapter);
+//
+//            newNodes.put(copy.name, copy);
+//        }
+//
+//        dumpJar(newNodes, "C:\\Users\\Parametric\\Desktop\\BlissStrings.jar");
     }
 
     private static Map<String, String> generateClassMappings(final Map<String, ClassNode> nodeMap) {

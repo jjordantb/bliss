@@ -63,8 +63,8 @@ public class class295 {
    static final void method6516(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class740.method1919(var3, var4, var0, (byte)5);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "d.dy(" + ')');
@@ -136,7 +136,7 @@ public class class295 {
       }
    }
 
-   static void method6522(int var0, int var1, class564 var2, class118 var3, int var4, int var5, int var6) {
+   static void method6522(int var0, int var1, Widget var2, class118 var3, int var4, int var5, int var6) {
       try {
          class921[] var7 = class730.field2851;
 

@@ -126,7 +126,7 @@ public class class758 {
       }
    }
 
-   static void method2734(class564 var0, class23 var1, int var2, int var3, int var4, int var5, class48 var6, byte var7) {
+   static void method2734(Widget var0, class23 var1, int var2, int var3, int var4, int var5, class48 var6, byte var7) {
       try {
          if (var6 != null) {
             int var8;
@@ -160,7 +160,7 @@ public class class758 {
    static final void method2735(int var0, int var1) {
       try {
          if (class215.method3835(var0, (int[])null, -1926955800)) {
-            class469.method4020(class382.field1410[var0].field1103, -1, (byte)1);
+            class469.method4020(class382.widgetContainers[var0].widgetsCopy, -1, (byte)1);
          }
 
       } catch (RuntimeException var3) {
@@ -185,7 +185,7 @@ public class class758 {
       }
    }
 
-   static final void method2738(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method2738(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var2.field3156 -= 3;
          int var4 = var2.field3161[var2.field3156] - 1;

@@ -1,7 +1,7 @@
 public class class115 {
    class829[] field1694;
    class648 field1695;
-   class6 field1696;
+   NodeTable field1696;
 
    public class829 method1267(String var1, int var2) {
       try {
@@ -45,7 +45,7 @@ public class class115 {
                   ;
                }
 
-               this.field1696 = new class6(var6);
+               this.field1696 = new NodeTable(var6);
 
                for(int var7 = 0; var7 < this.field1694.length; ++var7) {
                   class829 var8 = this.field1694[var7];
@@ -79,7 +79,7 @@ public class class115 {
          ;
       }
 
-      this.field1696 = new class6(var3);
+      this.field1696 = new NodeTable(var3);
       this.field1694 = new class829[var3];
       this.field1695 = var2;
    }
@@ -118,8 +118,8 @@ public class class115 {
    static final void method1273(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         var0.field3157[++var0.field3158 - 1] = var3.field937;
+         Widget var3 = var2.field8255;
+         var0.field3157[++var0.field3158 - 1] = var3.text;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "es.pf(" + ')');
       }
@@ -199,7 +199,7 @@ public class class115 {
       }
    }
 
-   static final void method1275(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method1275(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var2.field3156 -= 4;
          var0.field1011 = var2.field3161[var2.field3156];
@@ -226,7 +226,7 @@ public class class115 {
             class948.method1938(var1, var0, false, 112223880);
          }
 
-         if (var0.field879 == -1 && !var1.field1101) {
+         if (var0.field879 == -1 && !var1.closed) {
             class649.method5546(var0.field867, 1058352947);
          }
 
@@ -269,8 +269,8 @@ public class class115 {
    static final void method1277(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class679.method4270(var3, var4, var0, 377927410);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "es.lq(" + ')');

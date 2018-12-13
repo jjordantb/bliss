@@ -6,8 +6,8 @@ public class class935 {
    static final void method6303(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class743.method1911(var3, var4, var0, 540861135);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "co.me(" + ')');
@@ -17,8 +17,8 @@ public class class935 {
    static final void method6304(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class914.method6442(var3, var4, var0, 39715579);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "co.oe(" + ')');
@@ -61,7 +61,7 @@ public class class935 {
    static void method6308(int var0, int var1, int var2) {
       try {
          if (class602.field8643 == 1) {
-            class916.method6463(class469.field7328, var0, var1, (short)916);
+            class916.processAction(class469.field7328, var0, var1, (short)916);
          } else if (2 == class602.field8643) {
             class184.method3242(var0, var1, (byte)20);
          }

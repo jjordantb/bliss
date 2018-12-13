@@ -96,8 +96,8 @@ public class class591 {
    static final void method1215(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class51.method1535(var3, var4, var0, (byte)55);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "om.fp(" + ')');
@@ -107,7 +107,7 @@ public class class591 {
    static final void method1216(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-22);
+         Widget var3 = class449.method3756(var2, (byte)-22);
          class200.method4351(var3, var0, (byte)0);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "om.qu(" + ')');

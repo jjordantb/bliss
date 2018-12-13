@@ -21,7 +21,7 @@ public class class984 {
       try {
          if (!class602.field8645 && class602.field8673 < 521) {
             var2 = var2 != -1 ? var2 : class730.field2919 * -280458557 * -1808468501;
-            class357 var15 = new class357(var0, var1, var2, var3, var4, var5, var7, var8, var9, var10, var11, var13);
+            MenuItem var15 = new MenuItem(var0, var1, var2, var3, var4, var5, var7, var8, var9, var10, var11, var13);
             class647.method5482(var15, 1640099092);
          }
 
@@ -49,8 +49,8 @@ public class class984 {
    static final void method1877(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)60);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)60);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class396.method3500(var3, var4, var0, -1168214437);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "jw.nm(" + ')');
@@ -299,7 +299,7 @@ public class class984 {
       }
    }
 
-   static final void method1885(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method1885(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          boolean var4 = var2.field3161[--var2.field3156] == 1;
          if (var0.field886 != var4) {
@@ -307,7 +307,7 @@ public class class984 {
             class814.method2932(var0, -1214371857);
          }
 
-         if (-1 == var0.field879 && !var1.field1101) {
+         if (-1 == var0.field879 && !var1.closed) {
             class162.method3543(var0.field867, (short)945);
          }
 

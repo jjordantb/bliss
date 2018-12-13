@@ -23,8 +23,8 @@ public class class880 {
    static final void method6174(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class590.method1222(var3, var4, var0, 1808304001);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ph.lr(" + ')');
@@ -50,7 +50,7 @@ public class class880 {
       try {
          if (class540.field3915 != null) {
             class540.field3915 = null;
-            class564.method846(256, 497351807);
+            Widget.method846(256, 497351807);
          }
 
       } catch (RuntimeException var2) {
@@ -164,8 +164,8 @@ public class class880 {
    static final void method6178(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class614.method5188(var3, var4, var0, (byte)74);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ph.cb(" + ')');

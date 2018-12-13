@@ -62,8 +62,8 @@ public class class779 {
 
    public static boolean method2322(int var0, int var1) {
       try {
-         for(class357 var2 = (class357)class602.field8647.method901(1766612795); var2 != null; var2 = (class357)class602.field8647.method906(49146)) {
-            if (class717.method2030(var2.field1702, -77764350) && (long)var0 == var2.field1701) {
+         for(MenuItem var2 = (MenuItem)class602.field8647.method901(1766612795); var2 != null; var2 = (MenuItem)class602.field8647.method906(49146)) {
+            if (class717.method2030(var2.opcode, -77764350) && (long)var0 == var2.field1701) {
                return true;
             }
          }
@@ -103,7 +103,7 @@ public class class779 {
       }
    }
 
-   static final void method2324(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method2324(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var0.field976 = var2.field3161[--var2.field3156];
          class814.method2932(var0, -1832191963);

@@ -1,6 +1,6 @@
 public class class949 {
    static short field3320;
-   public static class6 field3321 = new class6(32);
+   public static NodeTable field3321 = new NodeTable(32);
    public static class283[] field3322;
    static class278[] field3323;
    public static class415 field3324 = new class386();
@@ -35,8 +35,8 @@ public class class949 {
    static final void method1954(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-37);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-37);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class499.method4475(var3, var4, var0, -1818514022);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "dn.nx(" + ')');
@@ -77,11 +77,11 @@ public class class949 {
       }
    }
 
-   static void method1956(class564 var0, int var1, int var2, int var3) {
+   static void method1956(Widget var0, int var1, int var2, int var3) {
       try {
          if (class730.field2817) {
             class785 var4 = class354.field2139 != -1 ? class452.field7216.method5148(class354.field2139, -1080440130) : null;
-            if (class730.method1761(var0).method1740(1299208806) && (class568.field645 & 32) != 0 && (var4 == null || var0.method827(class354.field2139, var4.field3822, -659898667) != var4.field3822)) {
+            if (class730.method1761(var0).method1740(1299208806) && (Node.field645 & 32) != 0 && (var4 == null || var0.method827(class354.field2139, var4.field3822, -659898667) != var4.field3822)) {
                class984.method1875(class730.field2820, class730.field2735 + " " + class822.field9048 + " " + var0.field953, class175.field5075, 58, var0.field1005, 0L, var0.field879, var0.field867, true, false, (long)(var0.field879 << 32 | var0.field867), false, -1876457786);
             }
          }

@@ -218,8 +218,8 @@ public class class354 {
    static final void method1452(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)36);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)36);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class362.method1506(var3, var4, var0, (byte)-37);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "fi.nc(" + ')');
@@ -229,10 +229,10 @@ public class class354 {
    static final void method1453(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         if (class382.field1410[var2] == null) {
+         if (class382.widgetContainers[var2] == null) {
             var0.field3157[++var0.field3158 - 1] = "";
          } else {
-            String var3 = class382.field1410[var2].field1103[0].field984;
+            String var3 = class382.widgetContainers[var2].widgetsCopy[0].field984;
             if (var3 == null) {
                var0.field3157[++var0.field3158 - 1] = "";
             } else {

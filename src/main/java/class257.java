@@ -80,7 +80,7 @@ public class class257 extends class848 {
          this.method4449(0);
          class771.method2300(true, true, -162450455);
          this.field7941 = true;
-         this.field7915 = (int)class27.method3468((byte)1);
+         this.field7915 = (int)class27.resetTimer((byte)1);
       } catch (Throwable var3) {
          var3.printStackTrace();
          this.method4996(2022818790);

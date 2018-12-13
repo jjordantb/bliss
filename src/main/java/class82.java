@@ -181,8 +181,8 @@ public class class82 implements class311 {
 
    static void method921(int var0, int var1) {
       try {
-         class163.field6618 = var0;
-         class163.field6616.method2977();
+         ItemNode.field6618 = var0;
+         ItemNode.field6616.method2977();
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "jc.s(" + ')');
       }

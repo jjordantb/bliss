@@ -63,8 +63,8 @@ public abstract class class184 implements class524 {
    static final void method3240(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class348.method194(var3, var4, var0, -1300595818);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "em.ch(" + ')');
@@ -82,13 +82,13 @@ public abstract class class184 implements class524 {
 
    static void method3242(int var0, int var1, byte var2) {
       try {
-         if (class6.field4931.field9529 || class602.field8673 != 1 && (!class559.field545 || 2 != class602.field8673 || !class602.field8644.field1707.equals(class814.field4784.method2927(class321.field1066, -875414210)))) {
+         if (NodeTable.field4931.field9529 || class602.field8673 != 1 && (!class559.field545 || 2 != class602.field8673 || !class602.field8644.action.equals(class814.field4784.method2927(class321.field1066, -875414210)))) {
             class230 var3 = class600.method5467(-2044946043);
             int var4 = var3.method4605(class814.field4781.method2927(class321.field1066, -875414210), -917382772);
             int var6;
             int var7;
             if (!class602.field8638) {
-               for(class357 var9 = (class357)class602.field8647.method901(1766612795); var9 != null; var9 = (class357)class602.field8647.method906(49146)) {
+               for(MenuItem var9 = (MenuItem)class602.field8647.method901(1766612795); var9 != null; var9 = (MenuItem)class602.field8647.method906(49146)) {
                   var6 = class631.method5861(var9, var3, 692106883);
                   if (var6 > var4) {
                      var4 = var6;
@@ -101,7 +101,7 @@ public abstract class class184 implements class524 {
             } else {
                for(class497 var5 = (class497)class602.field8649.method2706(-1195719541); var5 != null; var5 = (class497)class602.field8649.method2707(1977524177)) {
                   if (1 == var5.field8120) {
-                     var6 = class631.method5861((class357)var5.field8121.field4317.field208, var3, 692106883);
+                     var6 = class631.method5861((MenuItem)var5.field8121.field4317.field208, var3, 692106883);
                   } else {
                      var6 = class625.method5827(var5, var3, 1340388103);
                   }
@@ -150,7 +150,7 @@ public abstract class class184 implements class524 {
    static final void method3243(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field868;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "em.os(" + ')');

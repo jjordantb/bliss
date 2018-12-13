@@ -54,11 +54,11 @@ public class class533 extends class535 {
       return 1;
    }
 
-   static void method2264(class564 var0, int var1) {
+   static void method2264(Widget var0, int var1) {
       try {
          if (class730.field2817) {
             if (var0.field972 != null) {
-               class564 var2 = class554.method427(class543.field3820, class730.field2818, -156511736);
+               Widget var2 = class554.method427(class543.field3820, class730.field2818, -156511736);
                if (var2 != null) {
                   class202 var3 = new class202();
                   var3.field7578 = var0;
@@ -101,11 +101,11 @@ public class class533 extends class535 {
                class978.field3129[(int)var3] = var12.field7688;
                class730.field2768[++class730.field2861 - 1 & 31] = (int)var3;
             } else {
-               class564 var5;
+               Widget var5;
                if (var2 == 3) {
                   var5 = class449.method3756((int)var3, (byte)-62);
-                  if (!var12.field7688.equals(var5.field937)) {
-                     var5.field937 = var12.field7688;
+                  if (!var12.field7688.equals(var5.text)) {
+                     var5.text = var12.field7688;
                      class814.method2932(var5, 753227077);
                   }
                } else if (var2 == 22) {
@@ -152,7 +152,7 @@ public class class533 extends class535 {
                      var7 = var14 >> 5 & 31;
                      var8 = var14 & 31;
                      int var9 = (var7 << 11) + (var6 << 19) + (var8 << 3);
-                     class564 var10 = class449.method3756((int)var3, (byte)-37);
+                     Widget var10 = class449.method3756((int)var3, (byte)-37);
                      if (var9 != var10.field895) {
                         var10.field895 = var9;
                         class814.method2932(var10, -37482416);

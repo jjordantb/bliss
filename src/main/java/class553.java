@@ -16,8 +16,8 @@ public class class553 {
    static final void method450(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-1);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-1);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class180.method3287(var3, var4, var0, 1204631441);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "kw.ni(" + ')');
@@ -60,7 +60,7 @@ public class class553 {
       }
    }
 
-   static final void method453(class564 var0, class131 var1, class744 var2, short var3) {
+   static final void method453(Widget var0, WidgetContainer var1, class744 var2, short var3) {
       try {
          var2.field3156 -= 3;
          int var4 = var2.field3161[var2.field3156];
@@ -69,7 +69,7 @@ public class class553 {
          if (var4 >= 0 && var4 < 5) {
             var0.method830(var4, var5, var6, -1261920411);
             class814.method2932(var0, 1064187264);
-            if (var0.field879 == -1 && !var1.field1101) {
+            if (var0.field879 == -1 && !var1.closed) {
                class933.method6289(var0.field867, var4, (byte)1);
             }
          }

@@ -114,7 +114,7 @@ public abstract class class352 {
       }
    }
 
-   static final void method1403(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method1403(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          if (4 == var0.field869) {
             class912.method6480(var0, var1, var2, (short)8629);

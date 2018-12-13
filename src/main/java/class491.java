@@ -10,7 +10,7 @@ public class class491 {
    protected static class415 field7798;
    static byte[] field7799;
    protected static class945 field7800;
-   static class6 field7801 = new class6(16);
+   static NodeTable field7801 = new NodeTable(16);
    protected static int field7802 = (int)(Math.random() * 11.0D) - 5;
    protected static int field7803 = (int)(Math.random() * 17.0D) - 8;
    protected static byte[][][] field7804;

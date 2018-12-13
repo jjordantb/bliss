@@ -707,7 +707,7 @@ public final class class180 {
       }
    }
 
-   static final void method3287(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method3287(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -1820459724) != null) {
@@ -723,7 +723,7 @@ public final class class180 {
 
    static final void method3288(class744 var0, int var1) {
       try {
-         var0.field3161[++var0.field3156 - 1] = (int)(class27.method3468((byte)1) / 86400000L) - 11745;
+         var0.field3161[++var0.field3156 - 1] = (int)(class27.resetTimer((byte)1) / 86400000L) - 11745;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "ke.aka(" + ')');
       }

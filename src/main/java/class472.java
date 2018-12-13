@@ -75,7 +75,7 @@ public class class472 {
       this.field8232 = var1;
    }
 
-   static final void method4612(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method4612(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -562423925) != null) {
@@ -92,7 +92,7 @@ public class class472 {
    static final void method4613(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          class752.method2640(var3, var0, -1302150014);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "nn.qj(" + ')');

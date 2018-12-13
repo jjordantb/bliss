@@ -1,7 +1,7 @@
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-public class class149 extends class568 {
+public class class149 extends Node {
    int[] field1526;
    int[] field1527;
    int[] field1528;
@@ -15,7 +15,7 @@ public class class149 extends class568 {
       try {
          if (class602.field8673 < 410) {
             if (var0 == class923.local) {
-               if (class730.field2817 && (class568.field645 & 16) != 0) {
+               if (class730.field2817 && (Node.field645 & 16) != 0) {
                   class984.method1875(class730.field2820, class730.field2735 + " " + class822.field9048 + " " + class56.method1545(16777215, -1880818524) + class814.field4796.method2927(class321.field1066, -875414210), class175.field5075, 16, -1, 0L, 0, 0, true, false, (long)var0.field4028, false, -1698066743);
                }
             } else {
@@ -46,7 +46,7 @@ public class class149 extends class568 {
                   var6 = var0.method1993(true, -2028633086) + class822.field9046 + class814.field4786.method2927(class321.field1066, -875414210) + var0.field3384 + class822.field9049;
                }
 
-               if (class730.field2817 && !var1 && (class568.field645 & 8) != 0) {
+               if (class730.field2817 && !var1 && (Node.field645 & 8) != 0) {
                   class984.method1875(class730.field2820, class730.field2735 + " " + class822.field9048 + " " + class56.method1545(16777215, -1806308451) + var6, class175.field5075, 15, -1, (long)var0.field4028, 0, 0, true, false, (long)var0.field4028, false, -2028889244);
                }
 
@@ -82,8 +82,8 @@ public class class149 extends class568 {
                }
 
                if (!var1) {
-                  for(class357 var12 = (class357)class602.field8647.method901(1766612795); var12 != null; var12 = (class357)class602.field8647.method906(49146)) {
-                     if (23 == var12.field1702) {
+                  for(MenuItem var12 = (MenuItem)class602.field8647.method901(1766612795); var12 != null; var12 = (MenuItem)class602.field8647.method906(49146)) {
+                     if (23 == var12.opcode) {
                         var12.field1709 = class56.method1545(16777215, -1702215598) + var6;
                         break;
                      }

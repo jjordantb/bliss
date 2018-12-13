@@ -2,7 +2,7 @@ import jaclib.memory.Stream;
 import jaclib.memory.heap.I;
 import jaggl.OpenGL;
 
-public class class724 extends class568 {
+public class class724 extends Node {
    class847 field2510;
    class291 field2511;
    I field2512;

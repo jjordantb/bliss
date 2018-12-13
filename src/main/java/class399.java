@@ -246,7 +246,7 @@ public class class399 {
       }
    }
 
-   static void method3532(class564 var0, class23 var1, int var2, int var3, int var4, int var5, int var6, String var7, class727 var8, class230 var9, int var10, int var11) {
+   static void method3532(Widget var0, class23 var1, int var2, int var3, int var4, int var5, int var6, String var7, class727 var8, class230 var9, int var10, int var11) {
       try {
          int var12;
          if (2 == class563.field1083) {

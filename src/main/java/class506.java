@@ -58,7 +58,7 @@ public class class506 {
       }
    }
 
-   static final void method2602(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method2602(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var0.field898 = var2.field3161[--var2.field3156];
          class814.method2932(var0, -1371264268);

@@ -34,7 +34,7 @@ public class class718 {
    public int field3523;
    public static int field3524 = 0;
    public boolean field3525 = true;
-   class6 field3526;
+   NodeTable field3526;
    public int field3527;
    public int field3528;
    public int[] field3529;
@@ -160,7 +160,7 @@ public class class718 {
                   var4 = var1.method6371();
                   if (this.field3526 == null) {
                      var5 = class18.method3687(var4, (byte)16);
-                     this.field3526 = new class6(var5);
+                     this.field3526 = new NodeTable(var5);
                   }
 
                   for(var5 = 0; var5 < var4; ++var5) {
@@ -173,7 +173,7 @@ public class class718 {
                         var8 = new class722(var1.method6420((byte)97));
                      }
 
-                     this.field3526.method2947((class568)var8, (long)var7);
+                     this.field3526.method2947((Node)var8, (long)var7);
                   }
                }
             }

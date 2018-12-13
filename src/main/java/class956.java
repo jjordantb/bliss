@@ -50,7 +50,7 @@ public final class class956 extends class352 implements KeyListener, FocusListen
          var5.field7788 = var1;
          var5.field7792 = var2;
          var5.field7790 = var3;
-         var5.field7791 = class27.method3468((byte)1);
+         var5.field7791 = class27.resetTimer((byte)1);
          this.field3614.method897(var5, -134660083);
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "acn.g(" + ')');

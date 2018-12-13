@@ -1,4 +1,4 @@
-public class class784 extends class568 {
+public class class784 extends Node {
    double field3952;
    short[][] field3953;
 

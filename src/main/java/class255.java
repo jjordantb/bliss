@@ -6,7 +6,7 @@ public class class255 {
    public String field8118;
    public byte field8119;
 
-   static final void method4495(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method4495(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          int[] var5 = class960.method2212(var4, var2, -1009686334);
@@ -60,7 +60,7 @@ public class class255 {
             } else if (class118.method1458((byte)122) && class602.field8673 > 2) {
                var2 = class342.method217(class713.field3542, 2135114234);
             } else {
-               class357 var3 = class713.field3542;
+               MenuItem var3 = class713.field3542;
                if (var3 == null) {
                   return;
                }

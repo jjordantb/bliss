@@ -17,7 +17,7 @@ public class class228 {
    public static void method4586(int var0, int[] var1, int var2) {
       try {
          if (var0 != -1 && class215.method3835(var0, var1, -2060750983)) {
-            class564[] var3 = class382.field1410[var0].field1103;
+            Widget[] var3 = class382.widgetContainers[var0].widgetsCopy;
             class932.method6294(var3, -1178956884);
          }
 
@@ -38,8 +38,8 @@ public class class228 {
    static final void method4588(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-45);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-45);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class818.method2904(var3, var4, var0, -1849275031);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "ao.ek(" + ')');

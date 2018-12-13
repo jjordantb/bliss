@@ -184,9 +184,9 @@ public final class class936 {
             }
 
             class730.field2822 = -1;
-            class730.field2823 = new class6(8);
+            class730.field2823 = new NodeTable(8);
             class515.method2693((short)255);
-            class730.field2822 = class6.field4931.field9533;
+            class730.field2822 = NodeTable.field4931.field9533;
             class161.method3551(false, (byte)8);
             class881.method6172(-960032596);
             class228.method4586(class730.field2822, (int[])null, 2019085039);
@@ -219,7 +219,7 @@ public final class class936 {
    static final void method6277(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-38);
+         Widget var3 = class449.method3756(var2, (byte)-38);
          var0.field3161[++var0.field3156 - 1] = var3.field868;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "us.qx(" + ')');

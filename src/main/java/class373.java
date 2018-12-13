@@ -2,10 +2,10 @@ import java.util.Collection;
 import java.util.Iterator;
 
 public class class373 implements Iterable, Collection {
-   public class568 field1104 = new class568();
-   class568 field1105;
+   public Node field1104 = new Node();
+   Node field1105;
 
-   public void method897(class568 var1, int var2) {
+   public void method897(Node var1, int var2) {
       try {
          if (var1.field642 != null) {
             var1.method545(-1460969981);
@@ -20,9 +20,9 @@ public class class373 implements Iterable, Collection {
       }
    }
 
-   public class568 method898(int var1) {
+   public Node method898(int var1) {
       try {
-         class568 var2 = this.field1104.field640;
+         Node var2 = this.field1104.field640;
          if (var2 == this.field1104) {
             return null;
          } else {
@@ -34,9 +34,9 @@ public class class373 implements Iterable, Collection {
       }
    }
 
-   void method899(class373 var1, class568 var2, byte var3) {
+   void method899(class373 var1, Node var2, byte var3) {
       try {
-         class568 var4 = this.field1104.field642;
+         Node var4 = this.field1104.field642;
          this.field1104.field642 = var2.field642;
          var2.field642.field640 = this.field1104;
          if (this.field1104 != var2) {
@@ -62,17 +62,17 @@ public class class373 implements Iterable, Collection {
       }
    }
 
-   public class568 method901(int var1) {
+   public Node method901(int var1) {
       try {
-         return this.method907((class568)null, 65280);
+         return this.method907((Node)null, 65280);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "sr.d(" + ')');
       }
    }
 
-   class568 method902(class568 var1, byte var2) {
+   Node method902(Node var1, byte var2) {
       try {
-         class568 var3;
+         Node var3;
          if (var1 == null) {
             var3 = this.field1104.field642;
          } else {
@@ -91,12 +91,12 @@ public class class373 implements Iterable, Collection {
       }
    }
 
-   class568[] method903(byte var1) {
+   Node[] method903(byte var1) {
       try {
-         class568[] var2 = new class568[this.method910(1828905535)];
+         Node[] var2 = new Node[this.method910(1828905535)];
          int var3 = 0;
 
-         for(class568 var4 = this.field1104.field640; var4 != this.field1104; var4 = var4.field640) {
+         for(Node var4 = this.field1104.field640; var4 != this.field1104; var4 = var4.field640) {
             var2[var3++] = var4;
          }
 
@@ -138,9 +138,9 @@ public class class373 implements Iterable, Collection {
       }
    }
 
-   public class568 method904(int var1) {
+   public Node method904(int var1) {
       try {
-         return this.method902((class568)null, (byte)4);
+         return this.method902((Node)null, (byte)4);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "sr.x(" + ')');
       }
@@ -196,7 +196,7 @@ public class class373 implements Iterable, Collection {
 
    public boolean add(Object var1) {
       try {
-         return this.method911((class568)var1, (byte)-121);
+         return this.method911((Node)var1, (byte)-121);
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "sr.add(" + ')');
       }
@@ -233,7 +233,7 @@ public class class373 implements Iterable, Collection {
       try {
          int var2 = 0;
 
-         for(class568 var3 = this.field1104.field640; this.field1104 != var3; var3 = var3.field640) {
+         for(Node var3 = this.field1104.field640; this.field1104 != var3; var3 = var3.field640) {
             var1[var2++] = var3;
          }
 
@@ -243,9 +243,9 @@ public class class373 implements Iterable, Collection {
       }
    }
 
-   public class568 method906(int var1) {
+   public Node method906(int var1) {
       try {
-         class568 var2 = this.field1105;
+         Node var2 = this.field1105;
          if (this.field1104 == var2) {
             this.field1105 = null;
             return null;
@@ -258,9 +258,9 @@ public class class373 implements Iterable, Collection {
       }
    }
 
-   class568 method907(class568 var1, int var2) {
+   Node method907(Node var1, int var2) {
       try {
-         class568 var3;
+         Node var3;
          if (var1 == null) {
             var3 = this.field1104.field640;
          } else {
@@ -300,9 +300,9 @@ public class class373 implements Iterable, Collection {
       }
    }
 
-   public class568 method909(int var1) {
+   public Node method909(int var1) {
       try {
-         class568 var2 = this.field1105;
+         Node var2 = this.field1105;
          if (var2 == this.field1104) {
             this.field1105 = null;
             return null;
@@ -319,7 +319,7 @@ public class class373 implements Iterable, Collection {
       try {
          int var2 = 0;
 
-         for(class568 var3 = this.field1104.field640; this.field1104 != var3; var3 = var3.field640) {
+         for(Node var3 = this.field1104.field640; this.field1104 != var3; var3 = var3.field640) {
             ++var2;
          }
 
@@ -329,7 +329,7 @@ public class class373 implements Iterable, Collection {
       }
    }
 
-   boolean method911(class568 var1, byte var2) {
+   boolean method911(Node var1, byte var2) {
       try {
          this.method897(var1, 289942482);
          return true;
@@ -378,8 +378,8 @@ public class class373 implements Iterable, Collection {
    static final void method914(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class416.method5647(var3, var4, var0, -638652080);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "sr.lc(" + ')');

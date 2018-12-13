@@ -570,7 +570,7 @@ public final class class608 extends class325 {
    }
 
    final synchronized void method5075(long var1) {
-      class568 var3 = new class568();
+      Node var3 = new Node();
       var3.field641 = var1;
       this.field8601.method1282(var3, 270678246);
    }
@@ -1043,7 +1043,7 @@ public final class class608 extends class325 {
          OpenGL.glDeleteLists((int)var3.field641, var3.field3631);
       }
 
-      class568 var5;
+      Node var5;
       while(!this.field8607.method1284((byte)121)) {
          var5 = this.field8607.method1285(1584885862);
          OpenGL.glDeleteProgram((int)var5.field641);
@@ -1059,9 +1059,9 @@ public final class class608 extends class325 {
          OpenGL.glDeleteLists((int)var3.field641, var3.field3631);
       }
 
-      if (this.method4802() > 100663296 && class27.method3468((byte)1) > this.field8609 + 60000L) {
+      if (this.method4802() > 100663296 && class27.resetTimer((byte)1) > this.field8609 + 60000L) {
          System.gc();
-         this.field8609 = class27.method3468((byte)1);
+         this.field8609 = class27.resetTimer((byte)1);
       }
 
       super.method4801(var1);
@@ -1190,7 +1190,7 @@ public final class class608 extends class325 {
    }
 
    final synchronized void method5082(int var1) {
-      class568 var2 = new class568();
+      Node var2 = new Node();
       var2.field641 = (long)var1;
       this.field8607.method1282(var2, 1460654582);
    }

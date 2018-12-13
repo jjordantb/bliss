@@ -10,7 +10,7 @@ public class class198 {
    static int field7044 = 0;
    static int field7045 = 0;
    static List field7046;
-   static class6 field7047 = new class6(8);
+   static NodeTable field7047 = new NodeTable(8);
    static int field7048 = 0;
    static int field7049 = 0;
    public static String field7050;
@@ -23,8 +23,8 @@ public class class198 {
    static final void method3751(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)9);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)9);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class382.method1058(var3, var4, var0, -2144331170);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "oi.cu(" + ')');

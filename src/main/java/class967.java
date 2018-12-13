@@ -139,11 +139,11 @@ public final class class967 {
             }
 
             if (19 == var0) {
-               class936.method6276(8 == class730.field2733 || class730.field2733 == 2 || class6.field4931.field9533 != class730.field2822, -1608675861);
+               class936.method6276(8 == class730.field2733 || class730.field2733 == 2 || NodeTable.field4931.field9533 != class730.field2822, -1608675861);
             }
 
             if (var0 == 14) {
-               class470.method4593(class730.field2822 != class6.field4931.field9522, -687019075);
+               class470.method4593(class730.field2822 != NodeTable.field4931.field9522, -687019075);
             }
 
             if (var0 != 4 && 6 != var0) {

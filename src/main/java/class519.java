@@ -50,7 +50,7 @@ public class class519 {
       }
    }
 
-   static boolean method2667(class564 var0, int var1) {
+   static boolean method2667(Widget var0, int var1) {
       try {
          class725 var2 = class730.method1761(var0);
          if (var2.method1738((byte)1) > 0) {
@@ -58,7 +58,7 @@ public class class519 {
          } else if (var2.method1741(-1320707999)) {
             return true;
          } else {
-            return var0.field958 != null;
+            return var0.parent != null;
          }
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "rj.lo(" + ')');
@@ -290,7 +290,7 @@ public class class519 {
                if (var0.startsWith("setoutput ")) {
                   var13 = new File(var0.substring(10));
                   if (var13.exists()) {
-                     var13 = new File(var0.substring(10) + "." + class27.method3468((byte)1) + ".log");
+                     var13 = new File(var0.substring(10) + "." + class27.resetTimer((byte)1) + ".log");
                      if (var13.exists()) {
                         class213.method3810("file already exists!", 1609687254);
                         return;

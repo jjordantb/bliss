@@ -1,7 +1,5 @@
 import java.applet.Applet;
-import java.awt.BorderLayout;
-import java.awt.Component;
-import java.awt.Dimension;
+import java.awt.*;
 import java.lang.reflect.Field;
 import java.net.URL;
 import java.util.Properties;
@@ -10,6 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Loader extends Applet {
+
    public static Properties field6955 = new Properties();
    public JFrame field6956;
    public JPanel field6957 = new JPanel();
@@ -33,9 +32,9 @@ public class Loader extends Applet {
       var1.method3702();
 
       while (true) {
-          if (Players.getLocal() != null) {
-              System.out.println(Players.getLocal().getAnimationId());
-          }
+//          if (Players.getLocal() != null) {
+//              System.out.println(Players.getLocal().getAnimationId());
+//          }
           Thread.sleep(1000);
       }
    }
@@ -99,6 +98,7 @@ public class Loader extends Applet {
 
    void method3704() {
       this.field6956 = new JFrame("BlissScape Client");
+      new ControlDialog(this.field6956);
 
       try {
          this.field6956.setIconImage(ImageIO.read(Thread.currentThread().getContextClassLoader().getResourceAsStream("Client/bin/images/favicon.png")));
@@ -145,4 +145,9 @@ public class Loader extends Applet {
          return null;
       }
    }
+
+   public static void paintCallback(Graphics g) {
+       g.drawString("HAI", 50, 50);
+   }
+
 }

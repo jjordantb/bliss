@@ -53,7 +53,7 @@ public abstract class Actor extends Animable {
    public Animator activeAnimator;
    class726 field4031;
    class625 field4082;
-   public class131 field4095;
+   public WidgetContainer field4095;
    public int field4078;
    public int field4079;
    public int field4080;
@@ -274,7 +274,7 @@ public abstract class Actor extends Animable {
          boolean var10 = true;
 
          int var11;
-         for(var11 = 0; var11 < class6.field4931.field9523; ++var11) {
+         for(var11 = 0; var11 < NodeTable.field4931.field9523; ++var11) {
             if (this.field4044[var11] > var5) {
                var9 = false;
             } else {
@@ -305,7 +305,7 @@ public abstract class Actor extends Animable {
                var17 = this.field4043[0];
             }
 
-            for(int var15 = 1; var15 < class6.field4931.field9523; ++var15) {
+            for(int var15 = 1; var15 < NodeTable.field4931.field9523; ++var15) {
                if (var12 == 0) {
                   if (this.field4044[var15] < var17) {
                      var11 = var15;
@@ -325,9 +325,9 @@ public abstract class Actor extends Animable {
                this.field4097 = 0;
             }
 
-            for(var17 = 0; var17 < class6.field4931.field9523; ++var17) {
+            for(var17 = 0; var17 < NodeTable.field4931.field9523; ++var17) {
                byte var18 = this.field4097;
-               this.field4097 = (byte)((this.field4097 + 1) % class6.field4931.field9523);
+               this.field4097 = (byte)((this.field4097 + 1) % NodeTable.field4931.field9523);
                if (this.field4044[var18] <= var5) {
                   var11 = var18;
                   break;
@@ -655,12 +655,12 @@ public abstract class Actor extends Animable {
          if (this.field4096 == var1) {
             return true;
          } else {
-            this.field4095 = class886.method6167(var1, (int[])null, (class131)null, true, (byte)3);
+            this.field4095 = class886.method6167(var1, (int[])null, (WidgetContainer)null, true, (byte)3);
             if (this.field4095 == null) {
                return false;
             } else {
                this.field4096 = var1;
-               class932.method6294(this.field4095.field1103, -1178956884);
+               class932.method6294(this.field4095.widgetsCopy, -1178956884);
                return true;
             }
          }
@@ -709,7 +709,7 @@ public abstract class Actor extends Animable {
    public void method2570(int var1, int var2, boolean var3, int var4) {
       try {
          if (this.method2567(-551216163)) {
-            class381.method1066(this.field4095.field1103, -1, var1, var2, var3, (short)-1055);
+            class381.method1066(this.field4095.widgetsCopy, -1, var1, var2, var3, (short)-1055);
          }
 
       } catch (RuntimeException var6) {
@@ -735,12 +735,12 @@ public abstract class Actor extends Animable {
       this.field4035 = 0;
       this.field4086 = 0;
       this.field4097 = 0;
-      this.field4066 = new int[class6.field4931.field9523];
-      this.field4043 = new int[class6.field4931.field9523];
-      this.field4044 = new int[class6.field4931.field9523];
-      this.field4045 = new int[class6.field4931.field9523];
-      this.field4091 = new int[class6.field4931.field9523];
-      this.field4047 = new int[class6.field4931.field9523];
+      this.field4066 = new int[NodeTable.field4931.field9523];
+      this.field4043 = new int[NodeTable.field4931.field9523];
+      this.field4044 = new int[NodeTable.field4931.field9523];
+      this.field4045 = new int[NodeTable.field4931.field9523];
+      this.field4091 = new int[NodeTable.field4931.field9523];
+      this.field4047 = new int[NodeTable.field4931.field9523];
       this.field4080 = -1000;
       this.field4050 = -1000;
       this.field4083 = false;

@@ -1,4 +1,4 @@
-public class class564 {
+public class Widget {
    short[] field843;
    public static int field844 = 1;
    public Object[] field845;
@@ -76,7 +76,7 @@ public class class564 {
    public int field917 = 0;
    public int field918 = 0;
    public int field919 = 0;
-   public String[] field920;
+   public String[] actions;
    public boolean field921 = false;
    public int field922;
    public int field923 = 0;
@@ -93,7 +93,7 @@ public class class564 {
    public Object[] field934;
    public int field935 = -1;
    public boolean field936 = true;
-   public String field937 = "";
+   public String text = "";
    public boolean field938;
    public int field939 = 0;
    public int field940;
@@ -114,7 +114,7 @@ public class class564 {
    public String field955;
    public int[] field956;
    public int field957;
-   public class564 field958;
+   public Widget parent;
    short[] field959;
    public int field960;
    public int field961;
@@ -160,7 +160,7 @@ public class class564 {
    public int[] field1001;
    public Object[] field1002;
    public int field1003;
-   class6 field1004;
+   NodeTable field1004;
    public int field1005;
    public int field1006;
    public int field1007 = 0;
@@ -173,8 +173,8 @@ public class class564 {
    public int field1014;
    public int field1015;
    public Object[] field1016;
-   public class564[] field1017;
-   public class564[] field1018;
+   public Widget[] children1;
+   public Widget[] children2;
    public boolean field1019;
    public boolean field1020;
    static class1 field1021 = new class1(4);
@@ -305,31 +305,31 @@ public class class564 {
                this.field936 = var1.method6371() == 1;
             }
 
-            this.field937 = var1.method6379(332948556);
-            if (this.field937.toLowerCase().contains("runescape")) {
-               this.field937 = this.field937.replace("runescape", "BlissScape");
-               this.field937 = this.field937.replace("RuneScape", "BlissScape");
-               this.field937 = this.field937.replace("Runescape", "BlissScape");
+            this.text = var1.method6379(332948556);
+            if (this.text.toLowerCase().contains("runescape")) {
+               this.text = this.text.replace("runescape", "BlissScape");
+               this.text = this.text.replace("RuneScape", "BlissScape");
+               this.text = this.text.replace("Runescape", "BlissScape");
             }
 
-            if (this.field937.toLowerCase().contains("or log in with")) {
-               this.field937 = "<br>Enter a new username or password<br> to create an account";
+            if (this.text.toLowerCase().contains("or log in with")) {
+               this.text = "<br>Enter a new username or password<br> to create an account";
             }
 
-            if (this.field937.toLowerCase().contains("opens a popup window")) {
-               this.field937 = "";
+            if (this.text.toLowerCase().contains("opens a popup window")) {
+               this.text = "";
             }
 
-            if (this.field937.toLowerCase().contains("create account now")) {
-               this.field937 = "";
+            if (this.text.toLowerCase().contains("create account now")) {
+               this.text = "";
             }
 
-            if (this.field937.toLowerCase().contains("recover your password")) {
-               this.field937 = this.field937.replace("Recover Your Password", "Forgot your Password?");
+            if (this.text.toLowerCase().contains("recover your password")) {
+               this.text = this.text.replace("Recover Your Password", "Forgot your Password?");
             }
 
-            if (this.field937.toLowerCase().contains("login:")) {
-               this.field937 = "Login or Email:";
+            if (this.text.toLowerCase().contains("login:")) {
+               this.text = "Login or Email:";
             }
 
             this.field916 = var1.method6371();
@@ -388,10 +388,10 @@ public class class564 {
          int var19 = var7 >> 4;
          int var10;
          if (var18 > 0) {
-            this.field920 = new String[var18];
+            this.actions = new String[var18];
 
             for(var10 = 0; var10 < var18; ++var10) {
-               this.field920[var10] = var1.method6379(-1637502084);
+               this.actions[var10] = var1.method6379(-1637502084);
             }
          }
 
@@ -567,18 +567,18 @@ public class class564 {
 
    public void method825(int var1, String var2, int var3) {
       try {
-         if (this.field920 == null || this.field920.length <= var1) {
+         if (this.actions == null || this.actions.length <= var1) {
             String[] var4 = new String[1 + var1];
-            if (this.field920 != null) {
-               for(int var5 = 0; var5 < this.field920.length; ++var5) {
-                  var4[var5] = this.field920[var5];
+            if (this.actions != null) {
+               for(int var5 = 0; var5 < this.actions.length; ++var5) {
+                  var4[var5] = this.actions[var5];
                }
             }
 
-            this.field920 = var4;
+            this.actions = var4;
          }
 
-         this.field920[var1] = var2;
+         this.actions[var1] = var2;
       } catch (RuntimeException var6) {
          throw class158.method3445(var6, "eg.j(" + ')');
       }
@@ -680,7 +680,7 @@ public class class564 {
    public void method829(int var1, String var2, byte var3) {
       try {
          if (this.field1004 == null) {
-            this.field1004 = new class6(16);
+            this.field1004 = new NodeTable(16);
             this.field1004.method2947(new class437(var2), (long)var1);
          } else {
             class437 var4 = (class437)this.field1004.method2942((long)var1);
@@ -779,7 +779,7 @@ public class class564 {
    public void method833(int var1, int var2) {
       try {
          if (this.field1004 != null) {
-            class568 var3 = this.field1004.method2942((long)var1);
+            Node var3 = this.field1004.method2942((long)var1);
             if (var3 != null) {
                var3.method545(-1460969981);
             }
@@ -934,7 +934,7 @@ public class class564 {
    public void method835(int var1, int var2, int var3) {
       try {
          if (this.field1004 == null) {
-            this.field1004 = new class6(16);
+            this.field1004 = new NodeTable(16);
             this.field1004.method2947(new class722(var2), (long)var1);
          } else {
             class722 var4 = (class722)this.field1004.method2942((long)var1);
@@ -991,12 +991,12 @@ public class class564 {
       }
    }
 
-   public class564() {
+   public Widget() {
       this.field944 = class725.field2562;
       this.field945 = false;
       this.field953 = "";
       this.field957 = -1;
-      this.field958 = null;
+      this.parent = null;
       this.field964 = 0;
       this.field960 = 0;
       this.field961 = field991;
@@ -1089,8 +1089,8 @@ public class class564 {
    static final void method841(class744 var0, short var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class321.method857(var3, var4, var0, (byte)-72);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "eg.im(" + ')');

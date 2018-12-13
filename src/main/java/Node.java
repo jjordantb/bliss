@@ -1,7 +1,8 @@
-public class class568 {
-   public class568 field640;
+
+public class Node { // class 568
+   public Node field640;
    public long field641;
-   public class568 field642;
+   public Node field642;
    public static int field643;
    static int field644;
    static int field645;

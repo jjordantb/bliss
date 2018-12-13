@@ -68,10 +68,10 @@ public class class381 {
       }
    }
 
-   public static void method1066(class564[] var0, int var1, int var2, int var3, boolean var4, short var5) {
+   public static void method1066(Widget[] var0, int var1, int var2, int var3, boolean var4, short var5) {
       try {
          for(int var6 = 0; var6 < var0.length; ++var6) {
-            class564 var7 = var0[var6];
+            Widget var7 = var0[var6];
             if (var7 != null) {
                if (var7.field885 != var1) {
                   if (var5 == 255) {

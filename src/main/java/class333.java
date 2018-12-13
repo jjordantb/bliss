@@ -21,15 +21,15 @@ public class class333 {
       }
    }
 
-   static final void method111(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method111(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var2.field3156 -= 2;
          int var4 = var2.field3161[var2.field3156];
          int var5 = var2.field3161[1 + var2.field3156];
          if (-1 == var4 && var5 == -1) {
-            var0.field958 = null;
+            var0.parent = null;
          } else {
-            var0.field958 = class554.method427(var4, var5, -156511736);
+            var0.parent = class554.method427(var4, var5, -156511736);
          }
 
       } catch (RuntimeException var6) {

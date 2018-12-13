@@ -1,4 +1,4 @@
-public abstract class class298 extends class568 {
+public abstract class class298 extends Node {
    volatile boolean field10518 = true;
    int field10519;
    class828 field10520;

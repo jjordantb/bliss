@@ -88,11 +88,11 @@ public class class616 {
          int var2 = var0.field3161[var0.field3156];
          boolean var3 = 1 == var0.field3161[var0.field3156 + 1];
          if (class740.field3211 != null) {
-            class568 var4 = class740.field3211.method2942((long)var2);
+            Node var4 = class740.field3211.method2942((long)var2);
             if (var4 != null && !var3) {
                var4.method545(-1460969981);
             } else if (var4 == null && var3) {
-               var4 = new class568();
+               var4 = new Node();
                class740.field3211.method2947(var4, (long)var2);
             }
          }
@@ -136,7 +136,7 @@ public class class616 {
    static final void method5216(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          int var4 = var0.field3161[--var0.field3156];
          class785 var5 = class452.field7216.method5148(var4, -2087973893);
          if (var5.method2380(1883696427)) {

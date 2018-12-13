@@ -16,8 +16,8 @@ public class class157 {
    static final void method3516(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-37);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-37);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class743.method1911(var3, var4, var0, 2137737023);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "er.mu(" + ')');
@@ -35,8 +35,8 @@ public class class157 {
    static final void method3518(class744 var0, short var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)51);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)51);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class905.method6346(var3, var4, var0, 788007280);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "er.nd(" + ')');

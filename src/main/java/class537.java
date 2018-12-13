@@ -83,7 +83,7 @@ public class class537 implements class195 {
       }
    }
 
-   static final void method2317(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method2317(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          String var4 = (String)var2.field3157[--var2.field3158];
          if (class960.method2212(var4, var2, -637719265) != null) {

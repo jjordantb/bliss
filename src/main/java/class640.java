@@ -172,14 +172,14 @@ public class class640 {
    static final void method6188(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)21);
+         Widget var3 = class449.method3756(var2, (byte)21);
          var0.field3161[++var0.field3156 - 1] = var3.field1009;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "jn.ri(" + ')');
       }
    }
 
-   static final void method6189(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method6189(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var0.field941 = var2.field3161[--var2.field3156] == 1;
          class814.method2932(var0, 664370665);
@@ -188,7 +188,7 @@ public class class640 {
       }
    }
 
-   static final void method6190(class564 var0, class131 var1, class744 var2, short var3) {
+   static final void method6190(Widget var0, WidgetContainer var1, class744 var2, short var3) {
       try {
          var0.field962 = (String)var2.field3157[--var2.field3158];
       } catch (RuntimeException var5) {

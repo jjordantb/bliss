@@ -2,7 +2,7 @@ import java.awt.Container;
 import java.io.IOException;
 
 public abstract class class348 {
-   static class357 field220;
+   static MenuItem field220;
    static int field221;
 
    public abstract boolean method175(int var1, byte var2) throws IOException;
@@ -89,7 +89,7 @@ public abstract class class348 {
       }
    }
 
-   static final void method194(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method194(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var2.field3156 -= 4;
          var0.field978 = var2.field3161[var2.field3156];

@@ -14,7 +14,7 @@ public class class420 {
    public int field9704;
    long[] field9705;
    long field9706;
-   class6 field9707;
+   NodeTable field9707;
    int[] field9708;
    public int[] field9709;
    long[] field9710;
@@ -128,7 +128,7 @@ public class class420 {
          if (this.field9707 == null) {
             return null;
          } else {
-            class568 var3 = this.field9707.method2942((long)var1);
+            Node var3 = this.field9707.method2942((long)var1);
             return var3 != null && var3 instanceof class722 ? new Integer(((class722)var3).field3631) : null;
          }
       } catch (RuntimeException var4) {
@@ -141,7 +141,7 @@ public class class420 {
          if (this.field9707 == null) {
             return null;
          } else {
-            class568 var5 = this.field9707.method2942((long)var1);
+            Node var5 = this.field9707.method2942((long)var1);
             if (var5 != null && var5 instanceof class722) {
                int var6 = var3 == 31 ? -1 : (1 << 1 + var3) - 1;
                return new Integer((((class722)var5).field3631 & var6) >>> var2);
@@ -159,7 +159,7 @@ public class class420 {
          if (this.field9707 == null) {
             return null;
          } else {
-            class568 var3 = this.field9707.method2942((long)var1);
+            Node var3 = this.field9707.method2942((long)var1);
             return var3 != null && var3 instanceof class437 ? (String)((class437)var3).field7515 : null;
          }
       } catch (RuntimeException var4) {
@@ -300,7 +300,7 @@ public class class420 {
          }
 
          if (this.field9707 != null) {
-            class568 var4 = this.field9707.method2942((long)var1);
+            Node var4 = this.field9707.method2942((long)var1);
             if (var4 != null) {
                if (var4 instanceof class437) {
                   class437 var5 = (class437)var4;
@@ -319,7 +319,7 @@ public class class420 {
                var4.method545(-1460969981);
             }
          } else {
-            this.field9707 = new class6(4);
+            this.field9707 = new NodeTable(4);
          }
 
          this.field9707.method2947(new class437(var2), (long)var1);
@@ -332,7 +332,7 @@ public class class420 {
    boolean method5786(int var1, int var2, byte var3) {
       try {
          if (this.field9707 != null) {
-            class568 var4 = this.field9707.method2942((long)var1);
+            Node var4 = this.field9707.method2942((long)var1);
             if (var4 != null) {
                if (var4 instanceof class722) {
                   class722 var5 = (class722)var4;
@@ -347,7 +347,7 @@ public class class420 {
                var4.method545(-1460969981);
             }
          } else {
-            this.field9707 = new class6(4);
+            this.field9707 = new NodeTable(4);
          }
 
          this.field9707.method2947(new class722(var2), (long)var1);
@@ -365,7 +365,7 @@ public class class420 {
          var2 <<= var3;
          var2 &= var8;
          if (this.field9707 != null) {
-            class568 var9 = this.field9707.method2942((long)var1);
+            Node var9 = this.field9707.method2942((long)var1);
             if (var9 != null) {
                if (var9 instanceof class722) {
                   class722 var10 = (class722)var9;
@@ -381,7 +381,7 @@ public class class420 {
                var9.method545(-1460969981);
             }
          } else {
-            this.field9707 = new class6(4);
+            this.field9707 = new NodeTable(4);
          }
 
          this.field9707.method2947(new class722(var2), (long)var1);
@@ -394,7 +394,7 @@ public class class420 {
    boolean method5788(int var1, long var2) {
       try {
          if (this.field9707 != null) {
-            class568 var4 = this.field9707.method2942((long)var1);
+            Node var4 = this.field9707.method2942((long)var1);
             if (var4 != null) {
                if (var4 instanceof class852) {
                   class852 var5 = (class852)var4;
@@ -409,7 +409,7 @@ public class class420 {
                var4.method545(-1460969981);
             }
          } else {
-            this.field9707 = new class6(4);
+            this.field9707 = new NodeTable(4);
          }
 
          this.field9707.method2947(new class852(var2), (long)var1);
@@ -529,7 +529,7 @@ public class class420 {
             if (var3 >= 3) {
                var5 = var1.method6374();
                if (var5 > 0) {
-                  this.field9707 = new class6(var5 < 16 ? class18.method3687(var5, (byte)16) : 16);
+                  this.field9707 = new NodeTable(var5 < 16 ? class18.method3687(var5, (byte)16) : 16);
 
                   while(var5-- > 0) {
                      int var6 = var1.method6420((byte)-32);
@@ -587,7 +587,7 @@ public class class420 {
          if (this.field9707 == null) {
             return null;
          } else {
-            class568 var3 = this.field9707.method2942((long)var1);
+            Node var3 = this.field9707.method2942((long)var1);
             return var3 != null && var3 instanceof class852 ? new Long(((class852)var3).field8727) : null;
          }
       } catch (RuntimeException var4) {

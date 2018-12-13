@@ -38,7 +38,7 @@ public class class575 implements Runnable {
       try {
          this.field143 = this.field142;
          this.field142 = var1;
-         this.field144 = class27.method3468((byte)1);
+         this.field144 = class27.resetTimer((byte)1);
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "jf.p(" + ')');
       }
@@ -106,14 +106,14 @@ public class class575 implements Runnable {
    public void run() {
       try {
          while(!this.field140) {
-            long var1 = class27.method3468((byte)1);
+            long var1 = class27.resetTimer((byte)1);
             synchronized(this) {
                try {
                   ++this.field145;
                   if (this.field142 instanceof class650) {
                      this.field142.method6325(this.field149, 2139338781);
                   } else {
-                     long var4 = class27.method3468((byte)1);
+                     long var4 = class27.resetTimer((byte)1);
                      if (class593.field1623 != null && this.field143 != null && this.field143.method6316(73548607) != 0 && this.field144 >= var4 - (long)this.field143.method6316(-462627527)) {
                         int var6 = (int)((var4 - this.field144) * 255L / (long)this.field143.method6316(-362403732));
                         int var7 = 255 - var6;
@@ -169,7 +169,7 @@ public class class575 implements Runnable {
                }
             }
 
-            long var11 = class27.method3468((byte)1);
+            long var11 = class27.resetTimer((byte)1);
             int var13 = (int)(20L - (var11 - var1));
             if (var13 > 0) {
                class764.method2745((long)var13);
@@ -252,7 +252,7 @@ public class class575 implements Runnable {
    static final void method126(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field935;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "jf.pe(" + ')');
@@ -271,8 +271,8 @@ public class class575 implements Runnable {
    static final void method128(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-71);
-         var0.field3157[++var0.field3158 - 1] = var3.field937;
+         Widget var3 = class449.method3756(var2, (byte)-71);
+         var0.field3157[++var0.field3158 - 1] = var3.text;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "jf.rk(" + ')');
       }

@@ -1,4 +1,4 @@
-public class class256 extends class568 {
+public class class256 extends Node {
    public int field8100;
    public int field8101;
 
@@ -14,7 +14,7 @@ public class class256 extends class568 {
    static final void method4488(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-86);
+         Widget var3 = class449.method3756(var2, (byte)-86);
          if (var3.field953 == null) {
             var0.field3157[++var0.field3158 - 1] = "";
          } else {

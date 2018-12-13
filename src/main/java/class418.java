@@ -114,7 +114,7 @@ public class class418 {
 
          if (!this.field9572.method2953(var5, -759773054)) {
             this.field9572.method2949(var5, (byte)-51);
-            this.field9555 = class27.method3468((byte)1);
+            this.field9555 = class27.resetTimer((byte)1);
             this.field9566 = this.field9567 = var3;
             if (this.field9566 != 0) {
                this.field9553.method2949(this.field9571, (byte)-80);
@@ -237,7 +237,7 @@ public class class418 {
    void method5679(int var1) {
       try {
          if (this.field9567 >= 0) {
-            long var2 = class27.method3468((byte)1);
+            long var2 = class27.resetTimer((byte)1);
             this.field9567 = (int)((long)this.field9567 * -3495665755018364023L - (var2 - this.field9555) * 1117911945L) * -1051268423;
             if (this.field9567 > 0) {
                this.field9571.method2950(this.field9564, this.field9553, this.field9572, (float)(this.field9566 - this.field9567) / (float)this.field9566, 937279263);
@@ -304,8 +304,8 @@ public class class418 {
    static final void method5684(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          class458.method3830(var3, var4, var0, -1905856494);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "pd.ir(" + ')');

@@ -28,12 +28,12 @@ public class class458 {
       }
    }
 
-   static final void method3830(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method3830(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var0.field909 = 6;
          var0.field1032 = null;
          var0.field876 = var2.field3161[--var2.field3156];
-         if (-1 == var0.field879 && !var1.field1101) {
+         if (-1 == var0.field879 && !var1.closed) {
             class535.method2284(var0.field867, 1613777968);
          }
 

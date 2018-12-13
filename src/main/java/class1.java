@@ -1,5 +1,5 @@
 public final class class1 {
-   class6 field4949;
+   NodeTable field4949;
    class514 field4950;
    int field4951;
    int field4952;
@@ -226,7 +226,7 @@ public final class class1 {
          ;
       }
 
-      this.field4949 = new class6(var3);
+      this.field4949 = new NodeTable(var3);
    }
 
    static final void method2985(class744 var0, int var1) {
@@ -251,7 +251,7 @@ public final class class1 {
 
    public static int method2987(int var0, int var1, boolean var2, byte var3) {
       try {
-         class163 var4 = class213.method3812(var0, var2, 1780285943);
+         ItemNode var4 = class213.method3812(var0, var2, 1780285943);
          if (var4 == null) {
             return 0;
          } else if (var1 == -1) {
@@ -259,9 +259,9 @@ public final class class1 {
          } else {
             int var5 = 0;
 
-            for(int var6 = 0; var6 < var4.field6620.length; ++var6) {
-               if (var1 == var4.field6619[var6]) {
-                  var5 += var4.field6620[var6];
+            for(int var6 = 0; var6 < var4.itemStackSizes.length; ++var6) {
+               if (var1 == var4.itemIds[var6]) {
+                  var5 += var4.itemStackSizes[var6];
                }
             }
 

@@ -1,7 +1,7 @@
 import java.util.Stack;
 
 public final class class221 {
-   class6 field7345;
+   NodeTable field7345;
    int field7346;
    public static int field7347;
 
@@ -12,7 +12,7 @@ public final class class221 {
    public void method4029(int var1, int var2, int var3) {
       try {
          if (this.field7345 == null) {
-            this.field7345 = new class6(this.field7346);
+            this.field7345 = new NodeTable(this.field7346);
          }
 
          class722 var4 = (class722)this.field7345.method2942((long)var1);
@@ -86,8 +86,8 @@ public final class class221 {
    static final void method4034(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)73);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)73);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class348.method194(var3, var4, var0, -1870622749);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "cz.cn(" + ')');
@@ -97,15 +97,15 @@ public final class class221 {
    static final void method4035(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
-         class131 var4 = var2.field8254;
+         Widget var3 = var2.field8255;
+         WidgetContainer var4 = var2.field8254;
          Animation.method3568(var3, var4, var0, (byte)-38);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "cz.dd(" + ')');
       }
    }
 
-   static final void method4036(class564 var0, class131 var1, class744 var2, short var3) {
+   static final void method4036(Widget var0, WidgetContainer var1, class744 var2, short var3) {
       try {
          int var4 = var2.field3161[--var2.field3156];
          if (var4 != var0.field1015) {
@@ -123,7 +123,7 @@ public final class class221 {
             class814.method2932(var0, -1503687245);
          }
 
-         if (-1 == var0.field879 && !var1.field1101) {
+         if (-1 == var0.field879 && !var1.closed) {
             class589.method216(var0.field867, -1349352488);
          }
 
@@ -132,9 +132,9 @@ public final class class221 {
       }
    }
 
-   public static String method4037(class357 var0, int var1) {
+   public static String method4037(MenuItem var0, int var1) {
       try {
-         return !class602.field8645 && var0 != null ? var0.field1707 : "";
+         return !class602.field8645 && var0 != null ? var0.action : "";
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "cz.az(" + ')');
       }

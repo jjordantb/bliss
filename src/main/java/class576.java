@@ -33,7 +33,7 @@ public abstract class class576 implements class54 {
          this.method60(var1, var3, var4, 589039750);
          this.method59(var1, var3, var4, -2096633602);
          String var5 = class302.field3768.method119((short)8868);
-         if (class27.method3468((byte)1) - this.field71 > 10000L) {
+         if (class27.resetTimer((byte)1) - this.field71 > 10000L) {
             var5 = var5 + " (" + class302.field3768.method114(-1233866115).field7500 + ")";
          }
 
@@ -70,7 +70,7 @@ public abstract class class576 implements class54 {
                long var5 = this.field71 - class302.field3768.method120(-2093041337);
                if (var5 > 0L) {
                   long var7 = var5 * 10000L / (long)var2 * (long)(var4 - var2);
-                  long var9 = (class27.method3468((byte)1) - this.field71) * 10000L;
+                  long var9 = (class27.resetTimer((byte)1) - this.field71) * 10000L;
                   if (var9 < var7) {
                      var3 = (int)(100L * var9 * (long)(var4 - var2) / var7 + (long)(100 * var2));
                   } else {
@@ -80,7 +80,7 @@ public abstract class class576 implements class54 {
             }
          } else {
             this.field66 = var2;
-            this.field71 = class27.method3468((byte)1);
+            this.field71 = class27.resetTimer((byte)1);
          }
 
          return var3;
@@ -89,7 +89,7 @@ public abstract class class576 implements class54 {
       }
    }
 
-   static final void method67(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method67(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          if (5 == var0.field869) {
             class912.method6480(var0, var1, var2, (short)-9019);
@@ -129,7 +129,7 @@ public abstract class class576 implements class54 {
       }
    }
 
-   static final void method71(class564 var0, int var1, int var2, int var3, class744 var4, int var5) {
+   static final void method71(Widget var0, int var1, int var2, int var3, class744 var4, int var5) {
       try {
          if (var0.field910 == null) {
             if (var2 == 0) {

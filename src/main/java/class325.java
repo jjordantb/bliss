@@ -372,7 +372,7 @@ public abstract class class325 extends class848 {
          this.method565();
          this.field795.method4726();
 
-         for(class568 var1 = this.field666.method1281(1389781376); var1 != null; var1 = this.field666.method1283((byte)-7)) {
+         for(Node var1 = this.field666.method1281(1389781376); var1 != null; var1 = this.field666.method1283((byte)-7)) {
             ((class820)var1).method2995();
          }
 

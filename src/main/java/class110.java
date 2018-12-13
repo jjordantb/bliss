@@ -16,11 +16,11 @@ public class class110 {
    static final void method1384(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          int var4 = var0.field3161[--var0.field3156];
          --var4;
-         if (var3.field920 != null && var4 < var3.field920.length && var3.field920[var4] != null) {
-            var0.field3157[++var0.field3158 - 1] = var3.field920[var4];
+         if (var3.actions != null && var4 < var3.actions.length && var3.actions[var4] != null) {
+            var0.field3157[++var0.field3158 - 1] = var3.actions[var4];
          } else {
             var0.field3157[++var0.field3158 - 1] = "";
          }

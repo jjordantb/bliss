@@ -105,8 +105,8 @@ public class class111 {
    static final void method1356(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)22);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)22);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class492.method4395(var3, var4, var0, (byte)-127);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "lh.el(" + ')');
@@ -169,7 +169,7 @@ public class class111 {
       }
    }
 
-   public static class357 method1360(int var0) {
+   public static MenuItem method1360(int var0) {
       try {
          return class713.field3542;
       } catch (RuntimeException var2) {

@@ -32,8 +32,8 @@ public class class78 {
    static final void method1126(boolean var0, class744 var1, byte var2) {
       try {
          class237 var3 = var1.field3178 ? var1.field3164 : var1.field3163;
-         class564 var4 = var3.field8255;
-         class131 var5 = var3.field8254;
+         Widget var4 = var3.field8255;
+         WidgetContainer var5 = var3.field8254;
          if (var0) {
             class277.method6634(var5, var4, -1270501871);
          } else {

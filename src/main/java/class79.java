@@ -5,10 +5,10 @@ public class class79 {
       throw new Error();
    }
 
-   static final void method1156(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method1156(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          int var4 = var2.field3161[--var2.field3156];
-         if (var4 == class564.field991 || class564.field844 == var4 || class564.field931 == var4) {
+         if (var4 == Widget.field991 || Widget.field844 == var4 || Widget.field931 == var4) {
             var0.field961 = var4;
          }
 

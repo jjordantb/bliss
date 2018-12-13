@@ -10,7 +10,7 @@ public class class660 {
    static int field9635 = 1;
    public static class660[] field9636 = new class660[16];
    boolean field9637 = false;
-   public static class6 field9638 = new class6(16);
+   public static NodeTable field9638 = new NodeTable(16);
    static class1 field9639 = new class1(64);
    public int field9640;
    public long field9641;
@@ -106,7 +106,7 @@ public class class660 {
    static final void method5747(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)2);
+         Widget var3 = class449.method3756(var2, (byte)2);
          var0.field3161[++var0.field3156 - 1] = var3.field881;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "hy.qh(" + ')');

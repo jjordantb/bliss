@@ -1,4 +1,4 @@
-public class class683 extends class568 {
+public class class683 extends Node {
    byte[] field7643 = new byte[128];
    class656[] field7644 = new class656[128];
    byte[] field7645 = new byte[128];

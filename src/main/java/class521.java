@@ -5,10 +5,10 @@ import java.net.URL;
 import java.util.Iterator;
 
 public class class521 implements Iterator {
-   class6 field4350;
-   class568 field4351;
+   NodeTable field4350;
+   Node field4351;
    int field4352;
-   class568 field4353 = null;
+   Node field4353 = null;
 
    public boolean hasNext() {
       try {
@@ -41,7 +41,7 @@ public class class521 implements Iterator {
       }
    }
 
-   public class521(class6 var1) {
+   public class521(NodeTable var1) {
       this.field4350 = var1;
       this.method2748(-751580615);
    }
@@ -61,7 +61,7 @@ public class class521 implements Iterator {
 
    public Object next() {
       try {
-         class568 var1;
+         Node var1;
          if (this.field4350.field4923[this.field4352 - 1] != this.field4351) {
             var1 = this.field4351;
             this.field4351 = var1.field640;
@@ -84,10 +84,10 @@ public class class521 implements Iterator {
       }
    }
 
-   public class568 method2749(int var1) {
+   public Node method2749(int var1) {
       try {
          this.method2748(-751580615);
-         return (class568)this.next();
+         return (Node)this.next();
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "sy.u(" + ')');
       }
@@ -569,7 +569,7 @@ public class class521 implements Iterator {
                         class730.field2793 = var23.method6371() == 1;
                         class730.field2794 = var23.method6371() == 1;
                         class341.field317 = var23.method6375((short)9875);
-                        class722.field3632 = class341.field317 - class27.method3468((byte)1) - var23.method6378((byte)74);
+                        class722.field3632 = class341.field317 - class27.resetTimer((byte)1) - var23.method6378((byte)74);
                         var3 = var23.method6371();
                         class730.field2788 = (var3 & 1) != 0;
                         class419.field9521 = (var3 & 2) != 0;
@@ -578,9 +578,9 @@ public class class521 implements Iterator {
                         class495.field8097 = var23.method6420((byte)-9);
                         class621.field8926 = var23.method6374();
                         class643.field10036 = var23.method6374();
-                        class568.field643 = var23.method6374();
-                        class568.field644 = var23.method6420((byte)39);
-                        class285.field10627 = new class330(class568.field644);
+                        Node.field643 = var23.method6374();
+                        Node.field644 = var23.method6420((byte)39);
+                        class285.field10627 = new class330(Node.field644);
                         (new Thread(class285.field10627)).start();
                         class811.field4653 = var23.method6371();
                         class931.field10299 = var23.method6374();

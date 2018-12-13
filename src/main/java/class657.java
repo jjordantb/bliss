@@ -13,7 +13,7 @@ public class class657 {
       throw new Error();
    }
 
-   static void method5659(class848 var0, class564 var1, int var2) {
+   static void method5659(class848 var0, Widget var1, int var2) {
       try {
          boolean var3 = class85.field1121.method1570(var0, var1.field1005, var1.field1006, var1.field903, -16777216 | var1.field976, var1.field926, var1.field938 ? class923.local.field3388 : null, 467134725) == null;
          if (var3) {
@@ -29,7 +29,7 @@ public class class657 {
    static final void method5660(class744 var0, int var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3161[++var0.field3156 - 1] = var3.field893;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "js.pm(" + ')');

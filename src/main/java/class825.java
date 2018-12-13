@@ -3,6 +3,7 @@ import java.awt.Canvas;
 import java.awt.Dimension;
 
 public class class825 extends class883 {
+
    OpenGL field9054;
    long field9055;
    int field9056;

@@ -1,4 +1,4 @@
-public abstract class class210 extends class568 {
+public abstract class class210 extends Node {
    boolean field7210;
    class13 field7211;
 

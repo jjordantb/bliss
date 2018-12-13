@@ -1,7 +1,7 @@
 public class class320 {
    int field818;
    class514 field819 = new class514();
-   class6 field820;
+   NodeTable field820;
    int field821;
 
    public final void method799(Object var1, class195 var2) {
@@ -117,7 +117,7 @@ public class class320 {
          ;
       }
 
-      this.field820 = new class6(var2);
+      this.field820 = new NodeTable(var2);
    }
 
    public final int method807() {

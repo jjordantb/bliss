@@ -291,7 +291,7 @@ public class class507 {
 
    public int[] method2506(int var1) {
       try {
-         class6 var2 = new class6(16);
+         NodeTable var2 = new NodeTable(16);
          class735.method1803(this.field3969, var2, -518506092);
          int[] var3;
          int var4;
@@ -327,9 +327,9 @@ public class class507 {
          var3 = new int[var2.method2944(1901508554)];
          var4 = 0;
 
-         class568 var6;
+         Node var6;
          for(Iterator var8 = var2.iterator(); var8.hasNext(); var3[var4++] = (int)var6.field641) {
-            var6 = (class568)var8.next();
+            var6 = (Node)var8.next();
          }
 
          return var3;
@@ -426,7 +426,7 @@ public class class507 {
          }
 
          int var1;
-         if (class342.field284 != -1 && class7.field4919 < class27.method3468((byte)1)) {
+         if (class342.field284 != -1 && class7.field4919 < class27.resetTimer((byte)1)) {
             for(var1 = class342.field284; var1 < class342.field289.length; ++var1) {
                if (class342.field289[var1].startsWith("pause")) {
                   int var2 = 5;
@@ -439,7 +439,7 @@ public class class507 {
 
                   class213.method3810("Pausing for " + var2 + " seconds...", 270683370);
                   class342.field284 = var1 + 1;
-                  class7.field4919 = class27.method3468((byte)1) + (long)(1000 * var2);
+                  class7.field4919 = class27.resetTimer((byte)1) + (long)(1000 * var2);
                   return;
                }
 

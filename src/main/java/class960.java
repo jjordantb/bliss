@@ -1,4 +1,4 @@
-public class class960 extends class568 {
+public class class960 extends Node {
    int field3643 = Integer.MIN_VALUE;
    int field3644 = Integer.MIN_VALUE;
    int field3645 = Integer.MAX_VALUE;

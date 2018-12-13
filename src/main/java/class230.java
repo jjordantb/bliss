@@ -661,7 +661,7 @@ public class class230 {
    static final void method4607(class744 var0, byte var1) {
       try {
          class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
-         class564 var3 = var2.field8255;
+         Widget var3 = var2.field8255;
          var0.field3156 -= 2;
          int var4 = var0.field3161[var0.field3156];
          int var5 = var0.field3161[1 + var0.field3156];
@@ -677,7 +677,7 @@ public class class230 {
       }
    }
 
-   public static void method4608(class568 var0, class568 var1, byte var2) {
+   public static void method4608(Node var0, Node var1, byte var2) {
       try {
          if (var0.field642 != null) {
             var0.method545(-1460969981);

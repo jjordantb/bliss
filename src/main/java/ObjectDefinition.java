@@ -71,7 +71,7 @@ public class ObjectDefinition {
    public boolean field2264 = false;
    public boolean field2265 = true;
    public boolean field2266 = false;
-   class6 field2267;
+   NodeTable field2267;
    public int field2268 = -1;
    public int field2269 = 0;
    public int field2270 = 256;
@@ -301,7 +301,7 @@ public class ObjectDefinition {
                var4 = var1.method6371();
                if (this.field2267 == null) {
                   var5 = class18.method3687(var4, (byte)16);
-                  this.field2267 = new class6(var5);
+                  this.field2267 = new NodeTable(var5);
                }
 
                for(var5 = 0; var5 < var4; ++var5) {
@@ -314,7 +314,7 @@ public class ObjectDefinition {
                      var8 = new class722(var1.method6420((byte)-68));
                   }
 
-                  this.field2267.method2947((class568)var8, (long)var7);
+                  this.field2267.method2947((Node)var8, (long)var7);
                }
             }
          } else {

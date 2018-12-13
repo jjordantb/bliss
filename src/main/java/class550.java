@@ -43,7 +43,7 @@ public class class550 extends class14 {
 
    boolean method3583(int var1) {
       try {
-         return !this.field509.isEmpty() || super.field6690 < class27.method3468((byte)1) - 2000L;
+         return !this.field509.isEmpty() || super.field6690 < class27.resetTimer((byte)1) - 2000L;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "adt.u(" + ')');
       }

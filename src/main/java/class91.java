@@ -156,7 +156,7 @@ public class class91 {
 
    }
 
-   static final void method495(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method495(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var2.field3156 -= 2;
          var0.field891 = var2.field3161[var2.field3156];
@@ -178,7 +178,7 @@ public class class91 {
          }
 
          class814.method2932(var0, -830371764);
-         if (-1 == var0.field879 && !var1.field1101) {
+         if (-1 == var0.field879 && !var1.closed) {
             class17.method3694(var0.field867, -754597349);
          }
 

@@ -330,7 +330,7 @@ public class class321 {
       }
    }
 
-   static final void method857(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method857(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var2.field3156 -= 2;
          var0.field966 = var2.field3161[var2.field3156];
@@ -433,7 +433,7 @@ public class class321 {
                   } else if (var0 == 23) {
                      Interactable.method2210((byte)-117);
                   } else if (21 == var0) {
-                     class730.field2697.field8982 = class27.method3468((byte)1);
+                     class730.field2697.field8982 = class27.resetTimer((byte)1);
                      class730.field2697.field8945 = true;
                      Interactable.method2210((byte)-48);
                   } else {
@@ -445,8 +445,8 @@ public class class321 {
                         var9 = class923.local.method1511().field7637;
                         class213.method3810("" + class730.field2697.method5317(-1611682495).field3862[class923.local.field3639].method3888((int)var9.field5296 >> 9, (int)var9.field5299 >> 9, (byte)-102), 417961088);
                      } else if (var0 == 3) {
-                        class213.method3810(class564.field860.method2982(-262201221) + " " + class564.field860.method2978(-480173906), 1301637250);
-                        class213.method3810(class564.field863.method2982(509188014) + " " + class564.field863.method2978(2067697941), 1826870364);
+                        class213.method3810(Widget.field860.method2982(-262201221) + " " + Widget.field860.method2978(-480173906), 1301637250);
+                        class213.method3810(Widget.field863.method2982(509188014) + " " + Widget.field863.method2978(2067697941), 1826870364);
                         class213.method3810(class85.field1121.field2336.method807() + " " + class85.field1121.field2336.method805(), 1449325870);
                      } else if (var0 == 6) {
                         class830.method5375(false, -1663847334);

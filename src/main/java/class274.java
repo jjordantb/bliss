@@ -95,7 +95,7 @@ public class class274 extends class806 {
       return true;
    }
 
-   static final void method6596(class564 var0, class131 var1, class744 var2, byte var3) {
+   static final void method6596(Widget var0, WidgetContainer var1, class744 var2, byte var3) {
       try {
          var0.field921 = var2.field3161[--var2.field3156] == 1;
          class814.method2932(var0, -1121165811);

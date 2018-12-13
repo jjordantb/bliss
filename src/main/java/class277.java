@@ -75,23 +75,23 @@ public class class277 {
       }
    }
 
-   static void method6634(class131 var0, class564 var1, int var2) {
+   static void method6634(WidgetContainer var0, Widget var1, int var2) {
       try {
          if (var1 != null) {
             int var4;
             if (var1.field879 != -1) {
-               class564 var3 = var0.method889(var1.field885, (short)26063);
+               Widget var3 = var0.method889(var1.field885, (short)26063);
                if (var3 != null) {
-                  if (var3.field1018 == var3.field1017) {
-                     var3.field1018 = new class564[var3.field1017.length];
-                     var3.field1018[var3.field1018.length - 1] = var1;
-                     class901.method6351(var3.field1017, 0, var3.field1018, 0, var1.field879);
-                     class901.method6351(var3.field1017, 1 + var1.field879, var3.field1018, var1.field879, var3.field1017.length - var1.field879 - 1);
+                  if (var3.children2 == var3.children1) {
+                     var3.children2 = new Widget[var3.children1.length];
+                     var3.children2[var3.children2.length - 1] = var1;
+                     class901.method6351(var3.children1, 0, var3.children2, 0, var1.field879);
+                     class901.method6351(var3.children1, 1 + var1.field879, var3.children2, var1.field879, var3.children1.length - var1.field879 - 1);
                   } else {
                      var4 = 0;
 
-                     class564[] var5;
-                     for(var5 = var3.field1018; var4 < var5.length; ++var4) {
+                     Widget[] var5;
+                     for(var5 = var3.children2; var4 < var5.length; ++var4) {
                         if (var5[var4] == var1) {
                            if (var2 != -1270501871) {
                               return;
@@ -102,12 +102,12 @@ public class class277 {
 
                      if (var4 < var5.length) {
                         class901.method6351(var5, 1 + var4, var5, var4, var5.length - var4 - 1);
-                        var5[var3.field1018.length - 1] = var1;
+                        var5[var3.children2.length - 1] = var1;
                      }
                   }
                }
             } else {
-               class564[] var7 = var0.method888((byte)61);
+               Widget[] var7 = var0.method888((byte)61);
 
                for(var4 = 0; var4 < var7.length && var1 != var7[var4]; ++var4) {
                   ;

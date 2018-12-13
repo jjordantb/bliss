@@ -54,7 +54,7 @@ public class class232 implements class54 {
       }
    }
 
-   static final void method4660(class564 var0, class131 var1, class744 var2, int var3) {
+   static final void method4660(Widget var0, WidgetContainer var1, class744 var2, int var3) {
       try {
          var0.field942 = var2.field3161[--var2.field3156];
          class814.method2932(var0, -2049323512);
@@ -63,7 +63,7 @@ public class class232 implements class54 {
       }
    }
 
-   static final void method4661(class564 var0, class744 var1, int var2) {
+   static final void method4661(Widget var0, class744 var1, int var2) {
       try {
          int var3 = var1.field3161[--var1.field3156];
          int var4 = var1.field3161[--var1.field3156] - 1;

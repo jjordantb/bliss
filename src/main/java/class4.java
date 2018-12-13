@@ -27,10 +27,10 @@ public final class class4 {
          var0.field3156 -= 2;
          int var2 = var0.field3161[var0.field3156];
          int var3 = var0.field3161[var0.field3156 + 1];
-         if (class382.field1410[var2] == null) {
+         if (class382.widgetContainers[var2] == null) {
             var0.field3161[++var0.field3156 - 1] = 0;
          } else {
-            var0.field3161[++var0.field3156 - 1] = class382.field1410[var2].field1103[var3].field866;
+            var0.field3161[++var0.field3156 - 1] = class382.widgetContainers[var2].widgetsCopy[var3].field866;
          }
 
       } catch (RuntimeException var4) {

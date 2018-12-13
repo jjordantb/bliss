@@ -252,7 +252,7 @@ public class class227 {
       }
    }
 
-   static void method4015(class848 var0, int var1, int var2, class564 var3, int var4, int var5) {
+   static void method4015(class848 var0, int var1, int var2, Widget var3, int var4, int var5) {
       try {
          for(int var6 = 7; var6 >= 0; --var6) {
             for(int var7 = 127; var7 >= 0; --var7) {

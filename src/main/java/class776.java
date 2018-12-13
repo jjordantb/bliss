@@ -57,11 +57,11 @@ public class class776 extends class304 {
 
    public static int method2296(int var0, int var1, boolean var2, int var3) {
       try {
-         class163 var4 = class213.method3812(var0, var2, 692761742);
+         ItemNode var4 = class213.method3812(var0, var2, 692761742);
          if (var4 == null) {
             return -1;
          } else {
-            return var1 >= 0 && var1 < var4.field6619.length ? var4.field6619[var1] : -1;
+            return var1 >= 0 && var1 < var4.itemIds.length ? var4.itemIds[var1] : -1;
          }
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "xm.a(" + ')');

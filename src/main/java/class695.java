@@ -221,7 +221,7 @@ public class class695 {
    static final void method3938(class744 var0, int var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-58);
+         Widget var3 = class449.method3756(var2, (byte)-58);
          var0.field3161[++var0.field3156 - 1] = var3.field935;
       } catch (RuntimeException var4) {
          throw class158.method3445(var4, "jo.rs(" + ')');

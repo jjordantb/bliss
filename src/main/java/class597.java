@@ -134,7 +134,7 @@ public class class597 extends class879 {
             for(int var19 = 0; var19 < var2.field6481.length; ++var19) {
                class606 var20 = var2.field6481[var19];
                if (var12 == var20.field8569) {
-                  class526 var21 = class568.method550(var20.field8570, 222052700);
+                  class526 var21 = Node.method550(var20.field8570, 222052700);
                   if (var21.field3665) {
                      var18 = true;
                   }
@@ -192,7 +192,7 @@ public class class597 extends class879 {
 
          for(var11 = 0; var11 < var2.field6481.length; ++var11) {
             class606 var56 = var2.field6481[var11];
-            class526 var58 = class568.method550(var56.field8570, -919855044);
+            class526 var58 = Node.method550(var56.field8570, -919855044);
             var14 = class543.field3817[var2.field6461[var56.field8569] & '\uffff'] & 16777215;
             var14 |= 255 - (var2.field6459 != null ? var2.field6459[var56.field8569] & 255 : 0) << 24;
             this.field2081[var11] = new class47(var56.field8569, var2.field6476[var56.field8569], var2.field6478[var56.field8569], var2.field6456[var56.field8569], var58.field3663, var58.field3661, var58.field3659, var58.field3660, var58.field3662, var58.field3665, var56.field8571);

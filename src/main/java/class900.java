@@ -10,7 +10,7 @@ public class class900 {
       this.field10374 = var2;
    }
 
-   public static void method6347(class564 var0, int var1, int var2, int var3) {
+   public static void method6347(Widget var0, int var1, int var2, int var3) {
       try {
          if (var0 != null) {
             if (var0.field974 != null) {
@@ -23,7 +23,7 @@ public class class900 {
             class730.field2817 = true;
             class543.field3820 = var0.field867;
             class730.field2818 = var0.field879;
-            class568.field645 = var1;
+            Node.field645 = var1;
             class354.field2139 = var2;
             class730.field2888 = var0.field1005;
             class175.field5075 = var0.field904;

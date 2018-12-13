@@ -1,4 +1,4 @@
-public final class class563 extends class568 {
+public final class class563 extends Node {
    int field1067;
    int field1068;
    public int field1069;
@@ -19,18 +19,18 @@ public final class class563 extends class568 {
 
    public static int method861(int var0, int var1, boolean var2, boolean var3, int var4) {
       try {
-         class163 var5 = class213.method3812(var0, var3, 1819104649);
+         ItemNode var5 = class213.method3812(var0, var3, 1819104649);
          if (var5 == null) {
             return 0;
          } else {
             int var6 = 0;
 
-            for(int var7 = 0; var7 < var5.field6619.length; ++var7) {
-               if (var5.field6619[var7] >= 0 && var5.field6619[var7] < class85.field1121.field2328) {
-                  ItemDefinition var8 = class85.field1121.method1566(var5.field6619[var7]);
+            for(int var7 = 0; var7 < var5.itemIds.length; ++var7) {
+               if (var5.itemIds[var7] >= 0 && var5.itemIds[var7] < class85.field1121.field2328) {
+                  ItemDefinition var8 = class85.field1121.method1566(var5.itemIds[var7]);
                   int var9 = var8.method2683(var1, class452.field7216.method5148(var1, 1149077752).field3822, -2139054269);
                   if (var2) {
-                     var6 += var5.field6620[var7] * var9;
+                     var6 += var5.itemStackSizes[var7] * var9;
                   } else {
                      var6 += var9;
                   }

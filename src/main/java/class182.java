@@ -23,8 +23,8 @@ public class class182 {
    static final void method3304(class744 var0, byte var1) {
       try {
          int var2 = var0.field3161[--var0.field3156];
-         class564 var3 = class449.method3756(var2, (byte)-80);
-         class131 var4 = class382.field1410[var2 >> 16];
+         Widget var3 = class449.method3756(var2, (byte)-80);
+         WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
          class646.method5506(var3, var4, var0, -2017048321);
       } catch (RuntimeException var5) {
          throw class158.method3445(var5, "al.fw(" + ')');
@@ -86,7 +86,7 @@ public class class182 {
    static final void method3309(class744 var0, int var1) {
       try {
          var0.field3161[++var0.field3156 - 1] = (int)(class341.field317 / 60000L);
-         var0.field3161[++var0.field3156 - 1] = (int)((class341.field317 - class27.method3468((byte)1) - class722.field3632) / 60000L);
+         var0.field3161[++var0.field3156 - 1] = (int)((class341.field317 - class27.resetTimer((byte)1) - class722.field3632) / 60000L);
          var0.field3161[++var0.field3156 - 1] = class419.field9521 ? 1 : 0;
       } catch (RuntimeException var3) {
          throw class158.method3445(var3, "al.amh(" + ')');

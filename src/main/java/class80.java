@@ -1,4 +1,4 @@
-public abstract class class80 extends class568 {
+public abstract class class80 extends Node {
    int field1091;
 
    abstract void method870();
