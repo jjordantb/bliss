@@ -3,18 +3,18 @@ public class class0 extends Animable implements class265 {
     byte field4954;
     class770 field4955;
     class719 field4956;
-    int field4957;
-    class240 field4958;
+    int idkID;
+    ObjectDefinitionLoader field4958;
     byte field4959;
     boolean field4960;
     boolean field4961;
     boolean field4962;
     boolean field4963;
 
-    public class0(SceneGraph var1, class848 var2, class240 var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12, int var13, int var14, int var15, int var16, boolean var17) {
+    public class0(SceneGraph var1, class848 var2, ObjectDefinitionLoader var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12, int var13, int var14, int var15, int var16, boolean var17) {
         super(var1, var5, var6, var7, var8, var9, var11, var12, var13, var14, var4.field2241 == 1, class818.method2901(var15, var16, (byte) 27));
         this.field4958 = var3;
-        this.field4957 = var4.field2197;
+        this.idkID = var4.field2197;
         super.field3640 = (byte) var6;
         this.field4960 = var10;
         this.field4954 = (byte) var15;
@@ -127,8 +127,8 @@ public class class0 extends Animable implements class265 {
 
     void method2162(class848 var1, Interactable var2, int var3, int var4, int var5, boolean var6, int var7) {
         try {
-            if (var2 instanceof class729) {
-                class729 var8 = (class729) var2;
+            if (var2 instanceof BoundaryObject) {
+                BoundaryObject var8 = (BoundaryObject) var2;
                 if (this.field4953 != null && var8.field2500 != null) {
                     this.field4953.method5994(var8.field2500, var3, var4, var5, var6);
                 }
@@ -203,7 +203,7 @@ public class class0 extends Animable implements class265 {
 
     class486 method2990(class848 var1, int var2, boolean var3, int var4) {
         try {
-            ObjectDefinition var5 = this.field4958.method4713(this.field4957);
+            ObjectDefinition var5 = this.field4958.getObjectDefinition(this.idkID);
             SceneGraphLevel var6;
             SceneGraphLevel var7;
             if (this.field4960) {
@@ -297,9 +297,9 @@ public class class0 extends Animable implements class265 {
         }
     }
 
-    public int method4551(byte var1) {
+    public int getID() {
         try {
-            return this.field4957;
+            return this.idkID;
         } catch (RuntimeException var3) {
             throw class158.method3445(var3, "wf.a(" + ')');
         }

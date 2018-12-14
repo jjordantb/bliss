@@ -274,7 +274,7 @@ public abstract class class69 implements class217, Runnable, FocusListener, Wind
                 }
             }
 
-            class729.method1703(field1840, (byte) 113);
+            BoundaryObject.method1703(field1840, (byte) 113);
             class246.method4734(527600768);
             field1816 = new class645(new class439(class299.method6554("main_file_cache.dat2", (byte) -19), "rw", 524288000L), 5200, 0);
             field1815 = new class645(new class439(class299.method6554("main_file_cache.idx255", (byte) -21), "rw", 1048576L), 6000, 0);

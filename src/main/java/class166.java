@@ -48,7 +48,7 @@ public class class166 {
                     }
                 }
             } else if (class769.method2260(var0.opcode, (byte) -114)) {
-                ObjectDefinition var7 = class730.field2697.method5283(150013546).method4713((int) (var0.field1701 >>> 32 & 2147483647L));
+                ObjectDefinition var7 = class730.field2697.getObjectDefinitionLoader().getObjectDefinition((int) (var0.field1701 >>> 32 & 2147483647L));
                 if (var7.field2198 != null) {
                     var7 = var7.method1487(class827.field9037, 1956265286);
                 }

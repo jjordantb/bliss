@@ -130,7 +130,7 @@ public class Animation {
                 Actor var5 = null;
                 int var6 = -1;
 
-                for (IterableSceneEntity var7 = var4.field7006; var7 != null; var7 = var7.next) {
+                for (IterableSceneEntity var7 = var4.iterableSceneEntity; var7 != null; var7 = var7.next) {
                     Animable var8 = var7.animable;
                     if (var8 instanceof Actor) {
                         Actor var9 = (Actor) var8;

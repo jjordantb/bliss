@@ -2,18 +2,18 @@ public class class505 extends class824 implements class265 {
     boolean field4133;
     class879 field4134;
     class770 field4135;
-    int field4136;
+    int idkID;
     boolean field4137;
     byte field4138;
-    class240 field4139;
+    ObjectDefinitionLoader field4139;
     boolean field4140;
     class719 field4141;
     boolean field4142;
 
-    public class505(SceneGraph var1, class848 var2, class240 var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, boolean var12) {
+    public class505(SceneGraph var1, class848 var2, ObjectDefinitionLoader var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, boolean var12) {
         super(var1, var7, var8, var9, var5, var6, var4.field2250);
         this.field4139 = var3;
-        this.field4136 = var4.field2197;
+        this.idkID = var4.field2197;
         this.field4137 = var10;
         this.field4138 = (byte) var11;
         this.field4140 = var4.field2214 != 0 && !var10;
@@ -94,7 +94,7 @@ public class class505 extends class824 implements class265 {
 
     class486 method2607(class848 var1, int var2, boolean var3, int var4) {
         try {
-            ObjectDefinition var5 = this.field4139.method4713(this.field4136);
+            ObjectDefinition var5 = this.field4139.getObjectDefinition(this.idkID);
             SceneGraphLevel var6;
             SceneGraphLevel var7;
             if (this.field4137) {
@@ -261,9 +261,9 @@ public class class505 extends class824 implements class265 {
         }
     }
 
-    public int method4551(byte var1) {
+    public int getID() {
         try {
-            return this.field4136;
+            return this.idkID;
         } catch (RuntimeException var3) {
             throw class158.method3445(var3, "wo.a(" + ')');
         }

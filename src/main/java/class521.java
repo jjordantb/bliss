@@ -472,8 +472,8 @@ public class class521 implements Iterator {
                                 class206.field7099 = var23.method6404((byte) -39);
                                 class730.field2759 = var23.method6371() == 1;
                                 class143.field1540 = var23.method6379(-796084606);
-                                class730.field2697.method5283(-1352577967).method4707(class730.field2759, 915103443);
-                                class625.field9752.method463((short) 206).method5283(-884206015).method4707(class730.field2759, 915103443);
+                                class730.field2697.getObjectDefinitionLoader().method4707(class730.field2759, 915103443);
+                                class625.field9752.method463((short) 206).getObjectDefinitionLoader().method4707(class730.field2759, 915103443);
                                 class85.field1121.method1577(class730.field2759, 798055588);
                                 class258.field7913.method13(class730.field2759, (byte) -2);
                             } else {
@@ -764,7 +764,7 @@ public class class521 implements Iterator {
                 return null;
             }
         } catch (RuntimeException var2) {
-            throw class158.method3445(var2, "sy.previous(" + ')');
+            throw class158.method3445(var2, "sy.aSceneEntity(" + ')');
         }
     }
 

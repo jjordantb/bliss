@@ -1,4 +1,4 @@
-public class class240 {
+public class ObjectDefinitionLoader {
     public static int field8387 = 256;
     class25[] field8382 = new class25[4];
     class423 field8383;
@@ -14,7 +14,7 @@ public class class240 {
     class469 field8394;
     class486 field8395 = new class486((Object) null, (Object) null);
 
-    public class240(class469 var1, class423 var2, boolean var3, class180 var4, class180 var5) {
+    public ObjectDefinitionLoader(class469 var1, class423 var2, boolean var3, class180 var4, class180 var5) {
         this.field8394 = var1;
         this.field8383 = var2;
         this.field8384 = var3;
@@ -212,7 +212,7 @@ public class class240 {
         }
     }
 
-    public ObjectDefinition method4713(int var1) {
+    public ObjectDefinition getObjectDefinition(int var1) {
         try {
             class1 var2 = this.field8388;
             ObjectDefinition var3;

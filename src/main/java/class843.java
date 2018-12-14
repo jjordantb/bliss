@@ -74,7 +74,7 @@ public class class843 {
             int var2 = var0.field3161[--var0.field3156];
             Widget var3 = class449.method3756(var2, (byte) -74);
             WidgetContainer var4 = class382.widgetContainers[var2 >> 16];
-            class715.method2098(var3, var4, var0, (byte) -34);
+            WallDecoration.method2098(var3, var4, var0, (byte) -34);
         } catch (RuntimeException var5) {
             throw class158.method3445(var5, "nb.ka(" + ')');
         }

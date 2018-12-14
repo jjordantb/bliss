@@ -244,8 +244,8 @@ public class Player extends Actor {
                 class446 var5 = this.getRegion();
                 int var6 = super.field4048.method5553((byte) 0);
                 SceneTile var7 = super.field3638.field3861[super.field3639][(int) var5.regionOffset.offsetX >> 9][(int) var5.regionOffset.offsetY >> 9];
-                if (var7 != null && var7.field7011 != null) {
-                    int var8 = super.field4086 - var7.field7011.field9059;
+                if (var7 != null && var7.opt2 != null) {
+                    int var8 = super.field4086 - var7.opt2.field9059;
                     super.field4086 = (int) ((float) super.field4086 - (float) var8 / 10.0F);
                 } else {
                     super.field4086 = (int) ((float) super.field4086 - (float) super.field4086 / 10.0F);

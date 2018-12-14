@@ -71,7 +71,7 @@ public final class class673 {
                     var7 = (var6 >> 4 & 7) + class420.field9722;
                     var8 = (var6 & 7) + class82.field1109;
                     var9 = var2.method6409(-1682120369);
-                    ObjectDefinition var26 = class730.field2697.method5283(-527347356).method4713(var9);
+                    ObjectDefinition var26 = class730.field2697.getObjectDefinitionLoader().getObjectDefinition(var9);
                     var11 = var2.method6395(-1014855659);
                     if (var4 == class15.field6912.field6921) {
                         var4 = class15.field6919.field6921;
@@ -199,7 +199,7 @@ public final class class673 {
                         } else if (var0 == class307.field426) {
                             var3 = var2.method6420((byte) -12);
                             var4 = var2.method6371();
-                            class730.field2697.method5283(267585287).method4713(var3).method1481(var4, (byte) 28);
+                            class730.field2697.getObjectDefinitionLoader().getObjectDefinition(var3).method1481(var4, (byte) 28);
                         } else if (class307.field435 == var0) {
                             var3 = var2.method6371();
                             var23 = class730.field2697.getRegionBase(681479919);

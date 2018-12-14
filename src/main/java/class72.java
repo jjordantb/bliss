@@ -74,7 +74,7 @@ public class class72 implements Iterator {
                 throw new NoSuchElementException();
             }
         } catch (RuntimeException var2) {
-            throw class158.method3445(var2, "hw.previous(" + ')');
+            throw class158.method3445(var2, "hw.aSceneEntity(" + ')');
         }
     }
 }

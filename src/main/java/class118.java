@@ -193,7 +193,7 @@ public class class118 {
                 }
 
                 if (var3 != null) {
-                    var0.field1067 = var3.method4551((byte) 29);
+                    var0.field1067 = var3.getID();
                     var0.field1073 = var3.method4548(726839210);
                     var0.field1080 = var3.method4549((short) 24143);
                 } else {

@@ -1,14 +1,14 @@
 public class SceneTile { // 192
 
     public SceneTile field7005;
-    public IterableSceneEntity field7006;
-    public class676 field7007; // Boundary ?
-    public class676 field7008; // Boundary ?
-    public class732 field7009; // boundary decor?
-    public class732 field7010;// boundary decor?
-    public class824 field7011;
+    public IterableSceneEntity iterableSceneEntity;
+    public class676 boundaryObject; // Boundary ?
+    public class676 boundaryObject2; // Boundary ?
+    public class732 wallDecoration; // boundary decor?
+    public class732 wallDecoration2;// boundary decor?
+    public class824 opt2;
     public byte floorLevel;
-    class168 field7012;
+    class168 opt1;
     short field7013;
     short field7014;
     short field7015;

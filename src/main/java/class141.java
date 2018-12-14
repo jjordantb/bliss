@@ -2,11 +2,11 @@ final class class141 implements class768 {
     static IterableSceneEntity method1092(Animable var0, byte var1) {
         try {
             IterableSceneEntity var2;
-            if (IterableSceneEntity.previous == null) {
+            if (IterableSceneEntity.aSceneEntity == null) {
                 var2 = new IterableSceneEntity();
             } else {
-                var2 = IterableSceneEntity.previous;
-                IterableSceneEntity.previous = IterableSceneEntity.previous.next;
+                var2 = IterableSceneEntity.aSceneEntity;
+                IterableSceneEntity.aSceneEntity = IterableSceneEntity.aSceneEntity.next;
                 var2.next = null;
                 --IterableSceneEntity.index;
             }

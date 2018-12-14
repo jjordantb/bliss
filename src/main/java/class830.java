@@ -79,7 +79,7 @@ public class class830 implements class311 {
                 class851.field8731.method2530((byte) 90);
                 class980.field3196.method4148(-176522889);
                 class662.field9736.method5717((byte) -92);
-                class730.field2697.method5283(1825433072).method4710(1390466939);
+                class730.field2697.getObjectDefinitionLoader().method4710(1390466939);
                 class258.field7913.method15(-862794511);
                 class85.field1121.method1573((short) 23106);
                 class936.field10313.method2254(-726986844);

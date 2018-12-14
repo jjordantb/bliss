@@ -123,7 +123,7 @@ public class class614 {
             if (var2 == null) {
                 return null;
             } else {
-                return var2.method4551((byte) 42) != this.field8886 ? null : var2;
+                return var2.getID() != this.field8886 ? null : var2;
             }
         } catch (RuntimeException var3) {
             throw class158.method3445(var3, "qz.f(" + ')');

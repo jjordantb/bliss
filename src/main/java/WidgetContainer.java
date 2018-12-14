@@ -48,7 +48,7 @@ public class WidgetContainer {
         try {
             long var4 = 4194304L;
             long var6 = Long.MIN_VALUE;
-            ObjectDefinition var8 = class730.field2697.method5283(-1623210152).method4713(var0.method4551((byte) 18));
+            ObjectDefinition var8 = class730.field2697.getObjectDefinitionLoader().getObjectDefinition(var0.getID());
             long var9 = (long) (var1 | var2 << 7 | var0.method4548(726839210) << 14 | var0.method4549((short) 11182) << 20 | 1073741824);
             if (var8.field2214 == 0) {
                 var9 |= var6;
@@ -58,7 +58,7 @@ public class WidgetContainer {
                 var9 |= var4;
             }
 
-            var9 |= (long) var0.method4551((byte) 34) << 32;
+            var9 |= (long) var0.getID() << 32;
             return var9;
         } catch (RuntimeException var12) {
             throw class158.method3445(var12, "ev.c(" + ')');

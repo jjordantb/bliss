@@ -6,7 +6,7 @@ public class class508 extends Node {
     static final void method2498(int var0, int var1, int var2, int var3, byte var4) {
         try {
             if (var0 - var2 >= class381.field1416 && var2 + var0 <= class381.field1413 && var1 - var2 >= class381.field1414 && var1 + var2 <= class381.field1415) {
-                class240.method4714(var0, var1, var2, var3, -586727793);
+                ObjectDefinitionLoader.method4714(var0, var1, var2, var3, -586727793);
             } else {
                 class353.method1381(var0, var1, var2, var3, 179222192);
             }

@@ -37,9 +37,9 @@ public class class858 implements class70 {
             int var3 = var0.field3161[var0.field3156 + 1];
             class785 var4 = class452.field7216.method5148(var3, -1869114423);
             if (var4.method2380(1883696427)) {
-                var0.field3157[++var0.field3158 - 1] = class730.field2697.method5283(-1837734772).method4713(var2).method1480(var3, var4.field3823, 1595133323);
+                var0.field3157[++var0.field3158 - 1] = class730.field2697.getObjectDefinitionLoader().getObjectDefinition(var2).method1480(var3, var4.field3823, 1595133323);
             } else {
-                var0.field3161[++var0.field3156 - 1] = class730.field2697.method5283(767453715).method4713(var2).method1486(var3, var4.field3822, (byte) 2);
+                var0.field3161[++var0.field3156 - 1] = class730.field2697.getObjectDefinitionLoader().getObjectDefinition(var2).method1486(var3, var4.field3822, (byte) 2);
             }
 
         } catch (RuntimeException var5) {

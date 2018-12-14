@@ -41,7 +41,7 @@ public class class554 implements Runnable {
         try {
             if (class602.field8673 < 410) {
                 NpcDefinition var3 = var0.field1637;
-                String var4 = var0.field1633;
+                String var4 = var0.name;
                 if (var3.field9924 != null) {
                     var3 = var3.method6110(class827.field9037, 1662486316);
                     if (var3 == null) {
@@ -121,7 +121,7 @@ public class class554 implements Runnable {
                                 for (var6 = 0; var6 < var12.length; ++var6) {
                                     if (var12[var6] != null && (var12[var6].equalsIgnoreCase(class814.field4780.method2927(class321.field1066, -875414210)) || var12[var6].equalsIgnoreCase(class814.field4779.method2927(class321.field1066, -875414210)))) {
                                         var7 = 0;
-                                        if (!class923.local.field3403 && !var0.field1633.equalsIgnoreCase("Chicken God") && !var0.field1633.equalsIgnoreCase("WildyWyrm") && var0.field1636 > class923.local.field3385) {
+                                        if (!class923.local.field3403 && !var0.name.equalsIgnoreCase("Chicken God") && !var0.name.equalsIgnoreCase("WildyWyrm") && var0.field1636 > class923.local.field3385) {
                                             var7 = 2000;
                                         }
 
@@ -184,7 +184,7 @@ public class class554 implements Runnable {
                 var2 = 0;
             }
 
-            class729.method1700(var2 == 1, -1375344490);
+            BoundaryObject.method1700(var2 == 1, -1375344490);
         } catch (RuntimeException var3) {
             throw class158.method3445(var3, "fr.ail(" + ')');
         }
@@ -228,9 +228,9 @@ public class class554 implements Runnable {
         }
     }
 
-    static final boolean method428(class240 var0, int var1, int var2, byte var3) {
+    static final boolean method428(ObjectDefinitionLoader var0, int var1, int var2, byte var3) {
         try {
-            ObjectDefinition var4 = var0.method4713(var1);
+            ObjectDefinition var4 = var0.getObjectDefinition(var1);
             if (11 == var2) {
                 var2 = 10;
             }

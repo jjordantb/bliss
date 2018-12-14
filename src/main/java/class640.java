@@ -32,7 +32,7 @@ public class class640 {
     static final void method6187(class563 var0, boolean var1, byte var2) {
         try {
             if (var0.field1079) {
-                if (var0.field1067 < 0 || class554.method428(class730.field2697.method5283(681883413), var0.field1067, var0.field1073, (byte) -3)) {
+                if (var0.field1067 < 0 || class554.method428(class730.field2697.getObjectDefinitionLoader(), var0.field1067, var0.field1073, (byte) -3)) {
                     if (!var1) {
                         class745.method2596(var0.field1070, var0.field1076, var0.field1069, var0.field1074, var0.field1067, var0.field1080, var0.field1073, -1, -1628738260);
                     } else {
@@ -41,7 +41,7 @@ public class class640 {
 
                     var0.method545(-1460969981);
                 }
-            } else if (var0.field1078 && var0.field1069 >= 1 && var0.field1074 >= 1 && var0.field1069 <= class730.field2697.method5271(-2002349453) - 2 && var0.field1074 <= class730.field2697.method5272(1538814162) - 2 && (var0.field1075 < 0 || class554.method428(class730.field2697.method5283(-2135125377), var0.field1075, var0.field1072, (byte) -66))) {
+            } else if (var0.field1078 && var0.field1069 >= 1 && var0.field1074 >= 1 && var0.field1069 <= class730.field2697.method5271(-2002349453) - 2 && var0.field1074 <= class730.field2697.method5272(1538814162) - 2 && (var0.field1075 < 0 || class554.method428(class730.field2697.getObjectDefinitionLoader(), var0.field1075, var0.field1072, (byte) -66))) {
                 if (!var1) {
                     class745.method2596(var0.field1070, var0.field1076, var0.field1069, var0.field1074, var0.field1075, var0.field1068, var0.field1072, -1, 628810012);
                 } else {

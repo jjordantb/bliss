@@ -312,7 +312,7 @@ public abstract class class138 {
 
                         if (var35.field7022 instanceof class265) {
                             class265 var46 = (class265) var35.field7022;
-                            ObjectDefinition var50 = class730.field2697.method5283(-151154213).method4713(var46.method4551((byte) 32));
+                            ObjectDefinition var50 = class730.field2697.getObjectDefinitionLoader().getObjectDefinition(var46.getID());
                             if (var50.field2198 != null) {
                                 var50 = var50.method1487(class827.field9037, 2026923830);
                             }

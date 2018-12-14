@@ -11,12 +11,12 @@ public class SceneGraph {
     public SceneGraphLevel[] field3862;
     public SceneTile[][][] field3863; // onw is dx
     public SceneGraphLevel[] field3864;
-    public SceneTile[][][] field3865; // one is ogl
+    public SceneTile[][][] oglTiles; // one is ogl
     public SceneGraphLevel[] field3866;
     public class472 field3873;
     public int field3893;
     public int field3894;
-    Interactable[] field3848;
+    Interactable[] npcsIThink;
     float[] field3850;
     int field3851 = 16;
     int field3852;
@@ -35,9 +35,9 @@ public class SceneGraph {
     class639[] field3874;
     int field3875 = 5029;
     int field3876 = 10093;
-    Interactable[] field3877;
+    Interactable[] interactables2;
     int field3878;
-    Interactable[] field3879;
+    Interactable[] interactables3;
     int field3880;
     int field3881;
     int field3882 = 5043;
@@ -57,7 +57,7 @@ public class SceneGraph {
     long[][][] field3899;
     int field3900 = 65391;
     int field3901;
-    Interactable[] field3902;
+    Interactable[] interactables4;
     class321[] field3903;
     boolean[] field3904;
     int field3905;
@@ -93,7 +93,7 @@ public class SceneGraph {
             this.field3870 = new byte[this.field3859][this.field3894];
             this.field3871 = new byte[this.field3859][this.field3894];
             this.field3872 = new byte[this.field3859][this.field3894];
-            this.field3865 = new SceneTile[1][this.field3859][this.field3894];
+            this.oglTiles = new SceneTile[1][this.field3859][this.field3894];
             this.field3866 = new SceneGraphLevel[1];
         }
 
@@ -105,12 +105,12 @@ public class SceneGraph {
         }
 
         this.method2446(false, -740850409);
-        this.field3877 = new Interactable[2];
-        this.field3902 = new Interactable[2];
-        this.field3879 = new Interactable[2];
+        this.interactables2 = new Interactable[2];
+        this.interactables4 = new Interactable[2];
+        this.interactables3 = new Interactable[2];
         this.field3860 = new Interactable[10093];
         this.field3880 = 0;
-        this.field3848 = new Interactable[5029];
+        this.npcsIThink = new Interactable[5029];
         this.field3905 = 0;
         this.field3884 = new Animable[5043];
         this.field3886 = 0;
@@ -175,10 +175,10 @@ public class SceneGraph {
             if (var5 == null) {
                 return null;
             } else {
-                this.method2424(var5.field7011, -144193556);
-                if (var5.field7011 != null) {
-                    class824 var6 = var5.field7011;
-                    var5.field7011 = null;
+                this.method2424(var5.opt2, -144193556);
+                if (var5.opt2 != null) {
+                    class824 var6 = var5.opt2;
+                    var5.opt2 = null;
                     return var6;
                 } else {
                     return null;
@@ -210,31 +210,31 @@ public class SceneGraph {
             for (int var5 = 0; var5 < 3; ++var5) {
                 SceneTile var6 = this.field3861[var5][var1][var2] = this.field3861[var5 + 1][var1][var2];
                 if (var6 != null) {
-                    for (IterableSceneEntity var7 = var6.field7006; var7 != null; var7 = var7.next) {
+                    for (IterableSceneEntity var7 = var6.iterableSceneEntity; var7 != null; var7 = var7.next) {
                         Animable var8 = var7.animable;
                         if (var1 == var8.field8299 && var8.field8296 == var2) {
                             --var8.field3639;
                         }
                     }
 
-                    if (var6.field7011 != null) {
-                        --var6.field7011.field3639;
+                    if (var6.opt2 != null) {
+                        --var6.opt2.field3639;
                     }
 
-                    if (var6.field7007 != null) {
-                        --var6.field7007.field3639;
+                    if (var6.boundaryObject != null) {
+                        --var6.boundaryObject.field3639;
                     }
 
-                    if (var6.field7008 != null) {
-                        --var6.field7008.field3639;
+                    if (var6.boundaryObject2 != null) {
+                        --var6.boundaryObject2.field3639;
                     }
 
-                    if (var6.field7009 != null) {
-                        --var6.field7009.field3639;
+                    if (var6.wallDecoration != null) {
+                        --var6.wallDecoration.field3639;
                     }
 
-                    if (var6.field7010 != null) {
-                        --var6.field7010.field3639;
+                    if (var6.wallDecoration2 != null) {
+                        --var6.wallDecoration2.field3639;
                     }
                 }
             }
@@ -361,34 +361,34 @@ public class SceneGraph {
         try {
             SceneTile var7 = this.method2406(var1, var2, var3, 1985350813);
             if (var7 != null) {
-                var7.field7007 = var4;
-                var7.field7008 = var5;
+                var7.boundaryObject = var4;
+                var7.boundaryObject2 = var5;
                 int var8 = this.field3862 == this.field3866 ? 1 : 0;
                 if (var4.method2206((byte) 13)) {
                     if (var4.method2183((short) 255)) {
-                        var4.field3637 = this.field3902[var8];
-                        this.field3902[var8] = var4;
+                        var4.field3637 = this.interactables4[var8];
+                        this.interactables4[var8] = var4;
                     } else {
-                        var4.field3637 = this.field3877[var8];
-                        this.field3877[var8] = var4;
+                        var4.field3637 = this.interactables2[var8];
+                        this.interactables2[var8] = var4;
                     }
                 } else {
-                    var4.field3637 = this.field3879[var8];
-                    this.field3879[var8] = var4;
+                    var4.field3637 = this.interactables3[var8];
+                    this.interactables3[var8] = var4;
                 }
 
                 if (var5 != null) {
                     if (var5.method2206((byte) 13)) {
                         if (var5.method2183((short) 255)) {
-                            var5.field3637 = this.field3902[var8];
-                            this.field3902[var8] = var5;
+                            var5.field3637 = this.interactables4[var8];
+                            this.interactables4[var8] = var5;
                         } else {
-                            var5.field3637 = this.field3877[var8];
-                            this.field3877[var8] = var5;
+                            var5.field3637 = this.interactables2[var8];
+                            this.interactables2[var8] = var5;
                         }
                     } else {
-                        var5.field3637 = this.field3879[var8];
-                        this.field3879[var8] = var5;
+                        var5.field3637 = this.interactables3[var8];
+                        this.interactables3[var8] = var5;
                     }
                 }
             }
@@ -402,34 +402,34 @@ public class SceneGraph {
         try {
             SceneTile var7 = this.method2406(var1, var2, var3, 937547322);
             if (var7 != null) {
-                var7.field7009 = var4;
-                var7.field7010 = var5;
+                var7.wallDecoration = var4;
+                var7.wallDecoration2 = var5;
                 int var8 = this.field3862 == this.field3866 ? 1 : 0;
                 if (var4.method2206((byte) 13)) {
                     if (var4.method2183((short) 255)) {
-                        var4.field3637 = this.field3902[var8];
-                        this.field3902[var8] = var4;
+                        var4.field3637 = this.interactables4[var8];
+                        this.interactables4[var8] = var4;
                     } else {
-                        var4.field3637 = this.field3877[var8];
-                        this.field3877[var8] = var4;
+                        var4.field3637 = this.interactables2[var8];
+                        this.interactables2[var8] = var4;
                     }
                 } else {
-                    var4.field3637 = this.field3879[var8];
-                    this.field3879[var8] = var4;
+                    var4.field3637 = this.interactables3[var8];
+                    this.interactables3[var8] = var4;
                 }
 
                 if (var5 != null) {
                     if (var5.method2206((byte) 13)) {
                         if (var5.method2183((short) 255)) {
-                            var5.field3637 = this.field3902[var8];
-                            this.field3902[var8] = var5;
+                            var5.field3637 = this.interactables4[var8];
+                            this.interactables4[var8] = var5;
                         } else {
-                            var5.field3637 = this.field3877[var8];
-                            this.field3877[var8] = var5;
+                            var5.field3637 = this.interactables2[var8];
+                            this.interactables2[var8] = var5;
                         }
                     } else {
-                        var5.field3637 = this.field3879[var8];
-                        this.field3879[var8] = var5;
+                        var5.field3637 = this.interactables3[var8];
+                        this.interactables3[var8] = var5;
                     }
                 }
             }
@@ -456,9 +456,9 @@ public class SceneGraph {
                         SceneTile var11 = this.method2406(var1.field3639, var9, var10, 960411819);
                         if (var11 != null) {
                             IterableSceneEntity var12 = class141.method1092(var1, (byte) 47);
-                            IterableSceneEntity var13 = var11.field7006;
+                            IterableSceneEntity var13 = var11.iterableSceneEntity;
                             if (var13 == null) {
-                                var11.field7006 = var12;
+                                var11.iterableSceneEntity = var12;
                             } else {
                                 while (var13.next != null) {
                                     var13 = var13.next;
@@ -473,8 +473,8 @@ public class SceneGraph {
                                 var7 = this.field3869[var9][var10];
                             }
 
-                            if (!var2 && var11.field7011 != null && var11.field7011.field9059 > var8) {
-                                var8 = var11.field7011.field9059;
+                            if (!var2 && var11.opt2 != null && var11.opt2.field9059 > var8) {
+                                var8 = var11.opt2.field9059;
                             }
                         }
                     }
@@ -499,15 +499,15 @@ public class SceneGraph {
                     var9 = this.field3862 == this.field3866 ? 1 : 0;
                     if (var1.method2206((byte) 13)) {
                         if (var1.method2183((short) 255)) {
-                            var1.field3637 = this.field3902[var9];
-                            this.field3902[var9] = var1;
+                            var1.field3637 = this.interactables4[var9];
+                            this.interactables4[var9] = var1;
                         } else {
-                            var1.field3637 = this.field3877[var9];
-                            this.field3877[var9] = var1;
+                            var1.field3637 = this.interactables2[var9];
+                            this.interactables2[var9] = var1;
                         }
                     } else {
-                        var1.field3637 = this.field3879[var9];
-                        this.field3879[var9] = var1;
+                        var1.field3637 = this.interactables3[var9];
+                        this.interactables3[var9] = var1;
                     }
                 }
 
@@ -531,8 +531,8 @@ public class SceneGraph {
         try {
             SceneTile var6 = this.field3861[var1][var2][var3];
             if (var6 != null) {
-                class732 var7 = var6.field7009;
-                class732 var8 = var6.field7010;
+                class732 var7 = var6.wallDecoration;
+                class732 var8 = var6.wallDecoration2;
                 if (var7 != null) {
                     var7.field2978 = (short) (var4 * var7.field2978 / (16 << this.field3849 - 7));
                     var7.field2979 = (short) (var7.field2979 * var4 / (16 << this.field3849 - 7));
@@ -561,10 +561,10 @@ public class SceneGraph {
         try {
             SceneTile var5 = this.field3861[var1][var2][var3];
             if (var5 != null) {
-                this.method2424(var5.field7007, -452884210);
-                if (var5.field7007 != null) {
-                    class676 var6 = var5.field7007;
-                    var5.field7007 = null;
+                this.method2424(var5.boundaryObject, -452884210);
+                if (var5.boundaryObject != null) {
+                    class676 var6 = var5.boundaryObject;
+                    var5.boundaryObject = null;
                     return var6;
                 }
             }
@@ -579,10 +579,10 @@ public class SceneGraph {
         try {
             SceneTile var5 = this.field3861[var1][var2][var3];
             if (var5 != null) {
-                this.method2424(var5.field7008, -123141942);
-                if (var5.field7008 != null) {
-                    class676 var6 = var5.field7008;
-                    var5.field7008 = null;
+                this.method2424(var5.boundaryObject2, -123141942);
+                if (var5.boundaryObject2 != null) {
+                    class676 var6 = var5.boundaryObject2;
+                    var5.boundaryObject2 = null;
                     return var6;
                 }
             }
@@ -597,10 +597,10 @@ public class SceneGraph {
         try {
             SceneTile var5 = this.field3861[var1][var2][var3];
             if (var5 != null) {
-                this.method2424(var5.field7010, -531623342);
-                if (var5.field7010 != null) {
-                    class732 var6 = var5.field7010;
-                    var5.field7010 = null;
+                this.method2424(var5.wallDecoration2, -531623342);
+                if (var5.wallDecoration2 != null) {
+                    class732 var6 = var5.wallDecoration2;
+                    var5.wallDecoration2 = null;
                     return var6;
                 }
             }
@@ -617,7 +617,7 @@ public class SceneGraph {
             if (var6 == null) {
                 return null;
             } else {
-                for (IterableSceneEntity var7 = var6.field7006; var7 != null; var7 = var7.next) {
+                for (IterableSceneEntity var7 = var6.iterableSceneEntity; var7 != null; var7 = var7.next) {
                     Animable var8 = var7.animable;
                     if ((var4 == null || var4.method5380(var8, -98426520)) && var8.field8299 == var2 && var8.field8296 == var3) {
                         this.method2423(var8, false, 2114979879);
@@ -638,14 +638,14 @@ public class SceneGraph {
                 for (int var5 = var1.field8296; var5 <= var1.field8298; ++var5) {
                     SceneTile var6 = this.field3861[var1.field3639][var4][var5];
                     if (var6 != null) {
-                        IterableSceneEntity var7 = var6.field7006;
+                        IterableSceneEntity var7 = var6.iterableSceneEntity;
 
                         for (IterableSceneEntity var8 = null; var7 != null; var7 = var7.next) {
                             if (var1 == var7.animable) {
                                 if (var8 != null) {
                                     var8.next = var7.next;
                                 } else {
-                                    var6.field7006 = var7.next;
+                                    var6.iterableSceneEntity = var7.next;
                                 }
 
                                 var7.shift((byte) -98);
@@ -676,12 +676,12 @@ public class SceneGraph {
                     Interactable var4 = null;
 
                     Interactable var5;
-                    for (var5 = this.field3877[var3]; var5 != null; var5 = var5.field3637) {
+                    for (var5 = this.interactables2[var3]; var5 != null; var5 = var5.field3637) {
                         if (var5 == var1) {
                             if (var4 != null) {
                                 var4.field3637 = var5.field3637;
                             } else {
-                                this.field3877[var3] = var5.field3637;
+                                this.interactables2[var3] = var5.field3637;
                             }
 
                             return;
@@ -692,12 +692,12 @@ public class SceneGraph {
 
                     var4 = null;
 
-                    for (var5 = this.field3902[var3]; var5 != null; var5 = var5.field3637) {
+                    for (var5 = this.interactables4[var3]; var5 != null; var5 = var5.field3637) {
                         if (var5 == var1) {
                             if (var4 != null) {
                                 var4.field3637 = var5.field3637;
                             } else {
-                                this.field3902[var3] = var5.field3637;
+                                this.interactables4[var3] = var5.field3637;
                             }
 
                             return;
@@ -708,12 +708,12 @@ public class SceneGraph {
 
                     var4 = null;
 
-                    for (var5 = this.field3879[var3]; var5 != null; var5 = var5.field3637) {
+                    for (var5 = this.interactables3[var3]; var5 != null; var5 = var5.field3637) {
                         if (var1 == var5) {
                             if (var4 != null) {
                                 var4.field3637 = var5.field3637;
                             } else {
-                                this.field3879[var3] = var5.field3637;
+                                this.interactables3[var3] = var5.field3637;
                             }
 
                             return;
@@ -732,7 +732,7 @@ public class SceneGraph {
     public class676 method2425(int var1, int var2, int var3, int var4) {
         try {
             SceneTile var5 = this.field3861[var1][var2][var3];
-            return var5 == null ? null : var5.field7007;
+            return var5 == null ? null : var5.boundaryObject;
         } catch (RuntimeException var6) {
             throw class158.method3445(var6, "nu.ad(" + ')');
         }
@@ -741,7 +741,7 @@ public class SceneGraph {
     public class676 method2426(int var1, int var2, int var3, byte var4) {
         try {
             SceneTile var5 = this.field3861[var1][var2][var3];
-            return var5 == null ? null : var5.field7008;
+            return var5 == null ? null : var5.boundaryObject2;
         } catch (RuntimeException var6) {
             throw class158.method3445(var6, "nu.av(" + ')');
         }
@@ -750,7 +750,7 @@ public class SceneGraph {
     public class732 method2427(int var1, int var2, int var3, int var4) {
         try {
             SceneTile var5 = this.field3861[var1][var2][var3];
-            return var5 == null ? null : var5.field7009;
+            return var5 == null ? null : var5.wallDecoration;
         } catch (RuntimeException var6) {
             throw class158.method3445(var6, "nu.at(" + ')');
         }
@@ -759,7 +759,7 @@ public class SceneGraph {
     public class168 method2428(int var1, int var2, int var3, int var4) {
         try {
             SceneTile var5 = this.field3861[var1][var2][var3];
-            return var5 == null ? null : var5.field7012;
+            return var5 == null ? null : var5.opt1;
         } catch (RuntimeException var6) {
             throw class158.method3445(var6, "nu.ah(" + ')');
         }
@@ -771,7 +771,7 @@ public class SceneGraph {
             if (var6 == null) {
                 return null;
             } else {
-                for (IterableSceneEntity var7 = var6.field7006; var7 != null; var7 = var7.next) {
+                for (IterableSceneEntity var7 = var6.iterableSceneEntity; var7 != null; var7 = var7.next) {
                     Animable var8 = var7.animable;
                     if ((var4 == null || var4.method5380(var8, 240755990)) && var8.field8299 == var2 && var8.field8296 == var3) {
                         return var8;
@@ -788,7 +788,7 @@ public class SceneGraph {
     public IterableSceneEntity method2430(int var1, int var2, int var3, int var4) {
         try {
             SceneTile var5 = this.field3861[var1][var2][var3];
-            return var5 == null ? null : var5.field7006;
+            return var5 == null ? null : var5.iterableSceneEntity;
         } catch (RuntimeException var6) {
             throw class158.method3445(var6, "nu.al(" + ')');
         }
@@ -800,8 +800,8 @@ public class SceneGraph {
                 for (int var3 = 0; var3 < this.field3894; ++var3) {
                     SceneTile var4 = this.field3861[var1][var2][var3];
                     if (var4 != null) {
-                        class676 var5 = var4.field7007;
-                        class676 var6 = var4.field7008;
+                        class676 var5 = var4.boundaryObject;
+                        class676 var6 = var4.boundaryObject2;
                         if (var5 != null && var5.method2173(1673017934)) {
                             this.method2433(var5, var1, var2, var3, 1, 1);
                             if (var6 != null && var6.method2173(1884072683)) {
@@ -813,7 +813,7 @@ public class SceneGraph {
                             var5.method2205((byte) 125);
                         }
 
-                        for (IterableSceneEntity var7 = var4.field7006; var7 != null; var7 = var7.next) {
+                        for (IterableSceneEntity var7 = var4.iterableSceneEntity; var7 != null; var7 = var7.next) {
                             Animable var8 = var7.animable;
                             if (var8 != null && var8.method2173(1908249416)) {
                                 this.method2433(var8, var1, var2, var3, 1 + (var8.field8297 - var8.field8299), var8.field8298 - var8.field8296 + 1);
@@ -821,7 +821,7 @@ public class SceneGraph {
                             }
                         }
 
-                        class824 var9 = var4.field7011;
+                        class824 var9 = var4.opt2;
                         if (var9 != null && var9.method2173(1396337054)) {
                             this.method2432(var9, var1, var2, var3, 795291520);
                             var9.method2205((byte) 19);
@@ -838,29 +838,29 @@ public class SceneGraph {
             SceneTile var6;
             if (var3 < this.field3859) {
                 var6 = this.field3861[var2][var3 + 1][var4];
-                if (var6 != null && var6.field7011 != null && var6.field7011.method2173(1670858079)) {
-                    var1.method2162(this.field3853, var6.field7011, this.field3881, 0, 0, true, 1480517000);
+                if (var6 != null && var6.opt2 != null && var6.opt2.method2173(1670858079)) {
+                    var1.method2162(this.field3853, var6.opt2, this.field3881, 0, 0, true, 1480517000);
                 }
             }
 
             if (var4 < this.field3859) {
                 var6 = this.field3861[var2][var3][var4 + 1];
-                if (var6 != null && var6.field7011 != null && var6.field7011.method2173(1930175079)) {
-                    var1.method2162(this.field3853, var6.field7011, 0, 0, this.field3881, true, 1828441739);
+                if (var6 != null && var6.opt2 != null && var6.opt2.method2173(1930175079)) {
+                    var1.method2162(this.field3853, var6.opt2, 0, 0, this.field3881, true, 1828441739);
                 }
             }
 
             if (var3 < this.field3859 && var4 < this.field3894) {
                 var6 = this.field3861[var2][1 + var3][var4 + 1];
-                if (var6 != null && var6.field7011 != null && var6.field7011.method2173(2111976416)) {
-                    var1.method2162(this.field3853, var6.field7011, this.field3881, 0, this.field3881, true, 1058354287);
+                if (var6 != null && var6.opt2 != null && var6.opt2.method2173(2111976416)) {
+                    var1.method2162(this.field3853, var6.opt2, this.field3881, 0, this.field3881, true, 1058354287);
                 }
             }
 
             if (var3 < this.field3859 && var4 > 0) {
                 var6 = this.field3861[var2][var3 + 1][var4 - 1];
-                if (var6 != null && var6.field7011 != null && var6.field7011.method2173(1781377638)) {
-                    var1.method2162(this.field3853, var6.field7011, this.field3881, 0, -this.field3881, true, 151502999);
+                if (var6 != null && var6.opt2 != null && var6.opt2.method2173(1781377638)) {
+                    var1.method2162(this.field3853, var6.opt2, this.field3881, 0, -this.field3881, true, 151502999);
                 }
             }
 
@@ -885,8 +885,8 @@ public class SceneGraph {
                                 SceneTile var15 = this.field3861[var12][var13][var14];
                                 if (var15 != null) {
                                     int var16 = (this.field3862[var12].method3888(var13, var14, (byte) -40) + this.field3862[var12].method3888(1 + var13, var14, (byte) -92) + this.field3862[var12].method3888(var13, 1 + var14, (byte) -41) + this.field3862[var12].method3888(var13 + 1, var14 + 1, (byte) -106)) / 4 - (this.field3862[var2].method3888(var3, var4, (byte) 0) + this.field3862[var2].method3888(var3 + 1, var4, (byte) -79) + this.field3862[var2].method3888(var3, 1 + var4, (byte) -78) + this.field3862[var2].method3888(1 + var3, 1 + var4, (byte) -80)) / 4;
-                                    class676 var17 = var15.field7007;
-                                    class676 var18 = var15.field7008;
+                                    class676 var17 = var15.boundaryObject;
+                                    class676 var18 = var15.boundaryObject2;
                                     if (var17 != null && var17.method2173(2051783389)) {
                                         var1.method2162(this.field3853, var17, this.field3891 * (1 - var5) + this.field3881 * (var13 - var3), var16, (var14 - var4) * this.field3881 + this.field3891 * (1 - var6), var7, 1604469537);
                                     }
@@ -895,7 +895,7 @@ public class SceneGraph {
                                         var1.method2162(this.field3853, var18, this.field3881 * (var13 - var3) + this.field3891 * (1 - var5), var16, this.field3881 * (var14 - var4) + (1 - var6) * this.field3891, var7, 1798941005);
                                     }
 
-                                    for (IterableSceneEntity var19 = var15.field7006; var19 != null; var19 = var19.next) {
+                                    for (IterableSceneEntity var19 = var15.iterableSceneEntity; var19 != null; var19 = var19.next) {
                                         Animable var20 = var19.animable;
                                         if (var20 != null && var20.method2173(1399351341) && (var20.field8299 == var13 || var8 == var13) && (var20.field8296 == var14 || var10 == var14)) {
                                             int var21 = 1 + (var20.field8297 - var20.field8299);
@@ -1037,7 +1037,7 @@ public class SceneGraph {
             }
         }
 
-        if (this.field3865 != null) {
+        if (this.oglTiles != null) {
             this.method2446(true, -740850409);
             this.field3853.method4886(-1, new class919(1583160, 40, 127, 63, 0, 0, 0));
             this.method2435(true, var5, var11, var12, var17);
@@ -1060,7 +1060,7 @@ public class SceneGraph {
         ++this.field3890;
         Interactable var7;
         if ((var5 & 2) == 0) {
-            for (var7 = this.field3877[var6]; var7 != null; var7 = var7.field3637) {
+            for (var7 = this.interactables2[var6]; var7 != null; var7 = var7.field3637) {
                 this.method2436(var7, -51028335);
                 if (-1 != var7.height && !this.method2439(var7, var1, var2, var3, var4)) {
                     this.field3860[++this.field3880 - 1] = var7;
@@ -1070,18 +1070,18 @@ public class SceneGraph {
 
         int var16;
         if ((var5 & 1) == 0) {
-            for (var7 = this.field3902[var6]; var7 != null; var7 = var7.field3637) {
+            for (var7 = this.interactables4[var6]; var7 != null; var7 = var7.field3637) {
                 this.method2436(var7, 520875779);
                 if (-1 != var7.height && !this.method2439(var7, var1, var2, var3, var4)) {
-                    this.field3848[++this.field3905 - 1] = var7;
+                    this.npcsIThink[++this.field3905 - 1] = var7;
                 }
             }
 
-            for (var7 = this.field3879[var6]; var7 != null; var7 = var7.field3637) {
+            for (var7 = this.interactables3[var6]; var7 != null; var7 = var7.field3637) {
                 this.method2436(var7, 1278144320);
                 if (var7.height != -1 && !this.method2439(var7, var1, var2, var3, var4)) {
                     if (var7.method2183((short) 255)) {
-                        this.field3848[++this.field3905 - 1] = var7;
+                        this.npcsIThink[++this.field3905 - 1] = var7;
                     } else {
                         this.field3860[++this.field3880 - 1] = var7;
                     }
@@ -1093,7 +1093,7 @@ public class SceneGraph {
                     this.method2436(this.field3884[var16], -765484247);
                     if (-1 != this.field3884[var16].height && !this.method2439(this.field3884[var16], var1, var2, var3, var4)) {
                         if (this.field3884[var16].method2183((short) 255)) {
-                            this.field3848[++this.field3905 - 1] = this.field3884[var16];
+                            this.npcsIThink[++this.field3905 - 1] = this.field3884[var16];
                         } else {
                             this.field3860[++this.field3880 - 1] = this.field3884[var16];
                         }
@@ -1192,10 +1192,10 @@ public class SceneGraph {
         }
 
         if (this.field3905 > 0) {
-            this.method2437(this.field3848, 0, this.field3905 - 1);
+            this.method2437(this.npcsIThink, 0, this.field3905 - 1);
 
             for (var16 = 0; var16 < this.field3905; ++var16) {
-                this.method2440(this.field3848[var16], this.field3874);
+                this.method2440(this.npcsIThink[var16], this.field3874);
             }
         }
 
@@ -1605,7 +1605,7 @@ public class SceneGraph {
     public void method2446(boolean var1, int var2) {
         try {
             if (var1) {
-                this.field3861 = this.field3865;
+                this.field3861 = this.oglTiles;
                 this.field3862 = this.field3866;
             } else {
                 this.field3861 = this.field3863;
@@ -1623,19 +1623,19 @@ public class SceneGraph {
             SceneTile var7 = this.method2406(var1, var2, var3, 1185117443);
             if (var7 != null) {
                 var5.method1514(new RegionOffset((float) ((var2 << this.field3849) + this.field3891), (float) var4, (float) ((var3 << this.field3849) + this.field3891)));
-                var7.field7012 = var5;
+                var7.opt1 = var5;
                 int var8 = this.field3866 == this.field3862 ? 1 : 0;
                 if (var5.method2206((byte) 13)) {
                     if (var5.method2183((short) 255)) {
-                        var5.field3637 = this.field3902[var8];
-                        this.field3902[var8] = var5;
+                        var5.field3637 = this.interactables4[var8];
+                        this.interactables4[var8] = var5;
                     } else {
-                        var5.field3637 = this.field3877[var8];
-                        this.field3877[var8] = var5;
+                        var5.field3637 = this.interactables2[var8];
+                        this.interactables2[var8] = var5;
                     }
                 } else {
-                    var5.field3637 = this.field3879[var8];
-                    this.field3879[var8] = var5;
+                    var5.field3637 = this.interactables3[var8];
+                    this.interactables3[var8] = var5;
                 }
             }
 
@@ -1648,10 +1648,10 @@ public class SceneGraph {
         try {
             SceneTile var5 = this.field3861[var1][var2][var3];
             if (var5 != null) {
-                this.method2424(var5.field7009, 1998851021);
-                if (var5.field7009 != null) {
-                    class732 var6 = var5.field7009;
-                    var5.field7009 = null;
+                this.method2424(var5.wallDecoration, 1998851021);
+                if (var5.wallDecoration != null) {
+                    class732 var6 = var5.wallDecoration;
+                    var5.wallDecoration = null;
                     return var6;
                 }
             }
@@ -1710,19 +1710,19 @@ public class SceneGraph {
         try {
             SceneTile var6 = this.method2406(var1, var2, var3, 996825081);
             if (var6 != null) {
-                var6.field7011 = var4;
+                var6.opt2 = var4;
                 int var7 = this.field3862 == this.field3866 ? 1 : 0;
                 if (var4.method2206((byte) 13)) {
                     if (var4.method2183((short) 255)) {
-                        var4.field3637 = this.field3902[var7];
-                        this.field3902[var7] = var4;
+                        var4.field3637 = this.interactables4[var7];
+                        this.interactables4[var7] = var4;
                     } else {
-                        var4.field3637 = this.field3877[var7];
-                        this.field3877[var7] = var4;
+                        var4.field3637 = this.interactables2[var7];
+                        this.interactables2[var7] = var4;
                     }
                 } else {
-                    var4.field3637 = this.field3879[var7];
-                    this.field3879[var7] = var4;
+                    var4.field3637 = this.interactables3[var7];
+                    this.interactables3[var7] = var4;
                 }
             }
 
@@ -1734,7 +1734,7 @@ public class SceneGraph {
     public class824 method2452(int var1, int var2, int var3, byte var4) {
         try {
             SceneTile var5 = this.field3861[var1][var2][var3];
-            return var5 != null && var5.field7011 != null ? var5.field7011 : null;
+            return var5 != null && var5.opt2 != null ? var5.opt2 : null;
         } catch (RuntimeException var6) {
             throw class158.method3445(var6, "nu.az(" + ')');
         }
@@ -1746,8 +1746,8 @@ public class SceneGraph {
             if (var5 == null) {
                 return null;
             } else {
-                class168 var6 = var5.field7012;
-                var5.field7012 = null;
+                class168 var6 = var5.opt1;
+                var5.opt1 = null;
                 this.method2424(var6, 113491731);
                 return var6;
             }

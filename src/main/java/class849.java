@@ -985,7 +985,7 @@ public class class849 implements class478 {
                     class614.method5190(var1, 713140978);
                     break;
                 case 276:
-                    class240.method4715(var1, (short) -22967);
+                    ObjectDefinitionLoader.method4715(var1, (short) -22967);
                     break;
                 case 277:
                     class969.method1692(var1, 267792839);
@@ -1381,7 +1381,7 @@ public class class849 implements class478 {
                     class762.method2810(var1, (byte) 0);
                     break;
                 case 408:
-                    class729.method1702(var1, 1379762103);
+                    BoundaryObject.method1702(var1, 1379762103);
                     break;
                 case 409:
                     class99.method534(var1, 1428164357);
@@ -2224,7 +2224,7 @@ public class class849 implements class478 {
                     class576.method70(var1, (short) 28169);
                     break;
                 case 689:
-                    class729.method1701(var1, -1558788446);
+                    BoundaryObject.method1701(var1, -1558788446);
                     break;
                 case 690:
                     class180.method3288(var1, 1797236687);

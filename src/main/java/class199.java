@@ -1,8 +1,9 @@
 public class class199 extends class732 implements class265 {
+
     static String field7036;
     static class675 field7037;
     class719 field7026;
-    class240 field7027;
+    ObjectDefinitionLoader field7027;
     class770 field7028;
     class879 field7029;
     int field7030;
@@ -12,7 +13,7 @@ public class class199 extends class732 implements class265 {
     boolean field7034;
     boolean field7035;
 
-    public class199(SceneGraph var1, class848 var2, class240 var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12, int var13, int var14) {
+    public class199(SceneGraph var1, class848 var2, ObjectDefinitionLoader var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12, int var13, int var14) {
         super(var1, var7, var8, var9, var5, var6, var11, var12);
         this.field7027 = var3;
         this.field7030 = var4.field2197;
@@ -230,7 +231,7 @@ public class class199 extends class732 implements class265 {
         }
     }
 
-    public int method4551(byte var1) {
+    public int getID() {
         try {
             return this.field7030;
         } catch (RuntimeException var3) {
@@ -289,7 +290,7 @@ public class class199 extends class732 implements class265 {
 
     class486 method3746(class848 var1, int var2, boolean var3, int var4) {
         try {
-            ObjectDefinition var5 = this.field7027.method4713(this.field7030);
+            ObjectDefinition var5 = this.field7027.getObjectDefinition(this.field7030);
             SceneGraphLevel var6;
             SceneGraphLevel var7;
             if (this.field7033) {

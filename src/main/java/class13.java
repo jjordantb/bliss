@@ -248,7 +248,7 @@ public class class13 extends class848 {
                             int var7 = 0;
                             boolean var8 = false;
                             boolean var9 = false;
-                            String[] var10 = class715.method2097(this.field6849.replace('/', ' '), ' ', 1272064462);
+                            String[] var10 = WallDecoration.method2097(this.field6849.replace('/', ' '), ' ', 1272064462);
 
                             for (int var11 = 0; var11 < var10.length; ++var11) {
                                 String var12 = var10[var11];
@@ -487,7 +487,7 @@ public class class13 extends class848 {
         }
 
         String var2 = OpenGL.glGetString(7938);
-        String[] var3 = class715.method2097(var2.replace('.', ' '), ' ', 1456146944);
+        String[] var3 = WallDecoration.method2097(var2.replace('.', ' '), ' ', 1456146944);
         if (var3.length >= 2) {
             try {
                 int var4 = class82.method917(var3[0], (short) -12183);

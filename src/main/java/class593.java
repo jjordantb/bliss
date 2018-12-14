@@ -92,7 +92,7 @@ public class class593 {
             class851.field8731.method2528((byte) 89);
             class980.field3196.method4150(1757095308);
             class662.field9736.method5718(682089220);
-            class730.field2697.method5283(134727545).method4712(1599239758);
+            class730.field2697.getObjectDefinitionLoader().method4712(1599239758);
             class258.field7913.method17(343664164);
             class85.field1121.method1578(75457779);
             class936.field10313.method2255(-927634718);

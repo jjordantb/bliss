@@ -112,8 +112,8 @@ public class class362 implements class70 {
             }
 
             class865.method5335(var1, -1404267888);
-            class730.field2697.method5283(2004012946).method4708(var1, -1760580017);
-            class625.field9752.method463((short) 206).method5283(-1884844132).method4708(var1, -1760580017);
+            class730.field2697.getObjectDefinitionLoader().method4708(var1, -1760580017);
+            class625.field9752.method463((short) 206).getObjectDefinitionLoader().method4708(var1, -1760580017);
             class85.field1121.method1572(var1, 828561369);
             class258.field7913.method14(var1, 1252678892);
             class635.field9823.method1056(var1, -142554696);

@@ -28,10 +28,10 @@ public final class class917 {
             int var13;
             int var14;
             if (var10 != null) {
-                var11 = class730.field2697.method5283(-1178105216).method4713(var10.method4551((byte) 20));
+                var11 = class730.field2697.getObjectDefinitionLoader().getObjectDefinition(var10.getID());
                 var12 = var10.method4549((short) 12592) & 3;
                 var13 = var10.method4548(726839210);
-                if (-1 != var11.field2232) {
+                if (-1 != var11.id) {
                     class304.method2388(var0, var11, var12, var4, var5, (byte) 112);
                 } else {
                     var14 = var6;
@@ -79,10 +79,10 @@ public final class class917 {
 
             var10 = (class265) var9.method2429(var1, var2, var3, class730.field2942, -1880419927);
             if (var10 != null) {
-                var11 = class730.field2697.method5283(-258471564).method4713(var10.method4551((byte) -26));
+                var11 = class730.field2697.getObjectDefinitionLoader().getObjectDefinition(var10.getID());
                 var12 = var10.method4549((short) 29260) & 3;
                 var13 = var10.method4548(726839210);
-                if (var11.field2232 != -1) {
+                if (var11.id != -1) {
                     class304.method2388(var0, var11, var12, var4, var5, (byte) 7);
                 } else if (class15.field6903.field6921 == var13) {
                     var14 = -1118482;
@@ -100,9 +100,9 @@ public final class class917 {
 
             var10 = (class265) var9.method2452(var1, var2, var3, (byte) 125);
             if (var10 != null) {
-                var11 = class730.field2697.method5283(541526744).method4713(var10.method4551((byte) 49));
+                var11 = class730.field2697.getObjectDefinitionLoader().getObjectDefinition(var10.getID());
                 var12 = var10.method4549((short) 12476) & 3;
-                if (-1 != var11.field2232) {
+                if (-1 != var11.id) {
                     class304.method2388(var0, var11, var12, var4, var5, (byte) 79);
                 }
             }

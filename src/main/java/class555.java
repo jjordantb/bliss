@@ -8,7 +8,7 @@ public class class555 extends class304 {
         this.field473 = var1.method6420((byte) -19);
     }
 
-    public static final int method412(class240 var0, byte[] var1, int var2, int var3, int var4, int var5, byte var6) {
+    public static final int method412(ObjectDefinitionLoader var0, byte[] var1, int var2, int var3, int var4, int var5, byte var6) {
         try {
             int var7 = 0;
             InputStream var8 = new InputStream(var1);
@@ -42,7 +42,7 @@ public class class555 extends class304 {
                             int var17 = var2 + var15;
                             int var18 = var14 + var3;
                             if (var17 > 0 && var18 > 0 && var17 < var4 - 1 && var18 < var5 - 1) {
-                                ObjectDefinition var19 = var0.method4713(var9);
+                                ObjectDefinition var19 = var0.getObjectDefinition(var9);
                                 if (class15.field6918.field6921 != var16 || class615.field8903.field9113.method971(-1915667162) != 0 || var19.field2214 != 0 || var19.field2212 == 1 || var19.field2242) {
                                     if (!var19.method1482(-1755524122)) {
                                         ++var7;

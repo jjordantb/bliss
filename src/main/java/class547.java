@@ -5,7 +5,7 @@ public class class547 extends class824 implements class265 {
     boolean field409;
     class719 field410;
 
-    public class547(SceneGraph var1, class848 var2, class240 var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12) {
+    public class547(SceneGraph var1, class848 var2, ObjectDefinitionLoader var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12) {
         super(var1, var7, var8, var9, var5, var6, var4.field2250);
         this.field411 = new class309(var2, var3, var4, class15.field6918.field6921, var11, var5, var6, this, var10, var12);
         this.field409 = var4.field2214 != 0 && !var10;
@@ -134,7 +134,7 @@ public class class547 extends class824 implements class265 {
         }
     }
 
-    public int method4551(byte var1) {
+    public int getID() {
         try {
             return this.field411.field387;
         } catch (RuntimeException var3) {

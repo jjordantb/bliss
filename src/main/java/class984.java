@@ -282,8 +282,8 @@ public class class984 {
         try {
             if (!class75.field1493) {
                 class312.method418(class730.field2697.method5317(-1611682495).field3863, 234916861);
-                if (class730.field2697.method5317(-1611682495).field3865 != null) {
-                    class312.method418(class730.field2697.method5317(-1611682495).field3865, -1747837187);
+                if (class730.field2697.method5317(-1611682495).oglTiles != null) {
+                    class312.method418(class730.field2697.method5317(-1611682495).oglTiles, -1747837187);
                 }
 
                 class75.field1493 = true;

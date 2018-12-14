@@ -164,7 +164,7 @@ public class class650 implements class940 {
         try {
             if (!this.field9425 && this.field9434 == null) {
                 try {
-                    String[] var3 = class715.method2097(class730.field2630, ',', 1855531743);
+                    String[] var3 = WallDecoration.method2097(class730.field2630, ',', 1855531743);
                     if (var3.length != 23) {
                         this.field9425 = true;
                     }

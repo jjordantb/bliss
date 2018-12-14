@@ -7,7 +7,7 @@ public class class491 {
     public static float field7809;
     public static int field7813;
     public static int field7820;
-    protected static class240 field7795;
+    protected static ObjectDefinitionLoader field7795;
     protected static int field7796;
     protected static class415 field7798;
     protected static class945 field7800;
@@ -263,7 +263,7 @@ public class class491 {
 
     }
 
-    public static void method4397(class180 var0, class509 var1, class428 var2, class240 var3, class844 var4, class945 var5, class415 var6) {
+    public static void method4397(class180 var0, class509 var1, class428 var2, ObjectDefinitionLoader var3, class844 var4, class945 var5, class415 var6) {
         field7823 = var0;
         field7828 = var1;
         field7794 = var2;
@@ -700,8 +700,8 @@ public class class491 {
             for (int var13 = 0; var13 < var8.length; ++var13) {
                 int var14 = var9[var13] & 63;
                 if (var14 == class15.field6922.field6921 || var14 == class15.field6901.field6921 || var14 == class15.field6902.field6921 || var14 == class15.field6903.field6921) {
-                    ObjectDefinition var15 = field7795.method4713(var8[var13]);
-                    if (var15.field2232 == -1) {
+                    ObjectDefinition var15 = field7795.getObjectDefinition(var8[var13]);
+                    if (var15.id == -1) {
                         int var16 = -3355444;
                         if (var15.field2214 == 1) {
                             var16 = -3407872;
@@ -764,8 +764,8 @@ public class class491 {
     static void method4408(class848 var0, int var1, int var2, int var3, int var4, int[] var5, byte[] var6) {
         if (var5 != null) {
             for (int var7 = 0; var7 < var5.length; ++var7) {
-                ObjectDefinition var8 = field7795.method4713(var5[var7]);
-                int var9 = var8.field2232;
+                ObjectDefinition var8 = field7795.getObjectDefinition(var5[var7]);
+                int var9 = var8.id;
                 if (var9 != -1) {
                     class279 var10 = field7800.method2003(var9, -2130050645);
                     class48 var11 = var10.method6611(var0, var8.field2233 ? var6[var7] >> 6 & 3 : 0, var8.field2272 ? var8.field2236 : false, (byte) -47);
@@ -874,7 +874,7 @@ public class class491 {
                         class349 var11 = (class349) var2;
                         if (var11 != null) {
                             for (int var13 = 0; var13 < var11.field1565.length; ++var13) {
-                                ObjectDefinition var15 = field7795.method4713(var11.field1565[var13]);
+                                ObjectDefinition var15 = field7795.getObjectDefinition(var11.field1565[var13]);
                                 var16 = var15.field2231;
                                 if (var15.field2198 != null) {
                                     var15 = var15.method1487(field7798, 2117091255);
@@ -893,7 +893,7 @@ public class class491 {
                         }
                     } else {
                         Integer var3 = (Integer) var2;
-                        ObjectDefinition var4 = field7795.method4713(var3.intValue());
+                        ObjectDefinition var4 = field7795.getObjectDefinition(var3.intValue());
                         int var5 = var4.field2231;
                         if (var4.field2198 != null) {
                             var4 = var4.method1487(field7798, 1079072044);
@@ -932,7 +932,7 @@ public class class491 {
                             } while (var17.field7111 == null);
 
                             for (var16 = 0; var16 < var17.field7111.length; ++var16) {
-                                ObjectDefinition var18 = field7795.method4713(var17.field7111[var16]);
+                                ObjectDefinition var18 = field7795.getObjectDefinition(var17.field7111[var16]);
                                 int var8 = var18.field2231;
                                 if (var18.field2198 != null) {
                                     var18 = var18.method1487(field7798, 984911486);

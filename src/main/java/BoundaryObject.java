@@ -1,6 +1,6 @@
 import java.io.File;
 
-public class class729 extends class676 implements class265 {
+public class BoundaryObject extends class676 implements class265 {
 
     static int[] field2497 = new int[]{1, 2, 4, 8};
     static int[] field2498 = new int[]{16, 32, 64, 128};
@@ -10,13 +10,13 @@ public class class729 extends class676 implements class265 {
     class719 field2502;
     int field2503;
     byte field2504;
-    class240 field2505;
+    ObjectDefinitionLoader field2505;
     byte field2506;
     boolean field2507;
     boolean field2508;
     boolean field2509;
 
-    public class729(SceneGraph var1, class848 var2, class240 var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12, boolean var13) {
+    public BoundaryObject(SceneGraph var1, class848 var2, ObjectDefinitionLoader var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12, boolean var13) {
         super(var1, var7, var8, var9, var5, var6, class606.method4793(var11, var12, 800544861));
         this.field2505 = var3;
         this.field2503 = var4.field2197;
@@ -174,7 +174,7 @@ public class class729 extends class676 implements class265 {
 
     class486 method1699(class848 var1, int var2, boolean var3, byte var4) {
         try {
-            ObjectDefinition var5 = this.field2505.method4713(this.field2503);
+            ObjectDefinition var5 = this.field2505.getObjectDefinition(this.field2503);
             SceneGraphLevel var6;
             SceneGraphLevel var7;
             if (this.field2508) {
@@ -229,8 +229,8 @@ public class class729 extends class676 implements class265 {
 
     void method2162(class848 var1, Interactable var2, int var3, int var4, int var5, boolean var6, int var7) {
         try {
-            if (var2 instanceof class729) {
-                class729 var8 = (class729) var2;
+            if (var2 instanceof BoundaryObject) {
+                BoundaryObject var8 = (BoundaryObject) var2;
                 if (this.field2500 != null && var8.field2500 != null) {
                     this.field2500.method5994(var8.field2500, var3, var4, var5, var6);
                 }
@@ -288,7 +288,7 @@ public class class729 extends class676 implements class265 {
         }
     }
 
-    public int method4551(byte var1) {
+    public int getID() {
         try {
             return this.field2503;
         } catch (RuntimeException var3) {

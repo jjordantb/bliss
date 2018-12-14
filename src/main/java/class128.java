@@ -80,7 +80,7 @@ public class class128 implements class54 {
         try {
             if (var0 >= class381.field1416 && var1 <= class381.field1413 && var2 >= class381.field1414 && var3 <= class381.field1415) {
                 if (1 == var5) {
-                    class729.method1704(var0, var1, var2, var3, var4, -616636288);
+                    BoundaryObject.method1704(var0, var1, var2, var3, var4, -616636288);
                 } else {
                     class199.method3749(var0, var1, var2, var3, var4, var5, 1228342009);
                 }

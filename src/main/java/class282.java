@@ -105,7 +105,7 @@ public class class282 extends class345 {
     void method6655(InputStream var1, int var2, int var3) {
         try {
             if (1 == var2) {
-                this.field10616 = class715.method2097(var1.method6379(1602597054), '<', 1942688210);
+                this.field10616 = WallDecoration.method2097(var1.method6379(1602597054), '<', 1942688210);
             } else {
                 int var4;
                 int var5;

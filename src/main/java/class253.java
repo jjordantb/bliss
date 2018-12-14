@@ -314,9 +314,9 @@ public abstract class class253 {
                 }
 
                 if ((var5 & 8388608) != 0) {
-                    var4.field1633 = var1.method6379(1858696307);
-                    if ("".equals(var4.field1633) || var4.field1633.equals(var4.field1637.name)) {
-                        var4.field1633 = var4.field1637.name;
+                    var4.name = var1.method6379(1858696307);
+                    if ("".equals(var4.name) || var4.name.equals(var4.field1637.name)) {
+                        var4.name = var4.field1637.name;
                     }
                 }
 

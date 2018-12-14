@@ -9,11 +9,11 @@ public class class572 extends class175 {
     static int[] field123 = new int[]{-1, -1, 1, 1};
     static int field125 = 1;
     static boolean field126 = false;
-    class240 field114;
+    ObjectDefinitionLoader field114;
     class418 field122;
     int field124 = 99;
 
-    public class572(SceneGraph var1, class240 var2, int var3, int var4, int var5, boolean var6, class153 var7, class418 var8) {
+    public class572(SceneGraph var1, ObjectDefinitionLoader var2, int var3, int var4, int var5, boolean var6, class153 var7, class418 var8) {
         super(var1, var3, var4, var5, var6, class851.field8731, class980.field3196, var7);
         this.field114 = var2;
         this.field122 = var8;
@@ -79,7 +79,7 @@ public class class572 extends class175 {
         try {
             class265 var8 = this.method104(var2, var3, var4, var5, 1530247338);
             if (var8 != null) {
-                ObjectDefinition var9 = this.field114.method4713(var8.method4551((byte) 80));
+                ObjectDefinition var9 = this.field114.getObjectDefinition(var8.getID());
                 int var10 = var8.method4548(726839210);
                 int var11 = var8.method4549((short) 20316);
                 if (var9.method1494(-1167401239)) {
@@ -605,7 +605,7 @@ public class class572 extends class175 {
                     int var21 = var20 >> 2;
                     int var22 = var20 & 3;
                     if (var6 == var19 && var18 >= var7 && var18 < 8 + var7 && var17 >= var8 && var17 < 8 + var8) {
-                        ObjectDefinition var23 = this.field114.method4713(var13);
+                        ObjectDefinition var23 = this.field114.getObjectDefinition(var13);
                         int var24 = var4 + class618.method5162(var18 & 7, var17 & 7, var9, var23.field2218, var23.field2215, var22, 181137699);
                         int var25 = var5 + class673.method4257(var18 & 7, var17 & 7, var9, var23.field2218, var23.field2215, var22, 1981614763);
                         if (var24 > 0 && var25 > 0 && var24 < super.field4998 - 1 && var25 < super.field4999 - 1) {
@@ -644,7 +644,7 @@ public class class572 extends class175 {
                 }
 
                 if (var4) {
-                    class729 var26 = new class729(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var2, var3, var14);
+                    BoundaryObject var26 = new BoundaryObject(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var2, var3, var14);
                     if (var26.method4558(-1364237139)) {
                         var26.method4552(var1, -2008903061);
                     }
@@ -704,10 +704,10 @@ public class class572 extends class175 {
                 return true;
             } else {
                 Object var20;
-                class729 var29;
+                BoundaryObject var29;
                 if (var2 == class15.field6900.field6921) {
                     if (var4) {
-                        var29 = new class729(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var2, var3, var14);
+                        var29 = new BoundaryObject(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var2, var3, var14);
                         if (var29.method4558(-1749970817)) {
                             var29.method4552(var1, -2130877816);
                         }
@@ -739,8 +739,8 @@ public class class572 extends class175 {
                     var27 = var3 + 1 & 3;
                     Object var21;
                     if (var4) {
-                        class729 var23 = new class729(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var2, 4 + var3, var14);
-                        class729 var24 = new class729(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var2, var27, var14);
+                        BoundaryObject var23 = new BoundaryObject(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var2, 4 + var3, var14);
+                        BoundaryObject var24 = new BoundaryObject(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var2, var27, var14);
                         if (var23.method4558(-1679564366)) {
                             var23.method4552(var1, -2079126659);
                         }
@@ -784,7 +784,7 @@ public class class572 extends class175 {
                     return true;
                 } else if (var2 == class15.field6902.field6921) {
                     if (var4) {
-                        var29 = new class729(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var2, var3, var14);
+                        var29 = new BoundaryObject(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var2, var3, var14);
                         if (var29.method4558(-1956737069)) {
                             var29.method4552(var1, -2085613160);
                         }
@@ -866,7 +866,7 @@ public class class572 extends class175 {
 
                     var29 = var25;
                 } else {
-                    var29 = new class715(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, 0, 0, var2, var3, var6);
+                    var29 = new WallDecoration(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, 0, 0, var2, var3, var6);
                 }
 
                 super.field4990.method2415(var7, var12, var13, (class732) var29, (class732) null, 861548591);
@@ -880,7 +880,7 @@ public class class572 extends class175 {
                     var16 = 65;
                     var24 = (class265) super.field4990.method2425(var7, var12, var13, 644917110);
                     if (var24 != null) {
-                        var16 = this.field114.method4713(var24.method4551((byte) 27)).field2223 + 1;
+                        var16 = this.field114.getObjectDefinition(var24.getID()).field2223 + 1;
                     }
 
                     if (var4) {
@@ -891,7 +891,7 @@ public class class572 extends class175 {
 
                         var28 = var26;
                     } else {
-                        var28 = new class715(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var16 * field120[var3], var16 * field117[var3], var2, var3, var6);
+                        var28 = new WallDecoration(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var16 * field120[var3], var16 * field117[var3], var2, var3, var6);
                     }
 
                     super.field4990.method2415(var7, var12, var13, (class732) var28, (class732) null, 1859376340);
@@ -900,7 +900,7 @@ public class class572 extends class175 {
                     var16 = 33;
                     var24 = (class265) super.field4990.method2425(var7, var12, var13, 552550945);
                     if (var24 != null) {
-                        var16 = this.field114.method4713(var24.method4551((byte) 14)).field2223 / 2 + 1;
+                        var16 = this.field114.getObjectDefinition(var24.getID()).field2223 / 2 + 1;
                     }
 
                     if (var4) {
@@ -911,7 +911,7 @@ public class class572 extends class175 {
 
                         var28 = var26;
                     } else {
-                        var28 = new class715(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var16 * field116[var3], field123[var3] * var16, var2, var3 + 4, var6);
+                        var28 = new WallDecoration(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var16 * field116[var3], field123[var3] * var16, var2, var3 + 4, var6);
                     }
 
                     super.field4990.method2415(var7, var12, var13, (class732) var28, (class732) null, 1431954302);
@@ -927,7 +927,7 @@ public class class572 extends class175 {
 
                         var23 = var27;
                     } else {
-                        var23 = new class715(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, 0, 0, var2, var16 + 4, var6);
+                        var23 = new WallDecoration(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, 0, 0, var2, var16 + 4, var6);
                     }
 
                     super.field4990.method2415(var7, var12, var13, (class732) var23, (class732) null, 1921538390);
@@ -937,7 +937,7 @@ public class class572 extends class175 {
                     int var15 = 33;
                     class265 var18 = (class265) super.field4990.method2425(var7, var12, var13, 2110046759);
                     if (var18 != null) {
-                        var15 = this.field114.method4713(var18.method4551((byte) 14)).field2223 / 2 + 1;
+                        var15 = this.field114.getObjectDefinition(var18.getID()).field2223 / 2 + 1;
                     }
 
                     Object var17;
@@ -956,8 +956,8 @@ public class class572 extends class175 {
                         var17 = var19;
                         var21 = var20;
                     } else {
-                        class715 var30 = new class715(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var15 * field116[var3], var15 * field123[var3], var2, var3 + 4, var6);
-                        class715 var31 = new class715(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, 0, 0, var2, 4 + var16, var6);
+                        WallDecoration var30 = new WallDecoration(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, var15 * field116[var3], var15 * field123[var3], var2, var3 + 4, var6);
+                        WallDecoration var31 = new WallDecoration(super.field4990, var1, this.field114, var5, var7, var8, var9, var10, var11, super.field5000, 0, 0, var2, 4 + var16, var6);
                         var17 = var30;
                         var21 = var31;
                     }
@@ -1087,7 +1087,7 @@ public class class572 extends class175 {
                 this.field124 = var3;
             }
 
-            ObjectDefinition var12 = this.field114.method4713(var6);
+            ObjectDefinition var12 = this.field114.getObjectDefinition(var6);
             if (class615.field8903.field9123.method5845(1871358652) != 0 || !var12.field2264) {
                 int var13;
                 int var14;

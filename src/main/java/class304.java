@@ -7,7 +7,7 @@ public abstract class class304 {
 
     static void method2388(class848 var0, ObjectDefinition var1, int var2, int var3, int var4, byte var5) {
         try {
-            class279 var6 = class981.field3274.method2003(var1.field2232, -2141345299);
+            class279 var6 = class981.field3274.method2003(var1.id, -2141345299);
             if (var6.field10587 != -1) {
                 if (var1.field2233) {
                     var2 += var1.field2234;

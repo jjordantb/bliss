@@ -5,7 +5,7 @@ public interface class265 {
 
     void method4550(byte var1);
 
-    int method4551(byte var1);
+    int getID();
 
     void method4552(class848 var1, int var2);
 

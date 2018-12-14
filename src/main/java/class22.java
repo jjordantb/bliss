@@ -285,7 +285,7 @@ public class class22 {
             if (this.field6430 < 0) {
                 return true;
             } else {
-                ObjectDefinition var2 = class972.field2965.method4713(this.field6430);
+                ObjectDefinition var2 = class972.field2965.getObjectDefinition(this.field6430);
                 boolean var3 = var2.method1481(this.field6431.field6921, (byte) 42);
                 int[] var4 = var2.method1492(-1156078162);
                 if (var4 != null) {

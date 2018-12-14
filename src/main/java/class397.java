@@ -10,7 +10,7 @@ public class class397 extends class676 implements class265 {
     boolean field6491;
     boolean field6494 = true;
 
-    public class397(SceneGraph var1, class848 var2, class240 var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12, int var13) {
+    public class397(SceneGraph var1, class848 var2, ObjectDefinitionLoader var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12, int var13) {
         super(var1, var7, var8, var9, var5, var6, class858.method5221(var11, var12, (byte) -51));
         this.field6490 = new class309(var2, var3, var4, var11, var12, super.field3639, var6, this, var10, var13);
         this.field6491 = var4.field2214 != 0 && !var10;
@@ -133,7 +133,7 @@ public class class397 extends class676 implements class265 {
             class730.field2697.method5290(-818859939);
             class593.field1623.method4875(false);
             if (class593.field1623.method4878()) {
-                class729.method1700(class615.field8903.field9117.method5848(-1411340111) == 1, -1054485931);
+                BoundaryObject.method1700(class615.field8903.field9117.method5848(-1411340111) == 1, -1054485931);
             }
 
             class730.field2697.method5289(526823496);
@@ -446,7 +446,7 @@ public class class397 extends class676 implements class265 {
         return false;
     }
 
-    public int method4551(byte var1) {
+    public int getID() {
         try {
             return this.field6490.field387;
         } catch (RuntimeException var3) {

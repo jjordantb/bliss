@@ -50,7 +50,7 @@ public final class class608 extends class325 {
             this.field8620 = OpenGL.glGetString(7937).toLowerCase();
             if (this.field8619.indexOf("microsoft") == -1 && this.field8619.indexOf("brian paul") == -1 && this.field8619.indexOf("mesa") == -1) {
                 String var9 = OpenGL.glGetString(7938);
-                String[] var10 = class715.method2097(var9.replace('.', ' '), ' ', 596361763);
+                String[] var10 = WallDecoration.method2097(var9.replace('.', ' '), ' ', 596361763);
                 if (var10.length >= 2) {
                     int var11;
                     try {
@@ -100,7 +100,7 @@ public final class class608 extends class325 {
                                 var11 = 0;
                                 boolean var22 = false;
                                 boolean var13 = false;
-                                String[] var14 = class715.method2097(this.field8620.replace('/', ' '), ' ', 1460614940);
+                                String[] var14 = WallDecoration.method2097(this.field8620.replace('/', ' '), ' ', 1460614940);
 
                                 for (int var15 = 0; var15 < var14.length; ++var15) {
                                     String var16 = var14[var15];

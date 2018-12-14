@@ -744,7 +744,7 @@ public class class894 extends SceneGraphLevel {
                 var74.method6138(this.field9472);
             }
 
-            class715.method2096(var73, this.field9496, (byte) -13);
+            WallDecoration.method2096(var73, this.field9496, (byte) -13);
             if (this.field9470 != null) {
                 this.field9470.method4239();
             }

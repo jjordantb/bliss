@@ -99,7 +99,7 @@ public class class19 implements Iterator {
             this.field5363 = var1;
             return var1;
         } catch (RuntimeException var2) {
-            throw class158.method3445(var2, "sk.previous(" + ')');
+            throw class158.method3445(var2, "sk.aSceneEntity(" + ')');
         }
     }
 }

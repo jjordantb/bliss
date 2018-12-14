@@ -148,31 +148,31 @@ public class class737 extends class686 {
                     int var20 = super.field7608 >> 12;
                     var17 = super.field7613 >> 12;
                     class719 var18;
-                    if (var12.field7007 != null) {
-                        var18 = var12.field7007.method2165(var2, (byte) -82);
+                    if (var12.boundaryObject != null) {
+                        var18 = var12.boundaryObject.method2165(var2, (byte) -82);
                         if (var18 != null && var18.method2058(var20, var7, var17)) {
                             this.method1827();
                             return;
                         }
                     }
 
-                    if (var12.field7008 != null) {
-                        var18 = var12.field7008.method2165(var2, (byte) -77);
+                    if (var12.boundaryObject2 != null) {
+                        var18 = var12.boundaryObject2.method2165(var2, (byte) -77);
                         if (var18 != null && var18.method2058(var20, var7, var17)) {
                             this.method1827();
                             return;
                         }
                     }
 
-                    if (var12.field7011 != null) {
-                        var18 = var12.field7011.method2165(var2, (byte) 0);
+                    if (var12.opt2 != null) {
+                        var18 = var12.opt2.method2165(var2, (byte) 0);
                         if (var18 != null && var18.method2058(var20, var7, var17)) {
                             this.method1827();
                             return;
                         }
                     }
 
-                    for (IterableSceneEntity var21 = var12.field7006; var21 != null; var21 = var21.next) {
+                    for (IterableSceneEntity var21 = var12.iterableSceneEntity; var21 != null; var21 = var21.next) {
                         class719 var19 = var21.animable.method2165(var2, (byte) -58);
                         if (var19 != null && var19.method2058(var20, var7, var17)) {
                             this.method1827();

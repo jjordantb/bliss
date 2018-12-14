@@ -64,8 +64,8 @@ public class class928 {
                         ((class547) var6).method375(var4, (byte) 0);
                     } else if (var6 instanceof class397) {
                         ((class397) var6).method3472(var4, -772948139);
-                    } else if (var6 instanceof class715) {
-                        ((class715) var6).method2093(var4, (byte) 11);
+                    } else if (var6 instanceof WallDecoration) {
+                        ((WallDecoration) var6).method2093(var4, (byte) 11);
                     }
                 }
             }

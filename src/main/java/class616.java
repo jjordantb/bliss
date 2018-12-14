@@ -88,7 +88,7 @@ public class class616 {
             class851.field8731.method2529(5, (byte) 50);
             class980.field3196.method4149(5, 203948089);
             class662.field9736.method5719(5, -754640866);
-            class730.field2697.method5283(1725751477).method4711(5, (byte) 49);
+            class730.field2697.getObjectDefinitionLoader().method4711(5, (byte) 49);
             class258.field7913.method18(5, 1533104330);
             class85.field1121.method1575(5, (byte) 35);
             class936.field10313.method2257(5, (byte) 1);

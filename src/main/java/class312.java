@@ -33,27 +33,27 @@ public abstract class class312 {
                                 return;
                             }
                         } else {
-                            if (var6.field7011 instanceof class265) {
-                                ((class265) var6.field7011).method4550((byte) -5);
+                            if (var6.opt2 instanceof class265) {
+                                ((class265) var6.opt2).method4550((byte) -5);
                             }
 
-                            if (var6.field7009 instanceof class265) {
-                                ((class265) var6.field7009).method4550((byte) -70);
+                            if (var6.wallDecoration instanceof class265) {
+                                ((class265) var6.wallDecoration).method4550((byte) -70);
                             }
 
-                            if (var6.field7010 instanceof class265) {
-                                ((class265) var6.field7010).method4550((byte) -47);
+                            if (var6.wallDecoration2 instanceof class265) {
+                                ((class265) var6.wallDecoration2).method4550((byte) -47);
                             }
 
-                            if (var6.field7007 instanceof class265) {
-                                ((class265) var6.field7007).method4550((byte) -87);
+                            if (var6.boundaryObject instanceof class265) {
+                                ((class265) var6.boundaryObject).method4550((byte) -87);
                             }
 
-                            if (var6.field7008 instanceof class265) {
-                                ((class265) var6.field7008).method4550((byte) -107);
+                            if (var6.boundaryObject2 instanceof class265) {
+                                ((class265) var6.boundaryObject2).method4550((byte) -107);
                             }
 
-                            for (IterableSceneEntity var7 = var6.field7006; var7 != null; var7 = var7.next) {
+                            for (IterableSceneEntity var7 = var6.iterableSceneEntity; var7 != null; var7 = var7.next) {
                                 Animable var8 = var7.animable;
                                 if (var8 instanceof class265) {
                                     ((class265) var8).method4550((byte) -107);

@@ -36,7 +36,7 @@ public class class176 {
     static final void method3165(class744 var0, int var1) {
         try {
             Npc var2 = (Npc) var0.field3159;
-            String var3 = var2.field1633;
+            String var3 = var2.name;
             NpcDefinition var4 = var2.field1637;
             if (var4.field9924 != null) {
                 var4 = var4.method6110(class827.field9037, 1606413785);
@@ -361,9 +361,9 @@ public class class176 {
                 class662.field9736 = new class422(class730.field2926, class321.field1066, class429.field7413, RegionBase.field1524);
                 class540.field3930 = new class779(class730.field2926, class321.field1066, class429.field7413);
                 class229.field8212 = new class754(class730.field2926, class321.field1066, class429.field7413);
-                class972.field2965 = new class240(class730.field2926, class321.field1066, true, class170.field5104, RegionBase.field1524);
+                class972.field2965 = new ObjectDefinitionLoader(class730.field2926, class321.field1066, true, class170.field5104, RegionBase.field1524);
                 class730.field2697.method5287(class972.field2965, -18361497);
-                class625.field9752.method458(new class240(class730.field2926, class321.field1066, true, class170.field5104, RegionBase.field1524), 681479919);
+                class625.field9752.method458(new ObjectDefinitionLoader(class730.field2926, class321.field1066, true, class170.field5104, RegionBase.field1524), 681479919);
                 class333.field139 = new class844(class730.field2926, class321.field1066, class429.field7413, class562.field827);
                 class981.field3274 = new class945(class730.field2926, class321.field1066, class429.field7413, class562.field827);
                 class258.field7913 = new class329(class730.field2926, class321.field1066, true, class49.field5185, RegionBase.field1524);
@@ -407,7 +407,7 @@ public class class176 {
             }
 
             if (class431.field7494 == class776.field3728) {
-                class491.method4397(class792.field510, class851.field8731, class980.field3196, class730.field2697.method5283(-1404290651), class333.field139, class981.field3274, class827.field9037);
+                class491.method4397(class792.field510, class851.field8731, class980.field3196, class730.field2697.getObjectDefinitionLoader(), class333.field139, class981.field3274, class827.field9037);
             }
 
             if (class776.field3728 == class431.field7506) {

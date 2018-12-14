@@ -1,6 +1,6 @@
 public class class309 {
     class879 field370;
-    class240 field371;
+    ObjectDefinitionLoader field371;
     int field372 = 0;
     Interactable field373;
     byte field374;
@@ -20,7 +20,7 @@ public class class309 {
     class726 field388;
     byte field389;
 
-    class309(class848 var1, class240 var2, ObjectDefinition var3, int var4, int var5, int var6, int var7, Interactable var8, boolean var9, int var10) {
+    class309(class848 var1, ObjectDefinitionLoader var2, ObjectDefinition var3, int var4, int var5, int var6, int var7, Interactable var8, boolean var9, int var10) {
         this.field371 = var2;
         this.field387 = var3.field2197;
         this.field375 = var4;
@@ -156,7 +156,7 @@ public class class309 {
 
     final class879 method351(class848 var1, int var2, boolean var3, boolean var4, byte var5) {
         try {
-            ObjectDefinition var6 = this.field371.method4713(this.field387);
+            ObjectDefinition var6 = this.field371.getObjectDefinition(this.field387);
             if (var6.field2198 != null) {
                 var6 = var6.method1487((class415) (class730.field2705 == 0 ? class949.field3324 : class827.field9037), 1333630702);
             }
@@ -264,7 +264,7 @@ public class class309 {
             class933[] var10 = var2.method6089();
             class396[] var11 = var2.method5941();
             if ((this.field388 == null || this.field388.field2548) && (var10 != null || var11 != null)) {
-                ObjectDefinition var12 = this.field371.method4713(this.field387);
+                ObjectDefinition var12 = this.field371.getObjectDefinition(this.field387);
                 if (var12.field2198 != null) {
                     var12 = var12.method1487((class415) (class730.field2705 == 0 ? class949.field3324 : class827.field9037), 1897177328);
                 }
@@ -327,7 +327,7 @@ public class class309 {
             int var5 = var2;
             boolean var6 = false;
             if (var2 == -1) {
-                ObjectDefinition var7 = this.field371.method4713(this.field387);
+                ObjectDefinition var7 = this.field371.getObjectDefinition(this.field387);
                 ObjectDefinition var8 = var7;
                 if (var7.field2198 != null) {
                     var7 = var7.method1487((class415) (class730.field2705 == 0 ? class949.field3324 : class827.field9037), 1802349433);

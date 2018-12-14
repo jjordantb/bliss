@@ -1,10 +1,11 @@
-public class class715 extends class732 implements class265 {
+public class WallDecoration extends class732 implements class265 {
+
     public class309 field3585;
     boolean field3582 = true;
     boolean field3583;
     class719 field3584;
 
-    public class715(SceneGraph var1, class848 var2, class240 var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12, int var13, int var14, int var15) {
+    public WallDecoration(SceneGraph var1, class848 var2, ObjectDefinitionLoader var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12, int var13, int var14, int var15) {
         super(var1, var7, var8, var9, var5, var6, var11, var12);
         this.field3585 = new class309(var2, var3, var4, var13, var14, super.field3639, var6, this, var10, var15);
         this.field3583 = var4.field2214 != 0 && !var10;
@@ -118,7 +119,7 @@ public class class715 extends class732 implements class265 {
         }
     }
 
-    public int method4551(byte var1) {
+    public int getID() {
         try {
             return this.field3585.field387;
         } catch (RuntimeException var3) {

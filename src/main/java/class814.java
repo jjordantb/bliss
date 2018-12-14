@@ -75,7 +75,7 @@ public class class814 {
     static class814 field4669 = new class814("Loaded additional fonts", "Zusatzschriftarten geladen", "Polices secondaires charg�es", "Fontes principais carregadas");
     static class814 field4670 = new class814("You can't report yourself!", "Du kannst dich nicht selbst melden!", "Vous ne pouvez pas vous signaler vous-m�me !", "Voc� n�o pode denunciar a si pr�prio!");
     static class814 field4672 = new class814("You cannot report that person for Staff Impersonation, they are Jagex Staff.", "Diese Person ist ein Jagex-Mitarbeiter!", "Cette personne est un membre du personnel de Jagex, vous ne pouvez pas la signaler pour abus d'identit�.", "Voc� n�o pode denunciar essa pessoa por tentar se passar por membro da equipe Jagex, pois ela faz parte da equipe.");
-    static class814 field4673 = new class814("You can spot a Jagex moderator by the gold crown previous to their name.", "Jagex-Mitarbeiter haben eine goldene Krone neben ihrem Namen.", "Vous pouvez reconna�tre les mod�rateurs Jagex � la couronne dor�e en regard de leur nom.", "Os moderadores da Jagex s�o identificados por uma coroa dourada pr�xima ao \u007fnome.");
+    static class814 field4673 = new class814("You can spot a Jagex moderator by the gold crown aSceneEntity to their name.", "Jagex-Mitarbeiter haben eine goldene Krone neben ihrem Namen.", "Vous pouvez reconna�tre les mod�rateurs Jagex � la couronne dor�e en regard de leur nom.", "Os moderadores da Jagex s�o identificados por uma coroa dourada pr�xima ao \u007fnome.");
     static class814 field4674 = new class814("You can report that person under a different rule.", "Diese Person kann bez�glich einer anderen Regel gemeldet werden.", "Vous pouvez signaler cette personne pour une autre infraction aux r�gles.", "Voc� n�o pode denunciar essa pessoa de acordo com uma regra diferente.");
     static class814 field4675 = new class814("Unable to add name - system busy.", "Der Name konnte nicht hinzugef�gt werden, das System ist derzeit ausgelastet.", "Impossible d'ajouter un nom - syst�me occup�.", "N�o foi poss�vel adicionar o nome. O sistema est� ocupado.");
     static class814 field4676 = new class814("Unable to send abuse report - system busy.", "Meldung konnte nicht gesendet werden - Systeme �berlastet", "Impossible de signaler un abus - Erreur syst�me", "Sistema ocupado. N�o foi poss�vel enviar sua den�ncia de abuso.");
@@ -134,7 +134,7 @@ public class class814 {
     static class814 field4741 = new class814("Your request to refresh this user's temporary ban was successful.", "Die Verl�ngerung der tempor�ren Sperrung dieses Spielers war erfolgreich.", "Le renouvellement d'exclusion temporaire de ce joueur a �t� accept�.", "Seu pedido para reiniciar a suspens�o tempor�ria deste jogador foi bem sucedido.");
     static class814 field4742 = new class814("You have been temporarily muted due to breaking a rule.", "Aufgrund eines Regelversto�es wurdest du vor�bergehend stumm geschaltet.", "La messagerie instantan�e a �t� temporairement bloqu�e suite � une infraction.", "Voc� foi temporariamente vetado por ter violado uma regra.");
     static class814 field4743 = new class814("This mute will remain for a further ", "Diese Stummschaltung gilt f�r weitere ", "Votre acc�s restera bloqu� encore ", "Este veto permanecer� por mais ");
-    static class814 field4744 = new class814("Changes will take effect on your friends chat in the previous 60 seconds.", "Die �nderungen am Freundes-Chat werden innerhalb von 60 Sekunden �bernommen.", "Les modifications seront apport�s � votre canal de discussion dans les 60 prochaines secondes.", "Mundan�as v�o ocorrer em seu bate-papo entre amigos nos pr�ximos 60 segundos.");
+    static class814 field4744 = new class814("Changes will take effect on your friends chat in the aSceneEntity 60 seconds.", "Die �nderungen am Freundes-Chat werden innerhalb von 60 Sekunden �bernommen.", "Les modifications seront apport�s � votre canal de discussion dans les 60 prochaines secondes.", "Mundan�as v�o ocorrer em seu bate-papo entre amigos nos pr�ximos 60 segundos.");
     static class814 field4745 = new class814("You will be un-muted within 24 hours.", "Du wirst innerhalb der n�chsten 24 Stunden wieder sprechen k�nnen.", "Vous aurez � nouveau acc�s � la messagerie instantan�e dans 24 heures.", "O veto ser� retirado dentro de 24 horas.");
     static class814 field4746 = new class814("To prevent further mutes please read the rules.", "Um eine erneute Stummschaltung zu verhindern, lies bitte die Regeln.", "Pour �viter un nouveau blocage, lisez le r�glement.", "Para evitar outros vetos, leia as regras.");
     static class814 field4747 = new class814("You have been permanently muted due to breaking a rule.", "Du wurdest permanent stumm geschaltet, da du gegen eine Regel versto�en hast.", "L'acc�s � la messagerie instantan�e vous a d�finitivement �t� retir� suite � une infraction.", "Voc� foi permanentemente vetado por ter violado uma regra.");
@@ -170,7 +170,7 @@ public class class814 {
     static class814 field4814 = new class814("Loaded config", "Konfig geladen.", "Fichiers config charg�s", "Config carregada");
     static class814 field4815 = new class814("The channel you tried to join is currently full.", "Der von dir gew�nschte Chatraum ist derzeit �berf�llt.", "Le canal que vous essayez de rejoindre est plein.", "O canal que voc� tentou acessar est� cheio no momento.");
     static class814 field4819 = new class814(" days.", " Tage.", " jours.", " dias.");
-    static class814 field4820 = new class814("Please wait until you are logged out of your previous channel.", "Bitte warte, bis du den vorherigen Chatraum verlassen hast.", "Veuillez attendre d'�tre d�connect�(e) de votre canal pr�c�dent.", "Aguarde at� se desconectar do canal anterior.");
+    static class814 field4820 = new class814("Please wait until you are logged out of your aSceneEntity channel.", "Bitte warte, bis du den vorherigen Chatraum verlassen hast.", "Veuillez attendre d'�tre d�connect�(e) de votre canal pr�c�dent.", "Aguarde at� se desconectar do canal anterior.");
     static class814 field4821 = new class814("To go here you must login to a members' server.", "Du musst auf einer Mitglieder-Welt sein, um dort hinzukommen.", "Vous devez vous connecter � un serveur d'abonn�s pour aller � cet endroit.", "Para entrar aqui, acesse um servidor para membros.");
     Map field4825 = new HashMap(6);
 
@@ -280,7 +280,7 @@ public class class814 {
                         if (var8 instanceof class397) {
                             ((class397) var8).field6490.method348(var6, 334665686);
                         } else {
-                            class745.method2596(var0, var3, var1, var2, var8.method4551((byte) -28), var5, var4, var6, -95982907);
+                            class745.method2596(var0, var3, var1, var2, var8.getID(), var5, var4, var6, -95982907);
                         }
                     }
 
@@ -288,16 +288,16 @@ public class class814 {
                         if (var9 instanceof class397) {
                             ((class397) var9).field6490.method348(var6, -433535088);
                         } else {
-                            class745.method2596(var0, var3, var1, var2, var9.method4551((byte) 30), var5, var4, var6, -1702879755);
+                            class745.method2596(var0, var3, var1, var2, var9.getID(), var5, var4, var6, -1702879755);
                         }
                     }
                 } else if (var3 == 1) {
                     var8 = (class265) class730.field2697.method5317(-1611682495).method2427(var0, var1, var2, 1080081135);
                     if (var8 != null) {
-                        if (var8 instanceof class715) {
-                            ((class715) var8).field3585.method348(var6, 1175058275);
+                        if (var8 instanceof WallDecoration) {
+                            ((WallDecoration) var8).field3585.method348(var6, 1175058275);
                         } else {
-                            int var11 = var8.method4551((byte) 51);
+                            int var11 = var8.getID();
                             if (var4 != 4 && 5 != var4) {
                                 if (6 == var4) {
                                     class745.method2596(var0, var3, var1, var2, var11, 4 + var5, 4, var6, -219363167);
@@ -322,7 +322,7 @@ public class class814 {
                         if (var8 instanceof class589) {
                             ((class589) var8).field274.method348(var6, 1520781180);
                         } else {
-                            class745.method2596(var0, var3, var1, var2, var8.method4551((byte) 81), var5, var4, var6, 819048305);
+                            class745.method2596(var0, var3, var1, var2, var8.getID(), var5, var4, var6, 819048305);
                         }
                     }
                 } else if (var3 == 3) {
@@ -331,7 +331,7 @@ public class class814 {
                         if (var8 instanceof class547) {
                             ((class547) var8).field411.method348(var6, 939556837);
                         } else {
-                            class745.method2596(var0, var3, var1, var2, var8.method4551((byte) -39), var5, var4, var6, -1265284934);
+                            class745.method2596(var0, var3, var1, var2, var8.getID(), var5, var4, var6, -1265284934);
                         }
                     }
                 }

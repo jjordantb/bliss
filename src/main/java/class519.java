@@ -272,7 +272,7 @@ public class class519 {
 
                     String[] var17;
                     if (var0.startsWith("directlogin")) {
-                        var17 = class715.method2097(var0.substring(12), ' ', 1545850593);
+                        var17 = WallDecoration.method2097(var0.substring(12), ' ', 1545850593);
                         if (2 == var17.length) {
                             class935.method6311(var17[0], var17[1], 2101690439);
                         }
@@ -281,7 +281,7 @@ public class class519 {
                     }
 
                     if (var0.startsWith("snlogin ")) {
-                        var17 = class715.method2097(var0.substring(8), ' ', 259158417);
+                        var17 = WallDecoration.method2097(var0.substring(8), ' ', 259158417);
                         var15 = Integer.parseInt(var17[0]);
                         class84.method938(var15, (byte) -22);
                         return;
@@ -336,7 +336,7 @@ public class class519 {
                             return;
                         }
 
-                        String[] var6 = class715.method2097(class223.method4104(class7.method2939(var5, 1704231187), '\r', "", (short) 316), '\n', 714918179);
+                        String[] var6 = WallDecoration.method2097(class223.method4104(class7.method2939(var5, 1704231187), '\r', "", (short) 316), '\n', 714918179);
                         class264.method4568(var6, 408166320);
                     }
 

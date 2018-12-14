@@ -83,13 +83,13 @@ public class class762 {
                                     SceneTile var28;
                                     IterableSceneEntity var29;
                                     if (var16 && var0[var18][var11][var14] != null) {
-                                        if (var0[var18][var11][var14].field7007 != null) {
+                                        if (var0[var18][var11][var14].boundaryObject != null) {
                                             var19 = class176.method3173(var12, -1319957905);
-                                            if (var19 == var0[var18][var11][var14].field7007.field7433) {
+                                            if (var19 == var0[var18][var11][var14].boundaryObject.field7433) {
                                                 continue;
                                             }
 
-                                            if (var0[var18][var11][var14].field7008 != null && var19 == var0[var18][var11][var14].field7008.field7433) {
+                                            if (var0[var18][var11][var14].boundaryObject2 != null && var19 == var0[var18][var11][var14].boundaryObject2.field7433) {
                                                 if (var5 != -777988087) {
                                                     throw new IllegalStateException();
                                                 }
@@ -98,18 +98,18 @@ public class class762 {
 
                                             if (var13 != 0) {
                                                 var20 = class176.method3173(var13, -1159033021);
-                                                if (var0[var18][var11][var14].field7007.field7433 == var20 || var0[var18][var11][var14].field7008 != null && var0[var18][var11][var14].field7008.field7433 == var20) {
+                                                if (var0[var18][var11][var14].boundaryObject.field7433 == var20 || var0[var18][var11][var14].boundaryObject2 != null && var0[var18][var11][var14].boundaryObject2.field7433 == var20) {
                                                     continue;
                                                 }
                                             }
 
                                             if (var15 != 0) {
                                                 var20 = class176.method3173(var15, -1010197518);
-                                                if (var20 == var0[var18][var11][var14].field7007.field7433) {
+                                                if (var20 == var0[var18][var11][var14].boundaryObject.field7433) {
                                                     continue;
                                                 }
 
-                                                if (var0[var18][var11][var14].field7008 != null && var0[var18][var11][var14].field7008.field7433 == var20) {
+                                                if (var0[var18][var11][var14].boundaryObject2 != null && var0[var18][var11][var14].boundaryObject2.field7433 == var20) {
                                                     if (var5 != -777988087) {
                                                         throw new IllegalStateException();
                                                     }
@@ -119,8 +119,8 @@ public class class762 {
                                         }
 
                                         var28 = var0[var18][var11][var14];
-                                        if (var28.field7006 != null) {
-                                            for (var29 = var28.field7006; var29 != null; var29 = var29.next) {
+                                        if (var28.iterableSceneEntity != null) {
+                                            for (var29 = var28.iterableSceneEntity; var29 != null; var29 = var29.next) {
                                                 var21 = var29.animable;
                                                 if (var21 instanceof class265) {
                                                     class265 var22 = (class265) var21;
@@ -147,8 +147,8 @@ public class class762 {
                                     }
 
                                     var28 = var0[var18][var11][var14];
-                                    if (var28 != null && var28.field7006 != null) {
-                                        for (var29 = var28.field7006; var29 != null; var29 = var29.next) {
+                                    if (var28 != null && var28.iterableSceneEntity != null) {
+                                        for (var29 = var28.iterableSceneEntity; var29 != null; var29 = var29.next) {
                                             var21 = var29.animable;
                                             if (var21.field8297 != var21.field8299 || var21.field8296 != var21.field8298) {
                                                 for (int var30 = var21.field8299; var30 <= var21.field8297; ++var30) {

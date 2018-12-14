@@ -298,7 +298,7 @@ public class class916 implements class331 {
                             var19 = class979.method1834(var4, var5, 0, 0, var15, var13, (byte) -22);
                         }
                     } else {
-                        ObjectDefinition var16 = class730.field2697.method5283(-1208362615).method4713(var14);
+                        ObjectDefinition var16 = class730.field2697.getObjectDefinitionLoader().getObjectDefinition(var14);
                         if (var13 != 0 && var13 != 2) {
                             var17 = var16.field2215;
                             var18 = var16.field2218;
@@ -515,7 +515,7 @@ public class class916 implements class331 {
                                 var24 = class979.method1834(var4, var5, 0, 0, var20, var38, (byte) -22);
                             }
                         } else {
-                            ObjectDefinition var21 = class730.field2697.method5283(-1208362615).method4713(var42);
+                            ObjectDefinition var21 = class730.field2697.getObjectDefinitionLoader().getObjectDefinition(var42);
                             int var22;
                             int var23;
                             if (var38 != 0 && var38 != 2) {

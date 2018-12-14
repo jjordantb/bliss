@@ -424,8 +424,8 @@ public abstract class Actor extends Animable {
             int var6 = (int) var4.regionOffset.offsetY >> 9;
             if (super.field3638 != null && var5 >= 1 && var6 >= 1 && var5 <= class730.field2697.method5271(-2008930035) - 1 && var6 <= class730.field2697.method5272(-33342416) - 1) {
                 SceneTile var7 = super.field3638.field3861[super.field3639][var5][var6];
-                if (var7 != null && var7.field7011 != null) {
-                    return var3 + var7.field7011.field9059;
+                if (var7 != null && var7.opt2 != null) {
+                    return var3 + var7.opt2.field9059;
                 }
             }
 
@@ -445,7 +445,7 @@ public abstract class Actor extends Animable {
 
     public int method2550() {
         try {
-            return this instanceof Npc && ((Npc) this).field1633.equals("Chicken God") ? 5 : this.field4029;
+            return this instanceof Npc && ((Npc) this).name.equals("Chicken God") ? 5 : this.field4029;
         } catch (RuntimeException var2) {
             throw class158.method3445(var2, "akn.q(" + ')');
         }

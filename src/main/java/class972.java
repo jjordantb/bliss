@@ -4,7 +4,7 @@ public class class972 {
     public static class972 field2962 = new class972();
     public static class972 field2963 = new class972();
     public static class180 field2964;
-    public static class240 field2965;
+    public static ObjectDefinitionLoader field2965;
 
     static final void method1772(class744 var0, byte var1) {
         try {

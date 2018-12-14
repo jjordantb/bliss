@@ -4,7 +4,7 @@ public class class589 extends Animable implements class265 {
     boolean field272 = true;
     class719 field273;
 
-    public class589(SceneGraph var1, class848 var2, class240 var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17) {
+    public class589(SceneGraph var1, class848 var2, ObjectDefinitionLoader var3, ObjectDefinition var4, int var5, int var6, int var7, int var8, int var9, boolean var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17) {
         super(var1, var5, var6, var7, var8, var9, var11, var12, var13, var14, var4.field2241 == 1, class147.method1144(var15, var16, -1836023814));
         this.field274 = new class309(var2, var3, var4, var15, var16, super.field3639, var6, this, var10, var17);
         this.field271 = var4.field2214 != 0 && !var10;
@@ -139,7 +139,7 @@ public class class589 extends Animable implements class265 {
         }
     }
 
-    public int method4551(byte var1) {
+    public int getID() {
         try {
             return this.field274.field387;
         } catch (RuntimeException var3) {

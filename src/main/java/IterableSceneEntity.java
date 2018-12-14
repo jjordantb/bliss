@@ -1,6 +1,6 @@
 public class IterableSceneEntity { //398
 
-    static IterableSceneEntity previous;
+    static IterableSceneEntity aSceneEntity;
     static int index = 0;
     public Animable animable;
     public IterableSceneEntity next;
@@ -102,8 +102,8 @@ public class IterableSceneEntity { //398
         try {
             if (index < 500) {
                 this.animable = null;
-                this.next = previous;
-                previous = this;
+                this.next = aSceneEntity;
+                aSceneEntity = this;
                 ++index;
             }
 

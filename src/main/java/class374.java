@@ -302,7 +302,7 @@ public class class374 implements class925 {
                     var0.method4827();
                     var0.method4831(1, 1);
                     class881.method6172(-1595877635);
-                    class240 var42 = class730.field2697.method5283(-106767927);
+                    ObjectDefinitionLoader var42 = class730.field2697.getObjectDefinitionLoader();
                     class95.field606 = 0;
                     class95.field600.method905((byte) 1);
                     if (!class95.field604) {
@@ -324,13 +324,13 @@ public class class374 implements class925 {
                                         }
 
                                         if (var44 != null) {
-                                            ObjectDefinition var46 = var42.method4713(var44.method4551((byte) -27));
+                                            ObjectDefinition var46 = var42.getObjectDefinition(var44.getID());
                                             if (!var46.field2266 || class730.field2759) {
                                                 var26 = var46.field2231;
                                                 if (var46.field2198 != null) {
                                                     for (var27 = 0; var27 < var46.field2198.length; ++var27) {
                                                         if (var46.field2198[var27] != -1) {
-                                                            ObjectDefinition var48 = var42.method4713(var46.field2198[var27]);
+                                                            ObjectDefinition var48 = var42.getObjectDefinition(var46.field2198[var27]);
                                                             if (var48.field2231 >= 0) {
                                                                 var26 = var48.field2231;
                                                             }

@@ -192,7 +192,7 @@ public class class507 {
                             if (var6 != null) {
                                 String var7 = (String) var6.getTransferData(DataFlavor.stringFlavor);
                                 if (var7 != null) {
-                                    String[] var8 = class715.method2097(var7, '\n', 1017779885);
+                                    String[] var8 = WallDecoration.method2097(var7, '\n', 1017779885);
                                     class264.method4568(var8, 399274522);
                                 }
                             }

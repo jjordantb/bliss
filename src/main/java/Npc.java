@@ -5,7 +5,7 @@ public class Npc extends Actor {
     public int field1629 = 1;
     public int field1630 = 1;
     public int field1631 = -1;
-    public String field1633;
+    public String name;
     public class221 field1634 = new class221(32);
     public int field1636;
     public NpcDefinition field1637;
@@ -54,8 +54,8 @@ public class Npc extends Actor {
                 class135 var5 = var1.method5048();
                 int var6 = super.field4048.method5553((byte) 0);
                 SceneTile var7 = super.field3638.field3861[super.field3639][(int) var4.regionOffset.offsetX >> 9][(int) var4.regionOffset.offsetY >> 9];
-                if (var7 != null && var7.field7011 != null) {
-                    int var8 = super.field4086 - var7.field7011.field9059;
+                if (var7 != null && var7.opt2 != null) {
+                    int var8 = super.field4086 - var7.opt2.field9059;
                     super.field4086 = (int) ((float) super.field4086 - (float) var8 / 10.0F);
                 } else {
                     super.field4086 = (int) ((float) super.field4086 - (float) super.field4086 / 10.0F);
@@ -521,7 +521,7 @@ public class Npc extends Actor {
 
             this.field1637 = var1;
             if (this.field1637 != null) {
-                this.field1633 = this.field1637.name;
+                this.name = this.field1637.name;
                 this.field1636 = this.field1637.field9885;
             }
 
@@ -549,4 +549,13 @@ public class Npc extends Actor {
             throw class158.method3445(var4, "ake.ga(" + ')');
         }
     }
+
+    public Tile getLocation() {
+        RegionOffset region = this.getRegion().regionOffset;
+        RegionBase var4 = class730.field2697.getRegionBase(681479919);
+        int x = ((int) region.offsetX >> 9) + var4.baseX;
+        int y = ((int) region.offsetY >> 9) + var4.baseY;
+        return new Tile(x, y);
+    }
+
 }

@@ -102,7 +102,7 @@ public class class606 {
 
     static int method4793(int var0, int var1, int var2) {
         try {
-            return class15.field6900.field6921 != var0 && var0 != class15.field6902.field6921 ? class729.field2497[var1 & 3] : class729.field2498[var1 & 3];
+            return class15.field6900.field6921 != var0 && var0 != class15.field6902.field6921 ? BoundaryObject.field2497[var1 & 3] : BoundaryObject.field2498[var1 & 3];
         } catch (RuntimeException var4) {
             throw class158.method3445(var4, "dk.by(" + ')');
         }

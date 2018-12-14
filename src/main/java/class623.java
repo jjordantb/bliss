@@ -1,6 +1,7 @@
 import java.util.Iterator;
 
 public class class623 {
+
     public boolean field8945 = false;
     public long field8982;
     class572 field8937;
@@ -42,7 +43,7 @@ public class class623 {
     SceneGraph field8974;
     byte[][] field8975;
     int field8976;
-    class240 field8977;
+    ObjectDefinitionLoader field8977;
     byte[][] field8978;
     int[][] field8979;
     int[][][] field8980;
@@ -354,7 +355,7 @@ public class class623 {
         }
     }
 
-    public class240 method5283(int var1) {
+    public ObjectDefinitionLoader getObjectDefinitionLoader() {
         try {
             return this.field8977;
         } catch (RuntimeException var3) {
@@ -386,7 +387,7 @@ public class class623 {
         }
     }
 
-    public void method5287(class240 var1, int var2) {
+    public void method5287(ObjectDefinitionLoader var1, int var2) {
         try {
             this.field8977 = var1;
         } catch (RuntimeException var4) {

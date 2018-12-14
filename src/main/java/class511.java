@@ -8,11 +8,11 @@ public class class511 extends Animator {
 
     static boolean method2616(class265 var0, byte var1) {
         try {
-            ObjectDefinition var2 = class730.field2697.method5283(1998541007).method4713(var0.method4551((byte) 21));
-            if (-1 == var2.field2232) {
+            ObjectDefinition var2 = class730.field2697.getObjectDefinitionLoader().getObjectDefinition(var0.getID());
+            if (-1 == var2.id) {
                 return true;
             } else {
-                class279 var3 = class981.field3274.method2003(var2.field2232, -2130110173);
+                class279 var3 = class981.field3274.method2003(var2.id, -2130110173);
                 return -1 == var3.field10587 ? true : var3.method6610((byte) 7);
             }
         } catch (RuntimeException var4) {

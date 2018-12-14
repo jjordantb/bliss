@@ -25,7 +25,7 @@ public class ObjectDefinition {
     public int field2229 = -1;
     public int field2230 = -1;
     public int field2231 = -1;
-    public int field2232 = -1;
+    public int id = -1;
     public boolean field2233 = false;
     public int field2234 = 0;
     public boolean field2236 = false;
@@ -66,7 +66,7 @@ public class ObjectDefinition {
     int field2224 = 0;
     int field2225 = 0;
     int field2228 = 0;
-    class240 field2235;
+    ObjectDefinitionLoader field2235;
     int field2238 = 128;
     int field2239 = 128;
     int field2243 = 0;
@@ -273,7 +273,7 @@ public class ObjectDefinition {
                 } else if (101 == var2) {
                     this.field2234 = var1.method6371();
                 } else if (var2 == 102) {
-                    this.field2232 = var1.method6374();
+                    this.id = var1.method6374();
                 } else if (103 == var2) {
                     this.field2208 = 0;
                 } else if (104 == var2) {
@@ -801,10 +801,10 @@ public class ObjectDefinition {
             }
 
             if (var3 >= 0 && var3 < this.field2198.length - 1 && -1 != this.field2198[var3]) {
-                return this.field2235.method4713(this.field2198[var3]);
+                return this.field2235.getObjectDefinition(this.field2198[var3]);
             } else {
                 int var4 = this.field2198[this.field2198.length - 1];
-                return -1 != var4 ? this.field2235.method4713(var4) : null;
+                return -1 != var4 ? this.field2235.getObjectDefinition(var4) : null;
             }
         } catch (RuntimeException var5) {
             throw class158.method3445(var5, "rw.x(" + ')');
@@ -910,7 +910,7 @@ public class ObjectDefinition {
             } else {
                 for (int var2 = 0; var2 < this.field2198.length; ++var2) {
                     if (this.field2198[var2] != -1) {
-                        ObjectDefinition var3 = this.field2235.method4713(this.field2198[var2]);
+                        ObjectDefinition var3 = this.field2235.getObjectDefinition(this.field2198[var2]);
                         if (-1 != var3.field2254 || var3.field2261 != null) {
                             return true;
                         }

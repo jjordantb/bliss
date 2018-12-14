@@ -180,7 +180,7 @@ public class class794 implements Runnable {
         }
     }
 
-    public void method458(class240 var1, int var2) {
+    public void method458(ObjectDefinitionLoader var1, int var2) {
         try {
             this.field540.method5287(var1, -441647750);
         } catch (RuntimeException var4) {

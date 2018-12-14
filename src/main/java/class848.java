@@ -181,7 +181,7 @@ public abstract class class848 {
                     for (var23 = 0; var23 < class95.field606; ++var23) {
                         var16 = 2 + class95.field597[var23] * 4 - var8 / 128;
                         var17 = 2 + 4 * class95.field598[var23] - var9 / 128;
-                        ObjectDefinition var25 = class730.field2697.method5283(2011176396).method4713(class95.field599[var23]);
+                        ObjectDefinition var25 = class730.field2697.getObjectDefinitionLoader().getObjectDefinition(class95.field599[var23]);
                         if (var25.field2198 != null) {
                             var25 = var25.method1487(class827.field9037, 1042930561);
                             if (var25 == null) {

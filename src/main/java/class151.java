@@ -40,7 +40,7 @@ public class class151 {
             class237 var2 = var0.field3178 ? var0.field3164 : var0.field3163;
             Widget var3 = var2.field8255;
             WidgetContainer var4 = var2.field8254;
-            class715.method2098(var3, var4, var0, (byte) -50);
+            WallDecoration.method2098(var3, var4, var0, (byte) -50);
         } catch (RuntimeException var5) {
             throw class158.method3445(var5, "eq.kp(" + ')');
         }
@@ -49,11 +49,11 @@ public class class151 {
     void method3370(class501 var1, byte var2) {
         try {
             int var3 = var1.method1906(2085203042);
-            this.field5366 = class240.method4716(-1585817819)[var3];
+            this.field5366 = ObjectDefinitionLoader.method4716(-1585817819)[var3];
             int var4;
             if (this.field5366 == class495.field8094) {
                 var4 = var1.method1906(656081273);
-                this.field5367 = class240.method4716(-12226797)[var4];
+                this.field5367 = ObjectDefinitionLoader.method4716(-12226797)[var4];
                 this.field5365 = var1.method1906(1114947725);
             }
 

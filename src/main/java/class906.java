@@ -76,7 +76,7 @@ public class class906 implements Iterator {
             this.field10362 = var1;
             return var1;
         } catch (RuntimeException var2) {
-            throw class158.method3445(var2, "sl.previous(" + ')');
+            throw class158.method3445(var2, "sl.aSceneEntity(" + ')');
         }
     }
 

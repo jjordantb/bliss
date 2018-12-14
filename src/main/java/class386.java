@@ -59,7 +59,7 @@ final class class386 implements class415 {
                     var11 = class979.method1834(var0, var1, 0, 0, var7, var5, (byte) -22);
                 }
             } else {
-                ObjectDefinition var8 = class730.field2697.method5283(-1208362615).method4713(var6);
+                ObjectDefinition var8 = class730.field2697.getObjectDefinitionLoader().getObjectDefinition(var6);
                 int var9;
                 int var10;
                 if (var5 != 0 && var5 != 2) {

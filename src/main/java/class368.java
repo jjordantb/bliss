@@ -27,7 +27,7 @@ public class class368 {
                 var0.method4984(class759.field4331 - 16, var5, 12, var4, class342.field278 << 24 | 3351159, 2);
 
                 for (int var6 = class342.field283; var6 < class342.field283 + var2 && var6 < class342.field282; ++var6) {
-                    String[] var7 = class715.method2097(class342.field287[var6], '\b', 846052986);
+                    String[] var7 = WallDecoration.method2097(class342.field287[var6], '\b', 846052986);
                     int var8 = (class759.field4331 - 8 - 16) / var7.length;
 
                     for (int var9 = 0; var9 < var7.length; ++var9) {

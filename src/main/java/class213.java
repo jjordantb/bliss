@@ -33,7 +33,7 @@ public class class213 implements Runnable {
             int var3 = class730.field2739.get(12);
             int var4 = class730.field2739.get(13);
             String var5 = Integer.toString(var2 / 10) + var2 % 10 + ":" + var3 / 10 + var3 % 10 + ":" + var4 / 10 + var4 % 10;
-            String[] var6 = class715.method2097(var0, '\n', 1593698305);
+            String[] var6 = WallDecoration.method2097(var0, '\n', 1593698305);
 
             for (int var7 = 0; var7 < var6.length; ++var7) {
                 for (int var8 = class342.field282; var8 > 0; --var8) {

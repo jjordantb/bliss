@@ -60,8 +60,8 @@ public class class156 extends Animable {
                 class446 var5 = this.getRegion();
                 var3.method1024(var4);
                 SceneTile var6 = super.field3638.field3861[super.field3639][(int) var5.regionOffset.offsetX >> 9][(int) var5.regionOffset.offsetY >> 9];
-                if (var6 != null && var6.field7011 != null) {
-                    var3.method1018(0.0F, (float) (-var6.field7011.field9059), 0.0F);
+                if (var6 != null && var6.opt2 != null) {
+                    var3.method1018(0.0F, (float) (-var6.opt2.field9059), 0.0F);
                 }
 
                 this.field6583.method5965(var3, (class211) null, 0);
