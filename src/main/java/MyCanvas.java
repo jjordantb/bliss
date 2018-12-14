@@ -1,5 +1,4 @@
-import java.awt.Canvas;
-import java.awt.Graphics;
+import java.awt.*;
 
 public final class MyCanvas extends Canvas {
 

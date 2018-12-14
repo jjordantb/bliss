@@ -3,40 +3,40 @@ package jagtheora.theora;
 import jagtheora.misc.SimplePeer;
 
 public class TheoraInfo extends SimplePeer {
-   public byte versionMajor;
-   public byte versionMinor;
-   public byte versionSubMinor;
-   public int frameWidth;
-   public int frameHeight;
-   public int picWidth;
-   public int picHeight;
-   public int picX;
-   public int picY;
-   public int fpsNumerator;
-   public int fpsDenominator;
-   public int aspectNumerator;
-   public int aspectDenominator;
-   public int colourSpace;
-   public int pixelFormat;
+    static {
+        initFields();
+    }
 
-   static {
-      initFields();
-   }
+    public byte versionMajor;
+    public byte versionMinor;
+    public byte versionSubMinor;
+    public int frameWidth;
+    public int frameHeight;
+    public int picWidth;
+    public int picHeight;
+    public int picX;
+    public int picY;
+    public int fpsNumerator;
+    public int fpsDenominator;
+    public int aspectNumerator;
+    public int aspectDenominator;
+    public int colourSpace;
+    public int pixelFormat;
 
-   public TheoraInfo() {
-      this.init();
-      if (this.a()) {
-         throw new IllegalStateException();
-      }
-   }
+    public TheoraInfo() {
+        this.init();
+        if (this.a()) {
+            throw new IllegalStateException();
+        }
+    }
 
-   private static native void initFields();
+    private static native void initFields();
 
-   private native void init();
+    private native void init();
 
-   protected native void clear();
+    protected native void clear();
 
-   protected native void k();
+    protected native void k();
 
-   protected native void d();
+    protected native void d();
 }

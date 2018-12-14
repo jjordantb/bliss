@@ -1,81 +1,81 @@
 public class class619 extends class535 {
-   public static int field8865 = 2;
-   public static int field8866 = 0;
-   public static int field8867 = 1;
-   public static class368 field8868;
-   public static boolean field8869;
+    public static int field8865 = 2;
+    public static int field8866 = 0;
+    public static int field8867 = 1;
+    public static class368 field8868;
+    public static boolean field8869;
 
-   public class619(int var1, class838 var2) {
-      super(var1, var2);
-   }
+    public class619(int var1, class838 var2) {
+        super(var1, var2);
+    }
 
-   public int method2273(int var1, int var2) {
-      try {
-         return super.field3704.field9123.method5845(1970105760) == 0 ? 3 : 1;
-      } catch (RuntimeException var4) {
-         throw class158.method3445(var4, "adh.f(" + ')');
-      }
-   }
+    public class619(class838 var1) {
+        super(var1);
+    }
 
-   int method2272(int var1) {
-      return 2;
-   }
+    public static class858 method5183(InputStream var0, byte var1) {
+        try {
+            int var2 = var0.method6371();
+            int[] var3 = new int[var2];
 
-   public boolean method5180(int var1) {
-      try {
-         return super.field3704.field9123.method5845(1897479169) != 0;
-      } catch (RuntimeException var3) {
-         throw class158.method3445(var3, "adh.z(" + ')');
-      }
-   }
+            for (int var4 = 0; var4 < var2; ++var4) {
+                var3[var4] = var0.method6371();
+            }
 
-   public void method5181(int var1) {
-      try {
-         if (super.field3704.field9123.method5845(1884189410) == 0) {
-            super.field3708 = 0;
-         }
+            return new class858(var3);
+        } catch (RuntimeException var5) {
+            throw class158.method3445(var5, "adh.p(" + ')');
+        }
+    }
 
-         if (super.field3708 < 0 || super.field3708 > 2) {
-            super.field3708 = this.method2272(1169939305);
-         }
+    public int method2273(int var1, int var2) {
+        try {
+            return super.field3704.field9123.method5845(1970105760) == 0 ? 3 : 1;
+        } catch (RuntimeException var4) {
+            throw class158.method3445(var4, "adh.f(" + ')');
+        }
+    }
 
-      } catch (RuntimeException var3) {
-         throw class158.method3445(var3, "adh.s(" + ')');
-      }
-   }
+    int method2272(int var1) {
+        return 2;
+    }
 
-   void method2275(int var1, int var2) {
-      try {
-         super.field3708 = var1;
-      } catch (RuntimeException var4) {
-         throw class158.method3445(var4, "adh.p(" + ')');
-      }
-   }
+    public boolean method5180(int var1) {
+        try {
+            return super.field3704.field9123.method5845(1897479169) != 0;
+        } catch (RuntimeException var3) {
+            throw class158.method3445(var3, "adh.z(" + ')');
+        }
+    }
 
-   public class619(class838 var1) {
-      super(var1);
-   }
+    public void method5181(int var1) {
+        try {
+            if (super.field3704.field9123.method5845(1884189410) == 0) {
+                super.field3708 = 0;
+            }
 
-   public int method5182(int var1) {
-      try {
-         return super.field3708;
-      } catch (RuntimeException var3) {
-         throw class158.method3445(var3, "adh.y(" + ')');
-      }
-   }
+            if (super.field3708 < 0 || super.field3708 > 2) {
+                super.field3708 = this.method2272(1169939305);
+            }
 
-   public static class858 method5183(InputStream var0, byte var1) {
-      try {
-         int var2 = var0.method6371();
-         int[] var3 = new int[var2];
+        } catch (RuntimeException var3) {
+            throw class158.method3445(var3, "adh.s(" + ')');
+        }
+    }
 
-         for(int var4 = 0; var4 < var2; ++var4) {
-            var3[var4] = var0.method6371();
-         }
+    void method2275(int var1, int var2) {
+        try {
+            super.field3708 = var1;
+        } catch (RuntimeException var4) {
+            throw class158.method3445(var4, "adh.p(" + ')');
+        }
+    }
 
-         return new class858(var3);
-      } catch (RuntimeException var5) {
-         throw class158.method3445(var5, "adh.p(" + ')');
-      }
-   }
+    public int method5182(int var1) {
+        try {
+            return super.field3708;
+        } catch (RuntimeException var3) {
+            throw class158.method3445(var3, "adh.y(" + ')');
+        }
+    }
 }

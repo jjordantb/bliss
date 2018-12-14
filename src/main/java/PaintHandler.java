@@ -9,9 +9,8 @@ import java.awt.image.BufferedImage;
  */
 public class PaintHandler {
 
-    private String error = null;
-
     private final BufferedImage gameBuffer, paintBuffer;
+    private String error = null;
 
     public PaintHandler() {
         this.gameBuffer = new BufferedImage(765, 503, BufferedImage.TYPE_INT_ARGB);
@@ -21,6 +20,7 @@ public class PaintHandler {
 
     /**
      * Handle the double buffering of the canvas drawing
+     *
      * @param g2 the graphics object to draw on
      * @return the graphics object that was drawn on
      */

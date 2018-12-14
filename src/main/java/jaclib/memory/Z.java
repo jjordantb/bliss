@@ -1,19 +1,19 @@
 package jaclib.memory;
 
 public interface Z {
-   int a();
+    int a();
 
-   long f();
+    long f();
 
-   long d();
+    long d();
 
-   long u();
+    long u();
 
-   int x();
+    int x();
 
-   int r();
+    int r();
 
-   int q();
+    int q();
 
-   int n();
+    int n();
 }

@@ -1,68 +1,68 @@
 public abstract class class655 extends class829 {
-   class495 field9413;
-   String field9414;
-   String field9415;
-   int field9416;
-   class495 field9417;
+    class495 field9413;
+    String field9414;
+    String field9415;
+    int field9416;
+    class495 field9417;
 
-   public String toString() {
-      try {
-         String var1 = this.field9417.toString() + " " + this.field9414;
-         if (this.field9415 != null && !"".equals(this.field9415)) {
-            var1 = var1 + " : " + this.field9415;
-         }
+    class655(class151 var1) {
+        this.field9417 = var1.field5366;
+        this.field9414 = var1.field5368;
+        this.field9415 = var1.field5369;
+        this.field9416 = var1.field5365;
+        this.field9413 = var1.field5367;
+    }
 
-         return var1;
-      } catch (RuntimeException var2) {
-         throw class158.method3445(var2, "afb.toString(" + ')');
-      }
-   }
+    public String toString() {
+        try {
+            String var1 = this.field9417.toString() + " " + this.field9414;
+            if (this.field9415 != null && !"".equals(this.field9415)) {
+                var1 = var1 + " : " + this.field9415;
+            }
 
-   public class495 method5613(int var1) {
-      try {
-         return this.field9417;
-      } catch (RuntimeException var3) {
-         throw class158.method3445(var3, "afb.b(" + ')');
-      }
-   }
+            return var1;
+        } catch (RuntimeException var2) {
+            throw class158.method3445(var2, "afb.toString(" + ')');
+        }
+    }
 
-   public abstract int method5614(int var1);
+    public class495 method5613(int var1) {
+        try {
+            return this.field9417;
+        } catch (RuntimeException var3) {
+            throw class158.method3445(var3, "afb.b(" + ')');
+        }
+    }
 
-   public int method5615(int var1) {
-      try {
-         if (this.field9417 != class495.field8094) {
-            throw new class286(this, this.field9417.toString().toLowerCase());
-         } else {
-            return this.field9416;
-         }
-      } catch (RuntimeException var3) {
-         throw class158.method3445(var3, "afb.i(" + ')');
-      }
-   }
+    public abstract int method5614(int var1);
 
-   String method5616(byte var1) {
-      try {
-         return this.field9414;
-      } catch (RuntimeException var3) {
-         throw class158.method3445(var3, "afb.f(" + ')');
-      }
-   }
+    public int method5615(int var1) {
+        try {
+            if (this.field9417 != class495.field8094) {
+                throw new class286(this, this.field9417.toString().toLowerCase());
+            } else {
+                return this.field9416;
+            }
+        } catch (RuntimeException var3) {
+            throw class158.method3445(var3, "afb.i(" + ')');
+        }
+    }
 
-   class655(class151 var1) {
-      this.field9417 = var1.field5366;
-      this.field9414 = var1.field5368;
-      this.field9415 = var1.field5369;
-      this.field9416 = var1.field5365;
-      this.field9413 = var1.field5367;
-   }
+    String method5616(byte var1) {
+        try {
+            return this.field9414;
+        } catch (RuntimeException var3) {
+            throw class158.method3445(var3, "afb.f(" + ')');
+        }
+    }
 
-   public class495 method5617(int var1) {
-      try {
-         return this.field9413;
-      } catch (RuntimeException var3) {
-         throw class158.method3445(var3, "afb.p(" + ')');
-      }
-   }
+    public class495 method5617(int var1) {
+        try {
+            return this.field9413;
+        } catch (RuntimeException var3) {
+            throw class158.method3445(var3, "afb.p(" + ')');
+        }
+    }
 
-   public abstract boolean method5619(int var1);
+    public abstract boolean method5619(int var1);
 }

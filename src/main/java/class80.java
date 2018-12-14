@@ -1,11 +1,11 @@
 public abstract class class80 extends Node {
-   int field1091;
+    int field1091;
 
-   abstract void method870();
+    class80() throws Throwable {
+        throw new Error();
+    }
 
-   abstract int method871(class451 var1);
+    abstract void method870();
 
-   class80() throws Throwable {
-      throw new Error();
-   }
+    abstract int method871(class451 var1);
 }

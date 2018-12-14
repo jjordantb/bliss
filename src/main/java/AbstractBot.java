@@ -5,20 +5,20 @@ public abstract class AbstractBot {
 
     public abstract void loop();
 
-    public void setPaused(boolean paused) {
-        this.paused = paused;
+    public boolean isRunning() {
+        return running;
     }
 
     public void setRunning(boolean running) {
         this.running = running;
     }
 
-    public boolean isRunning() {
-        return running;
-    }
-
     public boolean isPaused() {
         return paused;
+    }
+
+    public void setPaused(boolean paused) {
+        this.paused = paused;
     }
 
 }

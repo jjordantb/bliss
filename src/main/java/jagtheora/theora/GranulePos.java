@@ -3,17 +3,17 @@ package jagtheora.theora;
 import jagtheora.misc.SimplePeer;
 
 public class GranulePos extends SimplePeer {
-   public long position;
+    static {
+        init();
+    }
 
-   static {
-      init();
-   }
+    public long position;
 
-   private static native void init();
+    private static native void init();
 
-   protected native void clear();
+    protected native void clear();
 
-   protected native void k();
+    protected native void k();
 
-   protected native void d();
+    protected native void d();
 }

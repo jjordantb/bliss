@@ -1,7 +1,7 @@
 package jagdx;
 
 public class J extends IUnknown {
-   J() throws Throwable {
-      throw new Error();
-   }
+    J() throws Throwable {
+        throw new Error();
+    }
 }

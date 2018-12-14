@@ -1,27 +1,27 @@
 package jaclib.memory;
 
 public interface I {
-   int a();
+    int a();
 
-   long f();
+    long f();
 
-   void b(byte[] var1, int var2, int var3, int var4);
+    void b(byte[] var1, int var2, int var3, int var4);
 
-   void p(byte[] var1, int var2, int var3, int var4);
+    void p(byte[] var1, int var2, int var3, int var4);
 
-   void i(byte[] var1, int var2, int var3, int var4);
+    void i(byte[] var1, int var2, int var3, int var4);
 
-   void k(byte[] var1, int var2, int var3, int var4);
+    void k(byte[] var1, int var2, int var3, int var4);
 
-   long d();
+    long d();
 
-   long u();
+    long u();
 
-   int x();
+    int x();
 
-   int r();
+    int r();
 
-   int q();
+    int q();
 
-   int n();
+    int n();
 }
